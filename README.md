@@ -3,6 +3,7 @@ Course Content and Resources for CEG 2350 OS Concepts and Design at Wright State
 
 ## Module 1:
 - Brief Overview of Computing History
+- [Set up your environment](EnvironmentSetup.md)
 - Intro to the Command Line
 - File Permissions
 - SSH Basics
