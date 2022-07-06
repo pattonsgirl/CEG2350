@@ -32,3 +32,23 @@ to GitHub, such as GitLab, BitBucket, and “host-your-own” solutions such as 
 to in git-speak as “remotes”, and all are completely optional. You do not need to use a remote to use git, but it will  
 make sharing your code with others easier.
 - https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
+
+## Using git with GitHub
+
+The following assumes you have a git repository hosted on GitHub, created a key pair locally, added the public key of that pair  
+to your GitHub account, and are ready to work with the repository locally.  Step back to [GitHub Setup](../GitHubSetup.md)  
+if that does not sound familiar.
+
+### Cloning
+
+You have a git repsoitory hosted on GitHub.  Now you want to use your system in order to create and edit content in the repository.
+
+Here is a simple flow chart:
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
