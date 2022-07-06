@@ -9,6 +9,7 @@ Course Content and Resources for CEG 2350 OS Concepts and Design at Wright State
 - SSH Basics
 - Setting Up an AWS Instance
 - git & GitHub Basics
-- Setting Up for GitHub
+  - [Setting Up for GitHub](GitHubSetup.md)
+  - [markdown quick guide](markdown-demo.md) 
 
 
