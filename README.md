@@ -7,7 +7,7 @@ Course Content and Resources for CEG 2350 OS Concepts and Design at Wright State
 - Intro to the Command Line
 - File Permissions
 - SSH Basics
-- Setting Up an AWS Instance
+- [AWS Academy Setup](AWSAcademySetup.md)
 - git & GitHub Basics
   - [Setting Up for GitHub](GitHubSetup.md)
   - [markdown quick guide](markdown-demo.md) 
