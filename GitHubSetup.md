@@ -8,6 +8,7 @@ with only myself and the TAs and contains some default content to get started.
 - [Pre-Reqs](#Pre-Reqs)
 - [Create the Repo](#Create-the-Repo)
 - [Setup SSH Authentication](#Setup-SSH-Authentication)
+- [Using your Repository](#Using-your-Repository)
 - [Troubleshooting](#Troubleshooting)
 
 ## Pre-Reqs:
@@ -59,7 +60,19 @@ repository to use in this course.
   - Select `SSH` for SSH key authentication
   - In a terminal use `git clone` followed by the corresponding URL to clone your repository
 
-## Troubleshooting
+## Using your Repository
+
+You now have a repository on GitHub, and have added to your GitHub account a public key associated with a private key protected by you.  
+This will be discussed in class and lab, but as a cliff notes version, your next steps are to:
+- `clone` your repository locally (to the machine you are using)
+  - Remember to `clone` your repository to each device you want to work with it on.  Yup, that also means a key pair for each
+- `add` new files for tracking, or `add` files that have had changes made to be committed
+- `commit` your changes, along with a commit message that states what has changed
+- `push` your commit(s) to GitHub
+- Refresh your repository on GitHub in your browser to prove it pushed (seeing is believing)
+- `status` will output some hints about what is going on and what may need to happen next
+
+## Troubleshooting 
 Q. I lost my SSH key (computer died, data deleted, etc), what now?  
 A. Your GitHub repository is fine.  It's in "the cloud" (add sparkles and rainbows).  
 Follow the steps in [SSH Authentication](#Setup-SSH-Authentication) to generate a new key pair for use with your GitHub account.
