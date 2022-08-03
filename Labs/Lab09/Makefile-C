@@ -1,0 +1,28 @@
+# This is an example of a Makefile for C in Windows
+#   That means paths and commands are configured for WINDOWS, NOT LINUX
+#		Didn't think I'd make it that easy, did you ;)
+
+#PROGNAME is a variable that need to be changed to the name of your
+#	program.  So if I have a code file named code.c
+#	the PROGNAME variable needs to be code.c
+#	The rest of this "script" will plug the variable in appropriately
+#	To reference your code file
+PROGNAME = code.c
+
+#EXENAME is the name of the executable file to run your code
+EXENAME = program.exe
+
+#This creates an executable file using the GCC compiler for Windows
+#  This is the default action that will happen if only `make` is entered
+#  PROGNAME (code.c) is listed as a pre requisite for this action to happen
+$(EXENAME): $(PROGNAME)
+	#Using gcc options to specify output program name & print all warnings
+	c:/MinGW/bin/gcc -Wall -o $EXENAME $PROGNAME
+
+#run uses Windows cmd syntax to run the compiled program.
+run: $(EXENAME)
+	.\$(EXENAME)
+
+#clean uses Windows cmd syntax to delete the compiled program
+clean:
+	del /Q $(EXENAME)

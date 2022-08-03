@@ -1,0 +1,27 @@
+#! /bin/bash
+
+hello="Hello World"
+echo $hello
+
+num=40
+num2=70
+
+if [ $num -gt $num2 ]
+then
+        printf "$num is greater than $num2"
+fi
+
+echo $1
+
+if [[ -e $1 ]]
+then
+        printf "$1 is a real file"
+        cat test
+fi
+
+if [[ $1 =~ \.pem$  ]]
+then
+        printf "file extension is up to code!"
+else
+        printf "$1 is not cool"
+fi

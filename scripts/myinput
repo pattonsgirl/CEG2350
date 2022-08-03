@@ -1,0 +1,19 @@
+#! /bin/bash
+
+echo $1
+
+echo "enter something"
+
+read -s storage
+
+echo $storage
+
+file_count=$(ls | wc -w)
+
+file_count_lsblame=`ls -l | wc -l`
+
+echo $file_count
+
+echo $file_count_lsblame
+
+

@@ -1,0 +1,15 @@
+echo "CPU info"
+lscpu | grep "Model name:"
+echo "System memory"
+free -h --total | grep "Total:"
+echo "Disk space"
+df -h | egrep "[xs][v?]d*"
+echo "Disk partition info"
+# needs sudo
+# bad: sudo fdisk -l /dev/[xs][v?]d*
+# better
+sudo fdisk -l | egrep "/dev/[xs]v?d*"
+# best: sudo fdisk -l /dev/sd* 2> /dev/null && sudo fdisk -l /dev/xvd* 2> /dev/null
+echo "Looking for GPU"
+# needs sudo
+lshw -class display

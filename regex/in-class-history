@@ -1,0 +1,20 @@
+150  grep -P 'wright\.edu' emails.txt
+  151  grep -P 'wright\.edu$' emails.txt
+  152  grep -P '[a-z]+\.[a-z]{3}$' emails.txt
+  153  grep -P '\w+\.?.*@[a-z]+\.[a-z]{3}$' emails.txt
+  154  grep -P '\d' emails.txt
+  155  grep -P '\d+' emails.txt
+  156  grep -P '\d' emails.txt
+  157  grep -P '\d{2}' emails.txt
+  158  sed s/yahoo/aol/g emails.txt
+  159  cat emails.txt
+  160  sed -i s/yahoo/aol/g emails.txt
+  161  cat emails.txt
+  162  history | sed s/sudo/frodo/g
+  163*
+  164  ls
+  165  cat awk-demo.txt
+  166  awk { print $4 } awk-demo.txt
+  167  awk '{ print $4 }' awk-demo.txt
+  168  awk '/$3 ~ 'account' / { print $4 }' awk-demo.txt
+  169  awk '$3 ~ /'account'/ { print $4 }' awk-demo.txt

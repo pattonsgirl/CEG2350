@@ -1,0 +1,19 @@
+#!/usr/bin/bash
+
+foo=8
+bar=99
+
+# print newline
+echo "Hello World!"
+
+printf "Hello World!"
+
+if [[ $foo -eq $bar ]]
+then
+	echo "$foo is Equal to the value stored in $bar!"
+elif [[ $foo -gt $bar ]]
+then
+	echo "$foo is greater than $bar"
+else
+	echo "$foo is NOT equal to $bar"	
+fi

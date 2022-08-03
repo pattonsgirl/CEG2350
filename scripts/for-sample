@@ -1,0 +1,17 @@
+#! /bin/bash
+
+for ((i = 0 ; i <= 1000 ; i++)); do
+  echo "Counter: $i"
+done
+
+for i in orange apple banana
+do
+	echo $i
+done
+
+echo $1
+for i in $(cat $1)
+do
+	echo $i
+done	
+
