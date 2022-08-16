@@ -12,15 +12,16 @@
 2. You will be joined to a Canvas course called AWS Academy Learner Lab - Foundation Services
    - If you are in multiple courses using AWS, you may need to get used to the "Dashboard" to spend funds in the correct course.
 3. Within the course, click **Modules**
-4. Click **Learner Lab - Foundational Services**
-5. Click the **Start Lab** Play button on the middle right
-6. Wait. 2 - 3 minutes. You will see a console appear that you can interact with.
+4. Click **Learner Lab**
+   - Read and Agree to the Terms and Conditions
+6. Click the **Start Lab** Play button on the middle right
+7. Wait. 2 - 3 minutes. You will see a console appear that you can interact with.
    - This terminal is configured with AWS CLI access - you can query resources created on your account with it, but in itself is not what we are aiming for. Proceed with next instructions.
-7. Click **AWS Details** (with info icon next to it). Click download PEM from the SSH key options
+8. Click **AWS Details** (with info icon next to it). Click download PEM from the SSH key options
    - You'll need this for Connecting to the AWS Environment (below)
-8. Click **AWS** which should have a green dot next to it located on the left
+9. Click **AWS** which should have a green dot next to it located on the left
    - This will take you to your AWS Console for your account. Now the fun begins.
-9. In a new tab, enter the following URL in the browser (or click link to open): <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=ceg2350&templateURL=https:%2F%2Fwsu-cecs-cf-templates.s3.us-east-2.amazonaws.com%2Fcourse-templates%2Fceg2350.yml" target="_blank">https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=ceg2350&templateURL=https:%2F%2Fwsu-cecs-cf-templates.s3.us-east-2.amazonaws.com%2Fcourse-templates%2Fceg2350.yml</a>
+10. In a new tab, enter the following URL in the browser (or click link to open): <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=ceg2350&templateURL=https:%2F%2Fwsu-cecs-cf-templates.s3.us-east-2.amazonaws.com%2Fcourse-templates%2Fceg2350.yml" target="_blank">https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=ceg2350&templateURL=https:%2F%2Fwsu-cecs-cf-templates.s3.us-east-2.amazonaws.com%2Fcourse-templates%2Fceg2350.yml</a>
 
    - On the first menu, click Next
    - On the second menu, under Parameters, under Key Name, select `vockey`
@@ -66,7 +67,7 @@ While exploring and discovery is an important part of this course, any additiona
 
 Every 4 hours, instances (virtual machines) on AWS will automatically power down. This is good - it saves funds and use of resources. However, every 4 hours you need to restart the timer OR **Start Lab** again.
 
-1. This link should return you to [Modules -> Learner Lab Foundation Services](https://awsacademy.instructure.com/courses/13249/modules/items/1136419)
+1. This link should return you to [Modules -> Learner Lab](https://awsacademy.instructure.com/courses/24167/modules/items/1982401)
 2. Click the **Start Lab** Play button on the middle right
 3. Wait. 2 - 3 minutes. You will see a console appear that you can interact with.
 4. Click **AWS** which should have a green dot next to it located on the left
