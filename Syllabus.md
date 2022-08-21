@@ -1,17 +1,5 @@
-# CEG 2350 - OS Concepts and Usage - Spring 2022
-## Instructor & TA Info
-- **Lecture:** MW 4:40 – 6:00 PM in-person in Oelman Hall 320 and WebEx (Live & Recorded)
-- **Lab:** TR 3:30 – 4:25 PM, in-person in Oelman Hall 320 and WebEx (Live & Recorded)
-- **Instructor:** Ms. Kayleigh Duncan (kayleigh.duncan@wright.edu)
-- **Instructor Office Location:** 340 Russ Center Engineering
-- **Instructor Office hours:**
-	- In-person: MW 3:00 – 4:00 PM or by appointment in Russ 340
-	- Remote: via Discord, send message in course chat.  Do not expect answers after 8:00 PM
-- TAs:
-	- John Smith
-## Exam Info
-- Midterm: Monday, March 7th
-- Final: Monday, April 25th
+# CEG 2350 - OS Concepts and Usage
+
 ## Course description: 
 Provides introduction to Linux and Windows operating systems and system administration. Covers files and directories, ownership  
 and sharing, programs and processes, system calls, libraries, dynamic linking, command line shells, scripting, regular expressions  
