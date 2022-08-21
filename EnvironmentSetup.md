@@ -1,6 +1,7 @@
 # Environment Setup
 
 This guide is for new users who need to set up their environment.
+
 - [Text Editors](#Text-Editors)
 - [Windows Users](#Windows-Users)
   - [Install WSL 2](#Install-WSL-2)
@@ -96,9 +97,23 @@ This guide here refers to a [Chrome Extension for SSH connections](https://www.l
 - You may need to make a "failed" connection in order to get the permission to access files  
   questions to pop up.
 
-#### WSL 2 Install Errors
+### WSL 2 Install Errors
 
-- Error message:
+- **WSL2 says I am the `root` user by default**
+
+  - Close out of Ubuntu (the app).
+  - Hit the Windows key, and search for Ubuntu -> don't open the app.
+  - Instead click on "App Settings", then scroll down and select "Reset".
+  - Next time you open Ubuntu (the app) it will prompt for a username and password.
+
+- **Forgot password for account in WSL2**
+
+  - Close out of Ubuntu (the app).
+  - Hit the Windows key, and search for Ubuntu -> don't open the app.
+  - Instead click on "App Settings", then scroll down and select "Reset".
+  - Next time you open Ubuntu (the app) it will prompt for a username and password.
+
+- **WSL2 Installation Error message**
 
 ```
 The requested operation could not be completed due to a virtual disk system limitation.
@@ -106,9 +121,3 @@ Virtual hard disk files must be uncompressed and unencrypted and must not be spa
 ```
 
 - Follow [WSL2 VHD Issue Guide](https://utf9k.net/blog/wsl2-vhd-issue/)
-
-- Forgot password:
-  - Close out of Ubuntu (the app).
-  - Hit the Windows key, and search for Ubuntu -> don't open the app.
-  - Instead click on "App Settings", then scroll down and select "Reset".
-  - Next time you open Ubuntu (the app) it will prompt for a username and password.
