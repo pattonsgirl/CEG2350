@@ -1,4 +1,4 @@
-# Lab 08
+# Lab 08 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - To Infinity](#Part-1---To-Infinity)
@@ -17,7 +17,7 @@ Go to the folder that contains your repository (likely named `ceg2350-yourgithub
 
 Create a new directory, `Lab08`
 
-Write anwers in `Lab08.md` the [LabTemplate.md is here](LabTemplate.md).
+Write answers in `Lab08.md` the [LabTemplate.md is here](LabTemplate.md).
 
 - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab08/LabTemplate.md)
 

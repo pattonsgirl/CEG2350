@@ -4,10 +4,8 @@
 - [Part 1 - Play with directories and naming](#Part-1---Play-with-directories-and-naming)
 - [Part 2 - Create and edit a file](#Part-2---Create-and-edit-a-file)
 - [Part 3 - Play with hidden files](#Part-3---Play-with-hidden-files)
-- [Part 4 - Regular `bob`](#Part-4---Regular-bob)
-- [Part 5 - Get a `crew`](#Part-5---Get-a-crew)
-- [Part 6 - `sudo` make me a sandwich](#Part-6---sudo-make-me-a-sandwich)
-- [Extra Credit - Test your skills](#Extra-Credit---Test-your-skills)
+- [Part 4 - AWS Academy Setup](#Part-1---AWS-Academy-Setup)
+- [Part 5 - git cloning](#Part-2---git-cloning)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -29,9 +27,9 @@ This lab assumes
 
 ## Lab Procedure
 
-For each lab in this course, you will be provided with a lab template to fill in your lab answers. The [Lab 01 Template can be copied from this link](https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab01/LabTemplate.md):
+For each lab in this course, you will be provided with a lab template to fill in your lab answers. The [Lab 01 Template can be copied from this link](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab01/LabTemplate.md):
 
-- `https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab01/LabTemplate.md`
+- `https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab01/LabTemplate.md`
 
 In your browser, go to your GitHub repository - `https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME`
 
@@ -86,53 +84,25 @@ To continue editing your file:
 1. Make a copy of `test.txt` inside `DirA` named `.hiddentext.txt`
 2. Write the command and flags needed to see the file in `DirA`
 
-## Part 4 - Regular `bob`
+## Part 4 - AWS Academy Setup
 
-- **Useful commands for this part: `adduser, sudo, su, chown, pwd, cd, whoami, exit`**
-- Mac users: see [note](#mac-users-note)
+An email was sent to your wright.edu account inviting you to join AWS Academy.  
+Follow the instructions in [AWS Academy](../../AWSAcademy.md) to set up your AWS instance.
 
-1. Create a new user named `bob`
-2. What is the path to `bob`'s `home` directory?
-3. Can your user add files to `bob`'s home directory? Why or why not?
-4. Switch to the user `bob`
-5. Get to `bob`'s `home` directory
-6. Can `bob` add files to `bob`'s home directory? Why or why not?
-7. Switch back to the your user
-8. Return to the your user's `home` directory
+## Part 5 - git cloning
 
-## Part 5 - Get a `crew`
+`ssh` to your AWS instance for this part (finish setup from Part 4). It is highly recommended you look at the Resources listed below.
 
-- **Useful commands for this part: `addgroup, usermod, chown, chgrp`**
-- Mac users: see [note](#mac-users-note)
+- **Useful commands for this part: `ssh-keygen`, `cat`, `git clone`, `git add`, `git commit`, `git push`**
 
-1. Create a new group named `crew`
-2. Add your user and `bob` to the `crew` group
-3. Change `DirA` in your user's home directory so that `crew` is the group for the whole folder
-   - Yes, including contents in `DirA`
-4. Switch user to `bob`
-5. As `bob` create a file in `DirA`.
-6. Why was this successful?
+1. Create an SSH key pair on your AWS Ubuntu instance.
+2. Add the public key to GitHub
+3. Clone your repository (a.k.a. repo) to the `ubuntu` user's home directory
 
-## Part 6 - [`sudo` make me a sandwich](https://xkcd.com/149/)
-
-- **Useful commands for this part: `sudo`**
-- Mac users: see [note](#mac-users-note)
-
-1. In the your user's `home` directory, make a file with `sudo` named `sudowho.txt`
-2. What are the permissions of this file?
-3. Without modifying the permissions of the file, edit the file and add some text, and save the changes.
-
-## Extra Credit - Test your skills
-
-- **Useful commands for this part: All of the above!**
-- Mac users: see [note](#mac-users-note)
-
-1. Create a file in `DirB` with the following permission set:
-   - `-rw------- sally crew [size] [datetime] mydiary.txt`
-   - where `[size]` and `[datetime]` are going to be unique for you
-   - write all steps needed to make this happen
-2. Your user would like to edit `sally`'s `mydiary.txt` file, just to mess with her. How can your user do this without changing the permissions?
-3. `bob` wants in on the joke to edit `sally`'s `mydiary.txt` file, just to mess with her. How can `bob` do this without changing the permissions?
+- **Resources:**
+- [GitHub Classrooms - How to Use](../../GitHubClassrooms.md)
+- [GitHub - Generating a New SSH Key](https://docs.github.com/en/enterprise-server@3.3/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- [GitHub - Adding SSH key to your GitHub Account](https://docs.github.com/en/enterprise-server@3.0/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 ## Submission
 
@@ -142,17 +112,4 @@ To continue editing your file:
 ## Rubric
 
 - Each question is worth 1 point.
-- This lab is worth a total of 26 points
-- The extra credit is also worth 1 point per question
-- This makes the extra credit worth ~11.54%
-
-## Mac Users Note
-
-You caught me, no, I have not played much with Macs. Command line management of users and groups on Mac OS is doable, but quite messy. Therefore, please take note of the following workaround.
-
-It is easiest to come to campus and use WSL2 on the labs. If this is not possible for you for reasons:
-This is a browser based Linux system (written in javascript; it's neat): https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=192
-
-Using the terminal provided here, you can create users, play with sudo, etc. By default, only the root user exists. In order to recreate the lab scenario, I recommend starting by creating a user that you can think of as yourself (useradd), then switch to that account (su). You'll need to make some directories in your user's directory to make things interesting, and the rest should be as expected.
-
-Starting next week we will roll out access to AWS, which will help put everyone in a uniform environment and avoid conflicts of OS in the future.
+- This lab is worth a total of 11 points

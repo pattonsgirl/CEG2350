@@ -1,4 +1,4 @@
-# Lab 06
+# Lab 06 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Virtualize the Machine](#Part-1---Virtualize-the-Machine)
@@ -38,7 +38,7 @@ You will need a computer that has CPU virtualization enabled. The lab machines &
   - the instuctions below should apply generically, but if you are having trouble post in the general chat on Discord and we will help as we can
 - Windows 11 Users:
   - Try to install VirtualBox, but it has had mixed support in Windows 11
-  - [Enable Hyper-V Manager](https://www.groovypost.com/howto/enable-virtualization-in-windows-11/)  
+  - [Enable Hyper-V Manager](https://www.groovypost.com/howto/enable-virtualization-in-windows-11/)
 
 **Do the following, and write down the steps used in `Lab06.md` Part 1 Answers.**
 
@@ -76,7 +76,7 @@ You will need a computer that has CPU virtualization enabled. The lab machines &
 1. In your vm, change your desktop background.
 2. In your vm, open a web browser and go to a neat website (or just Pilot).
 3. In your vm, install VSCode.
-4. In your vm, connect to your AWS instance from your VM. 
+4. In your vm, connect to your AWS instance from your VM.
 
 ## Hints - Screenshots and markdown
 

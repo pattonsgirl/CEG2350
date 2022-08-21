@@ -1,4 +1,4 @@
-# Lab 10
+# Lab 10 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Network Discovery](#Part-1---Network-Discovery)
@@ -57,7 +57,6 @@ For this part, I have configured a server to toy with for this part. The server'
 - Resources:
 
 - [nmap service and version detection](https://nmap.org/book/man-version-detection.html)
-
 
 ## Part 3 - Get Off My Port
 

@@ -1,4 +1,4 @@
-# Lab 04
+# Lab 04 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
 - [regex resources](#regex-resources)

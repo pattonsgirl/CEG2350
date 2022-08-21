@@ -1,4 +1,4 @@
-# Lab 07
+# Lab 07 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - unallocated resources](#Part-1---unallocated-resources)
@@ -17,7 +17,7 @@ Go to the folder that contains your repository (likely named `ceg2350-yourgithub
 
 Create a new directory, `Lab07`
 
-Write anwers in `Lab07.md` the [LabTemplate.md is here](LabTemplate.md).
+Write answers in `Lab07.md` the [LabTemplate.md is here](LabTemplate.md).
 
 - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab07/LabTemplate.md)
 

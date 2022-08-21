@@ -1,4 +1,4 @@
-# Lab 03
+# Lab 03 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - IO Redirection](#Part-1---IO-Redirection)
@@ -12,7 +12,7 @@
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/13249/modules/items/1136419)
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/24167/modules/items/1982401)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
@@ -22,9 +22,9 @@ Create a new directory, `Lab03`
 
 This lab will have you creating input files, scripts, and output files. All of your work should be found here.
 
-Some questions will need you to write anwers in `Lab03.md` the [LabTemplate.md is here](LabTemplate.md).
+Some questions will need you to write answers in `Lab03.md` the [LabTemplate.md is here](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab03/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab03/LabTemplate.md)
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
@@ -144,7 +144,7 @@ Make sure you `commit` and `push` your script changes for grading.
   - If condition is not met, error message is output to standard output - 1 pt
 - Part 4 - 2 pts
   - script usage guide - 1 pt
-  - specificed files exist in `Lab03` folder - 1 pt
+  - specified files exist in `Lab03` folder - 1 pt
 - Part 5 - 3.5 pts total
   - 0.5 pts each
 - The extra credit is worth 0.625 pts
