@@ -98,6 +98,10 @@ This guide here refers to a [Chrome Extension for SSH connections](https://www.l
   questions to pop up.
 
 ### WSL 2 Install Errors
+- After running `wsl --install` in Powershell as Administrator, I get the following error:
+  - `"The term 'wsl' is not recognized as the name of a cmdlet, function, script file, or operable program."`
+  - See steps 3 & 4 of the following the link to get the install the Windows feature needed for WSL2:
+  - https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-3---enable-virtual-machine-feature
 
 - **WSL2 says I am the `root` user by default**
 
