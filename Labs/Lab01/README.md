@@ -87,7 +87,7 @@ To continue editing your file:
 ## Part 4 - AWS Academy Setup
 
 An email was sent to your wright.edu account inviting you to join AWS Academy.  
-Follow the instructions in [AWS Academy](../../AWSAcademy.md) to set up your AWS instance.
+Follow the instructions in [AWS Academy](../../AWSAcademySetup.md) to set up your AWS instance.
 
 ## Part 5 - git cloning
 
