@@ -6,7 +6,6 @@
 - [Part 3 - Get a `crew`](#Part-3---Get-a-crew)
 - [Part 4 - `sudo` make me a sandwich](#Part-4---sudo-make-me-a-sandwich)
 - [Part 5 - ssh config](#Part-5---ssh-config)
-- [Extra Credit - Test your skills](#Extra-Credit---Test-your-skills)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -28,16 +27,18 @@ In Lab 01, you set up an instance on AWS **and** cloned your GitHub repository t
 
 This part assumes you successfully cloned your repository to your instance on AWS. If you are behind here, you should talk with the instructor or TA to get back on track.
 
-- **Useful commands for this part: `git add`, `git commit`, `git push`**
+- **Useful commands for this part: `git add`, `git commit`, `git push`, `git pull`**
 
-1. In your repo folder, create a folder named `Lab02`
+1. In your repository folder (the folder you `clone`d from GitHub), create a folder named `Lab02`
 2. In the `Lab02` folder, create a file named `Lab02.md`
 3. Paste the contents of the [LabTemplate.md](LabTemplate.md) into this file
    - [Link to raw LabTemplate](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab02/LabTemplate.md)
 4. `add` `Lab02.md` for tracking, `commit` changes as you go, and `push` to synchronize with GitHub
-5. Fill in the Part 2 Answers with the command(s) to do the requested action.
+5. Fill in the Part 1 Answers with a simple guide for taking a new, locally created file in your repository, and syncing it with GitHub.
 
 ## Part 2 - Regular `bob`
+
+Perform the following exercise on your AWS instance
 
 - **Useful commands for this part: `adduser, sudo, su, chown, pwd, cd, whoami, exit`**
 
@@ -52,6 +53,8 @@ This part assumes you successfully cloned your repository to your instance on AW
 
 ## Part 3 - Get a `crew`
 
+Perform the following exercise on your AWS instance. Create `DirA` and `DirB` in your user's home directory.
+
 - **Useful commands for this part: `addgroup, usermod, chown, chgrp`**
 
 1. Create a new group named `crew`
@@ -64,6 +67,8 @@ This part assumes you successfully cloned your repository to your instance on AW
 
 ## Part 4 - [`sudo` make me a sandwich](https://xkcd.com/149/)
 
+Perform the following exercise on your AWS instance
+
 - **Useful commands for this part: `sudo`**
 
 1. In the your user's `home` directory, make a file with `sudo` named `sudowho.txt`
@@ -72,9 +77,9 @@ This part assumes you successfully cloned your repository to your instance on AW
 
 ## Part 5 - ssh config
 
-On your local system (`exit` from your AWS instance), you used an SSH command to log on to your AWS Ubuntu instance. There is a neat configuration file that can be used to create a "shortcut" of sorts. Read the resources for this section, then configure the `.ssh/config` file for your user on your system with information on your `ssh` connection to your AWS instance.
+On your local system (`exit` from your AWS instance), you used an SSH command to log on to your AWS Ubuntu instance. There is a neat configuration file that can be used to create an alias of sorts. Read the resources for this section, then configure the `.ssh/config` file for your user on your system with information on your `ssh` connection to your AWS instance.
 
-1. Write the command you used to `ssh` in to your AWS instance.
+1. Write the command you have been using to `ssh` in to your AWS instance.
 2. Provide the HostName (IP address) of your AWS Ubuntu instance:
 3. Provide the user name that you are logging on to the system with:
 4. Provide the absolute / full path to the private key (Identity File) on your local system:
@@ -89,17 +94,7 @@ Paste your config file entry here
 - **Resources**
 - [linuxize - Using the ssh config file](https://linuxize.com/post/using-the-ssh-config-file/)
 - [cyberciti.biz - config file examples](https://www.cyberciti.biz/faq/create-ssh-config-file-on-linux-unix/)
-
-## Extra Credit - Test your skills
-
-- **Useful commands for this part: All of the above!**
-
-1. Create a file in `DirB` with the following permission set:
-   - `-rw------- sally crew [size] [datetime] mydiary.txt`
-   - where `[size]` and `[datetime]` are going to be unique for you
-   - write all steps needed to make this happen
-2. Your user would like to edit `sally`'s `mydiary.txt` file, just to mess with her. How can your user do this without changing the permissions?
-3. `bob` wants in on the joke to edit `sally`'s `mydiary.txt` file, just to mess with her. How can `bob` do this without changing the permissions?
+- The `Port`, if you wish to include it in your `config` is `22`
 
 ## Submission
 
@@ -109,7 +104,8 @@ Paste your config file entry here
 ## Rubric
 
 - Part 1 - 3 pts
-- Part 2 - 3 pts total
-  - 1 pt per question
-- Part 3 - 6 pts total
-  - 1 pt per question
+- Part 2 - 8 pts
+- Part 3 - 6 pts
+- Part 4 - 3 pts
+- Part 5 - 3 pts
+  - 0.5 pts / question
