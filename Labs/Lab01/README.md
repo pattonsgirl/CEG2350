@@ -100,7 +100,7 @@ Follow the instructions in [AWS Academy](../../AWSAcademySetup.md) to set up you
 3. Clone your repository (a.k.a. repo) to the `ubuntu` user's home directory
 
 - **Resources:**
-- [GitHub Classrooms - How to Use](../../GitHubClassrooms.md)
+- [GitHub Classrooms - How to Use](../../GitHubSetup.md)
 - [GitHub - Generating a New SSH Key](https://docs.github.com/en/enterprise-server@3.3/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - [GitHub - Adding SSH key to your GitHub Account](https://docs.github.com/en/enterprise-server@3.0/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 

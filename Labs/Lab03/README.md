@@ -82,7 +82,7 @@ This and the following parts are meant to be done in your AWS instance in your `
 
 - **Resources:**
 - [Command Line Arguments in Shell Script](https://tecadmin.net/tutorial/bash-scripting/bash-command-arguments/)
-- [Use Command Line Arguents in Bash Script](https://www.baeldung.com/linux/use-command-line-arguments-in-bash-script)
+- [Use Command Line Arguments in Bash Script](https://www.baeldung.com/linux/use-command-line-arguments-in-bash-script)
 - [Positional Parameters](http://linuxcommand.org/lc3_wss0120.php)
 
 ## Part 3 - Intro to Regular Expressions
@@ -99,7 +99,7 @@ This and the following parts are meant to be done in your AWS instance in your `
 ## Part 4 - Docs and Repos
 
 1. Fill in the "Script Usage Guide" section with at least the specified elements
-   - You are welcome to replace this with any additonal markdown you would like to make it look good
+   - You are welcome to replace this with any additional markdown you would like to make it look good
 2. Verify that your GitHub repo has a `Lab03` folder with:
    - `input.txt`
    - `output.txt`
