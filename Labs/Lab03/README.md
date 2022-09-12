@@ -1,4 +1,4 @@
-# Lab 03 - NOT FINALIZED
+# Lab 03
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - IO Redirection](#Part-1---IO-Redirection)
