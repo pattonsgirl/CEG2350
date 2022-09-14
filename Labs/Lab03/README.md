@@ -75,6 +75,7 @@ This and the following parts are meant to be done in your AWS instance in your `
 
    - Reads in a filename as an argument.
      - Runs with `sorting-party filename`
+     - Note: this will look a little different depending on file permissions and the state of PATH
    - Sorts the contents of the file given in the argument using the `sort` command.
    - Outputs the sorted data to a file called `sorted.txt`
 
