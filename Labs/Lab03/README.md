@@ -109,6 +109,8 @@ This and the following parts are meant to be done in your AWS instance in your `
 
 ## Part 5 - .profile and PATH
 
+In this part, your task is to read `~/.profile` and focus on the `if` statements that change the value of `PATH`.  Your goal is to create the things needed for **one** of the conditions to evaluate to `true`.  Right now, both evaluate to `false`.  Remember, the `test` command is what is being used when you see `[` (square brackets).  The flag / relational condition being checked is an option of the `test` command.
+
 1. What is the value of the `PATH` environment variable?
 
 2. Read through your `~/.profile`. Determine where your binary files and scripts should go in order to be part of the PATH variable. Write the path.
