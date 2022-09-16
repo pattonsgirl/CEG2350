@@ -1,25 +1,25 @@
 ## Lab 03
 
-- Name:
-- Email
+- Name: Chaize Deloach
+- Email: deloach.8@wright.edu
 
 ## Part 1 Answers
 
 1. Verify here that input.txt made it to GitHub in your `Lab03` folder
-2.
-3.
+2. sort input.txt
+3. sort input.txt > output2.txt
 
 ## Script Usage Guide
 
-1. How to run
-2. What extensions are expected
-3. What is the output
+1. How to run: ./sorting-party.sh
+2. What extensions are expected: .txt files
+3. What is the output: It(the file) ends in the right extension.
 
 ## Part 5 Answers
 
-1. PATH =
-2.
-3. Command:
+1. PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+2. "HOME/.local/bin
+3. Command: cd HOME/.local/bin sudo vim mkdir
    - Full path:
 4. PATH =
    - Difference:
