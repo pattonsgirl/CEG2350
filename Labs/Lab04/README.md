@@ -45,13 +45,11 @@ grep [OPTIONS] PATTERN [FILE...]
 
 Create a file named `grepdata.txt` in your `Lab04` folder. Put the contents of [grepdata.txt](grepdata.txt) in the file. Use `grep` to complete the searches below. Only write the command that makes the required match. DO NOT paste the results.
 
-1. Print all lines that contain a phone number with an extension (the letter x or X followed by four digits).
+1. Print only lines that contain a phone number with an extension (the letter x or X followed by four digits).
    - Your answer must use the \{ and \} repetition specifier.
-2. Print all lines that begin with three digits followed by a blank.
-   - Your answer must use the \{ and \} repetition specifier.
-3. Print all lines that contain a date after the year 2000.
-4. Print all lines that contain CA in either uppercase or lowercase.
-5. Print all lines that contain an email address (they have an @ in them), preceded by the line number (as in which line the match occurred on).
+2. Print only lines that contain CA in either uppercase or lowercase.
+3. Print only lines that contain an email address.
+4. Print only lines that contain a date after the year 2000.
 
 - **Resources**
 - [linuxize - use grep to search patterns](https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/)
@@ -99,8 +97,7 @@ Only write the command that performs the required task. DO NOT paste the results
    - `Last, First: Email`
 4. For users who have a `wright.edu` email AND have a password of `1234`, print only their last name and favorite number in the following format:
    - `Last favorite number is: #`
-5. Replace emails from domain `space.edu` with `universe.edu`. Write all records to `update1.txt`
-6. Replace all passwords with `N0T@PL@!NP@$$W0RD`. Write all records to `update2.txt`
+5. Replace all passwords with `N0T@PL@!NP@$$W0RD`. Write all records to `updaterecords.txt`
 
 - **Resources**
 - [linuxize - awk with examples](https://linuxize.com/post/awk-command/)
@@ -114,8 +111,7 @@ Only write the command that performs the required task. DO NOT paste the results
    - `sedfile.html`
    - `sedfile.md`
    - `records.txt`
-   - `update1.txt`
-   - `update2.txt`
+   - `updaterecords`
    - `Lab04.md`
 
 2. In the Pilot Dropbox, paste the URL to the `Lab04` folder in your GitHub repo

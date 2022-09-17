@@ -9,7 +9,7 @@
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/13249/modules/items/1136419)
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/24167/modules/items/1982401)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
@@ -19,9 +19,9 @@ Create a new directory, `Lab05`
 
 This lab may have you creating input files, scripts, and output files. All of your work should be found here.
 
-Some questions will need you to write anwers in `Lab05.md` the [LabTemplate.md is here](LabTemplate.md).
+Some questions will need you to write answers in `Lab05.md` the [LabTemplate.md is here](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab05/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab05/LabTemplate.md)
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
@@ -80,9 +80,9 @@ spellingerror
 
 Find out the following information about your personal system. Write the answers to the information requested. Part of this is learning about your system, so some info will not be findable. Provide confirmation of your findings where possible.
 
-For example, my laptop does not have a dedicated gpu card. I can run commands whose output will confirm there is no GPU
+For example, my laptop does not have a dedicated GPU card. I can run commands whose output will confirm there is no GPU
 
-- You can use the manufactuers website / manuals
+- You can use the manufacturers website / manuals
 - Windows users, I recommend `msinfo`
 - You should _not_ need to install additional programs to find this information. If someone tells you to install something, run away.
 
@@ -105,7 +105,7 @@ This build on the script created for Part 1. Since the core is similar, I would 
 
 1. Download and run [this script](createfiles.sh). It will generate some dummy files for this part.
    - Errors in these file names that can be corrected with a script:
-     - `jpg` is mispelled as `jgp`
+     - `jpg` is misspelled as `jgp`
      - spaces in file names that could be replaced with `-`
      - files with `foo` in them need to become `bar`
 2. The script will run as: `bulkrenamer -f find -r replace FILES_TO_RENAME*`
