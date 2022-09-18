@@ -1,4 +1,4 @@
-# Lab 04 - NOT FINALIZED
+# Lab 04
 
 - [Lab Procedure](#Lab-Procedure)
 - [regex resources](#regex-resources)
@@ -29,6 +29,8 @@ For each part below, you will be asked to do an action or answer a question. The
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
 ## regex resources
+
+These are useful resources for remembering regex syntax and testing your expressions against smaller cases (regex 101 is recommended).
 
 - [Mozilla - regex cheatsheet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet)
 - [regexone - practice regex patterns](https://regexone.com/)
@@ -123,6 +125,6 @@ Only write the command that performs the required task. DO NOT paste the results
 - Part 2 - 1 pt per question
 - Part 3 - 1 pt per question
 
-## Credit
+## Credit & inspiration
 
 - grep exercises: http://evc-cit.info/cit052/grep1.html
