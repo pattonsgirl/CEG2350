@@ -1,0 +1,5 @@
+Bucks Milwaukee    60 22 0.732 
+Raptors Toronto    58 24 0.707 
+76ers Philadelphia 51 31 0.622
+Celtics Boston     49 33 0.598
+Pacers Indiana     48 34 0.585
