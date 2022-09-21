@@ -65,6 +65,10 @@ The following picture shows how `sedfile.html` (the original) looks compared to 
 ![sed Before and After](sed-before-after.PNG)
 
 I recommend using `sed` without modifying the file at first - once you know your replacement patterns work, then save the changes to an output file.
+```
+sed -i 's/SEARCH_REGEX/REPLACEMENT/g' INPUTFILE
+# -i option tells sed to edit files in place. If an extension is supplied (ex -i.bak), a backup of the original file is created
+```
 
 Only write the command that performs the required task. DO NOT paste the results.
 
