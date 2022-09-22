@@ -43,7 +43,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
      - use as case when option is not part of `OPTSTRING`
      - call `printHelp` and exit script
    - there are `getopts` demos linked in resources, as well as in this folder
-     - [getopts-basics.sh](getopt-basics.sh)
+     - [getopts-basics.sh](getopts-basics.sh)
      - [cfgetopts.sh](cfgetopts.sh)
 
 3. Create a function called `printHelp`. `printHelp` should output the following:
@@ -84,7 +84,7 @@ Renamed spellingerrrr.txt to spellingerror.txt
 
 ## Extra Credit - Bulk Renamer
 
-This build on the script created for Part 1. Since the core is similar, I would `cp` this to a new script named `bulkrenamer`.
+This builds on the script created for Part 1. Since the core is similar, I would `cp` this to a new script named `bulkrenamer`.
 
 1. Download and run one of the create files scripts to generate some dummy files for this part.
    - [createfiles.sh](createfiles.sh) will just create 30 files in the directory you run it from (10 of each error type below)
