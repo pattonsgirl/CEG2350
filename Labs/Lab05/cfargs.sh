@@ -6,7 +6,7 @@
 # Where to create files (in what folder)
 
 # Usage:
-# cfargs.sh spaces 5 .
+# cfargs.sh 5 spaces .
 
 # Problems: 
 # order matters.  Entering an argument in wrong order will lead to disaster
