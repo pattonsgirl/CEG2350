@@ -1,15 +1,16 @@
 # Lab 06 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Virtualize the Machine](#Part-1---Virtualize-the-Machine)
-- [Part 2 - Playground](#Part-2---Playground)
+- [Part 1 - Self Discovery](#Part-1---Self-Discovery)
+- [Part 2 - Virtualize the Machine](#Part-2---Virtualize-the-Machine)
+- [Part 3 - Playground](#Part-3---Playground)
 - [Hints - Screenshots and markdown](#Hints---Screenshots-and-markdown)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
 ## Lab Procedure
 
-The focus of this lab is creating a virtual machine - you are not required to utilize the AWS instance for this lab. You will be creating a `Lab06.md` file for your work in this lab, which will mostly be documentation and screenshots. To create and edit the file, you are welcome to use your AWS instance (or anywhere your repo is cloned) or edit the file directly in the broswer.
+The focus of this lab is creating a virtual machine - you are not required to utilize the AWS instance for this lab. You will be creating a `Lab06.md` file for your work in this lab, which will mostly be documentation and screenshots. To create and edit the file, you are welcome to use your AWS instance (or anywhere your repo is cloned) or edit the file directly in the browser.
 
 In your repository (the folder named `ceg2350-yourgithubusername):
 
@@ -17,9 +18,32 @@ Create a new directory, `Lab06`
 
 Create a file named `Lab06.md` [based on the template](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab06/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab06/LabTemplate.md)
 
-## Part 1 - Virtualize the Machine
+## Part 1 - Self Discovery
+
+Find out the following information about your personal system. Write the answers to the information requested. Part of this is learning about your system, so some info will not be findable. Provide confirmation of your findings where possible.
+
+For example, my laptop does not have a dedicated GPU card. I can run commands whose output will confirm there is no GPU
+
+- You can use the manufacturers website / manuals
+- Windows users, I recommend `msinfo`
+- You should _not_ need to install additional programs to find this information. If someone tells you to install something, run away.
+
+1. CPU brand, number of cores, and number of logical cores
+2. Physical memory size (translate to GB)
+3. Virtual memory size (translate to GB)
+   - Does your system have a pagefile, and if so where is it?
+4. Disk type / model
+5. Disk size (translate to GB)
+6. Remaining disk space (translate to GB)
+7. File system used on primary partition
+   - C partition for Windows users
+   - / partition for Linux / Mac(?) users
+8. BIOS mode / version
+9. Note whether or not your BIOS / UEFI is accessible, and what steps should let you access it.
+
+## Part 2 - Virtualize the Machine
 
 We have been talking about the boot process, computer parts, and installing operating systems, but it's hard to give you a computer to build and feel this out - so how about a virtual one!
 
@@ -48,11 +72,11 @@ You will need a computer that has CPU virtualization enabled. The lab machines &
    - 2 GB RAM
    - 10 GB disk space
 2. Add a screenshot to your documentation of your virtualized hardware configuration
-3. Download an iso (installation image) for a Linux distubution of your choice. State which Linux distrubition you picked
+3. Download an ISO (installation image) for a Linux distribution of your choice. State which Linux distribution you picked
    - Ubuntu Desktop is a safe bet
    - Linux Mint, Elementary, Kali, Pop OS - or check distro watch
    - I will warn that if your selection "isn't working" you should try Ubuntu and move on with life
-4. Start your machine and select your iso (installation image)
+4. Start your machine and select your ISO (installation image)
 5. Go through the installation process for your chosen Linux distribution
    - For ease right now, I would select "Erase and install" - however that is phrased
    - Some OSes will have default partition settings that do not play well with only 10GB
@@ -69,14 +93,14 @@ You will need a computer that has CPU virtualization enabled. The lab machines &
    - Reboot your VM, then Auto-resize Guest Display
 8. Add a screenshot to your documentation of your running VM
 
-## Part 2 - Playground
+## Part 3 - Playground
 
 **Do the following, and write down the steps used in `Lab06.md` Part 2 Answers**
 
-1. In your vm, change your desktop background.
-2. In your vm, open a web browser and go to a neat website (or just Pilot).
-3. In your vm, install VSCode.
-4. In your vm, connect to your AWS instance from your VM.
+1. In your VM, change your desktop background.
+2. In your VM, open a web browser and go to a neat website (or just Pilot).
+3. In your VM, install VSCode.
+4. In your VM, connect to your AWS instance from your VM.
 
 ## Hints - Screenshots and markdown
 
@@ -111,5 +135,6 @@ We are going to be adding images directly to GitHub, then using `git pull` to ge
 
 ## Rubric
 
-- Part 1 - 1 pt per question - 8 pts total
-- Part 2 - 1 pt per question - 4 pts total
+- Part 1 - 1 pt per question - 9 pts total
+- Part 2 - 1 pt per question - 8 pts total
+- Part 3 - 1 pt per question - 4 pts total

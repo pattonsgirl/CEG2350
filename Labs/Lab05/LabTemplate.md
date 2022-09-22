@@ -3,20 +3,18 @@
 - Name:
 - Email
 
-## Part 1 Answers
+## namechange Usage Guide
 
-Verify the following is in your `Lab05` folder in GitHub
+Examples of script usage and output. This should be enough info that  
+you can hand this and the script to someone not in this course and they  
+would be able to understand what your script does and how to use it.
 
-- `namechange`
+Use good markdown so that this documentation is pretty and clean on GitHub.
 
-## Part 2 Answers
+## bulkrenamer Usage Guide - Remove if not doing extra credit
 
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
+Examples of script usage and output. This should be enough info that  
+you can hand this and the script to someone not in this course and they  
+would be able to understand what your script does and how to use it.
+
+Use good markdown so that this documentation it is pretty and clean on GitHub.
