@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# function usageGuide prints usage guide on -h (help) option
+# could use if bad options provided as well
 usageGuide() {
 	echo "Usage guide for file creator"
 	echo "Sample: cfgetopts.sh -n 5 -t spelling ."
@@ -8,15 +10,19 @@ usageGuide() {
 	echo "final arg = directory to create files"
 }
 
-#usageGuide
-
+# :hn:t:
+# h is an option, does not require an arg (thus h)
+# n is an option, does require an arg (thus n:)
+# t is an option, does require an arg (thus t:)
+# The leading colon:  switches getopts to "silent error reporting mode"
+# So that you can handle errors yourself (think you handle Exceptions)
 while getopts ":hn:t:" opt; do
 	#echo "$OPTARG is currently stored in OPTARG"
-	echo "$OPTIND is the index point in OPTIND"
+	#echo "$OPTIND is the index point in OPTIND"
 	case $opt in
 	h)
 		usageGuide
-		exit
+		exit 1
 		;;
 	n)	#echo $OPTARG
 		num=$OPTARG
@@ -27,31 +33,33 @@ while getopts ":hn:t:" opt; do
 	\?)
       		echo "Invalid option: -$OPTARG" >&2
       		;;
+	:)
+      		# this is surprisingly useless.  Take out the arg for -n.
+		# -t will then be read as the argument
+		# Try it: cfgetopts.sh -n
+		# Try it: cfgetopts.sh -n 5 -t
+		echo "Option -$OPTARG requires an argument." >&2
+      		exit 1
+      		;;
 	esac
 done
 
-# before echoing, check that both variables have contents.  If no contents, usage guide and exit
-# SCARY PASTE CHANGES EVERYTHING
-echo "dollar at before shift: $@"
+# TODO: before echoing, check that both variables have contents.  
+# If no contents, print usage guide and exit
+
+# getopts has keep a running index of options checked so far
+# move to end of scanned options - in this case with expected usage
+# what "remains" is the folder specified
 shift $((OPTIND-1))
-echo "They told me to run dollar at: $@"
 
-echo "the user wants $num of files"
-echo "files should have $error"
-
-echo "the 5th value is: $5"
-
-echo "OPTARG = $OPTARG"
-echo "OPTIND = $OPTIND"
-#for j in $@
-#do
-#	echo "arg - $j"
-#done
+echo "The user wants $num files"
+echo "File names should have $error errors"
+echo "Files should be created in $@"
 
 if [[ -d $@ ]];then
-	echo "Directory exists"
+	echo "Directory $@ exists"
 else
-	echo "does not exit bye"
+	echo "Directory $@ does not exist bye"
 	usageGuide
 	exit	
 fi
