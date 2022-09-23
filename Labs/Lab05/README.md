@@ -1,7 +1,7 @@
-# Lab 05 - NOT FINALIZED
+# Lab 05
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Name Change](#Part-1---Name-Change)
+- [Name Change](#Name-Change)
 - [Extra Credit - Bulk Renamer](#Extra-Credit---Bulk-Renamer)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
@@ -27,7 +27,7 @@ For each part below, you will be asked to do an action or answer a question. The
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-## Part 1 - Name Change
+## Name Change
 
 1. Create a script in your `Lab05` folder named `namechange`. Create some files with common errors (spaces in the filename, a misspelling, etc.). The final script will run as follows:  
    `namechange -f find -r replace filename`
