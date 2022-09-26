@@ -1,16 +1,15 @@
 # Midterm Review for CEG 2350
 
-## Spring 2022
+## Fall 2022
 
 ## Da Rules
 
-Midterm: Monday 3/7
+Midterm: Thursday 10/6
 
-- Available 8:00 AM to 11:59 PM
+- Available 9:30 AM - 10:50 AM
 - 1 attempt, 1 hour and 20 minutes once started
 - Open note, open terminal
 - No class - only exam.
-- I will be in Oelman Hall 320 from 4:40 to 6:00 PM if you want to take the exam in the room
 
 ## Intro topics
 
@@ -36,9 +35,10 @@ Midterm: Monday 3/7
 4. Ownership & sharing
    - rwx permissions in Linux (and Windows counterpart)
    - user vs. group vs. other
-   - chmod, chown, chgrp
-   - User types and groups: sudo vs. admin vs. “other” (sudo, adduser, deluser)
-5. PATH
+   - chmod, chown, chgrp, adduser, deluser
+   - User types and groups
+   - sudo & the root user
+5. PATH vs path and environment variables
 
 ## Scripting
 
