@@ -55,6 +55,7 @@ Create a file named `grepdata.txt` in your `Lab04` folder. Put the contents of [
 
 - **Resources**
 - [linuxize - use grep to search patterns](https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/)
+- [RedHat - Beginners Guide to regular expressions with grep](https://developers.redhat.com/articles/2022/09/14/beginners-guide-regular-expressions-grep#)
 
 ## Part 2 - sed
 
@@ -65,6 +66,7 @@ The following picture shows how `sedfile.html` (the original) looks compared to 
 ![sed Before and After](sed-before-after.PNG)
 
 I recommend using `sed` without modifying the file at first - once you know your replacement patterns work, then save the changes to an output file.
+
 ```
 sed -i 's/SEARCH_REGEX/REPLACEMENT/g' INPUTFILE
 # -i option tells sed to edit files in place. If an extension is supplied (ex -i.bak), a backup of the original file is created
