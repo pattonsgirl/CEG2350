@@ -80,6 +80,7 @@ Renamed spellingerrrr.txt to spellingerror.txt
 - [bash-hackers - `getopts` tutorial](https://wiki.bash-hackers.org/howto/getopts_tutorial)
 - [assertnotmagic - breaking down how getopts works](https://www.assertnotmagic.com/2019/03/08/bash-advanced-arguments/)
 - [`sed` with string, not input file](https://stackoverflow.com/questions/13055889/sed-with-literal-string-not-input-file)
+- [cyberciti - using Logical NOT in if statements](https://bash.cyberciti.biz/guide/Logical_Not_!)
 - [linuxize - functions](https://linuxize.com/post/bash-functions/)
 
 ## Extra Credit - Bulk Renamer
