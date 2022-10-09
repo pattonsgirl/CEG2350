@@ -10,7 +10,7 @@
 3. Physical memory
 4. Virtual memory
 5. Disk type / model
-6. Disk space
+6. Total disk size
 7. Remaining space
 8. File system
 9. BIOS / UEFI

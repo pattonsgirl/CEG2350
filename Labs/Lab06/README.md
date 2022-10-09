@@ -36,8 +36,8 @@ For example, my laptop does not have a dedicated GPU card. I can run commands or
 4. Virtual memory size (translate to GB)
    - Some systems will call virtual memory a pagefile
 5. Disk type / model
-6. Disk size (translate to GB)
-7. Remaining disk space (translate to GB)
+6. Total disk size (translate to GB)
+7. Remaining disk space on primary partition (translate to GB)
 8. File system used on primary partition
    - C partition for Windows users
    - / partition for Linux / Mac(?) users
