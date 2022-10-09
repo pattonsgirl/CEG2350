@@ -1,49 +1,25 @@
-# Lab 06 - NOT FINALIZED
+# Lab 07 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Self Discovery](#Part-1---Self-Discovery)
-- [Part 2 - Virtualize the Machine](#Part-2---Virtualize-the-Machine)
-- [Part 3 - Playground](#Part-3---Playground)
+- [Part 1 - Virtualize the Machine](#Part-1---Virtualize-the-Machine)
+- [Part 2 - Playground](#Part-2---Playground)
 - [Hints - Screenshots and markdown](#Hints---Screenshots-and-markdown)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
 ## Lab Procedure
 
-The focus of this lab is creating a virtual machine - you are not required to utilize the AWS instance for this lab. You will be creating a `Lab06.md` file for your work in this lab, which will mostly be documentation and screenshots. To create and edit the file, you are welcome to use your AWS instance (or anywhere your repo is cloned) or edit the file directly in the browser.
+The focus of this lab is creating a virtual machine - you are not required to utilize the AWS instance for this lab. You will be creating a `Lab07.md` file for your work in this lab, which will mostly be documentation and screenshots. To create and edit the file, you are welcome to use your AWS instance (or anywhere your repo is cloned) or edit the file directly in the browser.
 
 In your repository (the folder named `ceg2350-yourgithubusername):
 
-Create a new directory, `Lab06`
+Create a new directory, `Lab07`
 
-Create a file named `Lab06.md` [based on the template](LabTemplate.md).
+Create a file named `Lab07.md` [based on the template](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab06/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab07/LabTemplate.md)
 
-## Part 1 - Self Discovery
-
-Find out the following information about your personal system. Write the answers to the information requested. Part of this is learning about your system, so some info will not be findable. Provide confirmation of your findings where possible.
-
-For example, my laptop does not have a dedicated GPU card. I can run commands whose output will confirm there is no GPU
-
-- You can use the manufacturers website / manuals
-- Windows users, I recommend `msinfo`
-- You should _not_ need to install additional programs to find this information. If someone tells you to install something, run away.
-
-1. CPU brand, number of cores, and number of logical cores
-2. Physical memory size (translate to GB)
-3. Virtual memory size (translate to GB)
-   - Does your system have a pagefile, and if so where is it?
-4. Disk type / model
-5. Disk size (translate to GB)
-6. Remaining disk space (translate to GB)
-7. File system used on primary partition
-   - C partition for Windows users
-   - / partition for Linux / Mac(?) users
-8. BIOS mode / version
-9. Note whether or not your BIOS / UEFI is accessible, and what steps should let you access it.
-
-## Part 2 - Virtualize the Machine
+## Part 1 - Virtualize the Machine
 
 We have been talking about the boot process, computer parts, and installing operating systems, but it's hard to give you a computer to build and feel this out - so how about a virtual one!
 
@@ -53,18 +29,21 @@ You will need a computer that has CPU virtualization enabled. The lab machines &
 
 - Windows, Linux, Mac users:
   - [Download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-  - Pick your host OS when installing (for example, I would pick "Windows hosts")
+  - Pick your host OS when installing
+    - For example, Windows users should select "Windows hosts")
 - Mac M1 Users:
   - Install either:
     - Parallels - Wright State offers a student discount on Parallels
       - [Get Parallels via the Hub](https://www.wright.edu/information-technology/software-purchases-for-personal-use)
     - [UTM](https://mac.getutm.app/) - free if you click "Download". You can support the developers by paying through the App Store.
-  - the instuctions below should apply generically, but if you are having trouble post in the general chat on Discord and we will help as we can
+  - the instructions below should apply generically, but if you are having trouble post in the general chat on Discord and we will help as we can
 - Windows 11 Users:
   - Try to install VirtualBox, but it has had mixed support in Windows 11
   - [Enable Hyper-V Manager](https://www.groovypost.com/howto/enable-virtualization-in-windows-11/)
+- Chromebook Users:
+  - You may need to use one of the open labs (320 OH during lab time, or Russ 152 B or D) or be prepared to use a different system you have access to.
 
-**Do the following, and write down the steps used in `Lab06.md` Part 1 Answers.**
+**Do the following, and write down the steps used in `Lab07.md` Part 1 Answers.**
 
 1. Create a Virtual Machine with the following minimum specifications:
    - Type: Linux
@@ -93,9 +72,9 @@ You will need a computer that has CPU virtualization enabled. The lab machines &
    - Reboot your VM, then Auto-resize Guest Display
 8. Add a screenshot to your documentation of your running VM
 
-## Part 3 - Playground
+## Part 2 - Playground
 
-**Do the following, and write down the steps used in `Lab06.md` Part 2 Answers**
+**Do the following, and write down the steps used in `Lab07.md` Part 2 Answers**
 
 1. In your VM, change your desktop background.
 2. In your VM, open a web browser and go to a neat website (or just Pilot).
@@ -125,16 +104,15 @@ We are going to be adding images directly to GitHub, then using `git pull` to ge
 
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab06` folder with at minimum:
+1. Verify that your GitHub repo has a `Lab07` folder with at minimum:
 
-   - `Lab06.md`
+   - `Lab07.md`
    - an `images` folder (with your screenshots inside)
 
-2. In the Pilot Dropbox, paste the URL to the `Lab06` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab06
+2. In the Pilot Dropbox, paste the URL to the `Lab07` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab07
 
 ## Rubric
 
-- Part 1 - 1 pt per question - 9 pts total
-- Part 2 - 1 pt per question - 8 pts total
-- Part 3 - 1 pt per question - 4 pts total
+- Part 1 - 1 pt per question - 8 pts total
+- Part 2 - 1 pt per question - 4 pts total
