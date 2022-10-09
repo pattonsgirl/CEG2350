@@ -1,114 +1,140 @@
-# Lab 07 - NOT FINALIZED
+# Lab 06 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - unallocated resources](#Part-1---unallocated-resources)
-- [Part 2 - inode what is up](#Part-2---inode-what-is-up)
-- [Extra Credit - take a fstab at this](#Extra-Credit---take-a-fstab-at-this)
+- [Part 1 - Self Discovery](#Part-1---Self-Discovery)
+- [Part 2 - Virtualize the Machine](#Part-2---Virtualize-the-Machine)
+- [Part 3 - Playground](#Part-3---Playground)
+- [Hints - Screenshots and markdown](#Hints---Screenshots-and-markdown)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/13249/modules/items/1136419)
+The focus of this lab is creating a virtual machine - you are not required to utilize the AWS instance for this lab. You will be creating a `Lab06.md` file for your work in this lab, which will mostly be documentation and screenshots. To create and edit the file, you are welcome to use your AWS instance (or anywhere your repo is cloned) or edit the file directly in the browser.
 
-Use `ssh` to connect to your AWS Ubuntu instance.
+In your repository (the folder named `ceg2350-yourgithubusername):
 
-Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
+Create a new directory, `Lab06`
 
-Create a new directory, `Lab07`
+Create a file named `Lab06.md` [based on the template](LabTemplate.md).
 
-Write answers in `Lab07.md` the [LabTemplate.md is here](LabTemplate.md).
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab06/LabTemplate.md)
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab07/LabTemplate.md)
+## Part 1 - Self Discovery
 
-For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
+Find out the following information about your personal system. Write the answers to the information requested. Part of this is learning about your system, so some info will not be findable. Provide confirmation of your findings where possible.
 
-If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
+For example, my laptop does not have a dedicated GPU card. I can run commands whose output will confirm there is no GPU
 
-## Part 1 - unallocated resources
+- You can use the manufacturers website / manuals
+- Windows users, I recommend `msinfo`
+- You should _not_ need to install additional programs to find this information. If someone tells you to install something, run away.
 
-For each step below, write the answer to the question / prompt and how you found / configured the answer (commands used).
+1. CPU brand, number of cores, and number of logical cores
+2. Physical memory size (translate to GB)
+3. Virtual memory size (translate to GB)
+   - Does your system have a pagefile, and if so where is it?
+4. Disk type / model
+5. Disk size (translate to GB)
+6. Remaining disk space (translate to GB)
+7. File system used on primary partition
+   - C partition for Windows users
+   - / partition for Linux / Mac(?) users
+8. BIOS mode / version
+9. Note whether or not your BIOS / UEFI is accessible, and what steps should let you access it.
 
-- **Useful Commands: `df`, `lsblk`, `blkid`, `gdisk`, `mkfs`, `mount`, `strings`**
+## Part 2 - Virtualize the Machine
 
-1. What is the currently mounted block device?
-2. Is there another drive listed in `/dev/`?
-3. For the `gdisk` GPT partition table manipulator, find out what the following main menu options do:
-   - `p`
-   - `o`
-   - `n`
-   - `i`
-   - `w`
-4. Open the unused drive with `gdisk`. Using the main menu, configure the disk to use the GPT partition table type, have at least 1 partition, and have that partition use the Linux filesystem type. Save your changes to the disk.
-5. Make an ext4 filesystem on the new partition
-6. Make a folder in `/mnt/` called `expanse`
-7. Mount the partition to `expanse`
-8. Create some files (with and without text) and directories in the folder where your partition is mounted
-9. Run `strings` on the partition - read through the output and determine what `strings` is outputting
+We have been talking about the boot process, computer parts, and installing operating systems, but it's hard to give you a computer to build and feel this out - so how about a virtual one!
 
-   - Like other commands we have played with, `strings` has more capabilities. We are going to use it to show you something interesting about data...
+**Your deliverable is a full write up in `Lab06.md` of every step of creating a VM - from choosing the virtualized hardware to installing an OS.**
 
-10. Delete a file that you created on the partition. Run `strings` on the partition again - read through the output and see if anything surprises you - what do you see?
+You will need a computer that has CPU virtualization enabled. The lab machines & open lab machines in Russ are all good candidates (and may have VirtualBox already installed). For your own machine, you may need to enable CPU virtualization in your BIOS.
 
-    - This is a neat trick that starts getting towards digital forensics. You can assume most people trust that when they hit delete, stuff got deleted. But the contents may still exist on the disk until they are overwritten...
+- Windows, Linux, Mac users:
+  - [Download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+  - Pick your host OS when installing (for example, I would pick "Windows hosts")
+- Mac M1 Users:
+  - Install either:
+    - Parallels - Wright State offers a student discount on Parallels
+      - [Get Parallels via the Hub](https://www.wright.edu/information-technology/software-purchases-for-personal-use)
+    - [UTM](https://mac.getutm.app/) - free if you click "Download". You can support the developers by paying through the App Store.
+  - the instuctions below should apply generically, but if you are having trouble post in the general chat on Discord and we will help as we can
+- Windows 11 Users:
+  - Try to install VirtualBox, but it has had mixed support in Windows 11
+  - [Enable Hyper-V Manager](https://www.groovypost.com/howto/enable-virtualization-in-windows-11/)
 
-11. Read through this article: [techmint - permanently and securely delete files in Linux](https://www.tecmint.com/permanently-and-securely-delete-files-directories-linux/) and determine a way to truly delete a file. Write a short report of steps and proof that the file is no longer readable on the disk.
+**Do the following, and write down the steps used in `Lab06.md` Part 1 Answers.**
 
-    - `shred` is recommended
+1. Create a Virtual Machine with the following minimum specifications:
+   - Type: Linux
+   - Version: Other Linux (64-bit)
+   - 2 GB RAM
+   - 10 GB disk space
+2. Add a screenshot to your documentation of your virtualized hardware configuration
+3. Download an ISO (installation image) for a Linux distribution of your choice. State which Linux distribution you picked
+   - Ubuntu Desktop is a safe bet
+   - Linux Mint, Elementary, Kali, Pop OS - or check distro watch
+   - I will warn that if your selection "isn't working" you should try Ubuntu and move on with life
+4. Start your machine and select your ISO (installation image)
+5. Go through the installation process for your chosen Linux distribution
+   - For ease right now, I would select "Erase and install" - however that is phrased
+   - Some OSes will have default partition settings that do not play well with only 10GB
+     - You can, in these cases, manually create the root `/` partition to extend over the whole disk
+   - You do not need to encrypt your disk, unless that is your preference
+6. Remove installation media: pick your method
+   - After a successful install, go to Settings and change your boot order to boot from disk first
+   - After a successful install, go to Settings and remove any disks besides your virtual disk
+   - Confirm that when you turn your machine on, the OS starts, not the installation media
+     - A good hint here is that the log in screen comes up
+7. Download [VirtualBox Extension Pack](https://download.virtualbox.org/virtualbox/6.1.32/Oracle_VM_VirtualBox_Extension_Pack-6.1.32.vbox-extpack) to your host.
+   - Launch your VM, then insert the Guest Additions CD Image.
+   - Run the Guest Additions installer for your system (I would do the Linux installer)
+   - Reboot your VM, then Auto-resize Guest Display
+8. Add a screenshot to your documentation of your running VM
 
-12. Umount the partition. Can you still interact with the files and folders?
+## Part 3 - Playground
 
-## Part 2 - inode what is up
+**Do the following, and write down the steps used in `Lab06.md` Part 2 Answers**
 
-- **Useful Commands: `stat`, `ln`, `cp`, `mv`**
+1. In your VM, change your desktop background.
+2. In your VM, open a web browser and go to a neat website (or just Pilot).
+3. In your VM, install VSCode.
+4. In your VM, connect to your AWS instance from your VM.
 
-1. Create a file in your Lab07 folder named `original.txt`. Put some stuff in this file - couple sentences, just enough to give it body.
-2. For `original.txt` identify:
-   - Command to find the following info about `original.txt`:
-   - inode number of `original.txt`:
-   - number of blocks storing `original.txt`:
-   - number of links to `original.txt`:
-3. Create a hard link to `original.txt`
-   - What identifiers indicate a hard link was created?
-   - Does modifying the hard linked file modify `original.txt`? Explain
-4. Create a symbolic link to `original.txt`
-   - What identifiers indicate a symbolic link was created?
-   - If `original.txt` was deleted, and a new `original.txt` was created, would the sym link still work? Explain
-5. Create a copy of `original.txt`
-   - Does modifying the copied file modify `original.txt`? Explain
-6. Move `original.txt` to another directory.
-   - Does it have the same inode? Explain
-   - Was the hard link you created affected? Explain
-   - Was the symbolic link you created affected? Explain
+## Hints - Screenshots and markdown
 
-- Resources:
-  - [linoxide - linux inode](https://linoxide.com/linux-inode/)
-  - [how to geek - everything you ever wanted to know about inodes on linux/](https://www.howtogeek.com/465350/everything-you-ever-wanted-to-know-about-inodes-on-linux/)
+There are a lot of ways to add screenshots to a markdown file. I'm going to tell you my way. This is going to introduce a new `git` command: `git pull`
 
-## Extra Credit - take a fstab at this
+When content exists on GitHub, but does not exist in your local folder (the one you usually `git push` from) you need to do a `git pull` to sync back up.
 
-1. Make a backup of the current version of `/etc/fstab`
-2. Add your partition and the mount point (`/mnt/expanse`) to `/etc/fstab`
-   - Line added to `/etc/fstab`:
-3. Test your changes using the `mount -a` and `df`. Write what you did to prove you got it right in `/etc/fstab`
-4. Reboot, if you're brave enough... test that your partition was automounted to `/mnt/expanse`
-5. If you are not brave enough, I admire your honestly. Delete changes made to `fstab`
+We are going to be adding images directly to GitHub, then using `git pull` to get our content and the content on GitHub back in sync.
 
-- Resources:
-  - [linuxconfig - fstab](https://linuxconfig.org/how-fstab-works-introduction-to-the-etc-fstab-file-on-linux)
-  - [ubuntu - Fstab](https://help.ubuntu.com/community/Fstab)
+1. Take the screenshots required by part 1. Store them somewhere easy to access.
+2. Go to your GitHub classrooms repo in a browser: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME
+3. Click the "Add files" button, then click "Upload files"
+4. Upload your screenshots. Write commit messages in the browser text fields, then click "Commit Changes"
+   - you should now see the images in your main folder
+5. Head back to a terminal where you are working on your Lab06 documentation
+   - type `git pull`
+   - you should see your file names appear in the change list
+   - and you should now be able to `ls` and see them
+6. In your lab template, you have a line similar to: `![Screenshot of VM running](relative_path_to_filename_here)`
+   - keep the parenthesis, but fill them with the relative path to your respective photos
+   - this should be relative to being in your repo folder
 
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab07` folder with at minimum:
+1. Verify that your GitHub repo has a `Lab06` folder with at minimum:
 
-   - `Lab07.md`
+   - `Lab06.md`
+   - an `images` folder (with your screenshots inside)
 
-2. In the Pilot Dropbox, paste the URL to the `Lab07` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab07
+2. In the Pilot Dropbox, paste the URL to the `Lab06` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab06
 
 ## Rubric
 
-- Part 1 - 1 pt per question - 12 pts total
-- Part 2 - 1 pt per question - 6 pts total
-- Extra credit - 10% (2 pts)
+- Part 1 - 1 pt per question - 9 pts total
+- Part 2 - 1 pt per question - 8 pts total
+- Part 3 - 1 pt per question - 4 pts total

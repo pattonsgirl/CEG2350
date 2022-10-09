@@ -1,4 +1,4 @@
-## Lab 07
+## Lab 06
 
 - Name:
 - Email
@@ -7,47 +7,28 @@
 
 1.
 2.
-3. `gdisk` main menu options
-   - `p`
-   - `o`
-   - `n`
-   - `i`
-   - `w`
-4. Using the `gdisk` utility on the disk:
+3.
+4.
 5.
 6.
 7.
-8. Skip - trust you to do it ;)
+8.
 9.
-10.
-11.
-12.
 
 ## Part 2 Answers
 
+1. Steps to configure virtual hardware:
+2. ![Screenshot of VM settings](relative_path_to_filename_here)
+3. Steps to download an ISO:
+4. Steps to use ISO on VM:
+5. Steps to install your distribution:
+6. Steps to boot to disk after install:
+7. Steps to install "Guest Additions" & enable fullscreen mode:
+8. ![Screenshot of VM running](relative_path_to_filename_here)
+
+## Part 3 Answers
+
 1.
-2. For `original.txt` identify:
-   - Command to find the following info about `original.txt`:
-   - inode number of `original.txt`:
-   - number of blocks storing `original.txt`:
-   - number of links to `original.txt`:
-3. Command to create a hard link to `original.txt`:
-   - What identifiers indicate a hard link was created?
-   - Does modifying the hard linked file modify `original.txt`? Explain
-4. Command to create a symbolic link to `original.txt`
-   - What identifiers indicate a symbolic link was created?
-   - If `original.txt` was deleted, and a new `original.txt` was created, would the sym link still work? Explain
-5. Command to create a copy of `original.txt`
-   - Does modifying the copied file modify `original.txt`? Explain
-6. Command to move `original.txt` to another directory.
-   - Does it have the same inode? Explain
-   - Was the hard link you created affected? Explain
-   - Was the symbolic link you created affected? Explain
-
-## Extra Credit Answers
-
-Line added to `/etc/fstab`:
-
-```
-Insert line here
-```
+2.
+3.
+4.

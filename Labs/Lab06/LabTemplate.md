@@ -1,7 +1,7 @@
 ## Lab 06
 
 - Name:
-- Email
+- Email:
 
 ## Part 1 Answers
 
@@ -14,21 +14,8 @@
 7.
 8.
 9.
+10.
 
-## Part 2 Answers
+## Extra Credit - VM Manager
 
-1. Steps to configure virtual hardware:
-2. ![Screenshot of VM settings](relative_path_to_filename_here)
-3. Steps to download an ISO:
-4. Steps to use ISO on VM:
-5. Steps to install your distribution:
-6. Steps to boot to disk after install:
-7. Steps to install "Guest Additions" & enable fullscreen mode:
-8. ![Screenshot of VM running](relative_path_to_filename_here)
-
-## Part 3 Answers
-
-1.
-2.
-3.
-4.
+- Write here what VM Manager software you installed

@@ -1,37 +1,63 @@
-## Lab 10
+## Lab 09
 
 - Name:
-- Email
+- Email:
 
 ## Part 1 Answers
 
-1. The hostname:
-2. The IP address:
-3. The MAC address using that IP address:
-4. The subnet mask:
-5. The gateway address:
-6. The DHCP server address:
-7. The DNS server address:
-8. How packets reach the Internet:
+- Add your source code to your Lab09 folder in GitHub
 
 ## Part 2 Answers
 
-1. How to find hostname for `3.228.104.170`:
-2. Port scan command:
-   - List of open ports:
-3. How to view webpage:
-4. Command to find SSH version:
-   - Version information:
+1. Compiler:
+   - Location:
+   - Version:
+2. Command to compile:
+3. Command to run:
+
+- Add your compiled code to your Lab09 folder in GitHub
 
 ## Part 3 Answers
 
-1. Command(s) to install `python3` and `pip3`:
-3. Run web server
-4. Command:
-5. Command:
+- Add your Makefile to your Lab09 folder in GitHub
 
-## Extra Credit Answers
+## Extra Credit - Dependent Answers - Delete the section if not doing :)
 
-1. How to start listening on port 2222:
-2. How to connect to port 2222 from another system:
-3. Changes made to firewall:
+- In the `ec` folder, add your:
+  - source code files
+  - your compiled code
+  - `Makefile`
+
+## Extra Credit - G@M3RS Answers - Delete the section if not doing :)
+
+### Instructions to Install ninvaders
+
+1. Download the package from `https://github.com/pattonsgirl/Fall2021-CEG2350/raw/main/Labs/Lab09/ninvaders-0.1.1.tar.gz`
+
+```
+Replace with command(s)
+```
+
+2. Extract to your home directory:
+
+```
+Replace with command(s)
+```
+
+3. Install `gcc` and `ncurses` library:
+
+```
+Replace with command(s)
+```
+
+4. Install ninvaders
+
+```
+Replace with command(s)
+```
+
+5. Play ninvaders
+
+```
+Replace with command(s)
+```

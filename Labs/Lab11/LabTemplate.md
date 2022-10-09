@@ -1,55 +1,37 @@
-## Lab 11
+## Lab 10
 
 - Name:
 - Email
 
 ## Part 1 Answers
 
-1. Command(s) to install `python3` and `pip3`:
-2. `cd` into repo folder, run `python3 -m http.server 5000`
-3. For AWS instance, identify:
-   - localhost IP:
-   - instance private IP:
-   - instance public IP:
-4. URL:
-5. Firewall implemented:
+1. The hostname:
+2. The IP address:
+3. The MAC address using that IP address:
+4. The subnet mask:
+5. The gateway address:
+6. The DHCP server address:
+7. The DNS server address:
+8. How packets reach the Internet:
 
 ## Part 2 Answers
 
-1. `tar` options:
-   - `-c`
-   - `-v`
-   - `-f`
-   - `-z`
-   - `-x`
-2. Size of home directory:
-3. Command(s):
-4. Size after tar'ring and compressing:
+1. How to find hostname for `3.228.104.170`:
+2. Port scan command:
+   - List of open ports:
+3. How to view webpage:
+4. Command to find SSH version:
+   - Version information:
 
-## Part 3 Answers:
+## Part 3 Answers
 
-1. Command:
-2. `sftp` options:
-   - `ls`
-   - `lls`
-   - `put`
-   - `get`
-3. Command(s):
-4. Command(s):
+1. Command(s) to install `python3` and `pip3`:
+3. Run web server
+4. Command:
+5. Command:
 
-## Part 4 Answers:
+## Extra Credit Answers
 
-1.
-2.
-3.
-4.
-
-## Extra Credit Answers:
-
-### Solve the conflict
-
-1.
-2.
-3.
-4.
-5.
+1. How to start listening on port 2222:
+2. How to connect to port 2222 from another system:
+3. Changes made to firewall:
