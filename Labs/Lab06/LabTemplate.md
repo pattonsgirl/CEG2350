@@ -5,16 +5,16 @@
 
 ## Part 1 Answers
 
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
+1. CPU
+2. GPU
+3. Physical memory
+4. Virtual memory
+5. Disk type / model
+6. Disk space
+7. Remaining space
+8. File system
+9. BIOS / UEFI
+10. BIOS / UEFI access
 
 ## Extra Credit - VM Manager
 
