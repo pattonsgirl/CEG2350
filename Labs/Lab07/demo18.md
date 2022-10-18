@@ -7,4 +7,4 @@ Create a link: [link to downloadmoreram](https://downloadmoreram.com/)
 
 Display an image: 
 
-![picture of downloadmore website](downloadmoreram.png)
+![picture of downloadmore website](DownloadMoreRAM.PNG)
