@@ -80,7 +80,8 @@ You will need a computer that has CPU virtualization enabled. The lab machines &
 1. In your VM, change your desktop background.
 2. In your VM, open a web browser and go to a neat website (or just Pilot).
 3. In your VM, install VSCode.
-4. In your VM, connect to your AWS instance from your VM.
+4. In your VM, connect to your AWS instance from your VM using `ssh`.
+  - Think way back to labs 1 & 2 - what did you need to `ssh` in to your AWS system from a terminal?
 
 ## Hints - Screenshots and markdown
 
