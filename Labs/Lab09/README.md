@@ -1,4 +1,4 @@
-# Lab 08 - NOT FINALIZED
+# Lab 09 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - To Infinity](#Part-1---To-Infinity)
@@ -9,17 +9,17 @@
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/13249/modules/items/1136419)
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/24167/modules/items/1982401)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-Create a new directory, `Lab08`
+Create a new directory, `Lab09`
 
-Write answers in `Lab08.md` the [LabTemplate.md is here](LabTemplate.md).
+Write answers in `Lab09.md` the [LabTemplate.md is here](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab08/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab09/LabTemplate.md)
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
@@ -27,7 +27,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - To Infinity
 
-1. In your `Lab08` folder, create a script called `infinity`.
+1. In your `Lab09` folder, create a script called `infinity`.
 2. Each time the loop runs it should do the following
    - Output a statement such as "Still going!" to a file called `still-going.txt`
    - Sleep for 15 seconds
@@ -100,13 +100,13 @@ For each step below, write the corresponding command(s) to do the action request
 
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab08` folder with at minimum:
+1. Verify that your GitHub repo has a `Lab09` folder with at minimum:
 
    - `infinity`
-   - `Lab08.md`
+   - `Lab09.md`
 
-2. In the Pilot Dropbox, paste the URL to the `Lab08` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab08
+2. In the Pilot Dropbox, paste the URL to the `Lab09` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab09
 
 ## Rubric
 
