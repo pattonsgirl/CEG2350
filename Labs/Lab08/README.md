@@ -58,6 +58,10 @@ For each step below, write the answer to the question / prompt and how you found
 
 12. `umount` the partition. Can you still interact with the files and folders?
 
+- **Resources**:
+   - [DigitalOcean - click "Interactive partitioning with gdisk"](https://docs.digitalocean.com/products/volumes/how-to/partition/)
+   - [RodsBooks - A `gdisk` walkthrough](https://www.rodsbooks.com/gdisk/walkthrough.html)
+
 ## Part 2 - inodes
 
 - **Useful Commands: `stat`, `ln`, `cp`, `mv`**
