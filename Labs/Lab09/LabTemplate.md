@@ -1,11 +1,11 @@
-## Lab 08
+## Lab 09
 
 - Name:
 - Email
 
 ## Part 1 Answers
 
-- Make sure infinity is in your Lab08 folder in GitHub
+- Make sure infinity is in your Lab09 folder in GitHub
 
 ## Part 2 Answers
 

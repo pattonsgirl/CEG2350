@@ -1,4 +1,4 @@
-# Lab 09 - NOT FINALIZED
+# Lab 09
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - To Infinity](#Part-1---To-Infinity)
@@ -32,7 +32,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
    - Output a statement such as "Still going!" to a file called `still-going.txt`
    - Sleep for 15 seconds
    - Repeat. Infinitely!
-3. Give this script executable permissions (but don't worry about adding to PATH)
+3. Give this script executable permissions (add to `PATH` not required)
 
 - Resources:
   - [bash while loop](https://linuxize.com/post/bash-while-loop/)
@@ -40,7 +40,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 2 - Running Processes
 
-For the following exercises, you are going to have two terminals open to your AWS instance, which will be refered to as Terminal A and Terminal B. We can't give terminals names, but we needed some way to say where to run what ;)
+For the following exercises, you are going to have two terminals open to your AWS instance, which will be referred to as Terminal A and Terminal B. We can't give terminals names, but we needed some way to say where to run what ;)
 
 - **Useful Commands: `pstree`, `ps`, `kill`, `bg`, `job`, `fg`, `screen`, `tmux`**
 
