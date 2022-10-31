@@ -58,6 +58,10 @@ For each step below, write the answer to the question / prompt and how you found
 
 12. `umount` the partition. Can you still interact with the files and folders?
 
+- **Resources**:
+   - [DigitalOcean - click "Interactive partitioning with gdisk"](https://docs.digitalocean.com/products/volumes/how-to/partition/)
+   - [RodsBooks - A `gdisk` walkthrough](https://www.rodsbooks.com/gdisk/walkthrough.html)
+
 ## Part 2 - inodes
 
 - **Useful Commands: `stat`, `ln`, `cp`, `mv`**
@@ -95,6 +99,7 @@ For each step below, write the answer to the question / prompt and how you found
 5. If you are not brave enough, I admire your honestly. Delete changes made to `fstab`
 
 - Resources:
+  - [HowToGeek - How to write an fstab file on Linux](https://www.howtogeek.com/444814/how-to-write-an-fstab-file-on-linux/)
   - [linuxconfig - fstab](https://linuxconfig.org/how-fstab-works-introduction-to-the-etc-fstab-file-on-linux)
   - [ubuntu - Fstab](https://help.ubuntu.com/community/Fstab)
 
