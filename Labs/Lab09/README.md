@@ -70,10 +70,11 @@ For the following exercises, you are going to have two terminals open to your AW
    - Command / steps to kill the `screen` / `tmux` session:
 
 - Resources:
+  - [Tecmint - All You Need To Know About Processes in Linux](https://www.tecmint.com/linux-process-management/)
   - [How To Use Bash's Job Control to Manage Foreground and Background Processes](https://www.digitalocean.com/community/tutorials/how-to-use-bash-s-job-control-to-manage-foreground-and-background-processes)
-  - [Understanding foreground and background Linux processes](https://linuxconfig.org/understanding-foreground-and-background-linux-processes)
   - [How to Use Linux Screen Command](https://www.howtogeek.com/662422/how-to-use-linuxs-screen-command/)
   - [Kill detached screen session](https://www.baeldung.com/linux/kill-detached-screen-session)
+  - [How to use `tmux`](https://www.howtogeek.com/671422/how-to-use-tmux-on-linux-and-why-its-better-than-screen/)
 
 ## Part 3 - `branch`ing out
 
@@ -95,6 +96,8 @@ For each step below, write the corresponding command(s) to do the action request
 
 - Resources:
 
+  - [Varonis - Git Branching and Merging](varonis.com/blog/git-branching)
+    - Note: this is overkill for the lab, but a good read with nice visuals
   - [Git Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
   - [Git - Basic Branching & Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 
