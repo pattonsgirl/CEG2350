@@ -8,6 +8,7 @@
 - [Extra Credit - G@M3R](#Extra-Credit---G@M3R)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
+- [Bonus Content - Happy vim](#Bonus-Content---Happy-vim)
 
 ## Lab Procedure
 
@@ -100,3 +101,24 @@ Install ninvader from the source, [ninvaders-0.1.1.tar.gz](ninvaders-0.1.1.tar.g
 - Part 3 - 3 pts
 - Extra Credit - Dependents - 1 pt (10%)
 - Extra Credit - G@M3RS - 1 pt (10%)
+
+## Bonus Content - Happy vim
+
+No extra credit down here.
+
+Now don't start a rebellion, but `vim` could have been nicer this whole time.  As a fun rabbit hole (seriously, go do your lab first) here are some links to ways to improve vim for different tasks
+
+Remember `vim` was designed to stop devs from having to find / use a mouse - ever.  So a lot of really neat `vim` features, extra packages, and plugins involve getting some muscle memory
+
+- [vim colorschemes](https://vimcolorschemes.com/)
+  - [jellybeans](https://github.com/nanotech/jellybeans.vim) is a personal favorite
+```
+mkdir -p ~/.vim/colors
+cd ~/.vim/colors
+curl -O https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim
+echo "colorscheme jellybeans" >> ~/.vimrc
+```
+- [tricks for vim with C++](https://www.incredibuild.com/blog/vim-c-there-is-such-a-thing-tricks-to-use-vim-in-c)
+- [vim with python](https://realpython.com/vim-and-python-a-match-made-in-heaven/)
+- [vim for Java](https://jqno.nl/post/2020/09/09/my-vim-setup/)
+  - [spacevim and Java (for the real nerd)](https://spacevim.org/use-vim-as-a-java-ide/)
