@@ -39,7 +39,7 @@ Use Java or C or C++ to write an echo program. Name your source code file `repea
 - **Additional notes**
   - Code integrity does not matter - you may work together or use things found on the internet or textbooks. Practice citing your sources using comments in your code.
   - You are welcome to use an IDE you are familiar with to write test and debug your code, but you'll need to get the source code to a file on your AWS instance for the remainder of the lab.
-  - There is some useful C starter code in [this guide](https://www.geeksforgeeks.org/strings-in-c-2/) about halfway down.
+  - There is some useful C starter code in [this guide](https://www.geeksforgeeks.org/taking-string-input-space-c-3-different-methods/) about halfway down.
     - You'll need to add another print statement before the scan statement to prompt the user to enter a string.
 
 ## Part 2 - Compile a Program
