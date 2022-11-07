@@ -15,11 +15,11 @@
 2. Command to compile:
 3. Command to run:
 
-- Add your compiled code to your Lab09 folder in GitHub
+- Add your compiled code to your Lab10 folder in GitHub
 
 ## Part 3 Answers
 
-- Add your Makefile to your Lab09 folder in GitHub
+- Add your Makefile to your Lab10 folder in GitHub
 
 ## Extra Credit - Dependent Answers - Delete the section if not doing :)
 
