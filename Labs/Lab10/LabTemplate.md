@@ -50,7 +50,7 @@ Replace with command(s)
 Replace with command(s)
 ```
 
-4. Install ninvaders
+4. Compile ninvaders
 
 ```
 Replace with command(s)

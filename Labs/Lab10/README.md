@@ -80,7 +80,7 @@ Install ninvader from the source, [ninvaders-0.1.1.tar.gz](ninvaders-0.1.1.tar.g
 1. Download `ninvaders-0.1.1.tar.gz` to your home directory.
 2. Install / check installation of `gcc` and `ncurses`.
 3. Extract ninvaders to your home directory.
-4. Install ninvaders
+4. Compile ninvaders
 
 ## Submission
 
