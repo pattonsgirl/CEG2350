@@ -1,4 +1,4 @@
-# Lab 10 - NOT FINALIZED
+# Lab 10
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Write Code](#Part-1---Write-Code)
@@ -106,18 +106,20 @@ Install ninvader from the source, [ninvaders-0.1.1.tar.gz](ninvaders-0.1.1.tar.g
 
 No extra credit down here.
 
-Now don't start a rebellion, but `vim` could have been nicer this whole time.  As a fun rabbit hole (seriously, go do your lab first) here are some links to ways to improve vim for different tasks
+Now don't start a rebellion, but `vim` could have been nicer this whole time. As a fun rabbit hole (seriously, go do your lab first) here are some links to ways to improve vim for different tasks
 
-Remember `vim` was designed to stop devs from having to find / use a mouse - ever.  So a lot of really neat `vim` features, extra packages, and plugins involve getting some muscle memory
+Remember `vim` was designed to stop devs from having to find / use a mouse - ever. So a lot of really neat `vim` features, extra packages, and plugins involve getting some muscle memory
 
 - [vim colorschemes](https://vimcolorschemes.com/)
   - [jellybeans](https://github.com/nanotech/jellybeans.vim) is a personal favorite
+
 ```
 mkdir -p ~/.vim/colors
 cd ~/.vim/colors
 curl -O https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim
 echo "colorscheme jellybeans" >> ~/.vimrc
 ```
+
 - [tricks for vim with C++](https://www.incredibuild.com/blog/vim-c-there-is-such-a-thing-tricks-to-use-vim-in-c)
 - [vim with python](https://realpython.com/vim-and-python-a-match-made-in-heaven/)
 - [vim for Java](https://jqno.nl/post/2020/09/09/my-vim-setup/)
