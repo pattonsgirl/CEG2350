@@ -1,4 +1,4 @@
-# Lab 09 - NOT FINALIZED
+# Lab 10 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Write Code](#Part-1---Write-Code)
@@ -11,17 +11,17 @@
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/13249/modules/items/1136419)
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/24167/modules/items/1982401)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-Create a new directory, `Lab09`
+Create a new directory, `Lab10`
 
-Create a file named `Lab09.md` [based on the template](LabTemplate.md).
+Create a file named `Lab10.md` [based on the template](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab09/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab10/LabTemplate.md)
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
@@ -29,7 +29,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - Write Code
 
-Use Java or C or C++ to write an echo program. Name your source code file `repeat` with the appropraite source code extention: `repeat.java`, `repeat.c`, `repeat.cpp`. The program should be the following:
+Use Java or C or C++ to write an echo program. Name your source code file `repeat` with the appropriate source code extension: `repeat.java`, `repeat.c`, `repeat.cpp`. The program should be the following:
 
 - prompt the user to enter text
 - capture text from standard input
@@ -63,7 +63,7 @@ Use Java or C or C++ to write an echo program. Name your source code file `repea
 
 ## Extra Credit - Dependents
 
-Create a folder in your `Lab09` folder called `ec`. In Java, C or C++, create a multi-file code project.
+Create a folder in your `Lab10` folder called `ec`. In Java, C or C++, create a multi-file code project.
 
 - Perhaps your main code file calls on a function that is detailed in the other file (function can do a simple action, like print a message)
 - You may use an old / existing multifile project
@@ -72,7 +72,7 @@ Modify your `Makefile` to compile the original file & its new dependency(s). Not
 
 ## Extra Credit - G@M3R
 
-Install ninvader from the source, [ninvaders-0.1.1.tar.gz](ninvaders-0.1.1.tar.gz). For credit, you need to detail how you installed ninvaders succesfully by including at least the details specified below including which commands you used.
+Install ninvader from the source, [ninvaders-0.1.1.tar.gz](ninvaders-0.1.1.tar.gz). For credit, you need to detail how you installed ninvaders successfully by including at least the details specified below including which commands you used.
 
 - **Useful Commands: `wget`, `tar`, `apt`, `make`**
 
@@ -83,15 +83,15 @@ Install ninvader from the source, [ninvaders-0.1.1.tar.gz](ninvaders-0.1.1.tar.g
 
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab09` folder with at minimum:
+1. Verify that your GitHub repo has a `Lab10` folder with at minimum:
 
    - `repeat.java` OR `repeat.c` OR `repeat.cpp`
    - your compiled code
    - `Makefile`
-   - `Lab09.md`
+   - `Lab10.md`
 
-2. In the Pilot Dropbox, paste the URL to the `Lab09` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab09
+2. In the Pilot Dropbox, paste the URL to the `Lab10` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab10
 
 ## Rubric
 
