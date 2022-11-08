@@ -1,4 +1,4 @@
-# Lab 08 - NOT FINALIZED
+# Lab 09
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - To Infinity](#Part-1---To-Infinity)
@@ -9,17 +9,17 @@
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/13249/modules/items/1136419)
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/24167/modules/items/1982401)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-Create a new directory, `Lab08`
+Create a new directory, `Lab09`
 
-Write answers in `Lab08.md` the [LabTemplate.md is here](LabTemplate.md).
+Write answers in `Lab09.md` the [LabTemplate.md is here](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab08/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab09/LabTemplate.md)
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
@@ -27,12 +27,12 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - To Infinity
 
-1. In your `Lab08` folder, create a script called `infinity`.
+1. In your `Lab09` folder, create a script called `infinity`.
 2. Each time the loop runs it should do the following
    - Output a statement such as "Still going!" to a file called `still-going.txt`
    - Sleep for 15 seconds
    - Repeat. Infinitely!
-3. Give this script executable permissions (but don't worry about adding to PATH)
+3. Give this script executable permissions (add to `PATH` not required)
 
 - Resources:
   - [bash while loop](https://linuxize.com/post/bash-while-loop/)
@@ -40,7 +40,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 2 - Running Processes
 
-For the following exercises, you are going to have two terminals open to your AWS instance, which will be refered to as Terminal A and Terminal B. We can't give terminals names, but we needed some way to say where to run what ;)
+For the following exercises, you are going to have two terminals open to your AWS instance, which will be referred to as Terminal A and Terminal B. We can't give terminals names, but we needed some way to say where to run what ;)
 
 - **Useful Commands: `pstree`, `ps`, `kill`, `bg`, `job`, `fg`, `screen`, `tmux`**
 
@@ -70,10 +70,11 @@ For the following exercises, you are going to have two terminals open to your AW
    - Command / steps to kill the `screen` / `tmux` session:
 
 - Resources:
+  - [Tecmint - All You Need To Know About Processes in Linux](https://www.tecmint.com/linux-process-management/)
   - [How To Use Bash's Job Control to Manage Foreground and Background Processes](https://www.digitalocean.com/community/tutorials/how-to-use-bash-s-job-control-to-manage-foreground-and-background-processes)
-  - [Understanding foreground and background Linux processes](https://linuxconfig.org/understanding-foreground-and-background-linux-processes)
   - [How to Use Linux Screen Command](https://www.howtogeek.com/662422/how-to-use-linuxs-screen-command/)
   - [Kill detached screen session](https://www.baeldung.com/linux/kill-detached-screen-session)
+  - [How to use `tmux`](https://www.howtogeek.com/671422/how-to-use-tmux-on-linux-and-why-its-better-than-screen/)
 
 ## Part 3 - `branch`ing out
 
@@ -95,18 +96,20 @@ For each step below, write the corresponding command(s) to do the action request
 
 - Resources:
 
+  - [Varonis - Git Branching and Merging](varonis.com/blog/git-branching)
+    - Note: this is overkill for the lab, but a good read with nice visuals
   - [Git Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
   - [Git - Basic Branching & Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab08` folder with at minimum:
+1. Verify that your GitHub repo has a `Lab09` folder with at minimum:
 
    - `infinity`
-   - `Lab08.md`
+   - `Lab09.md`
 
-2. In the Pilot Dropbox, paste the URL to the `Lab08` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab08
+2. In the Pilot Dropbox, paste the URL to the `Lab09` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab09
 
 ## Rubric
 

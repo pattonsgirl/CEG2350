@@ -1,25 +1,25 @@
-# Lab 07 - NOT FINALIZED
+# Lab 08
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - unallocated resources](#Part-1---unallocated-resources)
-- [Part 2 - inode what is up](#Part-2---inode-what-is-up)
+- [Part 2 - inodes](#Part-2---inodes)
 - [Extra Credit - take a fstab at this](#Extra-Credit---take-a-fstab-at-this)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/13249/modules/items/1136419)
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/24167/modules/items/1982401)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-Create a new directory, `Lab07`
+Create a new directory, `Lab08`
 
-Write answers in `Lab07.md` the [LabTemplate.md is here](LabTemplate.md).
+Write answers in `Lab08.md` the [LabTemplate.md is here](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/Spring2022-CEG2350/main/Labs/Lab07/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab08/LabTemplate.md)
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
@@ -56,13 +56,17 @@ For each step below, write the answer to the question / prompt and how you found
 
     - `shred` is recommended
 
-12. Umount the partition. Can you still interact with the files and folders?
+12. `umount` the partition. Can you still interact with the files and folders?
 
-## Part 2 - inode what is up
+- **Resources**:
+   - [DigitalOcean - click "Interactive partitioning with gdisk"](https://docs.digitalocean.com/products/volumes/how-to/partition/)
+   - [RodsBooks - A `gdisk` walkthrough](https://www.rodsbooks.com/gdisk/walkthrough.html)
+
+## Part 2 - inodes
 
 - **Useful Commands: `stat`, `ln`, `cp`, `mv`**
 
-1. Create a file in your Lab07 folder named `original.txt`. Put some stuff in this file - couple sentences, just enough to give it body.
+1. Create a file in your Lab08 folder named `original.txt`. Put some stuff in this file - couple sentences, just enough to give it body.
 2. For `original.txt` identify:
    - Command to find the following info about `original.txt`:
    - inode number of `original.txt`:
@@ -95,17 +99,18 @@ For each step below, write the answer to the question / prompt and how you found
 5. If you are not brave enough, I admire your honestly. Delete changes made to `fstab`
 
 - Resources:
+  - [HowToGeek - How to write an fstab file on Linux](https://www.howtogeek.com/444814/how-to-write-an-fstab-file-on-linux/)
   - [linuxconfig - fstab](https://linuxconfig.org/how-fstab-works-introduction-to-the-etc-fstab-file-on-linux)
   - [ubuntu - Fstab](https://help.ubuntu.com/community/Fstab)
 
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab07` folder with at minimum:
+1. Verify that your GitHub repo has a `Lab08` folder with at minimum:
 
-   - `Lab07.md`
+   - `Lab08.md`
 
-2. In the Pilot Dropbox, paste the URL to the `Lab07` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab07
+2. In the Pilot Dropbox, paste the URL to the `Lab08` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab08
 
 ## Rubric
 

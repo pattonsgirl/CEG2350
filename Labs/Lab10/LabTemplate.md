@@ -1,11 +1,11 @@
-## Lab 09
+## Lab 10
 
 - Name:
 - Email:
 
 ## Part 1 Answers
 
-- Add your source code to your Lab09 folder in GitHub
+- Add your source code to your Lab10 folder in GitHub
 
 ## Part 2 Answers
 
@@ -15,11 +15,11 @@
 2. Command to compile:
 3. Command to run:
 
-- Add your compiled code to your Lab09 folder in GitHub
+- Add your compiled code to your Lab10 folder in GitHub
 
 ## Part 3 Answers
 
-- Add your Makefile to your Lab09 folder in GitHub
+- Add your Makefile to your Lab10 folder in GitHub
 
 ## Extra Credit - Dependent Answers - Delete the section if not doing :)
 
@@ -50,7 +50,7 @@ Replace with command(s)
 Replace with command(s)
 ```
 
-4. Install ninvaders
+4. Compile ninvaders
 
 ```
 Replace with command(s)

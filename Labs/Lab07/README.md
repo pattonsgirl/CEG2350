@@ -1,4 +1,4 @@
-# Lab 07 - NOT FINALIZED
+# Lab 07
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Virtualize the Machine](#Part-1---Virtualize-the-Machine)
@@ -23,7 +23,7 @@ Create a file named `Lab07.md` [based on the template](LabTemplate.md).
 
 We have been talking about the boot process, computer parts, and installing operating systems, but it's hard to give you a computer to build and feel this out - so how about a virtual one!
 
-**Your deliverable is a full write up in `Lab06.md` of every step of creating a VM - from choosing the virtualized hardware to installing an OS.**
+**Your deliverable is a full write up in `Lab07.md` of every step of creating a VM - from choosing the virtualized hardware to installing an OS.**
 
 You will need a computer that has CPU virtualization enabled. The lab machines & open lab machines in Russ are all good candidates (and may have VirtualBox already installed). For your own machine, you may need to enable CPU virtualization in your BIOS.
 
@@ -60,16 +60,17 @@ You will need a computer that has CPU virtualization enabled. The lab machines &
    - For ease right now, I would select "Erase and install" - however that is phrased
    - Some OSes will have default partition settings that do not play well with only 10GB
      - You can, in these cases, manually create the root `/` partition to extend over the whole disk
-   - You do not need to encrypt your disk, unless that is your preference
+   - You do not need to encrypt your "disk", unless that is your preference
 6. Remove installation media: pick your method
    - After a successful install, go to Settings and change your boot order to boot from disk first
    - After a successful install, go to Settings and remove any disks besides your virtual disk
    - Confirm that when you turn your machine on, the OS starts, not the installation media
      - A good hint here is that the log in screen comes up
-7. Download [VirtualBox Extension Pack](https://download.virtualbox.org/virtualbox/6.1.32/Oracle_VM_VirtualBox_Extension_Pack-6.1.32.vbox-extpack) to your host.
-   - Launch your VM, then insert the Guest Additions CD Image.
-   - Run the Guest Additions installer for your system (I would do the Linux installer)
-   - Reboot your VM, then Auto-resize Guest Display
+7. Switch your VM to run in fullscreen.
+   - VirtualBox users may need the **VirtualBox Extension Pack** install the same version extension pack as your installed version of VirtualBox. Download the Pack to your host system, then follow the steps below
+     - Launch your VM, then insert the Guest Additions CD Image.
+     - Run the Guest Additions installer for your system (I would do the Linux installer)
+     - Reboot your VM, then Auto-resize Guest Display
 8. Add a screenshot to your documentation of your running VM
 
 ## Part 2 - Playground
@@ -79,7 +80,8 @@ You will need a computer that has CPU virtualization enabled. The lab machines &
 1. In your VM, change your desktop background.
 2. In your VM, open a web browser and go to a neat website (or just Pilot).
 3. In your VM, install VSCode.
-4. In your VM, connect to your AWS instance from your VM.
+4. In your VM, connect to your AWS instance from your VM using `ssh`.
+  - Think way back to labs 1 & 2 - what did you need to `ssh` in to your AWS system from a terminal?
 
 ## Hints - Screenshots and markdown
 
@@ -89,12 +91,12 @@ When content exists on GitHub, but does not exist in your local folder (the one 
 
 We are going to be adding images directly to GitHub, then using `git pull` to get our content and the content on GitHub back in sync.
 
-1. Take the screenshots required by part 1. Store them somewhere easy to access.
+1. Take the screenshots required by part 1. Store them somewhere easy to access (like your Desktop).
 2. Go to your GitHub classrooms repo in a browser: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME
 3. Click the "Add files" button, then click "Upload files"
 4. Upload your screenshots. Write commit messages in the browser text fields, then click "Commit Changes"
    - you should now see the images in your main folder
-5. Head back to a terminal where you are working on your Lab06 documentation
+5. Head back to a terminal where you are working on your Lab 07 documentation
    - type `git pull`
    - you should see your file names appear in the change list
    - and you should now be able to `ls` and see them
