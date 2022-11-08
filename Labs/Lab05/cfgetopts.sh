@@ -22,7 +22,7 @@ while getopts ":hn:t:" opt; do
 	case $opt in
 	h)
 		usageGuide
-		exit 1
+		exit
 		;;
 	n)	#echo $OPTARG
 		num=$OPTARG
@@ -51,6 +51,7 @@ done
 # move to end of scanned options - in this case with expected usage
 # what "remains" is the folder specified
 shift $((OPTIND-1))
+echo $1
 
 echo "The user wants $num files"
 echo "File names should have $error errors"
