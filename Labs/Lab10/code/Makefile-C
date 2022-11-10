@@ -1,0 +1,6 @@
+default: demo.c
+	gcc -Wall -o demo demo.c
+dothings: demo
+	./demo
+cleanup: 
+	rm demo
