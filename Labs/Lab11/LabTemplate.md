@@ -34,7 +34,7 @@
 ## Part 3 Answers
 
 1. Command(s) to install `python3` and `pip3`:
-2. Run web server with `index.html` contents in your folder
+2. Run web server with `index.html` contents in your folder:
 3. Confirm content is being served:
    - Using `localhost`:
    - Using the system's private IP:
