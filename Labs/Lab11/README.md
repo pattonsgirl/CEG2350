@@ -4,7 +4,6 @@
 - [Part 1 - Network Discovery](#Part-1---Network-Discovery)
 - [Part 2 - Network Sniffing](#Part-2---Network-Sniffing)
 - [Part 3 - Get Off My Port](#Part-3---Get-Off-My-Port)
-- [Extra Credit - Message in a Bottle](#Extra-Credit---Egg-Hunt)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -46,11 +45,33 @@ With your PC (not the AWS instance) connected to a network, identify the followi
 
 ## Part 2 - Network Sniffing
 
+Use your AWS instance for this part. You are going to analyze traffic on a network. For some exercises, you'll need to create two `ssh` connections to your AWS instance (like you did for the processes lab).
+
+- **Useful Commands: `tcpdump`, `curl`**
+
+1. Run `tcpdump` on all interfaces for about 30 seconds, then use `Ctrl+C` to stop.
+
+   - How many packets were captured?
+   - Looking through the output, what traffic are you seeing?
+
+2. Craft a `tcpdump` that focuses on interface `eth0` and traffic to and from `host` `www.google.com` - print each packet in ASCII.
+
+3. Now let's test it. In another terminal (also connected to your AWS instance) create one packet dump by using `curl` on `http://www.google.com`. Create a second capture by using `curl` on `https://www.google.com`.
+   - Was there a difference in output from `curl` when using `http` or `https`?
+   - Was there a difference in packet content in `tcpdump` when using `http` or `https`?
+   - What caused the difference?
+4. Craft a capture you find interesting, and save the capture to a file (do not use output redirection - using `tcpdump` options). What command will read the capture? `commit` and `push` your capture to your `Lab11` folder.
+
+- **Resources:**
+  - [hackertarget - tcpdump examples](https://hackertarget.com/tcpdump-examples/)
+  - [Geek Diary - 18 Practical tcpdump Command Examples](https://www.thegeekdiary.com/18-practical-tcpdump-command-examples-a-network-sniffer-tool-primer/)
+  - [Cloudflare - HTTP vs HTTPS](https://www.cloudflare.com/learning/ssl/why-is-http-not-secure/)
+
 ## Part 3 - Get Off My Port
 
 Use your AWS instance for this part. A common issue is that a port you want to listen on (run a service on) is already taken by another service / process. Let's use one (of many) ways to find out what service is running and how to kill it.
 
-- **Useful Commands: `apt`, `python3`, `pip3`, `curl`, `lsof`, `|`, `grep`, `kill`**
+- **Useful Commands: `apt`, `python3`, `pip3`, `ip a`, `curl ipinfo.io`, `curl`, `lsof`, `|`, `grep`, `kill`**
 
 1. On your AWS instance, install `python3` and `pip3`, and copy the [index.html](index.html) file to your Lab 11 folder.
 2. Run `python3 -m http.server 9000` to start a minimal web server listening on port `9000`. Leave this running in it's own terminal.
@@ -61,22 +82,6 @@ Use your AWS instance for this part. A common issue is that a port you want to l
 4. What video is embedded / linked on the page, and how did you find out?
 5. In another terminal, use `lsof` to show only the `LISTEN`ing services on the system.
 6. Identify the process ID and `kill` the process.
-
-## Extra Credit - Egg Hunt
-
-For this part, I have configured a server to toy with for this part. The server's IP address is `3.228.104.170`
-
-- **Useful Commands: `nslookup`,`nmap`, `nc`**
-
-1. Does `IP` have a hostname?
-2. Scan `IP` for open ports. Identify which ports are open.
-3. One of the server ports is hosting a webpage. How can you view the webpage?
-   - It's easiest to play with this in your web browser, but `curl` is a fun command to try.
-4. Find out what version of SSH is running on `IP`.
-
-- Resources:
-
-- [nmap service and version detection](https://nmap.org/book/man-version-detection.html)
 
 ## Submission
 
@@ -90,4 +95,3 @@ For this part, I have configured a server to toy with for this part. The server'
 ## Rubric
 
 - 1 pt per question (16 pts total)
-- EC 10% (1.6 pts)

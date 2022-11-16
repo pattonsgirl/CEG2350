@@ -16,6 +16,21 @@
 
 ## Part 2 Answers
 
+1. `tcpdump` command:
+
+   - How many packets were captured?
+   - Looking through the output, what traffic are you seeing?
+
+2. Fancy `tcpdump` command:
+
+3. Capturing `google.com` traffic:
+   - Was there a difference in output from `curl` when using `http` or `https`?
+   - Was there a difference in packet content in `tcpdump` when using `http` or `https`?
+   - What caused the difference?
+4. Save capture to a file:  
+   Read capture from a file:  
+   Don't forget to `commit` and `push` your capture to your `Lab11` folder.
+
 ## Part 3 Answers
 
 1. Command(s) to install `python3` and `pip3`:
