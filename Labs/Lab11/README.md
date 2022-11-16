@@ -87,6 +87,7 @@ Use your AWS instance for this part. A common issue is that a port you want to l
 
 1. Verify that your GitHub repo has a `Lab11` folder with at minimum:
 
+   - your `tcpdump` capture
    - `Lab11.md`
 
 2. In the Pilot Dropbox, paste the URL to the `Lab11` folder in your GitHub repo
