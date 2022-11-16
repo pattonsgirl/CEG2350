@@ -1,4 +1,4 @@
-# Lab 11 - NOT FINALIZED
+# Lab 11
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Network Discovery](#Part-1---Network-Discovery)
