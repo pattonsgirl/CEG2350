@@ -42,12 +42,3 @@
 4. What's playing?
 5. Command to show `LISTEN`ing processes:
 6. Command to `kill`:
-
-## Extra Credit Answers
-
-1. How to find hostname for `EIP`:
-2. Port scan command:
-   - List of open ports:
-3. How to view webpage:
-4. Command to find SSH version:
-   - Version information:
