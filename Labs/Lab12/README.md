@@ -4,7 +4,7 @@
 - [Part 1 - tar it up](##Part-2---tar-it-up)
 - [Part 2 - SFTP](##Part-3---SFTP)
 - [Part 3 - ssh keys](##Part-4---ssh-keys)
-- [Part 4 - Fire!wall](##Part1---Fire!wall)
+- [Part 4 - Firewall](##Part1---Firewall)
 - [Extra Credit - Solving Conflict](##Extra-Credit---Solving-Conflict)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
@@ -82,7 +82,7 @@ Without practice, `ssh` connections and authentication just seem like magic. Rea
 - I do this manually, but there are some neat command shortcuts to explore
 - [DigitalOcean - How to Configure SSH Key Based Authentication](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
 
-## Part 4 - Fire!wall
+## Part 4 - Firewall
 
 Note: this part is last because you are most likely to break something.
 
