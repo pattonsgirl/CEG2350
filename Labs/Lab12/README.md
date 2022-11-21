@@ -1,10 +1,10 @@
 # Lab 12
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - tar it up](##Part-2---tar-it-up)
-- [Part 2 - SFTP](##Part-3---SFTP)
-- [Part 3 - ssh keys](##Part-4---ssh-keys)
-- [Part 4 - Firewall](##Part1---Firewall)
+- [Part 1 - tar it up](##Part-1---tar-it-up)
+- [Part 2 - SFTP](##Part-2---SFTP)
+- [Part 3 - ssh keys](##Part-3---ssh-keys)
+- [Part 4 - Firewall](##Part-4---Firewall)
 - [Extra Credit - Solving Conflict](##Extra-Credit---Solving-Conflict)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
