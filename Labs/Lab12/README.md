@@ -39,7 +39,7 @@ Since we are wrapping up the semester, it's time to save your work and turn thin
    - `-f`
    - `-z`
    - `-x`
-2. Create a tarball (`tar` and compress) folders of your choice. Write the command you used. You will not be committing this to GitHub - it does not need to be in your repository folder.
+2. `tar` and compress folders of your choice. Write the command you used. You will not be committing this to GitHub - it does not need to be in your repository folder.
 
 - **Resources**
 - [cyberciti - tar on the command line](https://www.cyberciti.biz/faq/how-to-tar-a-file-in-linux-using-command-line/)
@@ -56,8 +56,8 @@ On your instance, you created a compressed set of stuff to save, but how do you 
    - `lls`
    - `put`
    - `get`
-3. Retrieve the tarball (`.tar.gz`) from your AWS instance and download it to your local system
-4. Uncompress the tarball (`.tar.gz`) to a folder on your system (you can remove it after you get the command right, I'm not a space hog)
+3. Retrieve the `tar` and compressed file (`.tar.gz`) from your AWS instance and download it to your local system
+4. Uncompress the `tar` and compressed file (`.tar.gz`) to a folder on your system (you can remove it after you get the command right, I'm not a space hog)
 
 - **Resources**
 - [DigitalOcean - how to use sftp](https://www.digitalocean.com/community/tutorials/how-to-use-sftp-to-securely-transfer-files-with-a-remote-server)
