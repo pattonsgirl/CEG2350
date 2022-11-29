@@ -1,15 +1,15 @@
 # Final Review for CEG 2350
 
-## Spring 2022
+## Fall 2022
 
 ## Da Rules
 
-**Final Exam: Monday 4/25**
+**Final Exam: Tuesday 12/6**
 
-- Available on Pilot 8:00 AM to 11:59 PM
+- Available on Pilot 8:00 AM to 10:00 AM
+  - You are not required to be in person, but it is best.
 - 1 attempt, 2 hours once started
 - Open note, open terminal
-- I will be in Oelman Hall 320 from 5:45 to 7:45 PM if you want to take the exam in the room
 
 ## Intro topics
 
@@ -35,9 +35,10 @@
 4. Ownership & sharing
    - rwx permissions in Linux (and Windows counterpart)
    - user vs. group vs. other
-   - chmod, chown, chgrp
-   - User types and groups: sudo vs. admin vs. “other” (sudo, adduser, deluser)
-5. PATH
+   - chmod, chown, chgrp, adduser, deluser
+   - User types and groups
+   - sudo & the root user
+5. PATH vs path and environment variables
 
 ## Scripting
 
@@ -144,7 +145,7 @@
 
 ## Command line programming
 
-1. Interpretered language
+1. Interpreted language
    - python
 2. Compiled languages
    - c / c++
@@ -207,7 +208,7 @@
    - inbound / ingress
    - outbound / egress
    - common sense rules & trusted networks
-5. Commands: ip, route, arp, iptables, ping, curl, wget, nmap
+5. Commands: ip, route, arp, iptables, ping, curl, wget, tcpdump, nmap
 
 ## System Administration
 
