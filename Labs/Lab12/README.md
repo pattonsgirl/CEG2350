@@ -44,6 +44,7 @@ Since we are wrapping up the semester, it's time to save your work and turn thin
 - **Resources**
 - [cyberciti - tar on the command line](https://www.cyberciti.biz/faq/how-to-tar-a-file-in-linux-using-command-line/)
 - [tecmint - tar command examples](https://www.tecmint.com/18-tar-command-examples-in-linux/)
+- [Linux for Devices - Understanding the tar Command in Linux](https://www.linuxfordevices.com/tutorials/linux/tar-command-in-linux)
 
 ## Part 2 - SFTP
 
