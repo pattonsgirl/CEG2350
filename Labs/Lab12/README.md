@@ -87,7 +87,7 @@ Without practice, `ssh` connections and authentication just seem like magic. Rea
 
 Note: this part is last because you are most likely to break something.
 
-1. Given a subnet range, provide the network prefix + CIDR notation of the subnet range. For example: Subnet range: `10.0.0.0 - 10.0.1.255` Would be written as `10.0.0.0/23` OR `10.0.1.0/23`
+1. Given a subnet range, provide the network prefix + CIDR notation of the subnet range. For example: Subnet range: `10.0.0.0 - 10.0.1.255` Would be written as `10.0.0.0/23` OR `10.0.1.0/23`. See a [breakdown here](#Range-of-IPs-to-network-ip-+-CIDR)
    - Subnet range for Wright State IPs: `130.108.0.0 - 130.108.255.255`
    - Subnet range for AWS public subnet: `10.0.0.0 - 10.0.0.255`
    - Subnet range for your home public IP: `your_public_ip - your_public_ip`
@@ -163,3 +163,22 @@ Q. I used `iptables`, and enabled rules in the wrong order (I was forcefully dis
 A. [Reboot your AWS instance](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#Instances:) by going to your list of instances. Select the instance you want to reboot, then select Instance State -> Reboot Instance
 
 - Note: this will only "save" you if you did not `save` your `iptables` rules.
+
+## Range of IPs to network ip + CIDR
+
+1. Translate addresses to binary
+2. Set 1's for the matching bits until there is a mismatch - these are the network bits. Remaining bits are 0's - these are the host bits
+3. Add up the total number of 1's
+
+|                          |                                      |
+| ------------------------ | ------------------------------------ |
+| 10.0.0.0                 | 00001010.00000000.00000000.000000000 |
+| 10.0.1.255               | 00001010.00000000.00000001.111111111 |
+| 1's match (network bits) | 11111111.11111111.11111110.00000000  |
+| Subnet mask (base 10)    | 255.255.254.0                        |
+| CIDR                     | /23                                  |
+| Final form:              | 10.0.0.0/23 OR 10.0.1.0/23           |
+
+Helpful resource:
+
+- [CCExpert - Using Prefixes to Represent a Subnet Mask](https://www.ccexpert.us/network-design/using-prefixes-to-represent-a-subnet-mask.html)
