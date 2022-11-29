@@ -97,7 +97,7 @@ Note: this part is last because you are most likely to break something.
    - **If you used `iptables`**, write the commands you used. Include a **screenshot** of your rules once they are in place
      - `iptables` notes:
        - `iptables` are chain based - enable a rule that will keep you connected first
-       - `drop` all traffic that does not meet the allowed traffic rules.
+       - `drop` all traffic to port 22 that does not meet the allowed traffic rules.
        - Do **NOT** `save` these rules. Just type them out - if something breaks, you can [reboot your instance from the AWS console](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#Instances:) and the iptables will be flushed. If you `save`, well, you could permanently lock yourself out of say, port 22 (SSH).
    - **If you used Security Groups**, remove rules that enable access from any port from any IP address - your rules should be the only ones in place. Include a **screenshot** of your rules once they are in place
 4. Confirm you can still `ssh` in to your AWS instance. What would be an invalid IP or network?
