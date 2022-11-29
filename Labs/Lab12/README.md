@@ -71,12 +71,12 @@ Without practice, `ssh` connections and authentication just seem like magic. Rea
 
 1. On your AWS instance, create a new user
    - In pretend world, this is your company's IT guys making you an account
-2. On your system, make a new key pair - you choose the name and location.
+2. On your local system, make a new key pair - you choose the name and location.
    - In pretend world, this is you making your key pair - your private key will only be accessible by you. The public key is shared with accounts on systems you have access to.
      - Also note, normally you would either need to send IT your public key OR they would generate the key, and send you the private key.
-3. Put the public key of the key pair you just made in the new user's `~/.ssh/authorized_keys` file
+3. Put the public key of the key pair you just made in the new user's `~/.ssh/authorized_keys` file on the AWS instance
    - You have now set up SSH authentication to your account on (pretend) the new system!
-4. From your system, `ssh` in to the AWS instance using the new user's username and the private key you generated.
+4. From your local system, `ssh` in to the AWS instance using the new user's username and the private key you generated.
    - And now (in pretend world) you would rinse and repeat for all systems you'll have an account on. Your `~/.ssh/config` file will be handy here as you collect dozens of systems that you have access to. Setting up what private key goes to what system and what that system's IP / hostname is so you don't have to keep it all in your head.
 
 - **Resources**
