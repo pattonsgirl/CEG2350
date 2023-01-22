@@ -105,7 +105,7 @@ Paste your config file entry here
 
 ## Rubric
 
-- Part 1 - 3 pts
+- Part 1 - 4 pts
 - Part 2 - 8 pts
 - Part 3 - 6 pts
 - Part 4 - 3 pts
