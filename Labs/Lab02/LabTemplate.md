@@ -12,6 +12,7 @@ and push them (sync) with GitHub
 1. Add a file for tracking:
 2. Commit changes:
 3. Sync local commits with GitHub:
+4. Sync commits on GitHub to `clone`d repository:
 
 ## Part 2 Answers
 
