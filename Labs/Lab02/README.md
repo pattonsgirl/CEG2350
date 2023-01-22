@@ -36,6 +36,8 @@ This part assumes you successfully cloned your repository to your instance on AW
 4. `add` `Lab02.md` for tracking, `commit` changes as you go, and `push` to synchronize with GitHub
 5. Fill in the Part 1 Answers with a simple guide for taking a new, locally created file in your repository, and syncing it with GitHub.
 
+Reminder: if you make edits to your repository in GitHub using the browser, you'll need to `pull` to sync content in your `clone`d repository.
+
 ## Part 2 - Regular `bob`
 
 Perform the following exercise on your AWS instance
