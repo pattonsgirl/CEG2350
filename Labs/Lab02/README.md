@@ -5,6 +5,7 @@
 - [Part 2 - Regular `bob`](#Part-2---Regular-bob)
 - [Part 3 - Get a `crew`](#Part-3---Get-a-crew)
 - [Part 4 - `sudo` make me a sandwich](#Part-4---sudo-make-me-a-sandwich)
+- [Permissions Resources](#Permissions-Resources)
 - [Part 5 - ssh config](#Part-5---ssh-config)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
@@ -76,6 +77,17 @@ Perform the following exercise on your AWS instance
 1. In the your user's `home` directory, make a file with `sudo` named `sudowho.txt`
 2. What are the permissions of this file?
 3. Without modifying the permissions of the file, edit the file and add some text, and save the changes.
+
+## Permissions Resources
+
+Note: you are welcome to use resources outside of the below, but these are ones I have looked over.  Some of these will contain more information than you need.  Keep in mind the labs have you use commands for their basic goals, but they can be used to do more than the labs will have you play with.
+- [Linuxize - Understanding File Permissions](https://linuxize.com/post/understanding-linux-file-permissions/)
+- [Linuxize - how to use `useradd`](https://linuxize.com/post/how-to-create-users-in-linux-using-the-useradd-command/)
+   - I recommend using `adduser` in the lab, but this is a great breakdown of the pieces `adduser` uses and `useradd` needs you to specify
+- [Linuxize - groups and users](https://linuxize.com/post/how-to-add-user-to-group-in-linux/)
+- [Linuxize - `sudo`](https://linuxize.com/post/sudo-command-in-linux/)
+   - Note: on your AWS instance, the `ubuntu` user has passwordless sudo - as in you won't be prompted for your account password.  If you try `sudo` in the terminal on your machine, you will be prompted for a password
+
 
 ## Part 5 - ssh config
 
