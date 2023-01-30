@@ -152,5 +152,5 @@ Make sure you `commit` and `push` your script changes for grading.
   - specified files exist in `Lab03` folder - 1 pt
 - Part 5 - 3.5 pts total
   - 0.5 pts each
-- The extra credit is worth 0.625 pts
-  - translates to 5%
+- The extra credit is worth 5% 
+  - translates to 0.625 pts
