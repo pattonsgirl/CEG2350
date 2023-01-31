@@ -145,7 +145,7 @@ Make sure you `commit` and `push` your script changes for grading.
   - Reads in a filename as an argument - 1 pt
   - Sorts the contents of the file given in the argument using the `sort` command - 1 pt
   - Outputs the sorted data to a file called `sorted.txt` - 1 pt
-  - Condition verifies input file has extension `input.txt` - 1 pt
+  - Condition verifies input file has extension `.txt` - 1 pt
   - If condition is not met, error message is output to standard output - 1 pt
 - Part 4 - 2 pts
   - script usage guide - 1 pt
