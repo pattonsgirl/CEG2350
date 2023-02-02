@@ -1,0 +1,46 @@
+#! /bin/bash
+
+echo "If statement demo"
+num1=42
+read num2
+
+if [[ $num1 -eq $num2  ]]
+then
+	echo "The numbers are equal!"
+else
+	echo "The numbers aren't equal!"
+fi
+
+echo "Give me a filename!"
+read fname
+if [[ -e $fname ]]
+then
+	echo "It exists!"
+else
+	touch $fname
+fi
+
+echo "Hello there" >> file.txt
+
+var1=5
+
+var1=9
+
+echo var1 $var1
+
+#read var1
+
+var2=$1
+
+echo "The first arg is $1"
+echo "The first arg is stored in var2 and is $var2"
+
+echo "The second arg is $2"
+
+echo "All arguments were: $@"
+
+echo "The number of arguments is $#"
+
+echo "Can I get bar $bar"
+
+echo "The value of PATH is $PATH"
