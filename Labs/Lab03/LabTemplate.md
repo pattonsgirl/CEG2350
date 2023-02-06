@@ -1,7 +1,7 @@
 ## Lab 03
 
-- Name:
-- Email
+- Name: Isabella Livingston
+- Email: livingston.70@wright.edu
 
 ## Part 1 Answers
 
