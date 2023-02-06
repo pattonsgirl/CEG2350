@@ -66,8 +66,8 @@ To continue editing your file:
 1. Create a directory called `DirA`
 2. Create a directory called `Dir B`
    - You must end up with a folder named `Dir B`
-3. How do you go into `Dir B`?
-4. Which of these uses a better naming convention, and why?
+3. How do you go into the `Dir B` directory?
+4. Which of these directories, `DirA` or `Dir B` uses a better naming convention, and why?
 5. Rename `Dir B` to `DirB`
 
 ## Part 2 - Create and edit a file
