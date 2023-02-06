@@ -69,7 +69,8 @@ I recommend using `sed` without modifying the file at first - once you know your
 
 ```
 sed -i 's/SEARCH_REGEX/REPLACEMENT/g' INPUTFILE
-# -i option tells sed to edit files in place. If an extension is supplied (ex -i.bak), a backup of the original file is created otherwise the changes are written back to INPUTFILE
+# -i option tells sed to edit files in place. If an extension is supplied (ex -i.bak), a
+# backup of the original file is created otherwise the changes are written back to INPUTFILE
 ```
 
 Only write the command that performs the required task. DO NOT paste the results.
