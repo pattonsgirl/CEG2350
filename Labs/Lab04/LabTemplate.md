@@ -1,7 +1,7 @@
 ## Lab 04
 
 - Name:
-- Email
+- Email: 
 
 ## Part 1 Answers
 
@@ -17,7 +17,8 @@
 3.
 4.
 5.
-6.
+6. 
+7. (Optional notes if needed)
 
 ## Part 3 Answers
 

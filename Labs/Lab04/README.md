@@ -18,7 +18,7 @@ Go to the folder that contains your repository (likely named `ceg2350-yourgithub
 
 Create a new directory, `Lab04`
 
-This lab will have you creating input files, scripts, and output files. All of your work should be found here.
+This lab will have you creating input files, scripts, and output files.
 
 Some questions will need you to write answers in `Lab04.md` the [LabTemplate.md is here](LabTemplate.md).
 
@@ -30,7 +30,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## regex resources
 
-These are useful resources for remembering regex syntax and testing your expressions against smaller cases (regex 101 is recommended).
+These are useful resources for remembering regex syntax and testing your expressions against smaller cases.
 
 - [Mozilla - regex cheatsheet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet)
 - [regexone - practice regex patterns](https://regexone.com/)
@@ -39,7 +39,7 @@ These are useful resources for remembering regex syntax and testing your express
 
 ## Part 1 - grep
 
-`grep` is a handy command to find patterns in text. With played with two flags in class: `-E` and `-P`. `-E` handles most things, but does not work with special regex letter the represent ranges -`\w` and `\d` for example. To use these characters for the ranges they represent, use the `-P` flag instead of the `-E` flag.
+`grep` is a handy command to find patterns in text. We played with two flags in class: `-E` and `-P`. `-E` handles most things, but does not work with special regex letter the represent ranges -`\w` and `\d` for example. To use these characters for the ranges they represent, use the `-P` flag instead of the `-E` flag.
 
 ```
 grep [OPTIONS] PATTERN [FILE...]
@@ -59,22 +59,23 @@ Create a file named `grepdata.txt` in your `Lab04` folder. Put the contents of [
 
 ## Part 2 - sed
 
-`sed` is mostly commonly used as a search and replace command. In [sedfile.html](sedfile.html) you'll find a simple html file. Your task is to change it into markdown. Do this only using `sed` commands. Your final to-markdown file should be named `sedfile.md`.
+`sed` is mostly commonly used as a search and replace command. In [sedfile.html](sedfile.html) you'll find a simple html file. Your task is to change it into markdown. Do this only using `sed` commands. Your converted file should be named `sedfile.md`.
 
-The following picture shows how `sedfile.html` (the original) looks compared to `sedfile.md`
+The following picture shows how `sedfile.html` (the original) looks compared to `sedfile.md` when the files are viewed in GitHub.
 
 ![sed Before and After](sed-before-after.PNG)
 
-I recommend using `sed` without modifying the file at first - once you know your replacement patterns work, then save the changes to an output file.
+I recommend using `sed` without modifying the file at first - once you know your replacement patterns work, then save the changes to an output file using `sed`'s `-i` flag.
 
 ```
 sed -i 's/SEARCH_REGEX/REPLACEMENT/g' INPUTFILE
-# -i option tells sed to edit files in place. If an extension is supplied (ex -i.bak), a backup of the original file is created
+# -i option tells sed to edit files in place. If an extension is supplied (ex -i.bak), a backup of the original file is created otherwise the changes are written back to INPUTFILE
 ```
 
 Only write the command that performs the required task. DO NOT paste the results.
 
 1. Remove all html end tags - anything with `</stuff>`
+   - `stuff` here represents anything surrounded by `</ ____> `
 2. Replace all `<li>` tags and the whitespace before the tag with the markdown format for a bullet point: `- `
    - Note that is a dash followed by a single space
 3. Replace `<h1>` tags with markdown for header tags: `# `
@@ -83,6 +84,7 @@ Only write the command that performs the required task. DO NOT paste the results
    - Note that is TWO hashtags followed by a single space
 5. Remove the `<ul>` tags & remove the `<html>` tag
 6. Replace the word `Batches` with the word `Matches`
+7. (Optional) note here any additional `sed` commands used or anything you needed to manually fix
 
 - **Resources**
 - [linuxize - use sed to find and replace](https://linuxize.com/post/how-to-use-sed-to-find-and-replace-string-in-files/)
@@ -122,7 +124,9 @@ Only write the command that performs the required task. DO NOT paste the results
    - `updaterecords`
    - `Lab04.md`
 
-2. In the Pilot Dropbox, paste the URL to the `Lab04` folder in your GitHub repo
+2. Note that if your command answers in the answer template did not make use of the backtick (`), the TAs are allowed to refuse to grade your submission.  Cleanliness and readability is your responsibility.  
+
+3. In the Pilot Dropbox, paste the URL to the `Lab04` folder in your GitHub repo
    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab04
 
 ## Rubric
