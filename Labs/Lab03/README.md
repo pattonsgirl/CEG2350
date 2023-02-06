@@ -61,7 +61,7 @@ This and the following parts are meant to be done in your AWS instance in your `
 2.3
 ```
 
-2. Use the `sort` command to sort `input.txt`.
+2. Use the `sort` command to sort `input.txt`numerically.
 3. Use the `sort` command to sort `input.txt` and direct the output to `output.txt`.
 
 - **Resources:**
