@@ -1,0 +1,46 @@
+#!/bin/bash
+
+print_hello() {
+	echo "Hello world!"
+	echo "Arg in function is: $1"
+}
+
+print_hello "arg for function"
+
+echo "Arg given to script is:  $1"
+
+echo "Welcome to my program"
+read -s var1
+
+echo "Your secrect is $var1"
+echo 'Your secrect is $var1'
+
+filecount=`ls | wc -l`
+filecount=$(ls | wc -l)
+
+echo "Number of files is $filecount"
+
+for i in apples peaches bananas
+do
+	echo "value is $i"
+done
+
+for ((i = 0 ; i <= 1000 ; i+=5)); do
+  echo "Counter: $i"
+done
+
+echo "Give me a number!"
+read i
+
+while [[ $i -le 2 ]]
+do
+  echo "Number: $i"
+  ((i++))
+done
+
+file=groceries
+while IFS= read -r line
+do
+  echo $line
+done < $file
+
