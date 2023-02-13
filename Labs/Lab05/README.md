@@ -73,7 +73,7 @@ Usage: namechange -f find -r replace "string to modify"
    - Hint: you may just want to have `sed` use the `-E` option
 5. Rename the file.
 
-```sh
+```
 # Sample runs of working script
 
 $ bash namechange -h
