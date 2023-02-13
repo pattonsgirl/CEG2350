@@ -101,6 +101,7 @@ Renamed spellingerrrr.txt to spellingerror.txt
 - [`sed` with string, not input file](https://stackoverflow.com/questions/13055889/sed-with-literal-string-not-input-file)
 - [cyberciti - using Logical NOT in if statements](https://bash.cyberciti.biz/guide/Logical_Not_!)
 - [linuxize - functions](https://linuxize.com/post/bash-functions/)
+- [GitHub markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ## Extra Credit - Bulk Renamer
 
