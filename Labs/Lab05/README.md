@@ -1,7 +1,7 @@
 # Lab 05
 
 - [Lab Procedure](#Lab-Procedure)
-- [Name Change](#Name-Change)
+- [Name Change Script](#Name-Change-Script)
 - [Extra Credit - Bulk Renamer](#Extra-Credit---Bulk-Renamer)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
@@ -9,7 +9,7 @@
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/24167/modules/items/1982401)
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/36184/modules/items/3080473)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
@@ -19,7 +19,7 @@ Create a new directory, `Lab05`
 
 This lab may have you creating input files, scripts, and output files. All of your work should be found here.
 
-Some questions will need you to write answers in `Lab05.md` the [LabTemplate.md is here](LabTemplate.md).
+Some questions will need you to write answers in `README.md` the [LabTemplate.md is here](LabTemplate.md).
 
 - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab05/LabTemplate.md)
 
@@ -27,11 +27,23 @@ For each part below, you will be asked to do an action or answer a question. The
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-## Name Change
+## Name Change Script
 
-1. Create a script in your `Lab05` folder named `namechange`. Create some files with common errors (spaces in the filename, a misspelling, etc.). The final script will run as follows:  
-   `namechange -f find -r replace filename`
-2. Use `getopts` to read in options and do actions based on arguments. `getopts` should support the following options in the `OPTSTRING`
+The following will ask you to write a script that changes a file's name.  The script will allow the user to provide the search pattern to replace, and the replacement for the found pattern.  A sample of using the script, where `namechange` is the name of the script file:
+
+```
+namechange -f find -r replace filename
+```
+
+1. Create a script in your `Lab05` folder named `namechange`. 
+2. Create some files in your folder with common errors (spaces in the filename, a misspelling, etc.).  Sample errors:
+   - `.jpg` is misspelled as `.jgp`
+   - spaces in file names that could be replaced with `-`
+   - files with `foo` in them need to become `bar`
+
+**Implement the following features in the `namechange` script:**
+
+1. Use `getopts` to read in options and do actions based on arguments. `getopts` should support the following options in the `OPTSTRING`
 
    - `-h`
      - call `printHelp` function and exit script
@@ -46,7 +58,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
      - [getopts-basics.sh](getopts-basics.sh)
      - [cfgetopts.sh](cfgetopts.sh)
 
-3. Create a function called `printHelp`. `printHelp` should output the following:
+2. Create a function called `printHelp`. `printHelp` should output the following:
 
 ```
 Usage: namechange -f find -r replace "string to modify"
@@ -54,14 +66,14 @@ Usage: namechange -f find -r replace "string to modify"
  -r The replacement text for the new filename
 ```
 
-4. If no `filename` was provided OR if `filename` does not exist:
+3. If no `filename` was provided OR if `filename` does not exist:
    - Output `User must provide valid filename`
    - Call the `printHelp` function
-5. Using argument in field `filename`, find the pattern to be replaced and replace it with the pattern requested using `sed`
+4. Using argument in field `filename`, find the pattern to be replaced and replace it with the pattern requested using `sed`
    - Hint: you may just want to have `sed` use the `-E` option
-6. Rename the file.
+5. Rename the file.
 
-```
+```sh
 # Sample runs of working script
 
 $ bash namechange -h
@@ -76,7 +88,14 @@ $ bash namechange -f "er+" -r "error" spellingerrrr.txt
 Renamed spellingerrrr.txt to spellingerror.txt
 ```
 
-- **Resources**
+**Document your `namechange` script**
+
+1. Create a Usage Guide in a file named `README.md` in your `Lab05` folder
+   - Information on how users should use your script
+   - Examples of script usage and output
+   - Use good markdown so that this documentation is pretty and clean on GitHub.
+
+**Resources**
 - [bash-hackers - `getopts` tutorial](https://wiki.bash-hackers.org/howto/getopts_tutorial)
 - [assertnotmagic - breaking down how getopts works](https://www.assertnotmagic.com/2019/03/08/bash-advanced-arguments/)
 - [`sed` with string, not input file](https://stackoverflow.com/questions/13055889/sed-with-literal-string-not-input-file)
@@ -98,24 +117,25 @@ This builds on the script created for Part 1. Since the core is similar, I would
 2. The script will run as: `bulkrenamer -f find -r replace FILES_TO_RENAME*`
 3. For each file given (or all files in a given folder), rename according to the find / replace arguments provided.
 
-- **Resources**
+**Resources**
 - [linuxize - for loops](https://linuxize.com/post/bash-for-loop/)
 
 ## Submission
 
 1. Verify that your GitHub repo has a `Lab05` folder with at minimum:
 
-   - `Lab05.md`
-   - `namechange`
+   - `README.md` (`namechage` Usage Guide)
+   - `namechange` (script)
    - `bulkrenamer` - for extra credit
+   - Usage Guide for `bulkrenamer` - for extra credit
 
 2. In the Pilot Dropbox, paste the URL to the `Lab05` folder in your GitHub repo
    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab05
 
 ## Rubric
 
-- namechanger Usage Guide in `Lab05.md` contains clear explanation - 1pt
-- `namechanger` exists in repo - 1pt
+- `namechange` Usage Guide in `README.md` contains clear explanation - 1pt
+- `namechange` exists in repo - 1pt
 - `getopts` checks for `-h`, `-r`, `-f` and exits if option is not allowed - 2pts
 - `case` statements for `-r` and `-f` save argument values after option - 1pt
 - `printHelp` function called to print help guide - 1pt
