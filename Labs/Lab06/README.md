@@ -28,30 +28,30 @@ Find out the following information about your personal system. Write the answers
 - You should _not_ need to install additional programs to find this information. If someone tells you to install something, run away.
 
 1. CPU info:
-  - CPU brand:
-  - Number of cores:
-  - Number of logical cores:
+    - CPU brand:
+    - Number of cores:
+    - Number of logical cores:
 2. GPU info:
-  - Integrated GPU info:
-  - Dedicated GPU info: 
-  - Link to driver for primary GPU: 
+    - Integrated GPU info:
+    - Dedicated GPU info: 
+    - Link to driver for primary GPU: 
 3. Memory info:
-  - Physical memory (RAM) size (translate to GB)
-  - Virtual memory size (translate to GB)
-    - Some systems will call virtual memory a pagefile
+    - Physical memory (RAM) size (translate to GB)
+    - Virtual memory size (translate to GB)
+      - Some systems will call virtual memory a pagefile
 4. Storage info (for each disk attached to your system): 
-  - Disk type:
-  - Disk manufacturer and model:
-  - Total disk size (translate to GB):
+    - Disk type:
+    - Disk manufacturer and model:
+    - Total disk size (translate to GB):
 5. Primary partition info:
-  - Primary partition mount point:
-    - `C` for Windows users
-    - `/` for Linux / Mac(?) users
-  - Remaining space on primary partition (translate to GB):
-  - Filesystem on primary partition:
+    - Primary partition mount point:
+      - `C` for Windows users
+      - `/` for Linux / Mac(?) users
+    - Remaining space on primary partition (translate to GB):
+    - Filesystem on primary partition:
 6. BIOS / UEFI info: 
-  - BIOS or UEFI version: 
-  - How to access your BIOS / UEFI: 
+    - BIOS or UEFI version: 
+    - How to access your BIOS / UEFI: 
 
 ## Extra Credit - Install a VM Manager
 
