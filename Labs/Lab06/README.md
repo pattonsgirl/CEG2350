@@ -1,7 +1,7 @@
 # Lab 06
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Self Discovery](#Part-1---Self-Discovery)
+- [System Discovery](#System-Discovery)
 - [Extra Credit - Install a VM Manager](#Extra-Credit---Install-a-VM-Manager)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
@@ -18,43 +18,53 @@ Create a file named `Lab06.md` [based on the template](LabTemplate.md).
 
 - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab06/LabTemplate.md)
 
-## Part 1 - Self Discovery
+## System Discovery
 
-Find out the following information about your personal system. Write the answers to the information requested. Part of this is learning about your system, so some info will not be findable. Provide confirmation of your findings where possible.
-
-For example, my laptop does not have a dedicated GPU card. I can run commands or look through system settings to confirm there is no GPU
+Find out the following information about your personal system. Write the answers to the information requested. Part of this is learning about your system, so some info will not apply to your system (because of how your OS works with your hardware or your system's hardware). Provide confirmation of your findings where possible.
 
 - You can use the manufacturers website / manuals
-- You can post to Discord for hints
+- You can post to our course Discord channel for help / hints
   - On \_\_ OS, how are you finding \_\_?
 - You should _not_ need to install additional programs to find this information. If someone tells you to install something, run away.
 
-1. CPU brand, number of cores, and number of logical cores
-2. GPU model information
-   - list **both** integrated and dedicated GPU information if it applies to your system
-3. Physical memory size (translate to GB)
-4. Virtual memory size (translate to GB)
-   - Some systems will call virtual memory a pagefile
-5. Disk type / model
-6. Total disk size (translate to GB)
-7. Remaining disk space on primary partition (translate to GB)
-8. File system used on primary partition
-   - C partition for Windows users
-   - / partition for Linux / Mac(?) users
-9. BIOS mode / version
-10. Note whether or not your BIOS / UEFI is accessible, and what steps should let you access it.
+1. CPU info:
+  - CPU brand:
+  - Number of cores:
+  - Number of logical cores:
+2. GPU info:
+  - Integrated GPU info:
+  - Dedicated GPU info: 
+  - Link to driver for primary GPU: 
+3. Memory info:
+  - Physical memory (RAM) size (translate to GB)
+  - Virtual memory size (translate to GB)
+    - Some systems will call virtual memory a pagefile
+4. Storage info (for each disk attached to your system): 
+  - Disk type:
+  - Disk manufacturer and model:
+  - Total disk size (translate to GB):
+5. Primary partition info:
+  - Primary partition mount point:
+    - `C` for Windows users
+    - `/` for Linux / Mac(?) users
+  - Remaining space on primary partition (translate to GB):
+  - Filesystem on primary partition:
+6. BIOS / UEFI info: 
+  - BIOS or UEFI version: 
+  - How to access your BIOS / UEFI: 
 
 ## Extra Credit - Install a VM Manager
 
-This is to take some headache out of Lab 07. It is not "due", but recommended to get done this week in case there are any new surprises. If you have trouble, post to the class chat in Discord so I / the TAs / your classmates can help out.
+This is to take some headache out of Lab 07 by having you install VirtualBox now. It is recommended to get done this week in case there are any new surprises. If you have trouble, post to the class chat in Discord so I / the TAs / your classmates can help out.
 
-You will need a computer that has CPU virtualization enabled. The lab machines & open lab machines in Russ are all good candidates (and may have VirtualBox already installed). For your own machine, you may need to enable CPU virtualization in your BIOS.
+You will need a computer that has CPU virtualization enabled. The lab machines & open lab machines in Russ are all good candidates (and may have VirtualBox already installed). For your own machine, you may need to enable CPU virtualization in your BIOS / UEFI.
 
 - Windows, Linux, Mac users:
   - [Download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
   - Pick your host OS when installing
     - For example, Windows users should select "Windows hosts")
 - Mac M1 Users:
+  - VirtualBox _should_ work now, but just in case:
   - Install either:
     - Parallels - Wright State offers a student discount on Parallels
       - [Get Parallels via the Hub](https://www.wright.edu/information-technology/software-purchases-for-personal-use)
@@ -77,5 +87,5 @@ You will need a computer that has CPU virtualization enabled. The lab machines &
 
 ## Rubric
 
-- 1 pt per question - 10 pts total
-- Extra credit - 5% = 0.5 pts
+- Each bullet point = 1 point -> 16 pts total
+- Extra credit - 5% = 0.8 pts
