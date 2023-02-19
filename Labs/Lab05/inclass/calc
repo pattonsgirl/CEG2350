@@ -1,0 +1,22 @@
+#! /bin/bash
+
+echo "What would you like to do? (add, subtract, multiply)?"
+
+read useroption
+
+echo "Give two numbers:"
+printf "Number one: " && read num1
+printf "Number two: " && read num2
+
+if [[ "add" = $useroption ]]; then
+	echo "Adding $num1 and $num2"
+	echo "Result: " $(( $num1 + $num2 ))
+elif [[ "subtract" = $useroption  ]]; then
+	echo "Subtracting $num1 and $num2"
+        echo "Result: " $(( $num1 - $num2 ))
+elif [[ "multiply" = $useroption ]]; then
+	echo "Multiply $num1 and $num2"
+        echo "Result: " $(( $num1 * $num2 ))
+else 
+	echo "Not an option"
+fi

@@ -1,0 +1,56 @@
+#! /bin/bash
+
+printHelp() {
+	printf "Use this program to add subtract or multiply \n \
+		-a add \n \
+		-s subtract \n \
+		-m multiply \n \
+		Followed by two numbers.  Sample usage \n \
+		scriptname -a 12 2 \n"
+		
+}
+
+if [[ $# -ne 3 ]]; then
+	echo "Invalid number of options"
+	printHelp
+	exit
+fi
+
+while getopts ":hasm" opt; do
+	case $opt in
+		h)
+			echo "h was given, printing help"
+			printHelp
+			exit
+			;;
+		*)	
+			echo "not an option"
+			printHelp
+			exit
+			;;
+			
+	esac
+done
+
+useroption=$1
+num1=$2
+num2=$3
+
+case $useroption in
+	"-a")
+		echo "Adding $num1 and $num2"
+		echo "Result: " $(( $num1 + $num2 ))
+		;;
+	"-s")
+		echo "Subtracting $num1 and $num2"
+        	echo "Result: " $(( $num1 - $num2 ))
+		;;
+	"-m")
+		echo "Multiply $num1 and $num2"
+        	echo "Result: " $(( $num1 * $num2 ))
+		;;
+	*)
+		echo "Not an option"
+		printHelp
+		;;
+esac
