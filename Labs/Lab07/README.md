@@ -23,84 +23,75 @@ Create a file named `Lab07.md` [based on the template](LabTemplate.md).
 
 We have been talking about the boot process, computer parts, and installing operating systems, but it's hard to give you a computer to build and feel this out - so how about a virtual one!
 
-**Your deliverable is a full write up in `Lab07.md` of every step of creating a VM - from choosing the virtualized hardware to installing an OS.**
-
 You will need a computer that has CPU virtualization enabled. The lab machines & open lab machines in Russ are all good candidates (and may have VirtualBox already installed). For your own machine, you may need to enable CPU virtualization in your BIOS.
+
+---
 
 - Windows, Linux, Mac users:
   - [Download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
   - Pick your host OS when installing
     - For example, Windows users should select "Windows hosts")
-- Mac M1 Users:
-  - Install either:
-    - Parallels - Wright State offers a student discount on Parallels
-      - [Get Parallels via the Hub](https://www.wright.edu/information-technology/software-purchases-for-personal-use)
-    - [UTM](https://mac.getutm.app/) - free if you click "Download". You can support the developers by paying through the App Store.
-  - the instructions below should apply generically, but if you are having trouble post in the general chat on Discord and we will help as we can
-- Windows 11 Users:
-  - Try to install VirtualBox, but it has had mixed support in Windows 11
-  - [Enable Hyper-V Manager](https://www.groovypost.com/howto/enable-virtualization-in-windows-11/)
-- Chromebook Users:
-  - You may need to use one of the open labs (320 OH during lab time, or Russ 152 B or D) or be prepared to use a different system you have access to.
+---
 
-**Do the following, and write down the steps used in `Lab07.md` Part 1 Answers.**
-
-1. Create a Virtual Machine with the following minimum specifications:
-   - Type: Linux
-   - Version: Other Linux (64-bit)
-   - 2 GB RAM
-   - 10 GB disk space
-2. Add a screenshot to your documentation of your virtualized hardware configuration
-3. Download an ISO (installation image) for a Linux distribution of your choice. State which Linux distribution you picked
-   - Ubuntu Desktop is a safe bet
-   - Linux Mint, Elementary, Kali, Pop OS - or check distro watch
-   - I will warn that if your selection "isn't working" you should try Ubuntu and move on with life
-4. Start your machine and select your ISO (installation image)
-5. Go through the installation process for your chosen Linux distribution
-   - For ease right now, I would select "Erase and install" - however that is phrased
-   - Some OSes will have default partition settings that do not play well with only 10GB
-     - You can, in these cases, manually create the root `/` partition to extend over the whole disk
-   - You do not need to encrypt your "disk", unless that is your preference
-6. Remove installation media: pick your method
-   - After a successful install, go to Settings and change your boot order to boot from disk first
-   - After a successful install, go to Settings and remove any disks besides your virtual disk
-   - Confirm that when you turn your machine on, the OS starts, not the installation media
-     - A good hint here is that the log in screen comes up
-7. Switch your VM to run in fullscreen.
-   - VirtualBox users may need the **VirtualBox Extension Pack** install the same version extension pack as your installed version of VirtualBox. Download the Pack to your host system, then follow the steps below
-     - Launch your VM, then insert the Guest Additions CD Image.
-     - Run the Guest Additions installer for your system (I would do the Linux installer)
-     - Reboot your VM, then Auto-resize Guest Display
-8. Add a screenshot to your documentation of your running VM
+1. Download an ISO (installation image) for a Linux distribution of your choice.  Options include: Ubuntu Desktop, LUbuntu, Linux Mint, Elementary, Kali, Pop OS, [and many more](https://distrowatch.com/)  
+   - Document:
+      - which Linux distribution you selected
+      - the URL you downloaded it from 
+   - Note: if your selection "isn't working" you should try Ubuntu and move on with life
+2. Create a Virtual Machine.  
+    - Select the checkbox for "Skip unattended installation"
+    - Document the hardware resources you chose for it
+    - Take a screenshot of the **Summary** of your configurations then select "Finish".  
+3. Start your Virtual Machine and install the Guest Operating System
+    - Document:
+      - how to start the installation
+      - what disk it is installing to
+      - the size of the partition it is installing the OS to
+      - filesystem to be used on the partition
+4. Remove the installation media storage device from the Virtual Machine 
+    - Document:
+      - how you removed the installation media
+      - how you verified the installation media was removed
+5. Install Guest Additions on your Virtual Machine.  [Guest Additions enables useful features](https://www.makeuseof.com/tag/virtualbox-guest-additions-what-they-are-and-how-to-install-them/) but mostly fixes resolution headaches.
+    - Document:
+      - how to insert Guest Additions
+      - how to run the Guest Additions installer for your Guest Operating System
+        - Note: likely `VBoxLinuxAdditions.run`
+      - how to change resolution of the VM
+6. Control the Virtual Machine state
+    - Document:
+      - Turning on the VM:
+      - Turning off the VM:
+      - Restarting the VM:
+7. In your VM, open a file and type your name.  Take a screenshot of your VM.
 
 ## Part 2 - Playground
 
-**Do the following, and write down the steps used in `Lab07.md` Part 2 Answers**
+Accomplish the following tasks using the Virtual Machine you made in Part 1.
 
-1. In your VM, change your desktop background.
-2. In your VM, open a web browser and go to a neat website (or just Pilot).
-3. In your VM, install VSCode.
-4. In your VM, connect to your AWS instance from your VM using `ssh`.
+1. How to change your desktop background in your VM:
+2. How to install VSCode in your VM:
+3. How to connect to your AWS instance from your VM using `ssh`:
   - Think way back to labs 1 & 2 - what did you need to `ssh` in to your AWS system from a terminal?
 
 ## Hints - Screenshots and markdown
 
-There are a lot of ways to add screenshots to a markdown file. I'm going to tell you my way. This is going to introduce a new `git` command: `git pull`
+There are a lot of ways to add screenshots to a markdown file. I'm going to tell you my way. I use my system to take a screenshot, and then I upload files in my repository in GitHub.
 
-When content exists on GitHub, but does not exist in your local folder (the one you usually `git push` from) you need to do a `git pull` to sync back up.
+Remember when content exists in your repository folder on GitHub, but does not exist in your local folder (the one you usually `git push` from) you need to do a `git pull` to sync back up.
 
-We are going to be adding images directly to GitHub, then using `git pull` to get our content and the content on GitHub back in sync.
+We are going to be uploading images directly to our repository in GitHub, then use `git pull` pull those changes (more specifically, pull the commits which include the changes) to our cloned repositories.
 
 1. Take the screenshots required by part 1. Store them somewhere easy to access (like your Desktop).
 2. Go to your GitHub classrooms repo in a browser: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME
 3. Click the "Add files" button, then click "Upload files"
 4. Upload your screenshots. Write commit messages in the browser text fields, then click "Commit Changes"
-   - you should now see the images in your main folder
+   - you should now see the images in your repository in GitHub
 5. Head back to a terminal where you are working on your Lab 07 documentation
    - type `git pull`
    - you should see your file names appear in the change list
    - and you should now be able to `ls` and see them
-6. In your lab template, you have a line similar to: `![Screenshot of VM running](relative_path_to_filename_here)`
+6. In your lab template, you have a lines similar to: `![Screenshot of VM running](relative_path_to_filename_here)`
    - keep the parenthesis, but fill them with the relative path to your respective photos
    - this should be relative to being in your repo folder
 
@@ -116,5 +107,20 @@ We are going to be adding images directly to GitHub, then using `git pull` to ge
 
 ## Rubric
 
-- Part 1 - 1 pt per question - 8 pts total
-- Part 2 - 1 pt per question - 4 pts total
+- Part 1 - 1 pt per question - 7 pts total
+- Part 2 - 1 pt per question - 3 pts total
+
+## Troubleshooting
+
+You should reach out on Discord if you are running into headaches.  Below is stuff we have needed to lean on in the past.  As updates happen, things smooth out.
+
+- Mac M1 Users:
+    - Parallels - Wright State offers a student discount on Parallels
+      - [Get Parallels via the Hub](https://www.wright.edu/information-technology/software-purchases-for-personal-use)
+    - [UTM](https://mac.getutm.app/) 
+      - free if you click "Download". You can support the developers by paying through the App Store.
+      - there are articles online, but we have some documentation from students.
+- Windows 11 Users:
+  - [Enable Hyper-V Manager](https://www.groovypost.com/howto/enable-virtualization-in-windows-11/)
+- Chromebook Users:
+  - Chromebooks do not support virtualization.  You may need to use one of the open labs (320 OH during lab time, or Russ 152 B or D) or be prepared to use a different system you have access to.

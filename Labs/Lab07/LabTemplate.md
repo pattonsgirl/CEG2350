@@ -5,18 +5,39 @@
 
 ## Part 1 Answers
 
-1. Steps to configure virtual hardware:
-2. ![Screenshot of VM settings](relative_path_to_image_filename_here)
-3. Steps to download an ISO:
-4. Steps to use ISO on VM:
-5. Steps to install your distribution:
-6. Steps to boot to disk after install:
-7. Steps to use full screen mode:
-8. ![Screenshot of VM running](relative_path_to_image_filename_here)
+1. Download an ISO:
+    - Linux distribution:
+    - URL to download it
+2. Virtual Machine configurations:
+    - RAM -
+    - CPU - 
+    - Disk size - 
+
+![Screenshot of Summary](relative_path_to_image_filename_here)
+
+3. Install Guest OS:
+    - Start installation:
+    - Disk to install to:
+    - Partition size:
+    - Partition filesystem: 
+4. Remove installation media:
+    - How to remove:
+    - How to verify: 
+5. Guest Additions:
+    - How to insert Guest Additions:
+    - How to run the Guest Additions installer for your Guest Operating System:
+    - How to change resolution of the VM:
+6. VM Control:
+    - Turning on the VM:
+    - Turning off the VM:
+    - Restarting the VM:
+7. Proof of your VM running your Guest OS:
+
+![Screenshot with name in file](relative_path_to_image_filename_here)
+
 
 ## Part 2 Answers
 
-1. Steps to change desktop background.
-2. Steps to open a web browser.
-3. Steps to install VSCode.
-4. Steps to connect to your AWS instance from your VM.
+1. How to change your desktop background in your VM:
+2. How to install VSCode in your VM:
+3. How to connect to your AWS instance from your VM using `ssh`:
