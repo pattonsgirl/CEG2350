@@ -124,3 +124,4 @@ You should reach out on Discord if you are running into headaches.  Below is stu
   - [Enable Hyper-V Manager](https://www.groovypost.com/howto/enable-virtualization-in-windows-11/)
 - Chromebook Users:
   - Chromebooks do not support virtualization.  You may need to use one of the open labs (320 OH during lab time, or Russ 152 B or D) or be prepared to use a different system you have access to.
+- [Other noted issues and solutions / recommendations](https://github.com/pattonsgirl/CEG2350/issues/7)
