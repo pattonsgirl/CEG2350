@@ -10,11 +10,6 @@ printHelp() {
 		
 }
 
-if [[ $# -ne 3 ]]; then
-	echo "Invalid number of options"
-	printHelp
-	exit
-fi
 
 while getopts ":hasm" opt; do
 	case $opt in
@@ -22,6 +17,10 @@ while getopts ":hasm" opt; do
 			echo "h was given, printing help"
 			printHelp
 			exit
+			;;
+		a) 
+			echo "A for add was given"
+			break
 			;;
 		*)	
 			echo "not an option"
@@ -32,25 +31,12 @@ while getopts ":hasm" opt; do
 	esac
 done
 
-useroption=$1
-num1=$2
-num2=$3
+echo "The value of OPTIND is $OPTIND"
 
-case $useroption in
-	"-a")
-		echo "Adding $num1 and $num2"
-		echo "Result: " $(( $num1 + $num2 ))
-		;;
-	"-s")
-		echo "Subtracting $num1 and $num2"
-        	echo "Result: " $(( $num1 - $num2 ))
-		;;
-	"-m")
-		echo "Multiply $num1 and $num2"
-        	echo "Result: " $(( $num1 * $num2 ))
-		;;
-	*)
-		echo "Not an option"
-		printHelp
-		;;
-esac
+echo "args pre-shift: $@"
+shift $((OPTIND-1))
+
+echo "args POST shift $@"
+
+echo "Adding $1 and $2"
+echo "Result: " $(( $1 + $2 ))
