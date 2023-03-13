@@ -5,8 +5,8 @@
 
 ## Part 1 Answers
 
-1.
-2.
+1. Disks:
+2. Unpartitioned disk:
 3. `gdisk` main menu options
    - `p`
    - `o`

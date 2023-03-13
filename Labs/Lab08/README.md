@@ -9,7 +9,7 @@
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/24167/modules/items/1982401)
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/36184/modules/items/3080473)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
@@ -31,15 +31,16 @@ For each step below, write the answer to the question / prompt and how you found
 
 - **Useful Commands: `df`, `lsblk`, `blkid`, `gdisk`, `mkfs`, `mount`, `strings`**
 
-1. What is the currently mounted block device?
-2. Is there another drive listed in `/dev/`?
-3. For the `gdisk` GPT partition table manipulator, find out what the following main menu options do:
+1. According to `lsblk`, what `disk`s are attached to the system?
+2. Of the disks, which does not have any partitions?
+3. Using the `gdisk` GPT partition table manipulator, find out what the following main menu options do:
    - `p`
    - `o`
    - `n`
    - `i`
    - `w`
-4. Open the unused drive with `gdisk`. Using the main menu, configure the disk to use the GPT partition table type, have at least 1 partition, and have that partition use the Linux filesystem type. Save your changes to the disk.
+4. Open the unpartitioned disk with `gdisk`. Using the main menu, configure the disk to use the GPT partition table type, have at least 1 partition, and have that partition use the Linux filesystem type. Save your changes to the disk.
+   - Hint: remember disks devices are in the `/dev/` folder
 5. Make an ext4 filesystem on the new partition
 6. Make a folder in `/mnt/` called `expanse`
 7. Mount the partition to `expanse`
@@ -77,7 +78,7 @@ For each step below, write the answer to the question / prompt and how you found
    - Does modifying the hard linked file modify `original.txt`? Explain
 4. Create a symbolic link to `original.txt`
    - What identifiers indicate a symbolic link was created?
-   - If `original.txt` was deleted, and a new `original.txt` was created, would the sym link still work? Explain
+   - If `original.txt` was deleted, and a new `original.txt` was created, would the symbolic link still work? Explain
 5. Create a copy of `original.txt`
    - Does modifying the copied file modify `original.txt`? Explain
 6. Move `original.txt` to another directory.
@@ -87,7 +88,7 @@ For each step below, write the answer to the question / prompt and how you found
 
 - Resources:
   - [linoxide - linux inode](https://linoxide.com/linux-inode/)
-  - [how to geek - everything you ever wanted to know about inodes on linux/](https://www.howtogeek.com/465350/everything-you-ever-wanted-to-know-about-inodes-on-linux/)
+  - [how to geek - everything you ever wanted to know about inodes on linux](https://www.howtogeek.com/465350/everything-you-ever-wanted-to-know-about-inodes-on-linux/)
 
 ## Extra Credit - take a fstab at this
 
@@ -101,7 +102,7 @@ For each step below, write the answer to the question / prompt and how you found
 - Resources:
   - [HowToGeek - How to write an fstab file on Linux](https://www.howtogeek.com/444814/how-to-write-an-fstab-file-on-linux/)
   - [linuxconfig - fstab](https://linuxconfig.org/how-fstab-works-introduction-to-the-etc-fstab-file-on-linux)
-  - [ubuntu - Fstab](https://help.ubuntu.com/community/Fstab)
+  - [ubuntu - fstab](https://help.ubuntu.com/community/Fstab)
 
 ## Submission
 
