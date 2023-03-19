@@ -124,7 +124,7 @@ For each step below, write the corresponding command(s) to do the action request
 
 ## Rubric
 
-- Part 1 - (3 pts)
+- Part 1 - 3 pts
   - while loop
   - outputs text to file
   - uses sleep command to slow down output spam
