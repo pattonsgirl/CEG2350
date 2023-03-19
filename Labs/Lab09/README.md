@@ -3,13 +3,13 @@
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - To Infinity](#Part-1---To-Infinity)
 - [Part 2 - Running Processes](#Part-2---Running-Processes)
-- [Part 3 - `branch`ing out](#Part-3---`branch`ing-out)
+- [Part 3 - `branch` out](#Part-3---`branch`-out)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/24167/modules/items/1982401)
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/36184/modules/items/3080473)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
@@ -24,6 +24,17 @@ Write answers in `Lab09.md` the [LabTemplate.md is here](LabTemplate.md).
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
+
+## Can't SSH?
+
+If you cannot `ssh` to your instance anymore, you may have run into one of these scenarios:
+- You overwrote the partition table (or partitions) in `xvda` - this would erase your `root` / `/` filesystem.
+- You wrote a bad entry in `/etc/fstab` - if the system cannot mount the disk, the boot process will hang and not complete 
+
+If you think one of those scenarios happened to you, you'll need to go back to [Lab 01](../Lab01/) and create a new stack. Once you are in the new instance, don't forget the steps to cloning your repo:
+- create a new keypair
+- add the public key to your GitHub user settings
+- clone with ssh
 
 ## Part 1 - To Infinity
 
@@ -76,7 +87,7 @@ For the following exercises, you are going to have two terminals open to your AW
   - [Kill detached screen session](https://www.baeldung.com/linux/kill-detached-screen-session)
   - [How to use `tmux`](https://www.howtogeek.com/671422/how-to-use-tmux-on-linux-and-why-its-better-than-screen/)
 
-## Part 3 - `branch`ing out
+## Part 3 - `branch` out
 
 For each step below, write the corresponding command(s) to do the action requested. We will be looking at your repos to make sure the branch exists.
 
