@@ -3,7 +3,7 @@
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Write Code](#Part-1---Write-Code)
 - [Part 2 - Compile a Program](#Part-2---Compile-a-Program)
-- [Part 3 - Create a Makefile](#Part-3---Create-a-Makefile)
+- [Part 3 - Create a `Makefile`](#Part-3---Create-a-Makefile)
 - [Extra Credit - Dependents](#Extra-Credit---Dependents)
 - [Extra Credit - G@M3R](#Extra-Credit---G@M3R)
 - [Submission](#Submission)
@@ -12,7 +12,7 @@
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/24167/modules/items/1982401)
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/36184/modules/items/3080473)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
@@ -30,14 +30,14 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - Write Code
 
-Use Java or C or C++ to write an echo program. Name your source code file `repeat` with the appropriate source code extension: `repeat.java`, `repeat.c`, `repeat.cpp`. The program should be the following:
+Use Java or C or C++ to write an echo program. Name your source code file `repeat` with the appropriate source code extension: `repeat.java`, `repeat.c`, `repeat.cpp`. The program should perform the following:
 
 - prompt the user to enter text
 - capture text from standard input
-- output the captured text back to standard output
+- output the captured text to standard output
 
 - **Additional notes**
-  - Code integrity does not matter - you may work together or use things found on the internet or textbooks. Practice citing your sources using comments in your code.
+  - You may work together or use things found on the internet or textbooks. Practice citing your sources using comments in your code.
   - You are welcome to use an IDE you are familiar with to write test and debug your code, but you'll need to get the source code to a file on your AWS instance for the remainder of the lab.
   - There is some useful C starter code in [this guide](https://www.geeksforgeeks.org/taking-string-input-space-c-3-different-methods/) about halfway down.
     - You'll need to add another print statement before the scan statement to prompt the user to enter a string.
@@ -48,7 +48,7 @@ Use Java or C or C++ to write an echo program. Name your source code file `repea
 2. Compile your source code using the compiler.
 3. Run your compiled code.
 
-## Part 3 - Create a Makefile
+## Part 3 - Create a `Makefile`
 
 1. Create a file called `Makefile`.
 2. Write targets in your `Makefile` such that the following terminal commands do the corresponding actions:
@@ -57,10 +57,10 @@ Use Java or C or C++ to write an echo program. Name your source code file `repea
    - `make clean` - if the compiled program exists, will delete the compiled program
 
 - **Resources**
-  - [Sample Java Makefile in this folder](./Makefile-Java)
-  - [Sample C/C++ Makefile in the folder](./Makefile-C)
-  - [Makefile in C](https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html#C)
-  - [Makefile in Java](https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html#java)
+  - [Sample Java `Makefile` in this folder](./Makefile-Java)
+  - [Sample C/C++ `Makefile` in the folder](./Makefile-C)
+  - [`Makefile` in C](https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html#C)
+  - [`Makefile` in Java](https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html#java)
 
 ## Extra Credit - Dependents
 
@@ -73,21 +73,22 @@ Modify your `Makefile` to compile the original file & its new dependency(s). Not
 
 ## Extra Credit - G@M3R
 
-Install ninvader from the source, [ninvaders-0.1.1.tar.gz](ninvaders-0.1.1.tar.gz). For credit, you need to detail how you installed ninvaders successfully by including at least the details specified below including which commands you used.
+Install `ninvaders` from the source, [`ninvaders-0.1.1.tar.gz`](ninvaders-0.1.1.tar.gz). For credit, you need to detail how you installed `ninvaders` successfully by including at least the details specified below including which commands you used.
 
 - **Useful Commands: `wget`, `tar`, `apt`, `make`**
 
 1. Download `ninvaders-0.1.1.tar.gz` to your home directory.
 2. Install / check installation of `gcc` and `ncurses`.
-3. Extract ninvaders to your home directory.
-4. Compile ninvaders
+3. Extract `ninvaders` to your home directory.
+4. Compile `ninvaders`
+5. Play `ninvaders`
 
 ## Submission
 
 1. Verify that your GitHub repo has a `Lab10` folder with at minimum:
 
    - `repeat.java` OR `repeat.c` OR `repeat.cpp`
-   - your compiled code
+   - your compiled program
    - `Makefile`
    - `Lab10.md`
 
@@ -99,6 +100,7 @@ Install ninvader from the source, [ninvaders-0.1.1.tar.gz](ninvaders-0.1.1.tar.g
 - Part 1 - 4 pts
 - Part 2 - 3 pts
 - Part 3 - 3 pts
+  - 1 pt per target
 - Extra Credit - Dependents - 1 pt (10%)
 - Extra Credit - G@M3RS - 1 pt (10%)
 
