@@ -107,7 +107,7 @@ For each step below, write the corresponding command(s) to do the action request
 
 - Resources:
 
-  - [Varonis - Git Branching and Merging](varonis.com/blog/git-branching)
+  - [Varonis - Git Branching and Merging](https://www.varonis.com/blog/git-branching)
     - Note: this is overkill for the lab, but a good read with nice visuals
   - [Git Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
   - [Git - Basic Branching & Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
