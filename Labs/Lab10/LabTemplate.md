@@ -32,7 +32,7 @@
 
 ### Instructions to Install `nsnake`
 
-1. Download the package from `https://github.com/pattonsgirl/Fall2021-CEG2350/raw/main/Labs/Lab10/nsnake-3.0.1.tar.gz`
+1. Download the package from `https://github.com/pattonsgirl/CEG2350/raw/main/Labs/Lab10/nsnake-3.0.1.tar.gz`
 
 ```
 Replace with command(s)
