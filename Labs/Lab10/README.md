@@ -73,15 +73,15 @@ Modify your `Makefile` to compile the original file & its new dependency(s). Not
 
 ## Extra Credit - G@M3R
 
-Install `ninvaders` from the source, [`ninvaders-0.1.1.tar.gz`](ninvaders-0.1.1.tar.gz). For credit, you need to detail how you installed `ninvaders` successfully by including at least the details specified below including which commands you used.
+Install `nsnake` from the source, [`nsnake-3.0.1.tar.gz`](nsnake-3.0.1.tar.gz). For credit, you need to detail how you installed `nsnake` successfully by including at least the details specified below including which commands you used.
 
 - **Useful Commands: `wget`, `tar`, `apt`, `make`**
 
-1. Download `ninvaders-0.1.1.tar.gz` to your home directory.
+1. Download `nsnake-3.0.1.tar.gz` to your home directory.
 2. Install / check installation of `gcc` and `ncurses`.
-3. Extract `ninvaders` to your home directory.
-4. Compile `ninvaders`
-5. Play `ninvaders`
+3. Extract `nsnake` to your home directory.
+4. Compile `nsnake`
+5. Play `nsnake`
 
 ## Submission
 

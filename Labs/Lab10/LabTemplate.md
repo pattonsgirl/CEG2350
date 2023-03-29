@@ -30,9 +30,9 @@
 
 ## Extra Credit - G@M3RS Answers - Delete the section if not doing :)
 
-### Instructions to Install ninvaders
+### Instructions to Install `nsnake`
 
-1. Download the package from `https://github.com/pattonsgirl/Fall2021-CEG2350/raw/main/Labs/Lab09/ninvaders-0.1.1.tar.gz`
+1. Download the package from `https://github.com/pattonsgirl/Fall2021-CEG2350/raw/main/Labs/Lab10/nsnake-3.0.1.tar.gz`
 
 ```
 Replace with command(s)
@@ -50,13 +50,13 @@ Replace with command(s)
 Replace with command(s)
 ```
 
-4. Compile ninvaders
+4. Compile `nsnake`
 
 ```
 Replace with command(s)
 ```
 
-5. Play ninvaders
+5. Play `nsnake`
 
 ```
 Replace with command(s)
