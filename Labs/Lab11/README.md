@@ -2,14 +2,14 @@
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Network Discovery](#Part-1---Network-Discovery)
-- [Part 2 - Network Sniffing](#Part-2---Network-Sniffing)
+- [Part 2 - Packet Capture](#Part-2---Packet-Capture)
 - [Part 3 - Get Off My Port](#Part-3---Get-Off-My-Port)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/24167/modules/items/1982401)
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/36184/modules/items/3080473)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
@@ -41,11 +41,16 @@ With your PC (not the AWS instance) connected to a network, identify the followi
 7. DNS server address:
 8. Public IP used for communications outside subnet:
 
-- Note: These results are going to look boring at home, but interesting on more complex networks, like Wright State. At home you likely have one device (your router) that is the first stop for most requests (DHCP, DNS, and gateway to route traffic to the next stop). On a complex network, you'll see these addresses getting distributed to different devices - there is a device to connect to to request an address and network information (DHCP server), another that is a first stop for DNS resolution, and maybe another that is the gateway address that packets outside the network are forwarded to to find their destination.
+- Note: These results are going to look boring at home, but interesting on more complex networks, like Wright State or Starbucks.  While you are welcome to do this using your home network, play with these commands on other networks as well. At home you likely have one device (your router) that is the first stop for most requests (DHCP, DNS, and gateway to route traffic to the next stop). On a complex network, you'll see these addresses getting distributed to different devices - there is a device to connect to to request an address and network information (DHCP server), another that is a first stop for DNS resolution, and maybe another that is the gateway address that packets outside the network are forwarded to to find their destination.
 
-## Part 2 - Network Sniffing
+## Part 2 - Packet Capture
 
-Use your AWS instance for this part. You are going to analyze traffic on a network. For some exercises, you'll need to create two `ssh` connections to your AWS instance (like you did for the processes lab).
+Use your AWS instance for this part. For these some exercises, you'll need to create two `ssh` connections to your AWS instance (like you did for the processes lab).
+
+`tcpdump` is a command line utility that allows you to capture and analyze network traffic going through your system.  Mind you, this is network traffic - **packets**. in your browser, you see web content that is assembled from packets.  For this lab, you will craft a `tcpdump` command to analyze traffic over the AWS instance's network interface and apply filters so that you can focus on traffic going to / from specific hosts.
+
+`curl` (`cURL`) stands for client URL, is a command line tool that developers use to transfer data to and from a server.  Since your AWS instance does not have a browser, `curl` is a command that will let you request data from a host and see the raw html that is returned.  
+   - You can "verify" what you see as output from `curl` by going to your browser, going to a webpage, right clicking, and selecting view source. 
 
 - **Useful Commands: `tcpdump`, `curl`**
 
@@ -53,14 +58,18 @@ Use your AWS instance for this part. You are going to analyze traffic on a netwo
 
    - How many packets were captured?
    - Looking through the output, what traffic are you seeing?
+      - Hint: reflect on the network information you gathered above, and think about `ssh`
 
-2. Craft a `tcpdump` that focuses on interface `eth0` and traffic to and from `host` `www.google.com` - print each packet in ASCII.
+2. Craft a `tcpdump` that focuses on interface `eth0` and traffic to and from `host` `www.google.com` - print each packet in ASCII.  When you think you have it, leave the `tcpcump` command running in one tab.
+   - What we are filtering is any traffic related to `host` `www.google.com` - this does not specify a protocol.  `HTTP` & `HTTPS` are examples of protocols that the host is configured to respond to.
 
-3. Now let's test it. In another terminal (also connected to your AWS instance) create one packet dump by using `curl` on `http://www.google.com`. Create a second capture by using `curl` on `https://www.google.com`.
+3. In another terminal (also connected to your AWS instance) create one packet dump by using `curl` on `http://www.google.com` and look at the traffic captured by `tcpdump`. Create a second capture by using `curl` on `https://www.google.com`.
    - Was there a difference in output from `curl` when using `http` or `https`?
    - Was there a difference in packet content in `tcpdump` when using `http` or `https`?
    - What caused the difference?
+
 4. Craft a capture you find interesting, and save the capture to a file (do not use output redirection - using `tcpdump` options). What command will read the capture? `commit` and `push` your capture to your `Lab11` folder.
+   - it can be to another host, or a different filter, explore a bit.
 
 - **Resources:**
   - [hackertarget - tcpdump examples](https://hackertarget.com/tcpdump-examples/)
@@ -69,12 +78,15 @@ Use your AWS instance for this part. You are going to analyze traffic on a netwo
 
 ## Part 3 - Get Off My Port
 
-Use your AWS instance for this part. A common issue is that a port you want to listen on (run a service on) is already taken by another service / process. Let's use one (of many) ways to find out what service is running and how to kill it.
+Use your AWS instance for this part. A common issue is that a port you want to listen on (run a service on) is already taken by another service / process. Let's use one (of many) ways to find out what service is running and kill it.
+
+`python3` has a ton of neat libraries - one of them is `http.server`.  What this does is starts a minimal web server that (by default) hosts content in the current directory.  We are doing this to cheat a little - you would normally install `nginx` or `apache2` to host web content.
+   - Note: in case you don't know much about web servers, they look for and serve `index.html` files in a folder first.
 
 - **Useful Commands: `apt`, `python3`, `pip3`, `ip a`, `curl ipinfo.io`, `curl`, `lsof`, `|`, `grep`, `kill`**
 
 1. On your AWS instance, install `python3` and `pip3`, and copy the [index.html](index.html) file to your Lab 11 folder.
-2. Run `python3 -m http.server 9000` to start a minimal web server listening on port `9000`. Leave this running in it's own terminal.
+2. From your Lab 11 folder, run `python3 -m http.server 9000` to start a minimal web server listening on port `9000`. Leave this running in it's own terminal.
 3. Provide commands to confirm the following:
    - Content is served using `localhost`:
    - Content is served using the system's private IP:
