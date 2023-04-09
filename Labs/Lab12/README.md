@@ -155,7 +155,7 @@ For this extra credit, you are going to create and solve a merge conflict. I'm g
 - Part 2 - 4 pts
 - Part 3 - 4 pts
 - Part 4 - 4 pts
-- Extra Credit - 2.8 pts (20%)
+- Extra Credit - 1.4 pts (10%)
 
 ## Troubleshooting
 
