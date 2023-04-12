@@ -12,7 +12,7 @@
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/24167/modules/items/1982401)
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/36184/modules/items/3080473)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
@@ -155,7 +155,7 @@ For this extra credit, you are going to create and solve a merge conflict. I'm g
 - Part 2 - 4 pts
 - Part 3 - 4 pts
 - Part 4 - 4 pts
-- Extra Credit - 2.8 pts (20%)
+- Extra Credit - 1.4 pts (10%)
 
 ## Troubleshooting
 
