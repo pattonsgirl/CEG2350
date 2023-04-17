@@ -1,12 +1,12 @@
 # Final Review for CEG 2350
 
-## Fall 2022
+## Spring 2023
 
 ## Da Rules
 
-**Final Exam: Tuesday 12/6**
+**Final Exam: Monday 4/24**
 
-- Available on Pilot 8:00 AM to 10:00 AM
+- Available on Pilot 5:45 PM to 7:45 PM
   - You are not required to be in person, but it is best.
 - 1 attempt, 2 hours once started
 - Open note, open terminal
