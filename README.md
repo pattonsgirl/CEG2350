@@ -13,3 +13,7 @@ Course Content and Resources for CEG 2350 OS Concepts and Design at Wright State
   - [markdown quick guide](markdown-demo.md) 
 
 
+## Module 2:
+
+- cover git merge conflicts
+
