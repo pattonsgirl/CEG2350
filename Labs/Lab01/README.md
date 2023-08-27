@@ -1,4 +1,4 @@
-# Lab 01
+# Lab 01 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Play with directories and naming](#Part-1---Play-with-directories-and-naming)

@@ -1,4 +1,4 @@
-# Lab 02
+# Lab 02 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - git going](#Part-1---git-going)

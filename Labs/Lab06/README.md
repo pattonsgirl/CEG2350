@@ -1,4 +1,4 @@
-# Lab 06
+# Lab 06 - NOT FINALIZED
 
 - [Lab Procedure](#Lab-Procedure)
 - [System Discovery](#System-Discovery)
