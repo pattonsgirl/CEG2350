@@ -1,4 +1,4 @@
-# Lab 01 - NOT FINALIZED
+# Lab 01
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Play with directories and naming](#Part-1---Play-with-directories-and-naming)
@@ -16,6 +16,7 @@ This lab assumes
 1. That you have a working Linux / Unix based terminal
 
    - Windows users: WSL2
+      - https://learn.microsoft.com/en-us/windows/wsl/setup/environment?source=recommendations 
    - Mac users: Terminal
    - Linux / Unix users: Terminal
 
@@ -47,7 +48,7 @@ Answer: `touch bubbles.txt`
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-When you are ready to save your work (or take a break), scroll to the bottom to view the dialog regarding `commit`ting your work. For the moment, think of commits as save points. For each save point, you will write a message about what changed.
+When you are ready to save your work (or take a break), scroll to the top to select "Commit changes..." to view the dialog regarding `commit`ting your work. For the moment, think of commits as save points. For each save point, you will write a message about what changed.
 
 - Notice there are two textboxes in the commit field - skinny and paragraph sized. The skinny box is where you'll place a quick description - this one is required to create a `commit`. The paragraph sized box is where you can add bigger details about changes.
 - The radio button defaults to select `Commit directly to the main branch.` - leave this as is.
@@ -100,7 +101,7 @@ Follow the instructions in [AWS Academy](../../AWSAcademySetup.md) to set up you
 3. Clone your repository (a.k.a. repo) to the `ubuntu` user's home directory
 
 - **Resources:**
-- [GitHub Classrooms - How to Use](../../GitHubSetup.md)
+- [GitHub - How to Use - My Guide](../../GitHubSetup.md)
 - [GitHub - Generating a New SSH Key](https://docs.github.com/en/enterprise-server@3.3/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - [GitHub - Adding SSH key to your GitHub Account](https://docs.github.com/en/enterprise-server@3.0/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
