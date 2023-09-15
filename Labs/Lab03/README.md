@@ -1,4 +1,4 @@
-# Lab 03 - NOT FINALIZED
+# Lab 03
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - IO Redirection](#Part-1---IO-Redirection)
@@ -32,7 +32,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - IO Redirection
 
-This and the following parts are meant to be done in your AWS instance in your `Lab03` folder in your repo. You can still stick with the two terminal flow for fun, whatever is floating your boat.
+This and the following parts are meant to be done in your AWS instance in your `Lab03` folder in your repo. 
 
 - **Useful commands for this part: `man, vim, sort, <, >, >>`**
 
@@ -61,7 +61,7 @@ This and the following parts are meant to be done in your AWS instance in your `
 2.3
 ```
 
-2. Use the `sort` command to sort `input.txt`numerically.
+2. Use the `sort` command to sort `input.txt`numerically (smallest to largest numbers).
 3. Use the `sort` command to sort `input.txt` and direct the output to `output.txt`.
 
 - **Resources:**
