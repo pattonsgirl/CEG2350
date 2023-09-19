@@ -1,4 +1,4 @@
-# Lab 02 - NOT FINALIZED
+# Lab 02
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - git going](#Part-1---git-going)
@@ -41,28 +41,32 @@ Reminder: if you make edits to your repository in GitHub using the browser, you'
 
 ## Part 2 - Regular `bob`
 
-Perform the following exercise on your AWS instance
+For these exercises, replace `bob` with a username based on **your** first initial followed by last name.  For example, "John Smith" would be `jsmith`
+
+Perform the following exercise on your AWS instance.  
 
 - **Useful commands for this part: `adduser, sudo, su, chown, pwd, cd, whoami, exit`**
 
-1. Create a new user named `bob`
+1. Create a new user named `bob` (replace with your username, see above)
 2. What is the path to `bob`'s `home` directory?
-3. Can your user add files to `bob`'s home directory? Why or why not?
+3. Can `ubuntu` add files to `bob`'s home directory? Why or why not?
 4. Switch to the user `bob`
 5. Get to `bob`'s `home` directory
 6. Can `bob` add files to `bob`'s home directory? Why or why not?
-7. Switch back to the your user
-8. Return to the your user's `home` directory
+7. Switch back to the `ubuntu` user
+8. Return to the `ubuntu` user's `home` directory
 
 ## Part 3 - Get a `crew`
 
-Perform the following exercise on your AWS instance. Create `DirA` and `DirB` in your user's home directory.
+Perform the following exercise on your AWS instance. Create `DirA` in the `ubuntu` user's `home` directory and create some files in the folder to play with.
+
+Same as Part 2, replace `bob` with your username of first initial, last name (ex. `jsmith`)
 
 - **Useful commands for this part: `addgroup, usermod, chown, chgrp`**
 
 1. Create a new group named `crew`
-2. Add your user and `bob` to the `crew` group
-3. Change `DirA` in your user's home directory so that `crew` is the group for the whole folder
+2. Add `ubuntu` and `bob` to the `crew` group
+3. Change `DirA` in the `ubuntu` user's `home` directory so that `crew` is the group for the whole folder
    - Yes, including contents in `DirA`
 4. Switch user to `bob`
 5. As `bob` create a file in `DirA`.
@@ -70,11 +74,11 @@ Perform the following exercise on your AWS instance. Create `DirA` and `DirB` in
 
 ## Part 4 - [`sudo` make me a sandwich](https://xkcd.com/149/)
 
-Perform the following exercise on your AWS instance
+Perform the following exercise on your AWS instance.
 
 - **Useful commands for this part: `sudo`**
 
-1. In the your user's `home` directory, make a file with `sudo` named `sudowho.txt`
+1. In the `ubuntu` user's `home` directory, make a file with `sudo` named `sudowho.txt`
 2. What are the permissions of this file?
 3. Without modifying the permissions of the file, edit the file and add some text, and save the changes.
 
@@ -97,12 +101,7 @@ On your local system (`exit` from your AWS instance), you used an SSH command to
 2. Provide the HostName (IP address) of your AWS Ubuntu instance:
 3. Provide the user name that you are logging on to the system with:
 4. Provide the absolute / full path to the private key (Identity File) on your local system:
-5. On your local system, edit `~/.ssh/config` to contain an entry with information about logging on to your AWS Ubuntu instance.
-
-```
-Paste your config file entry here
-```
-
+5. On your local system, edit `~/.ssh/config` to contain an entry with information about logging on to your AWS Ubuntu instance.  Note that the answer template wants the contents you wrote to the file.
 6. Write the new form of the `ssh` command to connect to your AWS instance.
 
 - **Resources**
@@ -113,7 +112,7 @@ Paste your config file entry here
 ## Submission
 
 - In the Pilot Dropbox, paste the URL to the `Lab02` folder in your GitHub repo
-  - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab02.md
+  - URL should look like: https://github.com/WSU-kduncan/ceg2350f23-YOURGITHUBUSERNAME/tree/main/Lab02.md
 
 ## Rubric
 
