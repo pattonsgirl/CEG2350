@@ -124,8 +124,9 @@ In this part, your task is to read `~/.profile` and focus on the `if` statements
 5. Copy `sorting-party` into the folder. Write the command(s) used.
 
 6. Modify the permissions so that you can run your script on the command line from any location. Write the modifications needed.
+   - Note: if you already modified permissions, fill in this question with what you modified.
 
-7. In terms of user, group, and other, explain who is allowed to run the script.
+8. In terms of user, group, and other, explain who is allowed to run the script.
 
 ## Extra Credit - Colorize Me, Captain
 
