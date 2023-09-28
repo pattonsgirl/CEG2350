@@ -1,11 +1,23 @@
 add() {
 	echo "Add function called"
-	sum=( $1 + $2 )
-	echo "$1 and $2 added = $sum"
+	if [[ -n $1 && -n $2 ]]
+	then
+		sum=( $1 + $2 )
+		echo "$1 and $2 added = $sum"
+	else
+		echo "No numbers given"
+	fi
 }
 
 subtract() {
 	echo "Subtract function called"
+	if [[ -n $1 && -n $2 ]]
+        then
+		result=( $1 - $2 )
+		echo "$1 minus $2 = $result"
+	else
+		echo "No numbers given"
+	fi
 }
 
 #add
