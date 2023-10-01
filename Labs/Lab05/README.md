@@ -9,7 +9,7 @@
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/36184/modules/items/3080473)
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/55805/modules/items/4889699)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
