@@ -33,22 +33,19 @@ subtract() {
 #subtract
 
 # have user give mode add / subtract
-<<comment
-if [[ $1 == "-a" ]]; then
-	add $2 $3
-	# echo ( $2 + $3 )
-elif [[ $1 == "-s" ]]; then
-	subtract $2 $3
-elif [[ $1 == "-h" ]]; then
-	printHelp
-else 
-	echo "Bad option"
-	printHelp
-fi
-comment
+echo $#
+echo $@
+option=$1
+# print just numbers given as arguments
+shift
+echo $#
+totalargs=$#
+for (( i=0; i <= $totalargs; i++ )); do
+	echo $1
+	shift
+done
 
-
-case $1 in
+case $option in
 	"-a")
 		add $2 $3
 		;;
