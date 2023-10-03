@@ -38,6 +38,9 @@ while getopts "ha:s:" opt; do
 		h)
 			printHelp
 			;;
+		a)
+			echo $2 $3
+			;;
 		*)
 			echo "Bad flag"
 			printHelp
