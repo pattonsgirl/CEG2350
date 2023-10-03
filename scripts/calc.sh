@@ -32,6 +32,25 @@ subtract() {
 #echo "My print"
 #subtract
 
+while getopts "ha:s:" opt; do
+
+	case $opt in
+		h)
+			printHelp
+			;;
+		*)
+			echo "Bad flag"
+			printHelp
+			;;
+	esac
+done
+
+
+
+
+
+
+<<comment
 # have user give mode add / subtract
 echo $#
 echo $@
@@ -60,6 +79,7 @@ case $option in
 		printHelp
 		;;
 esac
+comment
 # have user give two numbers
 
 # output result of operation
