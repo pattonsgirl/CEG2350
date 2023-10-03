@@ -33,6 +33,7 @@ subtract() {
 #subtract
 
 # have user give mode add / subtract
+<<comment
 if [[ $1 == "-a" ]]; then
 	add $2 $3
 	# echo ( $2 + $3 )
@@ -44,6 +45,24 @@ else
 	echo "Bad option"
 	printHelp
 fi
+comment
+
+
+case $1 in
+	"-a")
+		add $2 $3
+		;;
+	"-s")
+		subtract $2 $3
+		;;
+	"-h")
+		printHelp
+		;;
+	*)
+		echo "Bad option"
+		printHelp
+		;;
+esac
 # have user give two numbers
 
 # output result of operation
