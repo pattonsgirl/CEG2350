@@ -1,12 +1,7 @@
 # Midterm Review for CEG 2350
 
-## Spring 2023
-
 ## Da Rules
 
-Midterm: Monday 3/6
-
-- Available 4:40 - 6:00 PM
 - 1 attempt, 1 hour and 20 minutes once started
 - Open note, open terminal
 - No class - only exam.
