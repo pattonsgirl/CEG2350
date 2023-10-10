@@ -56,21 +56,21 @@
 ## Computer Hardware, Boot Process, and Data on Disks:
 
 1. Computer Hardware:
-   - Von Neumann machine: Control unit; instruction fetch, decode, and execution
+   - [Von Neumann architechure](https://www.computerscience.gcse.guru/theory/von-neumann-architecture)
    - CPU
    - RAM
    - Motherboard
    - Disks (HDD, SSD, NVME)
    - GPU
 2. Booting of OS
-   - Power on self-test (POST)
-   - BIOS vs UEFI
-   - MBR vs GPT
-   - Boot loaders: NTLDR, GRUB
+   - ~~Power on self-test (POST)~~
+   - ~~BIOS vs UEFI~~
+   - ~~MBR vs GPT~~
+   - ~~Boot loaders: NTLDR, GRUB~~
    - kernel vs OS
-3. Virtual memory
+3. ~~Virtual memory~~
    - What is it and how does it work
-4. Disks
+4. ~~Disks~~
    - MBR vs GPT
    - partitions
    - ~~filesystems~~
@@ -86,3 +86,4 @@
    - commit
    - push
    - pull
+3. merge conflicts
