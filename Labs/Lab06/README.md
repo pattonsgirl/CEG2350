@@ -95,5 +95,5 @@ For credit, you will need to provide two things:
 
 ## Rubric
 
-- Each bullet point = 1 point -> 16 pts total
-- Extra credit - 5% = 0.8 pts
+- Each bullet point + P1 q7 & q8 = 1 point -> 18 pts total
+- Extra credit - 5% = 0.9 pts
