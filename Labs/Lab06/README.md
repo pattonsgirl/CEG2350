@@ -53,7 +53,9 @@ For the GPU section, you may only have one or the other.  Only fill out what you
     - Filesystem on primary partition:
 6. BIOS / UEFI info: 
     - BIOS or UEFI version: 
-    - How to access your BIOS / UEFI: 
+    - How to access your BIOS / UEFI:
+7. Bootloader running on your system: 
+8. Kernel version of your operating system:
 
 ## Extra Credit - Install a VM Manager
 
@@ -76,6 +78,11 @@ You will need a computer that has CPU virtualization enabled. The lab machines &
   - [Enable Hyper-V Manager](https://www.groovypost.com/howto/enable-virtualization-in-windows-11/)
 - Chromebook Users:
   - You may need to use one of the open labs (320 OH during lab time, or Russ 152 B or D) or be prepared to use a different system you have access to.
+ 
+For credit, you will need to provide two things:
+- The name of the Virtual Machine Management software you will use (have installed)
+- A screenshot proving that you installed it to your system and you can open the software.
+  - Reminder - creating the virutal machine is for Lab 07, not here.
 
 ## Submission
 
