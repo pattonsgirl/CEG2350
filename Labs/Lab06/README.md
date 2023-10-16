@@ -1,4 +1,4 @@
-# Lab 06 - NOT FINALIZED
+# Lab 06
 
 - [Lab Procedure](#Lab-Procedure)
 - [System Discovery](#System-Discovery)
@@ -10,7 +10,7 @@
 
 The focus of this lab is exploring your system. You will be creating a `Lab06.md` file for your work in this lab. To create and edit the file, you are welcome to use your AWS instance (or anywhere your repo is cloned) or edit the file directly in the browser.
 
-In your repository (the folder named `ceg2350-yourgithubusername):
+In your repository (the folder named `ceg2350-yourgithubusername`):
 
 Create a new directory, `Lab06`
 
@@ -21,6 +21,8 @@ Create a file named `Lab06.md` [based on the template](LabTemplate.md).
 ## System Discovery
 
 Find out the following information about your personal system. Write the answers to the information requested. Part of this is learning about your system, so some info will not apply to your system (because of how your OS works with your hardware or your system's hardware). Provide confirmation of your findings where possible.
+
+For the GPU section, you may only have one or the other.  Only fill out what you have.
 
 - You can use the manufacturers website / manuals
 - You can post to our course Discord channel for help / hints
@@ -55,7 +57,7 @@ Find out the following information about your personal system. Write the answers
 
 ## Extra Credit - Install a VM Manager
 
-This is to take some headache out of Lab 07 by having you install VirtualBox now. It is recommended to get done this week in case there are any new surprises. If you have trouble, post to the class chat in Discord so I / the TAs / your classmates can help out.
+This is to take some headache out of Lab 07 by having you install VirtualBox now - you do **NOT** need to create a virtual machine, *yet* - that's for Lab 07. It is recommended to get done this week in case there are any new surprises. If you have trouble, post to the class chat in Discord so I / the TAs / your classmates can help out.
 
 You will need a computer that has CPU virtualization enabled. The lab machines & open lab machines in Russ are all good candidates (and may have VirtualBox already installed). For your own machine, you may need to enable CPU virtualization in your BIOS / UEFI.
 
@@ -63,13 +65,12 @@ You will need a computer that has CPU virtualization enabled. The lab machines &
   - [Download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
   - Pick your host OS when installing
     - For example, Windows users should select "Windows hosts")
-- Mac M1 Users:
+- Mac M1 & M2 Users:
   - VirtualBox _should_ work now, but just in case:
   - Install either:
     - Parallels - Wright State offers a student discount on Parallels
       - [Get Parallels via the Hub](https://www.wright.edu/information-technology/software-purchases-for-personal-use)
-    - [UTM](https://mac.getutm.app/) - free if you click "Download". You can support the developers by paying through the App Store.
-  - the instructions below should apply generically, but if you are having trouble post in the general chat on Discord and we will help as we can
+      - [UTM](https://mac.getutm.app/) - free if you click "Download". You can support the developers by paying through the App Store.
 - Windows 11 Users:
   - Try to install VirtualBox, but it has had mixed support in Windows 11
   - [Enable Hyper-V Manager](https://www.groovypost.com/howto/enable-virtualization-in-windows-11/)
