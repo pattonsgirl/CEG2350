@@ -1,4 +1,4 @@
-# Lab 07 - NOT FINALIZED
+# Lab 07
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Virtualize the Machine](#Part-1---Virtualize-the-Machine)
@@ -11,7 +11,7 @@
 
 The focus of this lab is creating a virtual machine - you are not required to utilize the AWS instance for this lab. You will be creating a `Lab07.md` file for your work in this lab, which will mostly be documentation and screenshots. To create and edit the file, you are welcome to use your AWS instance (or anywhere your repo is cloned) or edit the file directly in the browser.
 
-In your repository (the folder named `ceg2350-yourgithubusername):
+In your repository (the folder named `ceg2350f23-yourgithubusername):
 
 Create a new directory, `Lab07`
 
@@ -83,7 +83,7 @@ Remember when content exists in your repository folder on GitHub, but does not e
 We are going to be uploading images directly to our repository in GitHub, then use `git pull` pull those changes (more specifically, pull the commits which include the changes) to our cloned repositories.
 
 1. Take the screenshots required by part 1. Store them somewhere easy to access (like your Desktop).
-2. Go to your GitHub classrooms repo in a browser: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME
+2. Go to your GitHub classrooms repo in a browser: https://github.com/WSU-kduncan/ceg2350f23-YOURGITHUBUSERNAME
 3. Click the "Add files" button, then click "Upload files"
 4. Upload your screenshots. Write commit messages in the browser text fields, then click "Commit Changes"
    - you should now see the images in your repository in GitHub
@@ -103,7 +103,7 @@ We are going to be uploading images directly to our repository in GitHub, then u
    - an `images` folder (with your screenshots inside)
 
 2. In the Pilot Dropbox, paste the URL to the `Lab07` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab07
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350f23-YOURGITHUBUSERNAME/tree/main/Lab07
 
 ## Rubric
 
@@ -121,6 +121,7 @@ You should reach out on Discord if you are running into headaches.  Below is stu
       - free if you click "Download". You can support the developers by paying through the App Store.
       - there are articles online, but we have some documentation from students.
 - Windows 11 Users:
+  - [Download Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
   - [Enable Hyper-V Manager](https://www.groovypost.com/howto/enable-virtualization-in-windows-11/)
 - Chromebook Users:
   - Chromebooks do not support virtualization.  You may need to use one of the open labs (320 OH during lab time, or Russ 152 B or D) or be prepared to use a different system you have access to.
