@@ -1,4 +1,4 @@
-# Lab 08 - NOT FINALIZED
+# Lab 08
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - unallocated resources](#Part-1---unallocated-resources)
