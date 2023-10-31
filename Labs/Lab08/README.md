@@ -27,6 +27,8 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - unallocated resources
 
+**THIS PART MUST BE COMPLETED IN THE AWS INSTANCE YOU SETUP IN LAB 01.**
+
 For each step below, write the answer to the question / prompt and how you found / configured the answer (commands used).
 
 - **Useful Commands: `df`, `lsblk`, `blkid`, `gdisk`, `mkfs`, `mount`, `strings`**
