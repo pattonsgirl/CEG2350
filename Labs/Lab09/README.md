@@ -1,4 +1,4 @@
-# Lab 09 - NOT FINALIZED
+# Lab 09
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - To Infinity](#Part-1---To-Infinity)
@@ -9,7 +9,7 @@
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/36184/modules/items/3080473)
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/55805/modules/items/4889699)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
@@ -31,10 +31,10 @@ If you cannot `ssh` to your instance anymore, you may have run into one of these
 - You overwrote the partition table (or partitions) in `xvda` - this would erase your `root` / `/` filesystem.
 - You wrote a bad entry in `/etc/fstab` - if the system cannot mount the disk, the boot process will hang and not complete 
 
-If you think one of those scenarios happened to you, you'll need to go back to [Lab 01](../Lab01/) and create a new stack. Once you are in the new instance, don't forget the steps to cloning your repo:
-- create a new keypair
-- add the public key to your GitHub user settings
-- clone with ssh
+If you think one of those scenarios happened to you, you'll need to go back to [Lab 01](../Lab01/) and create a new stack. Once you are in the new instance, don't forget the steps to cloning your GitHub repo:
+1. create a new keypair for authentication to GitHub
+2. add the public key to your GitHub user settings
+3. clone with ssh
 
 ## Part 1 - To Infinity
 
