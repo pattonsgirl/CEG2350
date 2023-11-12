@@ -19,10 +19,10 @@ $(EXENAME): $(PROGNAME)
 	#Using gcc options to specify output program name & print all warnings
 	c:/MinGW/bin/gcc -Wall -o $EXENAME $PROGNAME
 
-#run uses Windows cmd syntax to run the compiled program.
+#run uses Windows cmd command to run the compiled program.
 run: $(EXENAME)
 	.\$(EXENAME)
 
-#clean uses Windows cmd syntax to delete the compiled program
+#clean uses Windows cmd command to delete the compiled program
 clean:
 	del /Q $(EXENAME)
