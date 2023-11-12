@@ -26,8 +26,11 @@
     - Filesystem on primary partition:
 6. BIOS / UEFI info: 
     - BIOS or UEFI version: 
-    - How to access your BIOS / UEFI: 
+    - How to access your BIOS / UEFI:
+7. Bootloader running on your system: 
+8. Kernel version of your operating system:
 
 ## Extra Credit - VM Manager
 
 - Write here what VM Manager software you installed
+- ![screenshot proof](RELATIVE_PATH_TO_SCREENSHOT_IN_FOLDER)

@@ -1,4 +1,4 @@
-# Lab 05 - NOT FINALIZED
+# Lab 05
 
 - [Lab Procedure](#Lab-Procedure)
 - [Name Change Script](#Name-Change-Script)
@@ -9,7 +9,7 @@
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/36184/modules/items/3080473)
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/55805/modules/items/4889699)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
@@ -40,10 +40,19 @@ namechange -f find -r replace filename
    - `.jpg` is misspelled as `.jgp`
    - spaces in file names that could be replaced with `-`
    - files with `foo` in them need to become `bar`
+   - the [createfiles.sh](createfiles.sh) script can be used to generate them
 
 **Implement the following features in the `namechange` script:**
 
-1. Use `getopts` to read in options and do actions based on arguments. `getopts` should support the following options in the `OPTSTRING`
+1. Create a function called `printHelp`. `printHelp` should output the following:
+
+```
+Usage: namechange -f find -r replace "string to modify"
+ -f The text to find in the filename
+ -r The replacement text for the new filename
+```
+
+2. Use `getopts` to read in options and save arguments that correlate with options. `getopts` should support the following options in the `OPTSTRING`
 
    - `-h`
      - call `printHelp` function and exit script
@@ -57,20 +66,15 @@ namechange -f find -r replace filename
    - there are `getopts` demos linked in resources, as well as in this folder
      - [getopts-basics.sh](getopts-basics.sh)
      - [cfgetopts.sh](cfgetopts.sh)
-
-2. Create a function called `printHelp`. `printHelp` should output the following:
-
-```
-Usage: namechange -f find -r replace "string to modify"
- -f The text to find in the filename
- -r The replacement text for the new filename
-```
+     - Before panicking, keep in mind that `getopts` is mostly a `switch` statement on steriods.  Play with the demos given to understand what is happening
 
 3. If no `filename` was provided OR if `filename` does not exist:
    - Output `User must provide valid filename`
    - Call the `printHelp` function
+
 4. Using argument in field `filename`, find the pattern to be replaced and replace it with the pattern requested using `sed`
    - Hint: you may just want to have `sed` use the `-E` option
+   
 5. Rename the file.
 
 ```

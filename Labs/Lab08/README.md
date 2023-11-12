@@ -1,4 +1,4 @@
-# Lab 08 - NOT FINALIZED
+# Lab 08
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - unallocated resources](#Part-1---unallocated-resources)
@@ -9,7 +9,7 @@
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/36184/modules/items/3080473)
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/55805/modules/items/4889699)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
@@ -26,6 +26,8 @@ For each part below, you will be asked to do an action or answer a question. The
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
 ## Part 1 - unallocated resources
+
+**THIS PART MUST BE COMPLETED IN THE AWS INSTANCE YOU SETUP IN LAB 01.**
 
 For each step below, write the answer to the question / prompt and how you found / configured the answer (commands used).
 
