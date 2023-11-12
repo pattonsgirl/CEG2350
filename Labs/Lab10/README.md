@@ -1,4 +1,4 @@
-# Lab 10 - NOT FINALIZED
+# Lab 10
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Write Code](#Part-1---Write-Code)
@@ -53,6 +53,7 @@ Use Java or C or C++ to write an echo program. Name your source code file `repea
 1. Create a file called `Makefile`.
 2. Write targets in your `Makefile` such that the following terminal commands do the corresponding actions:
    - `make` - if the source code file exists, will compile the program
+       - binaries should **only** be compiled, not executed
    - `make run` - if the compiled program exists, will execute / run the program
    - `make clean` - if the compiled program exists, will delete the compiled program
 
@@ -64,7 +65,7 @@ Use Java or C or C++ to write an echo program. Name your source code file `repea
 
 ## Extra Credit - Dependents
 
-Create a folder in your `Lab10` folder called `ec`. In Java, C or C++, create a multi-file code project.
+Create a folder in your `Lab10` folder called `ec`. In Java, C or C++, add or create a multi-file code project.
 
 - Perhaps your main code file calls on a function that is detailed in the other file (function can do a simple action, like print a message)
 - You may use an old / existing multifile project
