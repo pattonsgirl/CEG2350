@@ -1,3 +1,7 @@
+" copy this file to ~/.vimrc
+" To install: :source %
+"             :PluginInstall
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -15,6 +19,9 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
 Plugin 'valloric/youcompleteme'
+" To complete YMC install:
+"    cd ~/.vim/bundle/youcompleteme # check path
+"    python3 install.py --all
 Plugin 'nanotech/jellybeans.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
