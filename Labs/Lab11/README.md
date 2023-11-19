@@ -1,4 +1,4 @@
-# Lab 11 - NOT FINALIZED
+# Lab 11
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Network Discovery](#Part-1---Network-Discovery)
@@ -46,6 +46,8 @@ With your PC (not the AWS instance) connected to a network, identify the followi
 ## Part 2 - Packet Capture
 
 Use your AWS instance for this part. For these some exercises, you'll need to create two `ssh` connections to your AWS instance (like you did for the processes lab).
+
+The point of this section is to analyze **raw networking traffic** versus seeing the "compiled" result at the application level.  Since the AWS instance does not have a broswer, the application you will be using is **curl**.  You won't see a "pretty" web page - you will see the raw text that makes up a web page.  Don't believe me?  Right click on this page and select "View Source" and start looking at all HTML tagging that makes your pages look so nice.  
 
 `tcpdump` is a command line utility that allows you to capture and analyze network traffic going through your system.  Mind you, this is network traffic - **packets**. in your browser, you see web content that is assembled from packets.  For this lab, you will craft a `tcpdump` command to analyze traffic over the AWS instance's network interface and apply filters so that you can focus on traffic going to / from specific hosts.
 
