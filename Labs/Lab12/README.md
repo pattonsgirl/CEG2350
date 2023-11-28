@@ -1,4 +1,4 @@
-# Lab 12 - NOT FINALIZED
+# Lab 12
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - tar it up](#Part-1---tar-it-up)
@@ -29,9 +29,9 @@ For each part below, you will be asked to do an action or answer a question. The
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
 ## Part 1 - tar it up
+With the semester wrapping up, it's time to prepare to lose access to your instances.  Identify folders of work on your AWS instance you would like to save.  If you have none, use the folder that conatins your local copy of your GitHub repository.  While using GitHub to save work is an option, it is just as common to need to compress and transfer information.  It is not required, but is interesting to look the the size of these folders pre and post compression
 
 Do the following on your AWS instance.  
-Since we are wrapping up the semester, it's time to save your work and turn things off. Identify folder(s) you want to save for step 2 of this part. It is not required, but is interesting to look the the size of these folders pre and post compression
 
 1. For the `tar` command, write what each option below does:
    - `-c`
@@ -39,7 +39,7 @@ Since we are wrapping up the semester, it's time to save your work and turn thin
    - `-f`
    - `-z`
    - `-x`
-2. `tar` and compress folders of your choice. Write the command you used. You will not be committing this to GitHub - it does not need to be in your repository folder.
+2. `tar` and compress folders of your choice. Write the command you used. You will not be committing this to GitHub - it does not need to be in your repository folder and may in fact be too large to push to GitHub.
 
 - **Resources**
 - [cyberciti - tar on the command line](https://www.cyberciti.biz/faq/how-to-tar-a-file-in-linux-using-command-line/)
@@ -48,8 +48,7 @@ Since we are wrapping up the semester, it's time to save your work and turn thin
 
 ## Part 2 - SFTP
 
-For this part, start on your local system.  
-On your instance, you created a compressed set of stuff to save, but how do you get it off your instance? A thought is to cheat and make `git` / GitHub do it, but there are better tools.
+For this part, start on your local system, likely in WSL2.  
 
 1. Connect to your AWS instance via `sftp`.
 2. Describe what the following options do:
@@ -65,19 +64,15 @@ On your instance, you created a compressed set of stuff to save, but how do you 
 
 ## Part 3 - ssh keys
 
-Without practice, `ssh` connections and authentication just seem like magic. Really, it is all about "stuff" being in the right spot. The goal of this part is to practice where keys go when you have a pair of keys. This is a common task to do when you gain access to a system - put your public key in the `authorized_keys` file in the `.ssh` folder of your account, then connect from your system to the remote system.
+Without practice, `ssh` connections and authentication just seem like magic. Really, it is all about files and information being in the right spot as defined in rules in configuration files. The goal of this part is to practice where keys go when you have a new `ssh` keypair. This is a common task to do when you gain access to a system - put your public key in the `authorized_keys` file in the `.ssh` folder of your remote account, then connect from your system to the remote system's account.
 
 - **Useful commands: `adduser`, `ssh-keygen`, `vim`, `ssh`**
 
-1. On your AWS instance, create a new user
-   - In pretend world, this is your company's IT guys making you an account
-2. On your local system, make a new key pair - you choose the name and location.
-   - In pretend world, this is you making your key pair - your private key will only be accessible by you. The public key is shared with accounts on systems you have access to.
-     - Also note, normally you would either need to send IT your public key OR they would generate the key, and send you the private key.
-3. Put the public key of the key pair you just made in the new user's `~/.ssh/authorized_keys` file on the AWS instance
-   - You have now set up SSH authentication to your account on (pretend) the new system!
-4. From your local system, `ssh` in to the AWS instance using the new user's username and the private key you generated.
-   - And now (in pretend world) you would rinse and repeat for all systems you'll have an account on. Your `~/.ssh/config` file will be handy here as you collect dozens of systems that you have access to. Setting up what private key goes to what system and what that system's IP / hostname is so you don't have to keep it all in your head.
+1. On your AWS instance, create a user or use the user from Lab 02
+2. On your local system - likely in WSL2, make a new key pair - you choose the name and location.  Change at minimum the default name
+3. Put the public key of the key pair you created locally in the user's `~/.ssh/authorized_keys` file on the AWS instance
+4. From your local system - likely in WSL2, `ssh` in to the AWS instance using the user's username and the private key of the keypair you created.
+   - And now (in pretend world) you would rinse and repeat for all systems you'll have an account on. Your `~/.ssh/config` file will be handy here as you collect dozens of systems that you have access to. This will let you set which private key goes to what system and what that system's IP / hostname is so you don't have to keep it all in your head.
 
 - **Resources**
 - I do this manually, but there are some neat command shortcuts to explore
@@ -87,11 +82,13 @@ Without practice, `ssh` connections and authentication just seem like magic. Rea
 
 Note: this part is last because you are most likely to break something.
 
+**Useful commands: `curl ipinfo.io`**
+
 1. Given a subnet range, provide the network prefix + CIDR notation of the subnet range. For example: Subnet range: `10.0.0.0 - 10.0.1.255` Would be written as `10.0.0.0/23` OR `10.0.1.0/23`. See a [breakdown here](#Range-of-IPs-to-network-ip-+-CIDR)
    - Subnet range for Wright State IPs: `130.108.0.0 - 130.108.255.255`
    - Subnet range for AWS public subnet: `10.0.0.0 - 10.0.0.255`
    - Subnet range for your home public IP: `your_public_ip - your_public_ip`
-   - Note: What we are generating here is a list of hosts addresses that we can consider trustworthy. You, from your place of living, campus IP addresses, and other hosts on the same network as our instance.
+   - Note: What we are generating here is a list of hosts addresses that we can consider trustworthy: you, from your place of living, campus IP addresses, and other hosts on the same network as our instance.  If you live on campus, follow the exercise anyways for your "home" public IP
 2. Your AWS instance has no network restrictions on who can connect - any IP (`0.0.0.0/0`) can connect to any port (`1-65,535`). This is generally a bad idea. Using `iptables` AND Security Groups on AWS, give a brief writeup on **how these two statements can be confirmed** (by you on your AWS instance) and **why this is a bad practice**.
 3. Using `iptables` OR Security Groups on AWS, restrict traffic to port `22` to only your trusted subnets (defined in step 1).
    - **If you used `iptables`**, write the commands you used. Include a **screenshot** of your rules once they are in place
