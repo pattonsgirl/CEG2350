@@ -1,13 +1,7 @@
 # Final Review for CEG 2350
 
-## Spring 2023
-
 ## Da Rules
-
-**Final Exam: Monday 4/24**
-
-- Available on Pilot 5:45 PM to 7:45 PM
-  - You are not required to be in person, but it is best.
+- In person (see Pilot for date / time)
 - 1 attempt, 2 hours once started
 - Open note, open terminal
 
@@ -62,6 +56,7 @@
 
 1. Computer Hardware:
    - Von Neumann machine: Control unit; instruction fetch, decode, and execution
+     - light here, do additional reading
    - CPU
    - RAM
    - Motherboard
@@ -114,6 +109,7 @@
    - mounting filesystem
 3. Filesystems
    - journaling
+     - light here, recommend additional reading
    - Windows: vfat, ntfs
    - Linux: ext4
    - Special: swap
@@ -126,6 +122,8 @@
 7. Commands: df, du, mkfs, gdisk, fdisk, parted, mount, umount, stat
 
 ## Processes
+
+Went light on bullets 3-5.  Recommend additional reading
 
 1. init process / kernel level vs user level processes
    - parent vs child process
@@ -147,6 +145,7 @@
 
 1. Interpreted language
    - python
+   - bash
 2. Compiled languages
    - c / c++
      - compilation steps
@@ -166,12 +165,13 @@
    - dependencies
    - actions
 4. Memory handling in programming
+   - light here, recommend additional reading
    - size of memory - Bits (1), bytes (8 bits), word (16, 32, or 64 bits)
    - stack vs. heap
-5. ~~Libraries & dynamic linking (loads and links the shared libraries needed by an executable when it is executed)~~
-6. Overview of command line debugging
-7. Install from source w/ make or installation scripts
-8. Commands: make, which, whereis, python, gcc, java, javac, ~~ldd~~, ~~strace~~
+6. ~~Libraries & dynamic linking (loads and links the shared libraries needed by an executable when it is executed)~~
+7. Overview of command line debugging
+8. Install from source w/ make or installation scripts
+9. Commands: make, which, whereis, python, gcc, java, javac, ~~ldd~~, ~~strace~~
 
 ## Networking
 
