@@ -19,6 +19,9 @@
    - the command ssh
    - private key files (where go and what permissions)
    - public keys (go where)
+5. Updates (Linux vs. Windows)
+   - Linux - apt / package manager update request
+   - Windows - click button
 
 ## Files, directories, and OS structure
 
@@ -171,12 +174,14 @@ Went light on bullets 3-5.  Recommend additional reading
 6. ~~Libraries & dynamic linking (loads and links the shared libraries needed by an executable when it is executed)~~
 7. Overview of command line debugging
 8. Install from source w/ make or installation scripts
-9. Commands: make, which, whereis, python, gcc, java, javac, ~~ldd~~, ~~strace~~
+9. Compression (including `tar` & `gzip`)
+10. Commands: make, which, whereis, python, gcc, java, javac, ~~ldd~~, ~~strace~~
 
 ## Networking
 
 1. OSI model and TCP / IP model of networking
    - application
+     - light here, scope will be what was praciticed in lab.  Additional reading recommended   
      - HTTP
      - HTTPS
        - Certificate Authorities & browser trust
@@ -205,20 +210,11 @@ Went light on bullets 3-5.  Recommend additional reading
    - switches
    - ISPs
 4. Firewalls
-   - inbound / ingress
-   - outbound / egress
+   - inbound / INPUT / ingress
+   - outbound / OUTPUT / egress
+   - whitelist vs blacklist & default allow vs deny
    - common sense rules & trusted networks
 5. Commands: ip, route, arp, iptables, ping, curl, wget, tcpdump, nmap
-
-## System Administration
-
-1. Updates (Linux vs. Windows)
-   - Linux - apt / package manager update request
-   - Windows - click button
-2. Virus scanning & types of computer diseases
-3. Creating archives, password locking files
-   - Compression (gzip, tar)
-4. Torrents
 
 ## Excess Topics - not for studying
 
@@ -226,3 +222,6 @@ Went light on bullets 3-5.  Recommend additional reading
 - GPG and PGP
 - Network file shares: NFS, Samba
 - Filesystem differences in terms of implementation
+- Virus scanning & types of computer diseases
+- password locking files
+- Torrents
