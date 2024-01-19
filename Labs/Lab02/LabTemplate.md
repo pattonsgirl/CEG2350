@@ -7,12 +7,14 @@
 
 The answers for this section are to help you record what steps  
 are needed to create a file locally (in your cloned repo)  
-and push them (sync) with GitHub
+and push them (sync) with GitHub.  Only `git` commands are 
+valid answers
 
-1. Add a file for tracking:
-2. Commit changes:
-3. Sync local commits with GitHub:
-4. Sync commits on GitHub to `clone`d repository:
+1. View the status of the repository:
+2. Add a file for tracking:
+3. Commit changes:
+4. Sync local commits with GitHub:
+5. Sync commits on GitHub to `clone`d repository:
 
 ## Part 2 Answers
 

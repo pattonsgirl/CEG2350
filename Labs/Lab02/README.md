@@ -1,22 +1,23 @@
 # Lab 02
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - git going](#Part-1---git-going)
-- [Part 2 - Regular `bob`](#Part-2---Regular-bob)
-- [Part 3 - Get a `crew`](#Part-3---Get-a-crew)
-- [Part 4 - `sudo` make me a sandwich](#Part-4---sudo-make-me-a-sandwich)
-- [Permissions Resources](#Permissions-Resources)
-- [Part 5 - ssh config](#Part-5---ssh-config)
+- [Part 1 - git going](#part-1---git-going)
+- [Part 2 - Bits of permissions](#part-2---bits-of-permissions)
+- [Part 3 - Regular `bob`](#part-3---regular-bob)
+- [Part 4 - Get a `crew`](#part-4---get-a-crew)
+- [Part 5 - `sudo` make me a sandwich](#part-5---sudo-make-me-a-sandwich)
+- [Permissions Resources](#permissions-resources)
+- [Part 6 - `config` your connection](#part-6---config-your-connection)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/55805/modules/items/4889699)
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/68834/modules/items/6128516)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
-Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
+Go to the folder that contains your repository (likely named `ceg2350x##-yourgithubusername`).
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
@@ -28,18 +29,28 @@ In Lab 01, you set up an instance on AWS **and** cloned your GitHub repository t
 
 This part assumes you successfully cloned your repository to your instance on AWS. If you are behind here, you should talk with the instructor or TA to get back on track.
 
-- **Useful commands for this part: `git add`, `git commit`, `git push`, `git pull`**
+- **Useful commands for this part: `git add`, `git commit`, `git push`, `git pull`, `git status`**
 
 1. In your repository folder (the folder you `clone`d from GitHub), create a folder named `Lab02`
 2. In the `Lab02` folder, create a file named `Lab02.md`
 3. Paste the contents of the [LabTemplate.md](LabTemplate.md) into this file
    - [Link to raw LabTemplate](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab02/LabTemplate.md)
-4. `add` `Lab02.md` for tracking, `commit` changes as you go, and `push` to synchronize with GitHub
+4. `add` `Lab02.md` for tracking, `commit` changes as you go, `push` to synchronize with GitHub, and `pull` if you make an edit in GitHub and need to synchronize your cloned folder
 5. Fill in the Part 1 Answers with a simple guide for taking a new, locally created file in your repository, and syncing it with GitHub.
 
 Reminder: if you make edits to your repository in GitHub using the browser, you'll need to `pull` to sync content in your `clone`d repository.
 
-## Part 2 - Regular `bob`
+**Resources**
+- [freeCodeCamp - Learn the Basics of Git in Under 10 Minutes](https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/)
+   - this is a useful read to understand the context of what the above commands do.  His setup is not the same as yours
+- [git cheat sheet](https://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf)
+   - yes, there are more git commands than are on this sheet 
+
+## Part 2 - Bits of permissions
+
+
+
+## Part 3 - Regular `bob`
 
 For these exercises, replace `bob` with a username based on **your** first initial followed by last name.  For example, "John Smith" would be `jsmith`
 
@@ -56,7 +67,7 @@ Perform the following exercise on your AWS instance.
 7. Switch back to the `ubuntu` user
 8. Return to the `ubuntu` user's `home` directory
 
-## Part 3 - Get a `crew`
+## Part 4 - Get a `crew`
 
 Perform the following exercise on your AWS instance. Create `DirA` in the `ubuntu` user's `home` directory and create some files in the folder to play with.
 
@@ -72,7 +83,7 @@ Same as Part 2, replace `bob` with your username of first initial, last name (ex
 5. As `bob` create a file in `DirA`.
 6. Why was this successful?
 
-## Part 4 - [`sudo` make me a sandwich](https://xkcd.com/149/)
+## Part 5 - [`sudo` make me a sandwich](https://xkcd.com/149/)
 
 Perform the following exercise on your AWS instance.
 
@@ -93,7 +104,7 @@ Note: you are welcome to use resources outside of the below, but these are ones 
    - Note: on your AWS instance, the `ubuntu` user has passwordless sudo - as in you won't be prompted for your account password.  If you try `sudo` in the terminal on your machine, you will be prompted for a password
 
 
-## Part 5 - ssh config
+## Part 6 - `config` your connection
 
 On your local system (`exit` from your AWS instance), you used an SSH command to log on to your AWS Ubuntu instance. There is a neat configuration file that can be used to create an alias of sorts. Read the resources for this section, then configure the `.ssh/config` file for your user on your system with information on your `ssh` connection to your AWS instance.
 
@@ -112,7 +123,7 @@ On your local system (`exit` from your AWS instance), you used an SSH command to
 ## Submission
 
 - In the Pilot Dropbox, paste the URL to the `Lab02` folder in your GitHub repo
-  - URL should look like: https://github.com/WSU-kduncan/ceg2350f23-YOURGITHUBUSERNAME/tree/main/Lab02.md
+  - URL should look like: https://github.com/WSU-kduncan/ceg2350s24-YOURGITHUBUSERNAME/tree/main/Lab02.md
 
 ## Rubric
 
