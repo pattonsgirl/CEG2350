@@ -86,14 +86,16 @@ Perform the following exercise on your AWS instance.
 
 ## Part 4 - Get a `crew`
 
-Perform the following exercise on your AWS instance. Create `share` in the `ubuntu` user's `home` directory and create some files in the folder to play with.
+Perform the following exercise on your AWS instance. 
+
+Create `share` in the `ubuntu` user's `home` directory and create some files in the folder to play with.
 
 Reminder to replace references to `bob` with your username of first initial, last name (ex. `jsmith`)
 
 - **Useful commands for this part: `addgroup, usermod, chown, chgrp, su, sudo`**
 
 1. Create a new group named `crew`
-2. Add `ubuntu` and `bob` to the `crew` group
+2. Add `ubuntu` and `bob` to the `crew` group (replace with your username, see note)
 3. Change `share` in the `ubuntu` user's `home` directory so that `crew` is the group for the whole folder
    - Yes, including contents in `share`
 4. Switch user to `bob`
