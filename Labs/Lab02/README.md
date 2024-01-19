@@ -5,8 +5,8 @@
 - [Part 2 - Bits of permissions](#part-2---bits-of-permissions)
 - [Part 3 - Regular `bob`](#part-3---regular-bob)
 - [Part 4 - Get a `crew`](#part-4---get-a-crew)
+- [User & Group Resources](#user--group-resources)
 - [Part 5 - `sudo` make me a sandwich](#part-5---sudo-make-me-a-sandwich)
-- [Permissions Resources](#permissions-resources)
 - [Part 6 - `config` your connection](#part-6---config-your-connection)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
@@ -48,7 +48,23 @@ Reminder: if you make edits to your repository in GitHub using the browser, you'
 
 ## Part 2 - Bits of permissions
 
+For each command below, write an verbose description of what it does. 
+Sample:
+   - `chmod 777 file.txt`
+   - Full credit: "For file.txt, it allows the owner/ user to read, write, and execute, the group to read, write and execute, and others to read, write, and execute"
+   - No credit: "It does 777"
 
+- **Useful commands for this part: `chmod, man`**
+
+1. `chmod u+r bubbles.txt`
+2. `chmod u=rw,g-w,o-x banana.cabana`
+3. `chmod a=w snow.md`
+4. `chmod 751 program`
+5. `chmod -R ug+w share`
+
+**Resources**
+- [RedHat - Linux File Permissions Explained](https://www.redhat.com/sysadmin/linux-file-permissions-explained)
+- [Linuxize - Understanding File Permissions](https://linuxize.com/post/understanding-linux-file-permissions/)
 
 ## Part 3 - Regular `bob`
 
@@ -65,23 +81,31 @@ Perform the following exercise on your AWS instance.
 5. Get to `bob`'s `home` directory
 6. Can `bob` add files to `bob`'s home directory? Why or why not?
 7. Switch back to the `ubuntu` user
+   - Note that the `ubuntu` user does not have an account password.  You'll have to find a more administrative way to switch accounts...
 8. Return to the `ubuntu` user's `home` directory
 
 ## Part 4 - Get a `crew`
 
-Perform the following exercise on your AWS instance. Create `DirA` in the `ubuntu` user's `home` directory and create some files in the folder to play with.
+Perform the following exercise on your AWS instance. Create `share` in the `ubuntu` user's `home` directory and create some files in the folder to play with.
 
-Same as Part 2, replace `bob` with your username of first initial, last name (ex. `jsmith`)
+Reminder to replace references to `bob` with your username of first initial, last name (ex. `jsmith`)
 
-- **Useful commands for this part: `addgroup, usermod, chown, chgrp`**
+- **Useful commands for this part: `addgroup, usermod, chown, chgrp, su, sudo`**
 
 1. Create a new group named `crew`
 2. Add `ubuntu` and `bob` to the `crew` group
-3. Change `DirA` in the `ubuntu` user's `home` directory so that `crew` is the group for the whole folder
-   - Yes, including contents in `DirA`
+3. Change `share` in the `ubuntu` user's `home` directory so that `crew` is the group for the whole folder
+   - Yes, including contents in `share`
 4. Switch user to `bob`
-5. As `bob` create a file in `DirA`.
+5. As `bob` create a file in `share`.
 6. Why was this successful?
+
+### User & Group Resources
+
+- [RedHat - How to manage users and groups in Linux](https://www.redhat.com/sysadmin/linux-user-group-management)
+- [Linuxize - how to use `useradd`](https://linuxize.com/post/how-to-create-users-in-linux-using-the-useradd-command/)
+   - I recommend using `adduser` in the lab, but this is a great breakdown of the pieces `adduser` uses and `useradd` needs you to specify
+- [Linuxize - groups and users](https://linuxize.com/post/how-to-add-user-to-group-in-linux/)
 
 ## Part 5 - [`sudo` make me a sandwich](https://xkcd.com/149/)
 
@@ -90,16 +114,13 @@ Perform the following exercise on your AWS instance.
 - **Useful commands for this part: `sudo`**
 
 1. In the `ubuntu` user's `home` directory, make a file with `sudo` named `sudowho.txt`
-2. What are the permissions of this file?
-3. Without modifying the permissions of the file, edit the file and add some text, and save the changes.
+2. What are the permissions and ownership of this file?
+   - Rephrased, who (which categories) can do what?
+3. Without modifying the permissions or ownership of the file, edit the file and add some text, and save the changes.
+4. Modify the permissions and ownership to make `ubuntu` the owner and `crew` the group associated with the file.
 
-## Permissions Resources
-
-Note: you are welcome to use resources outside of the below, but these are ones I have looked over.  Some of these will contain more information than you need.  Keep in mind the labs have you use commands for their basic goals, but they can be used to do more than the labs will have you play with.
-- [Linuxize - Understanding File Permissions](https://linuxize.com/post/understanding-linux-file-permissions/)
-- [Linuxize - how to use `useradd`](https://linuxize.com/post/how-to-create-users-in-linux-using-the-useradd-command/)
-   - I recommend using `adduser` in the lab, but this is a great breakdown of the pieces `adduser` uses and `useradd` needs you to specify
-- [Linuxize - groups and users](https://linuxize.com/post/how-to-add-user-to-group-in-linux/)
+**Resources**
+- [RedHat - Linux command line basics: sudo](https://www.redhat.com/sysadmin/sudo)
 - [Linuxize - `sudo`](https://linuxize.com/post/sudo-command-in-linux/)
    - Note: on your AWS instance, the `ubuntu` user has passwordless sudo - as in you won't be prompted for your account password.  If you try `sudo` in the terminal on your machine, you will be prompted for a password
 
@@ -127,9 +148,10 @@ On your local system (`exit` from your AWS instance), you used an SSH command to
 
 ## Rubric
 
-- Part 1 - 4 pts
-- Part 2 - 8 pts
-- Part 3 - 6 pts
-- Part 4 - 3 pts
-- Part 5 - 3 pts
+- Part 1 - 5 pts
+- Part 2 - 5 pts
+- Part 3 - 8 pts
+- Part 4 - 6 pts
+- Part 5 - 4 pts
+- Part 6 - 3 pts
   - 0.5 pts / question
