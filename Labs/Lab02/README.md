@@ -48,7 +48,8 @@ Reminder: if you make edits to your repository in GitHub using the browser, you'
 
 ## Part 2 - Bits of permissions
 
-For each command below, write an verbose description of what it does. 
+For each command below, write a verbose description of what it does.  
+
 Sample:
    - `chmod 777 file.txt`
    - Full credit: "For file.txt, it allows the owner/ user to read, write, and execute, the group to read, write and execute, and others to read, write, and execute"
