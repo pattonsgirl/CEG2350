@@ -89,11 +89,11 @@ Perform the following exercise on your AWS instance.
 
 Perform the following exercise on your AWS instance. 
 
-Create `share` in the `ubuntu` user's `home` directory and create some files in the folder to play with.
+Create a folder named `share` in the `ubuntu` user's `home` directory and create some files in the folder to play with.
 
 Reminder to replace references to `bob` with your username of first initial, last name (ex. `jsmith`)
 
-- **Useful commands for this part: `addgroup, usermod, chown, chgrp, su, sudo`**
+- **Useful commands for this part: `addgroup, usermod, chown, chgrp, su, sudo, mkdir`**
 
 1. Create a new group named `crew`
 2. Add `ubuntu` and `bob` to the `crew` group (replace with your username, see note)
