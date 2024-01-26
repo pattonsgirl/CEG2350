@@ -5,9 +5,11 @@
 
 ## Part 1 Answers
 
-1. Verify here that input.txt made it to GitHub in your `Lab03` folder
-2.
-3.
+1. `echo "This is easy" > button`
+2. `cat nums.txt | sort >> all_nums.txt`
+3. `cat << "DONE" > here.txt`
+4. `ls -lt ~ | head`
+5. `history | grep ".md"`
 
 ## Part 2
 

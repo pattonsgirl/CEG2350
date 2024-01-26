@@ -1,14 +1,13 @@
 # Lab 03
 
-- [Lab Procedure](#Lab-Procedure)
-- [Part 1 - IO Redirection](#Part-1---IO-Redirection)
-- [Part 2 - Intro to Scripts](#Part-2---Intro-to-Scripts)
-- [Part 3 - Intro to Regular Expressions](#Part-3---Intro-to-Regular-Expressions)
-- [Part 4 - Docs and Repos](#Part-4---Docs-and-Repos)
-- [Part 5 - .profile and PATH](#Part-5---.profile-and-PATH)
-- [Extra Credit - Colorize Me, Captain](#Extra-Credit---Colorize-Me,-Captain)
-- [Submission](#Submission)
-- [Rubric](#Rubric)
+- [Lab Procedure](#lab-procedure)
+- [Part 1 - IO Redirection](#part-1---io-redirection)
+- [Part 2 - Rolling the Dice](#part-2---rolling-the-dice)
+- [Part 3 - Retrospective](#part-3---retrospective)
+- [Part 4 - .profile and PATH](#part-4---profile-and-path)
+- [Extra Credit - Room for Improvement](#extra-credit---room-for-improvement)
+- [Submission](#submission)
+- [Rubric](#rubric)
 
 ## Lab Procedure
 
@@ -32,8 +31,19 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - IO Redirection
 
-- **Resources:**
+Find out what each command (including its flags) does.  Don't forget to lookup commands & flags using `man` and / or some Google-fu (ability to use Google search) to find out. All of the commands can be run.
+
+1. `echo "This is easy" > button`
+2. `cat doesnotexist 2>> hush.txt`
+2. `cat nums.txt | sort >> all_nums.txt`
+    - To run: create a file named `nums.txt` containing random numbers, each on a new line
+3. `cat << "DONE" > here.txt`
+4. `ls -lt ~ | head`
+5. `history | grep ".md"`
+
+**Resources:**
 - [An Intro to Linux IO Redirection](https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-i-o-redirection)
+- [RedHat - How to manipulate files with shell redirection and pipelines in Linux](https://www.redhat.com/sysadmin/linux-shell-redirection-pipelining)
 
 ## Part 2 - Rolling the Dice
 
@@ -76,30 +86,33 @@ A retrospective is a moment of refection after a task.
 
 1. Where and when did it go wrong while working on your script tasks?
 2. Was anything familiar working with a new language compared to one you are used to?
-3. Assuming you `push`ed your `commit`s to GitHub, view your `commit` history.  Did you write good `commit`` messages that refer to what tasks were completed at each commit?  What would you improve?
+3. Assuming you `push`ed your `commit`s to GitHub, view your `commit` history.  Did you write good `commit` messages that refer to what tasks were completed at each commit?  What would you improve?
 
 ## Part 4 - .profile and PATH
 
-In this part, your task is to read `~/.profile` and focus on the `if` statements that would change the value of `PATH`, `if` they were `true`.  Your goal is to create the things needed for **one** of the conditions to evaluate to `true`.  
+It is recommended to use your AWS instance for this part since your repository is cloned there and that is where your script should be.
 
-DO NOT MODIFY THE CONTENT of the `.profile` file.  Right now, both conditions evaluate to `false`.  
+In this part, your task is to read `~/.profile` and focus on the `if` statements that would change the value of `PATH`, **if** one of the statements was `true`.  Your goal is to create the things needed for **one** of the conditions to evaluate to `true`.  
+
+DO NOT MODIFY THE CONTENT of the `.profile` file.  Right now, both conditions evaluate to `false`. 
+  - Think about how you could confirm that statement - that both conditions are currently `false`.
   - Remember, the `test` command is what is being used when you see `[` (square brackets).  
   - The flag / relational condition being checked is an option of the `test` command.
 
 1. What is the current value of the `PATH` environment variable?
 
-2. Read through your `~/.profile`. Determine where your binary files and scripts should go in order to be part of the `PATH` variable. Write the directory path.
+2. Read through your user's `~/.profile`.  Pick one condition to make `true` that, if `true`, will add the directory to be part of the `PATH` variable.  What needs to happen to make the condition `true`?
 
 3. Make the folder required in the location required. Write the command(s) used and the full path of the folder.
 
-4. Reload `~/.profile` either with `source` or by closing and opening the terminal. What is the value of the `PATH` environment variable? What was added now vs. in your answer to 1?
+4. Reload `~/.profile` either with `source` or by logging out and `ssh`ing back in. What is the value of the `PATH` environment variable? What was added now vs. in your answer to 1?
 
 5. Copy `roll` into the folder. Write the command(s) used.
 
 6. Modify the permissions so that you can run your script on the command line from any location. Write the modifications needed.
    - Note: if you already modified permissions, fill in this question with what you modified.
 
-8. In terms of user, group, and other, explain who is allowed to run the script.
+7. In terms of user, group, and other, explain who is allowed to run the script.
 
 ## Extra Credit - Room for Improvement
 
@@ -114,17 +127,10 @@ Make sure you `commit` and `push` your script changes for grading and add a note
 
 ## Rubric
 
-- Part 1 - 2 pts
-- `sorting-party` script can do the following: (5 pts total)
-  - Reads in a filename as an argument - 1 pt
-  - Sorts the contents of the file given in the argument using the `sort` command - 1 pt
-  - Outputs the sorted data to a file called `sorted.txt` - 1 pt
-  - Condition verifies input file has extension `.txt` - 1 pt
-  - If condition is not met, error message is output to standard output - 1 pt
-- Part 4 - 2 pts
-  - script usage guide - 1 pt
-  - specified files exist in `Lab03` folder - 1 pt
-- Part 5 - 3.5 pts total
-  - 0.5 pts each
-- The extra credit is worth 5% 
-  - translates to 0.625 pts
+- Part 1 - 1 pt each / 6 pts total
+- Part 2 - 6 pts total
+  - minimum of 6 commits, each commit completes 1 task
+  - 1 complete task = 1 pt
+- Part 3 - 1 pt each / 3 pts total
+- Part 4 - 0.5 pts each / 3.5 pts total
+- Extra Credit - 1 pt
