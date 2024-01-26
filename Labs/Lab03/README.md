@@ -55,7 +55,7 @@ It is recommended to use your AWS instance for this part since your repository i
 
 The overall goal is to create a script that randomly generates a set of random numbers within the range specified by the script user.  In steps 1 - 5, assume you are rolling one die.
 
-To complete the overall task, perform the steps listed below.  After each step is complete and tested, create a `commit` with your changes.  `push` `commit`s as you wish, just remember the `push` saves all the `commit`s to the mighty GitHub cloud.
+To complete the overall task, perform the steps listed below.  **After each step is complete and tested**, create a `commit` with your changes.  `push` `commit`s as you wish, just remember the `push` saves all the `commit`s to the mighty GitHub cloud.  **Your `commit` message must include which task you completed.**
 
 If you don't make it through all of a step or don't complete all 6 steps, leave heavy comments for partial credit considerations.
 
