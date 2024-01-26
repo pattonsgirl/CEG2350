@@ -9,11 +9,15 @@
 2.
 3.
 
-## Script Usage Guide
+## Part 2
 
-1. How to run
-2. What extensions are expected
-3. What is the output
+Verify that `roll` made it to your GitHub repository for this course and is in your `Lab03` folder.  No answers will be written here unless you would like to leave a note to the TAs
+
+## Part 3 - Retrospective Answers
+
+1. 
+2. 
+3. 
 
 ## Part 5 Answers
 
@@ -29,4 +33,4 @@
 
 ## Extra Credit
 
-1. Note here if you did the extra credit so the tas can verify :)
+1. Note here *what* you did to the script for the extra credit.

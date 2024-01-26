@@ -20,7 +20,7 @@ Go to the folder that contains your repository (likely named `ceg2350-yourgithub
 
 Create a new directory, `Lab03`
 
-This lab will have you creating input files, scripts, and output files. All of your work should be found here.
+This lab will have you creating input files, scripts, and output files. All of your work should be found in your `Lab03` folder.
 
 Some questions will need you to write answers in `Lab03.md` the [LabTemplate.md is here](LabTemplate.md).
 
@@ -32,84 +32,57 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - IO Redirection
 
-This and the following parts are meant to be done in your AWS instance in your `Lab03` folder in your repo. 
-
-- **Useful commands for this part: `man, vim, sort, <, >, >>`**
-
-1. Create a file called `input.txt` with the following contents:
-
-```
-9.1
-43.7
-2.2
-62.1
-2.1
-9.3
-43.5
-4.6
-44.6
-4.7
-42.7
-47.4
-46.6
-4.5
-55.6
-4
-9.2
-66.6
-2
-2.3
-```
-
-2. Use the `sort` command to sort `input.txt`numerically (smallest to largest numbers).
-3. Use the `sort` command to sort `input.txt` and direct the output to `output.txt`.
-
 - **Resources:**
 - [An Intro to Linux IO Redirection](https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-i-o-redirection)
-- [IO Redirection](https://tldp.org/LDP/abs/html/io-redirection.html)
-- [Unix `sort` command](https://www.computerhope.com/unix/usort.htm)
 
-## Part 2 - Intro to Scripts
+## Part 2 - Rolling the Dice
 
-1. Create a bash script called `sorting-party`. The script should have the following features:
+It is recommended to use your AWS instance for this part since your repository is cloned there and `ssh` authentication with GitHub should be set up.  But I'm just a set of instructions with good advice.
 
-   - Reads in a filename as an argument.
-     - Runs with `sorting-party filename`
-     - Note: this will look a little different depending on file permissions and the state of PATH
-   - Sorts the contents of the file given in the argument using the `sort` command.
-   - Outputs the sorted data to a file called `sorted.txt`
+The overall goal is to create a script that randomly generates a set of random numbers within the range specified by the script user.  In steps 1 - 5, assume you are rolling one die.
 
-- Hint: To run your script you may need / want to play with the file permissions.
+To complete the overall task, perform the steps listed below.  After each step is complete and tested, create a `commit` with your changes.  `push` `commit`s as you wish, just remember the `push` saves all the `commit`s to the mighty GitHub cloud.
 
-- **Resources:**
-- [Command Line Arguments in Shell Script](https://tecadmin.net/tutorial/bash-scripting/bash-command-arguments/)
-- [Use Command Line Arguments in Bash Script](https://www.baeldung.com/linux/use-command-line-arguments-in-bash-script)
-- [Positional Parameters](http://linuxcommand.org/lc3_wss0120.php)
+If you don't make it through all of a step or don't complete all 6 steps, leave heavy comments for partial credit considerations.
 
-## Part 3 - Intro to Regular Expressions
+1. Create a bash script named `roll`.  Output a random number between 1 and 20.
+    - Script should run when `roll` is typed on command line.  Think about permissions.
+    - Output should say: `You rolled a ##`, where `##` is the randomly generated number.
 
-1. Add an `if` statement to your script that checks if the file in the argument ends in `.txt`
-2. If the file does **not** end in `.txt` your script should exit with an error message: `File extension not allowed`
+2. Change script to prompt the user for a number.  If the number is less than 1, output an error message.  Output a random number between 1 and the user's number.
 
-- Hint: maybe make some other files with other file extensions to test your conditional statement
+3. Change script to take an argument from the command line instead of prompting the user.  If no argument is passed, output an error message.  Output a random number between 1 and the argument passed.
+    - Script should run when `roll ##` is typed on command line, where `##` is a number
 
-- **Resources:**
-- [How to Use Regex in Bash](https://www.poftut.com/how-to-use-regular-expression-regex-in-bash-linux/)
-- [Regex 101](https://regex101.com/)
+4. Change script to also check if the given argument is greater than 1.  If no argument was given, prompt user for a number, and check that it was greater than 1.  Output a random number between 1 and the number.
 
-## Part 4 - Docs and Repos
+5. Change the script to prompt the user for a valid number if the argument was not provided or was not greater than 1.  Prompting continues until a number greater than 1 is given.  Output a random number between 1 and the valid number.
 
-1. Fill in the "Script Usage Guide" section with at least the specified elements
-   - You are welcome to replace this with any additional markdown you would like to make it look good
-2. Verify that your GitHub repo has a `Lab03` folder with:
-   - `input.txt`
-   - `output.txt`
-   - `sorting-party`
-   - `Lab03.md`
+6. Change script to take **two** arguments from the command line.  The first argument will indicate number of dice to roll.  The second will indicate how many sides of the dice.  If there are less than or more than two arguments, or if the arguments are not greater than one, prompt the user for valid values for number of dice and number of side.  Output a random number between 1 and the number of sides for each die.
+    - Script should run when `roll ## ##` is typed on command line.
+    - Output should say: `Die 1 rolled a ##    Die 2 rolled a ##`, where `##` are two randomly generated numbers, one for each die.
 
-## Part 5 - .profile and PATH
+**Resources:**
+- [IO Flood: Bash Shell Scripting | Random Number Generation](https://ioflood.com/blog/bash-random-number/)
+- [IO Flood: Bash read man page | Using the Linux read command](https://ioflood.com/blog/bash-read-man-page-using-the-linux-read-command/)
+- [Digital Ocean - How to Read Command Line Arguments in Shell Scripts?](https://www.digitalocean.com/community/tutorials/read-command-line-arguments-in-shell-scripts)
+- [Cloudzy - Bash If Statement: Syntax, Variations, Use Cases, Commands, and More!](https://cloudzy.com/blog/bash-if-statement/)
+- [IO Flood - Bash While Loop: Shell Scripting Reference Guide](https://ioflood.com/blog/bash-while-loop/)
+- [ShellCheck - finds bugs in your shell scripts](https://www.shellcheck.net/)
 
-In this part, your task is to read `~/.profile` and focus on the `if` statements that would change the value of `PATH`, `if` they were `true`.  Your goal is to create the things needed for **one** of the conditions to evaluate to `true`.  DO NOT MODIFY THE CONTENT of the `.profile` file.  Right now, both conditions evaluate to `false`.  
+## Part 3 - Retrospective
+
+A retrospective is a moment of refection after a task.
+
+1. Where and when did it go wrong while working on your script tasks?
+2. Was anything familiar working with a new language compared to one you are used to?
+3. Assuming you `push`ed your `commit`s to GitHub, view your `commit` history.  Did you write good `commit`` messages that refer to what tasks were completed at each commit?  What would you improve?
+
+## Part 4 - .profile and PATH
+
+In this part, your task is to read `~/.profile` and focus on the `if` statements that would change the value of `PATH`, `if` they were `true`.  Your goal is to create the things needed for **one** of the conditions to evaluate to `true`.  
+
+DO NOT MODIFY THE CONTENT of the `.profile` file.  Right now, both conditions evaluate to `false`.  
   - Remember, the `test` command is what is being used when you see `[` (square brackets).  
   - The flag / relational condition being checked is an option of the `test` command.
 
@@ -121,18 +94,18 @@ In this part, your task is to read `~/.profile` and focus on the `if` statements
 
 4. Reload `~/.profile` either with `source` or by closing and opening the terminal. What is the value of the `PATH` environment variable? What was added now vs. in your answer to 1?
 
-5. Copy `sorting-party` into the folder. Write the command(s) used.
+5. Copy `roll` into the folder. Write the command(s) used.
 
 6. Modify the permissions so that you can run your script on the command line from any location. Write the modifications needed.
    - Note: if you already modified permissions, fill in this question with what you modified.
 
 8. In terms of user, group, and other, explain who is allowed to run the script.
 
-## Extra Credit - Colorize Me, Captain
+## Extra Credit - Room for Improvement
 
-Colorize the error condition from your script (`File format not allowed`). Maybe go for traditional red? How does purple make you feel? Rainbow and plaid are also welcome to this party.
+Make a notable improvement to the `roll` script.  This could be another feature, an additional boundary check on allowed conditions, experimenting with colored text for standard and error output... If you have an idea, you are encouraged to run it by the TAs first to make sure it is worthy.
 
-Make sure you `commit` and `push` your script changes for grading.
+Make sure you `commit` and `push` your script changes for grading and add a note of what you did in the answer template.
 
 ## Submission
 
