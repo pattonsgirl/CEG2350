@@ -37,7 +37,7 @@ Sample:
   - `echo "This is easy" > button`
   - Full credit: `echo` prints "This is easy" to standard output, which is redirected to the file named `button` in the current directory.  `button` now contains the text, "This is easy".
 
-1. `echo $HOME > thishouse`
+1. `printenv $HOME > thishouse`
 2. `cat doesnotexist 2>> hush.txt`
 3. `cat nums.txt | sort -n >> all_nums.txt`
     - To run: create a file named `nums.txt` containing random numbers, each on a new line
@@ -48,6 +48,8 @@ Sample:
 **Resources:**
 - [An Intro to Linux IO Redirection](https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-i-o-redirection)
 - [RedHat - How to manipulate files with shell redirection and pipelines in Linux](https://www.redhat.com/sysadmin/linux-shell-redirection-pipelining)
+- [freeCodeCamp - How to Set an Environment Variable in Linux](https://www.freecodecamp.org/news/how-to-set-an-environment-variable-in-linux/)
+- [Linuxize - How to Set and List Environment Variables in Linux](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/)
 
 ## Part 2 - Rolling the Dice
 
