@@ -34,16 +34,16 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 Find out what each command (including its flags) does.  Don't forget to lookup commands & flags using `man` and / or some Google-fu (ability to use Google search) to find out. All of the commands can be run.
 
 Sample:
-    - `echo "This is easy" > button`
-    - Full credit: `echo` prints "This is easy" to standard output, which is redirected to the file named `button` in the current directory.  `button` now contains the text, "This is easy".
+  - `echo "This is easy" > button`
+  - Full credit: `echo` prints "This is easy" to standard output, which is redirected to the file named `button` in the current directory.  `button` now contains the text, "This is easy".
 
-1. `echo "This is easy" > button`
+1. `echo $HOME > thishouse`
 2. `cat doesnotexist 2>> hush.txt`
-2. `cat nums.txt | sort -n >> all_nums.txt`
+3. `cat nums.txt | sort -n >> all_nums.txt`
     - To run: create a file named `nums.txt` containing random numbers, each on a new line
-3. `cat << "DONE" > here.txt`
-4. `ls -lt ~ | head`
-5. `history | grep ".md"`
+4. `cat << "DONE" > here.txt`
+5. `ls -lt ~ | head`
+6. `history | grep ".md"`
 
 **Resources:**
 - [An Intro to Linux IO Redirection](https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-i-o-redirection)
@@ -129,6 +129,9 @@ Make sure you `commit` and `push` your script changes for grading and add a note
 
 - In the Pilot Dropbox, paste the URL to the `Lab03` folder in your GitHub repo
   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab03
+- Your `Lab03` folder should contain (at minimum):
+  - `Lab03.md`
+  - `roll`
 
 ## Rubric
 
