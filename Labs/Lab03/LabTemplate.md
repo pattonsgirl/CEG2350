@@ -5,7 +5,7 @@
 
 ## Part 1 Answers
 
-1. `echo "This is easy" > button`
+1. `printenv $HOME > thishouse`
 2. `cat nums.txt | sort >> all_nums.txt`
 3. `cat << "DONE" > here.txt`
 4. `ls -lt ~ | head`
