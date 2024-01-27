@@ -6,10 +6,11 @@
 ## Part 1 Answers
 
 1. `printenv $HOME > thishouse`
-2. `cat nums.txt | sort >> all_nums.txt`
-3. `cat << "DONE" > here.txt`
-4. `ls -lt ~ | head`
-5. `history | grep ".md"`
+2. `cat doesnotexist 2>> hush.txt`
+3. `cat nums.txt | sort >> all_nums.txt`
+4. `cat << "DONE" > here.txt`
+5. `ls -lt ~ | head`
+6. `history | grep ".md"`
 
 ## Part 2
 
