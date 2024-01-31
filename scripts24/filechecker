@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#prompt for filename
+printf "Give me the filename: "
+read name
+
+#echo $name
+
+# check if file exists
+if [[ -e $name ]]; then
+	# print contents
+	cat $name
+
+# else echo statement to that file name
+else
+	echo "Julie, do the thing" > $name
+fi

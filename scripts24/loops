@@ -1,0 +1,13 @@
+#!/bin/bash
+
+for ((i=0; i<=10; i++ ))
+do
+	echo "hello $i"
+done
+
+i=10
+while [[ $i -ge 0  ]]
+do
+	echo "countdown $i"
+	((i--))
+done

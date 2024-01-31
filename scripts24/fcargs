@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo $#
+echo $@
+echo $1
+
+name=$1
+
+#prompt for filename
+#printf "Give me the filename: "
+#read name
+
+#echo $name
+
+# check if file exists
+if [[ -e $1 ]]; then
+	# print contents
+	cat $1
+
+# else echo statement to that file name
+else
+	echo "Julie, do the thing" > $1
+fi
