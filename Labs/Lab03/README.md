@@ -37,7 +37,8 @@ Sample:
   - `echo "This is easy" > button`
   - Full credit: `echo` prints "This is easy" to standard output, which is redirected to the file named `button` in the current directory.  `button` now contains the text, "This is easy".
 
-1. `printenv $HOME > thishouse`
+1. `printenv HOME > thishouse`
+    - patched from `$HOME` to `HOME` 2/1
 2. `cat doesnotexist 2>> hush.txt`
 3. `cat nums.txt | sort -n >> all_nums.txt`
     - To run: create a file named `nums.txt` containing random numbers, each on a new line
