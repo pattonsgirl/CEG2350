@@ -5,7 +5,7 @@
 
 ## Part 1 Answers
 
-1. `printenv $HOME > thishouse`
+1. `printenv HOME > thishouse`
 2. `cat doesnotexist 2>> hush.txt`
 3. `cat nums.txt | sort >> all_nums.txt`
 4. `cat << "DONE" > here.txt`
