@@ -37,7 +37,8 @@ Sample:
   - `echo "This is easy" > button`
   - Full credit: `echo` prints "This is easy" to standard output, which is redirected to the file named `button` in the current directory.  `button` now contains the text, "This is easy".
 
-1. `printenv $HOME > thishouse`
+1. `printenv HOME > thishouse`
+    - patched from `$HOME` to `HOME` 2/1
 2. `cat doesnotexist 2>> hush.txt`
 3. `cat nums.txt | sort -n >> all_nums.txt`
     - To run: create a file named `nums.txt` containing random numbers, each on a new line
@@ -120,6 +121,9 @@ DO NOT MODIFY THE CONTENT of the `.profile` file.  Right now, both conditions ev
     - Note: if you already modified permissions, fill in this question with what you modified.
 
 7. In terms of user, group, and other, explain who is allowed to run the script.
+
+**Resources**
+- [Technint - About PATH and options to modify it](https://www.tecmint.com/set-path-variable-linux-permanently/)
 
 ## Extra Credit - Room for Improvement
 
