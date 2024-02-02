@@ -31,7 +31,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - IO Redirection
 
-Find out what each command (including its flags) does.  Don't forget to lookup commands & flags using `man` and / or some Google-fu (ability to use Google search) to find out. All of the commands can be run.
+Find out what each command (including its flags) does and write a description beside it.  Don't forget to lookup commands & flags using `man` and / or some Google-fu (ability to use Google search) to find out. All of the commands can be run - a note is included if there is any additional setup to make it work.
 
 Sample:
   - `echo "This is easy" > button`
