@@ -1,3 +1,5 @@
+?hello@gmail.com
+#bringit@bomb.com
 john.doe@example.com
 alice_smith123@company.org
 user123@example.co.uk
@@ -13,6 +15,7 @@ sarah.connor@gmail.com
 charlie_brown@peanuts.com
 invalid-email@.com
 support@company.org
+$$$bills@money.want
 jenny.smith@123.co.uk
 9876user@example.net
 admin@website.com
@@ -42,6 +45,7 @@ jennifer.brown@ example .com
 admin@website.com
 user@company.org
 mike_tyson@boxing
+#_#@happy.face
 john.doe@example.com
 alice.smith@example.com
 bob_jones@example.com
