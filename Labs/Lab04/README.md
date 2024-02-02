@@ -47,8 +47,8 @@ Your task is to write a bash script that cleans a file full of emails.  The emai
 grep [OPTIONS] PATTERN [FILE...]
 ```
 
-The list of email to use in this exercise is [here](emails.txt).
-   - [Raw version of emails.txt](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab04/email.txt)
+The list of email to use in this exercise is [here](data/emails.txt).
+   - [Raw version of emails.txt](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab04/data/emails.txt)
 
 To complete the overall task, perform the steps listed below.  **After each step is complete and tested**, create a `commit` with your changes.  `push` `commit`s as you wish, just remember the `push` saves all the `commit`s to the mighty GitHub cloud.  **Your `commit` message must include which task you completed.**
 
@@ -67,11 +67,12 @@ If you don't make it through all of a step or don't complete all steps, leave he
 
 ## Part 2 - sed
 
-`sed` is mostly commonly used as a search and replace command. In [sedfile.html](sedfile.html) you'll find a simple html file. Your task is to change it into markdown. Do this only using `sed` commands. Your converted file should be named `sedfile.md`.
+`sed` is mostly commonly used as a search and replace command. In [sedfile.html](data/sedfile.html) you'll find a simple html file. Your task is to change it into markdown. Do this only using `sed` commands. Your converted file should be named `sedfile.md`.
+   - [Raw version of sedfile.html](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab04/data/sedfile.html)
 
 The following picture shows how `sedfile.html` (the original) looks compared to `sedfile.md` when the files are viewed in GitHub.
 
-![sed Before and After](sed-before-after.PNG)
+![sed Before and After](data/sed-before-after.PNG)
 
 I recommend making a copy of `sedfile.html` and naming it `sedfile.md`. Then use `sed` without modifying the file - once you know your replacement patterns work, then save the changes using `sed`'s `-i` flag.
 
@@ -99,7 +100,8 @@ Only write the command that performs the required task. DO NOT paste the results
 
 ## Part 3 - awk
 
-`awk` is a full blown scripting language dedicated to text manipulation. Create a file in your `Lab04` folder named `records.txt`. Copy the contents of [records.txt](records.txt) to a file, and do the following tasks using `awk`
+`awk` is a full blown scripting language dedicated to text manipulation. Create a file in your `Lab04` folder named `records.txt`. Copy the contents of [records.txt](data/records.txt) to a file, and do the following tasks using `awk`
+   - [Raw version of records.txt](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab04/data/records.txt)
 
 `records.txt` contains the following fields:
 
