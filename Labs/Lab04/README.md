@@ -117,7 +117,7 @@ Only write the command that performs the required task. DO NOT paste the results
    - `Last, First: Email`
 4. For users who have a `wright.edu` email AND have a password of `1234`, print only their last name and favorite number in the following format:
    - `Last favorite number is: #`
-5. Replace all passwords with `N0T@PL@!NP@$$W0RD`. Write all records to `updaterecords.txt`
+5. Replace all passwords with `N0T@PL@!NP@$$W0RD`. Write all fixed records to `updaterecords.txt`
 
 - **Resources**
 - [linuxize - awk with examples](https://linuxize.com/post/awk-command/)
@@ -138,7 +138,7 @@ Only write the command that performs the required task. DO NOT paste the results
    - `sedfile.html`
    - `sedfile.md`
    - `records.txt`
-   - `updaterecords`
+   - `updaterecords.txt`
    - `Lab04.md`
 
 2. Note that if your command answers in the answer template did not make use of the backtick (`), the TAs are allowed to refuse to grade your submission.  Cleanliness and readability is your responsibility.  
