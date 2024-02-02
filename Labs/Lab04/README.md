@@ -2,7 +2,7 @@
 
 - [Lab Procedure](#Lab-Procedure)
 - [regex resources](#regex-resources)
-- [Part 1 - grep](#Part-1---grep)
+- [Part 1 - validator](#Part-1---validator)
 - [Part 2 - sed](#Part-2---sed)
 - [Part 3 - awk](#Part-3---awk)
 - [Submission](#Submission)
@@ -37,23 +37,31 @@ These are useful resources for remembering regex syntax and testing your express
 - [regex101 - test regex patterns](https://regex101.com/)
 - [rubular - test regex patterns](https://rubular.com/)
 
-## Part 1 - grep
+## Part 1 - validator
 
-`grep` is a handy command to find patterns in text. We played with two flags in class: `-E` and `-P`. `-E` handles most things, but does not work with special regex letter the represent ranges -`\w` and `\d` for example. To use these characters for the ranges they represent, use the `-P` flag instead of the `-E` flag.
+Your task is to write a bash script that cleans a file full of emails.  The email validation script should, given an input file, output to a final file unique and valid emails.
+
+`grep` is a handy command to find patterns in text. There are two flags that enable enhanced regular expressions: `-E` and `-P`. `-E` handles most things, but does not work with special regex letter the represent ranges -`\w` and `\d` for example. To use these characters for the ranges they represent, use the `-P` flag instead of the `-E` flag.
 
 ```
 grep [OPTIONS] PATTERN [FILE...]
 ```
 
-Create a file named `grepdata.txt` in your `Lab04` folder. Put the contents of [grepdata.txt](grepdata.txt) in the file. Use `grep` to complete the searches below. Only write the command that makes the required match. DO NOT paste the results.
+The list of email to use in this exercise is [here](emails.txt).
+   - [Raw version of emails.txt](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab04/email.txt)
 
-1. Print only lines that contain a phone number with an extension (the letter x or X followed by four digits).
-   - Your answer must use the `{` and `}` repetition specifier.
-2. Print only lines that contain CA in either uppercase or lowercase.
-3. Print only lines that contain an email address.
-4. Print only lines that contain a date after the year 2000.
+To complete the overall task, perform the steps listed below.  **After each step is complete and tested**, create a `commit` with your changes.  `push` `commit`s as you wish, just remember the `push` saves all the `commit`s to the mighty GitHub cloud.  **Your `commit` message must include which task you completed.**
 
-- **Resources**
+If you don't make it through all of a step or don't complete all steps, leave heavy comments for partial credit considerations.
+
+1. Create a bash script named `validator`.  The script should take a file name as input.  If the file does not exist, have script print an error message and exit.  If the file does exist, have script sort the content & remove duplicate entries. Output unique entries to a file named `clean1.txt`
+2. Add to script to use content of `clean1.txt` and **match** only entries that start with a combination of letters (case-insensitive) or digits.  Output only valid matches to `clean2.txt`
+3. Add to script to use content of `clean2.txt` and **remove matching** entries that contain consecutive (2 or more in a row) non-alphanumeric characters, such as dots (.), underscores (_), and hyphens (-).  Output only matches that do not contain consecutive non-alphanumeric characters to `clean3.txt`
+4. Add to script to use content of `clean3.txt` and **match** entries that end in a valid domain name.  A domain name is after the @ sign and must consist of letters (case-insensitive) or digits, followed by a dot (.), and end with a top-level domain (TLD) of `com` OR `org`OR `net`.  Output only valid matches to `clean4.txt`
+
+`emails.txt` has 104 emails listed.  After getting unique entries & applying the pattern filters, `clean4.txt` contained 19 emails that met the valid rules.
+
+**Resources**
 - [linuxize - use grep to search patterns](https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/)
 - [RedHat - Beginners Guide to regular expressions with grep](https://developers.redhat.com/articles/2022/09/14/beginners-guide-regular-expressions-grep#)
 
@@ -65,7 +73,7 @@ The following picture shows how `sedfile.html` (the original) looks compared to 
 
 ![sed Before and After](sed-before-after.PNG)
 
-I recommend using `sed` without modifying the file at first - once you know your replacement patterns work, then save the changes to an output file using `sed`'s `-i` flag.
+I recommend making a copy of `sedfile.html` and naming it `sedfile.md`. Then use `sed` without modifying the file - once you know your replacement patterns work, then save the changes using `sed`'s `-i` flag.
 
 ```
 sed -i 's/SEARCH_REGEX/REPLACEMENT/g' INPUTFILE
@@ -76,7 +84,7 @@ sed -i 's/SEARCH_REGEX/REPLACEMENT/g' INPUTFILE
 Only write the command that performs the required task. DO NOT paste the results.
 
 1. Remove all html end tags - anything with `</stuff>`
-   - `stuff` here represents anything surrounded by `</ ____> `
+   - `stuff` here represents anything surrounded by the HTML close tag: `</ > `
 2. Replace all `<li>` tags and the whitespace before the tag with the markdown format for a bullet point: `- `
    - Note that is a dash followed by a single space
 3. Replace `<h1>` tags with markdown for header tags: `# `
@@ -85,14 +93,13 @@ Only write the command that performs the required task. DO NOT paste the results
    - Note that is TWO hashtags followed by a single space
 5. Remove the `<ul>` tags & remove the `<html>` tag
 6. Replace the word `Batches` with the word `Matches`
-7. (Optional) note here any additional `sed` commands used or anything you needed to manually fix
 
 - **Resources**
 - [linuxize - use sed to find and replace](https://linuxize.com/post/how-to-use-sed-to-find-and-replace-string-in-files/)
 
 ## Part 3 - awk
 
-`awk` is a full blown scripting language dedicated to text manipulation. Create a file in your `Lab04` folder named `records.txt`. Put the contents of [records.txt](records.txt) in your file, and do the following tasks using `awk`
+`awk` is a full blown scripting language dedicated to text manipulation. Create a file in your `Lab04` folder named `records.txt`. Copy the contents of [records.txt](records.txt) to a file, and do the following tasks using `awk`
 
 `records.txt` contains the following fields:
 
@@ -114,11 +121,18 @@ Only write the command that performs the required task. DO NOT paste the results
 - [linuxize - awk with examples](https://linuxize.com/post/awk-command/)
 - [cyberbiz - awk find and replace](https://www.cyberciti.biz/faq/awk-find-and-replace-fields-values/)
 
+## Extra Credit - validator 2.0
+
+1. Use the Internet to find a regular expression that validates emails based on [the rules of valid email formatting](https://help.xmatters.com/ondemand/trial/valid_email_format.htm).  Provide the source.  Write the regular expression.
+2. Explain what the regular expression does.
+3. Create a bash script, `validator2` that uses the regular expression to simplify the step by step data cleansing.
+
 ## Submission
 
 1. Verify that your GitHub repo has a `Lab04` folder with at minimum:
 
-   - `grepdata.txt`
+   - `validator`
+   - `clean1.txt` through `clean4.txt`
    - `sedfile.html`
    - `sedfile.md`
    - `records.txt`
@@ -132,10 +146,7 @@ Only write the command that performs the required task. DO NOT paste the results
 
 ## Rubric
 
-- Part 1 - 1 pt per question
-- Part 2 - 1 pt per question
-- Part 3 - 1 pt per question
-
-## Credit & inspiration
-
-- grep exercises: http://evc-cit.info/cit052/grep1.html
+- Part 1 - 1 pt per task (4 pts total)
+- Part 2 - 1 pt per `sed` command (6 pts total)
+- Part 3 - 1 pt per `awk` command (5 pts total)
+- Extra Credit - 1.5 pts if complete - no partial points
