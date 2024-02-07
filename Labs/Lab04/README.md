@@ -55,7 +55,7 @@ To complete the overall task, perform the steps listed below.  **After each step
 If you don't make it through all of a step or don't complete all steps, leave heavy comments for partial credit considerations.
 
 1. Create a bash script named `validator`.  The script should take a file name as input.  If the file does not exist, have script print an error message and exit.  If the file does exist, have script sort the content & remove duplicate entries. Output unique entries to a file named `clean1.txt`
-2. Add to script to use content of `clean1.txt` and **match** only entries that start with a combination of letters (case-insensitive) or digits.  Output only valid matches to `clean2.txt`
+2. Add to script to use content of `clean1.txt` and **match** only entries that start with letters (case-insensitive) or digits.  Output only valid matches to `clean2.txt`
 3. Add to script to use content of `clean2.txt` and **remove matching** entries that contain consecutive (2 or more in a row) non-alphanumeric characters, such as dots (.), underscores (_), and hyphens (-).  Output only matches that do not contain consecutive non-alphanumeric characters to `clean3.txt`
 4. Add to script to use content of `clean3.txt` and **match** entries that end in a valid domain name.  A domain name is after the @ sign and must consist of letters (case-insensitive) or digits, followed by a dot (.), and end with a top-level domain (TLD) of `com` OR `org`OR `net`.  Output only valid matches to `clean4.txt`
 
