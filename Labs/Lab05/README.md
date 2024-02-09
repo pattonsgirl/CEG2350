@@ -1,8 +1,10 @@
 # Lab 05
 
 - [Lab Procedure](#Lab-Procedure)
-- [Name Change Script](#Name-Change-Script)
-- [Extra Credit - Bulk Renamer](#Extra-Credit---Bulk-Renamer)
+- [Part 1 - Name Change Script](#part-1---name-change-script)
+- [Part 2 - Retrospective](#part-2---retrospective)
+- [Part 3 - Usage Guide](#part-3---usage-guide)
+- [Extra Credit - Bulk Renamer](#extra-credit---bulk-renamer)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 - [Additional getopts Resources](#Additional-getopts-Resources)
@@ -27,7 +29,7 @@ For each part below, you will be asked to do an action or answer a question. The
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-## Name Change Script
+## Part 1 - Name Change Script
 
 The following will ask you to write a script that changes a file's name.  The script will allow the user to provide the search pattern to replace, and the replacement for the found pattern.  A sample of using the script, where `namechange` is the name of the script file:
 
@@ -43,6 +45,8 @@ namechange -f find -r replace filename
    - the [createfiles.sh](createfiles.sh) script can be used to generate them
 
 **Implement the following features in the `namechange` script:**
+
+**MAKE COMMITS AS YOU BUILD THIS SCRIPT.  IF YOU ONLY COMMIT THE FINAL SCRIPT, THERE WILL BE A 2 POINT DEDUCTION**
 
 1. Create a function called `printHelp`. `printHelp` should output the following:
 
@@ -75,7 +79,7 @@ Usage: namechange -f find -r replace "string to modify"
 4. Using argument in field `filename`, find the pattern to be replaced and replace it with the pattern requested using `sed`
    - Hint: you may just want to have `sed` use the `-E` option
    
-5. Rename the file.
+5. Rename an existing file name that one of the naming errors described with the fixed name after using `sed` to replace the bad pattern.
 
 ```
 # Sample runs of working script
@@ -92,20 +96,32 @@ $ bash namechange -f "er+" -r "error" spellingerrrr.txt
 Renamed spellingerrrr.txt to spellingerror.txt
 ```
 
-**Document your `namechange` script**
-
-1. Create a Usage Guide in a file named `README.md` in your `Lab05` folder
-   - Information on how users should use your script
-   - Examples of script usage and output
-   - Use good markdown so that this documentation is pretty and clean on GitHub.
-
 **Resources**
 - [bash-hackers - `getopts` tutorial](https://wiki.bash-hackers.org/howto/getopts_tutorial)
 - [assertnotmagic - breaking down how getopts works](https://www.assertnotmagic.com/2019/03/08/bash-advanced-arguments/)
 - [`sed` with string, not input file](https://stackoverflow.com/questions/13055889/sed-with-literal-string-not-input-file)
 - [cyberciti - using Logical NOT in if statements](https://bash.cyberciti.biz/guide/Logical_Not_!)
 - [linuxize - functions](https://linuxize.com/post/bash-functions/)
+
+## Part 2 - Retrospective
+
+1. How would you explain `getopts` to a friend?
+2. What did you get stuck on while working on this script?  How did you overcome it?
+3. What feature would you add to this script?
+
+## Part 3 - Usage Guide
+
+Fill out the Usage Guide section in your lab template.  It should contain a minimum of the following:
+1. Information on how users should use your script
+2. Examples of script usage and output
+3. Use good markdown so that this documentation is pretty and clean when viewed on GitHub.
+
+**Resources**
 - [GitHub markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+Examples of bad README / Usage Guides:
+- [bash wordle](https://gist.github.com/huytd/6a1a6a7b34a0d0abcac00b47e3d01513)
+   - as discussed in class there was a hidden dependency of a word file, we needed to make it executable, and what if you didn't know how to play wordle?
 
 ## Extra Credit - Bulk Renamer
 
@@ -139,15 +155,20 @@ This builds on the script created for Part 1. Since the core is similar, I would
 
 ## Rubric
 
-- `namechange` Usage Guide in `README.md` contains clear explanation - 1pt
-- `namechange` exists in repo - 1pt
+- `namechange` and `README.md` exists in repo in `Lab05` folder - 1pt
 - `getopts` checks for `-h`, `-r`, `-f` and exits if option is not allowed - 2pts
-- `case` statements for `-r` and `-f` save argument values after option - 1pt
+- `case` statements for `-r` and `-f` save argument values after flag - 1pt
 - `printHelp` function called to print help guide - 1pt
 - if `filename` not given, calls `printHelp` and exits - 1pt
 - if `filename` does not exist, calls `printHelp` and exits - 1pt
 - `filename` is modified according to find / replace arguments - 1pt
 - `filename` given is renamed according to find / replace arguments - 1pt
+- **no commits** besides final script to prove progression of work - minus 2 pts
+- Retrospective answers - 1 pt each / 3 pts total
+- `namechange` Usage Guide contains 
+   - description and how to - 1 pt
+   - examples of your script in action - 1 pt
+   - good use of markdown formatting - 1pt
 - Extra Credit - 20% - 2pts
 
 ## Additional getopts Resources
