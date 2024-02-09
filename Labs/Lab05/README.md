@@ -123,6 +123,10 @@ Examples of bad README / Usage Guides:
 - [bash wordle](https://gist.github.com/huytd/6a1a6a7b34a0d0abcac00b47e3d01513)
    - as discussed in class there was a hidden dependency of a word file, we needed to make it executable, and what if you didn't know how to play wordle?
 
+Examples of good README / Usage Guides:
+- [pokeget](https://github.com/talwat/pokeget)
+   - this is far more thorough than what you are writing, but note here how much detail in included.
+
 ## Extra Credit - Bulk Renamer
 
 This builds on the script created for Part 1. Since the core is similar, I would `cp` this to a new script named `bulkrenamer`.
