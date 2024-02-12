@@ -152,3 +152,4 @@ Only write the command that performs the required task. DO NOT paste the results
 - Part 2 - 1 pt per `sed` command (6 pts total)
 - Part 3 - 1 pt per `awk` command (5 pts total)
 - Extra Credit - 1.5 pts if complete - no partial points
+- Poor markdown formatting (-1.5 pt deduction)
