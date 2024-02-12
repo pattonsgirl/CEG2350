@@ -1,0 +1,20 @@
+#!/bin/bash
+####
+## Prints "Hello ____" where name is given in prompt or after -n flag
+####
+
+# create a help function
+
+# check if using sudo / root.  Exit if so
+
+# set default name
+
+# play with output difference between single, double and back quotes
+
+# support flags: 
+# 	-e 	prompts for name
+#	-n name uses value in arg to output name
+#	-h 	prints help
+#	other flags print error messages and exit
+
+
