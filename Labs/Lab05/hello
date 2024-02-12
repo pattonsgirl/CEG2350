@@ -10,6 +10,10 @@
 # set default name
 
 # play with output difference between single, double and back quotes
+# print "Hello, name"
+# print date
+# print forecast - documentation: https://github.com/chubin/wttr.in
+# curl wttr.in/Dayton?format=3
 
 # support flags: 
 # 	-e 	prompts for name
