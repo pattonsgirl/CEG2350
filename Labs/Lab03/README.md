@@ -148,3 +148,6 @@ Make sure you `commit` and `push` your script changes for grading and add a note
 - Part 3 - 1 pt each / 3 pts total
 - Part 4 - 0.5 pts each / 3.5 pts total
 - Extra Credit - 1 pt
+- Point deductions:
+  - minus 2 pts = no commits for each part && no comments indicating parts building on each other
+  - minus 1 pt = commits / comments indicate parts building on eachother, but not all commits were broken out as asked
