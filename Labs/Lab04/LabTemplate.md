@@ -25,3 +25,10 @@ Make sure the following files are in your GitHub repository
 3.
 4.
 5.
+
+## Extra Credit - Remove this if not doing
+
+1. Source: 
+    - Regular Expression Pattern: 
+2. Pattern explanation:
+3. Verify `validator2` is in your GitHub repository

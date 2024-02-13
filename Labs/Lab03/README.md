@@ -31,7 +31,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - IO Redirection
 
-Find out what each command (including its flags) does.  Don't forget to lookup commands & flags using `man` and / or some Google-fu (ability to use Google search) to find out. All of the commands can be run.
+Find out what each command (including its flags) does and write a description beside it.  Don't forget to lookup commands & flags using `man` and / or some Google-fu (ability to use Google search) to find out. All of the commands can be run - a note is included if there is any additional setup to make it work.
 
 Sample:
   - `echo "This is easy" > button`
@@ -148,3 +148,6 @@ Make sure you `commit` and `push` your script changes for grading and add a note
 - Part 3 - 1 pt each / 3 pts total
 - Part 4 - 0.5 pts each / 3.5 pts total
 - Extra Credit - 1 pt
+- Point deductions:
+  - minus 2 pts = no commits for each part && no comments indicating parts building on each other
+  - minus 1 pt = commits / comments indicate parts building on eachother, but not all commits were broken out as asked
