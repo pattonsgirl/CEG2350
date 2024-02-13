@@ -4,21 +4,53 @@
 ####
 
 # create a help function
+helpGuide () {
+	echo "This script will print out 'Hello name'"
+
+}
+
+help2 () {
+	echo $1
+}
+
+helpGuide
+
+help2 'bananas'
+
 
 # check if using sudo / root.  Exit if so
+if [[ $EUID -eq 0 ]]; then
+	echo "Cannot run script as root"
+	exit
+fi
+
 
 # set default name
+name="Bob"
 
 # play with output difference between single, double and back quotes
 # print "Hello, name"
+echo "Hello, $name"
+#echo 'Hello, $name'
 # print date
+echo $(date)
 # print forecast - documentation: https://github.com/chubin/wttr.in
 # curl wttr.in/Dayton?format=3
+# the -s suppresses / silences the curl progress bar for downloading the weather data
+echo $(curl -s wttr.in/Dayton?format=3)
+
 
 # support flags: 
 # 	-e 	prompts for name
 #	-n name uses value in arg to output name
 #	-h 	prints help
 #	other flags print error messages and exit
-
+while getopts ":h" option; do
+   case $option in
+      h) # display Help
+         helpGuide
+         exit
+	 ;;
+   esac
+done
 
