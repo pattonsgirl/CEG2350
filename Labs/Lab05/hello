@@ -39,14 +39,21 @@ echo $(date)
 # the -s suppresses / silences the curl progress bar for downloading the weather data
 echo $(curl -s wttr.in/Dayton?format=3)
 
+# understanding shift
+while [[ $# -gt 0 ]]
+do
+	printf "Number of arguments: $# \n Current arg in \$1 is: $1 \n"
+	shift
+done
 
 # support flags: 
 # 	-e 	prompts for name
 #	-n name uses value in arg to output name
 #	-h 	prints help
 #	other flags print error messages and exit
-while getopts ":h" option; do
-   case $option in
+while getopts ":h" var; 
+do
+   case $var in
       h) # display Help
          helpGuide
          exit
