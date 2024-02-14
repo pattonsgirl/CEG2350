@@ -13,9 +13,9 @@ help2 () {
 	echo $1
 }
 
-helpGuide
+#helpGuide
 
-help2 'bananas'
+#help2 'bananas'
 
 
 # check if using sudo / root.  Exit if so
@@ -30,34 +30,52 @@ name="Bob"
 
 # play with output difference between single, double and back quotes
 # print "Hello, name"
-echo "Hello, $name"
+#echo "Hello, $name"
 #echo 'Hello, $name'
 # print date
-echo $(date)
+#echo $(date)
 # print forecast - documentation: https://github.com/chubin/wttr.in
 # curl wttr.in/Dayton?format=3
 # the -s suppresses / silences the curl progress bar for downloading the weather data
-echo $(curl -s wttr.in/Dayton?format=3)
+#echo $(curl -s wttr.in/Dayton?format=3)
 
 # understanding shift
-while [[ $# -gt 0 ]]
-do
-	printf "Number of arguments: $# \n Current arg in \$1 is: $1 \n"
-	shift
-done
+#while [[ $# -gt 0 ]]
+#do
+#	printf "Number of arguments: $# \n Current arg in \$1 is: $1 \n"
+#	shift
+#done
 
 # support flags: 
 # 	-e 	prompts for name
 #	-n name uses value in arg to output name
 #	-h 	prints help
 #	other flags print error messages and exit
-while getopts ":h" var; 
+while getopts ":hen:" var; 
 do
-   case $var in
+   #echo "the value in OPTIND is $OPTIND"
+   #echo "the value in OPTARG is $OPTARG"
+    case $var in
       h) # display Help
          helpGuide
          exit
 	 ;;
+      e) # prompt user for a name
+	 echo "Tell me your name"
+	 read name
+	 ;;
+      n)
+	 name=$OPTARG
+	 ;;
+      ?)
+	 echo "Not a valid flag"
+	 helpGuide
+	 exit
+	 ;;
    esac
 done
 
+echo "Recieved $name"
+echo "Hello, $name"
+echo $(date)
+echo $(curl -s wttr.in/Dayton?format=3)
