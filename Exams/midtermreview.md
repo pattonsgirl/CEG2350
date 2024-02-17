@@ -1,11 +1,5 @@
 # Midterm Review for CEG 2350
 
-## Da Rules
-
-- 1 attempt, 1 hour and 20 minutes once started
-- Open note, open terminal
-- No class lecture - only exam.
-
 ## Intro topics
 
 1. ~~How did the modern computer come to be?~~
