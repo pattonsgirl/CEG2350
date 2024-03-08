@@ -6,6 +6,7 @@
 - [Part 3 - File it away](#part-3---file-it-away)
 - [Part 4 - Take a fstab at this](#part-4---take-a-fstab-at-this)
 - [Part 5 - What is dead may still be read](#part-5---what-is-dead-may-still-be-read)
+- [Extra Credit - Create a Virtual Filesystem](#extra-credit---create-a-virtual-filesystem)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -90,6 +91,21 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 11. Read through this article: [techmint - permanently and securely delete files in Linux](https://www.tecmint.com/permanently-and-securely-delete-files-directories-linux/) and determine a way to truly delete a file. Write a short report of steps and proof that the file is no longer readable on the disk.
 
     - `shred` is recommended
+
+## Extra Credit - Create a Virtual Filesystem
+
+Now that you have made a virtual machine, a thought might be how does it use the disk space on your host.  In the context of a virtual machine, the reserved space on the host has a partition table, partitions, and a filesystem mounted to `/`
+
+Write the commands used in each step (unless otherwise stated).
+
+1. Use **either** `dd` or `fallocate` to reserve 2 GB of space from `/dev/xvda`.  
+2. Write an explanation of the command you used.
+2. Make a filesystem on the reserved space.
+3. Mount the filesystem to `/mnt/vfs`.
+
+**Resources**
+- [LinuxOPsys - How to use `fallocate`](https://linuxopsys.com/topics/fallocate-command-in-linux)
+- [LinuxOPsys - Creating virtual filesystem with `dd`](https://linuxopsys.com/topics/linux-dd-command-with-examples#2_Creating_virtual_filesystemBackup_images_of_CD_or_DVDs_as_iso_files)
 
 ## Submission
 
