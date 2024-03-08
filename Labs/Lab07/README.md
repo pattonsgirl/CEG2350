@@ -117,12 +117,12 @@ Write the commands used in each step (unless otherwise stated).
 
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab08` folder with at minimum:
+1. Verify that your GitHub repo has a `Lab07` folder with at minimum:
 
-   - `Lab08.md`
+   - `Lab07.md`
 
-2. In the Pilot Dropbox, paste the URL to the `Lab08` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab08
+2. In the Pilot Dropbox, paste the URL to the `Lab07` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350s24-YOURGITHUBUSERNAME/tree/main/Lab07
 
 ## Rubric
 
