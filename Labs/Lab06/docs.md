@@ -10,4 +10,4 @@
 
 
 ## Samples of pictures
-![VBox is great!](VBox.PNG)
+![VBox is great!](VBox.JPG)
