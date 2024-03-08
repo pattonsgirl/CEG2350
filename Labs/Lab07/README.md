@@ -57,7 +57,7 @@ For tasks that ask you to use a command, write the command used and include the 
     - How much space is used?
     - Where is it mounted to?
 8. View the contents of the filesystem table in `/etc/fstab`
-9. Explain the fields in the entry that mounts the root filesystem.
+9. Explain fields & purpose of fields in the entry that mounts the root filesystem.
 
 **Resources**
 - [IBM - Displaying partition information using `parted`](https://developer.ibm.com/tutorials/l-lpic1-104-1/#displaying-partition-information-using-parted)
@@ -131,7 +131,7 @@ We are also only focused on data stored on disks for this exercise.  If you look
 3. Run `strings` on the filesystem partition on `xvbd` - read through the output and make an analysis about what output you are viewing.
 4. Delete **one** of the files with a secret. 
 5. Run `strings` on the filesystem partition on `xvbd` - read through the output and determine if the secret, while no longer accessible via the filesystem, is still readable on the partition.
-6. Read through this article: [techmint - permanently and securely delete files in Linux](https://www.tecmint.com/permanently-and-securely-delete-files-directories-linux/) and determine a way to truly delete a file and overwrite it's contents on the disk. Write a short report of steps and proof that the file is no longer readable on the disk.
+6. Read through this article: [techmint - permanently and securely delete files in Linux](https://www.tecmint.com/permanently-and-securely-delete-files-directories-linux/) and determine a way to truly delete a file and overwrite it's contents on the disk.  You can use your second secret file. Write a short report of steps to wipe it from the disk and proof that the file is no longer readable on the disk.
     - `shred` is recommended
 
 ## Extra Credit - Create a Virtual Filesystem
@@ -160,6 +160,9 @@ Write the commands used in each step (unless otherwise stated).
 
 ## Rubric
 
-- Part 1 - 1 pt per question - 12 pts total
-- Part 2 - 1 pt per question - 6 pts total
-- Extra credit - 10% (2 pts)
+- Part 1 - 1 pt per question - 9 pts total
+- Part 2 - 1 pt per question - 4 pts total
+- Part 3 - 1 pt per question - 6 pts total
+- Part 4 - 1 pt per question - 3 pts total
+- Part 5 (+ how to truly delete file data) - 1 pt per question - 6 pts total
+- Extra credit - 10% (2.8 pts)

@@ -5,26 +5,39 @@
 
 ## Part 1
 
-1.
+1. Command:
 ```
 Output here
 ```
-2. 
+2. Command:
 ```
 Output here
 ```
-3. `xvda` is using:
-4. 
+3. For the `xvda` partition table:
+    - Does it use MBR or GPT?
+    - How many partitions are on the block device?
+    - What is the largest partition?
+4. Command:
 ```
 Output here
 ```
-5. Root filesystem partition:
-6. Partition label:
-7. Partition filesystem:
-8.
+5. For the primary partition:
+    - What partition is the root filesystem on?
+    - What is the partition label?
+    - What type of filesystem is on the partition?
+6. Command:
 ```
 Output here
 ```
+7. For the root filesystem:
+    - What is the total size?
+    - How much space is used?
+    - Where is it mounted to?
+8. Command:
+```
+Output here
+```
+9. Fields & purpose of fields in entry that mount the root filesystem
 
 
 ## Part 2
@@ -40,14 +53,14 @@ Output here
 ```
 Paste partition table information here
 ```
-3. **WIP**
+3. Steps to create a partition table and partition on `xvbd`
 
 4. Answer these questions:
    
    a. What device name does the partition use?
       - Answer: 
         
-   b. What size is the partition?
+   b. What size is the partition in GB?
       - Answer: 
         
    c. What filesystem type will be used on the partition?
@@ -58,7 +71,10 @@ Paste partition table information here
 1. Commands used:
 2. Commands used:
 3. Commands used:
-4. Names of directories and/or files created:
+4. Contents of `/mnt/newworld`:
+```
+list here
+```
 5. Commands used:
 6. When can I interact with files on the filesystem on the partition in `xvdb`?
    - Answer:
@@ -66,20 +82,19 @@ Paste partition table information here
 ## Part 4
 
 1. Commands used:
-2. Line you added to change `xvdb`'s mount point to `/mnt/newworld`:
+2. Line you added to `/etc/fstab`:
 3. How did you confirm that the mount point changed? (Commands used or explain process):
-4. **Yes/No**: Did you need to use the backup file? (In other words, did something go wrong in one of the previous steps?)
+4. **If you restored `/etc/fstab`**, write here why you did not feel comfortable leaving your changes in place
 
 
 ## Part 5
 
 1. Commands used:
-2. What does the strings Commands do?
+2. What does the `strings` command do?
    - Answer:
 3. Write a short explanation of what you saw in `strings` output:
 4. Commands used:
 5. Is the secret you deleted still showing up in the `strings` output?
-6. Write a short report of steps and proof that the file is no longer readable on the disk. Proof can be screenshots (or text) of `strings` output before & after the deletion process.
 
 ### Report: How to Permanently Delete a File
 
@@ -88,6 +103,6 @@ Paste partition table information here
 ## Extra Credit Answers:
 
 1. Commands used: 
-2.
+2. Explanation:
 3. Commands used: 
 4. Commands used: 
