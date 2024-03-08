@@ -5,6 +5,28 @@
 
 ## Part 1
 
+1.
+```
+Output here
+```
+2. 
+```
+Output here
+```
+3. `xvda` is using:
+4. 
+```
+Output here
+```
+5. Root filesystem partition:
+6. Partition label:
+7. Partition filesystem:
+8.
+```
+Output here
+```
+
+
 ## Part 2
 
 1. `gdisk` main menu options

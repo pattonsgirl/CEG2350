@@ -32,9 +32,30 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - What do we have?
 
-- **Useful Commands: `df`, `lsblk`, `parted`**
+Your AWS instances have one block device in use - `xvda`.  In this section, you will explore commands view partition and filesystem information about `xvda`.  **Do not make any modification to `xvda`.**
 
-Information on `/dev/xvda` - current usage & partition table
+- **Useful Commands: `lsblk`, `parted`, `blkid`, `df`, `cat`**
+
+For tasks that ask you to use a command, write the command used and include the output of the command.
+
+1. Use `lsblk` to list only information about the `xvda` block device.
+2. Use `parted` to print the partition table of the `xvda` block device.
+3. For the `xvda` partition table:
+    - Does it use MBR or GPT?
+    - How many partitions are on the block device?
+    - What is the largest partition?
+4. Use `blkid` to view the type of content (e.g. filesystem or swap) that current block devices hold (`xvda` being the only block device right now)
+5. For the primary partition:
+    - What partition is the root filesystem on?
+    - What is the partition label?
+    - What type of filesystem is on the partition?
+6. Use `df` to view file system disk space usage in human readable format
+7. For the root filesystem:
+    - What is the total size?
+    - How much space is used?
+    - Where is it mounted to?
+8. View the contents of the filesystem table in `/etc/fstab`
+9. Explain the fields in the entry that mounts the root filesystem.
 
 **Resources**
 - [IBM - Displaying partition information using `parted`](https://developer.ibm.com/tutorials/l-lpic1-104-1/#displaying-partition-information-using-parted)
