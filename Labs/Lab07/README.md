@@ -30,26 +30,32 @@ For each part below, you will be asked to do an action or answer a question. The
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-- **Resources**:
-   - [DigitalOcean - click "Interactive partitioning with gdisk"](https://docs.digitalocean.com/products/volumes/how-to/partition/)
-
 ## Part 1 - What do we have?
 
-- **Useful Commands: `df`, `lsblk`**
+- **Useful Commands: `df`, `lsblk`, `parted`**
 
+Information on `/dev/xvda` - current usage & partition table
+
+**Resources**
+- [IBM - Displaying partition information using `parted`](https://developer.ibm.com/tutorials/l-lpic1-104-1/#displaying-partition-information-using-parted)
 
 ## Part 2 - Something new
 
 - **Useful Commands: `df`, `lsblk`, `blkid`, `gdisk`**
 
-3. Using the `gdisk` GPT partition table manipulator, find out what the following main menu options do:
+1. Using the `gdisk` GPT partition table manipulator, find out what the following main menu options do:
    - `p`
    - `o`
    - `n`
    - `i`
    - `w`
-4. Open the unpartitioned disk with `gdisk`. Using the main menu, configure the disk to use the GPT partition table type, have at least 1 partition, and have that partition use the Linux filesystem type. Save your changes to the disk.
+2. Edit the `xvbd` block device with `gdisk`. Using the main menu, configure the disk to use the GPT partition table type, have at least 1 partition, and have that partition use the Linux filesystem type. Save your changes to the disk.
    - Hint: remember disks devices are in the `/dev/` folder
+3. Partition table of `xvdb`
+
+**Resources**
+- [DigitalOcean - click "Interactive partitioning with `gdisk`"](https://docs.digitalocean.com/products/volumes/how-to/partition/)
+- [IBM - Partitioning an GPT disk using `gdisk`](https://developer.ibm.com/tutorials/l-lpic1-104-1/#partitioning-an-gpt-disk-using-gdisk)
 
 ## Part 3 - File it away
 
@@ -60,6 +66,8 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 7. Mount the partition to `expanse`
 12. `umount` the partition. Can you still interact with the files and folders?
 
+**Resources**
+- [IBM - Creating Filesystems](https://developer.ibm.com/tutorials/l-lpic1-104-1/#creating-filesystems)
 
 ## Part 4 - Take a `fstab` at this
 
