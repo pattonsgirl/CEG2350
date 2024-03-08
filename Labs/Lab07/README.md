@@ -34,6 +34,8 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 Your AWS instances have one block device in use - `xvda`.  In this section, you will explore commands view partition and filesystem information about `xvda`.  **Do not make any modification to `xvda`.**
 
+Hint, remember that disk devices are in the `/dev/` folder  
+
 - **Useful Commands: `lsblk`, `parted`, `blkid`, `df`, `cat`**
 
 For tasks that ask you to use a command, write the command used and include the output of the command.
@@ -62,6 +64,8 @@ For tasks that ask you to use a command, write the command used and include the 
 
 ## Part 2 - Something new
 
+You have had an unformatted disk available on your AWS instance all along.  Time to create a partition table and a partition on it (and in the next step create a filesystem).  The disk is `xvdb` - you can see it, but that it has no partitions, if you run `lsblk`.
+
 - **Useful Commands: `df`, `lsblk`, `blkid`, `gdisk`**
 
 1. Using the `gdisk` GPT partition table manipulator, find out what the following main menu options do:
@@ -71,8 +75,12 @@ For tasks that ask you to use a command, write the command used and include the 
    - `i`
    - `w`
 2. Edit the `xvbd` block device with `gdisk`. Using the main menu, configure the disk to use the GPT partition table type, have at least 1 partition, and have that partition use the Linux filesystem type. Save your changes to the disk.
-   - Hint: remember disks devices are in the `/dev/` folder
+    - This will be the only partition, so it can use the recommended sizes, which is to say, start at the end of the GPT partition table, and span to the last block of the disk.
 3. Partition table of `xvdb`
+4. Answer the following about `xvbd` in its current state:
+    - What device name does the partition use?
+    - What size is the partition?
+    - What filesystem type will be used on the partition?
 
 **Resources**
 - [DigitalOcean - click "Interactive partitioning with `gdisk`"](https://docs.digitalocean.com/products/volumes/how-to/partition/)
