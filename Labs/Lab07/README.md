@@ -88,33 +88,35 @@ You have had an unformatted disk available on your AWS instance all along.  Time
 
 ## Part 3 - File it away
 
+Now that you have a partition, you can create a filesystem on it in order to interact with it to store and organize files and create permissions for the files.
+
 - **Useful Commands: `mkfs`, `mount`**
 
-5. Make an ext4 filesystem on the new partition
-6. Make a folder in `/mnt/` called `expanse`
-7. Mount the partition to `expanse`
-12. `umount` the partition. Can you still interact with the files and folders?
+1. Make an `ext4` filesystem on the partition on `xvdb` with a label of `yourlastname_fs` where `yourlastname` is your last name.
+2. Make a directory in `/mnt/` named `newworld`
+3. Mount the partition on `xvdb` to `newworld`
+4. In `newworld` create some files and directories
+5. `umount` the partition on `xvbd`
+6. When can I interact with files on the filesystem on the partition in `xvdb`?
 
 **Resources**
 - [IBM - Creating Filesystems](https://developer.ibm.com/tutorials/l-lpic1-104-1/#creating-filesystems)
 
 ## Part 4 - Take a `fstab` at this
 
-1. Make a backup of the current version of `/etc/fstab`
-2. Add your partition and the mount point (`/mnt/expanse`) to `/etc/fstab`
-   - Line added to `/etc/fstab`:
-3. Test your changes using the `mount -a` and `df`
-4. Reboot, if you're brave enough... test that your partition was automounted to `/mnt/expanse`
-5. If you are not brave enough, I admire your honestly. Delete changes made to `fstab`
+1. Make a backup of the current version of `/etc/fstab` to `/etc/fstab.bak`
+2. Add a line to `/etc/fstab` to mount the partition on `xvdb` to the mount point (`/mnt/newworld`)
+3. Test your changes using `mount -a` to mount / remount records according to `etc/fstab` and use commands to validate your entry worked
+4. **If you do not think your changes are correct** restore `/etc/fstab` from `/etc/fstab.bak`.  If you think they are correct, you may leave your changes in place.
 
-- Resources:
-  - [HowToGeek - How to write an fstab file on Linux](https://www.howtogeek.com/444814/how-to-write-an-fstab-file-on-linux/)
-  - [linuxconfig - fstab](https://linuxconfig.org/how-fstab-works-introduction-to-the-etc-fstab-file-on-linux)
-  - [ubuntu - fstab](https://help.ubuntu.com/community/Fstab)
+**Resources**
+- [HowToGeek - How to write an fstab file on Linux](https://www.howtogeek.com/444814/how-to-write-an-fstab-file-on-linux/)
+- [linuxconfig - fstab](https://linuxconfig.org/how-fstab-works-introduction-to-the-etc-fstab-file-on-linux)
+- [ubuntu - fstab](https://help.ubuntu.com/community/Fstab)
 
 ## Part 5 - What is dead may still be read
 
-- **Useful Commands: `df`, `lsblk`, `blkid`, `gdisk`, `mkfs`, `mount`, `strings`**
+- **Useful Commands: `mount`, `strings`**
 
 8. Create some files (with and without text) and directories in the folder where your partition is mounted
 9. Run `strings` on the partition - read through the output and determine what `strings` is outputting
