@@ -89,7 +89,7 @@ The lab template will contain the documentation / proof requirements for this po
 
 ## Part 3 - Virtual Playground
 
-Accomplish the following tasks using the Virtual Machine you made in Part 2.  In your lab template, not the steps taken to complete each task.
+Accomplish the following tasks using the Virtual Machine you made in Part 2.  In your lab template, note the "how to" steps taken to complete each task.
 
 1. How to change your desktop background in your VM:
 2. How to install VSCode in your VM:
