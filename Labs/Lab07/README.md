@@ -90,7 +90,7 @@ You have had an unformatted disk available on your AWS instance all along.  Time
 
 Now that you have a partition, you can create a filesystem on it in order to interact with it to store and organize files and create permissions for the files.
 
-- **Useful Commands: `mkfs`, `mount`**
+- **Useful Commands: `mkfs`, `mount`, `e2label`**
 
 1. Make an `ext4` filesystem on the partition on `xvdb` with a label of `yourlastname_fs` where `yourlastname` is your last name.
 2. Make a directory in `/mnt/` named `newworld`
@@ -101,6 +101,7 @@ Now that you have a partition, you can create a filesystem on it in order to int
 
 **Resources**
 - [IBM - Creating Filesystems](https://developer.ibm.com/tutorials/l-lpic1-104-1/#creating-filesystems)
+- [TechMint - How to Change Linux Partition Label Names on EXT4 / EXT3 / EXT2](https://www.tecmint.com/change-modify-linux-disk-partition-label-names/)
 
 ## Part 4 - Take a `fstab` at this
 
