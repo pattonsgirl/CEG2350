@@ -51,7 +51,7 @@ For tasks that ask you to use a command, write the command used and include the 
     - What partition is the root filesystem on?
     - What is the partition label?
     - What type of filesystem is on the partition?
-6. Use `df` to view file system disk space usage in human readable format
+6. Use `df` to view file system disk space usage in human readable format (meaning it prints MB/KB/GB)
 7. For the root filesystem:
     - What is the total size?
     - How much space is used?
@@ -74,10 +74,10 @@ You have had an unformatted disk available on your AWS instance all along.  Time
    - `n`
    - `i`
    - `w`
-2. Edit the `xvbd` block device with `gdisk`. Using the main menu, configure the disk to use the GPT partition table type, have at least 1 partition, and have that partition use the Linux filesystem type. Save your changes to the disk.
+2. Edit the `xvdb` block device with `gdisk`. Using the main menu, configure the disk to use the GPT partition table type, have at least 1 partition, and have that partition use the Linux filesystem type. Save your changes to the disk.
     - This will be the only partition, so it can use the recommended sizes, which is to say, start at the end of the GPT partition table, and span to the last block of the disk.
 3. Partition table of `xvdb`
-4. Answer the following about `xvbd` in its current state:
+4. Answer the following about `xvdb` in its current state:
     - What device name does the partition use?
     - What size is the partition?
     - What filesystem type will be used on the partition?
@@ -96,7 +96,7 @@ Now that you have a partition, you can create a filesystem on it in order to int
 2. Make a directory in `/mnt/` named `newworld`
 3. Mount the partition on `xvdb` to `newworld`
 4. In `newworld` create some files and directories
-5. `umount` the partition on `xvbd`
+5. `umount` the partition on `xvdb`
 6. When can I interact with files on the filesystem on the partition in `xvdb`?
 
 **Resources**
@@ -128,9 +128,9 @@ We are also only focused on data stored on disks for this exercise.  If you look
 
 1. On the filesystem you created on the `xvdb` partition, create **two** files, each with a different FAKE secret about you.
 2. What does the `strings` command do?
-3. Run `strings` on the filesystem partition on `xvbd` - read through the output and make an analysis about what output you are viewing.
+3. Run `strings` on the filesystem partition on `xvdb` - read through the output and make an analysis about what output you are viewing.
 4. Delete **one** of the files with a secret. 
-5. Run `strings` on the filesystem partition on `xvbd` - read through the output and determine if the secret, while no longer accessible via the filesystem, is still readable on the partition.
+5. Run `strings` on the filesystem partition on `xvdb` - read through the output and determine if the secret, while no longer accessible via the filesystem, is still readable on the partition.
 6. Read through this article: [techmint - permanently and securely delete files in Linux](https://www.tecmint.com/permanently-and-securely-delete-files-directories-linux/) and determine a way to truly delete a file and overwrite it's contents on the disk.  You can use your second secret file. Write a short report of steps to wipe it from the disk and proof that the file is no longer readable on the disk.
     - `shred` is recommended
 
