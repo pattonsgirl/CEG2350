@@ -101,6 +101,7 @@ Now that you have a partition, you can create a filesystem on it in order to int
 
 **Resources**
 - [IBM - Creating Filesystems](https://developer.ibm.com/tutorials/l-lpic1-104-1/#creating-filesystems)
+      - Information on `ext4` is folded into `ext3` since it makes slight improvements over `ext3`
 - [TechMint - How to Change Linux Partition Label Names on EXT4 / EXT3 / EXT2](https://www.tecmint.com/change-modify-linux-disk-partition-label-names/)
 
 ## Part 4 - Take a `fstab` at this
