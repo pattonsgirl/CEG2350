@@ -70,13 +70,17 @@ Paste partition table information here
 
 1. Commands used:
 2. Commands used:
+```
+output here
+```
 3. Commands used:
-4. Contents of `/mnt/newworld`:
+4. Commands used:
+5. Contents of `/mnt/newworld`:
 ```
 list here
 ```
-5. Commands used:
-6. When can I interact with files on the filesystem on the partition in `xvdb`?
+6. Commands used:
+7. When can I interact with files on the filesystem on the partition in `xvdb`?
    - Answer:
    
 ## Part 4
