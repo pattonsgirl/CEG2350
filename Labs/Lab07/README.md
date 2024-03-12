@@ -61,7 +61,7 @@ For tasks that ask you to use a command, write the command used and include the 
 
 **Resources**
 - [IBM - Displaying partition information using `parted`](https://developer.ibm.com/tutorials/l-lpic1-104-1/#displaying-partition-information-using-parted)
-- [linuxconfig - fstab](https://linuxconfig.org/how-fstab-works-introduction-to-the-etc-fstab-file-on-linux)
+- [linuxconfig - How fstab works – introduction to the `/etc/fstab` file on Linux](https://linuxconfig.org/how-fstab-works-introduction-to-the-etc-fstab-file-on-linux)
 
 
 ## Part 2 - Something new
@@ -80,9 +80,9 @@ You have had an unformatted disk available on your AWS instance all along.  Time
     - This will be the only partition, so it can use the recommended sizes, which is to say, start at the end of the GPT partition table, and span to the last block of the disk.
 3. Partition table of `xvdb`
 4. Answer the following about `xvdb` in its current state:
-    - What device name does the partition use?
-    - What size is the partition?
-    - What filesystem type will be used on the partition?
+    - What is the device name of the only partition?
+    - What is the size of the only partition?
+    - What filesystem type will be used on the only partition?
 
 **Resources**
 - [DigitalOcean - click "Interactive partitioning with `gdisk`"](https://docs.digitalocean.com/products/volumes/how-to/partition/)
@@ -92,14 +92,15 @@ You have had an unformatted disk available on your AWS instance all along.  Time
 
 Now that you have a partition, you can create a filesystem on it in order to interact with it to store and organize files and create permissions for the files.
 
-- **Useful Commands: `mkfs`, `mount`, `e2label`**
+- **Useful Commands: `mkfs`, `mount`**
 
-1. Make an `ext4` filesystem on the partition on `xvdb` with a label of `yourlastname_fs` where `yourlastname` is your last name.
-2. Make a directory in `/mnt/` named `newworld`
-3. Mount the partition on `xvdb` to `newworld`
-4. In `newworld` create some files and directories
-5. `umount` the partition on `xvdb`
-6. When can I interact with files on the filesystem on the partition in `xvdb`?
+1. Make an `ext4` filesystem on the partition on `xvdb`
+2. Use `blkid` to view information of the partition on `xvdb`
+3. Make a directory in `/mnt/` named `newworld`
+4. Mount the partition on `xvdb` to `newworld`
+5. In `newworld` create some files and directories
+6. `umount` the partition on `xvdb`
+7. When can I interact with files on the filesystem on the partition in `xvdb`?
 
 **Resources**
 - [IBM - Creating Filesystems](https://developer.ibm.com/tutorials/l-lpic1-104-1/#creating-filesystems)
