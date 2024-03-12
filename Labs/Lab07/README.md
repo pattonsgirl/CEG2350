@@ -46,9 +46,9 @@ For tasks that ask you to use a command, write the command used and include the 
     - Does it use MBR or GPT?
     - How many partitions are on the block device?
     - What is the largest partition?
-4. Use `blkid` to view the type of content (e.g. filesystem or swap) that current block devices hold (`xvda` being the only block device right now)
-5. For the primary partition:
-    - What partition is the root filesystem on?
+4. Use `blkid` to view information of `xvda` and it's partitions.  Play with `*` to get all matches that start with `\dev\xvda`  
+5. For the partition with the root filesystem:
+    - What is the device name?
     - What is the partition label?
     - What type of filesystem is on the partition?
 6. Use `df` to view file system disk space usage in human readable format (meaning it prints MB/KB/GB)
