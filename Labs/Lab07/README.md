@@ -61,6 +61,8 @@ For tasks that ask you to use a command, write the command used and include the 
 
 **Resources**
 - [IBM - Displaying partition information using `parted`](https://developer.ibm.com/tutorials/l-lpic1-104-1/#displaying-partition-information-using-parted)
+- [linuxconfig - fstab](https://linuxconfig.org/how-fstab-works-introduction-to-the-etc-fstab-file-on-linux)
+
 
 ## Part 2 - Something new
 
