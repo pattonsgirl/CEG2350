@@ -132,12 +132,14 @@ We are also only focused on data stored on disks for this exercise.  If you look
 - **Useful Commands: `mount`, `strings`**
 
 1. On the filesystem you created on the `xvdb` partition, create **two** files, each with a different FAKE secret about you.
-2. What does the `strings` command do?
+2. What does the `strings` command do?  If you refered to an internet resource, make sure you cite it by including the URL.
 3. Run `strings` on the filesystem partition on `xvdb` - read through the output and make an analysis about what output you are viewing.
 4. Delete **one** of the files with a secret. 
 5. Run `strings` on the filesystem partition on `xvdb` - read through the output and determine if the secret, while no longer accessible via the filesystem, is still readable on the partition.
-6. Read through this article: [techmint - permanently and securely delete files in Linux](https://www.tecmint.com/permanently-and-securely-delete-files-directories-linux/) and determine a way to truly delete a file and overwrite it's contents on the disk.  You can use your second secret file. Write a short report of steps to wipe it from the disk and proof that the file is no longer readable on the disk.
-    - `shred` is recommended
+6. Use `shred` to overwrite the contents of your second secret file on the disk.  Write a short report of steps and provide proof that the file is no longer readable on the disk or accessible in the filesystem.  Include an explaination of flags used.
+
+**Resources**
+- [freeCodeCamp - How to Securely Erase a Disk and File using the Linux shred Command](https://www.freecodecamp.org/news/securely-erasing-a-disk-and-file-using-linux-command-shred/)
 
 ## Extra Credit - Create a Virtual Filesystem
 
