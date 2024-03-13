@@ -48,13 +48,11 @@ Output here
    - `n`:
    - `i`:
    - `w`:
-
-2. Partition table on `/dev/xvdb`
+2. Steps to create a partition table and partition on `xvbd`
+3. Partition table on `/dev/xvdb`
 ```
 Paste partition table information here
 ```
-3. Steps to create a partition table and partition on `xvbd`
-
 4. Answer these questions:
    
    a. What device name does the partition use?
