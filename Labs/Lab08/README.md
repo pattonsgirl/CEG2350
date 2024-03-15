@@ -51,27 +51,28 @@ Create a second `ssh` session to your AWS instance.  You should now have two `ss
 
 - **Useful Commands: `pstree`, `ps`, `kill`, `bg`, `job`, `fg`**
 
-1. Craft a `ps` command that will show a custom format that includes the following, then describe each field:
+1. Identify the following `ps` fields:
    - USER / UID, PID, PPID, TTY, STAT, and COMMAND
-2. Identify a flag to add / remove from your custom output format that will show processes owned by your user with and without a controlling terminal
-3. Find the process IDs for each `bash` shell.
-   - PID of Shell A:
-   - PID of Shell B:
-4. In Shell A, run the game you installed.  Provides answers to the following:
-   - What is the processes id of the game?
-   - What is the parent process (id and program) running the game?
-   - Use `kill` to kill only the game:
-   - Describe what the effect was: 
-   - [Run the game again] Use `kill` to kill the game and it's parent process: 
-   - Describe what the effect was:
-5. Create a new `ssh` session - Shell C - and run the game again.  Watch the processes from the other terminal.  Describe what happens, using process knowledge in your description, if you close / `exit` your connection with Shell C and determine if you can reenter the game (resume the process).
+2. Craft a `ps` command for processes owned by your user that will show show the fields listed above and identify the `ps` flag that will show processes without a controlling terminal.
+3. In Shell A, run the game.  Using Shell B, run your `ps` command.
+Provide answers to the following, using Shell B to observe the process statuses:
+4. For the game:
+   - What is it's process id?
+   - What is it's parent process id?
+   - What process is the parent process?
+5. Use `kill` to kill only the game.
+   - Describe what the effect was.
+6. [Run the game again] Use `kill` to kill the game and it's parent process.
+   - Describe what the effect was.
+7. Create a new `ssh` session - Shell C - and run the game again.  Watch the processes from the other terminal.  Describe what happens, using process knowledge in your description, **if you close / `exit` your connection with Shell C and determine if you can reenter the game (resume the process)**.
 
 **Resources**
 - [Linuxize - Ps Command in Linux (List Processes)](https://linuxize.com/post/ps-command-in-linux/)
+- [Digital Ocean - How To Use ps, kill, and nice to Manage Processes in Linux](https://www.digitalocean.com/community/tutorials/how-to-use-ps-kill-and-nice-to-manage-processes-in-linux)
 
 ## Part 3 - back and fore
 
-1. Run your game in the foreground.  
+1. Run the game in the foreground.  
 2. Send a `STOP` signal to suspend it.
 3. Use `ps` to confirm the process is still alive, but has been stopped.  Provide the line of output that relates to the process.
 4. Resume the process in the foreground.
@@ -113,6 +114,7 @@ The perhaps obtuse goal of the previous two exercises is to understand process c
 
 ## Rubric
 
-- Part 1 - 1 pt per answer - 4 pts total
-- Part 2 - 1 pt per question - 6 pts total
-- Extra credit - 10% (2 pts)
+- Part 1 - 1 pt per - 4 pts total
+- Part 2 - 1 pt per - 7 pts total
+- Part 3 - 1 pt per - 10 pts total
+- Part 4 - 1 pt per - 7 pts total
