@@ -72,5 +72,6 @@ Output of command goes here
 Output of command goes here
 ```
 5. How can you determine if your `tmux` session with your game running is available?
-6. Reattach to `tmux` session:
-7. Kill `tmux` session: 
+   - Answer: 
+7. Reattach to `tmux` session:
+8. Kill `tmux` session: 
