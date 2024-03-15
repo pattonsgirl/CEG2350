@@ -33,6 +33,7 @@ Output of command goes here
 6. `kill` to kill the game and it's parent process: 
    - Describe what the effect was:
 7. Describe what happens if you close / `exit` your connection with Shell C and determine if you can reenter the game (resume the process).
+   - Answer: 
 
 ## Part 3 - back and fore
 
@@ -56,6 +57,7 @@ Insert output here
 8. Kill job:
 9. Move job to the foreground: 
 10. Describe what happens, using process knowledge in your description, if you close / `exit` your connection with this shell and determine if you can reenter the game (resume the process).
+   - Answer: 
 
 ## Part 4 - Detach
 
