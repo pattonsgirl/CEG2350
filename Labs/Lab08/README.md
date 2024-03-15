@@ -36,6 +36,8 @@ If you think one of those scenarios happened to you, you'll need to go back to [
 
 ## Part 1 - Game the system
 
+**Useful commands: `apt`, `which`, `whereis`**
+
 Choose a command line game from this site: [It's Foss - Top 10 Command Line Games for Linux](https://itsfoss.com/best-command-line-games-linux/)
    - `bastet` is what this lab was tested on
 
@@ -56,6 +58,6 @@ For the remainder of this lab, you will be running this game to practice control
 
 ## Rubric
 
-- Part 1 - 1 pt per question - 12 pts total
+- Part 1 - 1 pt per answer - 4 pts total
 - Part 2 - 1 pt per question - 6 pts total
 - Extra credit - 10% (2 pts)
