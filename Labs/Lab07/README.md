@@ -155,6 +155,8 @@ Write the commands used in each step (unless otherwise stated).
 **Resources**
 - [LinuxOPsys - How to use `fallocate`](https://linuxopsys.com/topics/fallocate-command-in-linux)
 - [LinuxOPsys - Creating virtual filesystem with `dd`](https://linuxopsys.com/topics/linux-dd-command-with-examples#2_Creating_virtual_filesystemBackup_images_of_CD_or_DVDs_as_iso_files)
+- [Boch's User Manual - Mounting a disk image using the loop device](https://bochs.sourceforge.io/doc/docbook/user/loop-device-usage.html)
+- [DZone - Loop Device in Linux](https://dzone.com/articles/loop-device-in-linux)
 
 ## Submission
 
