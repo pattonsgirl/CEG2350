@@ -3,25 +3,12 @@
 - Name:
 - Email
 
-## Part 1 Answers
+## Part 1 - Game the system
 
-1. Disks:
-2. Unpartitioned disk:
-3. `gdisk` main menu options
-   - `p`
-   - `o`
-   - `n`
-   - `i`
-   - `w`
-4. Using the `gdisk` utility on the disk:
-5.
-6.
-7.
-8. Skip - trust you to do it ;)
-9.
-10.
-11.
-12.
+- Game name: 
+- How to install:
+- Location of game executable:
+- How to run game:
 
 ## Part 2 Answers
 

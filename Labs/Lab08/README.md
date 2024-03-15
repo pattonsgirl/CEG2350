@@ -1,15 +1,13 @@
 # Lab 08
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - unallocated resources](#Part-1---unallocated-resources)
-- [Part 2 - inodes](#Part-2---inodes)
-- [Extra Credit - take a fstab at this](#Extra-Credit---take-a-fstab-at-this)
+
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/55805/modules/items/4889699)
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/68834/modules/items/6128516)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
@@ -25,86 +23,27 @@ For each part below, you will be asked to do an action or answer a question. The
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-## Part 1 - unallocated resources
+## Can't SSH?
 
-**THIS PART MUST BE COMPLETED IN THE AWS INSTANCE YOU SETUP IN LAB 01.**
+If you cannot `ssh` to your instance anymore, you may have run into one of these scenarios:
+- You overwrote the partition table (or partitions) in `xvda` - this would erase your `root` / `/` filesystem.
+- You wrote a bad entry in `/etc/fstab` - if the system cannot mount the disk, the boot process will hang and not complete 
 
-For each step below, write the answer to the question / prompt and how you found / configured the answer (commands used).
+If you think one of those scenarios happened to you, you'll need to go back to [Lab 01](../Lab01/) and create a new stack. Once you are in the new instance, don't forget the steps to cloning your GitHub repo:
+1. create a new keypair for authentication to GitHub
+2. add the public key to your GitHub user settings
+3. clone with `ssh`
 
-- **Useful Commands: `df`, `lsblk`, `blkid`, `gdisk`, `mkfs`, `mount`, `strings`**
+## Part 1 - Game the system
 
-1. According to `lsblk`, what `disk`s are attached to the system?
-2. Of the disks, which does not have any partitions?
-3. Using the `gdisk` GPT partition table manipulator, find out what the following main menu options do:
-   - `p`
-   - `o`
-   - `n`
-   - `i`
-   - `w`
-4. Open the unpartitioned disk with `gdisk`. Using the main menu, configure the disk to use the GPT partition table type, have at least 1 partition, and have that partition use the Linux filesystem type. Save your changes to the disk.
-   - Hint: remember disks devices are in the `/dev/` folder
-5. Make an ext4 filesystem on the new partition
-6. Make a folder in `/mnt/` called `expanse`
-7. Mount the partition to `expanse`
-8. Create some files (with and without text) and directories in the folder where your partition is mounted
-9. Run `strings` on the partition - read through the output and determine what `strings` is outputting
+Choose a command line game from this site: [It's Foss - Top 10 Command Line Games for Linux](https://itsfoss.com/best-command-line-games-linux/)
+   - `bastet` is what this lab was tested on
 
-   - Like other commands we have played with, `strings` has more capabilities. We are going to use it to show you something interesting about data...
+In the answer template, document the game name, how you installed it, where the executable is located, and how to run the game.
 
-10. Delete a file that you created on the partition. Run `strings` on the partition again - read through the output and see if anything surprises you - what do you see?
+For the remainder of this lab, you will be running this game to practice controlling processes.
 
-    - This is a neat trick that starts getting towards digital forensics. You can assume most people trust that when they hit delete, stuff got deleted. But the contents may still exist on the disk until they are overwritten...
-
-11. Read through this article: [techmint - permanently and securely delete files in Linux](https://www.tecmint.com/permanently-and-securely-delete-files-directories-linux/) and determine a way to truly delete a file. Write a short report of steps and proof that the file is no longer readable on the disk.
-
-    - `shred` is recommended
-
-12. `umount` the partition. Can you still interact with the files and folders?
-
-- **Resources**:
-   - [DigitalOcean - click "Interactive partitioning with gdisk"](https://docs.digitalocean.com/products/volumes/how-to/partition/)
-   - [RodsBooks - A `gdisk` walkthrough](https://www.rodsbooks.com/gdisk/walkthrough.html)
-
-## Part 2 - inodes
-
-- **Useful Commands: `stat`, `ln`, `cp`, `mv`**
-
-1. Create a file in your Lab08 folder named `original.txt`. Put some stuff in this file - couple sentences, just enough to give it body.
-2. For `original.txt` identify:
-   - Command to find the following info about `original.txt`:
-   - inode number of `original.txt`:
-   - number of blocks storing `original.txt`:
-   - number of links to `original.txt`:
-3. Create a hard link to `original.txt`
-   - What identifiers indicate a hard link was created?
-   - Does modifying the hard linked file modify `original.txt`? Explain
-4. Create a symbolic link to `original.txt`
-   - What identifiers indicate a symbolic link was created?
-   - If `original.txt` was deleted, and a new `original.txt` was created, would the symbolic link still work? Explain
-5. Create a copy of `original.txt`
-   - Does modifying the copied file modify `original.txt`? Explain
-6. Move `original.txt` to another directory.
-   - Does it have the same inode? Explain
-   - Was the hard link you created affected? Explain
-   - Was the symbolic link you created affected? Explain
-
-- Resources:
-  - [linoxide - linux inode](https://linoxide.com/linux-inode/)
-  - [how to geek - everything you ever wanted to know about inodes on linux](https://www.howtogeek.com/465350/everything-you-ever-wanted-to-know-about-inodes-on-linux/)
-
-## Extra Credit - take a fstab at this
-
-1. Make a backup of the current version of `/etc/fstab`
-2. Add your partition and the mount point (`/mnt/expanse`) to `/etc/fstab`
-   - Line added to `/etc/fstab`:
-3. Test your changes using the `mount -a` and `df`. Write what you did to prove you got it right in `/etc/fstab`
-4. Reboot, if you're brave enough... test that your partition was automounted to `/mnt/expanse`
-5. If you are not brave enough, I admire your honestly. Delete changes made to `fstab`
-
-- Resources:
-  - [HowToGeek - How to write an fstab file on Linux](https://www.howtogeek.com/444814/how-to-write-an-fstab-file-on-linux/)
-  - [linuxconfig - fstab](https://linuxconfig.org/how-fstab-works-introduction-to-the-etc-fstab-file-on-linux)
-  - [ubuntu - fstab](https://help.ubuntu.com/community/Fstab)
+## Part 2 - 
 
 ## Submission
 
