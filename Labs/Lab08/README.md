@@ -45,7 +45,62 @@ In the answer template, document the game name, how you installed it, where the 
 
 For the remainder of this lab, you will be running this game to practice controlling processes.
 
-## Part 2 - 
+## Part 2 - Process control
+
+Create a second `ssh` session to your AWS instance.  You should now have two `ssh` sessions to your AWS instance.  This will be referred to as Shell A and Shell B in the exercises below - you decide which is A and which is B.
+
+- **Useful Commands: `pstree`, `ps`, `kill`, `bg`, `job`, `fg`**
+
+1. Craft a `ps` command that will show a custom format that includes the following, then describe each field:
+   - USER / UID, PID, PPID, TTY, STAT, and COMMAND
+2. Identify a flag to add / remove from your custom output format that will show processes owned by your user with and without a controlling terminal
+3. Find the process IDs for each `bash` shell.
+   - PID of Shell A:
+   - PID of Shell B:
+4. In Shell A, run the game you installed.  Provides answers to the following:
+   - What is the processes id of the game?
+   - What is the parent process (id and program) running the game?
+   - Use `kill` to kill only the game:
+   - Describe what the effect was: 
+   - [Run the game again] Use `kill` to kill the game and it's parent process: 
+   - Describe what the effect was:
+5. Create a new `ssh` session - Shell C - and run the game again.  Watch the processes from the other terminal.  Describe what happens, using process knowledge in your description, if you close / `exit` your connection with Shell C and determine if you can reenter the game (resume the process).
+
+**Resources**
+- [Linuxize - Ps Command in Linux (List Processes)](https://linuxize.com/post/ps-command-in-linux/)
+
+## Part 3 - back and fore
+
+1. Run your game in the foreground.  
+2. Send a `STOP` signal to suspend it.
+3. Use `ps` to confirm the process is still alive, but has been stopped.  Provide the line of output that relates to the process.
+4. Resume the process in the foreground.
+5. Send a `TERMINATE` signal to kill it.
+6. Start the game as a background process.  Repeat 3 times.
+7. Display the output of `jobs` and your custom output format `ps` command
+   - If `jobs` is empty, make sure you are running it in the same shell that you created the background jobs.
+8. Kill one job.
+9. Move one job to the foreground.
+10. Describe what happens, using process knowledge in your description, if you close / `exit` your connection with this shell and determine if you can reenter the game (resume the process).
+
+**Resources**
+- [Introduction To Unix Signals Programming - Sending Signals To Processes](https://www.cs.kent.edu/~ruttan/sysprog/lectures/signals.html)
+- [Digital Ocean - How To Use Bash's Job Control to Manage Foreground and Background Processes](https://www.digitalocean.com/community/tutorials/how-to-use-bash-s-job-control-to-manage-foreground-and-background-processes)
+
+## Part 4 - Detach
+
+The perhaps obtuse goal of the previous two exercises is to understand process control, but also to realize that with these methods, your shell connection must remain active.  If you end your shell session, the processes attached to it also end.  There are tools that allow you to run processes detach from your shell session.  This lab will have you use `tmux`, but other tools exist.
+
+1. Create a `tmux` session.  Run the game in the session.
+2. Leaving your game running, detach from the session.
+3. Run your custom formatted `ps` command, showing processes without a controlling terminal
+4. Use `tmux` to list sessions
+5. Close your `ssh` shell session to your instance, then `ssh` in again.  How can you determine if your `tmux` session with your game running is available?
+6. Reattach to your `tmux` session running the game.
+7. Kill the `tmux` session
+
+**Resources**
+- [RedHat - A beginner's guide to tmux](https://www.redhat.com/sysadmin/introduction-tmux-linux)
 
 ## Submission
 
