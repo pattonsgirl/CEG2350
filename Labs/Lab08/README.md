@@ -1,7 +1,10 @@
 # Lab 08
 
 - [Lab Procedure](#Lab-Procedure)
-
+- [Part 1 - Game the System](#part-1---game-the-system)
+- [Part 2 - Process Control](#part-2---process-control)
+- [Part 3 - back and fore](#part-3---back-and-fore)
+- [Part 4 - Detach](#part-4---detach)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
