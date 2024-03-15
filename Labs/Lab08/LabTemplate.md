@@ -46,7 +46,7 @@ insert line here
 4. Resume in the foreground:
 5. `TERMINATE` signal to kill it: 
 6. Start as a background process: 
-7. Output of `jobs`:
+7. Output of `jobs` from controlling terminal:
 ```
 Insert output here
 ```
