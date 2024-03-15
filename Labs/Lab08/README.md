@@ -82,7 +82,7 @@ Provide answers to the following, using Shell B to observe the process statuses:
 5. Send a `TERMINATE` signal to kill it.
 6. Start the game as a background process.  Repeat 3 times.
 7. Display the output of `jobs` and your custom output format `ps` command
-   - If `jobs` is empty, make sure you are running it in the same shell that you created the background jobs.
+   - If `jobs` is empty, make sure you are running it in the same shell, the controlling terminal, that you created the background jobs.
 8. Kill one job.
 9. Move one job to the foreground.
 10. Describe what happens, using process knowledge in your description, if you close / `exit` your connection with this shell and determine if you can reenter the game (resume the process).
