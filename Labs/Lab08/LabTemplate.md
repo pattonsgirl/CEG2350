@@ -13,12 +13,12 @@
 ## Part 2 - Process Control
 
 1. `ps` field descriptions:
-   - USER:
+   - USER / UID:
    - PID:
    - PPID:
    - TTY:
    - STAT:
-   - COMMAND:
+   - COMMAND / CMD:
 2. `ps` command:
 3. Output of `ps` with two shells, one running the game:
 ```
