@@ -1,4 +1,4 @@
-# Lab 12
+# Lab 12 - NOT READY
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - tar it up](#Part-1---tar-it-up)
