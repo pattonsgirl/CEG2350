@@ -24,14 +24,17 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - [Compiling](https://xkcd.com/303/)
 
+It is expected that you are using your AWs instance or a Linux based system where you have cloned your repository to complete the command taskings.
+
 **Useful Commands: `gcc`, `wget`**
 
 1. Select from either [TODO-C](TODO-C) or [TODO-CPP](TODO-CPP). Download the files in the folder to the `Lab09` folder in your repository folder.  `add`, `commit` and `push` the source code files.
-2. Determine how to install and verify the installation of the C / C++ compiler for both Windows and Linux.
-3. Find one option for how to compile and run C/C++ code if the compiler is not supported on the OS.  In other words, find a recommended browser based compiler.
+2. Determine how to install and verify the installation of the C / C++ compiler for Windows.
+3. Determine how to install and verify the installation of the C / C++ compiler for Linux.
+4. Find one option for how to compile and run C/C++ code if the compiler is not supported on the OS.  In other words, find a recommended browser based compiler.
    - The last piece - not being able to install the compiler - is a common issue for MacOS and Chromebooks or if you don't have permissions to install software to the machine you are using.
-4. Compile the source code into an executable program.
-5. Run the executable program.
+5. Compile the source code into an executable program.
+6. Run the executable program.
 
 ## Part 2 - Document
 
@@ -65,6 +68,7 @@ double approx_pi(int n) {
 5. Merge your commits with the `main` branch - do not delete the branch.  Make sure what's visible in GitHub is:
    - your branch where you made the commits to comment the code base (do not delete the branch)
    - the code files, visible in `main`, now with comments on functions after the merge
+6. Fill out the `git` `branch` Guide with commands used to work with branches.
 
 ## Part 3 - [makey makey](https://www.youtube.com/watch?v=X1mYalegtdI&ab_channel=MakeyMakey)
 
@@ -111,10 +115,10 @@ If you already added your executable for tracking, remove it from future trackin
 - Part 2 - 
    - User Guide clearly addresses each category
    - branch made with commits (and visible in GitHub)
-   - 7 comment blocks added
+   - 7 comment blocks added to source code
    - Each comment block includes description, parameters, and return values
    - branch merged to `main` (and commented code visible from `main`)
-   
+
 - Part 3 - 1 point for each item below:
    - `Makefile` exists
    - `Makefile` has target to build executable program (given dependencies exist)
@@ -122,4 +126,4 @@ If you already added your executable for tracking, remove it from future trackin
    - `Makefile` has target remove executable program
    - Commands to use `Makefile` added to guide
 
-- Extra Credit - 6.6667% = 1 point
+- Extra Credit - 1 point

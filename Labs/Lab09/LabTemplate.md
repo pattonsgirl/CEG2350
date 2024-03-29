@@ -5,6 +5,17 @@
 
 ## Part 1 - Compiling
 
+1. Method & command to get a copy of the source code files:
+2. Windows C / C++ compiler
+   - Download Windows installer from:
+   - Confirm installed in Windows:
+3. Linux C / C++ compiler
+   - Download Linux installer from:
+   - Confirm installed in Linux:
+4. Browser based compiler for C / C++:
+5. Command(s) to compile the source code into an executable program:
+6. Command(s) to execute the program:
+
 ## Part 2 - Document
 
 ### Program User Guide
@@ -14,6 +25,18 @@
 #### How to Build and Run Program
 
 #### How to Use Program
+
+### `git` `branch` Guide
+
+Create a branch:
+
+Change to branch:
+
+Add branch to remote if created locally (GitHub):
+
+Steps to `merge` changes to another branch (`main`):
+
+Steps to resolve a `merge` conflict: 
 
 ## Part 3 - makey makey
 
