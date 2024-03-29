@@ -12,7 +12,7 @@ Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-Create a new directory, `Lab09`
+**Create a new directory, `Lab09`**
 
 Write answers in `Lab09.md` the [LabTemplate.md is here](LabTemplate.md).
 
@@ -24,17 +24,20 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - [Compiling](https://xkcd.com/303/)
 
-1. Select from either [TODO-C](TODO-C) or [TODO-CPP](TODO-CPP).
-2. Download the files in the folder to your repository folder.
-3. Determine how to install the C / C++ compiler for both Windows and Linux, and find one option for how to compile and run C/C++ code if your OS does not support the compiler.
-4. Compile the source code into an executable.
-5. Run the executable.
+**Useful Commands: `gcc`, `wget`**
+
+1. Select from either [TODO-C](TODO-C) or [TODO-CPP](TODO-CPP). Download the files in the folder to the `Lab09` folder in your repository folder.  `add`, `commit` and `push` the source code files.
+2. Determine how to install and verify the installation of the C / C++ compiler for both Windows and Linux.
+3. Find one option for how to compile and run C/C++ code if the compiler is not supported on the OS.  In other words, find a recommended browser based compiler.
+   - The last piece - not being able to install the compiler - is a common issue for MacOS and Chromebooks or if you don't have permissions to install software to the machine you are using.
+4. Compile the source code into an executable program.
+5. Run the executable program.
 
 ## Part 2 - Document
 
 **Useful `git` commands: `branch`, `switch`, `commit`, `push`, `merge`**
 
-1. Fill in the User Guide section with a user guide for the program.
+1. Fill in the User Guide section with a user guide for the program.  Provide clear and concise instructions on what the program is (its purpose), how to build and run it, and how to use the program.
 2. Create a branch in your repository folder.  Create commits on the branch to complete the task 3.  Push your commits on the branch to GitHub.
 3. For all functions in the `.c` or `.cpp` files, add a comment block that includes the following:
    - What function does
@@ -70,7 +73,7 @@ double approx_pi(int n) {
 Write a `Makefile` in the directory with your code files.
 
 At minimum, craft the following targets:
-- `default`
+- `build`
    - depends on source code files
    - builds an executable from the source code
 - `run`
@@ -81,9 +84,14 @@ At minimum, craft the following targets:
 
 Test the targets in your `Makefile`.
 
+Create a set of instructions for using your `Makefile` to perform its different taskings.
+
 ## Extra Credit - Ignore That
 
 In the root folder of your GitHub repository, create a `.gitignore` file and prevent tracking of your executable programs.  
+
+If you already added your executable for tracking, remove it from future tracking with `git rm --cached <file_name>`, then `commit` & `push` the change.
+   - Just `git rm` would delete it from your working directory ("filesystem") and from tracking.  The `--cached` flag remove it only from tracking.
 
 ## Submission
 
@@ -99,3 +107,19 @@ In the root folder of your GitHub repository, create a `.gitignore` file and pre
 ## Rubric
 
 - Part 1
+
+- Part 2 - 
+   - User Guide clearly addresses each category
+   - branch made with commits (and visible in GitHub)
+   - 7 comment blocks added
+   - Each comment block includes description, parameters, and return values
+   - branch merged to `main` (and commented code visible from `main`)
+   
+- Part 3 - 1 point for each item below:
+   - `Makefile` exists
+   - `Makefile` has target to build executable program (given dependencies exist)
+   - `Makefile` has target execute program (given dependencies exist)
+   - `Makefile` has target remove executable program
+   - Commands to use `Makefile` added to guide
+
+- Extra Credit - 6.6667% = 1 point

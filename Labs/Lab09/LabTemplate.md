@@ -1,48 +1,30 @@
 ## Lab 09
 
 - Name:
-- Email
+- Email:
 
-## Part 1 Answers
+## Part 1 - Compiling
 
-- Make sure infinity is in your Lab09 folder in GitHub
+## Part 2 - Document
 
-## Part 2 Answers
+### Program User Guide
 
-1. Getting started
-   - Command to find the PID:
-   - PID of "Terminal A":
-   - PID of "Terminal B":
-2. Using `./` to run `infinity` in Terminal B
-   - PID of script:
-   - Command to kill script:
-   - Effects of running the script:
-3. Using `source` to run `infinity` in Terminal B
-   - PID of script:
-   - Command to kill the script:
-   - Effects of killing the script:
-4. Running `infinity` as a background job in Terminal B
-   - Command to run script in background:
-   - Job ID of script:
-   - PID of script:
-   - Command to kill script via job id:
-   - Effects of exiting terminal:
-5. Run `infinity` in a `screen` or `tmux` session
-   - Command(s) to run `infinity` in a screen session:
-   - Detach from `screen` / `tmux` session:
-   - Command to show `screen` / `tmux` sessions:
-   - Effects of exiting terminal:
-   - Command / steps to kill the `screen` / `tmux` session:
+#### Program Description
 
-## Part 3 Answers
+#### How to Build and Run Program
 
-1.
-2.
-3.
-4.
-5. Confirmed?
-6.
-7.
-8.
-9. Confirmed?
-10.
+#### How to Use Program
+
+## Part 3 - makey makey
+
+Using `Makefile` to build executable:
+
+Using `Makefile` to run program:
+
+Using `Makefile` to remove compilation files, such as the executable: 
+
+## Extra Credit - Ignore That
+
+Remove this statement and the hashtag from the line below so TAs can click to check for a working `.gitignore` file.  Test that the link works - if it doesn't, fix the pathing.
+
+#[`.gitignore` file in root of repository](../.gitignore)
