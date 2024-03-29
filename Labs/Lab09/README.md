@@ -24,7 +24,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - [Compiling](https://xkcd.com/303/)
 
-It is expected that you are using your AWs instance or a Linux based system where you have cloned your repository to complete the command taskings.
+It is expected that you are using your AWS instance or a Linux based system where you have cloned your repository to complete the command taskings.
 
 **Useful Commands: `gcc`, `wget`**
 
@@ -37,6 +37,8 @@ It is expected that you are using your AWs instance or a Linux based system wher
 6. Run the executable program.
 
 ## Part 2 - Document
+
+It is expected that you are using your AWS instance or a Linux based system where you have cloned your repository to complete the taskings.
 
 **Useful `git` commands: `branch`, `switch`, `commit`, `push`, `merge`**
 
@@ -71,6 +73,8 @@ double approx_pi(int n) {
 6. Fill out the `git` `branch` Guide with commands used to work with branches.
 
 ## Part 3 - [makey makey](https://www.youtube.com/watch?v=X1mYalegtdI&ab_channel=MakeyMakey)
+
+It is expected that you are using your AWS instance or a Linux based system where you have cloned your repository to complete the tasking.
 
 **Useful commands: `make`**
 
@@ -112,12 +116,13 @@ If you already added your executable for tracking, remove it from future trackin
 
 - Part 1
 
-- Part 2 - 
+- Part 2 - 1 point for each item below:
    - User Guide clearly addresses each category
    - branch made with commits (and visible in GitHub)
    - 7 comment blocks added to source code
    - Each comment block includes description, parameters, and return values
    - branch merged to `main` (and commented code visible from `main`)
+   - `git` `branch` Guide filled out with commands
 
 - Part 3 - 1 point for each item below:
    - `Makefile` exists
