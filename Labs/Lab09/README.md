@@ -1,6 +1,10 @@
-# Lab 09 - NOT READY
+# Lab 09
 
 - [Lab Procedure](#Lab-Procedure)
+- [Part 1 - Compiling](#part-1---compiling)
+- [Part 2 - Document](#part-2---document)
+- [Part 3 - makey makey](#part-3---makey-makey)
+- [Extra Credit - Ignore That](#extra-credit---ignore-that)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -114,9 +118,9 @@ If you already added your executable for tracking, remove it from future trackin
 
 ## Rubric
 
-- Part 1
+- Part 1 - 6 pts total, 1 point per question
 
-- Part 2 - 1 point for each item below:
+- Part 2 - 6 pts total, 1 point for each item below:
    - User Guide clearly addresses each category
    - branch made with commits (and visible in GitHub)
    - 7 comment blocks added to source code
@@ -124,8 +128,8 @@ If you already added your executable for tracking, remove it from future trackin
    - branch merged to `main` (and commented code visible from `main`)
    - `git` `branch` Guide filled out with commands
 
-- Part 3 - 1 point for each item below:
-   - `Makefile` exists
+- Part 3 - 5 pts total, 1 point for each item below:
+   - `Makefile` exists in `Lab09` folder
    - `Makefile` has target to build executable program (given dependencies exist)
    - `Makefile` has target execute program (given dependencies exist)
    - `Makefile` has target remove executable program
