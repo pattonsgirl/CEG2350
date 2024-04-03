@@ -3,3 +3,8 @@ Labs/Lab10/code/demo.class
 *.exe
 *.class
 __pycache__
+
+*.i
+*.o
+*.s
+orphan
