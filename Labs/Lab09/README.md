@@ -34,11 +34,13 @@ It is expected that you are using your AWS instance or a Linux based system wher
 
 1. Select from either [TODO-C](TODO-C) or [TODO-CPP](TODO-CPP). Download the files in the folder to the `Lab09` folder in your repository folder.  `add`, `commit` and `push` the source code files.
 2. Determine how to install and verify the installation of the C / C++ compiler for Windows.
+   - Recommended: MinGW
 3. Determine how to install and verify the installation of the C / C++ compiler for Linux.
+   - Recommended: gcc, g++, clang
 4. Find one option for how to compile and run C/C++ code if the compiler is not supported on the OS.  In other words, find a recommended browser based compiler.
    - The last piece - not being able to install the compiler - is a common issue for MacOS and Chromebooks or if you don't have permissions to install software to the machine you are using.
-5. Compile the source code into an executable program.
-6. Run the executable program.
+5. Using your AWS instance, compile the source code into an executable program.
+6. Using your AWS instance, run the executable program.
 
 Resources:
 - [Scaler - Compilation Process in C](https://www.scaler.com/topics/c/compilation-process-in-c/)
