@@ -83,6 +83,7 @@ double approx_pi(int n) {
 Resources:
 - [FreeCodeCamp - Git Branching Commands Explained with Examples](https://www.freecodecamp.org/news/git-branching-commands-explained/)
 - [Geeks for Geeks - How to Set Upstream Branch on Git?](https://www.geeksforgeeks.org/how-to-set-upstream-branch-on-git/)
+- [MIT - Git command-line interface](https://missing.csail.mit.edu/2020/version-control/)
 
 ## Part 3 - [makey makey](https://www.youtube.com/watch?v=X1mYalegtdI&ab_channel=MakeyMakey)
 
@@ -105,6 +106,13 @@ At minimum, craft the following targets:
 Test the targets in your `Makefile`.
 
 Create a set of instructions for using your `Makefile` to perform its different taskings.
+
+Resources:
+- [In-Class `Makefile` demonstration](../../processes/Makefile)
+   - See slide deck for explanation and use to use `make` to call targets
+- [RedSwitches - `make` command in Linux](https://www.redswitches.com/blog/make-command-in-linux/)
+- [IOFlood - `make` command](https://ioflood.com/blog/make-linux-command/)
+   - Includes CMake and AutoTools, which are out of scope for course but good to note.
 
 ## Extra Credit - Ignore That
 
