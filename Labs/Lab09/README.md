@@ -40,6 +40,10 @@ It is expected that you are using your AWS instance or a Linux based system wher
 5. Compile the source code into an executable program.
 6. Run the executable program.
 
+Resources:
+- [Scaler - Compilation Process in C](https://www.scaler.com/topics/c/compilation-process-in-c/)
+- [Dartmouth - Compiling With Multiple Source Files](https://www.dartmouth.edu/~rc/classes/softdev_linux/complex_compile.html)
+
 ## Part 2 - Document
 
 It is expected that you are using your AWS instance or a Linux based system where you have cloned your repository to complete the taskings.
@@ -76,6 +80,10 @@ double approx_pi(int n) {
    - the code files, visible in `main`, now with comments on functions after the merge
 6. Fill out the `git` `branch` Guide with commands used to work with branches.
 
+Resources:
+- [FreeCodeCamp - Git Branching Commands Explained with Examples](https://www.freecodecamp.org/news/git-branching-commands-explained/)
+- [Geeks for Geeks - How to Set Upstream Branch on Git?](https://www.geeksforgeeks.org/how-to-set-upstream-branch-on-git/)
+
 ## Part 3 - [makey makey](https://www.youtube.com/watch?v=X1mYalegtdI&ab_channel=MakeyMakey)
 
 It is expected that you are using your AWS instance or a Linux based system where you have cloned your repository to complete the tasking.
@@ -104,6 +112,11 @@ In the root folder of your GitHub repository, create a `.gitignore` file and pre
 
 If you already added your executable for tracking, remove it from future tracking with `git rm --cached <file_name>`, then `commit` & `push` the change.
    - Just `git rm` would delete it from your working directory ("filesystem") and from tracking.  The `--cached` flag remove it only from tracking.
+
+Resources:
+- [GitHub Docs - Ignoring files](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files)
+- [Git Docs - `gitignore` Documentation](https://git-scm.com/docs/gitignore)
+- [Example `.gitignore` file](../../.gitignore)
 
 ## Submission
 
