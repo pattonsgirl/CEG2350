@@ -38,7 +38,7 @@ Steps to `merge` changes to another branch (`main`):
 
 Steps to resolve a `merge` conflict: 
 
-## Part 3 - makey makey
+## Part 3 - `makey makey`
 
 Using `Makefile` to build executable:
 

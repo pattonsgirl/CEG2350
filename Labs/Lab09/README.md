@@ -3,7 +3,7 @@
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Compiling](#part-1---compiling)
 - [Part 2 - Document](#part-2---document)
-- [Part 3 - makey makey](#part-3---makey-makey)
+- [Part 3 - `makey makey`](#part-3---makey-makey)
 - [Extra Credit - Ignore That](#extra-credit---ignore-that)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
@@ -36,7 +36,7 @@ It is expected that you are using your AWS instance or a Linux based system wher
 2. Determine how to install and verify the installation of the C / C++ compiler for Windows.
    - Recommended: MinGW
 3. Determine how to install and verify the installation of the C / C++ compiler for Linux.
-   - Recommended: gcc, g++, clang
+   - Recommended: `gcc`, g++, clang
 4. Find one option for how to compile and run C/C++ code if the compiler is not supported on the OS.  In other words, find a recommended browser based compiler.
    - The last piece - not being able to install the compiler - is a common issue for MacOS and Chromebooks or if you don't have permissions to install software to the machine you are using.
 5. Using your AWS instance, compile the source code into an executable program.
@@ -87,7 +87,7 @@ Resources:
 - [Geeks for Geeks - How to Set Upstream Branch on Git?](https://www.geeksforgeeks.org/how-to-set-upstream-branch-on-git/)
 - [MIT - Git command-line interface](https://missing.csail.mit.edu/2020/version-control/)
 
-## Part 3 - [makey makey](https://www.youtube.com/watch?v=X1mYalegtdI&ab_channel=MakeyMakey)
+## Part 3 - [`makey makey`](https://www.youtube.com/watch?v=X1mYalegtdI&ab_channel=MakeyMakey)
 
 It is expected that you are using your AWS instance or a Linux based system where you have cloned your repository to complete the tasking.
 
