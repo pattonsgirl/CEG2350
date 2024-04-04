@@ -30,7 +30,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 It is expected that you are using your AWS instance or a Linux based system where you have cloned your repository to complete the command taskings.
 
-**Useful Commands: `gcc`, `wget`**
+**Useful Commands: `gcc`, `g++`, `wget`**
 
 1. Select from either [TODO-C](TODO-C) or [TODO-CPP](TODO-CPP). Download the files in the folder to the `Lab09` folder in your repository folder.  `add`, `commit` and `push` the source code files.
 2. Determine how to install and verify the installation of the C / C++ compiler for Windows.
