@@ -1,4 +1,4 @@
-# Lab 10
+# Lab 10 - NOT READY
 
 - [Lab Procedure](#Lab-Procedure)
 - [Submission](#Submission)
@@ -21,6 +21,23 @@ Write answers in `Lab10.md` the [LabTemplate.md is here](LabTemplate.md).
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
+
+## Part 1 - About Me
+
+Report network info
+
+## Part 2 - Subnet Practice
+
+3 x ranges, gives subnets
+3 x subnets, give ranges
+
+## Part 3 - Sniff and Tell
+
+search `ssh` logs for bad attempts - count unique entries?
+
+## Part 4 - Security
+
+Better security group rules
 
 ## Submission
 
