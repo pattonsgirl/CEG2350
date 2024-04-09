@@ -22,9 +22,40 @@ For each part below, you will be asked to do an action or answer a question. The
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-## Part 1 - About Me
+## Part 1 - Linux Network Command Cheat Sheet
 
-Report network info
+The commands below are all Linux commands to show or modify network information.  Provide a brief statement (not a multi-paragraph copy paste :wink:) about what each command does.  You'll be using these commands in Part 2 to find networking info for your AWS instance.
+
+- `hostname`
+- `ifconfig`
+- `ip addr show`
+- `route`
+- `cat /var/lib/dhcp/dhclient.leases`
+- `cat /etc/resolv.conf`
+- `curl ipinfo.io`
+- `iptables -L`
+- `netcat`
+- `nmap`
+
+## Part 2 - Network Info
+
+For your PC and for your AWS instance, find the following network information.  The point is to find networking info using two different OSes (Windows and Linux OR Mac and Linux).  If you do not have access to a non-Linux OS you can use the laptops or desktops provided in the lab rooms. You should not download any additional tools.
+
+**Additional Useful Commands**
+- Windows: `ipconfig \all`
+
+1. Hostname of the device:
+2. MAC address of the NIC connected to the network:
+3. IPv4 address:
+4. Subnet mask:
+5. Gateway address:
+6. DHCP server address:
+7. DNS server address:
+8. Public IPv4 address:
+
+- Notes: 
+   - These results are going to look boring at home, but interesting on more complex networks, like Wright State or Starbucks.  While you are welcome to do this using your home network, play with these commands on other networks as well. At home you likely have one device (your router) that is the first stop for most requests (DHCP, DNS, and gateway to route traffic to the next stop). On a complex network, you'll see these addresses getting distributed to different devices - there is a device to connect to to request an address and network information (DHCP server), another that is a first stop for DNS resolution, and maybe another that is the gateway address that packets outside the network are forwarded to to find their destination.
+   - Public IPv4 addresses are only used when you are trying to send communications outside your local (private) subnet.  The vast majority of networks utilize this scheme.  It allows many devices to be on one network, which then "share" a public IPv4 address when sending packets and receiving communication back from network devices external to your network.
 
 ## Part 2 - Subnet Practice
 
