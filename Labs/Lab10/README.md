@@ -34,7 +34,7 @@ The commands below are all Linux commands to show or modify network information.
 - `cat /etc/resolv.conf`
 - `curl ipinfo.io`
 - `iptables -L`
-- `netcat`
+- `netcat -z -v <IP_or_hostname>` OR `nc -z -v <IP_or_hostname>`
 - `nmap -p <IP_or_hostname>`
 
 ## Part 2 - Network Info
@@ -79,6 +79,9 @@ Your task is to remove both terrible rules from your security group and replace 
    - required even if you live on campus
 4. Create a rule that allows HTTP access from any IPv4 address
 5. Describe why should HTTP allow any IP, while SSH has restrictions?
+
+**Resources**
+- [Subnet Calculator](https://www.davidc.net/sites/default/subnets/subnets.html)
 
 ## Extra Credit - Tattle Tale
 

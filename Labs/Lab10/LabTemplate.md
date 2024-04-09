@@ -13,7 +13,7 @@
 - `cat /etc/resolv.conf`
 - `curl ipinfo.io`
 - `iptables -L`
-- `netcat`
+- `netcat -z -v <IP_or_hostname>` OR `nc -z -v <IP_or_hostname>`
 - `nmap -p <IP_or_hostname>`
 
 ## Part 2 - Network Info
