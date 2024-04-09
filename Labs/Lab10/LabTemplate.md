@@ -40,6 +40,13 @@
 7. DNS server address:
 8. Public IPv4 address:
 
+## Part 4 - Security
+
+Screenshot of your changed Inbound Security Group rules.
+![Inbound Rules for Lab 10](relative/path/to/image)
+
+Why should HTTP allow any IP, while SSH has restrictions?
+
 ## Extra Credit - Tattle Tale
 
 ### IPv4 Source Report
