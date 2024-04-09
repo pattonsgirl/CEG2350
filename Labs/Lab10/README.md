@@ -1,6 +1,11 @@
 # Lab 10
 
 - [Lab Procedure](#Lab-Procedure)
+- [Part 1 - Linux Network Command Cheat Sheet](#part-1---linux-network-command-cheat-sheet)
+- [Part 2 - Network Info](#part-2---network-info)
+- [Part 3 - Subnet Translation](#part-3---subnet-translation)
+- [Part 4 - Security](#part-4---security)
+- [Extra Credit - Tattle Tale](#extra-credit---tattle-tale)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
