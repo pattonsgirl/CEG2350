@@ -78,7 +78,7 @@ Your task is to remove both terrible rules from your security group and replace 
 3. Create a rule that allows SSH access from your home public IPv4 address
    - required even if you live on campus
 4. Create a rule that allows HTTP access from any IPv4 address
-5. Describe why should HTTP allow any IP, while SSH has restrictions?
+5. Describe why should HTTP allow any IP, while SSH has restrictions?  Your answer should show a reflection on the purpose of these two protocols.
 
 **Resources**
 - [Subnet Calculator](https://www.davidc.net/sites/default/subnets/subnets.html)
