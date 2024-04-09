@@ -130,3 +130,11 @@ Your reports must contain the set of commands used to create the reports.
    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab10
 
 ## Rubric
+
+- Part 1 - 10 points (1 pt each)
+- Part 2 - 16 points (1 pt each)
+- Part 3 - 6 points (1 pt each)
+- Part 4 - 4 points
+   - 1 point per Security Group Rule
+   - 1 point for answer to protocol question
+- Extra Credit - 10% (3.6 points)
