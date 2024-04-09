@@ -39,3 +39,29 @@
 6. DHCP server address:
 7. DNS server address:
 8. Public IPv4 address:
+
+## Extra Credit - Tattle Tale
+
+### IPv4 Source Report
+
+| Rank  | IPv4 Address | # of Attempts |
+| ----- | ------------ | ------------- |
+| 1     |              |     |
+| 2     |              |     |
+| 3     |              |     |
+| 4     |              |     |
+| 5     |              |     |
+
+Commands to parse `csv` for report:
+
+### Username Used Report
+
+| Rank  | Username     | # of Attempts |
+| ----- | ------------ | ------------- |
+| 1     |              |     |
+| 2     |              |     |
+| 3     |              |     |
+| 4     |              |     |
+| 5     |              |     |
+
+Commands to parse `csv` for report:
