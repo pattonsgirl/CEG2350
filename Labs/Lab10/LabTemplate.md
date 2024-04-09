@@ -14,7 +14,7 @@
 - `curl ipinfo.io`
 - `iptables -L`
 - `netcat`
-- `nmap`
+- `nmap -p <IP_or_hostname>`
 
 ## Part 2 - Network Info
 
