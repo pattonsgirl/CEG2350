@@ -34,8 +34,8 @@ The commands below are all Linux commands to show or modify network information.
 - `cat /etc/resolv.conf`
 - `curl ipinfo.io`
 - `iptables -L`
-- `netcat -z -v <IP_or_hostname>` OR `nc -z -v <IP_or_hostname>`
 - `nmap -p <IP_or_hostname>`
+- `tcpdump -i <networkinterface> -n host <IP_or_hostname>`
 
 ## Part 2 - Network Info
 
