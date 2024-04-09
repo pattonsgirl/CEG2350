@@ -40,9 +40,21 @@
 7. DNS server address:
 8. Public IPv4 address:
 
+## Part 3 - Subnet Translation
+
+Translate the below CIDR notation subnets to their IP ranges:
+1. `130.108.0.0/16`
+2. `192.168.1.0/8`
+3. `8.8.8.8/32`
+
+Translate the below IP ranges to their CIDR notation subnets:
+1. `192.168.1.0 - 192.168.1.255`
+2. `172.16.0.0 - 172.16.255.255`
+3. `132.189.13.78 - 132.189.13.78`
+
 ## Part 4 - Security
 
-Screenshot of your changed Inbound Security Group rules.
+Screenshot of your changed Inbound Security Group rules.  
 ![Inbound Rules for Lab 10](relative/path/to/image)
 
 Why should HTTP allow any IP, while SSH has restrictions?

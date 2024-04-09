@@ -1,4 +1,4 @@
-# Lab 10 - NOT READY
+# Lab 10
 
 - [Lab Procedure](#Lab-Procedure)
 - [Submission](#Submission)
@@ -24,7 +24,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - Linux Network Command Cheat Sheet
 
-The commands below are all Linux commands to show or modify network information.  Provide a brief statement (not a multi-paragraph copy paste :wink:) about what each command does.  You'll be using these commands in Part 2 to find networking info for your AWS instance.
+The commands below are all Linux commands to show or modify network information.  Provide a brief statement / summary (not a multi-paragraph copy paste :wink:) about what each command does.  You'll be using these commands in Part 2 to find networking info for your AWS instance.
 
 - `hostname`
 - `ifconfig`
@@ -41,8 +41,8 @@ The commands below are all Linux commands to show or modify network information.
 
 For your PC and for your AWS instance, find the following network information.  The point is to find networking info using two different OSes (Windows and Linux OR Mac and Linux).  If you do not have access to a non-Linux OS you can use the laptops or desktops provided in the lab rooms. You should not download any additional tools.
 
-**Additional Useful Commands**
-- Windows: `ipconfig \all`
+**Additional Useful Commands**  
+Windows: `ipconfig \all`
 
 1. Hostname of the device:
 2. MAC address of the NIC connected to the network:
@@ -57,7 +57,37 @@ For your PC and for your AWS instance, find the following network information.  
    - These results are going to look boring at home, but interesting on more complex networks, like Wright State or Starbucks.  While you are welcome to do this using your home network, play with these commands on other networks as well. At home you likely have one device (your router) that is the first stop for most requests (DHCP, DNS, and gateway to route traffic to the next stop). On a complex network, you'll see these addresses getting distributed to different devices - there is a device to connect to to request an address and network information (DHCP server), another that is a first stop for DNS resolution, and maybe another that is the gateway address that packets outside the network are forwarded to to find their destination.
    - Public IPv4 addresses are only used when you are trying to send communications outside your local (private) subnet.  The vast majority of networks utilize this scheme.  It allows many devices to be on one network, which then "share" a public IPv4 address when sending packets and receiving communication back from network devices external to your network.
 
-## Part 3 - 
+## Part 3 - Subnet Translation
+
+The notation of ranges to define a subnet is an important skill.  Your task is to practice on some easy ones.  The below steps are, in general, how to break this down:
+
+Example task: Write CIDR notation subnet given range 10.0.0.0 - 10.0.1.255
+   1. Translate addresses to binary
+   2. Set 1's for the matching bits until there is a mismatch - these are the network bits. Remaining bits are 0's - these are the host bits
+   3. Add up the total number of 1's
+
+|                          |                                      |
+| ------------------------ | ------------------------------------ |
+| 10.0.0.0                 | 00001010.00000000.00000000.000000000 |
+| 10.0.1.255               | 00001010.00000000.00000001.111111111 |
+| 1's match (network bits) | 11111111.11111111.11111110.00000000  |
+| Subnet mask (base 10)    | 255.255.254.0                        |
+| CIDR                     | /23                                  |
+| Final form:              | 10.0.0.0/23 OR 10.0.1.0/23           |
+
+**Resources**
+- [CCExpert - Using Prefixes to Represent a Subnet Mask](https://www.ccexpert.us/network-design/using-prefixes-to-represent-a-subnet-mask.html)
+- [Subnet Calculator](https://www.davidc.net/sites/default/subnets/subnets.html)
+
+Translate the below CIDR notation subnets to their IP ranges:
+1. `130.108.0.0/16`
+2. `192.168.1.0/8`
+3. `8.8.8.8/32`
+
+Translate the below IP ranges to their CIDR notation subnets:
+1. `192.168.1.0 - 192.168.1.255`
+2. `172.16.0.0 - 172.16.255.255`
+3. `132.189.13.78 - 132.189.13.78`
 
 ## Part 4 - Security
 
@@ -79,9 +109,6 @@ Your task is to remove both terrible rules from your security group and replace 
    - required even if you live on campus
 4. Create a rule that allows HTTP access from any IPv4 address
 5. Describe why should HTTP allow any IP, while SSH has restrictions?  Your answer should show a reflection on the purpose of these two protocols.
-
-**Resources**
-- [Subnet Calculator](https://www.davidc.net/sites/default/subnets/subnets.html)
 
 ## Extra Credit - Tattle Tale
 
