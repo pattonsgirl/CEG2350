@@ -1,8 +1,29 @@
-# Lab 11 - Bonus Time
+# Lab 11 - Bonus Lab
 
+- [Lab Procedure](#lab-procedure)
 - [Part 1 - tar it up](#part-1---tar-it-up)
 - [Part 2 - SFTP](#part-2---sftp)
 - [Part 3 - SSH Keys](#part-3---ssh-keys)
+- [Submission](#submission)
+- [Rubric](#rubric)
+
+## Lab Procedure
+
+[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/68834/modules/items/6128516)
+
+Use `ssh` to connect to your AWS Ubuntu instance.
+
+Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
+
+**Create a new directory, `BonusLab`**
+
+Write answers in `BonusLab.md` the [LabTemplate.md is here](LabTemplate.md).
+
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab11-Bonus/LabTemplate.md)
+
+For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
+
+If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
 ## Part 1 - tar it up
 With the semester wrapping up, it's time to prepare to lose access to your instances.  Identify folders of work on your AWS instance you would like to save.  If you have none, use the folder that contains your local copy of your GitHub repository.  While using GitHub to save work is an option, it is just as common to need to compress and transfer information.  It is not required, but is interesting to look the the size of these folders pre and post compression
@@ -60,19 +81,15 @@ When you see a reference to **local system**, Windows users should assume I am r
 
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab10` folder with at minimum:
+1. Verify that your GitHub repo has a `BonusLab` folder with at minimum:
 
-   - `Lab10.md`
+   - `BonusLab.md`
 
-2. In the Pilot Dropbox, paste the URL to the `Lab10` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab10
+2. In the Pilot Dropbox, paste the URL to the `BonusLab` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/BonusLab
 
 ## Rubric
 
-- Part 1 - 10 points (1 pt each)
-- Part 2 - 16 points (1 pt each)
-- Part 3 - 6 points (1 pt each)
-- Part 4 - 4 points
-   - 1 point per Security Group Rule
-   - 1 point for answer to protocol question
-- Extra Credit - 10% (3.6 points)
+- Part 1 - 2 pts (1 pt each)
+- Part 2 - 4 pts (1 pt each)
+- Part 3 - 6 pts (1 pt each)
