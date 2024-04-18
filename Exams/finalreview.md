@@ -1,10 +1,5 @@
 # Final Review for CEG 2350
 
-## Da Rules
-- In person (see Pilot for date / time)
-- 1 attempt, 2 hours once started
-- Open note, open terminal
-
 ## Intro topics
 
 1. How did the modern computer come to be?
@@ -126,22 +121,25 @@
 
 ## Processes
 
-Went light on bullets 3-5.  Recommend additional reading
-
 1. init process / kernel level vs user level processes
-   - parent vs child process
-2. System calls & signals
-   - systemd / init - systemctl & journalctl
+2. Processes
+   - parent vs child
+   - System calls & kill signals
    - Fork & exec
    - wait & exit
    - zombie and orphan process states
-3. Thread vs Fork
+3. Service units & service control
+   - systemctl & journalctl
+   - format of a service file
+   - creating new service units / managing existing service units
+      - stop, start, restart, enable, disable
 4. Process scheduling & priorities
-5. CPU & kernel memory management
+5. ~~Thread vs Fork~~
+6. ~~CPU & kernel memory management~~
    - page faults (minor & major)
    - virtual memory
-6. Single CPU multi-tasking & context switching
-7. Multiple CPUs and SMP (Symmetric multiprocessing)
+7. ~~Single CPU multi-tasking & context switching~~
+8. ~~Multiple CPUs and SMP (Symmetric multiprocessing)~~
 8. Commands: kill, ps, top, nice, bg, fg, jobs, screen, tmux
 
 ## Command line programming
@@ -167,13 +165,12 @@ Went light on bullets 3-5.  Recommend additional reading
    - targets
    - dependencies
    - actions
-4. Memory handling in programming
-   - light here, recommend additional reading
+4. ~~Memory handling in programming~~
    - size of memory - Bits (1), bytes (8 bits), word (16, 32, or 64 bits)
    - stack vs. heap
-6. ~~Libraries & dynamic linking (loads and links the shared libraries needed by an executable when it is executed)~~
+6. Libraries & dynamic linking (loads and links the shared libraries needed by an executable when it is executed)
 7. Overview of command line debugging
-8. Install from source w/ make or installation scripts
+8. ~~Install from source w/ make or installation scripts~~
 9. Compression (including `tar` & `gzip`)
 10. Commands: make, which, whereis, python, gcc, java, javac, ~~ldd~~, ~~strace~~
 
@@ -212,7 +209,7 @@ Went light on bullets 3-5.  Recommend additional reading
 4. Firewalls
    - inbound / INPUT / ingress
    - outbound / OUTPUT / egress
-   - whitelist vs blacklist & default allow vs deny
+   - ~~whitelist vs blacklist & default allow vs deny~~
    - common sense rules & trusted networks
 5. Commands: ip, route, arp, iptables, ping, curl, wget, tcpdump, nmap
 
