@@ -107,6 +107,8 @@ It is a combination of credentials (identity) and network rules that keep system
 
 Your task is to remove both terrible rules from your security group and replace them with the rules outlined below.  Assuming you have hit "Start Lab" and have opened your console via the "AWS" link after the lab has started (timer is counting down), this [link will quick drop you to your Security Groups](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#SecurityGroups:).  Find the Security Group named **`ceg2350-Lab1SecurityGroup`** (or similar).  Click the checkbox next to that entry or the link in the "Security Group ID" column to focus on only this Security Group.  You will be editing only the **Inbound Rules**
 
+If the link doesn't work, the full set of things to click is: go to the the Learner Lab Module -> Click Start Lab -> once started, Click the AWS link (green circle will be next to it).  Click EC2 -> Click Instances Running -> click checkbox next to instance -> in the menu below, click Security, scroll down a little, click the link under Security Groups to hot drop to your rules that go with your instance.  inbound Rules are where you'll be focusing for the lab.
+
 1. Remove the two default rules.  
    - If you lose the ability to connect to your instance, you can recreate them by referring to the Security Group rules picture above.
 2. Create a rule that allows SSH access from any WSU IPv4 address, which will be all address from 130.108.0.0 to 130.108.255.255
