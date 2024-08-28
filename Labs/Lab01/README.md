@@ -90,20 +90,10 @@ To continue editing your file:
 An email was sent to your wright.edu account inviting you to join AWS Academy.  
 Follow the instructions in [AWS Academy](../../AWSAcademySetup.md) to set up your AWS instance.
 
-## Part 5 - git cloning
+## Part 5 - GitHub Profile
 
-`ssh` to your AWS instance for this part (finish setup from Part 4). It is highly recommended you look at the Resources listed below.
+### UNDER CONSTRUCTION, REFRESH PAGE AT 12:30
 
-- **Useful commands for this part: `ssh-keygen`, `cat`, `git clone`, `git add`, `git commit`, `git push`**
-
-1. Create an SSH key pair on your AWS Ubuntu instance.
-2. Add the public key to GitHub
-3. Clone your repository (a.k.a. repo) to the `ubuntu` user's home directory
-
-- **Resources:**
-- [GitHub - How to Use - My Guide](../../GitHubSetup.md)
-- [GitHub - Generating a New SSH Key](https://docs.github.com/en/enterprise-server@3.3/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-- [GitHub - Adding SSH key to your GitHub Account](https://docs.github.com/en/enterprise-server@3.0/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 ## Submission
 
