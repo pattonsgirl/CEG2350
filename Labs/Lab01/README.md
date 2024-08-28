@@ -4,8 +4,8 @@
 - [Part 1 - Play with directories and naming](#Part-1---Play-with-directories-and-naming)
 - [Part 2 - Create and edit a file](#Part-2---Create-and-edit-a-file)
 - [Part 3 - Play with hidden files](#Part-3---Play-with-hidden-files)
-- [Part 4 - AWS Academy Setup](#Part-1---AWS-Academy-Setup)
-- [Part 5 - git cloning](#Part-2---git-cloning)
+- [Part 4 - AWS Academy Setup](#Part-4---AWS-Academy-Setup)
+- [Part 5 - GitHub Profile](#Part-5---GitHub-Profile)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
