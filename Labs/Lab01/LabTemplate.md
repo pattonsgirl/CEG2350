@@ -35,8 +35,5 @@
 
 ## Part 5 Answers
 
-1. Command to clone your GitHub repository:
+1. [your_github_username_here Profile](FIXTHISURL-https://github.com/your_username)
 
-```
-**write command here so it will look fancy on GitHub**
-```

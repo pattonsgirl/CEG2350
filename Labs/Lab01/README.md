@@ -92,8 +92,20 @@ Follow the instructions in [AWS Academy](../../AWSAcademySetup.md) to set up you
 
 ## Part 5 - GitHub Profile
 
-### UNDER CONSTRUCTION, REFRESH PAGE AT 12:30
+1. Setup a profile repository that will be visible on your `https://github.com/your_username` page.  
+  - [Instruction to set up a profile README](https://docs.github.com/en/get-started/start-your-journey/setting-up-your-profile#adding-a-profile-readme)
+2. Your profile must include: 
+   - your name
+   - your intended major
+   - pick at least two projects you are going to work on this semester (because of a course or personal projects) and give an overview of them
+      - it would be really cool to make GitHub repositories for these projects and really start establishing your version control with git workflow
+3. Visit some well-built profile repositories to form an idea of what your profile could look like as your experiences and projects mature:
+   - [coderjojo- Awesome Developer Profiles](https://github.com/coderjojo/creative-profile-readme)
+   - [Maximous Black - GitHub Profile collection](https://github.com/maximousblk/maximousblk)
+4. Link to your `https://github.com/your_username` page
 
+***Fun Resources***
+- [GitHub Emoji Support](https://www.webfx.com/tools/emoji-cheat-sheet/)
 
 ## Submission
 

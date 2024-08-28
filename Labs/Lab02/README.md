@@ -27,6 +27,20 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 In Lab 01, you set up an instance on AWS **and** cloned your GitHub repository to the instance.
 
+`ssh` to your AWS instance for this part (finish setup from Part 4). It is highly recommended you look at the Resources listed below.
+
+- **Useful commands for this part: `ssh-keygen`, `cat`, `git clone`, `git add`, `git commit`, `git push`**
+
+1. Create an SSH key pair on your AWS Ubuntu instance.
+2. Add the public key to GitHub
+3. Clone your repository (a.k.a. repo) to the `ubuntu` user's home directory
+
+- **Resources:**
+- [GitHub - How to Use - My Guide](../../GitHubSetup.md)
+- [GitHub - Generating a New SSH Key](https://docs.github.com/en/enterprise-server@3.3/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- [GitHub - Adding SSH key to your GitHub Account](https://docs.github.com/en/enterprise-server@3.0/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
+
 This part assumes you successfully cloned your repository to your instance on AWS. If you are behind here, you should talk with the instructor or TA to get back on track.
 
 - **Useful commands for this part: `git add`, `git commit`, `git push`, `git pull`, `git status`**
