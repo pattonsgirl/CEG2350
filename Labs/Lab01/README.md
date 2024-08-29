@@ -105,6 +105,7 @@ Follow the instructions in [AWS Academy](../../AWSAcademySetup.md) to set up you
 4. Link to your `https://github.com/your_username` page
 
 ***Fun Resources***
+- [Markdown cheatsheet](https://www.markdownguide.org/cheat-sheet/)
 - [GitHub Emoji Support](https://www.webfx.com/tools/emoji-cheat-sheet/)
 
 ## Submission
