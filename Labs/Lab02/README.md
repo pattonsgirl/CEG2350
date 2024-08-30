@@ -1,13 +1,13 @@
 # Lab 02
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - git going](#part-1---git-going)
-- [Part 2 - Bits of permissions](#part-2---bits-of-permissions)
-- [Part 3 - Regular `bob`](#part-3---regular-bob)
-- [Part 4 - Get a `crew`](#part-4---get-a-crew)
+- [Part 1 - clone wars](#part-1---clone-wars)
+- [Part 2 - git going](#part-2---git-going)
+- [Part 3 - Bits of permissions](#part-3---bits-of-permissions)
+- [Part 4 - Regular `bob`](#part-4---regular-bob)
+- [Part 5 - Get a `crew`](#part-5---get-a-crew)
 - [User & Group Resources](#user--group-resources)
-- [Part 5 - `sudo` make me a sandwich](#part-5---sudo-make-me-a-sandwich)
-- [Part 6 - `config` your connection](#part-6---config-your-connection)
+- [Part 6 - `sudo` make me a sandwich](#part-6---sudo-make-me-a-sandwich)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -23,9 +23,7 @@ For each part below, you will be asked to do an action or answer a question. The
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-## Part 1 - git going
-
-In Lab 01, you set up an instance on AWS **and** cloned your GitHub repository to the instance.
+## Part 1 - clone wars
 
 `ssh` to your AWS instance for this part (finish setup from Part 4). It is highly recommended you look at the Resources listed below.
 
@@ -40,8 +38,7 @@ In Lab 01, you set up an instance on AWS **and** cloned your GitHub repository t
 - [GitHub - Generating a New SSH Key](https://docs.github.com/en/enterprise-server@3.3/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - [GitHub - Adding SSH key to your GitHub Account](https://docs.github.com/en/enterprise-server@3.0/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
-
-This part assumes you successfully cloned your repository to your instance on AWS. If you are behind here, you should talk with the instructor or TA to get back on track.
+## Part 2 - git going
 
 - **Useful commands for this part: `git add`, `git commit`, `git push`, `git pull`, `git status`**
 
@@ -60,7 +57,7 @@ Reminder: if you make edits to your repository in GitHub using the browser, you'
 - [git cheat sheet](https://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf)
    - yes, there are more git commands than are on this sheet 
 
-## Part 2 - Bits of permissions
+## Part 3 - Bits of permissions
 
 For each command below, write a verbose description of what it does.  
 
@@ -81,7 +78,7 @@ Sample:
 - [RedHat - Linux File Permissions Explained](https://www.redhat.com/sysadmin/linux-file-permissions-explained)
 - [Linuxize - Understanding File Permissions](https://linuxize.com/post/understanding-linux-file-permissions/)
 
-## Part 3 - Regular `bob`
+## Part 4 - Regular `bob`
 
 For these exercises, replace `bob` with a username based on **your** first initial followed by last name.  For example, "John Smith" would be `jsmith`
 
@@ -92,14 +89,16 @@ Perform the following exercise on your AWS instance.
 1. Create a new user named `bob` (replace with your username, see above)
 2. What is the path to `bob`'s `home` directory?
 3. Can `ubuntu` add files to `bob`'s home directory? Why or why not?
+   - For credit, answer must include what was to to justify answer.
 4. Switch to the user `bob`
 5. Get to `bob`'s `home` directory
 6. Can `bob` add files to `bob`'s home directory? Why or why not?
+   - For credit, answer must include what was to to justify answer.
 7. Switch back to the `ubuntu` user
    - Note that the `ubuntu` user does not have an account password.  You'll have to find a more administrative way to switch accounts...
 8. Return to the `ubuntu` user's `home` directory
 
-## Part 4 - Get a `crew`
+## Part 5 - Get a `crew`
 
 Perform the following exercise on your AWS instance. 
 
@@ -124,7 +123,7 @@ Reminder to replace references to `bob` with your username of first initial, las
    - I recommend using `adduser` in the lab, but this is a great breakdown of the pieces `adduser` uses and `useradd` needs you to specify
 - [Linuxize - groups and users](https://linuxize.com/post/how-to-add-user-to-group-in-linux/)
 
-## Part 5 - [`sudo` make me a sandwich](https://xkcd.com/149/)
+## Part 6 - [`sudo` make me a sandwich](https://xkcd.com/149/)
 
 Perform the following exercise on your AWS instance.
 
@@ -141,23 +140,6 @@ Perform the following exercise on your AWS instance.
 - [Linuxize - `sudo`](https://linuxize.com/post/sudo-command-in-linux/)
    - Note: on your AWS instance, the `ubuntu` user has passwordless sudo - as in you won't be prompted for your account password.  If you try `sudo` in the terminal on your machine, you will be prompted for a password
 
-
-## Part 6 - `config` your connection
-
-On your local system (`exit` from your AWS instance), you used an SSH command to log on to your AWS Ubuntu instance. There is a neat configuration file that can be used to create an alias of sorts. Read the resources for this section, then configure the `.ssh/config` file for your user on your system with information on your `ssh` connection to your AWS instance.
-
-1. Write the command you have been using to `ssh` in to your AWS instance.
-2. Provide the HostName (IP address) of your AWS Ubuntu instance:
-3. Provide the user name that you are logging on to the system with:
-4. Provide the absolute / full path to the private key (Identity File) on your local system:
-5. On your local system, edit `~/.ssh/config` to contain an entry with information about logging on to your AWS Ubuntu instance.  Note that the answer template wants the contents you wrote to the file.
-6. Write the new form of the `ssh` command to connect to your AWS instance.
-
-- **Resources**
-- [linuxize - Using the ssh config file](https://linuxize.com/post/using-the-ssh-config-file/)
-- [cyberciti.biz - config file examples](https://www.cyberciti.biz/faq/create-ssh-config-file-on-linux-unix/)
-- The `Port`, if you wish to include it in your `config` is `22`
-
 ## Submission
 
 - In the Pilot Dropbox, paste the URL to the `Lab02` folder in your GitHub repo
@@ -165,10 +147,10 @@ On your local system (`exit` from your AWS instance), you used an SSH command to
 
 ## Rubric
 
-- Part 1 - 5 pts
+- Part 1 - 3 pts
 - Part 2 - 5 pts
-- Part 3 - 8 pts
-- Part 4 - 6 pts
-- Part 5 - 4 pts
-- Part 6 - 3 pts
-  - 0.5 pts / question
+- Part 3 - 5 pts
+- Part 4 - 8 pts
+- Part 5 - 6 pts
+- Part 6 - 4 pts
+

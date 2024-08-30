@@ -1,10 +1,11 @@
 # Lab 03
 
 - [Lab Procedure](#lab-procedure)
-- [Part 1 - IO Redirection](#part-1---io-redirection)
-- [Part 2 - Rolling the Dice](#part-2---rolling-the-dice)
-- [Part 3 - Retrospective](#part-3---retrospective)
-- [Part 4 - .profile and PATH](#part-4---profile-and-path)
+- [Part 1 - `config` your connection](#part-1---config-your-connection)
+- [Part 2 - IO Redirection](#part-2---io-redirection)
+- [Part 3 - Rolling the Dice](#part-3---rolling-the-dice)
+- [Part 4 - Retrospective](#part-4---retrospective)
+- [Part 5 - .profile and PATH](#part-5---profile-and-path)
 - [Extra Credit - Room for Improvement](#extra-credit---room-for-improvement)
 - [Submission](#submission)
 - [Rubric](#rubric)
@@ -29,7 +30,24 @@ For each part below, you will be asked to do an action or answer a question. The
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-## Part 1 - IO Redirection
+## Part 1 - `config` your connection
+
+On your local system (`exit` from your AWS instance), you used an SSH command to log on to your AWS Ubuntu instance. There is a neat configuration file that can be used to create an alias of sorts. Read the resources for this section, then configure the `.ssh/config` file for your user on your system with information on your `ssh` connection to your AWS instance.
+
+1. Write the command you have been using to `ssh` in to your AWS instance.
+2. Provide the HostName (IP address) of your AWS Ubuntu instance:
+3. Provide the user name that you are logging on to the system with:
+4. Provide the absolute / full path to the private key (Identity File) on your local system:
+5. On your local system, edit `~/.ssh/config` to contain an entry with information about logging on to your AWS Ubuntu instance.  Note that the answer template wants the contents you wrote to the file.
+6. Write the new form of the `ssh` command to connect to your AWS instance.
+
+- **Resources**
+- [linuxize - Using the ssh config file](https://linuxize.com/post/using-the-ssh-config-file/)
+- [cyberciti.biz - config file examples](https://www.cyberciti.biz/faq/create-ssh-config-file-on-linux-unix/)
+- The `Port`, if you wish to include it in your `config` is `22`
+
+
+## Part 2 - IO Redirection
 
 Find out what each command (including its flags) does and write a description beside it.  Don't forget to lookup commands & flags using `man` and / or some Google-fu (ability to use Google search) to find out. All of the commands can be run - a note is included if there is any additional setup to make it work.
 
@@ -52,7 +70,7 @@ Sample:
 - [freeCodeCamp - How to Set an Environment Variable in Linux](https://www.freecodecamp.org/news/how-to-set-an-environment-variable-in-linux/)
 - [Linuxize - How to Set and List Environment Variables in Linux](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/)
 
-## Part 2 - Rolling the Dice
+## Part 3 - Rolling the Dice
 
 It is recommended to use your AWS instance for this part since your repository is cloned there and `ssh` authentication with GitHub should be set up.  But I'm just a set of instructions with good advice.
 
@@ -87,7 +105,7 @@ If you don't make it through all of a step or don't complete all 6 steps, leave 
 - [IO Flood - Bash While Loop: Shell Scripting Reference Guide](https://ioflood.com/blog/bash-while-loop/)
 - [ShellCheck - finds bugs in your shell scripts](https://www.shellcheck.net/)
 
-## Part 3 - Retrospective
+## Part 4 - Retrospective
 
 A retrospective is a moment of refection after a task.
 
@@ -95,7 +113,7 @@ A retrospective is a moment of refection after a task.
 2. Was anything familiar working with a new language compared to one you are used to?
 3. Assuming you `push`ed your `commit`s to GitHub, view your `commit` history.  Did you write good `commit` messages that refer to what tasks were completed at each commit?  What would you improve?
 
-## Part 4 - .profile and PATH
+## Part 5 - .profile and PATH
 
 It is recommended to use your AWS instance for this part since your repository is cloned there and that is where your script should be.
 
@@ -141,12 +159,14 @@ Make sure you `commit` and `push` your script changes for grading and add a note
 
 ## Rubric
 
-- Part 1 - 1 pt each / 6 pts total
-- Part 2 - 6 pts total
+- Part 1 - 3 pts
+  - 0.5 pts / question
+- Part 2 - 1 pt each / 6 pts total
+- Part 3 - 6 pts total
   - minimum of 6 commits, each commit completes 1 task
   - 1 complete task = 1 pt
-- Part 3 - 1 pt each / 3 pts total
-- Part 4 - 0.5 pts each / 3.5 pts total
+- Part 4 - 1 pt each / 3 pts total
+- Part 5 - 0.5 pts each / 3.5 pts total
 - Extra Credit - 1 pt
 - Point deductions:
   - minus 2 pts = no commits for each part && no comments indicating parts building on each other
