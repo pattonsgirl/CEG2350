@@ -1,4 +1,4 @@
-# Lab 06
+# Lab 06 - UNRELEASED
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - System Discovery](#part-1---system-discovery)
