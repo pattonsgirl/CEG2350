@@ -18,7 +18,7 @@ valid answers
 
 1. git command to view the status of the repository:
 2. git command example to add a file for tracking:
-3. git command and process to commit changes:
+3. git command to commit changes:
 4. git command to sync local commits with GitHub:
 5. git command to sync commits on GitHub to `clone`d repository:
 
