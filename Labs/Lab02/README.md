@@ -25,9 +25,9 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - clone wars
 
-`ssh` to your AWS instance for this part (finish setup from Part 4). It is highly recommended you look at the Resources listed below.
+`ssh` to your AWS instance for this part. It is highly recommended you look at the Resources listed below.
 
-- **Useful commands for this part: `ssh-keygen`, `cat`, `git clone`, `git add`, `git commit`, `git push`**
+- **Useful commands for this part: `ssh-keygen`, `cat`, `git clone`, `git add`, `git commit`, `git push`, `git pull`**
 
 1. Create an SSH key pair on your AWS Ubuntu instance.
 2. Add the public key to GitHub
