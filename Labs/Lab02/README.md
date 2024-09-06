@@ -1,4 +1,4 @@
-# Lab 02 - UNRELEASED
+# Lab 02
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - clone wars](#part-1---clone-wars)
