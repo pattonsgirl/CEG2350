@@ -1,0 +1,10 @@
+giraffe
+elephant
+lion
+zebra
+hippo
+kapybarra
+lion
+tiger
+bears
+
