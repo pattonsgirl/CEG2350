@@ -1,4 +1,4 @@
-# Lab 03 - UNRELEASED
+# Lab 03
 
 - [Lab Procedure](#lab-procedure)
 - [Part 1 - `config` your connection](#part-1---config-your-connection)
@@ -56,7 +56,6 @@ Sample:
   - Full credit: `echo` prints "This is easy" to standard output, which is redirected to the file named `button` in the current directory.  `button` now contains the text, "This is easy".
 
 1. `printenv HOME > thishouse`
-    - patched from `$HOME` to `HOME` 2/1
 2. `cat doesnotexist 2>> hush.txt`
 3. `cat nums.txt | sort -n >> all_nums.txt`
     - To run: create a file named `nums.txt` containing random numbers, each on a new line
@@ -72,7 +71,7 @@ Sample:
 
 ## Part 3 - Rolling the Dice
 
-It is recommended to use your AWS instance for this part since your repository is cloned there and `ssh` authentication with GitHub should be set up.  But I'm just a set of instructions with good advice.
+Use your AWS instance for this part since your repository is cloned there and `ssh` authentication with GitHub should be set up.  But I'm just a set of instructions with good advice.
 
 The overall goal is to create a script that randomly generates a set of random numbers within the range specified by the script user.  In steps 1 - 5, assume you are rolling one die.
 
@@ -115,28 +114,33 @@ A retrospective is a moment of refection after a task.
 
 ## Part 5 - .profile and PATH
 
-It is recommended to use your AWS instance for this part since your repository is cloned there and that is where your script should be.
+Use your AWS instance for this part since your repository is cloned there and that is where your script should be.
 
-In this part, your task is to read `~/.profile` and focus on the `if` statements that would change the value of `PATH`, **if** one of the statements was `true`.  Your goal is to create the things needed for **one** of the conditions to evaluate to `true`.  
+The overall goal is to, from any directory, able to refer to your script by name, `roll`, and have your script execute.  To do so, `roll` needs to have the correct permissions **and** be located in a directory listed in `PATH`.
+
+In this part, your task is to read `~/.profile` and focus on the `if` statements that would change the value of `PATH`, **if** one of the statements was `true`.
 
 DO NOT MODIFY THE CONTENT of the `.profile` file.  Right now, both conditions evaluate to `false`. 
   - Think about how you could confirm that statement - that both conditions are currently `false`.
   - Remember, the `test` command is what is being used when you see `[` (square brackets).  
   - The flag / relational condition being checked is an option of the `test` command.
 
-1. What is the current value of the `PATH` environment variable?
+1. What is the value of the `PATH` environment variable?
 
-2. Read through your user's `~/.profile`.  Pick one condition to make `true` that, if `true`, will add the directory to be part of the `PATH` variable.  What needs to happen to make the condition `true`?
+2. Read through `ubuntu`'s `~/.profile`.  Pick one condition to make `true` that, if `true`, will add the directory to be part of the `PATH` variable.  What needs to happen to make the condition `true` (what currently **does not exist**)?
 
-3. Make the folder required in the location required. Write the command(s) used and the full path of the folder.
+3. Based on your evaluation above, use commands to create what is necessary to have the condition evaluate to `true`.
 
-4. Reload `~/.profile` either with `source` or by logging out and `ssh`ing back in. What is the value of the `PATH` environment variable? What was added now vs. in your answer to 1?
+4. Reload / run the statements in `~/.profile` either with `source` or by logging out and `ssh`ing back in. 
+  - What is the value of the `PATH` environment variable? 
+  - What was added now vs. in your answer to question 1?
 
 5. Copy `roll` into the folder. Write the command(s) used.
+  - Note: for added fun, do a symbolic link or hard link to the original script.  Not going to show you how yet, but try Google-ing to see if you can crack it.
 
-6. Modify the permissions so that you can run your script on the command line from any location. Write the modifications needed.
+6. Modify the script's permissions and / or interpreter so that you can run your script on the command line from any location. Write the modification explanations and commands needed.
     - You can now run `roll` (without the leading `./` or `bash`) from anywhere
-    - Note: if you already modified permissions, fill in this question with what you modified.
+    - Note: if you already modified permissions, fill in this question with what you modified since scripts are not executable by default.
 
 7. In terms of user, group, and other, explain who is allowed to run the script.
 
@@ -170,4 +174,4 @@ Make sure you `commit` and `push` your script changes for grading and add a note
 - Extra Credit - 1 pt
 - Point deductions:
   - minus 2 pts = no commits for each part && no commit messages indicating parts building on each other
-  - minus 1 pt = commits / comments indicate parts building on eachother, but not all commits were broken out as asked
+  - minus 1 pt = commits / comments indicate parts building on each other, but not all commits were broken out as asked
