@@ -1,0 +1,19 @@
+# The following script will read two arguments from the user.  Using the arguments, it will generate n number of files named filename-n  Script will check if filename already exists before creating
+
+# declare interpreter
+
+# script reads 2 arguments
+# arg 1 is filename
+# arg 2 is number of files
+
+# check that two args were given
+
+# perform the following n times
+	# concatenate filename with loop iterator
+	# if file of that name DOES NOT EXIST
+		# create file
+		# Insert phrase "create by yours truly"
+
+	# output name of file created
+
+# at end of script, state "Task complete"
