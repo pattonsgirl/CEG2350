@@ -1,0 +1,5 @@
+
+random_number=$((1 + RANDOM % 30))
+
+# Print the random number
+echo "Table number $random_number"
