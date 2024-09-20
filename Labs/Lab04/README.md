@@ -1,4 +1,4 @@
-# Lab 04 - UNRELEASED
+# Lab 04
 
 - [Lab Procedure](#lab-procedure)
 - [Part 1 - Task Tracker](#part-1---task-tracker)
