@@ -1,110 +1,59 @@
-## Lab 07
+## Lab 06
 
 - Name:
 - Email:
 
-## Part 1
+## System Discovery
 
-1. Command:
-```
-Output here
-```
-2. Command:
-```
-Output here
-```
-3. For the `xvda` partition table:
-    - Does it use MBR or GPT?
-    - How many partitions are on the block device?
-    - What is the largest partition?
-4. Command:
-```
-Output here
-```
-5. For the primary partition:
-    - What partition is the root filesystem on?
-    - What is the partition label?
-    - What type of filesystem is on the partition?
-6. Command:
-```
-Output here
-```
-7. For the root filesystem:
-    - What is the total size?
-    - How much space is used?
-    - Where is it mounted to?
-8. Command:
-```
-Output here
-```
-9. Fields & purpose of fields in entry that mount the root filesystem
+1. CPU info:
+    - CPU brand:
+    - Number of cores:
+    - Number of logical cores:
+2. GPU info:
+    - Integrated GPU info:
+    - Dedicated GPU info: 
+    - Link to driver software for GPU: 
+3. Memory info:
+    - Physical memory (RAM) size (in GB):
+    - Virtual memory size (in GB):
+4. Storage info (repeat for each disk attached to your system): 
+    - Disk 1 type:
+    - Disk 1 manufacturer and model:
+    - Total disk 1 size (in GB):
+5. Primary partition info:
+    - Primary partition mount point:
+    - Remaining space on primary partition (in GB):
+    - Filesystem on primary partition:
+6. BIOS / UEFI info: 
+    - BIOS or UEFI version: 
+    - How to access your BIOS / UEFI:
+7. Kernel / OS info:
+    - Bootloader software on your system: 
+    - Kernel version of your operating system:
+    - Operating System name & version: 
 
+## Part 2 - Virtualize the Machine
 
-## Part 2
+1. Virtual Machine Manager:
+    - Software & version:
+    - Link to software URL: 
+    - ![screenshot of installed & running software](RELATIVE_PATH_TO_SCREENSHOT_IN_FOLDER)
 
-1. `gdisk` main menu options
-   - `p`:
-   - `o`:
-   - `n`:
-   - `i`:
-   - `w`:
-2. Steps to create a partition table and partition on `xvbd`
-3. Partition table on `/dev/xvdb`
-```
-Paste partition table information here
-```
-4. Answer these questions:
-   
-   a. What device name does the partition use?
-      - Answer: 
-        
-   b. What size is the partition in GB?
-      - Answer: 
-        
-   c. What filesystem type will be used on the partition?
-      - Answer: 
+2. Guest OS information: 
+    - Linux distribution selected:
+    - URL downloaded from: 
 
-## Part 3
+3. Guest VM resource allocations:
+    - Number of Virtual CPUs:
+    - RAM: 
+    - Hard disk space: 
 
-1. Commands used:
-2. Commands used:
-```
-output here
-```
-3. Commands used:
-4. Commands used:
-5. Contents of `/mnt/newworld`:
-```
-list here
-```
-6. Commands used:
-7. When can I interact with files on the filesystem on the partition in `xvdb`?
-   - Answer:
-   
-## Part 4
+4. Guest OS Installation:
+    - Note steps completed to install and then run the guest operating system
+    - ![screenshot of installed & running Guest OS in VM](RELATIVE_PATH_TO_SCREENSHOT_IN_FOLDER)
 
-1. Commands used:
-2. Line you added to `/etc/fstab`:
-3. How did you confirm that the mount point changed? (Commands used or explain process):
-4. **If you restored `/etc/fstab`**, write here why you did not feel comfortable leaving your changes in place
+## Part 3 - Virtual Playground:
 
-
-## Part 5
-
-1. Commands used:
-2. What does the `strings` command do?
-   - Answer:
-3. Write a short explanation of what you saw in `strings` output:
-4. Commands used:
-5. Is the secret you deleted still showing up in the `strings` output?
-
-### Report: How to Permanently Delete a File
-
-**Write your report here**
-
-## Extra Credit Answers:
-
-1. Commands used: 
-2. Explanation:
-3. Commands used: 
-4. Commands used: 
+1. How to change your desktop background in your VM:
+2. How to install VSCode in your VM:
+3. How to connect to your AWS instance from your VM using `ssh`:

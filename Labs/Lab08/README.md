@@ -1,14 +1,18 @@
-# Lab 08 - UNRELEASED
+# Lab 07 - UNRELEASED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Game the System](#part-1---game-the-system)
-- [Part 2 - Process Control](#part-2---process-control)
-- [Part 3 - back and fore](#part-3---back-and-fore)
-- [Part 4 - Detach](#part-4---detach)
+- [Part 1 - What do we have?](#part-1---what-do-we-have)
+- [Part 2 - Something new](#part-2---something-new)
+- [Part 3 - File it away](#part-3---file-it-away)
+- [Part 4 - Take a fstab at this](#part-4---take-a-fstab-at-this)
+- [Part 5 - What is dead may still be read](#part-5---what-is-dead-may-still-be-read)
+- [Extra Credit - Create a Virtual Filesystem](#extra-credit---create-a-virtual-filesystem)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
 ## Lab Procedure
+
+**THIS LAB MUST BE COMPLETED IN THE AWS INSTANCE YOU SETUP IN LAB 01.**
 
 [Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/68834/modules/items/6128516)
 
@@ -16,108 +20,158 @@ Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-Create a new directory, `Lab08`
+Create a new directory, `Lab07`
 
-Write answers in `Lab08.md` the [LabTemplate.md is here](LabTemplate.md).
+Write answers in `Lab07.md` the [LabTemplate.md is here](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab08/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab07/LabTemplate.md)
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-## Can't SSH?
+## Part 1 - What do we have?
 
-If you cannot `ssh` to your instance anymore, you may have run into one of these scenarios:
-- You overwrote the partition table (or partitions) in `xvda` - this would erase your `root` / `/` filesystem.
-- You wrote a bad entry in `/etc/fstab` - if the system cannot mount the disk, the boot process will hang and not complete 
+Your AWS instances have one block device in use - `xvda`.  In this section, you will explore commands view partition and filesystem information about `xvda`.  **Do not make any modification to `xvda`.**
 
-If you think one of those scenarios happened to you, you'll need to go back to [Lab 01](../Lab01/) and create a new stack. Once you are in the new instance, don't forget the steps to cloning your GitHub repo:
-1. create a new keypair for authentication to GitHub
-2. add the public key to your GitHub user settings
-3. clone with `ssh`
+Hint, remember that disk devices are in the `/dev/` folder  
 
-## Part 1 - Game the system
+- **Useful Commands: `lsblk`, `parted`, `blkid`, `df`, `cat`**
 
-**Useful commands: `apt`, `which`, `whereis`**
+For tasks that ask you to use a command, write the command used and include the output of the command.
 
-Choose a command line game from this site: [It's Foss - Top 10 Command Line Games for Linux](https://itsfoss.com/best-command-line-games-linux/)
-   - `bastet` is what this lab was tested on
-
-In the answer template, document the game name, how you installed it, where the executable is located, and how to run the game.
-
-For the remainder of this lab, you will be running this game to practice controlling processes.
-
-## Part 2 - Process control
-
-Create a second `ssh` session to your AWS instance.  You should now have two `ssh` sessions to your AWS instance.  This will be referred to as Shell A and Shell B in the exercises below - you decide which is A and which is B.
-
-- **Useful Commands: `pstree`, `ps`, `kill`, `bg`, `job`, `fg`**
-
-1. Identify the following `ps` fields:
-   - USER / UID, PID, PPID, TTY, STAT, and COMMAND / CMD
-2. Craft a `ps` command for processes owned by your user that will show show the fields listed above and identify the `ps` flag that will show processes without a controlling terminal.
-3. In Shell A, run the game.  Using Shell B, run your `ps` command.
-Provide answers to the following, using Shell B to observe the process statuses:
-4. For the game:
-   - What is it's process id?
-   - What is it's parent process id?
-   - What process is the parent process?
-5. Use `kill` to kill only the game.
-   - Describe what the effect was.
-6. [Run the game again] Use `kill` to kill the game and it's parent process.
-   - Describe what the effect was.
-7. Create a new `ssh` session - Shell C - and run the game again.  Watch the processes from the other terminal.  Describe what happens, using process knowledge in your description, **if you close / `exit` your connection with Shell C and determine if you can reenter the game (resume the process)**.
+1. Use `lsblk` to list only information about the `xvda` block device.
+2. Use `parted` to print the partition table of the `xvda` block device.
+3. For the `xvda` partition table:
+    - Does it use MBR or GPT?
+    - How many partitions are on the block device?
+    - What is the largest partition?
+4. Use `blkid` to view information of `xvda` and it's partitions.  Play with `*` to get all matches that start with `\dev\xvda`  
+5. For the partition with the root filesystem:
+    - What is the device name?
+    - What is the partition label?
+    - What type of filesystem is on the partition?
+6. Use `df` to view file system disk space usage in human readable format (meaning it prints MB/KB/GB)
+7. For the root filesystem:
+    - What is the total size?
+    - How much space is used?
+    - Where is it mounted to?
+8. View the contents of the filesystem table in `/etc/fstab`
+9. Explain fields & purpose of fields in the entry that mounts the root filesystem.
 
 **Resources**
-- [Linuxize - Ps Command in Linux (List Processes)](https://linuxize.com/post/ps-command-in-linux/)
-- [Digital Ocean - How To Use ps, kill, and nice to Manage Processes in Linux](https://www.digitalocean.com/community/tutorials/how-to-use-ps-kill-and-nice-to-manage-processes-in-linux)
+- [IBM - Displaying partition information using `parted`](https://developer.ibm.com/tutorials/l-lpic1-104-1/#displaying-partition-information-using-parted)
+- [linuxconfig - How fstab works – introduction to the `/etc/fstab` file on Linux](https://linuxconfig.org/how-fstab-works-introduction-to-the-etc-fstab-file-on-linux)
 
-## Part 3 - back and fore
 
-1. Run the game in the foreground.  
-2. Send a `STOP` signal to suspend it.
-3. Use `ps` to confirm the process is still alive, but has been stopped.  Provide the line of output that relates to the process.
-4. Resume the process in the foreground.
-5. Send a `TERMINATE` signal to kill it.
-6. Start the game as a background process.  Repeat 3 times.
-7. Display the output of `jobs` and your custom output format `ps` command
-   - If `jobs` is empty, make sure you are running it in the same shell, the controlling terminal, that you created the background jobs.
-8. Kill one job.
-9. Move one job to the foreground.
-10. Describe what happens, using process knowledge in your description, if you close / `exit` your connection with this shell and determine if you can reenter the game (resume the process).
+## Part 2 - Something new
 
-**Resources**
-- [Introduction To Unix Signals Programming - Sending Signals To Processes](https://www.cs.kent.edu/~ruttan/sysprog/lectures/signals.html)
-- [Digital Ocean - How To Use Bash's Job Control to Manage Foreground and Background Processes](https://www.digitalocean.com/community/tutorials/how-to-use-bash-s-job-control-to-manage-foreground-and-background-processes)
+You have had an unformatted disk available on your AWS instance all along.  Time to create a partition table and a partition on it (and in the next step create a filesystem).  The disk is `xvdb` - you can see it, but that it has no partitions, if you run `lsblk`.
 
-## Part 4 - Detach
+- **Useful Commands: `df`, `lsblk`, `blkid`, `gdisk`**
 
-The perhaps obtuse goal of the previous two exercises is to understand process control, but also to realize that with these methods, your shell connection must remain active.  If you end your shell session, the processes attached to it also end.  There are tools that allow you to run processes detach from your shell session.  This lab will have you use `tmux`, but other tools exist.
-
-1. Create a `tmux` session.  Run the game in the session.
-2. Leaving your game running, detach from the session.
-3. Run your custom formatted `ps` command, showing processes without a controlling terminal
-4. Use `tmux` to list sessions
-5. Close your `ssh` shell session to your instance, then `ssh` in again.  How can you determine if your `tmux` session with your game running is available?
-6. Reattach to your `tmux` session running the game.
-7. Kill the `tmux` session
+1. Using the `gdisk` GPT partition table manipulator, find out what the following main menu options do:
+   - `p`
+   - `o`
+   - `n`
+   - `i`
+   - `w`
+2. Edit the `xvdb` block device with `gdisk`. Using the main menu, configure the disk to use the GPT partition table type, have at least 1 partition, and have that partition use the Linux filesystem type. Save your changes to the disk.
+    - This will be the only partition, so it can use the recommended sizes, which is to say, start at the end of the GPT partition table, and span to the last block of the disk.
+3. Partition table of `xvdb`
+4. Answer the following about `xvdb` in its current state:
+    - What is the device name of the only partition?
+    - What is the size of the only partition?
+    - What filesystem type will be used on the only partition?
 
 **Resources**
-- [RedHat - A beginner's guide to tmux](https://www.redhat.com/sysadmin/introduction-tmux-linux)
+- [DigitalOcean - click "Interactive partitioning with `gdisk`"](https://docs.digitalocean.com/products/volumes/how-to/partition/)
+- [IBM - Partitioning an GPT disk using `gdisk`](https://developer.ibm.com/tutorials/l-lpic1-104-1/#partitioning-an-gpt-disk-using-gdisk)
+
+## Part 3 - File it away
+
+Now that you have a partition, you can create a filesystem on it in order to interact with it to store and organize files and create permissions for the files.
+
+- **Useful Commands: `mkfs`, `mount`**
+
+1. Make an `ext4` filesystem on the partition on `xvdb`
+2. Use `blkid` to view information of the partition on `xvdb`
+3. Make a directory in `/mnt/` named `newworld`
+4. Mount the partition on `xvdb` to `newworld`
+5. In `newworld` create some files and directories
+6. `umount` the partition on `xvdb`
+7. When can I interact with files on the filesystem on the partition in `xvdb`?
+
+**Resources**
+- [IBM - Creating Filesystems](https://developer.ibm.com/tutorials/l-lpic1-104-1/#creating-filesystems)
+      - Information on `ext4` is folded into `ext3` since it makes slight improvements over `ext3`
+- [TechMint - How to Change Linux Partition Label Names on EXT4 / EXT3 / EXT2](https://www.tecmint.com/change-modify-linux-disk-partition-label-names/)
+
+## Part 4 - Take a `fstab` at this
+
+Right now, every time you want to access your filesystem, you need to mount it - this includes after rebooting the system.  It would be handy to have it auto-mount.  The filesystem table file - `fstab` is a file that stores  information about wat to mount when the system boots.  You task in this part is to **append** a new entry to the file to automount your filesystem on the partition on `xvdb`.
+
+1. Make a backup of the current version of `/etc/fstab` to `/etc/fstab.bak`
+2. Add a line to `/etc/fstab` to mount the partition on `xvdb` to the mount point (`/mnt/newworld`)
+3. Test your changes using `mount -a` to mount / remount records according to `etc/fstab` and use commands to validate your entry worked
+4. **If you do not think your changes are correct** restore `/etc/fstab` from `/etc/fstab.bak`.  If you think they are correct, you may leave your changes in place.
+
+**Resources**
+- [HowToGeek - How to write an fstab file on Linux](https://www.howtogeek.com/444814/how-to-write-an-fstab-file-on-linux/)
+- [linuxconfig - fstab](https://linuxconfig.org/how-fstab-works-introduction-to-the-etc-fstab-file-on-linux)
+- [ubuntu - fstab](https://help.ubuntu.com/community/Fstab)
+
+## Part 5 - What is dead may still be read
+
+When you delete a file, you are used to it no longer being accessible, or to it still being temporarily available / recoverable via the Recycle Bin.  But once you can't open it anymore, it should be gone, including from the disk, right?  Right?!?
+
+This part will have you acknowledge that to truly make data gone and no longer readable, there are extra steps involved.  The general recommendation is to trust nothing, and take disks that have had important data on it, like tax returns, credit card info, passwords, etc, taken to a shredding center and properly ripped to computer-illegible pieces.
+
+We are also only focused on data stored on disks for this exercise.  If you look into this topic of data forensics, there is another prong of this that focusing on making sure RAM is cleared of information.
+
+- **Useful Commands: `mount`, `strings`**
+
+1. On the filesystem you created on the `xvdb` partition, create **two** files, each with a different FAKE secret about you.
+2. What does the `strings` command do?  If you refered to an internet resource, make sure you cite it by including the URL.
+3. Run `strings` on the filesystem partition on `xvdb` - read through the output and make an analysis about what output you are viewing.
+4. Delete **one** of the files with a secret. 
+5. Run `strings` on the filesystem partition on `xvdb` - read through the output and determine if the secret, while no longer accessible via the filesystem, is still readable on the partition.
+6. Use `shred` to overwrite the contents of your second secret file on the disk.  Write a short report of steps and provide proof that the file is no longer readable on the disk or accessible in the filesystem.  Include an explaination of flags used.
+
+**Resources**
+- [freeCodeCamp - How to Securely Erase a Disk and File using the Linux shred Command](https://www.freecodecamp.org/news/securely-erasing-a-disk-and-file-using-linux-command-shred/)
+
+## Extra Credit - Create a Virtual Filesystem
+
+Now that you have made a virtual machine, a thought might be how does it use the disk space on your host.  In the context of a virtual machine, the reserved space on the host has a partition table, partitions, and a filesystem mounted to `/`
+
+Write the commands used in each step (unless otherwise stated).
+
+1. Use **either** `dd` or `fallocate` to reserve 2 GB of space from `/dev/xvda`.  
+2. Write an explanation of the command you used.
+2. Make a filesystem on the reserved space.
+3. Mount the filesystem to `/mnt/vfs`.
+
+**Resources**
+- [LinuxOPsys - How to use `fallocate`](https://linuxopsys.com/topics/fallocate-command-in-linux)
+- [LinuxOPsys - Creating virtual filesystem with `dd`](https://linuxopsys.com/topics/linux-dd-command-with-examples#2_Creating_virtual_filesystemBackup_images_of_CD_or_DVDs_as_iso_files)
+- [Boch's User Manual - Mounting a disk image using the loop device](https://bochs.sourceforge.io/doc/docbook/user/loop-device-usage.html)
+- [DZone - Loop Device in Linux](https://dzone.com/articles/loop-device-in-linux)
 
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab08` folder with at minimum:
+1. Verify that your GitHub repo has a `Lab07` folder with at minimum:
 
-   - `Lab08.md`
+   - `Lab07.md`
 
-2. In the Pilot Dropbox, paste the URL to the `Lab08` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab08
+2. In the Pilot Dropbox, paste the URL to the `Lab07` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350s24-YOURGITHUBUSERNAME/tree/main/Lab07
 
 ## Rubric
 
-- Part 1 - 1 pt per - 4 pts total
-- Part 2 - 1 pt per - 7 pts total
-- Part 3 - 1 pt per - 10 pts total
-- Part 4 - 1 pt per - 7 pts total
+- Part 1 - 1 pt per question - 9 pts total
+- Part 2 - 1 pt per question - 4 pts total
+- Part 3 - 1 pt per question - 6 pts total
+- Part 4 - 1 pt per question - 3 pts total
+- Part 5 (+ how to truly delete file data) - 1 pt per question - 6 pts total
+- Extra credit - 10% (2.8 pts)

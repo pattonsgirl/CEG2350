@@ -1,10 +1,10 @@
-# Lab 09 - UNRELEASED
+# Lab 08 - UNRELEASED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Compiling](#part-1---compiling)
-- [Part 2 - Document](#part-2---document)
-- [Part 3 - `makey makey`](#part-3---makey-makey)
-- [Extra Credit - Ignore That](#extra-credit---ignore-that)
+- [Part 1 - Game the System](#part-1---game-the-system)
+- [Part 2 - Process Control](#part-2---process-control)
+- [Part 3 - back and fore](#part-3---back-and-fore)
+- [Part 4 - Detach](#part-4---detach)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -16,146 +16,108 @@ Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-**Create a new directory, `Lab09`**
+Create a new directory, `Lab08`
 
-Write answers in `Lab09.md` the [LabTemplate.md is here](LabTemplate.md).
+Write answers in `Lab08.md` the [LabTemplate.md is here](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab09/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab08/LabTemplate.md)
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-## Part 1 - [Compiling](https://xkcd.com/303/)
+## Can't SSH?
 
-It is expected that you are using your AWS instance or a Linux based system where you have cloned your repository to complete the command taskings.
+If you cannot `ssh` to your instance anymore, you may have run into one of these scenarios:
+- You overwrote the partition table (or partitions) in `xvda` - this would erase your `root` / `/` filesystem.
+- You wrote a bad entry in `/etc/fstab` - if the system cannot mount the disk, the boot process will hang and not complete 
 
-**Useful Commands: `gcc`, `g++`, `wget`**
+If you think one of those scenarios happened to you, you'll need to go back to [Lab 01](../Lab01/) and create a new stack. Once you are in the new instance, don't forget the steps to cloning your GitHub repo:
+1. create a new keypair for authentication to GitHub
+2. add the public key to your GitHub user settings
+3. clone with `ssh`
 
-1. Select from either [TODO-C](TODO-C) or [TODO-CPP](TODO-CPP). Download the files in the folder to the `Lab09` folder in your repository folder.  `add`, `commit` and `push` the source code files.
-2. Determine how to install and verify the installation of the C / C++ compiler for Windows.
-   - Recommended: MinGW
-3. Determine how to install and verify the installation of the C / C++ compiler for Linux.
-   - Recommended: `gcc`, g++, clang
-4. Find one option for how to compile and run C/C++ code if the compiler is not supported on the OS.  In other words, find a recommended browser based compiler.
-   - The last piece - not being able to install the compiler - is a common issue for MacOS and Chromebooks or if you don't have permissions to install software to the machine you are using.
-5. Using your AWS instance, compile the source code into an executable program.
-6. Using your AWS instance, run the executable program.
+## Part 1 - Game the system
 
-Resources:
-- [Scaler - Compilation Process in C](https://www.scaler.com/topics/c/compilation-process-in-c/)
-- [Dartmouth - Compiling With Multiple Source Files](https://www.dartmouth.edu/~rc/classes/softdev_linux/complex_compile.html)
+**Useful commands: `apt`, `which`, `whereis`**
 
-## Part 2 - Document
+Choose a command line game from this site: [It's Foss - Top 10 Command Line Games for Linux](https://itsfoss.com/best-command-line-games-linux/)
+   - `bastet` is what this lab was tested on
 
-It is expected that you are using your AWS instance or a Linux based system where you have cloned your repository to complete the taskings.
+In the answer template, document the game name, how you installed it, where the executable is located, and how to run the game.
 
-**Useful `git` commands: `branch`, `switch`, `commit`, `push`, `merge`**
+For the remainder of this lab, you will be running this game to practice controlling processes.
 
-1. Fill in the User Guide section with a user guide for the program.  Provide clear and concise instructions on what the program is (its purpose), how to build and run it, and how to use the program.
-2. Create a branch in your repository folder.  Create commits on the branch to complete the task 3.  Push your commits on the branch to GitHub.
-3. For all functions in the `.c` or `.cpp` files, add a comment block that includes the following:
-   - What function does
-   - What its parameter values are
-   - what values it returns (if a function returns one type of value usually, and another value to indicate an error, your comment should describe both of these types of return values).
-```cpp
-/*
- * Function:  approx_pi 
- * --------------------
- * computes an approximation of pi using:
- *    pi/6 = 1/2 + (1/2 x 3/4) 1/5 (1/2)^3  + (1/2 x 3/4 x 5/6) 1/7 (1/2)^5 +
- *
- *  n: number of terms in the series to sum
- *
- *  returns: the approximate value of pi obtained by suming the first n terms
- *           in the above series
- *           returns zero on error (if n is non-positive)
- */
+## Part 2 - Process control
 
-double approx_pi(int n) {
-  ...
-}
-```
-4. Test that your program still compiles and the resulting executable still works as expected.
-5. Merge your commits with the `main` branch - do not delete the branch.  Make sure what's visible in GitHub is:
-   - your branch where you made the commits to comment the code base (do not delete the branch)
-   - the code files, visible in `main`, now with comments on functions after the merge
-6. Fill out the `git` `branch` Guide with commands used to work with branches.
+Create a second `ssh` session to your AWS instance.  You should now have two `ssh` sessions to your AWS instance.  This will be referred to as Shell A and Shell B in the exercises below - you decide which is A and which is B.
 
-Resources:
-- [FreeCodeCamp - Git Branching Commands Explained with Examples](https://www.freecodecamp.org/news/git-branching-commands-explained/)
-- [Geeks for Geeks - How to Set Upstream Branch on Git?](https://www.geeksforgeeks.org/how-to-set-upstream-branch-on-git/)
-- [MIT - Git command-line interface](https://missing.csail.mit.edu/2020/version-control/)
+- **Useful Commands: `pstree`, `ps`, `kill`, `bg`, `job`, `fg`**
 
-## Part 3 - [`makey makey`](https://www.youtube.com/watch?v=X1mYalegtdI&ab_channel=MakeyMakey)
+1. Identify the following `ps` fields:
+   - USER / UID, PID, PPID, TTY, STAT, and COMMAND / CMD
+2. Craft a `ps` command for processes owned by your user that will show show the fields listed above and identify the `ps` flag that will show processes without a controlling terminal.
+3. In Shell A, run the game.  Using Shell B, run your `ps` command.
+Provide answers to the following, using Shell B to observe the process statuses:
+4. For the game:
+   - What is it's process id?
+   - What is it's parent process id?
+   - What process is the parent process?
+5. Use `kill` to kill only the game.
+   - Describe what the effect was.
+6. [Run the game again] Use `kill` to kill the game and it's parent process.
+   - Describe what the effect was.
+7. Create a new `ssh` session - Shell C - and run the game again.  Watch the processes from the other terminal.  Describe what happens, using process knowledge in your description, **if you close / `exit` your connection with Shell C and determine if you can reenter the game (resume the process)**.
 
-It is expected that you are using your AWS instance or a Linux based system where you have cloned your repository to complete the tasking.
+**Resources**
+- [Linuxize - Ps Command in Linux (List Processes)](https://linuxize.com/post/ps-command-in-linux/)
+- [Digital Ocean - How To Use ps, kill, and nice to Manage Processes in Linux](https://www.digitalocean.com/community/tutorials/how-to-use-ps-kill-and-nice-to-manage-processes-in-linux)
 
-**Useful commands: `make`**
+## Part 3 - back and fore
 
-Write a `Makefile` in the directory with your code files.
+1. Run the game in the foreground.  
+2. Send a `STOP` signal to suspend it.
+3. Use `ps` to confirm the process is still alive, but has been stopped.  Provide the line of output that relates to the process.
+4. Resume the process in the foreground.
+5. Send a `TERMINATE` signal to kill it.
+6. Start the game as a background process.  Repeat 3 times.
+7. Display the output of `jobs` and your custom output format `ps` command
+   - If `jobs` is empty, make sure you are running it in the same shell, the controlling terminal, that you created the background jobs.
+8. Kill one job.
+9. Move one job to the foreground.
+10. Describe what happens, using process knowledge in your description, if you close / `exit` your connection with this shell and determine if you can reenter the game (resume the process).
 
-At minimum, craft the following targets:
-- `build`
-   - depends on source code files
-   - builds an executable from the source code
-- `run`
-   - depends on the executable with name defined above
-   - executes (runs) the executable
-- `clean`
-   - removes the executable
+**Resources**
+- [Introduction To Unix Signals Programming - Sending Signals To Processes](https://www.cs.kent.edu/~ruttan/sysprog/lectures/signals.html)
+- [Digital Ocean - How To Use Bash's Job Control to Manage Foreground and Background Processes](https://www.digitalocean.com/community/tutorials/how-to-use-bash-s-job-control-to-manage-foreground-and-background-processes)
 
-Test the targets in your `Makefile`.
+## Part 4 - Detach
 
-Create a set of instructions for using your `Makefile` to perform its different taskings.
+The perhaps obtuse goal of the previous two exercises is to understand process control, but also to realize that with these methods, your shell connection must remain active.  If you end your shell session, the processes attached to it also end.  There are tools that allow you to run processes detach from your shell session.  This lab will have you use `tmux`, but other tools exist.
 
-Resources:
-- [In-Class `Makefile` demonstration](../../processes/Makefile)
-   - See slide deck for explanation and use to use `make` to call targets
-- [RedSwitches - `make` command in Linux](https://www.redswitches.com/blog/make-command-in-linux/)
-- [IOFlood - `make` command](https://ioflood.com/blog/make-linux-command/)
-   - Includes CMake and AutoTools, which are out of scope for course but good to note.
+1. Create a `tmux` session.  Run the game in the session.
+2. Leaving your game running, detach from the session.
+3. Run your custom formatted `ps` command, showing processes without a controlling terminal
+4. Use `tmux` to list sessions
+5. Close your `ssh` shell session to your instance, then `ssh` in again.  How can you determine if your `tmux` session with your game running is available?
+6. Reattach to your `tmux` session running the game.
+7. Kill the `tmux` session
 
-## Extra Credit - Ignore That
-
-In the root folder of your GitHub repository, create a `.gitignore` file and prevent tracking of your executable programs.  
-
-If you already added your executable for tracking, remove it from future tracking with `git rm --cached <file_name>`, then `commit` & `push` the change.
-   - Just `git rm` would delete it from your working directory ("filesystem") and from tracking.  The `--cached` flag remove it only from tracking.
-
-Resources:
-- [GitHub Docs - Ignoring files](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files)
-- [Git Docs - `gitignore` Documentation](https://git-scm.com/docs/gitignore)
-- [Example `.gitignore` file](../../.gitignore)
+**Resources**
+- [RedHat - A beginner's guide to tmux](https://www.redhat.com/sysadmin/introduction-tmux-linux)
 
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab09` folder with at minimum:
+1. Verify that your GitHub repo has a `Lab08` folder with at minimum:
 
-   - `Lab09.md`
-   - source code files
-   - `Makefile`
+   - `Lab08.md`
 
-2. In the Pilot Dropbox, paste the URL to the `Lab09` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab09
+2. In the Pilot Dropbox, paste the URL to the `Lab08` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab08
 
 ## Rubric
 
-- Part 1 - 6 pts total, 1 point per question
-
-- Part 2 - 6 pts total, 1 point for each item below:
-   - User Guide clearly addresses each category
-   - branch made with commits (and visible in GitHub)
-   - 7 comment blocks added to source code
-   - Each comment block includes description, parameters, and return values
-   - branch merged to `main` (and commented code visible from `main`)
-   - `git` `branch` Guide filled out with commands
-
-- Part 3 - 5 pts total, 1 point for each item below:
-   - `Makefile` exists in `Lab09` folder
-   - `Makefile` has target to build executable program (given dependencies exist)
-   - `Makefile` has target execute program (given dependencies exist)
-   - `Makefile` has target remove executable program
-   - Commands to use `Makefile` added to guide
-
-- Extra Credit - 1 point
+- Part 1 - 1 pt per - 4 pts total
+- Part 2 - 1 pt per - 7 pts total
+- Part 3 - 1 pt per - 10 pts total
+- Part 4 - 1 pt per - 7 pts total

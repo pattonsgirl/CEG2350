@@ -1,59 +1,49 @@
-## Lab 06
+## Lab 05
 
 - Name:
-- Email:
+- Email
 
-## System Discovery
+## Part 2 - Retrospective
 
-1. CPU info:
-    - CPU brand:
-    - Number of cores:
-    - Number of logical cores:
-2. GPU info:
-    - Integrated GPU info:
-    - Dedicated GPU info: 
-    - Link to driver software for GPU: 
-3. Memory info:
-    - Physical memory (RAM) size (in GB):
-    - Virtual memory size (in GB):
-4. Storage info (repeat for each disk attached to your system): 
-    - Disk 1 type:
-    - Disk 1 manufacturer and model:
-    - Total disk 1 size (in GB):
-5. Primary partition info:
-    - Primary partition mount point:
-    - Remaining space on primary partition (in GB):
-    - Filesystem on primary partition:
-6. BIOS / UEFI info: 
-    - BIOS or UEFI version: 
-    - How to access your BIOS / UEFI:
-7. Kernel / OS info:
-    - Bootloader software on your system: 
-    - Kernel version of your operating system:
-    - Operating System name & version: 
+1.
+2.
+3.
 
-## Part 2 - Virtualize the Machine
+## Part 3 - namechange Usage Guide
 
-1. Virtual Machine Manager:
-    - Software & version:
-    - Link to software URL: 
-    - ![screenshot of installed & running software](RELATIVE_PATH_TO_SCREENSHOT_IN_FOLDER)
+THIS SHOULD ALL BE REMOVED AND REPLACED WITH ONLY YOUR USAGE GUIDE TEXT
 
-2. Guest OS information: 
-    - Linux distribution selected:
-    - URL downloaded from: 
+Examples of script usage and output. This should be enough info that  
+you can hand this and the script to someone not in this course and they  
+would be able to understand what your script does and how to use it.
 
-3. Guest VM resource allocations:
-    - Number of Virtual CPUs:
-    - RAM: 
-    - Hard disk space: 
+Use good markdown so that this documentation is pretty and clean on GitHub.
 
-4. Guest OS Installation:
-    - Note steps completed to install and then run the guest operating system
-    - ![screenshot of installed & running Guest OS in VM](RELATIVE_PATH_TO_SCREENSHOT_IN_FOLDER)
+Bellow is kind of how I would format things
 
-## Part 3 - Virtual Playground:
+### What it is
 
-1. How to change your desktop background in your VM:
-2. How to install VSCode in your VM:
-3. How to connect to your AWS instance from your VM using `ssh`:
+Describe your script in plain english, nothing too technical.  Think about this as describing what you made over the dinner table.
+
+### How to run it
+
+If someone wanted to downloaded your script, what steps would they take to have their own copy that they could run
+1. Numbers followed by a space
+2. Create numeric lists
+3. Don't forget `code snips` can go in backticks.
+
+### Examples
+
+```
+Two examples using your script to rename an existing file
+By using the triple quotes, you can enclose a block of code
+And code blocks look very professional
+```
+
+## bulkrenamer Usage Guide - Remove if not doing extra credit
+
+Examples of script usage and output. This should be enough info that  
+you can hand this and the script to someone not in this course and they  
+would be able to understand what your script does and how to use it.
+
+Use good markdown so that this documentation it is pretty and clean on GitHub.

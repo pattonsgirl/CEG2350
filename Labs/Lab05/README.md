@@ -1,13 +1,12 @@
-# Lab 05 - UNRELEASED
+# Lab 04 - UNRELEASED
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Name Change Script](#part-1---name-change-script)
-- [Part 2 - Retrospective](#part-2---retrospective)
-- [Part 3 - Usage Guide](#part-3---usage-guide)
-- [Extra Credit - Bulk Renamer](#extra-credit---bulk-renamer)
+- [regex resources](#regex-resources)
+- [Part 1 - validator](#Part-1---validator)
+- [Part 2 - sed](#Part-2---sed)
+- [Part 3 - awk](#Part-3---awk)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
-- [Additional getopts Resources](#Additional-getopts-Resources)
 
 ## Lab Procedure
 
@@ -17,179 +16,140 @@ Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-Create a new directory, `Lab05`
+Create a new directory, `Lab04`
 
-This lab may have you creating input files, scripts, and output files. All of your work should be found here.
+This lab will have you creating input files, scripts, and output files.
 
-Some questions will need you to write answers in `README.md` the [LabTemplate.md is here](LabTemplate.md).
+Some questions will need you to write answers in `Lab04.md` the [LabTemplate.md is here](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab05/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab04/LabTemplate.md)
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-## Part 1 - Name Change Script
+## regex resources
 
-The following will ask you to write a script that changes a file's name.  The script will allow the user to provide the search pattern to replace, and the replacement for the found pattern.  A sample of using the script, where `namechange` is the name of the script file:
+These are useful resources for remembering regex syntax and testing your expressions against smaller cases.
 
-```
-namechange -f find -r replace filename
-```
+- [Mozilla - regex cheatsheet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet)
+- [regexone - practice regex patterns](https://regexone.com/)
+- [regex101 - test regex patterns](https://regex101.com/)
+- [rubular - test regex patterns](https://rubular.com/)
 
-1. Create a script in your `Lab05` folder named `namechange`. 
-2. Create some files in your folder with common errors (spaces in the filename, a misspelling, etc.).  Sample errors:
-   - `.jpg` is misspelled as `.jgp`
-   - spaces in file names that could be replaced with `-`
-   - files with `foo` in them need to become `bar`
-   - the [createfiles.sh](createfiles.sh) script can be used to generate them
+## Part 1 - validator
 
-**Implement the following features in the `namechange` script:**
+Your task is to write a bash script that cleans a file full of emails.  The email validation script should, given an input file, output to a final file unique and valid emails.
 
-**MAKE COMMITS AS YOU BUILD THIS SCRIPT.  IF YOU ONLY COMMIT THE FINAL SCRIPT, THERE WILL BE A 2 POINT DEDUCTION**
-
-1. Create a function called `printHelp`. `printHelp` should output the following:
+`grep` is a handy command to find patterns in text. There are two flags that enable enhanced regular expressions: `-E` and `-P`. `-E` handles most things, but does not work with special regex letter the represent ranges -`\w` and `\d` for example. To use these characters for the ranges they represent, use the `-P` flag instead of the `-E` flag.
 
 ```
-Usage: namechange -f find -r replace "string to modify"
- -f The text to find in the filename
- -r The replacement text for the new filename
+grep [OPTIONS] PATTERN [FILE...]
 ```
 
-2. Use `getopts` to read in options and save arguments that correlate with options. `getopts` should support the following options in the `OPTSTRING`
+The list of email to use in this exercise is [here](data/emails.txt).
+   - [Raw version of emails.txt](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab04/data/emails.txt)
 
-   - `-h`
-     - call `printHelp` function and exit script
-   - `-f`
-     - option followed by argument specifying pattern to find in the filename
-   - `-r`
-     - option followed by argument specifying what to replace the found pattern with in the filename
-   - `\?`
-     - use as case when option is not part of `OPTSTRING`
-     - call `printHelp` and exit script
-   - there are `getopts` demos linked in resources, as well as in this folder
-     - [getopts-basics.sh](getopts-basics.sh)
-     - [cfgetopts.sh](cfgetopts.sh)
-     - Before panicking, keep in mind that `getopts` is mostly a `switch` statement on steriods.  Play with the demos given to understand what is happening
+To complete the overall task, perform the steps listed below.  **After each step is complete and tested**, create a `commit` with your changes.  `push` `commit`s as you wish, just remember the `push` saves all the `commit`s to the mighty GitHub cloud.  **Your `commit` message must include which task you completed.**
 
-3. If no `filename` was provided OR if `filename` does not exist:
-   - Output `User must provide valid filename`
-   - Call the `printHelp` function
+If you don't make it through all of a step or don't complete all steps, leave heavy comments for partial credit considerations.
 
-4. Using argument in field `filename`, find the pattern to be replaced and replace it with the pattern requested using `sed`
-   - Hint: you may just want to have `sed` use the `-E` option
-   
-5. Rename an existing file name that one of the naming errors described with the fixed name after using `sed` to replace the bad pattern.
+1. Create a bash script named `validator`.  The script should take a file name as input.  If the file does not exist, have script print an error message and exit.  If the file does exist, have script sort the content & remove duplicate entries. Output unique entries to a file named `clean1.txt`
+2. Add to script to use content of `clean1.txt` and **match** only entries that start with letters (case-insensitive) or digits.  Output only valid matches to `clean2.txt`
+3. Add to script to use content of `clean2.txt` and **remove matching** entries that contain consecutive (2 or more in a row) non-alphanumeric characters, such as dots (.), underscores (_), and hyphens (-).  Output only matches that do not contain consecutive non-alphanumeric characters to `clean3.txt`
+4. Add to script to use content of `clean3.txt` and **match** entries that end in a valid domain name.  A domain name is after the @ sign and must consist of letters (case-insensitive) or digits, followed by a dot (.), and end with a top-level domain (TLD) of `com` OR `org`OR `net`.  Output only valid matches to `clean4.txt`
 
-```
-# Sample runs of working script
-
-$ bash namechange -h
-Usage: namechange -f find -r replace filename
- -f The text to find in the filename
- -r The replacement text for the new filename
-
-$ bash namechange -f "\s" -r "-" "hello world.md"
-Renamed "hello world.md" to hello-world.md
-
-$ bash namechange -f "er+" -r "error" spellingerrrr.txt
-Renamed spellingerrrr.txt to spellingerror.txt
-```
+`emails.txt` has 104 emails listed.  After getting unique entries & applying the pattern filters, `clean4.txt` contained 19 emails that met the valid rules.
 
 **Resources**
-- [bash-hackers - `getopts` tutorial](https://wiki.bash-hackers.org/howto/getopts_tutorial)
-- [assertnotmagic - breaking down how getopts works](https://www.assertnotmagic.com/2019/03/08/bash-advanced-arguments/)
-- [`sed` with string, not input file](https://stackoverflow.com/questions/13055889/sed-with-literal-string-not-input-file)
-- [cyberciti - using Logical NOT in if statements](https://bash.cyberciti.biz/guide/Logical_Not_!)
-- [linuxize - functions](https://linuxize.com/post/bash-functions/)
+- [linuxize - use grep to search patterns](https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/)
+- [RedHat - Beginners Guide to regular expressions with grep](https://developers.redhat.com/articles/2022/09/14/beginners-guide-regular-expressions-grep#)
 
-## Part 2 - Retrospective
+## Part 2 - sed
 
-1. How would you explain `getopts` to a friend?
-2. What did you get stuck on while working on this script?  How did you overcome it?
-3. What feature would you add to this script?
+`sed` is mostly commonly used as a search and replace command. In [sedfile.html](data/sedfile.html) you'll find a simple html file. Your task is to change it into markdown. Do this only using `sed` commands. Your converted file should be named `sedfile.md`.
+   - [Raw version of sedfile.html](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab04/data/sedfile.html)
 
-## Part 3 - Usage Guide
+The following picture shows how `sedfile.html` (the original) looks compared to `sedfile.md` when the files are viewed in GitHub.
 
-Fill out the Usage Guide section in your lab template.  It should contain a minimum of the following:
-1. Information on how users should use your script
-2. Examples of script usage and output
-3. Use good markdown so that this documentation is pretty and clean when viewed on GitHub.
+![sed Before and After](data/sed-before-after.PNG)
 
-**Resources**
-- [GitHub markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+I recommend making a copy of `sedfile.html` and naming it `sedfile.md`. Then use `sed` without modifying the file - once you know your replacement patterns work, then save the changes using `sed`'s `-i` flag.
 
-Examples of bad README / Usage Guides:
-- [bash wordle](https://gist.github.com/huytd/6a1a6a7b34a0d0abcac00b47e3d01513)
-   - as discussed in class there was a hidden dependency of a word file, we needed to make it executable, and what if you didn't know how to play wordle?
+```
+sed -i 's/SEARCH_REGEX/REPLACEMENT/g' INPUTFILE
+# -i option tells sed to edit files in place. If an extension is supplied (ex -i.bak), a
+# backup of the original file is created otherwise the changes are written back to INPUTFILE
+```
 
-Examples of good README / Usage Guides:
-- [pokeget](https://github.com/talwat/pokeget)
-   - this is far more thorough than what you are writing, but note here how much detail in included.
+Only write the command that performs the required task. DO NOT paste the results.
 
-## Extra Credit - Bulk Renamer
+1. Remove all html end tags - anything with `</stuff>`
+   - `stuff` here represents anything surrounded by the HTML close tag: `</ > `
+2. Replace all `<li>` tags and the whitespace before the tag with the markdown format for a bullet point: `- `
+   - Note that is a dash followed by a single space
+3. Replace `<h1>` tags with markdown for header tags: `# `
+   - Note that is a hashtag followed by a single space
+4. Replace `<h2>` tags with markdown for header tags: `## `
+   - Note that is TWO hashtags followed by a single space
+5. Remove the `<ul>` tags & remove the `<html>` tag
+6. Replace the word `Batches` with the word `Matches`
 
-This builds on the script created for Part 1. Since the core is similar, I would `cp` this to a new script named `bulkrenamer`.
+- **Resources**
+- [linuxize - use sed to find and replace](https://linuxize.com/post/how-to-use-sed-to-find-and-replace-string-in-files/)
 
-1. Download and run one of the create files scripts to generate some dummy files for this part.
-   - [createfiles.sh](createfiles.sh) will just create 30 files in the directory you run it from (10 of each error type below)
-   - [cfargs.sh](cfargs.sh) will let you create a number of files with the error type of your choice (spaces or spelling) in the directory you specify
-   - [cfgetopts.sh](cfgetopts.sh) will let you do the same as `cfargs.sh`, but with options
-   - Errors in these file names that can be corrected with a script:
-     - `jpg` is misspelled as `jgp`
-     - spaces in file names that could be replaced with `-`
-     - files with `foo` in them need to become `bar`
-2. The script will run as: `bulkrenamer -f find -r replace FILES_TO_RENAME*`
-3. For each file given (or all files in a given folder), rename according to the find / replace arguments provided.
+## Part 3 - awk
 
-**Resources**
-- [linuxize - for loops](https://linuxize.com/post/bash-for-loop/)
+`awk` is a full blown scripting language dedicated to text manipulation. Create a file in your `Lab04` folder named `records.txt`. Copy the contents of [records.txt](data/records.txt) to a file, and do the following tasks using `awk`
+   - [Raw version of records.txt](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab04/data/records.txt)
+
+`records.txt` contains the following fields:
+
+```
+first last email fav_number university password
+```
+
+Only write the command that performs the required task. DO NOT paste the results.
+
+1. Print only first names that start with `Bil`
+2. Print only the email addresses of records whose favorite number is 42
+3. For users who have a `wright.edu` email, print only their last name, first name, and email in the following format:
+   - `Last, First: Email`
+4. For users who have a `wright.edu` email AND have a password of `1234`, print only their last name and favorite number in the following format:
+   - `Last favorite number is: #`
+5. Replace all passwords with `N0T@PL@!NP@$$W0RD`. Write all fixed records to `updaterecords.txt`
+
+- **Resources**
+- [linuxize - awk with examples](https://linuxize.com/post/awk-command/)
+- [cyberbiz - awk find and replace](https://www.cyberciti.biz/faq/awk-find-and-replace-fields-values/)
+
+## Extra Credit - validator 2.0
+
+1. Use the Internet to find a regular expression that validates emails based on [the rules of valid email formatting](https://help.xmatters.com/ondemand/trial/valid_email_format.htm).  Provide the source.  Write the regular expression.
+2. Explain what the regular expression does.
+3. Create a bash script, `validator2` that uses the regular expression to simplify the step by step data cleansing.
 
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab05` folder with at minimum:
+1. Verify that your GitHub repo has a `Lab04` folder with at minimum:
 
-   - `README.md` (`namechage` Usage Guide)
-   - `namechange` (script)
-   - `bulkrenamer` - for extra credit
-   - Usage Guide for `bulkrenamer` - for extra credit
+   - `validator`
+   - `clean1.txt` through `clean4.txt`
+   - `sedfile.html`
+   - `sedfile.md`
+   - `records.txt`
+   - `updaterecords.txt`
+   - `Lab04.md`
 
-2. In the Pilot Dropbox, paste the URL to the `Lab05` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab05
+2. Note that if your command answers in the answer template did not make use of the backtick (`), the TAs are allowed to refuse to grade your submission.  Cleanliness and readability is your responsibility.  
+
+3. In the Pilot Dropbox, paste the URL to the `Lab04` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab04
 
 ## Rubric
 
-- `namechange` and `README.md` exists in repo in `Lab05` folder - 1pt
-- `getopts` checks for `-h`, `-r`, `-f` and exits if option is not allowed - 2pts
-- `case` statements for `-r` and `-f` save argument values after flag - 1pt
-- `printHelp` function called to print help guide - 1pt
-- if `filename` not given, calls `printHelp` and exits - 1pt
-- if `filename` does not exist, calls `printHelp` and exits - 1pt
-- `filename` is modified according to find / replace arguments - 1pt
-- `filename` given is renamed according to find / replace arguments - 1pt
-- **no commits** besides final script to prove progression of work - minus 2 pts
-- Retrospective answers - 1 pt each / 3 pts total
-- `namechange` Usage Guide contains 
-   - description and how to - 1 pt
-   - examples of your script in action - 1 pt
-   - good use of markdown formatting - 1pt
-- Extra Credit - 20% - 2pts
-
-## Additional getopts Resources
-
-- [ostechnix - breaking down how getopts works](https://ostechnix.com/parse-arguments-in-bash-scripts-using-getopts/)
-- [shellscript - `getopts` tutorial](https://www.shellscript.sh/tips/getopts/)
-
-### getopts and error handling
-
-I don't not require any error handling outside of the sample program runs provided. However...
-
-If you are reading this, you may have noted that `getopts` still doesn't solve all user abuse cases by default.
-
-For example, `getopts` can have a hard time "detecting" a missing argument after an option. `bash namechanger -r -f​` would not "count" as `-r` missing an argument, because `OPTARG` would read `-f` as the argument for `-r`. Fun right?
-
-There are many ways to detangle this problem, some using `getopts`. You could play some quick games before running `getopts`, such as checking number of arguments passed... It isn't failsafe, but it would help.
-
-So let's use what we have - stored values in variables. And we have an ability to check if those values contain anything... catch my drift? Check out the second answer in this post: https://unix.stackexchange.com/questions/50563/how-can-i-detect-that-no-options-were-passed-with-getopts
-
-There are games you can play within the case statement to do this check, but it's a little clunky. If you're curious: https://stackoverflow.com/questions/43425556/getopts-behaves-not-as-expected-when-option-parameter-is-missing
+- Part 1 - 1 pt per task (4 pts total)
+- Part 2 - 1 pt per `sed` command (6 pts total)
+- Part 3 - 1 pt per `awk` command (5 pts total)
+- Extra Credit - 1.5 pts if complete - no partial points
+- Poor markdown formatting (-1.5 pt deduction)

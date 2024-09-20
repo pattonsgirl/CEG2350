@@ -1,77 +1,110 @@
-## Lab 08
+## Lab 07
 
 - Name:
-- Email
+- Email:
 
-## Part 1 - Game the system
+## Part 1
 
-- Game name: 
-- How to install:
-- Location of game executable:
-- How to run game:
+1. Command:
+```
+Output here
+```
+2. Command:
+```
+Output here
+```
+3. For the `xvda` partition table:
+    - Does it use MBR or GPT?
+    - How many partitions are on the block device?
+    - What is the largest partition?
+4. Command:
+```
+Output here
+```
+5. For the primary partition:
+    - What partition is the root filesystem on?
+    - What is the partition label?
+    - What type of filesystem is on the partition?
+6. Command:
+```
+Output here
+```
+7. For the root filesystem:
+    - What is the total size?
+    - How much space is used?
+    - Where is it mounted to?
+8. Command:
+```
+Output here
+```
+9. Fields & purpose of fields in entry that mount the root filesystem
 
-## Part 2 - Process Control
 
-1. `ps` field descriptions:
-   - USER / UID:
-   - PID:
-   - PPID:
-   - TTY:
-   - STAT:
-   - COMMAND / CMD:
-2. `ps` command:
-3. Output of `ps` with two shells, one running the game:
-```
-Output of command goes here
-```
-4. For the game:
-   - Process id: 
-   - Parent process id: 
-   - What is the parent process: 
-5. `kill` to kill only the game:
-   - Describe what the effect was: 
-6. `kill` to kill the game and it's parent process: 
-   - Describe what the effect was:
-7. Describe what happens if you close / `exit` your connection with Shell C and determine if you can reenter the game (resume the process).
-   - Answer: 
+## Part 2
 
-## Part 3 - back and fore
+1. `gdisk` main menu options
+   - `p`:
+   - `o`:
+   - `n`:
+   - `i`:
+   - `w`:
+2. Steps to create a partition table and partition on `xvbd`
+3. Partition table on `/dev/xvdb`
+```
+Paste partition table information here
+```
+4. Answer these questions:
+   
+   a. What device name does the partition use?
+      - Answer: 
+        
+   b. What size is the partition in GB?
+      - Answer: 
+        
+   c. What filesystem type will be used on the partition?
+      - Answer: 
 
-1. Run in the foreground: 
-2. `STOP` signal to suspend it: 
-3. Proof of life from `ps` output:
-```
-insert line here
-```
-4. Resume in the foreground:
-5. `TERMINATE` signal to kill it: 
-6. Start as a background process: 
-7. Output of `jobs` from controlling terminal:
-```
-Insert output here
-```
-Output of `ps`:
-```
-Insert output here
-```
-8. Kill job:
-9. Move job to the foreground: 
-10. Describe what happens, using process knowledge in your description, if you close / `exit` your connection with this shell and determine if you can reenter the game (resume the process).
-   - Answer: 
+## Part 3
 
-## Part 4 - Detach
+1. Commands used:
+2. Commands used:
+```
+output here
+```
+3. Commands used:
+4. Commands used:
+5. Contents of `/mnt/newworld`:
+```
+list here
+```
+6. Commands used:
+7. When can I interact with files on the filesystem on the partition in `xvdb`?
+   - Answer:
+   
+## Part 4
 
-1. Create a `tmux` session:
-2. Detach from the session:
-3. `ps` command:
-```
-Output of command goes here
-```
-4. Command to list `tmux` sessions:
-```
-Output of command goes here
-```
-5. How can you determine if your `tmux` session with your game running is available?
-   - Answer: 
-7. Reattach to `tmux` session:
-8. Kill `tmux` session: 
+1. Commands used:
+2. Line you added to `/etc/fstab`:
+3. How did you confirm that the mount point changed? (Commands used or explain process):
+4. **If you restored `/etc/fstab`**, write here why you did not feel comfortable leaving your changes in place
+
+
+## Part 5
+
+1. Commands used:
+2. What does the `strings` command do?
+   - Answer:
+3. Write a short explanation of what you saw in `strings` output:
+4. Commands used:
+5. Is the secret you deleted still showing up in the `strings` output?
+
+### Report: How to Permanently Delete a File
+
+**Write your report here**
+
+## Extra Credit Answers:
+
+1. Commands used: 
+2. Explanation:
+3. Commands used: 
+4. Commands used: 

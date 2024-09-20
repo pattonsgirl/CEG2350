@@ -1,53 +1,77 @@
-## Lab 09
+## Lab 08
 
 - Name:
-- Email:
+- Email
 
-## Part 1 - Compiling
+## Part 1 - Game the system
 
-1. Method & command to get a copy of the source code files:
-2. Windows C / C++ compiler
-   - Download Windows installer from:
-   - Confirm installed in Windows:
-3. Linux C / C++ compiler
-   - Download Linux installer from:
-   - Confirm installed in Linux:
-4. Browser based compiler for C / C++:
-5. Command(s) to compile the source code into an executable program:
-6. Command(s) to execute the program:
+- Game name: 
+- How to install:
+- Location of game executable:
+- How to run game:
 
-## Part 2 - Document
+## Part 2 - Process Control
 
-### Program User Guide
+1. `ps` field descriptions:
+   - USER / UID:
+   - PID:
+   - PPID:
+   - TTY:
+   - STAT:
+   - COMMAND / CMD:
+2. `ps` command:
+3. Output of `ps` with two shells, one running the game:
+```
+Output of command goes here
+```
+4. For the game:
+   - Process id: 
+   - Parent process id: 
+   - What is the parent process: 
+5. `kill` to kill only the game:
+   - Describe what the effect was: 
+6. `kill` to kill the game and it's parent process: 
+   - Describe what the effect was:
+7. Describe what happens if you close / `exit` your connection with Shell C and determine if you can reenter the game (resume the process).
+   - Answer: 
 
-#### Program Description
+## Part 3 - back and fore
 
-#### How to Build and Run Program
+1. Run in the foreground: 
+2. `STOP` signal to suspend it: 
+3. Proof of life from `ps` output:
+```
+insert line here
+```
+4. Resume in the foreground:
+5. `TERMINATE` signal to kill it: 
+6. Start as a background process: 
+7. Output of `jobs` from controlling terminal:
+```
+Insert output here
+```
+Output of `ps`:
+```
+Insert output here
+```
+8. Kill job:
+9. Move job to the foreground: 
+10. Describe what happens, using process knowledge in your description, if you close / `exit` your connection with this shell and determine if you can reenter the game (resume the process).
+   - Answer: 
 
-#### How to Use Program
+## Part 4 - Detach
 
-### `git` `branch` Guide
-
-Create a branch:
-
-Change to branch:
-
-Add branch to remote if created locally (GitHub):
-
-Steps to `merge` changes to another branch (`main`):
-
-Steps to resolve a `merge` conflict: 
-
-## Part 3 - `makey makey`
-
-Using `Makefile` to build executable:
-
-Using `Makefile` to run program:
-
-Using `Makefile` to remove compilation files, such as the executable: 
-
-## Extra Credit - Ignore That
-
-Remove this statement and the exclamation point from the line below so TAs can click to check for a working `.gitignore` file.  Test that the link works - if it doesn't, fix the pathing.
-
-![`.gitignore` file in root of repository](../.gitignore)
+1. Create a `tmux` session:
+2. Detach from the session:
+3. `ps` command:
+```
+Output of command goes here
+```
+4. Command to list `tmux` sessions:
+```
+Output of command goes here
+```
+5. How can you determine if your `tmux` session with your game running is available?
+   - Answer: 
+7. Reattach to `tmux` session:
+8. Kill `tmux` session: 

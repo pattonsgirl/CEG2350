@@ -1,86 +1,53 @@
-## Lab 10
+## Lab 09
 
 - Name:
 - Email:
 
-## Part 1 - Linux Network Command Cheat Sheet
+## Part 1 - Compiling
 
-- `hostname`
-- `ifconfig`
-- `ip addr show`
-- `route`
-- `cat /var/lib/dhcp/dhclient.leases`
-- `cat /etc/resolv.conf`
-- `curl ipinfo.io`
-- `iptables -L`
-- `nmap -p <IP_or_hostname>`
-- `tcpdump -i <networkinterface> -n host <IP_or_hostname>`
+1. Method & command to get a copy of the source code files:
+2. Windows C / C++ compiler
+   - Download Windows installer from:
+   - Confirm installed in Windows:
+3. Linux C / C++ compiler
+   - Download Linux installer from:
+   - Confirm installed in Linux:
+4. Browser based compiler for C / C++:
+5. Command(s) to compile the source code into an executable program:
+6. Command(s) to execute the program:
 
-## Part 2 - Network Info
+## Part 2 - Document
 
-### Network Info for <Your OS Here>
+### Program User Guide
 
-1. Hostname of the device:
-2. MAC address of the NIC connected to the network:
-3. IPv4 address:
-4. Subnet mask:
-5. Gateway address:
-6. DHCP server address:
-7. DNS server address:
-8. Public IPv4 address:
+#### Program Description
 
-### Network Info for AWS Instance
+#### How to Build and Run Program
 
-1. Hostname of the device:
-2. MAC address of the NIC connected to the network:
-3. IPv4 address:
-4. Subnet mask:
-5. Gateway address:
-6. DHCP server address:
-7. DNS server address:
-8. Public IPv4 address:
+#### How to Use Program
 
-## Part 3 - Subnet Translation
+### `git` `branch` Guide
 
-Translate the below CIDR notation subnets to their IP ranges:
-1. `130.108.0.0/16`
-2. `192.168.1.0/8`
-3. `8.8.8.8/32`
+Create a branch:
 
-Translate the below IP ranges to their CIDR notation subnets:
-1. `192.168.1.0 - 192.168.1.255`
-2. `172.16.0.0 - 172.16.255.255`
-3. `132.189.13.78 - 132.189.13.78`
+Change to branch:
 
-## Part 4 - Security
+Add branch to remote if created locally (GitHub):
 
-Screenshot of your changed Inbound Security Group rules.  
-![Inbound Rules for Lab 10](relative/path/to/image)
+Steps to `merge` changes to another branch (`main`):
 
-Why should HTTP allow any IP, while SSH has restrictions?
+Steps to resolve a `merge` conflict: 
 
-## Extra Credit - Tattle Tale
+## Part 3 - `makey makey`
 
-### IPv4 Source Report
+Using `Makefile` to build executable:
 
-| Rank  | IPv4 Address | # of Attempts |
-| ----- | ------------ | ------------- |
-| 1     |              |     |
-| 2     |              |     |
-| 3     |              |     |
-| 4     |              |     |
-| 5     |              |     |
+Using `Makefile` to run program:
 
-Commands to parse `csv` for report:
+Using `Makefile` to remove compilation files, such as the executable: 
 
-### Username Used Report
+## Extra Credit - Ignore That
 
-| Rank  | Username     | # of Attempts |
-| ----- | ------------ | ------------- |
-| 1     |              |     |
-| 2     |              |     |
-| 3     |              |     |
-| 4     |              |     |
-| 5     |              |     |
+Remove this statement and the exclamation point from the line below so TAs can click to check for a working `.gitignore` file.  Test that the link works - if it doesn't, fix the pathing.
 
-Commands to parse `csv` for report:
+![`.gitignore` file in root of repository](../.gitignore)
