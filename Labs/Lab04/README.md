@@ -94,6 +94,8 @@ Make the `tt` script better. Ideas:
 - Make all task tracker actions utilize function calls
 - Track task numbers so that the users can give a task number instead of the task description
 
+If you have additional ideas, run them by the TA's first to see if they are worthy of this extra credit.
+
 ## Submission
 
 - In the Pilot Dropbox, paste the URL to the `Lab04` folder in your GitHub repo
