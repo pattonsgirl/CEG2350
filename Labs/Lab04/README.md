@@ -123,3 +123,5 @@ If you have additional ideas, run them by the TA's first to see if they are wort
   - sample inserted of script performing each action
 - Part 3 - 6 pts
   - One point per response in answer template
+- EC - 1.8 pts (10%)
+  - added one of the suggested ideas or approved idea, additional documentation provided with description & proof of operation
