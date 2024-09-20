@@ -40,7 +40,7 @@ Create a script named `tt` for task tracker.
 
 Your script must take one OR two arguments from the command line.  The first argument will always be the *task tracker* action - `add` or `complete`.  The second argument (if given) is a string, enclosed in quotes, that is the task description (ex. `"Walk the dog"`).
 
-Your script must use a case statement to evaluate if the first argument contained `add` or `complete` or `view` or `clear` or `help` and do actions based on each.  If no valid action was given, output `Invalid argument` and print a user guide from the function `user-guide`.
+Your script must use a case statement to evaluate if the first argument contained `add` or `complete` or `view` or `clear` or `help` and do actions based on each.  If no valid action was given, output `Invalid argument` and print a user guide from the function `user-guide` and exit script.
 
 If the action is to `add` a task, check if a second argument was given - if a second argument was not given, prompt the user for the task description.  Append the task to a file named `.tasks` in the user's `HOME` directory.  Let the user know the task was added.
 
@@ -50,7 +50,7 @@ If the action is to `view`, output all tasks in the file named `.tasks` in the u
 
 If the action is to `clear`, prompt the user to confirm that they would like to remove all tasks, then remove the file named `.tasks` in the user's `HOME` directory.
 
-If the action is to `help`, call the function `user-guide`.
+If the action is to `help`, call the function `user-guide` and exits script.
 
 The function `user-guide` outputs, using good formatting, guidance and examples of how the user can interact with your script to have it `add` a task, `complete` a task, `view` all tasks, or show `help`.
 
@@ -92,6 +92,7 @@ Test that other user's on the system can also execute the `tt` script.
 
 Make the `tt` script better. Ideas:
 - Make all task tracker actions utilize function calls
+- Add action, `super-show` that shows all tasks in all `.tasks` files in any user's `HOME` directory
 - Track task numbers so that the users can give a task number instead of the task description
 
 If you have additional ideas, run them by the TA's first to see if they are worthy of this extra credit.
@@ -106,4 +107,19 @@ If you have additional ideas, run them by the TA's first to see if they are wort
 
 ## Rubric
 
-- Part 1
+- Part 1 - 10 pts
+  - `tt` exists
+  - `tt` uses case statement to evaluate if arg 1 was `add` or `complete` or `view` or `clear` or `help`; if none, outputs guide and exists
+  - `tt` `add` and `complete` uses arg 2 or prompts user if arg 2 not given
+  - ONE of `tt` `add`, `complete`, or `view` calls a function where task is performed
+  - `tt` `add` appends task to `.tasks` in `HOME`
+  - `tt` `complete` removes task from `.tasks` in `HOME`
+  - `tt` `view` shows all tasks in `.tasks` in `HOME`
+  - `tt` `clear` removes all tasks in `.tasks` in `HOME`
+  - `tt` `help` calls `user-guide` function
+  - `tt` `user-guide` function outputs a well formatted, meaningful help guide to the user on script usage
+- Part 2 - 2 pts
+  - user guide is a well formatted, meaningful help guide to the user on script usage
+  - sample inserted of script performing each action
+- Part 3 - 6 pts
+  - One point per response in answer template

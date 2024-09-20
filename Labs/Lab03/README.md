@@ -145,7 +145,7 @@ DO NOT MODIFY THE CONTENT of the `.profile` file.  Right now, both conditions ev
 7. In terms of user, group, and other, explain who is allowed to run the script.
 
 **Resources**
-- [Technint - About PATH and options to modify it](https://www.tecmint.com/set-path-variable-linux-permanently/)
+- [Tecmint - About PATH and options to modify it](https://www.tecmint.com/set-path-variable-linux-permanently/)
 
 ## Extra Credit - Room for Improvement
 

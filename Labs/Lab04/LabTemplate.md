@@ -54,7 +54,7 @@ of the tt script
 
 - Chosen PATH directory:  
 - Link preference (hard or symbolic):
-- Justification of preference for this use case:
+   - Justification of preference for this use case:
 - Command to create link:
 - Notes about permissions modified: 
 - How you tested that you can run `tt` from anywhere on filesystem:
