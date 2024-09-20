@@ -34,6 +34,8 @@ The overall goal is to create a task tracking script using bash.  Your script wi
 - One of `add` or `complete` or `view` must call a function that performs the actions described.  Your choice on which action is implemented as a function.
 - You must have a **minimum** of **3 (THREE) COMMITS** made for this script.  Your commit messages must describe what's currently working / tested.  When (after which steps / testing) you make a commit is your choice.
 
+**TASK TRACKER IMPLEMENTATION**
+
 Create a script named `tt` for task tracker.
 
 Your script must take one OR two arguments from the command line.  The first argument will always be the *task tracker* action - `add` or `complete`.  The second argument (if given) is a string, enclosed in quotes, that is the task description (ex. `"Walk the dog"`).
@@ -69,11 +71,14 @@ Include some sample runs (using copy and paste in code blocks) or your script in
 
 Use your AWS instance for this part since your repository is cloned there and that is where your script should be.
 
+The lab answer template will prompt you for notes and justifications for this part.
+
 In Lab 03, you were asked to create a directory in which to place executable files - a directory that was specifically being tested for existence in your user's `.profile` file, which then appended that directory to `PATH` - if it existed.
 
 This time, choose a directory that is available in any user's `PATH` variable - not one that would be uniquely appended only if the folder exists in their `HOME` directory.  
 
-Read up on symbolic links vs hard links in Linux.  
+Read up on symbolic links vs hard links in Linux. Below is a reference - additional research is recommended to make sure you grasp the difference, and / or run some test cases to verify your understanding of how they work.
+  - [Tecmint - Create Hard and Symbolic Links in Linux](https://www.tecmint.com/create-hard-and-symbolic-links-in-linux)
 
 Create either a symbolic or a hard link between your `tt` script in your GitHub repository to one of the directory locations listed in `PATH`.
 
@@ -86,14 +91,14 @@ Test that other user's on the system can also execute the `tt` script.
 ## Extra Credit - TODO
 
 Make the `tt` script better. Ideas:
+- Make all task tracker actions utilize function calls
 - Track task numbers so that the users can give a task number instead of the task description
-- 
 
 ## Submission
 
 - In the Pilot Dropbox, paste the URL to the `Lab04` folder in your GitHub repo
-  - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab03
-- Your `Lab03` folder should contain (at minimum):
+  - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab04
+- Your `Lab04` folder should contain (at minimum):
   - `Lab04.md`
   - `tt`
 
