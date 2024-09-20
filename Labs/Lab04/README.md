@@ -1,177 +1,102 @@
-# Lab 03
+# Lab 04 - UNRELEASED
 
 - [Lab Procedure](#lab-procedure)
-- [Part 1 - `config` your connection](#part-1---config-your-connection)
-- [Part 2 - IO Redirection](#part-2---io-redirection)
-- [Part 3 - Rolling the Dice](#part-3---rolling-the-dice)
-- [Part 4 - Retrospective](#part-4---retrospective)
-- [Part 5 - .profile and PATH](#part-5---profile-and-path)
-- [Extra Credit - Room for Improvement](#extra-credit---room-for-improvement)
+- [Part 1 - Task Tracker](#part-1---task-tracker)
+- [Part 2 - Sample Runs](#part-2---sample-runs)
+- [Part 3 - PATH for all](#part-3---path-for-all)
+- [Extra Credit - TODO](#extra-credit---todo)
 - [Submission](#submission)
 - [Rubric](#rubric)
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/68834/modules/items/6128516)
-
 Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-Create a new directory, `Lab03`
+Create a new directory, `Lab04`
 
-This lab will have you creating input files, scripts, and output files. All of your work should be found in your `Lab03` folder.
+This lab will have you creating input files, scripts, and output files. All of your work should be found in your `Lab04` folder.
 
-Some questions will need you to write answers in `Lab03.md` the [LabTemplate.md is here](LabTemplate.md).
+Some questions will need you to write answers in `Lab04.md` the [LabTemplate.md is here](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab03/LabTemplate.md)
-
-For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab04/LabTemplate.md)
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-## Part 1 - `config` your connection
-
-On your local system (`exit` from your AWS instance), you used an SSH command to log on to your AWS Ubuntu instance. There is a neat configuration file that can be used to create an alias of sorts. Read the resources for this section, then configure the `.ssh/config` file for your user on your system with information on your `ssh` connection to your AWS instance.
-
-1. Write the command you have been using to `ssh` in to your AWS instance.
-2. Provide the HostName (IP address) of your AWS Ubuntu instance:
-3. Provide the user name that you are logging on to the system with:
-4. Provide the absolute / full path to the private key (Identity File) on your local system:
-5. On your local system, edit `~/.ssh/config` to contain an entry with information about logging on to your AWS Ubuntu instance.  Note that the answer template wants the contents you wrote to the file.
-6. Write the new form of the `ssh` command to connect to your AWS instance.
-
-- **Resources**
-- [linuxize - Using the ssh config file](https://linuxize.com/post/using-the-ssh-config-file/)
-- [cyberciti.biz - config file examples](https://www.cyberciti.biz/faq/create-ssh-config-file-on-linux-unix/)
-- The `Port`, if you wish to include it in your `config` is `22`
-
-
-## Part 2 - IO Redirection
-
-Find out what each command (including its flags) does and write a description beside it.  Don't forget to lookup commands & flags using `man` and / or some Google-fu (ability to use Google search) to find out. All of the commands can be run - a note is included if there is any additional setup to make it work.
-
-Sample:
-  - `echo "This is easy" > button`
-  - Full credit: `echo` prints "This is easy" to standard output, which is redirected to the file named `button` in the current directory.  `button` now contains the text, "This is easy".
-
-1. `printenv HOME > thishouse`
-2. `cat doesnotexist 2>> hush.txt`
-3. `cat nums.txt | sort -n >> all_nums.txt`
-    - To run: create a file named `nums.txt` containing random numbers, each on a new line
-4. `cat << "DONE" > here.txt`
-5. `ls -lt ~ | head`
-6. `history | grep ".md"`
-
-**Resources:**
-- [An Intro to Linux IO Redirection](https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-i-o-redirection)
-- [RedHat - How to manipulate files with shell redirection and pipelines in Linux](https://www.redhat.com/sysadmin/linux-shell-redirection-pipelining)
-- [freeCodeCamp - How to Set an Environment Variable in Linux](https://www.freecodecamp.org/news/how-to-set-an-environment-variable-in-linux/)
-- [Linuxize - How to Set and List Environment Variables in Linux](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/)
-
-## Part 3 - Rolling the Dice
+## Part 1 - Task Tracker
 
 Use your AWS instance for this part since your repository is cloned there and `ssh` authentication with GitHub should be set up.  But I'm just a set of instructions with good advice.
 
-The overall goal is to create a script that randomly generates a set of random numbers within the range specified by the script user.  In steps 1 - 5, assume you are rolling one die.
+The overall goal is to create a task tracking script using bash.  Your script will allow you to add tasks and complete (remove) them and will store the tasks in a file named `.tasks` in the user's `HOME` directory.
 
-To complete the overall task, perform the steps listed below.  **After each step is complete and tested**, create a `commit` with your changes.  `push` `commit`s as you wish, just remember the `push` saves all the `commit`s to the mighty GitHub cloud.  **Your `commit` message must include which task you completed.**
+**BEFORE YOU BEGIN**
+- One of `add` or `complete` or `view` must call a function that performs the actions described.  Your choice on which action is implemented as a function.
+- You must have a **minimum** of **3 (THREE) COMMITS** made for this script.  Your commit messages must describe what's currently working / tested.  When (after which steps / testing) you make a commit is your choice.
 
-If you don't make it through all of a step or don't complete all 6 steps, leave heavy comments for partial credit considerations.
+Create a script named `tt` for task tracker.
 
-1. Create a bash script named `roll`.  Output a random number between 1 and 20.
-    - Script should run when `./roll` OR `bash roll` is typed on command line.  Think about permissions.
-    - Output should say: `You rolled a ##`, where `##` is the randomly generated number.
+Your script must take one OR two arguments from the command line.  The first argument will always be the *task tracker* action - `add` or `complete`.  The second argument (if given) is a string, enclosed in quotes, that is the task description (ex. `"Walk the dog"`).
 
-2. Change script to prompt the user for a number.  If the number is less than 1, output an error message.  Output a random number between 1 and the user's number.
+Your script must use a case statement to evaluate if the first argument contained `add` or `complete` or `view` or `clear` or `help` and do actions based on each.  If no valid action was given, output `Invalid argument` and print a user guide from the function `user-guide`.
 
-3. Change script to take an argument from the command line instead of prompting the user.  If no argument is passed, output an error message.  Output a random number between 1 and the argument passed.
-    - Script should run when `./roll ##` is typed on command line, where `##` is a number
+If the action is to `add` a task, check if a second argument was given - if a second argument was not given, prompt the user for the task description.  Append the task to a file named `.tasks` in the user's `HOME` directory.  Let the user know the task was added.
 
-4. Change script to also check if the given argument is greater than 1.  If no argument was given, prompt user for a number, and check that it was greater than 1.  Output a random number between 1 and the number.
+If the action is to `complete` a task, check if a second argument was given - if a second argument was not given, prompt the user for the task description.  Remove the task from the file named `.tasks` in the user's `HOME` directory based on the description.  Let the user know if the task was successfully removed or if it was not found.
 
-5. Change the script to prompt the user for a valid number if the argument was not provided or was not greater than 1.  Prompting continues until a number greater than 1 is given.  Output a random number between 1 and the valid number.
+If the action is to `view`, output all tasks in the file named `.tasks` in the user's `HOME` directory.
 
-6. Change script to take **two** arguments from the command line.  The first argument will indicate number of dice to roll.  The second will indicate how many sides of the dice.  If there are less than or more than two arguments, or if the arguments are not greater than one, prompt the user for valid values for number of dice and number of side.  Output a random number between 1 and the number of sides for each die.
-    - Script should run when `./roll ## ##` is typed on command line.
-    - Output should say: `Die 1 rolled a ##    Die 2 rolled a ##`, where `##` are two randomly generated numbers, one for each die.
+If the action is to `clear`, prompt the user to confirm that they would like to remove all tasks, then remove the file named `.tasks` in the user's `HOME` directory.
 
-**Resources:**
-- [IO Flood: Bash Shell Scripting | Random Number Generation](https://ioflood.com/blog/bash-random-number/)
-- [IO Flood: Bash read man page | Using the Linux read command](https://ioflood.com/blog/bash-read-man-page-using-the-linux-read-command/)
+If the action is to `help`, call the function `user-guide`.
+
+The function `user-guide` outputs, using good formatting, guidance and examples of how the user can interact with your script to have it `add` a task, `complete` a task, `view` all tasks, or show `help`.
+
+**Resources**
 - [Digital Ocean - How to Read Command Line Arguments in Shell Scripts?](https://www.digitalocean.com/community/tutorials/read-command-line-arguments-in-shell-scripts)
-- [Cloudzy - Bash If Statement: Syntax, Variations, Use Cases, Commands, and More!](https://cloudzy.com/blog/bash-if-statement/)
-- [IO Flood - Bash While Loop: Shell Scripting Reference Guide](https://ioflood.com/blog/bash-while-loop/)
+- [Linuxize - bash case statement](https://linuxize.com/post/bash-case-statement/)
+- [Linuxize - bash functions](https://linuxize.com/post/bash-functions/)
+- [Linux Handbook - Remove lines containing a string](https://linuxhandbook.com/remove-lines-file/#remove-lines-containing-a-string)
 - [ShellCheck - finds bugs in your shell scripts](https://www.shellcheck.net/)
 
-## Part 4 - Retrospective
+## Part 2 - Sample Runs
 
-A retrospective is a moment of refection after a task.
+Reformat the user-guide you have in your function to use markdown to cleanly present usage information.
 
-1. Where and when did it go wrong while working on your script tasks?
-2. Was anything familiar working with a new language compared to one you are used to?
-3. Assuming you `push`ed your `commit`s to GitHub, view your `commit` history.  Did you write good `commit` messages that refer to what tasks were completed at each commit?  What would you improve?
+Include some sample runs (using copy and paste in code blocks) or your script in action.
 
-## Part 5 - .profile and PATH
+## Part 3 - PATH for all
 
 Use your AWS instance for this part since your repository is cloned there and that is where your script should be.
 
-The overall goal is to, from any directory, able to refer to your script by name, `roll`, and have your script execute.  To do so, `roll` needs to have the correct permissions **and** be located in a directory listed in `PATH`.
+In Lab 03, you were asked to create a directory in which to place executable files - a directory that was specifically being tested for existence in your user's `.profile` file, which then appended that directory to `PATH` - if it existed.
 
-In this part, your task is to read `~/.profile` and focus on the `if` statements that would change the value of `PATH`, **if** one of the statements was `true`.
+This time, choose a directory that is available in any user's `PATH` variable - not one that would be uniquely appended only if the folder exists in their `HOME` directory.  
 
-DO NOT MODIFY THE CONTENT of the `.profile` file.  Right now, both conditions evaluate to `false`. 
-  - Think about how you could confirm that statement - that both conditions are currently `false`.
-  - Remember, the `test` command is what is being used when you see `[` (square brackets).  
-  - The flag / relational condition being checked is an option of the `test` command.
+Read up on symbolic links vs hard links in Linux.  
 
-1. What is the value of the `PATH` environment variable?
+Create either a symbolic or a hard link between your `tt` script in your GitHub repository to one of the directory locations listed in `PATH`.
 
-2. Read through `ubuntu`'s `~/.profile`.  Pick one condition to make `true` that, if `true`, will add the directory to be part of the `PATH` variable.  What needs to happen to make the condition `true` (what currently **does not exist**)?
+Make any required modifications to permissions and ownership.
 
-3. Based on your evaluation above, use commands to create what is necessary to have the condition evaluate to `true`.
+Test that you can run your `tt` script from any location on the filesystem.
 
-4. Reload / run the statements in `~/.profile` either with `source` or by logging out and `ssh`ing back in. 
-  - What is the value of the `PATH` environment variable? 
-  - What was added now vs. in your answer to question 1?
+Test that other user's on the system can also execute the `tt` script.
 
-5. Copy `roll` into the folder. Write the command(s) used.
-  - Note: for added fun, do a symbolic link or hard link to the original script.  Not going to show you how yet, but try Google-ing to see if you can crack it.
+## Extra Credit - TODO
 
-6. Modify the script's permissions and / or interpreter so that you can run your script on the command line from any location. Write the modification explanations and commands needed.
-    - You can now run `roll` (without the leading `./` or `bash`) from anywhere
-    - Note: if you already modified permissions, fill in this question with what you modified since scripts are not executable by default.
-
-7. In terms of user, group, and other, explain who is allowed to run the script.
-
-**Resources**
-- [Technint - About PATH and options to modify it](https://www.tecmint.com/set-path-variable-linux-permanently/)
-
-## Extra Credit - Room for Improvement
-
-Make a notable improvement to the `roll` script.  This could be another feature, an additional boundary check on allowed conditions, experimenting with colored text for standard and error output... If you have an idea, you are encouraged to run it by the TAs first to make sure it is worthy.
-
-Make sure you `commit` and `push` your script changes for grading and add a note of what you did in the answer template.
+Make the `tt` script better. Ideas:
+- Track task numbers so that the users can give a task number instead of the task description
+- 
 
 ## Submission
 
-- In the Pilot Dropbox, paste the URL to the `Lab03` folder in your GitHub repo
+- In the Pilot Dropbox, paste the URL to the `Lab04` folder in your GitHub repo
   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab03
 - Your `Lab03` folder should contain (at minimum):
-  - `Lab03.md`
-  - `roll`
+  - `Lab04.md`
+  - `tt`
 
 ## Rubric
 
-- Part 1 - 3 pts
-  - 0.5 pts / question
-- Part 2 - 1 pt each / 6 pts total
-- Part 3 - 6 pts total
-  - minimum of 6 commits, each commit completes 1 task
-  - 1 complete task = 1 pt
-- Part 4 - 1 pt each / 3 pts total
-- Part 5 - 0.5 pts each / 3.5 pts total
-- Extra Credit - 1 pt
-- Point deductions:
-  - minus 2 pts = no commits for each part && no commit messages indicating parts building on each other
-  - minus 1 pt = commits / comments indicate parts building on each other, but not all commits were broken out as asked
+- Part 1
