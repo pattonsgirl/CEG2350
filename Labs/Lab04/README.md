@@ -124,4 +124,7 @@ If you have additional ideas, run them by the TA's first to see if they are wort
 - Part 3 - 6 pts
   - One point per response in answer template
 - EC - 1.8 pts (10%)
+    - can stack based on number of new features implemented
+- Point Deductions:
+    - (-1.8) pts (10%) - did not record a minimum of three commits while building the `tt` script.
   - added one of the suggested ideas or approved idea, additional documentation provided with description & proof of operation
