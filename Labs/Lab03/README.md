@@ -163,14 +163,15 @@ Make sure you `commit` and `push` your script changes for grading and add a note
 
 ## Rubric
 
-- Part 1 - 3 pts
+- Part 1 - 6 pts
+- Part 2 - 3 pts
   - 0.5 pts / question
-- Part 2 - 1 pt each / 6 pts total
-- Part 3 - 6 pts total
+- Part 3 - 6 pts
+- Part 4 - 6 pts
   - minimum of 6 commits, each commit completes 1 task
   - 1 complete task = 1 pt
-- Part 4 - 1 pt each / 3 pts total
-- Part 5 - 0.5 pts each / 3.5 pts total
+- Part 5 - 3 pts
+- Part 6 - 0.5 pts each / 3.5 pts total
 - Extra Credit - 1 pt
 - Point deductions:
   - minus 2 pts = no commits for each part && no commit messages indicating parts building on each other
