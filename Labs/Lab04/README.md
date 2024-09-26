@@ -115,7 +115,7 @@ If you have additional ideas, run them by the TA's first to see if they are wort
   - `tt` `add` appends task to `.tasks` in `HOME`
   - `tt` `complete` removes task from `.tasks` in `HOME`
   - `tt` `view` shows all tasks in `.tasks` in `HOME`
-  - `tt` `clear` removes all tasks in `.tasks` in `HOME`
+  - `tt` `clear` removes `.tasks` in `HOME`
   - `tt` `help` calls `user-guide` function
   - `tt` `user-guide` function outputs a well formatted, meaningful help guide to the user on script usage
 - Part 2 - 2 pts
