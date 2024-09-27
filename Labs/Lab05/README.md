@@ -1,4 +1,4 @@
-# Lab 04 - UNRELEASED
+# Lab 05
 
 - [Lab Procedure](#Lab-Procedure)
 - [regex resources](#regex-resources)
@@ -16,13 +16,13 @@ Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-Create a new directory, `Lab04`
+Create a new directory, `Lab05`
 
 This lab will have you creating input files, scripts, and output files.
 
-Some questions will need you to write answers in `Lab04.md` the [LabTemplate.md is here](LabTemplate.md).
+Some questions will need you to write answers in `Lab05.md` the [LabTemplate.md is here](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab04/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab05/LabTemplate.md)
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
@@ -48,7 +48,7 @@ grep [OPTIONS] PATTERN [FILE...]
 ```
 
 The list of email to use in this exercise is [here](data/emails.txt).
-   - [Raw version of emails.txt](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab04/data/emails.txt)
+   - [Raw version of emails.txt](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/Labs/Lab05/data/emails.txt)
 
 To complete the overall task, perform the steps listed below.  **After each step is complete and tested**, create a `commit` with your changes.  `push` `commit`s as you wish, just remember the `push` saves all the `commit`s to the mighty GitHub cloud.  **Your `commit` message must include which task you completed.**
 
@@ -59,7 +59,7 @@ If you don't make it through all of a step or don't complete all steps, leave he
 3. Add to script to use content of `clean2.txt` and **remove matching** entries that contain consecutive (2 or more in a row) non-alphanumeric characters, such as dots (.), underscores (_), and hyphens (-).  Output only matches that do not contain consecutive non-alphanumeric characters to `clean3.txt`
 4. Add to script to use content of `clean3.txt` and **match** entries that end in a valid domain name.  A domain name is after the @ sign and must consist of letters (case-insensitive) or digits, followed by a dot (.), and end with a top-level domain (TLD) of `com` OR `org`OR `net`.  Output only valid matches to `clean4.txt`
 
-`emails.txt` has 104 emails listed.  After getting unique entries & applying the pattern filters, `clean4.txt` contained 19 emails that met the valid rules.
+`emails.txt` has 105 emails listed.  After getting unique entries & applying the pattern filters, `clean4.txt` contained 19 emails that met the valid rules.
 
 **Resources**
 - [linuxize - use grep to search patterns](https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/)
@@ -68,7 +68,7 @@ If you don't make it through all of a step or don't complete all steps, leave he
 ## Part 2 - sed
 
 `sed` is mostly commonly used as a search and replace command. In [sedfile.html](data/sedfile.html) you'll find a simple html file. Your task is to change it into markdown. Do this only using `sed` commands. Your converted file should be named `sedfile.md`.
-   - [Raw version of sedfile.html](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab04/data/sedfile.html)
+   - [Raw version of sedfile.html](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab05/data/sedfile.html)
 
 The following picture shows how `sedfile.html` (the original) looks compared to `sedfile.md` when the files are viewed in GitHub.
 
@@ -100,8 +100,8 @@ Only write the command that performs the required task. DO NOT paste the results
 
 ## Part 3 - awk
 
-`awk` is a full blown scripting language dedicated to text manipulation. Create a file in your `Lab04` folder named `records.txt`. Copy the contents of [records.txt](data/records.txt) to a file, and do the following tasks using `awk`
-   - [Raw version of records.txt](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab04/data/records.txt)
+`awk` is a full blown scripting language dedicated to text manipulation. Create a file in your `Lab05` folder named `records.txt`. Copy the contents of [records.txt](data/records.txt) to a file, and do the following tasks using `awk`
+   - [Raw version of records.txt](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab05/data/records.txt)
 
 `records.txt` contains the following fields:
 
@@ -131,7 +131,7 @@ Only write the command that performs the required task. DO NOT paste the results
 
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab04` folder with at minimum:
+1. Verify that your GitHub repo has a `Lab05` folder with at minimum:
 
    - `validator`
    - `clean1.txt` through `clean4.txt`
@@ -139,12 +139,12 @@ Only write the command that performs the required task. DO NOT paste the results
    - `sedfile.md`
    - `records.txt`
    - `updaterecords.txt`
-   - `Lab04.md`
+   - `Lab05.md`
 
 2. Note that if your command answers in the answer template did not make use of the backtick (`), the TAs are allowed to refuse to grade your submission.  Cleanliness and readability is your responsibility.  
 
-3. In the Pilot Dropbox, paste the URL to the `Lab04` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab04
+3. In the Pilot Dropbox, paste the URL to the `Lab05` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab05
 
 ## Rubric
 
