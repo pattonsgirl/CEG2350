@@ -50,7 +50,7 @@ of copy / pasted runs
 of the tt script
 ```
 
-## Part 5 - PATH for all
+## Part 3 - PATH for all
 
 - Chosen PATH directory:  
 - Link preference (hard or symbolic):
