@@ -168,7 +168,7 @@ This builds on the script created for Part 1. Since the core is similar, I would
 - if `filename` does not exist, calls `printHelp` and exits - 1pt
 - `filename` is modified according to find / replace arguments - 1pt
 - `filename` given is renamed according to find / replace arguments - 1pt
-- **no commits** besides final script to prove progression of work - minus 2 pts
+- **minimum of 3 commits on with incremental script building not met** - minus 2 pts
 - Retrospective answers - 1 pt each / 3 pts total
 - `namechange` Usage Guide contains 
    - description and how to - 1 pt
