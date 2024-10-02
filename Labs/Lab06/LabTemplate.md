@@ -1,4 +1,4 @@
-## Lab 05
+## Lab 06
 
 - Name:
 - Email
@@ -23,7 +23,7 @@ Bellow is kind of how I would format things
 
 ### What it is
 
-Describe your script in plain english, nothing too technical.  Think about this as describing what you made over the dinner table.
+Describe your script in plain English, nothing too technical.  Think about this as describing what you made over the dinner table.
 
 ### How to run it
 
@@ -40,7 +40,7 @@ By using the triple quotes, you can enclose a block of code
 And code blocks look very professional
 ```
 
-## bulkrenamer Usage Guide - Remove if not doing extra credit
+## Bulk Name Changer Usage Guide - Remove if not doing extra credit
 
 Examples of script usage and output. This should be enough info that  
 you can hand this and the script to someone not in this course and they  

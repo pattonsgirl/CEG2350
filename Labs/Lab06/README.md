@@ -1,13 +1,13 @@
-# Lab 05 - UNRELEASED
+# Lab 06
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Name Change Script](#part-1---name-change-script)
 - [Part 2 - Retrospective](#part-2---retrospective)
 - [Part 3 - Usage Guide](#part-3---usage-guide)
-- [Extra Credit - Bulk Renamer](#extra-credit---bulk-renamer)
+- [Extra Credit - Bulk Name Changer](#extra-credit---bulk-name-changer)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
-- [Additional getopts Resources](#Additional-getopts-Resources)
+- [Additional `getopts` Resources](#Additional-getopts-Resources)
 
 ## Lab Procedure
 
@@ -17,15 +17,13 @@ Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-Create a new directory, `Lab05`
+Create a new directory, `Lab06`
 
 This lab may have you creating input files, scripts, and output files. All of your work should be found here.
 
 Some questions will need you to write answers in `README.md` the [LabTemplate.md is here](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab05/LabTemplate.md)
-
-For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab06/LabTemplate.md)
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
@@ -34,19 +32,22 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 The following will ask you to write a script that changes a file's name.  The script will allow the user to provide the search pattern to replace, and the replacement for the found pattern.  A sample of using the script, where `namechange` is the name of the script file:
 
 ```
-namechange -f find -r replace filename
+namechange -f find-pattern -r replace-with filename
 ```
 
-1. Create a script in your `Lab05` folder named `namechange`. 
-2. Create some files in your folder with common errors (spaces in the filename, a misspelling, etc.).  Sample errors:
-   - `.jpg` is misspelled as `.jgp`
-   - spaces in file names that could be replaced with `-`
-   - files with `foo` in them need to become `bar`
-   - the [createfiles.sh](createfiles.sh) script can be used to generate them
+1. Create a script in your `Lab06` folder named `namechange`. 
+2. Create some files in your folder with common errors (spaces in the filename, a misspelling, etc.).  You can utilize the [createfiles.sh](createfiles.sh) script to generate them.
+   - Sample file name "errors":
+      - `.jpg` is misspelled as `.jgp`
+      - spaces in file names that could be replaced with `-`
+      - file names with `foo` in them need to become `bar`
+
+
+**BEFORE YOU BEGIN**  
+
+- You must have a **minimum** of **3 (THREE) COMMITS** made for this script.  Your commit messages must describe what's currently working / tested.  When (after which steps / testing) you make a commit is your choice.
 
 **Implement the following features in the `namechange` script:**
-
-**MAKE COMMITS AS YOU BUILD THIS SCRIPT.  IF YOU ONLY COMMIT THE FINAL SCRIPT, THERE WILL BE A 2 POINT DEDUCTION**
 
 1. Create a function called `printHelp`. `printHelp` should output the following:
 
@@ -77,9 +78,9 @@ Usage: namechange -f find -r replace "string to modify"
    - Call the `printHelp` function
 
 4. Using argument in field `filename`, find the pattern to be replaced and replace it with the pattern requested using `sed`
-   - Hint: you may just want to have `sed` use the `-E` option
+   - Hint: remember to enable extended regular expressions with `sed` to use the `-E` flag
    
-5. Rename an existing file name that one of the naming errors described with the fixed name after using `sed` to replace the bad pattern.
+5. Rename the `filename` specified with the fixed name string after using `sed` to replace the bad pattern in the file name.
 
 ```
 # Sample runs of working script
@@ -98,7 +99,7 @@ Renamed spellingerrrr.txt to spellingerror.txt
 
 **Resources**
 - [bash-hackers - `getopts` tutorial](https://wiki.bash-hackers.org/howto/getopts_tutorial)
-- [assertnotmagic - breaking down how getopts works](https://www.assertnotmagic.com/2019/03/08/bash-advanced-arguments/)
+- [assertnotmagic - breaking down how `getopts` works](https://www.assertnotmagic.com/2019/03/08/bash-advanced-arguments/)
 - [`sed` with string, not input file](https://stackoverflow.com/questions/13055889/sed-with-literal-string-not-input-file)
 - [cyberciti - using Logical NOT in if statements](https://bash.cyberciti.biz/guide/Logical_Not_!)
 - [linuxize - functions](https://linuxize.com/post/bash-functions/)
@@ -112,7 +113,7 @@ Renamed spellingerrrr.txt to spellingerror.txt
 ## Part 3 - Usage Guide
 
 Fill out the Usage Guide section in your lab template.  It should contain a minimum of the following:
-1. Information on how users should use your script
+1. Information on what your script is and how users should copy and use your script
 2. Examples of script usage and output
 3. Use good markdown so that this documentation is pretty and clean when viewed on GitHub.
 
@@ -127,7 +128,7 @@ Examples of good README / Usage Guides:
 - [pokeget](https://github.com/talwat/pokeget)
    - this is far more thorough than what you are writing, but note here how much detail in included.
 
-## Extra Credit - Bulk Renamer
+## Extra Credit - Bulk Name Changer
 
 This builds on the script created for Part 1. Since the core is similar, I would `cp` this to a new script named `bulkrenamer`.
 
@@ -139,7 +140,7 @@ This builds on the script created for Part 1. Since the core is similar, I would
      - `jpg` is misspelled as `jgp`
      - spaces in file names that could be replaced with `-`
      - files with `foo` in them need to become `bar`
-2. The script will run as: `bulkrenamer -f find -r replace FILES_TO_RENAME*`
+2. The script will run as: `bulkrenamer -f find-pattern -r replace-with FILES_TO_RENAME*`
 3. For each file given (or all files in a given folder), rename according to the find / replace arguments provided.
 
 **Resources**
@@ -147,19 +148,19 @@ This builds on the script created for Part 1. Since the core is similar, I would
 
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab05` folder with at minimum:
+1. Verify that your GitHub repo has a `Lab06` folder with at minimum:
 
-   - `README.md` (`namechage` Usage Guide)
+   - `README.md` (Retrospective responses & `namechange` Usage Guide)
    - `namechange` (script)
    - `bulkrenamer` - for extra credit
    - Usage Guide for `bulkrenamer` - for extra credit
 
-2. In the Pilot Dropbox, paste the URL to the `Lab05` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab05
+2. In the Pilot Dropbox, paste the URL to the `Lab06` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab06
 
 ## Rubric
 
-- `namechange` and `README.md` exists in repo in `Lab05` folder - 1pt
+- `namechange` and `README.md` exists in repo in `Lab06` folder - 1pt
 - `getopts` checks for `-h`, `-r`, `-f` and exits if option is not allowed - 2pts
 - `case` statements for `-r` and `-f` save argument values after flag - 1pt
 - `printHelp` function called to print help guide - 1pt
@@ -172,15 +173,15 @@ This builds on the script created for Part 1. Since the core is similar, I would
 - `namechange` Usage Guide contains 
    - description and how to - 1 pt
    - examples of your script in action - 1 pt
-   - good use of markdown formatting - 1pt
+   - good use of markdown formatting - 1 pt
 - Extra Credit - 20% - 2pts
 
-## Additional getopts Resources
+## Additional `getopts` Resources
 
-- [ostechnix - breaking down how getopts works](https://ostechnix.com/parse-arguments-in-bash-scripts-using-getopts/)
+- [ostechnix - breaking down how `getopts` works](https://ostechnix.com/parse-arguments-in-bash-scripts-using-getopts/)
 - [shellscript - `getopts` tutorial](https://www.shellscript.sh/tips/getopts/)
 
-### getopts and error handling
+### `getopts` and error handling
 
 I don't not require any error handling outside of the sample program runs provided. However...
 
