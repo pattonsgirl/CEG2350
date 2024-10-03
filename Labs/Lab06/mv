@@ -1,0 +1,51 @@
+#!/usr/bin/bash
+
+# mv -d source-name destination-name
+# mv -h
+#	print help exit
+# mv -f
+#	whatever sl is
+
+function get-help {
+	echo "I am here!"
+} 
+
+
+while getopts ":hd:f" opt; do
+
+	#echo $opt
+	#echo $1
+	#echo $OPTIND
+	#echo $OPTARG
+	case $opt in
+		h)
+			get-help
+			#exit
+			;;
+		d)
+			val=$OPTARG
+			;;
+		f)
+			sl
+			;;
+		?)
+			get-help
+			exit
+			;;
+		*)
+			get-help
+			exit
+			;;
+	esac
+done
+
+# we need to skip forward
+#shift
+shift $(( OPTIND - 1 ))
+
+echo $1
+
+mv $val $1
+
+
+
