@@ -1,0 +1,16 @@
+Pumpkin ID,Weight (kg),Diameter (cm),Color,Type,Maturity Stage,Harvest Date
+P001,1.5,10,Orange,Miniature,Immature,2024-09-20
+P002,2.0,12,Yellow,Standard,Mature,2024-09-22
+P003,2.8,14,Green,Miniature,Mature,2024-09-25
+P004,3.5,16,Orange,Jack-o'-lantern,Immature,2024-09-28
+P005,4.2,18,Yellow,Pie Pumpkin,Mature,2024-09-29
+P006,5.0,20,Orange,Standard,Mature,2024-09-30
+P007,6.3,22,Green,Miniature,Immature,2024-09-26
+P008,7.8,24,Yellow,Jack-o'-lantern,Mature,2024-09-24
+P009,8.5,26,Orange,Pie Pumpkin,Mature,2024-09-21
+P010,10.0,28,Green,Standard,Immature,2024-09-23
+P011,12.0,30,Yellow,Jack-o'-lantern,Mature,2024-09-30
+P012,14.5,32,Orange,Giant,Immature,2024-09-28
+P013,16.0,34,Green,Standard,Mature,2024-09-29
+P014,18.2,36,Yellow,Pie Pumpkin,Mature,2024-09-27
+P015,20.0,38,Orange,Giant,Mature,2024-09-26
