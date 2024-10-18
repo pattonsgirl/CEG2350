@@ -1,4 +1,4 @@
-# Lab 06 - UNRELEASED
+# Lab 07
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - System Discovery](#part-1---system-discovery)
@@ -10,15 +10,15 @@
 
 ## Lab Procedure
 
-The focus of this lab is exploring your system. You will be creating a `Lab06.md` file for your work in this lab. To create and edit the file, you are welcome to use your AWS instance (or anywhere your repo is cloned) or edit the file directly in the browser.
+The focus of this lab is exploring your system. You will be creating a `Lab07.md` file for your work in this lab. To create and edit the file, you are welcome to use your AWS instance (or anywhere your repo is cloned) or edit the file directly in the browser.
 
 In your repository (the folder named `ceg2350-yourgithubusername`):
 
-Create a new directory, `Lab06`
+Create a new directory, `Lab07`
 
-Create a file named `Lab06.md` [based on the template](LabTemplate.md).
+Create a file named `Lab07.md` [based on the template](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab06/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab07/LabTemplate.md)
 
 ## Part 1 - System Discovery
 
@@ -121,12 +121,12 @@ We are going to be uploading images directly to our repository in GitHub, then u
 
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab06` folder with at minimum:
+1. Verify that your GitHub repo has a `Lab07` folder with at minimum:
 
-   - `Lab06.md`
+   - `Lab07.md`
 
-2. In the Pilot Dropbox, paste the URL to the `Lab06` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350s24-YOURGITHUBUSERNAME/tree/main/Lab06
+2. In the Pilot Dropbox, paste the URL to the `Lab07` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350s24-YOURGITHUBUSERNAME/tree/main/Lab07
 
 ## Rubric
 
