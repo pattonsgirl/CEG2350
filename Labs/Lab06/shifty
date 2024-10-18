@@ -1,0 +1,18 @@
+#!/usr/bin/bash 
+
+# How to "view" all args: $@
+
+for i in "$@"; do
+  echo "$i"
+done
+
+echo $1
+
+shift
+
+echo $1
+
+shift 
+
+echo $1
+
