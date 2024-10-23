@@ -29,7 +29,7 @@ You must download the **.iso** file of whatever VM you would like to create and 
 8. You can choose wether or not you would like to have a shared directory, that is entirely up to you. If you choose *Yes*, you will have to choose what directory you would like to share.
 9. You will get to see the summary and decide what you would like to name your VM and then click *Save*
 
-### Booting Up The VM
+### Part 4 - Booting Up The VM
 
 1. Click the large *play button* that appears on the screen once the VM is setup
 2. Let it take a second to boot up and hit **enter on your keyoard** to install
@@ -37,7 +37,7 @@ You must download the **.iso** file of whatever VM you would like to create and 
 4. Once completely booted up, start inputting information like you would a brand new laptop
 
 
-### Shutting Down the VM
+### Part 5 - Shutting Down the VM
 1. Once you have things booted up and you played around and you are done, **DO NOT JUST CLICK THE X IN THE TOP RIGHT CORNER** because this can corrupt your VM
 2. You want to treat this like another computer and click your profile
 3. Click *Shut Down*
