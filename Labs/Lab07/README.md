@@ -24,7 +24,7 @@ Create a file named `Lab07.md` [based on the template](LabTemplate.md).
 
 Find out the following information about your personal system. Write the answers to the information requested. Part of this is learning about your system, so some info will not apply to your system (because of how your OS works with your hardware or your system's hardware). Provide confirmation of your findings where possible.
 
-For the GPU section, you likely only have a discrete or dedicated GPU.  Only fill out what you have.
+For the GPU section, you likely only have a integrated or dedicated GPU - not all systems have both.  Only fill out what you have.
 
 - You can use the manufacturers website / manuals
 - You can post to our course Discord channel for help / hints
