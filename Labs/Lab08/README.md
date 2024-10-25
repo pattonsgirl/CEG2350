@@ -1,4 +1,4 @@
-# Lab 07 - UNRELEASED
+# Lab 08
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - What do we have?](#part-1---what-do-we-have)
@@ -20,11 +20,11 @@ Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-Create a new directory, `Lab07`
+Create a new directory, `Lab08`
 
-Write answers in `Lab07.md` the [LabTemplate.md is here](LabTemplate.md).
+Write answers in `Lab08.md` the [LabTemplate.md is here](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab07/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab08/LabTemplate.md)
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
@@ -160,12 +160,12 @@ Write the commands used in each step (unless otherwise stated).
 
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab07` folder with at minimum:
+1. Verify that your GitHub repo has a `Lab08` folder with at minimum:
 
-   - `Lab07.md`
+   - `Lab08.md`
 
-2. In the Pilot Dropbox, paste the URL to the `Lab07` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350s24-YOURGITHUBUSERNAME/tree/main/Lab07
+2. In the Pilot Dropbox, paste the URL to the `Lab08` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350s24-YOURGITHUBUSERNAME/tree/main/Lab08
 
 ## Rubric
 
