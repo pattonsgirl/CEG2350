@@ -1,4 +1,4 @@
-# Lab 08 - UNRELEASED
+# Lab 09
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Game the System](#part-1---game-the-system)
@@ -16,11 +16,11 @@ Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-Create a new directory, `Lab08`
+Create a new directory, `Lab09`
 
-Write answers in `Lab08.md` the [LabTemplate.md is here](LabTemplate.md).
+Write answers in `Lab09.md` the [LabTemplate.md is here](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab08/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab09/LabTemplate.md)
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
@@ -71,7 +71,7 @@ Provide answers to the following, using Shell B to observe the process statuses:
 
 **Resources**
 - [Linuxize - Ps Command in Linux (List Processes)](https://linuxize.com/post/ps-command-in-linux/)
-- [Digital Ocean - How To Use ps, kill, and nice to Manage Processes in Linux](https://www.digitalocean.com/community/tutorials/how-to-use-ps-kill-and-nice-to-manage-processes-in-linux)
+- [Digital Ocean - How To Use `ps`, `kill`, and `nice` to Manage Processes in Linux](https://www.digitalocean.com/community/tutorials/how-to-use-ps-kill-and-nice-to-manage-processes-in-linux)
 
 ## Part 3 - back and fore
 
@@ -104,20 +104,20 @@ The perhaps obtuse goal of the previous two exercises is to understand process c
 7. Kill the `tmux` session
 
 **Resources**
-- [RedHat - A beginner's guide to tmux](https://www.redhat.com/sysadmin/introduction-tmux-linux)
+- [RedHat - A beginner's guide to `tmux`](https://www.redhat.com/sysadmin/introduction-tmux-linux)
 
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab08` folder with at minimum:
+1. Verify that your GitHub repo has a `Lab09` folder with at minimum:
 
-   - `Lab08.md`
+   - `Lab09.md`
 
-2. In the Pilot Dropbox, paste the URL to the `Lab08` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab08
+2. In the Pilot Dropbox, paste the URL to the `Lab09` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab09
 
 ## Rubric
 
-- Part 1 - 1 pt per - 4 pts total
-- Part 2 - 1 pt per - 7 pts total
-- Part 3 - 1 pt per - 10 pts total
-- Part 4 - 1 pt per - 7 pts total
+- Part 1 - 1 pt. per - 4 pts total
+- Part 2 - 1 pt. per - 7 pts total
+- Part 3 - 1 pt. per - 10 pts total
+- Part 4 - 1 pt. per - 7 pts total
