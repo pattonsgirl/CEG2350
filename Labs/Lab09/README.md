@@ -10,6 +10,8 @@
 
 ## Lab Procedure
 
+**THIS LAB MUST BE COMPLETED IN THE AWS INSTANCE YOU SETUP IN LAB 01.**
+
 [Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/68834/modules/items/6128516)
 
 Use `ssh` to connect to your AWS Ubuntu instance.
