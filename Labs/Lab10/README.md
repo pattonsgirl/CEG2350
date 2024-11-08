@@ -29,7 +29,7 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - Compilers
 
-For your OS **and** for your AWS instance running Ubuntu, find how to install the following compilers / interpreters:
+For your OS **and** for your AWS instance, find how to install the following compilers / interpreters:
 
 - Java
 - C++
@@ -43,14 +43,16 @@ Find recommended web based IDEs that allow you to program and compile in:
 
 ## Part 2 - [Compiling](https://xkcd.com/303/)
 
-It is expected that you are using your AWS instance or a Linux based system where you have cloned your repository to complete the command taskings.
+Use your AWS instance.
 
 **Useful Commands: `gcc`, `g++`, `wget`**
 
 1. Select from either [TODO-C](TODO-C) or [TODO-CPP](TODO-CPP). Download the files in the folder to the `Lab10` folder in your repository folder.  `add`, `commit` and `push` the source code files.
-2. Install and verify the installation of the C / C++ compiler on your AWS instance.
-3. Using your AWS instance, compile the source code into an executable program.
-4. Using your AWS instance, run the executable program.
+2. Install the C / C++ compiler on your AWS instance.
+3. Verify the installation of the C / C++ compiler on your AWS instance.
+   - It is recommended to query for the version of the program to validate installation.
+4. Using your AWS instance, compile the source code into an executable program.
+5. Using your AWS instance, run the executable program.
 
 Resources:
 - [Scaler - Compilation Process in C](https://www.scaler.com/topics/c/compilation-process-in-c/)
@@ -58,7 +60,7 @@ Resources:
 
 ## Part 3 - Document
 
-It is expected that you are using your AWS instance or a Linux based system where you have cloned your repository to complete the taskings.
+Use your AWS instance.
 
 **Useful `git` commands: `branch`, `switch`, `commit`, `push`, `merge`**
 
@@ -99,7 +101,9 @@ Resources:
 
 ## Part 4 - [`makey makey`](https://www.youtube.com/watch?v=X1mYalegtdI&ab_channel=MakeyMakey)
 
-It is expected that you are using your AWS instance or a Linux based system where you have cloned your repository to complete the tasking.
+Use your AWS instance.
+
+We are aware of how generative tools respond to the prompt below.  It adds additional things not asked by this exercise.  Your answer may only perform these tasks, not additional tasks.
 
 **Useful commands: `make`**
 
@@ -151,21 +155,25 @@ Resources:
 
 ## Rubric
 
-- Part 1 - 6 pts total, 1 point per question
+- Part 1 - 9 pts total, 1 point per answer
 
-- Part 2 - 6 pts total, 1 point for each item below:
+- Part 2 - 5 pts total, 1 point per question
+
+- Part 3 - 6 pts total, 1 point for each item below:
    - User Guide clearly addresses each category
    - branch made with commits (and visible in GitHub)
    - 7 comment blocks added to source code
    - Each comment block includes description, parameters, and return values
    - branch merged to `main` (and commented code visible from `main`)
    - `git` `branch` Guide filled out with commands
+   - 0 points will be given if your assignment repository does not contain a branch
 
-- Part 3 - 5 pts total, 1 point for each item below:
+- Part 4 - 5 pts total, 1 point for each item below:
    - `Makefile` exists in `Lab10` folder
    - `Makefile` has target to build executable program (given dependencies exist)
    - `Makefile` has target execute program (given dependencies exist)
    - `Makefile` has target remove executable program
    - Commands to use `Makefile` added to guide
+   - 0 points will be awarded if `Makefile` contains additional taskings / suspicion of generative AI use
 
 - Extra Credit - 1 point

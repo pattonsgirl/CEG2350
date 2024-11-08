@@ -3,20 +3,37 @@
 - Name:
 - Email:
 
-## Part 1 - Compiling
+## Part 1 - Compilers
+
+Your Operating System:
+
+Your AWS instance's Operation System:
+
+- Java
+   - How to install on your OS:
+   - How to install on OS on AWS: 
+- C++
+   - How to install on your OS:
+   - How to install on OS on AWS: 
+- Python
+   - How to install on your OS:
+   - How to install on OS on AWS: 
+
+Web based IDEs: 
+
+- Java
+- C++
+- Python
+
+## Part 2 - Compiling
 
 1. Method & command to get a copy of the source code files:
-2. Windows C / C++ compiler
-   - Download Windows installer from:
-   - Confirm installed in Windows:
-3. Linux C / C++ compiler
-   - Download Linux installer from:
-   - Confirm installed in Linux:
-4. Browser based compiler for C / C++:
-5. Command(s) to compile the source code into an executable program:
-6. Command(s) to execute the program:
+2. Command(s) to install the C/C++ compiler on Ubuntu:
+3. Command(s) to confirm the installation of the C/C++ compiler on Ubuntu:
+4. Command(s) to compile the source code into an executable program:
+5. Command(s) to execute the program:
 
-## Part 2 - Document
+## Part 3 - Document
 
 ### Program User Guide
 
@@ -38,7 +55,7 @@ Steps to `merge` changes to another branch (`main`):
 
 Steps to resolve a `merge` conflict: 
 
-## Part 3 - `makey makey`
+## Part 4 - `makey makey`
 
 Using `Makefile` to build executable:
 
