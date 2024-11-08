@@ -1,9 +1,10 @@
-# Lab 09 - UNRELEASED
+# Lab 10
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Compiling](#part-1---compiling)
-- [Part 2 - Document](#part-2---document)
-- [Part 3 - `makey makey`](#part-3---makey-makey)
+- [Part 1 - Compilers](#part-1---compilers)
+- [Part 2 - Compiling](#part-2---compiling)
+- [Part 3 - Document](#part-3---document)
+- [Part 4 - `makey makey`](#part-4---makey-makey)
 - [Extra Credit - Ignore That](#extra-credit---ignore-that)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
@@ -16,37 +17,46 @@ Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-**Create a new directory, `Lab09`**
+**Create a new directory, `Lab10`**
 
-Write answers in `Lab09.md` the [LabTemplate.md is here](LabTemplate.md).
+Write answers in `Lab10.md` the [LabTemplate.md is here](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab09/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab10/LabTemplate.md)
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-## Part 1 - [Compiling](https://xkcd.com/303/)
+## Part 1 - Compilers
+
+For your OS **and** for your AWS instance running Ubuntu, find how to install the following compilers / interpreters:
+
+- Java
+- C++
+- Python
+
+Find recommended web based IDEs that allow you to program and compile in:
+
+- Java
+- C++
+- Python
+
+## Part 2 - [Compiling](https://xkcd.com/303/)
 
 It is expected that you are using your AWS instance or a Linux based system where you have cloned your repository to complete the command taskings.
 
 **Useful Commands: `gcc`, `g++`, `wget`**
 
-1. Select from either [TODO-C](TODO-C) or [TODO-CPP](TODO-CPP). Download the files in the folder to the `Lab09` folder in your repository folder.  `add`, `commit` and `push` the source code files.
-2. Determine how to install and verify the installation of the C / C++ compiler for Windows.
-   - Recommended: MinGW
-3. Determine how to install and verify the installation of the C / C++ compiler for Linux.
-   - Recommended: `gcc`, g++, clang
-4. Find one option for how to compile and run C/C++ code if the compiler is not supported on the OS.  In other words, find a recommended browser based compiler.
-   - The last piece - not being able to install the compiler - is a common issue for MacOS and Chromebooks or if you don't have permissions to install software to the machine you are using.
-5. Using your AWS instance, compile the source code into an executable program.
-6. Using your AWS instance, run the executable program.
+1. Select from either [TODO-C](TODO-C) or [TODO-CPP](TODO-CPP). Download the files in the folder to the `Lab10` folder in your repository folder.  `add`, `commit` and `push` the source code files.
+2. Install and verify the installation of the C / C++ compiler on your AWS instance.
+3. Using your AWS instance, compile the source code into an executable program.
+4. Using your AWS instance, run the executable program.
 
 Resources:
 - [Scaler - Compilation Process in C](https://www.scaler.com/topics/c/compilation-process-in-c/)
 - [Dartmouth - Compiling With Multiple Source Files](https://www.dartmouth.edu/~rc/classes/softdev_linux/complex_compile.html)
 
-## Part 2 - Document
+## Part 3 - Document
 
 It is expected that you are using your AWS instance or a Linux based system where you have cloned your repository to complete the taskings.
 
@@ -87,7 +97,7 @@ Resources:
 - [Geeks for Geeks - How to Set Upstream Branch on Git?](https://www.geeksforgeeks.org/how-to-set-upstream-branch-on-git/)
 - [MIT - Git command-line interface](https://missing.csail.mit.edu/2020/version-control/)
 
-## Part 3 - [`makey makey`](https://www.youtube.com/watch?v=X1mYalegtdI&ab_channel=MakeyMakey)
+## Part 4 - [`makey makey`](https://www.youtube.com/watch?v=X1mYalegtdI&ab_channel=MakeyMakey)
 
 It is expected that you are using your AWS instance or a Linux based system where you have cloned your repository to complete the tasking.
 
@@ -130,14 +140,14 @@ Resources:
 
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab09` folder with at minimum:
+1. Verify that your GitHub repo has a `Lab10` folder with at minimum:
 
-   - `Lab09.md`
+   - `Lab10.md`
    - source code files
    - `Makefile`
 
-2. In the Pilot Dropbox, paste the URL to the `Lab09` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab09
+2. In the Pilot Dropbox, paste the URL to the `Lab10` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab10
 
 ## Rubric
 
@@ -152,7 +162,7 @@ Resources:
    - `git` `branch` Guide filled out with commands
 
 - Part 3 - 5 pts total, 1 point for each item below:
-   - `Makefile` exists in `Lab09` folder
+   - `Makefile` exists in `Lab10` folder
    - `Makefile` has target to build executable program (given dependencies exist)
    - `Makefile` has target execute program (given dependencies exist)
    - `Makefile` has target remove executable program
