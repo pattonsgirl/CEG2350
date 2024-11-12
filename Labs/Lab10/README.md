@@ -95,6 +95,8 @@ double approx_pi(int n) {
 6. Fill out the `git` `branch` Guide with commands used to work with branches.
 
 Resources:
+- [(Video) SuperSimpleDev - Git Branching and Merging Tutorial](https://www.youtube.com/watch?v=Q1kHG842HoI&ab_channel=SuperSimpleDev)
+- [SuperSimpleDev - `git` / GitHub reference guide](https://supersimpledev.github.io/references/git-github-reference.pdf)
 - [FreeCodeCamp - Git Branching Commands Explained with Examples](https://www.freecodecamp.org/news/git-branching-commands-explained/)
 - [Geeks for Geeks - How to Set Upstream Branch on Git?](https://www.geeksforgeeks.org/how-to-set-upstream-branch-on-git/)
 - [MIT - Git command-line interface](https://missing.csail.mit.edu/2020/version-control/)
