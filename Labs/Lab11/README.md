@@ -67,7 +67,7 @@ Do the following on your AWS instance.
 
 1. Install `apache2` or `nginx` with `apt`
 2. Confirm that your chosen web serving service is running.
-3. Download [`simple-site.tar.gz`](simple-site.tar.gz) to your AWs instance.
+3. Download [`simple-site.tar.gz`](simple-site.tar.gz) to your AWS instance.
 4. Change the permissions for the folder `/var/www/html` so that your user is the owner and primary group, your user (and members of your group) can read and write, and others can only read.
 5. Extract the compressed archive to `/var/www/html`
 6. Edit the `index.html` file in `/var/www/html` with:
@@ -106,15 +106,16 @@ When you see a reference to **local system**, Windows users should assume I am r
 
 ## Submission
 
-1. Verify that your GitHub repo has a `BonusLab` folder with at minimum:
+1. Verify that your GitHub repo has a `Lab11` folder with at minimum:
 
-   - `BonusLab.md`
+   - `Lab11.md`
 
-2. In the Pilot Dropbox, paste the URL to the `BonusLab` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/BonusLab
+2. In the Pilot Dropbox, paste the URL to the `Lab11` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab11
 
 ## Rubric
 
 - Part 1 - 2 pts (1 pt each)
 - Part 2 - 4 pts (1 pt each)
-- Part 3 - 6 pts (1 pt each)
+- Part 3 - 7 pts (1 pt each)
+- Part 4 - 6 pts (1 pt each)

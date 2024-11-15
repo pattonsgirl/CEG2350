@@ -26,6 +26,16 @@
 
 ## Part 3 Answers:
 
+1. Command to install `apache2` or `nginx`:
+2. Command to confirm that web serving service is running:
+3. Command to download [`simple-site.tar.gz`](simple-site.tar.gz) to your AWS instance:
+4. Command(s) to change permissions: 
+5. Command to extract the compressed archive to `/var/www/html`:
+6. Required changes to `index.html` will be awarded credit based on screenshot.
+7. [Insert screenshot of your website (with the URL bar included)]()
+
+## Part 4 Answers:
+
 1. Command to generate a new key, with options entered into the fields 
 ```
 Enter command & options entered while running here
