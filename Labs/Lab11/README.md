@@ -37,6 +37,7 @@ Do the following on your AWS instance.
    - `-f`
    - `-z`
    - `-x`
+   - `-t`
 2. `tar` and compress folders of your choice. Write the command you used. You will not be committing this to GitHub - it does not need to be in your repository folder and may in fact be too large to push to GitHub.
 
 - **Resources**
@@ -118,7 +119,8 @@ When you see a reference to **local system**, Windows users should assume I am r
 
 ## Rubric
 
-- Part 1 - 2 pts (1 pt each)
+- Part 1 - 3 pts (1 pt each)
+   - 2 point for `tar` flags (.33 each)
 - Part 2 - 4 pts (1 pt each)
 - Part 3 - 7 pts (1 pt each)
 - Part 4 - 6 pts (1 pt each)
