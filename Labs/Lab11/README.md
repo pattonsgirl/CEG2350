@@ -1,13 +1,11 @@
-# Lab 10 - UNRELEASED
+# Lab 11
 
-- [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Linux Network Command Cheat Sheet](#part-1---linux-network-command-cheat-sheet)
-- [Part 2 - Network Info](#part-2---network-info)
-- [Part 3 - Subnet Translation](#part-3---subnet-translation)
-- [Part 4 - Security](#part-4---security)
-- [Extra Credit - Tattle Tale](#extra-credit---tattle-tale)
-- [Submission](#Submission)
-- [Rubric](#Rubric)
+- [Lab Procedure](#lab-procedure)
+- [Part 1 - tar it up](#part-1---tar-it-up)
+- [Part 2 - SFTP](#part-2---sftp)
+- [Part 3 - SSH Keys](#part-3---ssh-keys)
+- [Submission](#submission)
+- [Rubric](#rubric)
 
 ## Lab Procedure
 
@@ -17,131 +15,106 @@ Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-**Create a new directory, `Lab10`**
+**Create a new directory, `Lab11`**
 
-Write answers in `Lab10.md` the [LabTemplate.md is here](LabTemplate.md).
+Write answers in `Lab11.md` the [LabTemplate.md is here](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab10/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab11/LabTemplate.md)
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
-## Part 1 - Linux Network Command Cheat Sheet
+## Part 1 - tar it up
+With the semester wrapping up, it's time to prepare to lose access to your instances.  Identify folders of work on your AWS instance you would like to save.  If you have none, use the folder that contains your local copy of your GitHub repository.  While using GitHub to save work is an option, it is just as common to need to compress and transfer information.  It is not required, but is interesting to look the the size of these folders pre and post compression
 
-The commands below are all Linux commands to show or modify network information.  Provide a brief statement / summary (not a multi-paragraph copy paste :wink:) about what each command does.  You'll be using these commands in Part 2 to find networking info for your AWS instance.
+Do the following on your AWS instance.  
 
-- `hostname`
-- `ifconfig`
-- `ip addr show`
-- `route`
-- `cat /var/lib/dhcp/dhclient.leases`
-- `cat /etc/resolv.conf`
-- `curl ipinfo.io`
-- `iptables -L`
-- `nmap -p <IP_or_hostname>`
-- `tcpdump -i <networkinterface> -n host <IP_or_hostname>`
+1. For the `tar` command, write what each option below does:
+   - `-c`
+   - `-v`
+   - `-f`
+   - `-z`
+   - `-x`
+2. `tar` and compress folders of your choice. Write the command you used. You will not be committing this to GitHub - it does not need to be in your repository folder and may in fact be too large to push to GitHub.
 
-## Part 2 - Network Info
+- **Resources**
+- [cyberciti - tar on the command line](https://www.cyberciti.biz/faq/how-to-tar-a-file-in-linux-using-command-line/)
+- [tecmint - tar command examples](https://www.tecmint.com/18-tar-command-examples-in-linux/)
+- [Linux for Devices - Understanding the tar Command in Linux](https://www.linuxfordevices.com/tutorials/linux/tar-command-in-linux)
 
-For your PC and for your AWS instance, find the following network information.  The point is to find networking info using two different OSes (Windows and Linux OR Mac and Linux).  If you do not have access to a non-Linux OS you can use the laptops or desktops provided in the lab rooms. You should not download any additional tools.
+## Part 2 - SFTP
 
-**Additional Useful Commands**  
-Windows: `ipconfig \all`
+For this part, start on your local system, likely in WSL2.  
 
-1. Hostname of the device:
-2. MAC address of the NIC connected to the network:
-3. IPv4 address:
-4. Subnet mask:
-5. Gateway address:
-6. DHCP server address:
-7. DNS server address:
-8. Public IPv4 address:
+1. Connect to your AWS instance via `sftp`.
+2. Describe what the following options do:
+   - `ls`
+   - `lls`
+   - `put`
+   - `get`
+3. Retrieve the `tar` and compressed file (`.tar.gz`) from your AWS instance and download it to your local system
+4. Decompress & extract the file (`.tar.gz`) to a folder on your system (you can remove it after you get the command right, I'm not a space hog)
 
-- Notes: 
-   - These results are going to look boring at home, but interesting on more complex networks, like Wright State or Starbucks.  While you are welcome to do this using your home network, play with these commands on other networks as well. At home you likely have one device (your router) that is the first stop for most requests (DHCP, DNS, and gateway to route traffic to the next stop). On a complex network, you'll see these addresses getting distributed to different devices - there is a device to connect to to request an address and network information (DHCP server), another that is a first stop for DNS resolution, and maybe another that is the gateway address that packets outside the network are forwarded to to find their destination.
-   - Public IPv4 addresses are only used when you are trying to send communications outside your local (private) subnet.  The vast majority of networks utilize this scheme.  It allows many devices to be on one network, which then "share" a public IPv4 address when sending packets and receiving communication back from network devices external to your network.
+- **Resources**
+- [DigitalOcean - how to use sftp](https://www.digitalocean.com/community/tutorials/how-to-use-sftp-to-securely-transfer-files-with-a-remote-server)
 
-## Part 3 - Subnet Translation
+## Part 3 - Extract & Profit
 
-The notation of ranges to define a subnet is an important skill.  Your task is to practice on some easy ones.  The below steps are, in general, how to break this down:
+For this part, you will be installing an open source web server to your AWS instance, extracting a compressed archive containing a static website, and testing that it works!
 
-Example task: Write CIDR notation subnet given range 10.0.0.0 - 10.0.1.255
-   1. Translate addresses to binary
-   2. Set 1's for the matching bits until there is a mismatch - these are the network bits. Remaining bits are 0's - these are the host bits
-   3. Add up the total number of 1's
+Do the following on your AWS instance.
 
-|                          |                                      |
-| ------------------------ | ------------------------------------ |
-| 10.0.0.0                 | 00001010.00000000.00000000.000000000 |
-| 10.0.1.255               | 00001010.00000000.00000001.111111111 |
-| 1's match (network bits) | 11111111.11111111.11111110.00000000  |
-| Subnet mask (base 10)    | 255.255.254.0                        |
-| CIDR                     | /23                                  |
-| Final form:              | 10.0.0.0/23 OR 10.0.1.0/23           |
+1. Install `apache2` or `nginx` with `apt`
+2. Confirm that your chosen web serving service is running.
+3. Download [`simple-site.tar.gz`](simple-site.tar.gz) to your AWs instance.
+4. Change the permissions for the folder `/var/www/html` so that your user is the owner and primary group, your user (and members of your group) can read and write, and others can only read.
+5. Extract the compressed archive to `/var/www/html`
+6. Edit the `index.html` file in `/var/www/html` with:
+   - your name where `YOUR LAST NAME HERE` is.  Make this `div` visible
+   - replace `Insert something fun here` with a fact about you
+   ```html
+   <section>
+            <h2>CEG 2350 Lab 11</h2>
+            <div style="display:none">YOUR NAME HERE</div>
+            <h3>Facts about me</h3>
+            <p>Insert something fun here</p>
+            
+   </section>
+   ```
+7. View your website & confirm the changes requested were made (and visible!).  Take a screenshot with the URL bar included.
 
-**Resources**
-- [CCExpert - Using Prefixes to Represent a Subnet Mask](https://www.ccexpert.us/network-design/using-prefixes-to-represent-a-subnet-mask.html)
-- [Subnet Calculator](https://www.davidc.net/sites/default/subnets/subnets.html)
+## Part 4 - `ssh` keys
 
-Translate the below CIDR notation subnets to their IP ranges:
-1. `130.108.0.0/16`
-2. `192.168.1.0/8`
-3. `8.8.8.8/32`
+Without practice, `ssh` connections and authentication just seem like magic. Really, it is all about files and information being in the right spot as defined in rules in configuration files. The goal of this part is to practice where keys go when you have a new `ssh` keypair. This is a common task to do when you gain access to a system - put your public key in the `authorized_keys` file in the `.ssh` folder of your remote account, then connect from your system to the remote system's account.
 
-Translate the below IP ranges to their CIDR notation subnets:
-1. `192.168.1.0 - 192.168.1.255`
-2. `172.16.0.0 - 172.16.255.255`
-3. `132.189.13.78 - 132.189.13.78`
+When you see a reference to **local system**, Windows users should assume I am referring to using WSL2
 
-## Part 4 - Security
+- **Useful commands: `adduser`, `getent passwd <username>`, `ssh-keygen`, `vim`, `ssh`**
 
-Your AWS instance has a rule that allows in all traffic from any source, to any port on your AWS instance.  Specifically, they look like this:
-![AWS Default Security Group Rules](Default-SGRules.JPG)
+1. On your local system, make a new key pair - with a non-default name.  Change at minimum the default name
+2. On your AWS instance, create a user & user home directory or use the user from old labs
+3. Put the public key of the key pair you created in the user's `~/.ssh/authorized_keys` file on the AWS instance
+4. From your local system, `ssh` in to the AWS instance using the user's username and the private key of the keypair you created.
+   - Format of `ssh` without an entry in the `config` file: `ssh -i path/to/privatekey username@hostname_or_ip`
+5. Write an entry in your local system's `~/.ssh/config` file with the new connection information.
+6. Write the `ssh` command that will use your `config` file information if correctly entered.
 
-Normally, if you had physical access to your instance, we would look at this from the perspective of `iptables` and / or `ufw` rules to allow only trusted networks to access ports on your system, like port 22, which runs a service, SSH, that allows us shell access to the system.  Physical access makes it easy to undo mistakes.  Since we don't, we will use AWS to manage our instance's security rules.
-
-SSH is just software - code - in the end, and code has vulnerabilities.  For all software we track Common Vulnerabilities and Exposures (CVEs).  Specifically for SSH, you can [view the CVE reports here](https://www.cvedetails.com/vulnerability-list/vendor_id-120/SSH.html)
-
-It is a combination of credentials (identity) and network rules that keep systems safe, and allow people to only access what they need.
-
-Your task is to remove both terrible rules from your security group and replace them with the rules outlined below.  Assuming you have hit "Start Lab" and have opened your console via the "AWS" link after the lab has started (timer is counting down), this [link will quick drop you to your Security Groups](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#SecurityGroups:).  Find the Security Group named **`ceg2350-Lab1SecurityGroup`** (or similar).  Click the checkbox next to that entry or the link in the "Security Group ID" column to focus on only this Security Group.  You will be editing only the **Inbound Rules**
-
-If the link doesn't work, the full set of things to click is: go to the the Learner Lab Module -> Click Start Lab -> once started, Click the AWS link (green circle will be next to it).  Click EC2 -> Click Instances Running -> click checkbox next to instance -> in the menu below, click Security, scroll down a little, click the link under Security Groups to hot drop to your rules that go with your instance.  inbound Rules are where you'll be focusing for the lab.
-
-1. Remove the two default rules.  
-   - If you lose the ability to connect to your instance, you can recreate them by referring to the Security Group rules picture above.
-2. Create a rule that allows SSH access from any WSU IPv4 address, which will be all address from 130.108.0.0 to 130.108.255.255
-3. Create a rule that allows SSH access from your home public IPv4 address
-   - required even if you live on campus
-4. Create a rule that allows HTTP access from any IPv4 address
-5. Describe why should HTTP allow any IP, while SSH has restrictions?  Your answer should show a reflection on the purpose of these two protocols.
-
-## Extra Credit - Tattle Tale
-
-[auth_logs.csv](auth_logs.csv) is a cleaned up version of standard SSH logs, and contains only the username used in the connection attempt and the IPv4 address the attempt came from.  Take the provided data and give me 2 reports:
-- the top 5 IP addresses that generated connection attempts and how many attempts they made
-- the top 5 usernames used and how many times they were used
-
-Your reports must contain the set of commands used to create the reports.
-
-- Note: if you are curious about how I parsed `auth.log` to generate the `csv` file, you can [check out my documentation here](https://github.com/pattonsgirl/api-projects/tree/main/ip-mapper/data) - there are likely prettier ways to do it.
+- **Resources**
+- I do this manually, but there are some neat command shortcuts to explore
+- [DigitalOcean - How to Configure SSH Key Based Authentication](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
 
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab10` folder with at minimum:
+1. Verify that your GitHub repo has a `BonusLab` folder with at minimum:
 
-   - `Lab10.md`
+   - `BonusLab.md`
 
-2. In the Pilot Dropbox, paste the URL to the `Lab10` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab10
+2. In the Pilot Dropbox, paste the URL to the `BonusLab` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/BonusLab
 
 ## Rubric
 
-- Part 1 - 10 points (1 pt each)
-- Part 2 - 16 points (1 pt each)
-- Part 3 - 6 points (1 pt each)
-- Part 4 - 4 points
-   - 1 point per Security Group Rule
-   - 1 point for answer to protocol question
-- Extra Credit - 10% (3.6 points)
+- Part 1 - 2 pts (1 pt each)
+- Part 2 - 4 pts (1 pt each)
+- Part 3 - 6 pts (1 pt each)

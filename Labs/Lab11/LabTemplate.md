@@ -1,86 +1,51 @@
-## Lab 10
+## Lab 11
 
 - Name:
 - Email:
 
-## Part 1 - Linux Network Command Cheat Sheet
+## Part 1 Answers:
 
-- `hostname`
-- `ifconfig`
-- `ip addr show`
-- `route`
-- `cat /var/lib/dhcp/dhclient.leases`
-- `cat /etc/resolv.conf`
-- `curl ipinfo.io`
-- `iptables -L`
-- `nmap -p <IP_or_hostname>`
-- `tcpdump -i <networkinterface> -n host <IP_or_hostname>`
+1. `tar` options:
+   - `-c`
+   - `-v`
+   - `-f`
+   - `-z`
+   - `-x`
+2. Command(s) to create and compress your archive:
 
-## Part 2 - Network Info
+## Part 2 Answers:
 
-### Network Info for <Your OS Here>
+1. Command to connect with `sftp`:
+2. `sftp` options:
+   - `ls`
+   - `lls`
+   - `put`
+   - `get`
+3. Command(s) to use `sftp` to download your `.tar.gz` file to your system:
+4. Command(s) to decompress & extract your `.tar.gz` file to your system:
 
-1. Hostname of the device:
-2. MAC address of the NIC connected to the network:
-3. IPv4 address:
-4. Subnet mask:
-5. Gateway address:
-6. DHCP server address:
-7. DNS server address:
-8. Public IPv4 address:
+## Part 3 Answers:
 
-### Network Info for AWS Instance
+1. Command to generate a new key, with options entered into the fields 
+```
+Enter command & options entered while running here
+```
 
-1. Hostname of the device:
-2. MAC address of the NIC connected to the network:
-3. IPv4 address:
-4. Subnet mask:
-5. Gateway address:
-6. DHCP server address:
-7. DNS server address:
-8. Public IPv4 address:
+2. Create the user and / or prove the user exists
+```
+Enter command & output for creating user and / or proving user exists.
+```
 
-## Part 3 - Subnet Translation
+3. Contents of `~/.ssh/authorized_keys` in remote user account:
+```
+Enter contents here
+```
 
-Translate the below CIDR notation subnets to their IP ranges:
-1. `130.108.0.0/16`
-2. `192.168.1.0/8`
-3. `8.8.8.8/32`
+4. `ssh` command:
 
-Translate the below IP ranges to their CIDR notation subnets:
-1. `192.168.1.0 - 192.168.1.255`
-2. `172.16.0.0 - 172.16.255.255`
-3. `132.189.13.78 - 132.189.13.78`
+5. Updated `config` file contents:
+```
+Enter block with connection information in config file here
+```
 
-## Part 4 - Security
-
-Screenshot of your changed Inbound Security Group rules.  
-![Inbound Rules for Lab 10](relative/path/to/image)
-
-Why should HTTP allow any IP, while SSH has restrictions?
-
-## Extra Credit - Tattle Tale
-
-### IPv4 Source Report
-
-| Rank  | IPv4 Address | # of Attempts |
-| ----- | ------------ | ------------- |
-| 1     |              |     |
-| 2     |              |     |
-| 3     |              |     |
-| 4     |              |     |
-| 5     |              |     |
-
-Commands to parse `csv` for report:
-
-### Username Used Report
-
-| Rank  | Username     | # of Attempts |
-| ----- | ------------ | ------------- |
-| 1     |              |     |
-| 2     |              |     |
-| 3     |              |     |
-| 4     |              |     |
-| 5     |              |     |
-
-Commands to parse `csv` for report:
+6. `ssh` command post `config` file entry:
