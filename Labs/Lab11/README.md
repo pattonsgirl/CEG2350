@@ -3,7 +3,8 @@
 - [Lab Procedure](#lab-procedure)
 - [Part 1 - tar it up](#part-1---tar-it-up)
 - [Part 2 - SFTP](#part-2---sftp)
-- [Part 3 - SSH Keys](#part-3---ssh-keys)
+- [Part 3 - Extract & Profit](#part-3---extract--profit)
+- [Part 4 - SSH Keys](#part-4---ssh-keys)
 - [Submission](#submission)
 - [Rubric](#rubric)
 
@@ -64,6 +65,8 @@ For this part, start on your local system, likely in WSL2.
 For this part, you will be installing an open source web server to your AWS instance, extracting a compressed archive containing a static website, and testing that it works!
 
 Do the following on your AWS instance.
+
+- **Useful commands: `apt`, `systemctl`, `wget`, `chown`, `chmod`, `tar`, `vim`, `curl`**
 
 1. Install `apache2` or `nginx` with `apt`
 2. Confirm that your chosen web serving service is running.
