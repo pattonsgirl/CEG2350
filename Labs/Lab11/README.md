@@ -73,6 +73,7 @@ Do the following on your AWS instance.
    - [Digital Ocean - Apache vs Nginx: Practical Considerations](https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations)
 2. Confirm that your chosen web serving service is running.
 3. Download [`simple-site.tar.gz`](simple-site.tar.gz) to your AWS instance.
+   - [URL to download .tar.gz file](https://github.com/pattonsgirl/CEG2350/raw/refs/heads/main/Labs/Lab11/simple-site.tar.gz)
 4. Change the permissions for the folder `/var/www/html` so that your user is the owner and primary group, your user (and members of your group) can read and write, and others can only read.
 5. Extract the compressed archive to `/var/www/html`
 6. Edit the `index.html` file in `/var/www/html` with:
