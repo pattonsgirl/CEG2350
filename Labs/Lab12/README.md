@@ -1,10 +1,11 @@
-# Lab 10 - UNRELEASED
+# Lab 12
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Linux Network Command Cheat Sheet](#part-1---linux-network-command-cheat-sheet)
 - [Part 2 - Network Info](#part-2---network-info)
 - [Part 3 - Subnet Translation](#part-3---subnet-translation)
 - [Part 4 - Security](#part-4---security)
+- [Part 5 - It's Alive!  Maybe...](#part-5---its-alive-maybe)
 - [Extra Credit - Tattle Tale](#extra-credit---tattle-tale)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
@@ -17,11 +18,11 @@ Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-**Create a new directory, `Lab10`**
+**Create a new directory, `Lab12`**
 
-Write answers in `Lab10.md` the [LabTemplate.md is here](LabTemplate.md).
+Write answers in `Lab12.md` the [LabTemplate.md is here](LabTemplate.md).
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab10/LabTemplate.md)
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab12/LabTemplate.md)
 
 For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
 
@@ -29,38 +30,42 @@ If you did something "wrong" make a note of it in your lab. These are learning e
 
 ## Part 1 - Linux Network Command Cheat Sheet
 
-The commands below are all Linux commands to show or modify network information.  Provide a brief statement / summary (not a multi-paragraph copy paste :wink:) about what each command does.  You'll be using these commands in Part 2 to find networking info for your AWS instance.
+The commands below are all Linux commands to show or modify network information.  Provide a brief statement / summary (not a multi-paragraph copy paste :wink:) about what each command does **and** find an internet resource that provides a basic guide to what the command does and examples of usage.  You'll be using these commands in other parts of this lab.
 
 - `hostname`
 - `ifconfig`
-- `ip addr show`
+- `ip a`
 - `route`
-- `cat /var/lib/dhcp/dhclient.leases`
-- `cat /etc/resolv.conf`
-- `curl ipinfo.io`
 - `iptables -L`
+- `curl <IP_or_hostname>`
+- `ping <IP_or_hostname>`
+- `nslookup <IP_or_hostname>`
+- `traceroute <IP_or_hostname>`
 - `nmap -p <IP_or_hostname>`
 - `tcpdump -i <networkinterface> -n host <IP_or_hostname>`
 
 ## Part 2 - Network Info
 
-For your PC and for your AWS instance, find the following network information.  The point is to find networking info using two different OSes (Windows and Linux OR Mac and Linux).  If you do not have access to a non-Linux OS you can use the laptops or desktops provided in the lab rooms. You should not download any additional tools.
+For your PC and for your AWS instance, find the following network information.  You may utilize a mix of command line utilities and GUI applications to determine the networking information requested.
 
-**Additional Useful Commands**  
-Windows: `ipconfig \all`
+The point is to find networking info using two different OSes to explore the different utilities (Windows and Linux OR Mac and Linux).  If you do not have access to a non-Linux OS you can use the laptops or desktops provided in the lab rooms or in Russ 152 B & D. 
+
+You should not download any additional tools to find this information (despite what online articles may request).
+
+- **Useful Commands - PowerShell on Windows:** `ipconfig \all`, `route PRINT`, 
 
 1. Hostname of the device:
 2. MAC address of the NIC connected to the network:
 3. IPv4 address:
 4. Subnet mask:
 5. Gateway address:
-6. DHCP server address:
+6. Does the device use DHCP to receive a network address? (y/n):
 7. DNS server address:
 8. Public IPv4 address:
 
 - Notes: 
    - These results are going to look boring at home, but interesting on more complex networks, like Wright State or Starbucks.  While you are welcome to do this using your home network, play with these commands on other networks as well. At home you likely have one device (your router) that is the first stop for most requests (DHCP, DNS, and gateway to route traffic to the next stop). On a complex network, you'll see these addresses getting distributed to different devices - there is a device to connect to to request an address and network information (DHCP server), another that is a first stop for DNS resolution, and maybe another that is the gateway address that packets outside the network are forwarded to to find their destination.
-   - Public IPv4 addresses are only used when you are trying to send communications outside your local (private) subnet.  The vast majority of networks utilize this scheme.  It allows many devices to be on one network, which then "share" a public IPv4 address when sending packets and receiving communication back from network devices external to your network.
+   - Public IPv4 addresses are only used when you are trying to send communications outside your local (private) subnet.  The vast majority of networks utilize this scheme of Network Address Translation (NAT).  It allows many devices to be on one network, which then "share" a public IPv4 address when sending packets and receiving communication back from network devices external to your network.
 
 ## Part 3 - Subnet Translation
 
@@ -84,38 +89,74 @@ Example task: Write CIDR notation subnet given range 10.0.0.0 - 10.0.1.255
 - [CCExpert - Using Prefixes to Represent a Subnet Mask](https://www.ccexpert.us/network-design/using-prefixes-to-represent-a-subnet-mask.html)
 - [Subnet Calculator](https://www.davidc.net/sites/default/subnets/subnets.html)
 
-Translate the below CIDR notation subnets to their IP ranges:
+Translate the below CIDR blocks to their IP ranges:
 1. `130.108.0.0/16`
-2. `192.168.1.0/8`
-3. `8.8.8.8/32`
+2. `34.117.59.81/32`
+3. `10.25.121.90/8`
 
 Translate the below IP ranges to their CIDR notation subnets:
-1. `192.168.1.0 - 192.168.1.255`
-2. `172.16.0.0 - 172.16.255.255`
-3. `132.189.13.78 - 132.189.13.78`
+1. `172.18.5.0 - 172.18.5.255`
+2. `5.9.243.187 - 5.9.243.187`
+3. `192.168.0.0 - 192.168.1.255`
 
 ## Part 4 - Security
 
-Your AWS instance has a rule that allows in all traffic from any source, to any port on your AWS instance.  Specifically, they look like this:
+Your AWS instance has a rule one okay rule, and one generally bad rule.  Specifically, they look like this:
 ![AWS Default Security Group Rules](Default-SGRules.JPG)
 
-Normally, if you had physical access to your instance, we would look at this from the perspective of `iptables` and / or `ufw` rules to allow only trusted networks to access ports on your system, like port 22, which runs a service, SSH, that allows us shell access to the system.  Physical access makes it easy to undo mistakes.  Since we don't, we will use AWS to manage our instance's security rules.
+Rule 1 is an Inbound / Ingress rule that states as long as the source IP starts with 10.0.0, accept all protocols of communication on any port.
 
-SSH is just software - code - in the end, and code has vulnerabilities.  For all software we track Common Vulnerabilities and Exposures (CVEs).  Specifically for SSH, you can [view the CVE reports here](https://www.cvedetails.com/vulnerability-list/vendor_id-120/SSH.html)
+Rule 2 is an Inbound / Ingress rule that states any source IP can communicate with the TCP protocol on any port.
+
+If you break your access to your AWS instance in the exercise below, you can "reset" using this screenshot of rules.
+
+Let's discuss what we have.  Your instance is running two services (assuming you completed Lab 11) - **SSH and Apache HTTP Server**.  
+
+SSH is a protocol and service that enables secure and encrypted communication between two points.  By `ssh`ing to your instance, you gain access to a shell where you can run commands.  Your instance should only allow `ssh` connections from *trusted* IP sources.
+
+Apache HTTP server listens on port 80 (by default) for incoming HTTP requests.  After receiving a request, it send the client back the requested resource, if available.  The client then assembles and "displays" the result in an application, such as `curl` or a browser.  Websites (and specifically the servers that serve them) are assumed to be publicly viewable - as long as a client knows the IP or hostname, it can make an HTTP request to the server.
+
+All software, such as SSH and Apache HTTP Server, has vulnerabilities.  For all software we track Common Vulnerabilities and Exposures (CVEs).  
+- [SSH CVE reports](https://www.cvedetails.com/vulnerability-list/vendor_id-120/SSH.html)
+- [Apache HTTP Server CVE reports](https://www.cvedetails.com/version-list/0/17262/1/)
 
 It is a combination of credentials (identity) and network rules that keep systems safe, and allow people to only access what they need.
 
-Your task is to remove both terrible rules from your security group and replace them with the rules outlined below.  Assuming you have hit "Start Lab" and have opened your console via the "AWS" link after the lab has started (timer is counting down), this [link will quick drop you to your Security Groups](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#SecurityGroups:).  Find the Security Group named **`ceg2350-Lab1SecurityGroup`** (or similar).  Click the checkbox next to that entry or the link in the "Security Group ID" column to focus on only this Security Group.  You will be editing only the **Inbound Rules**
+Your task is to revise the Inbound / Ingress Security Group Rules for your instance and replace them with rules that set more appropriate restrictions.  
 
-If the link doesn't work, the full set of things to click is: go to the the Learner Lab Module -> Click Start Lab -> once started, Click the AWS link (green circle will be next to it).  Click EC2 -> Click Instances Running -> click checkbox next to instance -> in the menu below, click Security, scroll down a little, click the link under Security Groups to hot drop to your rules that go with your instance.  inbound Rules are where you'll be focusing for the lab.
+Assuming you have hit "Start Lab" and have opened your console via the "AWS" link after the lab has started (timer is counting down), this [link will quick drop you to your Security Groups](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#SecurityGroups:).  Find the Security Group named **`ceg2350-Lab1SecurityGroup`** (or similar).  Click the checkbox next to that entry or the link in the "Security Group ID" column to focus on only this Security Group.  **Only edit the Inbound Rules**
 
-1. Remove the two default rules.  
-   - If you lose the ability to connect to your instance, you can recreate them by referring to the Security Group rules picture above.
+>[!TIP]
+>If the link doesn't work, the full set of things to click is: go to the the Learner Lab Module -> Click Start Lab -> once started, Click the AWS link (green circle will be next to it).  Click EC2 -> Click Instances Running -> click checkbox next to instance -> in the menu below, click Security, scroll down a little, click the link under Security Groups to hot drop to your rules that go with your instance.  inbound Rules are where you'll be focusing for the lab.
+
+1. Remove the two original rules.  
 2. Create a rule that allows SSH access from any WSU IPv4 address, which will be all address from 130.108.0.0 to 130.108.255.255
 3. Create a rule that allows SSH access from your home public IPv4 address
    - required even if you live on campus
 4. Create a rule that allows HTTP access from any IPv4 address
 5. Describe why should HTTP allow any IP, while SSH has restrictions?  Your answer should show a reflection on the purpose of these two protocols.
+6. Describe how you validated or can validate if your rules are working with the restrictions given.
+
+## Part 5 - It's Alive! Maybe...
+
+Figuring out how to tell if a server is on is one of those MFUS (Most Frequently Used Skills).  Sites like [Down Detector](https://downdetector.com/) are highly informative, but sometimes you need to have other utilities in hand.  The two things we generally ask about servers are: "Is it responding?" and "Is the web page available?".
+
+In this exercise, you will get a set of IPs to test the useful commands on, then a series of questions to guide what I'd like you to understand about them.  You may use external resources, including ChatGPT, to help with your understanding, but you **must cite** your sources, or in the case of generative AI, the prompt used.  You should summarize from resources, not plagiarize.  Your responses should prove how you can validate your answer by testing against the IPs referred to and the commands recommended.
+
+- **Useful Commands:** `ping`, `traceroute`, `nslookup`, `curl`
+
+**Server IPs / Domain Names / URLs**
+- `8.8.8.8`
+- `5.9.243.187` -> `wttr.in` -> `https://wttr.in`
+- Your AWS instance public IP
+- `34.117.59.81` -> `ipinfo.io` -> `https://ipinfo.io`
+
+1. What are each of the above, what do they respond to, and what requests do they ignore?
+2. Does `ping` tell you if a server is "working"?
+3. What protocol does `ping` use?  What does this mean about the server firewalls?
+4. Why won't `ping` work if you specify `https://` before the domain name?
+5. Does an IP lookup always result in finding the correct domain name / URL to access the resource, and vice versa?
+6. What happens at when an `http` request is made to a server with `https` enabled?  
 
 ## Extra Credit - Tattle Tale
 
@@ -129,19 +170,27 @@ Your reports must contain the set of commands used to create the reports.
 
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab10` folder with at minimum:
+1. Verify that your GitHub repo has a `Lab12` folder with at minimum:
 
-   - `Lab10.md`
+   - `Lab12.md`
 
-2. In the Pilot Dropbox, paste the URL to the `Lab10` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab10
+2. In the Pilot Dropbox, paste the URL to the `Lab12` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab12
 
 ## Rubric
 
-- Part 1 - 10 points (1 pt each)
-- Part 2 - 16 points (1 pt each)
-- Part 3 - 6 points (1 pt each)
-- Part 4 - 4 points
-   - 1 point per Security Group Rule
-   - 1 point for answer to protocol question
-- Extra Credit - 10% (3.6 points)
+- Part 1 - 5.5 points (0.5 pt. / command)
+   - summary of what command does (0.25)
+   - resource to description & usage of command (0.25)
+- Part 2 - 8 points (0.5 pt. each)
+- Part 3 - 6 points (1 pt. each)
+- Part 4 - 6 points
+   - 1 point for removing original rules
+   - 1 point per Security Group Rule (3 total)
+   - 1 point for addressing restrictive vs non-restrictive protocols
+   - 1 point for thoughtful tests to check SG is working as intended for each protocol
+   - No screenshot in markdown = -3 points
+- Part 5 - 4.5 points
+   - 0.5 point per purpose, response, and no response per server (4 total)
+   - 0.5 point per response to question, with understanding & experimentation documented (5 total)
+- Extra Credit - 10% (3 points)
