@@ -193,4 +193,5 @@ Your reports must contain the set of commands used to create the reports.
 - Part 5 - 4.5 points
    - 0.5 point per purpose, response, and no response per server (4 total)
    - 0.5 point per response to question, with understanding & experimentation documented (5 total)
+   - No citations = -4.5 points
 - Extra Credit - 10% (3 points)
