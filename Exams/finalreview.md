@@ -183,7 +183,7 @@
      - HTTPS
        - Certificate Authorities & browser trust
      - SSH
-       - private / public key pairs, `config` & `authorized_keys` files
+       - private / public key pairs, ~~`config` & `authorized_keys` files~~
      - SFTP
    - transport
      - ports
@@ -211,14 +211,5 @@
    - outbound / OUTPUT / egress
    - ~~whitelist vs blacklist & default allow vs deny~~
    - common sense rules & trusted networks
-5. Commands: ip, route, arp, iptables, ping, curl, wget, tcpdump, nmap
-
-## Excess Topics - not for studying
-
-- X11 and RDP
-- GPG and PGP
-- Network file shares: NFS, Samba
-- Filesystem differences in terms of implementation
-- Virus scanning & types of computer diseases
-- password locking files
-- Torrents
+5. Commands: ip, route, arp, iptables, ping, curl, wget
+   - Useful, not on exam: tcpdump, nmap
