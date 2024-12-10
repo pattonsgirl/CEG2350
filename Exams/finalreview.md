@@ -183,7 +183,7 @@
      - HTTPS
        - Certificate Authorities & browser trust
      - SSH
-       - private / public key pairs, ~~`config` & `authorized_keys` files~~
+       - private / public key pairs, `config` & `authorized_keys` files
      - SFTP
    - transport
      - ports
