@@ -1,11 +1,9 @@
 # Lab 01
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - GitHub Profile](#Part-5---GitHub-Profile)
-- [Part 1 - Play with directories and naming](#Part-1---Play-with-directories-and-naming)
-- [Part 2 - Create and edit a file](#Part-2---Create-and-edit-a-file)
-- [Part 3 - Play with hidden files](#Part-3---Play-with-hidden-files)
-- [Part 4 - AWS Academy Setup](#Part-4---AWS-Academy-Setup)
+- [Part 1 - GitHub Profile](#Part-1---GitHub-Profile)
+- [Part 2 - Research](#part-2---research)
+- [Part 3 - Command Line Navigation](#part-3---command-line-navigation)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
