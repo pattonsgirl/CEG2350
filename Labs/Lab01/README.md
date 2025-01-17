@@ -56,18 +56,37 @@ As you work through the lab, practice making commits and synchronizing to your r
 - [Markdown cheatsheet](https://www.markdownguide.org/cheat-sheet/)
 - [GitHub Emoji Support](https://www.webfx.com/tools/emoji-cheat-sheet/)
 
-## Part 2 - Command Line Navigation
+## Part 2 - Research
 
-There are three primary Operating System categories - Windows, Mac, and Linux.  The system you are physically touching utilizes one of these three OSes.  Your first tasking is to start using the Command Line program for you operating system and learn how to use commands to get around and create folders (directories) and files.  You will *research* how to do these actions on one other operating system.
+In your lab template, fill out the Action column associated with the Command Line commands that perform similar functions.  PowerShell for Windows aliases its Verb-Noun style commands to Unix / Linux style simply named commands.  You should see what aliases work (or don't) in Part 3 if you use Windows OS.
 
-In the lab template, make sure the `x` is appropriately located according to your OS and the OS you are researching.
+| Windows | Linux / Mac | Action |
+| ---     | ---         | ---    |
+| help    | man         |        |
+| Get-Location | pwd    |        |
+| Get-ChildItem | ls    |        |
+| mkdir   | mkdir       |        |
+| Set-Location | cd     |        |
+| New-Item | touch      |        |
+| Move-Item | mv        |        |
+| Copy-Item | cp        |        |
+| Remove-Item | rm      |        |
+| notepad.exe | vim     |        |
+
+You may, and should, look up the function of the above commands.  Your summary should be in your own words.
+
+## Part 3 - Command Line Navigation
+
+There are three primary Operating System categories - Windows, Mac, and Linux.  The system you are physically touching utilizes one of these three OSes.  Your first tasking is to start using the Command Line program for you operating system and learn how to use commands to get around and create folders (directories) and files.
+
+In the lab template, make sure the `x` is appropriately located according to your OS.
 
 For your OS, open the default shell and navigate to your user's directory (folder).  Hint:
 - Windows = PowerShell
 - Mac = Terminal
 - Linux = [insert system terminal emulator here]
 
-You'll perform the actions given in the numbered list below.  You'll research how you would do them in the second OS you selected.  There will be two sections to fill out in the lab template - one for your OS, one for your other choice. **If Linux is not your OS, select Linux as your OS to research.**
+You'll perform the actions given in the numbered list below.
 
 Cite sources, if needed, about how you found out how to do certain actions.  If you used generative AI as a source, include the platform and the prompt used.  Add your citations notes to the section in your Lab Template.
 
@@ -88,12 +107,6 @@ Start in your user's home directory.
 13. Delete / remove both `fodder.txt` AND `Dir B`
    - Challenge: delete `Dir B` and `fodder.txt` in one command
 
-## CLI Commands for OSes
-
-- **Useful Linux / Mac commands:** `man, mkdir, cd, ls, pwd, mv, touch, vim, cp, mv, ls`
-- **Useful Windows PowerShell commands:**  
-   - The PowerShell commands listed usually have aliases with the more "common" Linux style commands.  Try them out and see what works!
-
 ## Submission
 
 Remember that we can only grade what we see in GitHub.  Make sure to commit and synchronize (push) your changes to your files.
@@ -111,7 +124,7 @@ Your answers should be cleanly presented in your GitHub repository.  Citations s
    - contains major
    - contains 2 project descriptions
    - looks nice
-- Part 2 - Commands for Your OS - 13 pts
+- Part 2 - Research - 10 pts
+   - 1 pt / description
+- Part 2 - Commands Line Navigation - 13 pts
    - 1 pt / question
-- Part 2 - Commands for ___ OS - 7 pts
-   - Answers will be reviewed for general accuracy and good faith attempts
