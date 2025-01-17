@@ -99,7 +99,7 @@ Start in your user's home directory.
 7. Move the file named `test.txt` into `DirA`
 8. Edit the contents of `test.txt` with some words of encouragement for yourself
 9. Make a copy of `test.txt` named `copy.txt` in `DirA`
-10. View the contents of `DirA"
+10. View the contents of `DirA`
 11. Make a copy of `test.txt` in `Dir B` named `fodder.txt`
 12. Delete / remove both `fodder.txt` AND `Dir B`
    - Challenge: delete `Dir B` and `fodder.txt` in one command
