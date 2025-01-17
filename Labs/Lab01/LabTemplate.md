@@ -45,10 +45,9 @@ My Command Line Shell is:
 Put your words here
 ```
 9. Make a copy of `test.txt` named `copy.txt` in `DirA`:
-10. Rename `copy.txt` to a naming convention required to make the file *hidden* by default:
-11. View the contents of `DirA` including the hidden file: 
-12. Make a copy of `test.txt` in `Dir B` named `fodder.txt`:
-13. Delete / remove both `fodder.txt` AND `Dir B`:
+10. View the contents of `DirA`: 
+11. Make a copy of `test.txt` in `Dir B` named `fodder.txt`:
+12. Delete / remove both `fodder.txt` AND `Dir B`:
 
 ## Citations
 
