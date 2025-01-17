@@ -1,30 +1,31 @@
 # Lab 01
 
 - [Lab Procedure](#Lab-Procedure)
+- [Part 1 - GitHub Profile](#Part-5---GitHub-Profile)
 - [Part 1 - Play with directories and naming](#Part-1---Play-with-directories-and-naming)
 - [Part 2 - Create and edit a file](#Part-2---Create-and-edit-a-file)
 - [Part 3 - Play with hidden files](#Part-3---Play-with-hidden-files)
 - [Part 4 - AWS Academy Setup](#Part-4---AWS-Academy-Setup)
-- [Part 5 - GitHub Profile](#Part-5---GitHub-Profile)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
 ## Lab Pre-Reqs
 
-This lab assumes
+- A GitHub account
+- Know your OS terminal - PowerShell for Windows, Terminal for Mac / Linux
+- Download and install git
+- Download and install GitHub Desktop (recommended for ease)
+- Download and install VS Code
 
-1. That you have a working Linux / Unix based terminal
+For your username repository & your course repository, **clone** (copy) the repository locally by selecting "Code", then selecting "Open with GitHub Desktop".  GitHub Desktop will then open with the repository details - select Clone to continue.  Select "Open in Visual Studio Code".
 
-   - Windows users: WSL2
-      - https://learn.microsoft.com/en-us/windows/wsl/setup/environment?source=recommendations 
-   - Mac users: Terminal
-   - Linux / Unix users: Terminal
+Your cloned repository folder will now open in Visual Studio Code.  From here, you can add and edit files and folders into the repository folder.  Use the "Source Control" menu to write commit messages, make commits, and synchronize changes with GitHub (you can then refresh the browser page to see the changes after sync).
 
 2. You have created a GitHub account and clicked the link in Pilot to generate your GitHub  
    repository for this course
 
    - If you forgot to bookmark it, the URL is similar to:
-   - `https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME`
+   - `https://github.com/WSU-kduncan/ceg2350s25-YOURGITHUBUSERNAME`
 
 ## Lab Procedure
 
@@ -32,88 +33,85 @@ For each lab in this course, you will be provided with a lab template to fill in
 
 - `https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab01/LabTemplate.md`
 
-In your browser, go to your GitHub repository - `https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME`
+Assuming that you have cloned your repository and can open it in VS Code...
 
-Click the `Add File` button, then select "Create new file"
+Create a new file in your repository workspace named `Lab01.md`.  In this file, **paste** the contents of the Lab 01 template.  
 
-Name the file `Lab01.md`. In the edit file box, **paste** the contents of the lab template.
+As you work through the lab, practice making commits and synchronizing to your repository on GitHub.  As the course progress, a history of multiple commits will become requirements.
 
-For each part below, you will be asked to perform an action or answer a question. The actions are going to be commands - **you will write the command(s) you used as "answers" to the action requested**. You are allowed to use multiple commands to solve an action. Just make sure to write every command you used to complete the action. Check with the TAs if you need clarification.
+## Part 1 - GitHub Profile
 
-```
-Example:
-Prompt: Create a file named bubbles.txt
-Answer: `touch bubbles.txt`
-```
-
-If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
-
-When you are ready to save your work (or take a break), scroll to the top to select "Commit changes..." to view the dialog regarding `commit`ting your work. For the moment, think of commits as save points. For each save point, you will write a message about what changed.
-
-- Notice there are two textboxes in the commit field - skinny and paragraph sized. The skinny box is where you'll place a quick description - this one is required to create a `commit`. The paragraph sized box is where you can add bigger details about changes.
-- The radio button defaults to select `Commit directly to the main branch.` - leave this as is.
-- Select the green `Commit` button when you are ready to save your work.
-
-To continue editing your file:
-
-- Click on the file
-- Click on the "Edit this file" pencil icon towards the right
-- When you are done editing, repeat the steps above to `commit` your work.
-
-## Part 1 - Play with directories and naming
-
-- **Useful commands for this part: `man, mkdir, cd, ls, pwd, mv`**
-
-1. Create a directory called `DirA`
-2. Create a directory called `Dir B`
-   - You must end up with a folder named `Dir B`
-3. How do you go into the `Dir B` directory?
-4. Which of these directories, `DirA` or `Dir B` uses a better naming convention, and why?
-5. Rename `Dir B` to `DirB`
-
-## Part 2 - Create and edit a file
-
-- **Useful commands for this part: `touch, vim`**
-
-1. In `DirA`, create a file called `test.txt`
-2. Put at least three lines of text in `test.txt` using `vim`
-
-## Part 3 - Play with hidden files
-
-- **Useful commands for this part: `cp, mv, ls`**
-
-1. Make a copy of `test.txt` inside `DirA` named `.hiddentext.txt`
-2. Write the command and flags needed to see the file in `DirA`
-
-## Part 4 - AWS Academy Setup
-
-An email was sent to your wright.edu account inviting you to join AWS Academy.  
-Follow the instructions in [AWS Academy](../../AWSAcademySetup.md) to set up your AWS instance.
-
-## Part 5 - GitHub Profile
-
-1. Setup a profile repository that will be visible on your `https://github.com/your_username` page.  
+1. Setup a profile repository that will be visible on your `https://github.com/your_username` page. Clone this repository to your system and edit the `README.md` file per the requirements below. 
   - [Instruction to set up a profile README](https://docs.github.com/en/get-started/start-your-journey/setting-up-your-profile#adding-a-profile-readme)
 2. Your profile must include: 
    - your name
    - your intended major
    - pick at least two projects you are going to work on this semester (because of a course or personal projects) and give an overview of them
-      - it would be really cool to make GitHub repositories for these projects and really start establishing your version control with git workflow
-3. Visit some well-built profile repositories to form an idea of what your profile could look like as your experiences and projects mature:
-   - [coderjojo- Awesome Developer Profiles](https://github.com/coderjojo/creative-profile-readme)
+3. Visit some well-built profile repositories for inspiration and to form an idea of what your profile could look like as your experiences and projects mature:
+   - [coderjojo - Awesome Developer Profiles](https://github.com/coderjojo/creative-profile-readme)
    - [Maximous Black - GitHub Profile collection](https://github.com/maximousblk/maximousblk)
-4. Link to your `https://github.com/your_username` page
+4. Edit the Lab Template to make the link validly point to your GitHub profile - `https://github.com/your_username`
 
 ***Fun Resources***
 - [Markdown cheatsheet](https://www.markdownguide.org/cheat-sheet/)
 - [GitHub Emoji Support](https://www.webfx.com/tools/emoji-cheat-sheet/)
 
+## Part 2 - Command Line Navigation
+
+There are three primary Operating System categories - Windows, Mac, and Linux.  The system you are physically touching utilizes one of these three OSes.  Your first tasking is to start using the Command Line program for you operating system and learn how to use commands to get around and create folders (directories) and files.  You will *research* how to do these actions on one other operating system.
+
+In the lab template, make sure the `x` is appropriately located according to your OS and the OS you are researching.
+
+For your OS, open the default shell and navigate to your user's directory (folder).  Hint:
+- Windows = PowerShell
+- Mac = Terminal
+- Linux = [insert system terminal emulator here]
+
+You'll perform the actions given in the numbered list below.  You'll research how you would do them in the second OS you selected.  There will be two sections to fill out in the lab template - one for your OS, one for your other choice. **If Linux is not your OS, select Linux as your OS to research.**
+
+Cite sources, if needed, about how you found out how to do certain actions.  If you used generative AI as a source, include the platform and the prompt used.  Add your citations notes to the section in your Lab Template.
+
+Start in your user's home directory.
+
+1. Create a directory named `DirA`
+2. Create a directory named `Dir B` - the space in this name is intentional
+3. Go into `DirA`
+4. Go into `Dir B` from `DirA`
+5. Return to your user's home directory
+6. Create a file named `test.txt`
+7. Move the file named `test.txt` into `DirA`
+8. Edit the contents of `test.txt` with some words of encouragement for yourself
+9. Make a copy of `test.txt` named `copy.txt` in `DirA`
+10. Rename `copy.txt` to a naming convention required to make the file *hidden* by default
+11. View the contents of `DirA` including the hidden file
+12. Make a copy of `test.txt` in `Dir B` named `fodder.txt`
+13. Delete / remove both `fodder.txt` AND `Dir B`
+   - Challenge: delete `Dir B` and `fodder.txt` in one command
+
+## CLI Commands for OSes
+
+- **Useful Linux / Mac commands:** `man, mkdir, cd, ls, pwd, mv, touch, vim, cp, mv, ls`
+- **Useful Windows PowerShell commands:**  
+   - The PowerShell commands listed usually have aliases with the more "common" Linux style commands.  Try them out and see what works!
+
 ## Submission
 
+Remember that we can only grade what we see in GitHub.  Make sure to commit and synchronize (push) your changes to your files.
+
 - In the Pilot Dropbox, paste the URL to the `Lab01.md` file in your GitHub repo
-  - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/blob/main/Lab01.md
+  - URL should look like: https://github.com/WSU-kduncan/ceg2350s25-YOURGITHUBUSERNAME/blob/main/Lab01.md
 
 ## Rubric
 
-- Each question is worth 1 point.
-- This lab is worth a total of 11 points
+Your answers should be cleanly presented in your GitHub repository.  Citations should be included as needed.  Include which generative AI system was used and what prompts were used if generative AI was used.
+
+- Part 1 - GitHub profile repository - 5 pts
+   - is visible
+   - contains name
+   - contains major
+   - contains 2 project descriptions
+   - looks nice
+- Part 2 - Commands for Your OS - 13 pts
+   - 1 pt / question
+- Part 2 - Commands for ___ OS - 7 pts
+   - Answers will be reviewed for general accuracy and good faith attempts

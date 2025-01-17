@@ -23,6 +23,11 @@ For each part below, you will be asked to do an action or answer a question. The
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
+## Part 4 - AWS Academy Setup
+
+An email was sent to your wright.edu account inviting you to join AWS Academy.  
+Follow the instructions in [AWS Academy](../../AWSAcademySetup.md) to set up your AWS instance.
+
 ## Part 1 - clone wars
 
 `ssh` to your AWS instance for this part. It is highly recommended you look at the Resources listed below.
