@@ -46,6 +46,11 @@ There are many different unix shells. Ubuntu's default shell is Bash (like most 
 
 > In unix system administration, a user's shell is the program that is invoked when they log in. Normal user accounts have a command-line shell, but users with restricted access may have a restricted shell or some other specific command (e.g. for file-transfer-only accounts).
 
+#### Citations:
+
+- https://askubuntu.com/questions/506510/what-is-the-difference-between-terminal-console-shell-and-command-line
+- https://superuser.com/questions/144666/what-is-the-difference-between-shell-console-and-terminal
+
 ## Your System's Terminal Emulator & Shell
 
 Each OS environment started with terminal access, development of a shell to interface with the operating system, and command line utilities.
