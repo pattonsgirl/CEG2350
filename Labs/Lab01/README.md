@@ -15,17 +15,21 @@
 - Download and install GitHub Desktop (recommended for ease)
 - Download and install VS Code
 
-For your username repository & your course repository, **clone** (copy) the repository locally by selecting "Code", then selecting "Open with GitHub Desktop".  GitHub Desktop will then open with the repository details - select Clone to continue.  Select "Open in Visual Studio Code".
+For your username repository & your course repository, **clone** (copy) the repository locally by selecting "Code", then selecting "Open with GitHub Desktop".  
+
+![GitHub Notes](imgs/GitHub-MarkedUp.png)
+
+GitHub Desktop will then open with the repository details - select Clone to continue.  Select "Open in Visual Studio Code".
 
 Your cloned repository folder will now open in Visual Studio Code.  From here, you can add and edit files and folders into the repository folder.  Use the "Source Control" menu to write commit messages, make commits, and synchronize changes with GitHub (you can then refresh the browser page to see the changes after sync).
 
-2. You have created a GitHub account and clicked the link in Pilot to generate your GitHub  
-   repository for this course
-
-   - If you forgot to bookmark it, the URL is similar to:
-   - `https://github.com/WSU-kduncan/ceg2350s25-YOURGITHUBUSERNAME`
+![VSCode Notes](imgs/VSCode-MarkedUp.png)
 
 ## Lab Procedure
+
+Make sure you have created a GitHub account and clicked the link in Pilot to generate your GitHub repository for this course
+- If you forgot to bookmark it, the URL is similar to:  
+`https://github.com/WSU-kduncan/ceg2350s25-YOURGITHUBUSERNAME`
 
 For each lab in this course, you will be provided with a lab template to fill in your lab answers. The [Lab 01 Template can be copied from this link](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab01/LabTemplate.md):
 
