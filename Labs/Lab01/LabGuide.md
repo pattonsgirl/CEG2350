@@ -68,7 +68,7 @@ The similarities are going to cap at navigation & some common utilities that are
 
 [PowerShell vs CMD - What's the Difference?](https://phoenixnap.com/kb/powershell-vs-cmd)
 
-![PowerShell labels](/imgs/PowerShell-Markedup.PNG)
+![PowerShell labels](imgs/PowerShell-MarkedUp.PNG)
 
 ### Unix / Linux
 
@@ -78,6 +78,8 @@ The similarities are going to cap at navigation & some common utilities that are
 [Bash Commands Cheat Sheet](https://github.com/RehanSaeed/Bash-Cheat-Sheet)
 
 [Bash Scripting Cheat Sheet](https://devhints.io/bash)
+
+![Ubuntu / bash labels](imgs/Ubuntu-MarkedUp.png)
 
 ### Mac
 
@@ -91,6 +93,21 @@ The similarities are going to cap at navigation & some common utilities that are
 [Changing the default shell](https://support.apple.com/guide/terminal/change-the-default-shell-trml113/mac)
 
 [Customizing zsh](https://ohmyz.sh/)
+
+## Communicating with your OS via a Shell
+
+All shells will have a common structure to their commands:
+```bash
+command options what-to-operate-on
+```
+
+All shells will have a way to get help with a given command - assuming the developers wrote a help guide:
+```bash
+help command        # prints included help guide for given command
+man command         # takes to manual page for given command.  Press `q` to quit guide
+```
+
+You should practice looking at these pages - although internet documentation will contain more examples or an example similar to what you are trying to do.
 
 
 
