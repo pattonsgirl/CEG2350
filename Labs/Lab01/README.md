@@ -106,7 +106,7 @@ Start in your user's home directory.
 10. View the contents of `DirA`
 11. Make a copy of `test.txt` in `Dir B` named `fodder.txt`
 12. Delete / remove both `fodder.txt` AND `Dir B`
-   - Challenge: delete `Dir B` and `fodder.txt` in one command
+      - Challenge: delete `Dir B` and `fodder.txt` in one command
 
 ## Submission
 
