@@ -68,7 +68,7 @@ The similarities are going to cap at navigation & some common utilities that are
 
 [PowerShell vs CMD - What's the Difference?](https://phoenixnap.com/kb/powershell-vs-cmd)
 
-![PowerShell labels](imgs/PowerShell-MarkedUp.PNG)
+![PowerShell labels](imgs/PowerShell-MarkedUp.png)
 
 ### Unix / Linux
 
