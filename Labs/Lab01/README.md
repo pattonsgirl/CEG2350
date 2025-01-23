@@ -1,4 +1,4 @@
-# Lab 01
+# Lab 01 - Navigation
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - GitHub Profile](#Part-1---GitHub-Profile)

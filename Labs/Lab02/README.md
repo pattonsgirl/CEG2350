@@ -1,68 +1,48 @@
-# Lab 02
+# Lab 02 - Permissions
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - clone wars](#part-1---clone-wars)
-- [Part 2 - git going](#part-2---git-going)
-- [Part 3 - Bits of permissions](#part-3---bits-of-permissions)
-- [Part 4 - Regular `bob`](#part-4---regular-bob)
-- [Part 5 - Get a `crew`](#part-5---get-a-crew)
+- [Part 1 - AWS Academy Setup](#part-1---aws-academy-setup)
+- [Part 2 - Bits of permissions](#part-3---bits-of-permissions)
+- [Part 3 - Regular `bob`](#part-4---regular-bob)
+- [Part 4 - Get a `crew`](#part-5---get-a-crew)
 - [User & Group Resources](#user--group-resources)
-- [Part 6 - `sudo` make me a sandwich](#part-6---sudo-make-me-a-sandwich)
+- [Part 5 - `sudo` make me a sandwich](#part-6---sudo-make-me-a-sandwich)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/68834/modules/items/6128516)
+Beginning with this lab, you will be accessing an AWS instance - a virtual system hosted on the cloud - to access a Ubuntu server environment.  
 
-Use `ssh` to connect to your AWS Ubuntu instance.
+Go to your cloned repository folder (likely named `ceg2350s25-yourgithubusername`).
 
-Go to the folder that contains your repository (likely named `ceg2350x##-yourgithubusername`).
+Create a new directory, `Lab02`
 
-For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
+Create a file named `README.md` in the `Lab02` folder.  Copy into the file the contents of the [Lab 02 Template](LabTemplate.md).
 
-If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
+- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab02/LabTemplate.md)
 
-## Part 4 - AWS Academy Setup
+You may refer to additional resources outside of the recommended resources provided.  
 
-An email was sent to your wright.edu account inviting you to join AWS Academy.  
-Follow the instructions in [AWS Academy](../../AWSAcademySetup.md) to set up your AWS instance.
+Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations` section of your lab answers.  To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
 
-## Part 1 - clone wars
+If you make mistakes with commands in the lab, note them!  Writing down what went wrong and what the correction was will significantly help your learning journey.  If you cannot find a correction, it will help the TAs or myself understand what point you reached and determine some potential solutions.
 
-`ssh` to your AWS instance for this part. It is highly recommended you look at the Resources listed below.
+## Part 1 - AWS Academy Setup
 
-- **Useful commands for this part: `ssh-keygen`, `cat`, `git clone`, `git add`, `git commit`, `git push`, `git pull`**
+An email was sent to your wright.edu account inviting you to join an AWS Academy Course for this class.  
 
-1. Create an SSH key pair on your AWS Ubuntu instance.
-2. Add the public key to GitHub
-3. Clone your repository (a.k.a. repo) to the `ubuntu` user's home directory
+Follow the instructions in [AWS Academy](../../AWSAcademySetup.md) to set up your AWS environment and make your first `ssh` connection to your AWS instance.
 
-- **Resources:**
-- [GitHub - How to Use - My Guide](../../GitHubSetup.md)
-- [GitHub - Generating a New SSH Key](https://docs.github.com/en/enterprise-server@3.3/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-- [GitHub - Adding SSH key to your GitHub Account](https://docs.github.com/en/enterprise-server@3.0/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+Wherever your lab instructions state that the exercise must be completed in your instance, it must be completed in your instance.  
 
-## Part 2 - git going
+If you break your ability to connect to your instance, you can rebuild by repeating the instructions in AWS Academy Setup.
 
-- **Useful commands for this part: `git add`, `git commit`, `git push`, `git pull`, `git status`**
+You will note your command to SSH to your instance in the Lab Template.
 
-1. In your repository folder (the folder you `clone`d from GitHub), create a folder named `Lab02`
-2. In the `Lab02` folder, create a file named `Lab02.md`
-3. Paste the contents of the [LabTemplate.md](LabTemplate.md) into this file
-   - [Link to raw LabTemplate](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab02/LabTemplate.md)
-4. `add` `Lab02.md` for tracking, `commit` changes as you go, `push` to synchronize with GitHub, and `pull` if you make an edit in GitHub and need to synchronize your cloned folder
-5. Fill in the Part 1 Answers with a simple guide for taking a new, locally created file in your repository, and syncing it with GitHub.
+**The remainder of this lab is to be completed by using your AWS instance.**
 
-Reminder: if you make edits to your repository in GitHub using the browser, you'll need to `pull` to sync content in your `clone`d repository.
-
-**Resources**
-- [freeCodeCamp - Learn the Basics of Git in Under 10 Minutes](https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/)
-   - this is a useful read to understand the context of what the above commands do.  His setup is not the same as yours
-- [git cheat sheet](https://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf)
-   - yes, there are more git commands than are on this sheet 
-
-## Part 3 - Bits of permissions
+## Part 2 - Bits of permissions
 
 For each command below, write a verbose description of what it does.  
 
@@ -83,7 +63,7 @@ Sample:
 - [RedHat - Linux File Permissions Explained](https://www.redhat.com/sysadmin/linux-file-permissions-explained)
 - [Linuxize - Understanding File Permissions](https://linuxize.com/post/understanding-linux-file-permissions/)
 
-## Part 4 - Regular `bob`
+## Part 3 - Regular `bob`
 
 For these exercises, replace `bob` with a username based on **your** first initial followed by last name.  For example, "John Smith" would be `jsmith`
 
@@ -103,7 +83,7 @@ Perform the following exercise on your AWS instance.
    - Note that the `ubuntu` user does not have an account password.  You'll have to find a more administrative way to switch accounts...
 8. Return to the `ubuntu` user's `home` directory
 
-## Part 5 - Get a `crew`
+## Part 4 - Get a `crew`
 
 Perform the following exercise on your AWS instance. 
 
@@ -128,7 +108,7 @@ Reminder to replace references to `bob` with your username of first initial, las
    - I recommend using `adduser` in the lab, but this is a great breakdown of the pieces `adduser` uses and `useradd` needs you to specify
 - [Linuxize - groups and users](https://linuxize.com/post/how-to-add-user-to-group-in-linux/)
 
-## Part 6 - [`sudo` make me a sandwich](https://xkcd.com/149/)
+## Part 5 - [`sudo` make me a sandwich](https://xkcd.com/149/)
 
 Perform the following exercise on your AWS instance.
 
@@ -148,14 +128,13 @@ Perform the following exercise on your AWS instance.
 ## Submission
 
 - In the Pilot Dropbox, paste the URL to the `Lab02` folder in your GitHub repo
-  - URL should look like: https://github.com/WSU-kduncan/ceg2350s24-YOURGITHUBUSERNAME/tree/main/Lab02.md
+  - URL should look like: https://github.com/WSU-kduncan/ceg2350s24-YOURGITHUBUSERNAME/tree/main/Lab02/README.md
 
 ## Rubric
 
-- Part 1 - 3 pts
+- Part 1 - 5 pts
 - Part 2 - 5 pts
-- Part 3 - 5 pts
-- Part 4 - 8 pts
-- Part 5 - 6 pts
-- Part 6 - 4 pts
+- Part 3 - 8 pts
+- Part 4 - 6 pts
+- Part 5 - 4 pts
 

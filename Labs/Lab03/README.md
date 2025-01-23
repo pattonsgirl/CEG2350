@@ -30,6 +30,41 @@ For each part below, you will be asked to do an action or answer a question. The
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
+
+## Part 1 - clone wars
+
+`ssh` to your AWS instance for this part. It is highly recommended you look at the Resources listed below.
+
+- **Useful commands for this part: `ssh-keygen`, `cat`, `git clone`, `git add`, `git commit`, `git push`, `git pull`**
+
+1. Create an SSH key pair on your AWS Ubuntu instance.
+2. Add the public key to GitHub
+3. Clone your repository (a.k.a. repo) to the `ubuntu` user's home directory
+
+- **Resources:**
+- [GitHub - How to Use - My Guide](../../GitHubSetup.md)
+- [GitHub - Generating a New SSH Key](https://docs.github.com/en/enterprise-server@3.3/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- [GitHub - Adding SSH key to your GitHub Account](https://docs.github.com/en/enterprise-server@3.0/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
+## Part 2 - git going
+
+- **Useful commands for this part: `git add`, `git commit`, `git push`, `git pull`, `git status`**
+
+1. In your repository folder (the folder you `clone`d from GitHub), create a folder named `Lab02`
+2. In the `Lab02` folder, create a file named `Lab02.md`
+3. Paste the contents of the [LabTemplate.md](LabTemplate.md) into this file
+   - [Link to raw LabTemplate](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab02/LabTemplate.md)
+4. `add` `Lab02.md` for tracking, `commit` changes as you go, `push` to synchronize with GitHub, and `pull` if you make an edit in GitHub and need to synchronize your cloned folder
+5. Fill in the Part 1 Answers with a simple guide for taking a new, locally created file in your repository, and syncing it with GitHub.
+
+Reminder: if you make edits to your repository in GitHub using the browser, you'll need to `pull` to sync content in your `clone`d repository.
+
+**Resources**
+- [freeCodeCamp - Learn the Basics of Git in Under 10 Minutes](https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/)
+   - this is a useful read to understand the context of what the above commands do.  His setup is not the same as yours
+- [git cheat sheet](https://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf)
+   - yes, there are more git commands than are on this sheet 
+
 ## Part 1 - `config` your connection
 
 On your local system (`exit` from your AWS instance), you used an SSH command to log on to your AWS Ubuntu instance. There is a neat configuration file that can be used to create an alias of sorts. Read the resources for this section, then configure the `.ssh/config` file for your user on your system with information on your `ssh` connection to your AWS instance.
