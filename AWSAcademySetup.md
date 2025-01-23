@@ -1,7 +1,8 @@
 # AWS Academy Instructions
 
 - [Getting Started with AWS Academy](#Getting-Started-with-AWS-Academy)
-- [Connecting to an AWS environment](#Connecting-to-an-AWS-environment)
+- [Connecting to an AWS Instance from Linux / Unix / Mac / WSL2](#connecting-to-an-aws-instance-from-linux--unix--mac--wsl2)
+- [Connecting to an AWS Instance from Windows with PowerShell](#connecting-to-an-aws-instance-from-windows-with-powershell)
 - [Reconnecting to an AWS environment](#Reconnecting-to-an-AWS-environment)
 - [Notes](#Notes)
 
