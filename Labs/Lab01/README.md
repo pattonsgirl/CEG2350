@@ -90,6 +90,8 @@ For your OS, open the default shell and navigate to your user's directory (folde
 
 You'll perform the actions given in the numbered list below.
 
+**In your lab template, write the command to do the task given next to the task itself.**
+
 Cite sources, if needed, about how you found out how to do certain actions.  If you used generative AI as a source, include the platform and the prompt used.  Add your citations notes to the section in your Lab Template.
 
 Start in your user's home directory.
