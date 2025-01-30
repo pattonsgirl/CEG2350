@@ -95,7 +95,7 @@ Reminder to replace references to `bob` with your username of first initial, las
 
 1. Create a new group named `crew`
 2. Add `ubuntu` and `bob` to the `crew` group (replace with your username, see note)
-3. Change `share` in the `ubuntu` user's `home` directory so that `crew` is the group for the whole folder
+3. Change `share` in the `ubuntu` user's `home` directory so that `crew` is the group for the whole folder and members of `crew` can make changes in the folder.
    - Yes, including contents in `share`
 4. Switch user to `bob`
 5. As `bob` create a file in `share`.
