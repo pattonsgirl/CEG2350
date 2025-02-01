@@ -28,11 +28,24 @@ Any resource that you use that contributes to your understanding of exercises in
 
 If you make mistakes with commands in the lab, note them!  Writing down what went wrong and what the correction was will significantly help your learning journey.  If you cannot find a correction, it will help the TAs or myself understand what point you reached and determine some potential solutions.
 
+## Part 0 - editor in training
+
+For this course, you will be creating and editing files in Linux.  Therefore, you will need to get acquainted with at least one command line text editor. `vim` will be the editor used in course demonstrations.
+
+**`vim`**
+- [How to Use Vim – Tutorial for Beginners](https://www.freecodecamp.org/news/vim-beginners-guide/)
+- [vim hero - online tutorial](https://www.vim-hero.com/lessons/intro-to-modes)
+
+**`nano`**
+- [How to Use Nano, the Linux Command Line Text Editor](https://linuxize.com/post/how-to-use-nano-text-editor/)
+
 ## Part 1 - AWS Academy Setup
 
 An email was sent to your wright.edu account inviting you to join an AWS Academy Course for this class.  
 
 Follow the instructions in [AWS Academy](../../AWSAcademySetup.md) to set up your AWS environment and make your first `ssh` connection to your AWS instance.
+
+The written instructions are thorough, but if you would like more visuals visit the Pilot -> Content -> Labs -> Getting Started for a video companion guide to creating an instance.  The video guide sets up connections with WSL2 specifically, but PowerShell or other Terminals will have similar themes - know where you put your file, the name of it, and the system path to it.
 
 Wherever your lab instructions state that the exercise must be completed in your instance, it must be completed in your instance.  
 

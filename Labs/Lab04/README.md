@@ -24,6 +24,22 @@ Some questions will need you to write answers in `Lab04.md` the [LabTemplate.md 
 
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
+## Part 1 - `config` your connection
+
+On your local system (`exit` from your AWS instance), you used an SSH command to log on to your AWS Ubuntu instance. There is a neat configuration file that can be used to create an alias of sorts. Read the resources for this section, then configure the `.ssh/config` file for your user on your system with information on your `ssh` connection to your AWS instance.
+
+1. Write the command you have been using to `ssh` in to your AWS instance.
+2. Provide the HostName (IP address) of your AWS Ubuntu instance:
+3. Provide the user name that you are logging on to the system with:
+4. Provide the absolute / full path to the private key (Identity File) on your local system:
+5. On your local system, edit `~/.ssh/config` to contain an entry with information about logging on to your AWS Ubuntu instance.  Note that the answer template wants the contents you wrote to the file.
+6. Write the new form of the `ssh` command to connect to your AWS instance.
+
+- **Resources**
+- [linuxize - Using the ssh config file](https://linuxize.com/post/using-the-ssh-config-file/)
+- [cyberciti.biz - config file examples](https://www.cyberciti.biz/faq/create-ssh-config-file-on-linux-unix/)
+- The `Port`, if you wish to include it in your `config` is `22`
+
 ## Part 1 - Task Tracker
 
 Use your AWS instance for this part since your repository is cloned there and `ssh` authentication with GitHub should be set up.  But I'm just a set of instructions with good advice.

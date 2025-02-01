@@ -1,11 +1,9 @@
 # Lab 03
 
 - [Lab Procedure](#lab-procedure)
-- [Part 1 - `config` your connection](#part-1---config-your-connection)
 - [Part 2 - IO Redirection](#part-2---io-redirection)
 - [Part 3 - Rolling the Dice](#part-3---rolling-the-dice)
 - [Part 4 - Retrospective](#part-4---retrospective)
-- [Part 5 - .profile and PATH](#part-5---profile-and-path)
 - [Extra Credit - Room for Improvement](#extra-credit---room-for-improvement)
 - [Submission](#submission)
 - [Rubric](#rubric)
@@ -31,21 +29,6 @@ For each part below, you will be asked to do an action or answer a question. The
 If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
 
 
-## Part 1 - clone wars
-
-`ssh` to your AWS instance for this part. It is highly recommended you look at the Resources listed below.
-
-- **Useful commands for this part: `ssh-keygen`, `cat`, `git clone`, `git add`, `git commit`, `git push`, `git pull`**
-
-1. Create an SSH key pair on your AWS Ubuntu instance.
-2. Add the public key to GitHub
-3. Clone your repository (a.k.a. repo) to the `ubuntu` user's home directory
-
-- **Resources:**
-- [GitHub - How to Use - My Guide](../../GitHubSetup.md)
-- [GitHub - Generating a New SSH Key](https://docs.github.com/en/enterprise-server@3.3/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-- [GitHub - Adding SSH key to your GitHub Account](https://docs.github.com/en/enterprise-server@3.0/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-
 ## Part 2 - git going
 
 - **Useful commands for this part: `git add`, `git commit`, `git push`, `git pull`, `git status`**
@@ -65,22 +48,39 @@ Reminder: if you make edits to your repository in GitHub using the browser, you'
 - [git cheat sheet](https://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf)
    - yes, there are more git commands than are on this sheet 
 
-## Part 1 - `config` your connection
 
-On your local system (`exit` from your AWS instance), you used an SSH command to log on to your AWS Ubuntu instance. There is a neat configuration file that can be used to create an alias of sorts. Read the resources for this section, then configure the `.ssh/config` file for your user on your system with information on your `ssh` connection to your AWS instance.
+## Part 1 - git Guide
 
-1. Write the command you have been using to `ssh` in to your AWS instance.
-2. Provide the HostName (IP address) of your AWS Ubuntu instance:
-3. Provide the user name that you are logging on to the system with:
-4. Provide the absolute / full path to the private key (Identity File) on your local system:
-5. On your local system, edit `~/.ssh/config` to contain an entry with information about logging on to your AWS Ubuntu instance.  Note that the answer template wants the contents you wrote to the file.
-6. Write the new form of the `ssh` command to connect to your AWS instance.
+In your lab template, fill out the Description column with what the corresponding `git` command does.  You'll be using these commands all semester long to interact with your GitHub repository from your AWS instance.
 
-- **Resources**
-- [linuxize - Using the ssh config file](https://linuxize.com/post/using-the-ssh-config-file/)
-- [cyberciti.biz - config file examples](https://www.cyberciti.biz/faq/create-ssh-config-file-on-linux-unix/)
-- The `Port`, if you wish to include it in your `config` is `22`
+| git command         | Description |
+| ---                 | ---         | 
+| `git clone repo_URI`|             |
+| `git status`        |             |
+| `git add filename`  |             |
+| `git commit`        |             |
+| `git push`          |             |
+| `git pull`          |             |
 
+**Resources**
+- [freeCodeCamp - Learn the Basics of Git in Under 10 Minutes](https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/)
+   - this is a useful read to understand the context of what the above commands do.
+
+## Part 2 - clone
+
+`ssh` to your AWS instance for this part. It is highly recommended you look at the Resources listed below.
+
+- **Useful commands for this part: `ssh-keygen`, `cat`, `git clone`**
+
+1. Create an SSH key pair on your AWS Ubuntu instance.
+2. Add the public key to GitHub
+3. To clone your student repository for this course, go to your repository page in a browser: https://github.com/WSU-kduncan/ceg2350s25-YOURGITHUBUSERNAME
+    - Select the Code dropdown.  Make sure SSH is selected.
+
+- **Resources:**
+- [GitHub - How to Use - My Guide](../../GitHubSetup.md)
+- [GitHub - Generating a New SSH Key](https://docs.github.com/en/enterprise-server@3.3/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- [GitHub - Adding SSH key to your GitHub Account](https://docs.github.com/en/enterprise-server@3.0/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 ## Part 2 - IO Redirection
 
@@ -147,41 +147,6 @@ A retrospective is a moment of refection after a task.
 2. Was anything familiar working with a new language compared to one you are used to?
 3. Assuming you `push`ed your `commit`s to GitHub, view your `commit` history.  Did you write good `commit` messages that refer to what tasks were completed at each commit?  What would you improve?
 
-## Part 5 - .profile and PATH
-
-Use your AWS instance for this part since your repository is cloned there and that is where your script should be.
-
-The overall goal is to, from any directory, able to refer to your script by name, `roll`, and have your script execute.  To do so, `roll` needs to have the correct permissions **and** be located in a directory listed in `PATH`.
-
-In this part, your task is to read `~/.profile` and focus on the `if` statements that would change the value of `PATH`, **if** one of the statements was `true`.
-
-DO NOT MODIFY THE CONTENT of the `.profile` file.  Right now, both conditions evaluate to `false`. 
-  - Think about how you could confirm that statement - that both conditions are currently `false`.
-  - Remember, the `test` command is what is being used when you see `[` (square brackets).  
-  - The flag / relational condition being checked is an option of the `test` command.
-
-1. What is the value of the `PATH` environment variable?
-
-2. Read through `ubuntu`'s `~/.profile`.  Pick one condition to make `true` that, if `true`, will add the directory to be part of the `PATH` variable.  What needs to happen to make the condition `true` (what currently **does not exist**)?
-
-3. Based on your evaluation above, use commands to create what is necessary to have the condition evaluate to `true`.
-
-4. Reload / run the statements in `~/.profile` either with `source` or by logging out and `ssh`ing back in. 
-  - What is the value of the `PATH` environment variable? 
-  - What was added now vs. in your answer to question 1?
-
-5. Copy `roll` into the folder. Write the command(s) used.
-  - Note: for added fun, do a symbolic link or hard link to the original script.  Not going to show you how yet, but try Google-ing to see if you can crack it.
-
-6. Modify the script's permissions and / or interpreter so that you can run your script on the command line from any location. Write the modification explanations and commands needed.
-    - You can now run `roll` (without the leading `./` or `bash`) from anywhere
-    - Note: if you already modified permissions, fill in this question with what you modified since scripts are not executable by default.
-
-7. In terms of user, group, and other, explain who is allowed to run the script.
-
-**Resources**
-- [Tecmint - About PATH and options to modify it](https://www.tecmint.com/set-path-variable-linux-permanently/)
-
 ## Extra Credit - Room for Improvement
 
 Make a notable improvement to the `roll` script.  This could be another feature, an additional boundary check on allowed conditions, experimenting with colored text for standard and error output... If you have an idea, you are encouraged to run it by the TAs first to make sure it is worthy.
@@ -205,7 +170,6 @@ Make sure you `commit` and `push` your script changes for grading and add a note
   - minimum of 6 commits, each commit completes 1 task
   - 1 complete task = 1 pt
 - Part 4 - 3 pts
-- Part 5 - 0.5 pts each / 3.5 pts total
 - Extra Credit - 1 pt
 - Point deductions:
   - minus 2 pts = no commits for each part && no commit messages indicating parts building on each other
