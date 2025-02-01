@@ -129,5 +129,5 @@ Your answers should be cleanly presented in your GitHub repository.  Citations s
    - looks nice
 - Part 2 - Research - 10 pts
    - 1 pt / description
-- Part 2 - Commands Line Navigation - 12 pts
+- Part 3 - Commands Line Navigation - 12 pts
    - 1 pt / question
