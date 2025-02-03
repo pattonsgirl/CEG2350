@@ -1,7 +1,7 @@
 ## Lab 03
 
 - Name:
-- Email
+- Email: 
 
 ## Part 1 - git Guide
 
