@@ -10,23 +10,37 @@
 
 ## Lab Procedure
 
+Make sure to return to the AWS Learner Lab page (link in Pilot if you forgot to bookmark it) and hit "Start Lab" to turn on your sandbox / AWS instance.
+
 Use `ssh` to connect to your AWS Ubuntu instance.
+
+**PAUSE AND READ THIS**  Continuing with this lab you will be using your AWS instance to complete your coursework *in addition* to having it cloned to your personal system.  I would pick from one of two methods since you will now be able to access your repository from two different systems.
+
+**Method 1**: Only work in the cloned folder on your AWS instance and use git commands to add your changes to commits, make commits, and push changes.  If you open the folder on your system (not the instance), you'll need to pull to synchronize.  
+
+**Method 2**: Create the file for your answers on your system (not the AWS instance), and work on the script on the instance (in your repository folder).  As you make changes in the repository folder on one system you will need to remember to make commits, push the changes - *and then* pull those committed changes on the other system to get the folder up to date.
+
+If a `push` / synchronize seems to fail / is blocked, you likely need to **pull**
+
+**[OKAY, GO!](https://www.youtube.com/watch?v=qybUFnY7Y8w&ab_channel=OKGo)**
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-Create a new directory, `Lab04`
+Create a new directory, `Lab04`.
 
-This lab will have you creating input files, scripts, and output files. All of your work should be found in your `Lab04` folder.
-
-Some questions will need you to write answers in `Lab04.md` the [LabTemplate.md is here](LabTemplate.md).
+Create a file named `README.md` in the `Lab04` folder.  Copy into the file the contents of the [Lab 04 Template](LabTemplate.md).
 
 - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab04/LabTemplate.md)
 
-If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
+You may refer to additional resources outside of the recommended resources provided.  
+
+Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations` section of your lab answers.  To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
+
+If you make mistakes with commands in the lab, note them!  Writing down what went wrong and what the correction was will significantly help your learning journey.  If you cannot find a correction, it will help the TAs or myself understand what point you reached and determine some potential solutions.
 
 ## Part 1 - Task Tracker
 
-Use your AWS instance for this part since your repository is cloned there and `ssh` authentication with GitHub should be set up.  But I'm just a set of instructions with good advice.
+Use your AWS instance for this part.
 
 The overall goal is to create a task tracking script using bash.  Your script will allow you to add tasks and complete (remove) them and will store the tasks in a file named `.tasks` in the user's `HOME` directory.
 

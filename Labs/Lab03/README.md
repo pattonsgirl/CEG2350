@@ -16,7 +16,7 @@ Make sure to return to the AWS Learner Lab page (link in Pilot if you forgot to 
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
-**PAUSE AND READ THIS**  Starting with this lab, you will clone your GitHub repository for your coursework to your AWS instance *in addition* to having in cloned to your personal system.  I would pick from one of two methods since you will now be able to access your repository from two different systems.
+**PAUSE AND READ THIS**  Starting with this lab, you will clone your GitHub repository for your coursework to your AWS instance *in addition* to having it cloned to your personal system.  I would pick from one of two methods since you will now be able to access your repository from two different systems.
 
 **Method 1**: Only work in the cloned folder on your AWS instance and use git commands to add your changes to commits, make commits, and push changes.  If you open the folder on your system (not the instance), you'll need to pull to synchronize.  
 
@@ -97,7 +97,7 @@ Sample:
 
 ## Part 4 - Rolling the Dice
 
-Use your AWS instance for this part since your repository is cloned there and `ssh` authentication with GitHub should be set up.  But I'm just a set of instructions with good advice.
+Use your AWS instance for this part.  Create the script file in your GitHub repository.
 
 The overall goal is to create a script that randomly generates a set of random numbers within the range specified by the script user.  In steps 1 - 5, assume you are rolling one die.
 
