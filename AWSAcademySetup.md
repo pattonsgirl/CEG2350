@@ -4,7 +4,7 @@
 - [Connecting to an AWS Instance from Linux / Unix / Mac / WSL2](#connecting-to-an-aws-instance-from-linux--unix--mac--wsl2)
 - [Connecting to an AWS Instance from Windows with PowerShell](#connecting-to-an-aws-instance-from-windows-with-powershell)
 - [Reconnecting to an AWS environment](#Reconnecting-to-an-AWS-environment)
-- [Notes](#Notes)
+- [Notes and Troubleshooting](#notes-and-troubleshooting)
 
 ## Getting Started with AWS Academy
 
@@ -105,7 +105,16 @@ Every 4 hours, instances (virtual machines) on AWS will automatically power down
    - The light next to **AWS** should now be **green**
 7. Be patient, but you should now be able to `ssh` in to your instance with your private key to the same IP as before
 
-## Notes
+## Notes & Troubleshooting
 
 - Sessions last 4 hours. Session time can be refreshed. Instances spin down after 4 hours
 - Budget cannot exceed $50 - account will vaporize - all resources created by account will be deleted
+
+### Connection Refused
+
+[Connection Refused from labs.vocareum.com](Images/ConnectionRefused.png)
+
+1. Enable Third Party Cookies
+2. Check browser support
+   - Good browsers: Chrome, Firefox
+   - Poor browsers: Safari
