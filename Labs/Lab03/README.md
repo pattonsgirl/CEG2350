@@ -12,7 +12,7 @@
 
 ## Lab Procedure
 
-Make sure to return to the AWS Learner Lab page (link in Pilot if you forgot to bookmark it) and hit "Start Lab" to turn on you sandbox / AWS instance
+Make sure to return to the AWS Learner Lab page (link in Pilot if you forgot to bookmark it) and hit "Start Lab" to turn on your sandbox / AWS instance
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 

@@ -1,4 +1,4 @@
-# Lab 06
+# Lab 06 - Name Change Script
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Name Change Script](#part-1---name-change-script)

@@ -1,4 +1,4 @@
-# Lab 05
+# Lab 05 - regex with grep, sed, and awk
 
 - [Lab Procedure](#Lab-Procedure)
 - [regex resources](#regex-resources)
