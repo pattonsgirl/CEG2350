@@ -36,6 +36,8 @@ You may refer to additional resources outside of the recommended resources provi
 
 Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations` section of your lab answers.  To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
 
+**Generative AI may not write your script for you, only assist with component and how-to type questions.**
+
 If you make mistakes with commands in the lab, note them!  Writing down what went wrong and what the correction was will significantly help your learning journey.  If you cannot find a correction, it will help the TAs or myself understand what point you reached and determine some potential solutions.
 
 ## Part 1 - git Guide
@@ -104,6 +106,8 @@ The overall goal is to create a script that randomly generates a set of random n
 To complete the overall task, perform the steps listed below.  **After each step is complete and tested**, create a `commit` with your changes.  `push` `commit`s as you wish, just remember the `push` saves all the `commit`s to the mighty GitHub cloud.  **Your `commit` message must include which task you completed.**
 
 If you don't make it through all of a step or don't complete all 6 steps, leave heavy comments for partial credit considerations.
+
+**Generative AI may not write your script for you, only assist with component and how-to type questions.**
 
 1. Create a bash script named `roll`.  Output a random number between 1 and 20.
     - Script should run when `./roll` OR `bash roll` is typed on command line.  Think about permissions.
