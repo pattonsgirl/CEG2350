@@ -1,4 +1,4 @@
-# Lab 04 - Task Tracker Script
+# Lab 04 - Task Manager Script
 
 - [Lab Procedure](#lab-procedure)
 - [Part 1 - Task Tracker](#part-1---task-tracker)
