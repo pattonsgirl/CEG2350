@@ -87,9 +87,7 @@ Use your AWS instance for this part since your repository is cloned there and th
 
 The lab answer template will prompt you for notes and justifications for this part.
 
-In Lab 03, you were asked to create a directory in which to place executable files - a directory that was specifically being tested for existence in your user's `.profile` file, which then appended that directory to `PATH` - if it existed.
-
-This time, choose a directory that is available in any user's `PATH` variable - not one that would be uniquely appended only if the folder exists in their `HOME` directory.  
+Choose a directory that is available in any user's `PATH` variable - not one that would be uniquely appended only if the folder exists in their `HOME` directory.  
 
 Read up on symbolic links vs hard links in Linux. Below is a reference - additional research is recommended to make sure you grasp the difference, and / or run some test cases to verify your understanding of how they work.
   - [Tecmint - Create Hard and Symbolic Links in Linux](https://www.tecmint.com/create-hard-and-symbolic-links-in-linux)
