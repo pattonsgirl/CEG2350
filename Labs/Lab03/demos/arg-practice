@@ -1,0 +1,28 @@
+#!/bin/bash
+
+help() {
+	echo "This is my help menu"
+}
+
+echo $0
+echo $1
+echo $4
+echo "Hello world"
+
+echo $@
+echo $#
+echo $*
+
+echo "Iterating with \$*"
+for arg in "$*"
+do
+    echo $arg
+done
+
+echo "Iterating with \$@"
+for arg in "$@"
+do
+    echo $arg
+done
+
+help
