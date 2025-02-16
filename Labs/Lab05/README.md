@@ -130,14 +130,20 @@ Only write the command that performs the required task. DO NOT paste the results
 
 ## Part 3 - awk
 
-`awk` is a full blown scripting language dedicated to text manipulation. Create a file in your `Lab05` folder named `records.txt`. Copy the contents of [records.txt](data/records.txt) to a file, and do the following tasks using `awk`
-   - [Raw version of records.txt](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab05/data/records.txt)
-
-`records.txt` contains the following fields:
-
+`awk` is a full blown scripting language dedicated to text manipulation. See the resources for more examples, but the general format is:
 ```
-first last email fav_number university password
+awk 'program' input-file
 ```
+In [sales.txt](data/sales.txt) you'll find a file that contains sales records. Your task is to ask some queries and make replacements using `awk`.
+- [Raw version of sales.txt](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab05/data/sales.txt)
+
+Each lines in `sales.txt` contains the following fields:
+- Date (YYYY-MM-DD)
+- Product (String)
+- Category (String)
+- Quantity Sold (Integer)
+- Unit Price (Float)
+- Total Revenue (Quantity Sold × Unit Price)
 
 Only write the command that performs the required task. DO NOT paste the results.
 
