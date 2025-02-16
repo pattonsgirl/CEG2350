@@ -1,0 +1,189 @@
+2024-01-01 Laptop Electronics 5 800 4000
+2024-01-02 Phone Electronics 10 500 5000
+2024-01-03 Chair Furniture 8 150 1200
+2024-01-04 Desk Furniture 4 300 1200
+2024-01-05 TV Electronics 3 1000 3000
+2024-01-06 Mouse Accessories 15 25 375
+2024-01-07 Keyboard Accessories 12 45 540
+2024-01-08 Monitor Electronics 6 250 1500
+2024-01-09 Sofa Furniture 2 700 1400
+2024-01-10 Headphones Accessories 10 80 800
+2024-01-11 Laptop Electronics 3 800 2400
+2024-01-12 Phone Electronics 7 500 3500
+2024-01-13 Desk Furniture 6 300 1800
+2024-01-14 Chair Furniture 10 150 1500
+2024-01-15 TV Electronics 4 1000 4000
+2024-01-16 Blender Kitchen 12 60 720
+2024-01-17 Toaster Kitchen 10 40 400
+2024-01-18 Coffee Maker Kitchen 8 90 720
+2024-01-19 Knife Set Kitchen 15 50 750
+2024-01-20 Cookware Set Kitchen 5 200 1000
+2024-01-21 Pressure Cooker Kitchen 6 120 720
+2024-01-22 Microwave Kitchen 4 150 600
+2024-01-23 Air Fryer Kitchen 7 130 910
+2024-01-24 Rice Cooker Kitchen 9 80 720
+2024-01-25 Food Processor Kitchen 5 180 900
+2024-01-26 Juicer Kitchen 10 75 750
+2024-01-27 Cutting Board Kitchen 20 20 400
+2024-01-28 Dish Rack Kitchen 12 30 360
+2024-01-29 Measuring Cups Kitchen 18 15 270
+2024-01-30 Mixing Bowls Kitchen 14 25 350
+2024-01-31 Slow Cooker Kitchen 6 140 840
+2024-02-01 Waffle Maker Kitchen 7 60 420
+2024-02-02 Griddle Kitchen 5 90 450
+2024-02-03 Kettle Kitchen 10 35 350
+2024-02-04 Thermos Kitchen 15 25 375
+2024-02-05 Ice Maker Kitchen 4 120 480
+2024-02-06 Silverware Set Kitchen 9 50 450
+2024-02-07 Dinner Set Kitchen 6 100 600
+2024-02-08 Kitchen Scale Kitchen 8 30 240
+2024-02-09 Spice Rack Kitchen 10 40 400
+2024-02-10 Baking Pan Kitchen 12 20 240
+2024-02-11 Coffee Grinder Kitchen 9 45 405
+2024-02-12 Teapot Kitchen 7 35 245
+2024-02-13 Apron Kitchen 20 15 300
+2024-02-14 Dish Towels Kitchen 18 10 180
+2024-02-15 Rolling Pin Kitchen 11 25 275
+2024-02-16 Can Opener Kitchen 15 12 180
+2024-02-17 Salad Spinner Kitchen 9 28 252
+2024-02-18 Bread Box Kitchen 6 50 300
+2024-02-19 Glass Jars Kitchen 14 20 280
+2024-02-20 Butter Dish Kitchen 8 18 144
+2024-02-21 Pasta Maker Kitchen 5 120 600
+2024-02-22 Oven Mitts Kitchen 12 15 180
+2024-02-23 Ice Cream Maker Kitchen 4 110 440
+2024-02-24 Ladle Set Kitchen 10 22 220
+2024-02-25 Tupperware Set Kitchen 10 45 450
+2024-02-26 Electric Grill Kitchen 5 140 700
+2024-02-27 Colander Kitchen 10 18 180
+2024-02-28 Pizza Cutter Kitchen 12 10 120
+2024-02-29 Skillet Kitchen 7 80 560
+2024-03-01 Cheese Grater Kitchen 15 12 180
+2024-03-02 Mortar and Pestle Kitchen 8 35 280
+2024-03-03 Soap Dispenser Kitchen 9 20 180
+2024-01-01 Laptop Electronics 5 800 4000
+2024-01-02 Phone Electronics 10 500 5000
+2024-01-03 Chair Furniture 8 150 1200
+2024-01-04 Desk Furniture 4 300 1200
+2024-01-05 TV Electronics 3 1000 3000
+2024-01-06 Mouse Accessories 15 25 375
+2024-01-07 Keyboard Accessories 12 45 540
+2024-01-08 Monitor Electronics 6 250 1500
+2024-01-09 Sofa Furniture 2 700 1400
+2024-01-10 Headphones Accessories 10 80 800
+2024-01-11 Laptop Electronics 3 800 2400
+2024-01-12 Phone Electronics 7 500 3500
+2024-01-13 Desk Furniture 6 300 1800
+2024-01-14 Chair Furniture 10 150 1500
+2024-01-15 TV Electronics 4 1000 4000
+2024-01-16 Lipstick Beauty 20 15 300
+2024-01-17 Foundation Beauty 12 25 300
+2024-01-18 Mascara Beauty 18 20 360
+2024-01-19 Nail Polish Beauty 25 10 250
+2024-01-20 Perfume Beauty 5 50 250
+2024-01-21 Lip Balm Beauty 30 5 150
+2024-01-22 Hair Serum Beauty 10 35 350
+2024-01-23 Sunscreen Beauty 15 20 300
+2024-01-24 Face Wash Beauty 22 15 330
+2024-01-25 Moisturizer Beauty 18 25 450
+2024-01-26 Eye Liner Beauty 25 12 300
+2024-01-27 Shampoo Beauty 30 8 240
+2024-01-28 Conditioner Beauty 20 9 180
+2024-01-29 Hair Gel Beauty 12 14 168
+2024-01-30 Body Lotion Beauty 16 20 320
+2024-01-31 BB Cream Beauty 14 18 252
+2024-02-01 Lipstick Beauty 17 15 255
+2024-02-02 Foundation Beauty 10 25 250
+2024-02-03 Mascara Beauty 21 20 420
+2024-02-04 Nail Polish Beauty 28 10 280
+2024-02-05 Perfume Beauty 7 50 350
+2024-02-06 Lip Balm Beauty 35 5 175
+2024-02-07 Hair Serum Beauty 9 35 315
+2024-02-08 Sunscreen Beauty 12 20 240
+2024-02-09 Face Wash Beauty 26 15 390
+2024-02-10 Moisturizer Beauty 20 25 500
+2024-02-11 Eye Liner Beauty 30 12 360
+2024-02-12 Shampoo Beauty 40 8 320
+2024-02-13 Conditioner Beauty 35 9 315
+2024-02-14 Hair Gel Beauty 15 14 210
+2024-02-15 Body Lotion Beauty 18 20 360
+2024-02-16 BB Cream Beauty 20 18 360
+2024-02-17 Lipstick Beauty 22 15 330
+2024-02-18 Foundation Beauty 14 25 350
+2024-02-19 Mascara Beauty 19 20 380
+2024-02-20 Nail Polish Beauty 32 10 320
+2024-02-21 Perfume Beauty 6 50 300
+2024-02-22 Lip Balm Beauty 28 5 140
+2024-02-23 Hair Serum Beauty 11 35 385
+2024-02-24 Sunscreen Beauty 17 20 340
+2024-02-25 Face Wash Beauty 24 15 360
+2024-02-26 Moisturizer Beauty 16 25 400
+2024-02-27 Eye Liner Beauty 27 12 324
+2024-02-28 Shampoo Beauty 38 8 304
+2024-02-29 Conditioner Beauty 25 9 225
+2024-03-01 Hair Gel Beauty 13 14 182
+2024-03-02 Body Lotion Beauty 20 20 400
+2024-03-03 BB Cream Beauty 18 18 324
+2024-01-01 Laptop Electronics 5 800 4000
+2024-01-02 Phone Electronics 10 500 5000
+2024-01-03 Chair Furniture 8 150 1200
+2024-01-04 Desk Furniture 4 300 1200
+2024-01-05 TV Electronics 3 1000 3000
+2024-01-06 Mouse Accessories 15 25 375
+2024-01-07 Keyboard Accessories 12 45 540
+2024-01-08 Monitor Electronics 6 250 1500
+2024-01-09 Sofa Furniture 2 700 1400
+2024-01-10 Headphones Accessories 10 80 800
+2024-01-11 Laptop Electronics 3 800 2400
+2024-01-12 Phone Electronics 7 500 3500
+2024-01-13 Desk Furniture 6 300 1800
+2024-01-14 Chair Furniture 10 150 1500
+2024-01-15 TV Electronics 4 1000 4000
+2024-03-04 Tablet Electronics 8 300 2400
+2024-03-05 Smartwatch Electronics 12 250 3000
+2024-03-06 Gaming Console Electronics 5 400 2000
+2024-03-07 Wireless Earbuds Electronics 15 150 2250
+2024-03-08 External Hard Drive Electronics 9 120 1080
+2024-03-09 Smart Speaker Electronics 10 200 2000
+2024-03-10 Webcam Electronics 7 90 630
+2024-03-11 Microphone Electronics 6 130 780
+2024-03-12 Power Bank Electronics 20 40 800
+2024-03-13 Graphics Card Electronics 4 600 2400
+2024-03-14 SSD Electronics 10 100 1000
+2024-03-15 Bluetooth Speaker Electronics 12 80 960
+2024-03-16 Portable Projector Electronics 5 350 1750
+2024-03-17 Smart TV Electronics 3 1200 3600
+2024-03-18 Wireless Router Electronics 9 110 990
+2024-03-19 Digital Camera Electronics 4 500 2000
+2024-03-20 VR Headset Electronics 6 400 2400
+2024-03-21 Drone Electronics 3 800 2400
+2024-03-22 Gaming Mouse Electronics 10 70 700
+2024-03-23 Graphics Tablet Electronics 5 250 1250
+2024-03-24 Streaming Stick Electronics 12 50 600
+2024-03-25 E-Reader Electronics 7 180 1260
+2024-03-26 Video Doorbell Electronics 6 220 1320
+2024-03-27 Smart Thermostat Electronics 5 250 1250
+2024-03-28 Wireless Charger Electronics 15 30 450
+2024-03-29 Soundbar Electronics 8 300 2400
+2024-03-30 Action Camera Electronics 6 350 2100
+2024-03-31 Smart Light Bulb Electronics 20 25 500
+2024-04-01 Noise-Canceling Headphones Electronics 9 200 1800
+2024-04-02 Car Dash Cam Electronics 6 180 1080
+2024-04-03 Smart Plug Electronics 12 20 240
+2024-04-04 Home Security Camera Electronics 7 250 1750
+2024-04-05 Gaming Keyboard Electronics 10 120 1200
+2024-04-06 USB Flash Drive Electronics 30 15 450
+2024-04-07 Digital Frame Electronics 5 180 900
+2024-04-08 Laptop Stand Electronics 8 50 400
+2024-04-09 Smart Glasses Electronics 3 900 2700
+2024-04-10 Docking Station Electronics 6 140 840
+2024-04-11 Wireless Presenter Electronics 10 40 400
+2024-04-12 Mechanical Keyboard Electronics 7 180 1260
+2024-04-13 Smart Alarm Clock Electronics 9 130 1170
+2024-04-14 USB Hub Electronics 12 25 300
+2024-04-15 Mini PC Electronics 5 500 2500
+2024-04-16 Noise Meter Electronics 4 220 880
+2024-04-17 LED Monitor Electronics 6 250 1500
+2024-04-18 Home Theater System Electronics 3 1200 3600
+2024-04-19 Digital Notepad Electronics 5 300 1500
+
