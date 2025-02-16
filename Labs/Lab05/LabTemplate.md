@@ -29,19 +29,19 @@
 ## Part 2 - sed
 
 1. `place your sed commands between backtick characters`
-2. `sed command`
-3. `sed command`
-4. `sed command`
-5. `sed command`
-6. `sed command`
+2. `sed command goes here`
+3. `sed command goes here`
+4. `sed command goes here`
+5. `sed command goes here`
+6. `sed command goes here`
 
 ## Part 3 - awk
 
-1.
-2.
-3.
-4.
-5.
+1. `awk command goes here`
+2. `awk command goes here`
+3. `awk command goes here`
+4. `awk command goes here`
+5. `awk command goes here`
 
 ## Citations
 

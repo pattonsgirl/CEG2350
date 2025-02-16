@@ -112,10 +112,10 @@ sed -i 's/SEARCH_REGEX/REPLACEMENT/g' INPUTFILE
 # backup of the original file is created otherwise the changes are written back to INPUTFILE
 ```
 
-Only write the command that performs the required task. DO NOT paste the results.
+Only write the command that performs the required task in the lab write up. DO NOT paste the results.
 
 1. Remove all html end tags - anything with `</stuff>`
-   - `stuff` here represents anything surrounded by the HTML close tag: `</ > `
+   - `stuff` here represents anything surrounded by the HTML close tag: `</ >`
 2. Replace all `<li>` tags and the whitespace before the tag with the markdown format for a bullet point: `- `
    - Note that is a dash followed by a single space
 3. Replace `<h1>` tags with markdown for header tags: `# `
@@ -145,15 +145,13 @@ Each lines in `sales.txt` contains the following fields:
 - Unit Price (Float)
 - Total Revenue (Quantity Sold × Unit Price)
 
-Only write the command that performs the required task. DO NOT paste the results.
+Only write the command that performs the required task in the lab write up. DO NOT paste the results.
 
-1. Print only first names that start with `Bil`
-2. Print only the email addresses of records whose favorite number is 42
-3. For users who have a `wright.edu` email, print only their last name, first name, and email in the following format:
-   - `Last, First: Email`
-4. For users who have a `wright.edu` email AND have a password of `1234`, print only their last name and favorite number in the following format:
-   - `Last favorite number is: #`
-5. Replace all passwords with `N0T@PL@!NP@$$W0RD`. Write all fixed records to `updaterecords.txt`
+1. Print only lines for sales made in February 2024
+2. Print only the product name of products with a unit price of 100 or more
+3. Print the product name and quantity sold of products with `TV` in the product name
+4. Sum the total revenue of products with `Kitchen` in the product name
+5. Replace all occurrences of the word `Sofa` with `Couch`.  Save the change to `updates-sales.txt`
 
 - **Resources**
 - [linuxize - awk with examples](https://linuxize.com/post/awk-command/)
@@ -166,8 +164,8 @@ Only write the command that performs the required task. DO NOT paste the results
    - `access.log`
    - `sedfile.html`
    - `sedfile.md`
-   - `records.txt`
-   - `updaterecords.txt`
+   - `sales.txt`
+   - `updated-sales.txt`
    - `Lab05.md`
 
 2. Note that if your command answers in the answer template did not make use of the backtick (`), the TAs are allowed to refuse to grade your submission.  Cleanliness and readability is your responsibility.  
@@ -177,8 +175,8 @@ Only write the command that performs the required task. DO NOT paste the results
 
 ## Rubric
 
-- Part 1 - 1 pt per task (4 pts total)
+- Part 1 - 1 pt per `grep` task (5 pts total)
 - Part 2 - 1 pt per `sed` command (6 pts total)
 - Part 3 - 1 pt per `awk` command (5 pts total)
-- Extra Credit - 1.5 pts if complete - no partial points
 - Poor markdown formatting (-1.5 pt deduction)
+   - Remember to use backticks to create in-line code blocks
