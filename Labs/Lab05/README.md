@@ -153,18 +153,11 @@ Only write the command that performs the required task. DO NOT paste the results
 - [linuxize - awk with examples](https://linuxize.com/post/awk-command/)
 - [cyberbiz - awk find and replace](https://www.cyberciti.biz/faq/awk-find-and-replace-fields-values/)
 
-## Extra Credit - validator 2.0
-
-1. Use the Internet to find a regular expression that validates emails based on [the rules of valid email formatting](https://help.xmatters.com/ondemand/trial/valid_email_format.htm).  Provide the source.  Write the regular expression.
-2. Explain what the regular expression does.
-3. Create a bash script, `validator2` that uses the regular expression to simplify the step by step data cleansing.
-
 ## Submission
 
 1. Verify that your GitHub repo has a `Lab05` folder with at minimum:
 
-   - `validator`
-   - `clean1.txt` through `clean4.txt`
+   - `access.log`
    - `sedfile.html`
    - `sedfile.md`
    - `records.txt`

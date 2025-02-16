@@ -3,35 +3,45 @@
 - Name:
 - Email: 
 
-## Part 1 
+## Part 1 - grep
 
-Make sure the following files are in your GitHub repository
-- validator (with commits for each step complete)
-- `clean1.txt` through `clean4.txt`
+1. How many logs use a client IP that starts with `192`?
+    - `grep` command: 
+    - Number of matched lines: 
+    - Explanation of pattern:
+2. How many logs request page `/faq`?
+    - `grep` command: 
+    - Number of matched lines: 
+    - Explanation of pattern:
+3. How many logs have a client IP that contains `1` in the third octet?
+    - `grep` command: 
+    - Number of matched lines: 
+    - Explanation of pattern:
+4. How many logs contain `GET` requests to look for a page that begins with `c`?
+    - `grep` command: 
+    - Number of matched lines: 
+    - Explanation of pattern:
+5. How many logs contains request between 1:20 PM and 1:30 PM?
+    - `grep` command: 
+    - Number of matched lines: 
+    - Explanation of pattern:
 
-## Part 2 Answers
+## Part 2 - sed
 
 1. `place your sed commands between backtick characters`
-2. `so that they are pretty and readable in markdown`
-3. `replace these examples with your commands`
-4. `do this for rest of commands`
-5.
-6. 
+2. `sed command`
+3. `sed command`
+4. `sed command`
+5. `sed command`
+6. `sed command`
 
-## Part 3 Answers
+## Part 3 - awk
 
 1.
 2.
 3.
 4.
 5.
-
-## Extra Credit - Remove this if not doing
-
-1. Source: 
-    - Regular Expression Pattern: 
-2. Pattern explanation:
-3. Verify `validator2` is in your GitHub repository
 
 ## Citations
 
