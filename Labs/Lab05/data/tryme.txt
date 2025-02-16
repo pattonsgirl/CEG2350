@@ -1,0 +1,4 @@
+Only this text should be in the file if you downloaded with the correct URL.
+
+If there are a bunch of html tags, then you also downloaded the wrapping HTML 
+that is on the page that you see surrounding the page content you want.
