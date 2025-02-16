@@ -1,0 +1,98 @@
+Login failed for user admin
+User john_doe logged in successfully
+Login failed for user guest
+Password incorrect for user root
+User superadmin logged in
+User alice logged in successfully
+User bob failed login attempt
+Invalid password for user charlie
+User david logged in successfully
+Login failed for user eve
+Login failed for user frank
+User george logged in successfully
+Password incorrect for user hacker
+User hacker multiple failed attempts
+User testuser logged in successfully
+Login failed for user unknown
+User admin logged out
+User guest failed login attempt
+User bob changed password
+Password incorrect for user root
+User support logged in successfully
+User admin failed login attempt
+User client logged in
+Login failed for user unknown
+User devops changed password
+User root logged in successfully
+User operator failed login attempt
+Invalid password for user manager
+User sysadmin logged in successfully
+User alice logged out
+User guest multiple failed attempts
+User hacker failed login attempt
+User john_doe changed password
+User root failed login attempt
+Password incorrect for user admin
+User service logged in successfully
+User operator logged out
+User visitor failed login attempt
+User sysadmin logged out
+User testuser changed password
+User alice failed login attempt
+User guest locked out after multiple failures
+User hacker password reset requested
+User hacker failed login attempt
+User client logged out
+User devops failed login attempt
+User manager changed password
+User visitor login attempt
+User visitor failed login attempt
+User support logged out
+User admin password reset requested
+User client failed login attempt
+User bob logged in successfully
+User operator login attempt
+User visitor password incorrect
+User service failed login attempt
+User charlie logged in successfully
+User david failed login attempt
+User guest failed login attempt
+User hacker failed login attempt
+User sysadmin changed password
+User visitor locked out after multiple failures
+User client multiple failed attempts
+User root password reset requested
+User guest logged in successfully
+User alice multiple failed attempts
+User frank logged in successfully
+User testuser failed login attempt
+User hacker password incorrect
+User bob logged out
+User support multiple failed attempts
+User admin logged in successfully
+User guest password reset requested
+User client failed login attempt
+User testuser password incorrect
+User manager logged in successfully
+User visitor logged out
+User guest failed login attempt
+User unknown login attempt
+User hacker failed login attempt
+User admin changed password
+User alice failed login attempt
+User testuser failed login attempt
+User support logged in successfully
+User charlie logged out
+User hacker password incorrect
+User visitor failed login attempt
+User guest logged in successfully
+User devops failed login attempt
+User root multiple failed attempts
+User manager failed login attempt
+User service logged in successfully
+User bob failed login attempt
+User operator password reset requested
+User hacker failed login attempt
+User visitor failed login attempt
+User client logged in successfully
+User devops multiple failed attempts
