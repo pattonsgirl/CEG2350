@@ -69,7 +69,27 @@ Use `cat` to view their contents.  The second will have only the text file.  The
 ```
 grep [OPTIONS] PATTERN [FILE...]
 ```
+In [access.log](data/access.log) you'll find dummy logs for users (client machines) accessing a web server.  Each line contains:
+- the client IP
+- the access (request) timestamp
+- the HTTP Request Method (GET or POST) & resource URL (page)
+- the HTTP Status code
+- [Raw version of access.log](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab05/data/access.log)
 
+Your task is to use both `grep` and `wc` to parse the file for information and report on how many instances were found.  Your searches with `grep` should add in enough patterning to reduce mistakes (inaccurate catches).  
+
+For example: 
+- How many logs have a response code of `200`?
+   - `grep -E "200$" access.log` 
+   - 64 logs had a response code of `200`
+   - response codes are at the end of the line, so `200$` would be a good way to create a specific match that would avoid other catches of `200`
+
+1. How many logs use a client IP that starts with `192`?
+2. How many logs request page `/faq`?
+3. How many logs have a client IP that contains `1` in the third octet?
+   - `10.12.1.40` - `10` is in the first octet, `12` is in the second, `1` **is in the third** and `40` is in the fourth 
+4. How many logs contain `GET` requests to look for a page that begins with `c`?
+5. How many logs contains request between 1:20 PM and 1:30 PM?
 
 **Resources**
 - [linuxize - use grep to search patterns](https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/)
@@ -77,8 +97,8 @@ grep [OPTIONS] PATTERN [FILE...]
 
 ## Part 2 - sed
 
-`sed` is mostly commonly used as a search and replace command. In [sedfile.html](data/sedfile.html) you'll find a simple html file. Your task is to change it into markdown using `sed` commands. Your converted file should be named `sedfile.md`.
-   - [Raw version of sedfile.html](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab05/data/sedfile.html)
+`sed` is mostly commonly used as a search and replace command. In [sedfile.html](data/sedfile.html) you'll find an html file. Your task is to change it into markdown using `sed` commands. Your converted file should be named `sedfile.md`.
+- [Raw version of sedfile.html](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab05/data/sedfile.html)
 
 The following picture shows how `sedfile.html` (the original) looks compared to `sedfile.md` after being fixed to use markdown when the files are viewed in GitHub.
 
