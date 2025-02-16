@@ -2,7 +2,7 @@
 
 - [Lab Procedure](#Lab-Procedure)
 - [regex resources](#regex-resources)
-- [Part 1 - validator](#Part-1---validator)
+- [Part 1 - grep](#Part-1---grep)
 - [Part 2 - sed](#Part-2---sed)
 - [Part 3 - awk](#Part-3---awk)
 - [Submission](#Submission)
@@ -10,36 +10,59 @@
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/68834/modules/items/6128516)
+Make sure to return to the AWS Learner Lab page (link in Pilot if you forgot to bookmark it) and hit "Start Lab" to turn on your sandbox / AWS instance.
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-Create a new directory, `Lab05`
+Create a new directory, `Lab04`.
 
-This lab will have you creating input files, scripts, and output files.
-
-Some questions will need you to write answers in `Lab05.md` the [LabTemplate.md is here](LabTemplate.md).
+Create a file named `README.md` in the `Lab04` folder.  Copy into the file the contents of the [Lab 05 Template](LabTemplate.md).
 
 - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab05/LabTemplate.md)
 
-For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
+You may refer to additional resources outside of the recommended resources provided.  
 
-If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
+Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations` section of your lab answers.  To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
 
-## regex resources
+If you make mistakes with commands in the lab, note them!  Writing down what went wrong and what the correction was will significantly help your learning journey.  If you cannot find a correction, it will help the TAs or myself understand what point you reached and determine some potential solutions.
+
+## Frequently Needed Resources
+
+### regular expressions
 
 These are useful resources for remembering regex syntax and testing your expressions against smaller cases.
 
 - [Mozilla - regex cheatsheet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet)
 - [regexone - practice regex patterns](https://regexone.com/)
 - [regex101 - test regex patterns](https://regex101.com/)
-- [rubular - test regex patterns](https://rubular.com/)
 
-## Part 1 - validator
+### downloading with wget
 
-Your task is to write a bash script that cleans a file full of emails.  The email validation script should, given an input file, output to a final file unique and valid emails.
+When downloading files from the internet by their URL, you'll want to make sure to get the raw file contents - not any additional page wrappers.  
+
+`wget` is a command-line utility for downloading files from the web. With `wget`, you can download files using HTTP, HTTPS, and FTP protocols. `man` `wget` to see the options - we are only going to focus on the URL.
+
+```
+wget [options] [url]
+
+```
+
+View this page:  
+https://github.com/pattonsgirl/CEG2350/blob/main/Labs/Lab05/data/tryme.txt
+
+Now view this page (accessible by select `Raw` on the right side above the file contents):  
+https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/Labs/Lab05/data/tryme.txt
+
+Run the following two commands:
+```
+wget https://github.com/pattonsgirl/CEG2350/blob/main/Labs/Lab05/data/tryme.txt
+wget https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/Labs/Lab05/data/tryme.txt
+```
+Use `cat` to view their contents.  The second will have only the text file.  The first comes with GitHub's page wrapper.  The second - or more importantly - the raw file contents - is what we want.
+
+## Part 1 - grep
 
 `grep` is a handy command to find patterns in text. There are two flags that enable enhanced regular expressions: `-E` and `-P`. `-E` handles most things, but does not work with special regex letter the represent ranges -`\w` and `\d` for example. To use these characters for the ranges they represent, use the `-P` flag instead of the `-E` flag.
 
@@ -47,19 +70,6 @@ Your task is to write a bash script that cleans a file full of emails.  The emai
 grep [OPTIONS] PATTERN [FILE...]
 ```
 
-The list of email to use in this exercise is [here](data/emails.txt).
-   - [Raw version of emails.txt](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/Labs/Lab05/data/emails.txt)
-
-To complete the overall task, perform the steps listed below.  **After each step is complete and tested**, create a `commit` with your changes.  `push` `commit`s as you wish, just remember the `push` saves all the `commit`s to the mighty GitHub cloud.  **Your `commit` message must include which task you completed.**
-
-If you don't make it through all of a step or don't complete all steps, leave heavy comments for partial credit considerations.
-
-1. Create a bash script named `validator`.  The script should take a file name as input.  If the file does not exist, have script print an error message and exit.  If the file does exist, have script sort the content & remove duplicate entries. Output unique entries to a file named `clean1.txt`
-2. Add to script to use content of `clean1.txt` and **match** only entries that start with letters (case-insensitive) or digits.  Output only valid matches to `clean2.txt`
-3. Add to script to use content of `clean2.txt` and **remove matching** entries that contain consecutive (2 or more in a row) non-alphanumeric characters, such as dots (.), underscores (_), and hyphens (-).  Output only matches that do not contain consecutive non-alphanumeric characters to `clean3.txt`
-4. Add to script to use content of `clean3.txt` and **match** entries that end in a valid domain name.  A domain name is after the @ sign and must consist of letters (case-insensitive) or digits, followed by a dot (.), and end with a top-level domain (TLD) of `com` OR `org`OR `net`.  Output only valid matches to `clean4.txt`
-
-`emails.txt` has 105 emails listed.  After getting unique entries & applying the pattern filters, `clean4.txt` contained 19 emails that met the valid rules.
 
 **Resources**
 - [linuxize - use grep to search patterns](https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/)
@@ -67,10 +77,10 @@ If you don't make it through all of a step or don't complete all steps, leave he
 
 ## Part 2 - sed
 
-`sed` is mostly commonly used as a search and replace command. In [sedfile.html](data/sedfile.html) you'll find a simple html file. Your task is to change it into markdown. Do this only using `sed` commands. Your converted file should be named `sedfile.md`.
+`sed` is mostly commonly used as a search and replace command. In [sedfile.html](data/sedfile.html) you'll find a simple html file. Your task is to change it into markdown using `sed` commands. Your converted file should be named `sedfile.md`.
    - [Raw version of sedfile.html](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab05/data/sedfile.html)
 
-The following picture shows how `sedfile.html` (the original) looks compared to `sedfile.md` when the files are viewed in GitHub.
+The following picture shows how `sedfile.html` (the original) looks compared to `sedfile.md` after being fixed to use markdown when the files are viewed in GitHub.
 
 ![sed Before and After](data/sed-before-after.PNG)
 
