@@ -16,7 +16,7 @@ Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-Create a new directory, `Lab04`.
+Create a new directory, `Lab05`.
 
 Create a file named `README.md` in the `Lab04` folder.  Copy into the file the contents of the [Lab 05 Template](LabTemplate.md).
 
