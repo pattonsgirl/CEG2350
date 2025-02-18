@@ -166,7 +166,7 @@ Only write the command that performs the required task in the lab write up. DO N
    - `sedfile.md`
    - `sales.txt`
    - `updated-sales.txt`
-   - `Lab05.md`
+   - `README.md`
 
 2. Note that if your command answers in the answer template did not make use of the backtick (`), the TAs are allowed to refuse to grade your submission.  Cleanliness and readability is your responsibility.  
 
