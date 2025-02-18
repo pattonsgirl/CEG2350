@@ -150,7 +150,7 @@ Only write the command that performs the required task in the lab write up. DO N
 1. Print only lines for sales made in February 2024
 2. Print only the product name of products with a unit price of 100 or more
 3. Print the product name and quantity sold of products with `TV` in the product name
-4. Sum the total revenue of products with `Kitchen` in the product name
+4. Sum the total revenue of products with `Kitchen` in the Category name
 5. Replace all occurrences of the word `Sofa` with `Couch`.  Save the change to `updates-sales.txt`
 
 - **Resources**
