@@ -86,8 +86,9 @@ For example:
 
 1. How many logs use a client IP that starts with `192`?
 2. How many logs request page `/faq`?
-3. How many logs have a client IP that contains `1` in the third octet?
-   - `10.12.1.40` - `10` is in the first octet, `12` is in the second, `1` **is in the third** and `40` is in the fourth 
+3. How many logs have a client IP that contains `1` (but not exclusively) in the third octet?
+   - `10.12.1.40` - `10` is in the first octet, `12` is in the second, `1` **is in the third** and `40` is in the fourth
+   - 21, 12, 11, 210 would all be valid values in third octect
 4. How many logs contain `GET` requests to look for a page that begins with `c`?
 5. How many logs contains request between 1:20 PM (inclusive) and 1:30 PM (exclusive)?
 
