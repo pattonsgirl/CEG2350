@@ -18,7 +18,7 @@ Go to the folder that contains your repository (likely named `ceg2350-yourgithub
 
 Create a new directory, `Lab05`.
 
-Create a file named `README.md` in the `Lab04` folder.  Copy into the file the contents of the [Lab 05 Template](LabTemplate.md).
+Create a file named `README.md` in the `Lab05` folder.  Copy into the file the contents of the [Lab 05 Template](LabTemplate.md).
 
 - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab05/LabTemplate.md)
 
