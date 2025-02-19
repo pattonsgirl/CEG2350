@@ -1,7 +1,8 @@
-# Lab 06 - Name Change Script
+# Lab 06 - DIY Password Manager
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Name Change Script](#part-1---name-change-script)
+- [Encrypting Test](#encrypting-text)
+- [Part 1 - DIY Password Manager](#part-1---diy-password-manager)
 - [Part 2 - Retrospective](#part-2---retrospective)
 - [Part 3 - Usage Guide](#part-3---usage-guide)
 - [Extra Credit - Bulk Name Changer](#extra-credit---bulk-name-changer)
@@ -11,50 +12,56 @@
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/68834/modules/items/6128516)
+Make sure to return to the AWS Learner Lab page (link in Pilot if you forgot to bookmark it) and hit "Start Lab" to turn on your sandbox / AWS instance.
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-Create a new directory, `Lab06`
+Create a new directory, `Lab06`.
 
-This lab may have you creating input files, scripts, and output files. All of your work should be found here.
-
-Some questions will need you to write answers in `README.md` the [LabTemplate.md is here](LabTemplate.md).
+Create a file named `README.md` in the `Lab06` folder.  Copy into the file the contents of the [Lab 06 Template](LabTemplate.md).
 
 - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab06/LabTemplate.md)
 
-If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
+You may refer to additional resources outside of the recommended resources provided.  
 
-## Part 1 - Name Change Script
+Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations` section of your lab answers.  To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
 
-The following will ask you to write a script that changes a file's name.  The script will allow the user to provide the search pattern to replace, and the replacement for the found pattern.  A sample of using the script, where `namechange` is the name of the script file:
+If you make mistakes with commands in the lab, note them!  Writing down what went wrong and what the correction was will significantly help your learning journey.  If you cannot find a correction, it will help the TAs or myself understand what point you reached and determine some potential solutions.
 
-```
-namechange -f find-pattern -r replace-with filename
-```
+## Encrypting Text
 
-1. Create a script in your `Lab06` folder named `namechange`. 
-2. Create some files in your folder with common errors (spaces in the filename, a misspelling, etc.).  You can utilize the [createfiles.sh](createfiles.sh) script to generate them.
-   - Sample file name "errors":
-      - `.jpg` is misspelled as `.jgp`
-      - spaces in file names that could be replaced with `-`
-      - file names with `foo` in them need to become `bar`
 
+
+## Part 1 - DIY Password Manager
+
+Your task is to build your own password manager. The goal is twofold - to understand some options for encrypting text that need to be kept secret - like password values and to use a `bash` structure called `getopts` to create a program that supports flags and arguments.
+
+Your program will keep a list of application names and corresponding passwords. **All password values should be pretend**.  Your application will support several features:
+- adding a new application and password
+- updating an existing password for an application (but only if the old password value provided is a match!)
+- viewing an application password
+- removing an application and password
+
+Create a script in your `Lab06` folder named `pwmgr`. 
 
 **BEFORE YOU BEGIN**  
 
-- You must have a **minimum** of **3 (THREE) COMMITS** made for this script.  Your commit messages must describe what's currently working / tested.  When (after which steps / testing) you make a commit is your choice.
+- You must have a **minimum** of **3 (THREE) COMMITS** made for this script that must reflect working in small, progressive chunks.  Your commit messages must describe what's currently working / tested.  When (after which steps / testing) you make a commit is your choice.
 
-**Implement the following features in the `namechange` script:**
+**Implement the following features in the `pwmgr` script:**
 
 1. Create a function called `printHelp`. `printHelp` should output the following:
 
 ```
-Usage: namechange -f find -r replace "string to modify"
- -f The text to find in the filename
- -r The replacement text for the new filename
+Usage: pwmgr -m master-password -o old-password -n new-password appname
+ -m   master password to decrypt password values in file
+ -o   old password to validate before accepting new password value
+ -n   new password value (to replace old password OR to use with new application)
+ -a   adds application and password value 
+ -d   deletes line containing application name and password
+ -h   print help and supported flags
 ```
 
 2. Use `getopts` to read in options and save arguments that correlate with options. `getopts` should support the following options in the `OPTSTRING`
