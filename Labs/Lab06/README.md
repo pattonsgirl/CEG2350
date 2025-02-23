@@ -54,8 +54,8 @@ You may delete the `.bash_aliases` file in your user's home directory as needed 
 
 Your tasking is to write a script that sets up your user account to use your `.bash_aliases` To accomplish this, you will create an "installation" script that accomplishes these taskings.  
 
-[!WARNING] 
-You must have a **minimum** of **3 (THREE) COMMITS** made for this script.  Your commit messages must describe what's currently working / tested.  When (after which steps / testing) you make a commit is your choice.  Your commits must demonstrate an incremental building process - a bulk dump and then making a spelling change or two will not get you out of the penalty in the rubric.
+> [!WARNING] 
+> You must have a **minimum** of **3 (THREE) COMMITS** made for this script.  Your commit messages must describe what's currently working / tested.  When (after which steps / testing) you make a commit is your choice.  Your commits must demonstrate an incremental building process - a bulk dump and then making a spelling change or two will not get you out of the penalty in the rubric.
 
 1. Create a script named `dotinstall` in your `Lab06` folder.
 
