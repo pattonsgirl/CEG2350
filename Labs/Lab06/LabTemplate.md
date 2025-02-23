@@ -29,8 +29,6 @@ would be able to understand what your script does and how to use it.
 
 Use good markdown so that this documentation is pretty and clean on GitHub.
 
-Below is kind of how I would format things
-
 ### `.bash_aliases`
 Describe your script in plain English, nothing too technical.  Think about this as describing what you made over the dinner table.
 
@@ -41,7 +39,6 @@ Describe your script in plain English, nothing too technical.  Think about this 
 ### Examples
 
 ```
-Two examples using your script to rename an existing file
 By using the triple quotes, you can enclose a block of code
 And code blocks look very professional
 ```
