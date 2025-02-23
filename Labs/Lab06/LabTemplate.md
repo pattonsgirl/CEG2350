@@ -3,7 +3,15 @@
 - Name:
 - Email
 
-## Part 1 - 
+## Part 1 - bash aliases
+
+It is important that the following is added to or exists in the user's `.bashrc` file
+```
+section related to `.bash_aliases` found in `.bashrc`
+```
+
+What this section does:
+> explanation here
 
 ## Part 3 - Retrospective
 
@@ -23,16 +31,12 @@ Use good markdown so that this documentation is pretty and clean on GitHub.
 
 Below is kind of how I would format things
 
-### What it is
-
+### `.bash_aliases`
 Describe your script in plain English, nothing too technical.  Think about this as describing what you made over the dinner table.
 
-### How to run it
+### `dotinstall`
 
-If someone wanted to downloaded your script, what steps would they take to have their own copy that they could run
-1. Numbers followed by a space
-2. Create numeric lists
-3. Don't forget `code snips` can go in backticks.
+Describe your script in plain English, nothing too technical.  Think about this as describing what you made over the dinner table.
 
 ### Examples
 
