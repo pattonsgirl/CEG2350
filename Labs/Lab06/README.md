@@ -5,9 +5,10 @@
 - [Part 2 - Dotfile Installer Script](#part-2---dotfile-installer-script)
 - [Part 3 - Retrospective](#part-3---retrospective)
 - [Part 4 - Usage Guide](#part-4---usage-guide)
+- [Extra Credit - Improvements](#extra-credit---improvements)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
-- [Additional `getopts` Resources](#Additional-getopts-Resources)
+- [`getopts` and Error Handling](#getopts-and-error-handling)
 
 ## Lab Procedure
 
@@ -53,9 +54,8 @@ You may delete the `.bash_aliases` file in your user's home directory as needed 
 
 Your tasking is to write a script that sets up your user account to use your `.bash_aliases` To accomplish this, you will create an "installation" script that accomplishes these taskings.  
 
-**BEFORE YOU BEGIN**  
-
-[!WARN] You must have a **minimum** of **3 (THREE) COMMITS** made for this script.  Your commit messages must describe what's currently working / tested.  When (after which steps / testing) you make a commit is your choice.  Your commits must demonstrate an incremental building process.
+[!WARNING] 
+You must have a **minimum** of **3 (THREE) COMMITS** made for this script.  Your commit messages must describe what's currently working / tested.  When (after which steps / testing) you make a commit is your choice.  Your commits must demonstrate an incremental building process - a bulk dump and then making a spelling change or two will not get you out of the penalty in the rubric.
 
 1. Create a script named `dotinstall` in your `Lab06` folder.
 
