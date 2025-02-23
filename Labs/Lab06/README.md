@@ -29,7 +29,40 @@ Any resource that you use that contributes to your understanding of exercises in
 
 If you make mistakes with commands in the lab, note them!  Writing down what went wrong and what the correction was will significantly help your learning journey.  If you cannot find a correction, it will help the TAs or myself understand what point you reached and determine some potential solutions.
 
-## Part 1 - Dotfile Repository
+## Part 1 - bash aliases
+
+Craft an `alias` with a name of your choice that pipes a `fortune` to a `cowsay` cow of your choice (`-f` flag)
+
+Craft an `alias` with a name of your choice to something "fun".  Checkout these as suggestions.  You may need to install these programs first with `apt`.
+   - `curl wttr.in`
+   - `telnet towel.blinkenlights.nl`
+   - have `cat` use `lolcat` instead
+   - `asciiaquarium` 
+
+Add the aliases to a file named `.bash_aliases` in your user's home directory.
+
+Append the following to the end of your user's `.bashrc` file:
+
+```
+if [ -e $HOME/.bash_aliases ]; then
+    source $HOME/.bash_aliases
+fi
+```
+
+Confirm that the changes in these files continuously make the aliases available to your user's account.
+
+## Extra Credit - Dotfile Repository
+
+Create a new **public repository** in **your GitHub account** named `dotfiles`.
+
+Add your `.bash_aliases` file to your `dotfiles` repository.
+
+Add your `dotinstall` script to your `dotfiles` repository.
+
+Confirm that, when cloned, your `dotinstall` successfully performs it's taskings.
+- For testing, you could use your `first-initial-last-name` user account your made on the instance back in Lab 02.  Remember if you clone a GitHub repository to a new account, you'll need to set up a key pair and add the public key to your GitHub user account Settings.
+
+Create a `README.md` file for your `dotfiles` repository describing what's inside.
 
 ## Part 2 - Dotfile Installer Script
 
