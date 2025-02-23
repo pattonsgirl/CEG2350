@@ -1,36 +1,39 @@
-# Lab 06 - Name Change Script
+# Lab 06 - Dotfile Installer Script
 
 - [Lab Procedure](#Lab-Procedure)
-- [Part 1 - Name Change Script](#part-1---name-change-script)
-- [Part 2 - Retrospective](#part-2---retrospective)
-- [Part 3 - Usage Guide](#part-3---usage-guide)
-- [Extra Credit - Bulk Name Changer](#extra-credit---bulk-name-changer)
+- [Part 1 - Dotfile Repository](#part-1---dotfile-repository)
+- [Part 2 - Dotfile Installer Script](#part-2---dotfile-installer-script)
+- [Part 3 - Retrospective](#part-3---retrospective)
+- [Part 4 - Usage Guide](#part-4---usage-guide)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 - [Additional `getopts` Resources](#Additional-getopts-Resources)
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/68834/modules/items/6128516)
+Make sure to return to the AWS Learner Lab page (link in Pilot if you forgot to bookmark it) and hit "Start Lab" to turn on your sandbox / AWS instance.
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-Create a new directory, `Lab06`
+Create a new directory, `Lab06`.
 
-This lab may have you creating input files, scripts, and output files. All of your work should be found here.
-
-Some questions will need you to write answers in `README.md` the [LabTemplate.md is here](LabTemplate.md).
+Create a file named `README.md` in the `Lab06` folder.  Copy into the file the contents of the [Lab 06 Template](LabTemplate.md).
 
 - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab06/LabTemplate.md)
 
-If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
+You may refer to additional resources outside of the recommended resources provided.  
 
-## Part 1 - Name Change Script
+Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations` section of your lab answers.  To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
 
-The following will ask you to write a script that changes a file's name.  The script will allow the user to provide the search pattern to replace, and the replacement for the found pattern.  A sample of using the script, where `namechange` is the name of the script file:
+If you make mistakes with commands in the lab, note them!  Writing down what went wrong and what the correction was will significantly help your learning journey.  If you cannot find a correction, it will help the TAs or myself understand what point you reached and determine some potential solutions.
 
+## Part 1 - Dotfile Repository
+
+## Part 2 - Dotfile Installer Script
+
+Your tasking is to write a script 
 ```
 namechange -f find-pattern -r replace-with filename
 ```
@@ -98,19 +101,16 @@ Renamed spellingerrrr.txt to spellingerror.txt
 ```
 
 **Resources**
-- [bash-hackers - `getopts` tutorial](https://wiki.bash-hackers.org/howto/getopts_tutorial)
-- [assertnotmagic - breaking down how `getopts` works](https://www.assertnotmagic.com/2019/03/08/bash-advanced-arguments/)
-- [`sed` with string, not input file](https://stackoverflow.com/questions/13055889/sed-with-literal-string-not-input-file)
-- [cyberciti - using Logical NOT in if statements](https://bash.cyberciti.biz/guide/Logical_Not_!)
-- [linuxize - functions](https://linuxize.com/post/bash-functions/)
+- [`getopts` tutorial - bash-hackers](https://wiki.bash-hackers.org/howto/getopts_tutorial)
+- [breaking down how `getopts` works - assertnotmagic](https://www.assertnotmagic.com/2019/03/08/bash-advanced-arguments/)
 
-## Part 2 - Retrospective
+## Part 3 - Retrospective
 
 1. How would you explain `getopts` to a friend?
 2. What did you get stuck on while working on this script?  How did you overcome it?
 3. What feature would you add to this script?
 
-## Part 3 - Usage Guide
+## Part 4 - Usage Guide
 
 Fill out the Usage Guide section in your lab template.  It should contain a minimum of the following:
 1. Information on what your script is and how users should copy and use your script
@@ -128,32 +128,12 @@ Examples of good README / Usage Guides:
 - [pokeget](https://github.com/talwat/pokeget)
    - this is far more thorough than what you are writing, but note here how much detail in included.
 
-## Extra Credit - Bulk Name Changer
-
-This builds on the script created for Part 1. Since the core is similar, I would `cp` this to a new script named `bulkrenamer`.
-
-1. Download and run one of the create files scripts to generate some dummy files for this part.
-   - [createfiles.sh](createfiles.sh) will just create 30 files in the directory you run it from (10 of each error type below)
-   - [cfargs.sh](cfargs.sh) will let you create a number of files with the error type of your choice (spaces or spelling) in the directory you specify
-   - [cfgetopts.sh](cfgetopts.sh) will let you do the same as `cfargs.sh`, but with options
-   - Errors in these file names that can be corrected with a script:
-     - `jpg` is misspelled as `jgp`
-     - spaces in file names that could be replaced with `-`
-     - files with `foo` in them need to become `bar`
-2. The script will run as: `bulkrenamer -f find-pattern -r replace-with FILES_TO_RENAME*`
-3. For each file given (or all files in a given folder), rename according to the find / replace arguments provided.
-
-**Resources**
-- [linuxize - for loops](https://linuxize.com/post/bash-for-loop/)
-
 ## Submission
 
 1. Verify that your GitHub repo has a `Lab06` folder with at minimum:
 
-   - `README.md` (Retrospective responses & `namechange` Usage Guide)
-   - `namechange` (script)
-   - `bulkrenamer` - for extra credit
-   - Usage Guide for `bulkrenamer` - for extra credit
+   - `README.md` (Retrospective responses & `dotinstall` Usage Guide)
+   - `dotinstall` (script)
 
 2. In the Pilot Dropbox, paste the URL to the `Lab06` folder in your GitHub repo
    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab06
@@ -174,7 +154,6 @@ This builds on the script created for Part 1. Since the core is similar, I would
    - description and how to - 1 pt
    - examples of your script in action - 1 pt
    - good use of markdown formatting - 1 pt
-- Extra Credit - 20% - 2pts
 
 ## Additional `getopts` Resources
 

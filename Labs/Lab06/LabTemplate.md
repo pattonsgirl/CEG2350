@@ -3,13 +3,15 @@
 - Name:
 - Email
 
-## Part 2 - Retrospective
+## Part 1 - 
+
+## Part 3 - Retrospective
 
 1.
 2.
 3.
 
-## Part 3 - namechange Usage Guide
+## Part 4 - `dotinstall` Usage Guide
 
 THIS SHOULD ALL BE REMOVED AND REPLACED WITH ONLY YOUR USAGE GUIDE TEXT
 
@@ -19,7 +21,7 @@ would be able to understand what your script does and how to use it.
 
 Use good markdown so that this documentation is pretty and clean on GitHub.
 
-Bellow is kind of how I would format things
+Below is kind of how I would format things
 
 ### What it is
 
@@ -40,10 +42,6 @@ By using the triple quotes, you can enclose a block of code
 And code blocks look very professional
 ```
 
-## Bulk Name Changer Usage Guide - Remove if not doing extra credit
+## Citations
 
-Examples of script usage and output. This should be enough info that  
-you can hand this and the script to someone not in this course and they  
-would be able to understand what your script does and how to use it.
-
-Use good markdown so that this documentation it is pretty and clean on GitHub.
+To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.  Generative AI may not write your script for you, only assist with component and how to type questions.
