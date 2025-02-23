@@ -69,7 +69,7 @@ Usage: dotinstall [-OPTION] [ARG]
   -r remove - removes an alias from .bash_aliases file
 ```
 
-2. Use `getopts` to read in options and save arguments that correlate with options. `getopts` should support the following options in the `OPTSTRING`
+3. Use `getopts` to read in options and save arguments that correlate with options. `getopts` should support the following options in the `OPTSTRING`
 
    - `-h`
      - call `printHelp` function and exit script
@@ -132,6 +132,7 @@ Before panicking, keep in mind that `getopts` is mostly a while loop iterating t
 - [`getopts` tutorial - shellscript](https://www.shellscript.sh/tips/getopts/)
 - [breaking down how `getopts` works - assertnotmagic](https://www.assertnotmagic.com/2019/03/08/bash-advanced-arguments/)
 - [parse Arguments In Bash Scripts Using `getopts` - ostechnix](https://ostechnix.com/parse-arguments-in-bash-scripts-using-getopts/)
+- [Passing Arguments to Bash Functions - linuxize](https://linuxize.com/post/bash-functions/#passing-arguments-to-bash-functions)
 
 ## Part 3 - Retrospective
 
