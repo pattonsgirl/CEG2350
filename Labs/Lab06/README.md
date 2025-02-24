@@ -200,6 +200,7 @@ Add notes to your documentation about your added feature and show examples of it
       - description of `.bash_aliases` script - 1 pt
       - **truthful** demonstrations of `dotinstall` script based on parts implemented - 1 pt
       - good use of markdown formatting - 2 pt
+   - README is not a markdown file or does not use markdown formatting - no credit / (-10) points
 
 ## `getopts` and error handling
 
