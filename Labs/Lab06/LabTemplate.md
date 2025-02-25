@@ -13,6 +13,8 @@ section related to `.bash_aliases` found in `.bashrc`
 What this section does:
 > explanation here
 
+Make sure you copied your `.bash_aliases` file to your GitHub repository.
+
 ## Part 2 - Dot Install Script
 
 Nothing to write here, just a reminder to make sure your `dotinstall` script is in 
