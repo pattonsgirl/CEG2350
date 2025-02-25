@@ -13,6 +13,11 @@ section related to `.bash_aliases` found in `.bashrc`
 What this section does:
 > explanation here
 
+## Part 2 - Dot Install Script
+
+Nothing to write here, just a reminder to make sure your `dotinstall` script is in 
+your GitHub repository
+
 ## Part 3 - Retrospective
 
 1.
