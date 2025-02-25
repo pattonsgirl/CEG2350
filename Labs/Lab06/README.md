@@ -69,7 +69,7 @@ Usage: dotinstall [-OPTION] [ARG]
   -r remove - removes an alias from .bash_aliases file
 ```
 
-2. Use `getopts` to read in options and save arguments that correlate with options. `getopts` should support the following options in the `OPTSTRING`
+3. Use `getopts` to read in options and save arguments that correlate with options. `getopts` should support the following options in the `OPTSTRING`
 
    - `-h`
      - call `printHelp` function and exit script
@@ -127,11 +127,12 @@ Usage: dotinstall [-OPTION] [ARG]
 **Resources**
 Before panicking, keep in mind that `getopts` is mostly a while loop iterating through arguments with a `switch` statement to define what to do on finding certain options.  Play with the demos linked below before diving all in.  Plan plan plan!
 
-- [getopts-basics.sh](getopts-basics.sh)
-- [cfgetopts.sh](cfgetopts.sh)
+- [getopts-basics.sh](examples/getopts-basics.sh)
+- [cfgetopts.sh](examples/cfgetopts.sh)
 - [`getopts` tutorial - shellscript](https://www.shellscript.sh/tips/getopts/)
 - [breaking down how `getopts` works - assertnotmagic](https://www.assertnotmagic.com/2019/03/08/bash-advanced-arguments/)
 - [parse Arguments In Bash Scripts Using `getopts` - ostechnix](https://ostechnix.com/parse-arguments-in-bash-scripts-using-getopts/)
+- [Passing Arguments to Bash Functions - linuxize](https://linuxize.com/post/bash-functions/#passing-arguments-to-bash-functions)
 
 ## Part 3 - Retrospective
 
@@ -198,7 +199,8 @@ Add notes to your documentation about your added feature and show examples of it
       - description of `dotinstall` script - 1 pt
       - description of `.bash_aliases` script - 1 pt
       - **truthful** demonstrations of `dotinstall` script based on parts implemented - 1 pt
-      - good use of markdown formatting - 1 pt
+      - good use of markdown formatting - 2 pt
+   - README is not a markdown file or does not use markdown formatting - no credit / (-10) points
 
 ## `getopts` and error handling
 
@@ -206,7 +208,7 @@ I don't not require any error handling outside of the sample program runs provid
 
 If you are reading this, you may have noted that `getopts` still doesn't solve all user abuse cases by default.
 
-For example, `getopts` can have a hard time "detecting" a missing argument after an option. `bash namechanger -r -f​` would not "count" as `-r` missing an argument, because `OPTARG` would read `-f` as the argument for `-r`. Fun right?
+For example, `getopts` can have a hard time "detecting" a missing argument after an option. `bash dotinstall -s -d​` would not "count" as `-r` missing an argument, because `OPTARG` would read `-d` as the argument for `-s`. Fun right?
 
 There are many ways to detangle this problem, some using `getopts`. You could play some quick games before running `getopts`, such as checking number of arguments passed... It isn't failsafe, but it would help.
 
