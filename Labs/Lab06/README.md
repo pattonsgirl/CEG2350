@@ -99,7 +99,7 @@ Usage: dotinstall [-OPTION] [ARG]
   -a append - adds a new alias to .bash_aliases file
   -r remove - removes an alias from .bash_aliases file
 
-$ bash dotinstall -s -a 'alias ls=ls -lah'
+$ bash dotinstall -s -a 'alias ls=\"ls -lah\"'
 No .bash_aliases file found in /home/ubuntu
 Creating symbolic link in /home/ubuntu named .bash_alaises
 Adding alias to .bash_alaises
