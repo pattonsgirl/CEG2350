@@ -39,7 +39,7 @@ Assuming that you have cloned your repository and can open it in VS Code...
 
 Create a new directory, `Lab01.md`
 
-Create a new file in your repository workspace named `README.md`.  In this file, **paste** the contents of the Lab 01 template.  
+Create a new file in your `Lab01` directory named `README.md`.  In this file, **paste** the contents of the Lab 01 template.  
 
 As you work through the lab, practice making commits and synchronizing to your repository on GitHub.  As the course progress, a history of multiple commits will become requirements.
 
