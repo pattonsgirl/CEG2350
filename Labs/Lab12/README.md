@@ -20,7 +20,7 @@ Go to the folder that contains your repository (likely named `ceg2350-yourgithub
 
 **Create a new directory, `Lab12`**
 
-Write answers in `Lab12.md` the [LabTemplate.md is here](LabTemplate.md).
+Write answers in `README.md` the [LabTemplate.md is here](LabTemplate.md).
 
 - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab12/LabTemplate.md)
 
@@ -172,7 +172,7 @@ Your reports must contain the set of commands used to create the reports.
 
 1. Verify that your GitHub repo has a `Lab12` folder with at minimum:
 
-   - `Lab12.md`
+   - `README.md`
 
 2. In the Pilot Dropbox, paste the URL to the `Lab12` folder in your GitHub repo
    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab12

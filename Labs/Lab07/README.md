@@ -10,13 +10,13 @@
 
 ## Lab Procedure
 
-The focus of this lab is exploring your system. You will be creating a `Lab07.md` file for your work in this lab. To create and edit the file, you are welcome to use your AWS instance (or anywhere your repo is cloned) or edit the file directly in the browser.
+The focus of this lab is exploring your system. You will be creating a `README.md` file for your work in this lab. To create and edit the file, you are welcome to use your AWS instance (or anywhere your repo is cloned) or edit the file directly in the browser.
 
 In your repository (the folder named `ceg2350-yourgithubusername`):
 
 Create a new directory, `Lab07`
 
-Create a file named `Lab07.md` [based on the template](LabTemplate.md).
+Create a file named `README.md` [based on the template](LabTemplate.md).
 
 - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab07/LabTemplate.md)
 
@@ -123,7 +123,7 @@ We are going to be uploading images directly to our repository in GitHub, then u
 
 1. Verify that your GitHub repo has a `Lab07` folder with at minimum:
 
-   - `Lab07.md`
+   - `README.md`
 
 2. In the Pilot Dropbox, paste the URL to the `Lab07` folder in your GitHub repo
    - URL should look like: https://github.com/WSU-kduncan/ceg2350s24-YOURGITHUBUSERNAME/tree/main/Lab07

@@ -20,7 +20,7 @@ Go to the folder that contains your repository (likely named `ceg2350-yourgithub
 
 Create a new directory, `Lab09`
 
-Write answers in `Lab09.md` the [LabTemplate.md is here](LabTemplate.md).
+Write answers in `README.md` the [LabTemplate.md is here](LabTemplate.md).
 
 - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab09/LabTemplate.md)
 
@@ -112,7 +112,7 @@ The perhaps obtuse goal of the previous two exercises is to understand process c
 
 1. Verify that your GitHub repo has a `Lab09` folder with at minimum:
 
-   - `Lab09.md`
+   - `README.md`
 
 2. In the Pilot Dropbox, paste the URL to the `Lab09` folder in your GitHub repo
    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab09

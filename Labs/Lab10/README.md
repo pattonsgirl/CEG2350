@@ -19,7 +19,7 @@ Go to the folder that contains your repository (likely named `ceg2350-yourgithub
 
 **Create a new directory, `Lab10`**
 
-Write answers in `Lab10.md` the [LabTemplate.md is here](LabTemplate.md).
+Write answers in `README.md` the [LabTemplate.md is here](LabTemplate.md).
 
 - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab10/LabTemplate.md)
 
@@ -148,7 +148,7 @@ Resources:
 
 1. Verify that your GitHub repo has a `Lab10` folder with at minimum:
 
-   - `Lab10.md`
+   - `README.md`
    - source code files
    - `Makefile`
 
