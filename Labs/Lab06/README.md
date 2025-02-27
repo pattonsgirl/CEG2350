@@ -50,6 +50,10 @@ Copy your `.bash_aliases` file to your GitHub repository in your `Lab06` folder.
 
 You may delete the `.bash_aliases` file in your user's home directory as needed through this lab.
 
+**Resources**
+- [How to create bash aliases - linuxize](https://linuxize.com/post/how-to-create-bash-aliases/)
+- 
+
 ## Part 2 - Dotfile Installer Script
 
 Your tasking is to write a script that sets up your user account to use your `.bash_aliases` To accomplish this, you will create an "installation" script that accomplishes these taskings.  
@@ -140,6 +144,7 @@ Before panicking, keep in mind that `getopts` is mostly a while loop iterating t
 - [breaking down how `getopts` works - assertnotmagic](https://www.assertnotmagic.com/2019/03/08/bash-advanced-arguments/)
 - [parse Arguments In Bash Scripts Using `getopts` - ostechnix](https://ostechnix.com/parse-arguments-in-bash-scripts-using-getopts/)
 - [Passing Arguments to Bash Functions - linuxize](https://linuxize.com/post/bash-functions/#passing-arguments-to-bash-functions)
+- [ln Command in Linux - linuxize](https://linuxize.com/post/how-to-create-symbolic-links-in-linux-using-the-ln-command/)
 
 ## Part 3 - Retrospective
 
