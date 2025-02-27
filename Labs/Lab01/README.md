@@ -37,6 +37,8 @@ For each lab in this course, you will be provided with a lab template to fill in
 
 Assuming that you have cloned your repository and can open it in VS Code...
 
+Create a new directory, `Lab01.md`
+
 Create a new file in your repository workspace named `README.md`.  In this file, **paste** the contents of the Lab 01 template.  
 
 As you work through the lab, practice making commits and synchronizing to your repository on GitHub.  As the course progress, a history of multiple commits will become requirements.
@@ -114,8 +116,8 @@ Start in your user's home directory.
 
 Remember that we can only grade what we see in GitHub.  Make sure to commit and synchronize (push) your changes to your files.
 
-- In the Pilot Dropbox, paste the URL to the `README.md` file in your GitHub repo
-  - URL should look like: https://github.com/WSU-kduncan/ceg2350s25-YOURGITHUBUSERNAME/blob/main/README.md
+- In the Pilot Dropbox, paste the URL to the `Lab01` folder in your GitHub repo
+  - URL should look like: https://github.com/WSU-kduncan/ceg2350s25-YOURGITHUBUSERNAME/blob/main/Lab01
 
 ## Rubric
 
