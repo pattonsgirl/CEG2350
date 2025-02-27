@@ -20,7 +20,7 @@ Go to the folder that contains your repository (likely named `ceg2350-yourgithub
 
 Create a new directory, `Lab12`
 
-Create a file named `Lab12.md` [based on the template](LabTemplate.md).
+Create a file named `README.md` [based on the template](LabTemplate.md).
 
 - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab12/LabTemplate.md)
 
@@ -140,7 +140,7 @@ For this extra credit, you are going to create and solve a merge conflict. I'm g
 
 1. Verify that your GitHub repo has a `Lab12` folder with at minimum:
 
-   - `Lab12.md`
+   - `README.md`
    - `problem-child.txt` (if extra credit)
 
 2. In the Pilot Dropbox, paste the URL to the `Lab12` folder in your GitHub repo

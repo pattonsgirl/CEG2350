@@ -17,7 +17,7 @@ Go to the folder that contains your repository (likely named `ceg2350-yourgithub
 
 Create a new directory, `Lab11`
 
-Create a file named `Lab11.md` [based on the template](LabTemplate.md).
+Create a file named `README.md` [based on the template](LabTemplate.md).
 
 - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab11/LabTemplate.md)
 
@@ -102,7 +102,7 @@ Use your AWS instance for this part. A common issue is that a port you want to l
 1. Verify that your GitHub repo has a `Lab11` folder with at minimum:
 
    - your `tcpdump` capture
-   - `Lab11.md`
+   - `README.md`
    - `index.html` (optional)
 
 2. In the Pilot Dropbox, paste the URL to the `Lab11` folder in your GitHub repo

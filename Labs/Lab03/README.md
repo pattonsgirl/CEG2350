@@ -153,7 +153,7 @@ Make sure you `commit` and `push` your script changes for grading and add a note
 - In the Pilot Dropbox, paste the URL to the `Lab03` folder in your GitHub repo
   - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab03
 - Your `Lab03` folder should contain (at minimum):
-  - `Lab03.md`
+  - `README.md`
   - `roll`
 
 ## Rubric

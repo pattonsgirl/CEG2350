@@ -114,8 +114,8 @@ Start in your user's home directory.
 
 Remember that we can only grade what we see in GitHub.  Make sure to commit and synchronize (push) your changes to your files.
 
-- In the Pilot Dropbox, paste the URL to the `Lab01.md` file in your GitHub repo
-  - URL should look like: https://github.com/WSU-kduncan/ceg2350s25-YOURGITHUBUSERNAME/blob/main/Lab01.md
+- In the Pilot Dropbox, paste the URL to the `README.md` file in your GitHub repo
+  - URL should look like: https://github.com/WSU-kduncan/ceg2350s25-YOURGITHUBUSERNAME/blob/main/README.md
 
 ## Rubric
 

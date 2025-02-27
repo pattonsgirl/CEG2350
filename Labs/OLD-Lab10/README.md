@@ -20,7 +20,7 @@ Go to the folder that contains your repository (likely named `ceg2350-yourgithub
 
 Create a new directory, `Lab10`
 
-Create a file named `Lab10.md` [based on the template](LabTemplate.md).
+Create a file named `README.md` [based on the template](LabTemplate.md).
 
 - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab10/LabTemplate.md)
 
@@ -91,7 +91,7 @@ Install `nsnake` from the source, [`nsnake-3.0.1.tar.gz`](nsnake-3.0.1.tar.gz). 
    - `repeat.java` OR `repeat.c` OR `repeat.cpp`
    - your compiled program
    - `Makefile`
-   - `Lab10.md`
+   - `README.md`
 
 2. In the Pilot Dropbox, paste the URL to the `Lab10` folder in your GitHub repo
    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab10
