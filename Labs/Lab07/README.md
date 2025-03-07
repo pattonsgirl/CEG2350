@@ -71,39 +71,47 @@ If research proves your system does not support something, leave documentation a
 
 ## Part 2 - Virtualize the Machine
 
-You should experience making some hardware choices and OS installation.  The easiest way to do this is via virtual machines.  This allows your host to segment a set of resources to run a machine (a guest) via your host.  Developers (and students :wink: ) use VMs to install software that isn't compatible with their own host OS, download and explore suspicious packages, create test environments, and other things.  Companies will buy a server with massive amounts of resources (200 CPUs, a few terabytes of RAM, a few petabytes of storage) and segment it by creating virtual machines for various software needs.
+You should experience making some hardware choices and installing an operating system. The easiest way to do this is via virtual machines. This allows your host to segment a set of resources to run a machine (a guest) via your host. Developers (and students :wink: ) use VMs to install software that isn't compatible with their host OS, download and explore suspicious packages, create test environments, and other things. Companies will buy a server with massive amounts of resources (200 CPUs, a few terabytes of RAM, a few petabytes of storage) and segment it by creating virtual machines for various software needs. We are using a VM allocated in Amazon Web Services... they are everywhere!
 
-You will need a computer that has CPU virtualization enabled. The lab machines in RC 346 & Oelman 320 as well as open lab machines in Russ 152 B & D are all good candidates (and may have VirtualBox already installed). For your own machine, you may need to enable CPU virtualization in your BIOS / UEFI.
+You will need a computer that has CPU virtualization enabled. The lab machines and open lab machines in Russ 152 B & D are all good candidates (and may have VirtualBox already installed). For your own machine, you may need to enable CPU virtualization in your BIOS / UEFI.
 
-The lab template will contain the documentation / proof requirements for this portion.  It will not be noted in these instructions.
+The lab template will give an outline of minimum expected documentation for this portion.  The instructions below will provide more verbose guidelines to complete the taskings.
 
-1. [Download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads) Virtual Machine Manager.  Pick your host OS when installing
-    - For example, Windows users should select "Windows hosts"
+1. Download and install a Virtual Machine Manager. This course will recommend *VirtualBox*
+    - [Download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads) Virtual Machine Manager.  
+        - Pick your host OS when installing
+        - For example, Windows users should select "Windows hosts"
+        - Also download the *VirtualBox Extension Pack* for later use.
     - Mac M1, M2, and M3 Users:
-      - You have an ARM based CPU, which means not all software is built for your CPU architecture.  VirtualBox *should* work, but in case it still doesn't, you can either get Parallels (not recommended) or **UTM (recommended)**
+      - Mac M\#'s use an ARM based CPU, which means not all software is built for your CPU architecture.  VirtualBox *should* work, but in case it still doesn't, you can either buy a license for Parallels (not recommended) or **UTM (recommended)**
         - [UTM](https://mac.getutm.app/) - free if you click "Download". You can support the developers by paying through the App Store.
     - Windows 11 Users:
-      - If VirtualBox is tossing errors running your VM, try **Hyper-V Manager** software.  You may need to [Enable Hyper-V Manager](https://www.groovypost.com/howto/enable-virtualization-in-windows-11/)
+      - If VirtualBox is throwing errors, try **Hyper-V Manager** software.  You may need to [Enable Hyper-V Manager](https://www.groovypost.com/howto/enable-virtualization-in-windows-11/)
  
-2. Download an ISO (installation image) for a **Linux** distribution of your choice.  Options include: Ubuntu Desktop, LUbuntu, Linux Mint, Elementary, Kali, Pop OS, [and many more](https://distrowatch.com/)  
-   - Notes: 
-    - pay attention to minimum hardware specifications for the distribution you are choosing.  They will guide the minimum hardware you need to assign to the VM.
-    - Ubuntu desktop is safe default for Linux beginners.
-3. Create a Virtual Machine.
+2. Download an ISO (installation image) for a **Linux** distribution with desktop environment of your choice. 
+    - The point is to go through the installation process. *Do not download and use a pre-built VM image for this lab*. You may switch to that on your own time.
+    - Recommended options include: Ubuntu Desktop, LUbuntu, Linux Mint, Elementary, Kali, Pop OS
+        - See [DistroWatch](https://distrowatch.com/) for a comprehensive site about all possible distros        
+
+3. Create a *new* Virtual Machine. Choose your downloaded iso to install from.
+    - Pay attention to minimum hardware specifications for the guest operating system you choose. They will guide the minimum hardware you need to assign to the VM for good enough performance.
+    - I would recommend 5-10 GB in addition to the minimum disk space required by your choice.
+
 4. Start your Virtual Machine and install the Guest Operating System
     - In some cases, you may need to remove the installation media once you complete the install.  If you complete the install and reboot and are dropped back into the installation prompts after installing, this applies to you.
-    - **If using UTM** a student made this [helpful PDF guide](UTM-Ubuntu-Setup.pdf) for setting up a VM, running Ubuntu server for ARM x64, and installing a desktop environment for it.  If you find a more update to date resource or are interested in making this one better (mainly by updating the info and coverting it to markdown), talk to me.
+    - **If using UTM** refer to our [UTM Setup Guide](UTM-Setup.md)
     
 
 ## Part 3 - Virtual Playground
 
-Accomplish the following tasks using the Virtual Machine you made in Part 2.  In your lab template, note the "how to" steps taken to complete each task.
+Accomplish the following tasks using the guest OS in the virtual machine you made in Part 2. In your lab template, write a "how to" of steps taken to complete each task.
 
-1. How to change your desktop background in your VM
-2. How to install VSCode in your VM
-3. How to clone your course work repository to your VM
-4. How to connect to your AWS instance from your VM using `ssh`
-    - Think way back to labs 1 & 2 - what do you need to `ssh` in to your AWS system from a terminal?
+1. Customizing the desktop background in your guest OS
+2. Installing VSCode in your guest OS
+3. Sharing a clipboard or folder between your host and guest OS
+    - In VirtualBox, this involves "Inserting" the Guest Additions CD image, then running the `VBoxLinuxAddition.run` executable as root
+4. Cloning your course repository to your guest OS
+5. Connecting to your AWS instance from your guest OS using `ssh`
 
 **We plan to use this VM again in future labs.  If you must delete it, make sure your instructions from this lab are good enough to quickly get a new one back up and running**
 
@@ -139,7 +147,7 @@ We are going to be uploading images directly to our repository in GitHub, then u
 
 ## Rubric
 
-- Part 1 - 18 pts (1 point per information bullet)
+- Part 1 - 22 pts (1 point per information bullet)
 - Part 2 - 10 pts (1 point per information bullet / screenshot)
-    - if screenshot is not visible in markdown in answer template, no credit will be given.
-- Part 3 - 3 pts (1 point per task, must include "how-to" steps)
+    - if screenshot is not visible in markdown in `README.md`, no credit will be given.
+- Part 3 - 5 pts (1 point per task, must include "how-to" steps)

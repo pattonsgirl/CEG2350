@@ -37,26 +37,58 @@
 
 ## Part 2 - Virtualize the Machine
 
-1. Virtual Machine Manager:
+1. **Virtual Machine Manager**
     - Software & version:
     - Link to software URL: 
     - ![screenshot of installed & running software](RELATIVE_PATH_TO_SCREENSHOT_IN_FOLDER)
 
-2. Guest OS information: 
+2. **Guest OS information**
     - Linux distribution selected:
-    - URL downloaded from: 
+    - URL ISO downloaded from: 
 
-3. Guest VM resource allocations:
+3. **Guest VM resource allocations**
     - Number of Virtual CPUs:
     - RAM: 
     - Hard disk space: 
 
-4. Guest OS Installation:
-    - Note steps completed to install and then start the installed guest operating system
+4. **Guest OS Installation**
+    - Steps to install and then start the installed guest operating system:
+    1. 
+    2. 
+    3. 
     - ![screenshot of installed & running Guest OS in VM](RELATIVE_PATH_TO_SCREENSHOT_IN_FOLDER)
 
 ## Part 3 - Virtual Playground:
 
-1. How to change your desktop background in your VM:
-2. How to install VSCode in your VM:
-3. How to connect to your AWS instance from your VM using `ssh`:
+How-to guides for some common tasking on my guest OS
+
+My guest OS is: [INSERT YOUR GUEST OS]
+
+1. **Customizing the desktop background**
+    - steps
+    - go 
+    - here
+
+2. **Installing VSCode**
+    - steps
+    - go 
+    - here
+
+3. **Sharing a clipboard or folder between your host and guest OS**
+    - steps
+    - go 
+    - here
+    
+4. **Cloning my course repository**
+    - steps
+    - go 
+    - here
+
+5. **Connecting to my AWS instance from using `ssh`**
+    - steps
+    - go 
+    - here
+
+## Citations
+
+To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
