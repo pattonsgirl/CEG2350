@@ -1,4 +1,4 @@
-# Lab 07
+# Lab 07 - System Specs & VMs
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - System Discovery](#part-1---system-discovery)
