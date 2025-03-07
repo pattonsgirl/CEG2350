@@ -115,7 +115,24 @@ Accomplish the following tasks using the guest OS in the virtual machine you mad
 
 **We plan to use this VM again in future labs.  If you must delete it, make sure your instructions from this lab are good enough to quickly get a new one back up and running**
 
-## Hints - Screenshots and markdown
+## Submission
+
+1. Verify that your GitHub repo has a `Lab07` folder with at minimum:
+
+   - `README.md`
+   - image files 
+
+2. In the Pilot Dropbox, paste the URL to the `Lab07` folder in your GitHub repo
+   - URL should look like: https://github.com/WSU-kduncan/ceg2350s24-YOURGITHUBUSERNAME/tree/main/Lab07
+
+## Rubric
+
+- Part 1 - 22 pts (1 point per information bullet)
+- Part 2 - 10 pts (1 point per information bullet / screenshot)
+    - if screenshot is not visible in markdown in `README.md`, no credit will be given.
+- Part 3 - 10 pts (2 points per task, must include "how-to" steps)
+
+## Hints - Screenshots and Markdown
 
 There are a lot of ways to add screenshots to a markdown file. I'm going to tell you my way. I use my system to take a screenshot, and then I upload files in my repository in GitHub.
 
@@ -135,19 +152,18 @@ We are going to be uploading images directly to our repository in GitHub, then u
 6. In your lab template, you have a lines similar to: `![Screenshot of VM running](relative_path_to_filename_here)`
    - keep the parenthesis, but fill them with the relative path to your respective photos
    - this should be relative to being in your repo folder
+```md
+Either of these will work.  
 
-## Submission
+The first is relative to VBox being in the same folder as the file I'm referencing it in (Lab 07)
+![Screenshot of VM information](VBox.JPG)
+The first is an absolute path within the context of the repository
+![Screenshot of VM information](/Labs/Lab07/VBox.JPG)
+```
 
-1. Verify that your GitHub repo has a `Lab07` folder with at minimum:
+Either of these will work.  
 
-   - `README.md`
-
-2. In the Pilot Dropbox, paste the URL to the `Lab07` folder in your GitHub repo
-   - URL should look like: https://github.com/WSU-kduncan/ceg2350s24-YOURGITHUBUSERNAME/tree/main/Lab07
-
-## Rubric
-
-- Part 1 - 22 pts (1 point per information bullet)
-- Part 2 - 10 pts (1 point per information bullet / screenshot)
-    - if screenshot is not visible in markdown in `README.md`, no credit will be given.
-- Part 3 - 5 pts (1 point per task, must include "how-to" steps)
+The first is relative to VBox being in the same folder as the file I'm referencing it in (Lab 07)
+![Screenshot of VM information](VBox.JPG)
+The first is an absolute path within the context of the repository
+![Screenshot of VM information](/Labs/Lab07/VBox.JPG)
