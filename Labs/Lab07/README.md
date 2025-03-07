@@ -4,9 +4,11 @@
 - [Part 1 - System Discovery](#part-1---system-discovery)
 - [Part 2 - Virtual the Machine](#part-2---virtualize-the-machine)
 - [Part 3 - Virtual Playground](#part-3---virtual-playground)
-- [Hints - Screenshots & Markdown](#hints---screenshots-and-markdown)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
+- [Windows & WSL2](#windows-and-wsl2)
+- [Hints - Screenshots & Markdown](#hints---screenshots-and-markdown)
+
 
 ## Lab Procedure
 
@@ -131,6 +133,20 @@ Accomplish the following tasks using the guest OS in the virtual machine you mad
 - Part 2 - 10 pts (1 point per information bullet / screenshot)
     - if screenshot is not visible in markdown in `README.md`, no credit will be given.
 - Part 3 - 10 pts (2 points per task, must include "how-to" steps)
+
+## Windows and WSL2
+
+> Windows Subsystem for Linux (WSL) is a feature of Windows that allows you to run a Linux environment on your Windows machine, without the need for a separate virtual machine or dual booting. WSL is designed to provide a seamless and productive experience for developers who want to use both Windows and Linux at the same time.
+
+Check out the full list of features: https://learn.microsoft.com/en-us/windows/wsl/about
+
+Once upon a time, we required Windows user install WSL2 with Ubuntu in order to use utilities like `ssh`.  I strongly recommend Windows users install this.  Upper level course will expect you to be aware of it and have it if you need it.  Most developers who use Windows systems will have WSL2 with a linux distro in order to access Linux based workflows.
+
+[Install WSL2](https://learn.microsoft.com/en-us/windows/wsl/install)
+
+[Visual Studio Code & WSL2](https://code.visualstudio.com/docs/remote/wsl)
+
+By default, WSL2 will come with Ubuntu selected as the default distro.  Other options can be viewed in the Microsoft Store or you can find instructions to install a custom distro.
 
 ## Hints - Screenshots and Markdown
 
