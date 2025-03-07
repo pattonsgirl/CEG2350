@@ -10,55 +10,63 @@
 
 ## Lab Procedure
 
-The focus of this lab is exploring your system. You will be creating a `README.md` file for your work in this lab. To create and edit the file, you are welcome to use your AWS instance (or anywhere your repo is cloned) or edit the file directly in the browser.
+This lab will have you focusing on your physical system.  Your workflow to complete the companion documentation is up to you.
 
-In your repository (the folder named `ceg2350-yourgithubusername`):
+Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-Create a new directory, `Lab07`
+Create a new directory, `Lab07`.
 
-Create a file named `README.md` [based on the template](LabTemplate.md).
+Create a file named `README.md` in the `Lab07` folder.  Copy into the file the contents of the [Lab 07 Template](LabTemplate.md).
 
 - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab07/LabTemplate.md)
 
+You may refer to additional resources outside of the recommended resources provided.  
+
+Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations` section of your lab answers.  To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
+
+If you make mistakes with commands in the lab, note them!  Writing down what went wrong and what the correction was will significantly help your learning journey.  If you cannot find a correction, it will help the TAs or myself understand what point you reached and determine some potential solutions.
+
 ## Part 1 - System Discovery
 
-Find out the following information about your personal system. Write the answers to the information requested. Part of this is learning about your system, so some info will not apply to your system (because of how your OS works with your hardware or your system's hardware). Provide confirmation of your findings where possible.
+Find out the following information about your physical system. For the GPU section, you likely only have a integrated or dedicated GPU - not all systems have both.  Only fill out what you have.  
 
-For the GPU section, you likely only have a integrated or dedicated GPU - not all systems have both.  Only fill out what you have.
+If research proves your system does not support something, leave documentation and supporting articles.
 
-- You can use the manufacturers website / manuals
+- You can use the manufacturer's website / manuals
 - You can post to our course Discord channel for help / hints
   - Ex. "On \_\_ OS, how are you finding \_\_?"
 - You should _not_ need to install additional programs to find this information. If an internet article / forum suggests you to install additional software to gather the information, run away.
 
 1. CPU info:
-    - CPU brand:
+    - CPU brand & model:
     - Number of cores:
     - Number of logical cores:
 2. GPU info:
-    - Integrated GPU info:
-    - Dedicated GPU info: 
+    - Integrated GPU brand & model:
+    - Dedicated GPU brand & model: 
     - Link to driver software for GPU: 
 3. Memory info:
     - Physical memory (RAM) size (in GB):
-    - Virtual memory size (in GB):
-      - Some systems will call virtual memory a pagefile
-4. Storage info (repeated for each disk attached to your system): 
-    - Disk 1 type:
-    - Disk 1 manufacturer and model:
-    - Total disk 1 size (in GB):
-5. Primary partition info:
+    - RAM used at system startup (in GB):
+4. Storage info (add section for each disk attached to your system): 
+    - Disk 1 type: [HDD, SSD, NVME]
+    - Disk 1 brand & model:
+    - Total Disk 1 size (in GB):
+5. Primary partition / volume info:
     - Primary partition mount point:
       - `C` for Windows users
       - `/` for Linux / Mac users
-    - Remaining space on primary partition (in GB):
+    - Total space on primary partition (in GB):
+    - Space remaining on primary partition (in GB):
     - Filesystem on primary partition:
-6. BIOS / UEFI info: 
-    - BIOS or UEFI version: 
-    - How to access your BIOS / UEFI:
+6. Motherboard info: 
+    - BIOS / UEFI manufacturer & version: 
+    - How to access BIOS / UEFI:
+    - How to enable CPU virtualization: 
+    - Link to driver(s) for motherboard: 
 7. Kernel / OS info:
-    - Bootloader software on your system: 
-    - Kernel version of your operating system:
+    - Bootloader software for system: 
+    - Kernel for operating system:
     - Operating System name & version: 
 
 ## Part 2 - Virtualize the Machine
@@ -91,9 +99,10 @@ The lab template will contain the documentation / proof requirements for this po
 
 Accomplish the following tasks using the Virtual Machine you made in Part 2.  In your lab template, note the "how to" steps taken to complete each task.
 
-1. How to change your desktop background in your VM:
-2. How to install VSCode in your VM:
-3. How to connect to your AWS instance from your VM using `ssh`:
+1. How to change your desktop background in your VM
+2. How to install VSCode in your VM
+3. How to clone your course work repository to your VM
+4. How to connect to your AWS instance from your VM using `ssh`
     - Think way back to labs 1 & 2 - what do you need to `ssh` in to your AWS system from a terminal?
 
 **We plan to use this VM again in future labs.  If you must delete it, make sure your instructions from this lab are good enough to quickly get a new one back up and running**
