@@ -146,6 +146,8 @@ Once upon a time, we required Windows user install WSL2 with Ubuntu in order to 
 
 [Visual Studio Code & WSL2](https://code.visualstudio.com/docs/remote/wsl)
 
+[Video - WSL2 Overview - Network Chuck](https://www.youtube.com/watch?v=vxTW22y8zV8&ab_channel=NetworkChuck)
+
 By default, WSL2 will come with Ubuntu selected as the default distro.  Other options can be viewed in the Microsoft Store or you can find instructions to install a custom distro.
 
 ## Hints - Screenshots and Markdown
