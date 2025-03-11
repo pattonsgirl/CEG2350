@@ -42,7 +42,7 @@ If research proves your system does not support something, leave documentation a
 1. CPU info:
     - CPU brand & model:
     - Number of cores:
-    - Number of logical cores:
+    - Number of logical processors:
 2. GPU info:
     - Integrated GPU brand & model:
     - Dedicated GPU brand & model: 
