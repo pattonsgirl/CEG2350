@@ -104,12 +104,9 @@ list here
 
 **Write your report here**
 
-## Extra Credit Answers:
+## Extra Credit - Create a Virtual Filesystem
 
-1. Commands used: 
-2. Explanation:
-3. Commands used: 
-4. Commands used: 
+Report on how to perform (and verify completion) of making a virtual filesystem on a loop device
 
 ## Citations
 
