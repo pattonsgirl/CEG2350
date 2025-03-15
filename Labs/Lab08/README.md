@@ -77,7 +77,7 @@ You have had an unformatted disk available on your AWS instance all along.  The 
    - `w`
 2. Edit the `xvdb` block device with `gdisk`. Using the main menu, configure the disk to use the GPT partition table type, have at least 1 partition, and have that partition use the Linux filesystem type. Save your changes to the disk.
     - This will be the only partition, so it can use the recommended sizes, which is to say, start at the end of the GPT partition table, and span to the last block of the disk.
-3. Partition table of `xvdb`
+3. View the partition table of `xvdb`
 4. Answer the following about `xvdb` in its current state:
     - What is the device name of the only partition?
     - What is the size of the only partition?
