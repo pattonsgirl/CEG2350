@@ -66,8 +66,7 @@ For tasks that ask you to use a command, write the command used and include the 
 
 ## Part 2 - Something new
 
-You have had an unformatted disk available on your AWS instance all along.  Time to create a partition table and a partition on it (and in the next step create a filesystem).  The disk is `xvdb` - you can see it, but that it has no partitions, if you run `lsblk`.
-
+You have had an unformatted disk available on your AWS instance all along.  The disk is `xvdb` - you can see it, but that it has no partitions, if you run `lsblk`. Time to create a partition table and a partition on `/dev/xvdb` so that in the next Part we can create a filesystem on the partition and mount it for use.  
 - **Useful Commands: `df`, `lsblk`, `blkid`, `gdisk`**
 
 1. Using the `gdisk` GPT partition table manipulator, find out what the following main menu options do:
@@ -96,8 +95,8 @@ Now that you have a partition, you can create a filesystem on it in order to int
 
 1. Make an `ext4` filesystem on the partition on `xvdb`
 2. Use `blkid` to view information of the partition on `xvdb`
-3. Make a directory in `/mnt/` named `newworld`
-4. Mount the partition on `xvdb` to `newworld`
+3. Make a directory in `/mnt/` named `expanse`
+4. Mount the partition on `xvdb` to `expanse`
 5. In `newworld` create some files and directories
 6. `umount` the partition on `xvdb`
 7. When can I interact with files on the filesystem on the partition in `xvdb`?
@@ -109,11 +108,11 @@ Now that you have a partition, you can create a filesystem on it in order to int
 
 ## Part 4 - Take a `fstab` at this
 
-Right now, every time you want to access your filesystem, you need to mount it - this includes after rebooting the system.  It would be handy to have it auto-mount.  The filesystem table file - `fstab` is a file that stores  information about wat to mount when the system boots.  You task in this part is to **append** a new entry to the file to automount your filesystem on the partition on `xvdb`.
+Right now, every time you want to access your new filesystem on `xvdb1` after a system reboot you need to mount it.  It would be handy to have it auto-mount. The filesystem table file - `fstab` is a file that stores information about what to mount when the system boots. Your task in this part is to **append** a new entry to `fstab` to automount the filesystem on `xvdb1`.
 
 1. Make a backup of the current version of `/etc/fstab` to `/etc/fstab.bak`
-2. Add a line to `/etc/fstab` to mount the partition on `xvdb` to the mount point (`/mnt/newworld`)
-3. Test your changes using `mount -a` to mount / remount records according to `etc/fstab` and use commands to validate your entry worked
+2. Add a line to `/etc/fstab` to mount the partition on `xvdb` to the mount point (`/mnt/expanse`)
+3. Test your changes using `mount -a` to mount / remount records entries in `etc/fstab` and then check that your additional entry worked (make sure `xvdb1` is unmounted first, then test and verify)
 4. **If you do not think your changes are correct** restore `/etc/fstab` from `/etc/fstab.bak`.  If you think they are correct, you may leave your changes in place.
 
 **Resources**
@@ -127,16 +126,15 @@ When you delete a file, you are used to it no longer being accessible, or to it 
 
 This part will have you acknowledge that to truly make data gone and no longer readable, there are extra steps involved.  The general recommendation is to trust nothing, and take disks that have had important data on it, like tax returns, credit card info, passwords, etc, taken to a shredding center and properly ripped to computer-illegible pieces.
 
-We are also only focused on data stored on disks for this exercise.  If you look into this topic of data forensics, there is another prong of this that focusing on making sure RAM is cleared of information.
-
 - **Useful Commands: `mount`, `strings`**
 
 1. On the filesystem you created on the `xvdb` partition, create **two** files, each with a different FAKE secret about you.
-2. What does the `strings` command do?  If you referred to an internet resource, make sure you cite it by including the URL.
+2. Find out information on the `strings` command. If you referred to an internet resource, make sure you cite it by including the URL.
 3. Run `strings` on the filesystem partition on `xvdb` - read through the output and make an analysis about what output you are viewing.
 4. Delete **one** of the files with a secret. 
 5. Run `strings` on the filesystem partition on `xvdb` - read through the output and determine if the secret, while no longer accessible via the filesystem, is still readable on the partition.
-6. Use `shred` to overwrite the contents of your second secret file on the disk.  Write a short report of steps and provide proof that the file is no longer readable on the disk or accessible in the filesystem.  Include an explanation of flags used.
+6. Find out information on the `shred` command. If you referred to an internet resource, make sure you cite it by including the URL.
+7. Use `shred` to overwrite the contents of your second secret file on the disk.  Write a short report of steps and provide proof that the file is no longer readable on the disk or accessible in the filesystem.  Include an explanation of flags used.
 
 **Resources**
 - [freeCodeCamp - How to Securely Erase a Disk and File using the Linux shred Command](https://www.freecodecamp.org/news/securely-erasing-a-disk-and-file-using-linux-command-shred/)
