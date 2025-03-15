@@ -143,17 +143,17 @@ This part will have you acknowledge that to truly make data gone and no longer r
 
 Now that you have made a virtual machine, a thought might be how does it use the disk space on your host.  In the context of a virtual machine, the reserved space on the host has a partition table, partitions, and a filesystem mounted to `/`
 
-Write the commands used in each step (unless otherwise stated).
+Use guides to create a guide on how to complete this tasking.
 
-1. Use **either** `dd` or `fallocate` to reserve 2 GB of space from `/dev/xvda`.  
-2. Write an explanation of the command you used.
-2. Make a filesystem on the reserved space.
-3. Mount the filesystem to `/mnt/vfs`.
+1. Check for used / available loop device labels
+2. Use **either** `dd` or `fallocate` to reserve 2 GB of space (a "file") from `/dev/xvda`.
+3. Create the loop device and have it use the 2 GB space reserved from the command above.
+4. Make a filesystem on the loop device.
+5. Mount the filesystem to `/mnt/vfs` (vfs for virtual filesystem).
 
 **Resources**
 - [LinuxOPsys - How to use `fallocate`](https://linuxopsys.com/topics/fallocate-command-in-linux)
 - [LinuxOPsys - Creating virtual filesystem with `dd`](https://linuxopsys.com/topics/linux-dd-command-with-examples#2_Creating_virtual_filesystemBackup_images_of_CD_or_DVDs_as_iso_files)
-- [Boch's User Manual - Mounting a disk image using the loop device](https://bochs.sourceforge.io/doc/docbook/user/loop-device-usage.html)
 - [DZone - Loop Device in Linux](https://dzone.com/articles/loop-device-in-linux)
 
 ## Submission
