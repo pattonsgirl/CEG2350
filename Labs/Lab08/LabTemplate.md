@@ -3,7 +3,7 @@
 - Name:
 - Email:
 
-## Part 1
+## Part 1 - What do we have?
 
 1. Command:
 ```
@@ -40,7 +40,7 @@ Output here
 9. Fields & purpose of fields in entry that mount the root filesystem
 
 
-## Part 2
+## Part 2 - Something new
 
 1. `gdisk` main menu options
    - `p`:
@@ -64,7 +64,7 @@ Paste partition table information here
    c. What filesystem type will be used on the partition?
       - Answer: 
 
-## Part 3
+## Part 3 - File it away
 
 1. Commands used:
 2. Commands used:
@@ -81,7 +81,7 @@ list here
 7. When can I interact with files on the filesystem on the partition in `xvdb`?
    - Answer:
    
-## Part 4
+## Part 4 - Take a `fstab` at this
 
 1. Commands used:
 2. Line you added to `/etc/fstab`:
@@ -89,7 +89,7 @@ list here
 4. **If you restored `/etc/fstab`**, write here why you did not feel comfortable leaving your changes in place
 
 
-## Part 5
+## Part 5 - What is dead may still be read
 
 1. Commands used:
 2. What does the `strings` command do?
@@ -97,6 +97,8 @@ list here
 3. Write a short explanation of what you saw in `strings` output:
 4. Commands used:
 5. Is the secret you deleted still showing up in the `strings` output?
+6. What does the `shred` command do?
+   - Answer:
 
 ### Report: How to Permanently Delete a File
 
