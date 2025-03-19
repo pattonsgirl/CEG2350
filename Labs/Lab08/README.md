@@ -97,7 +97,7 @@ Now that you have a partition, you can create a filesystem on it in order to int
 2. Use `blkid` to view information of the partition on `xvdb`
 3. Make a directory in `/mnt/` named `expanse`
 4. Mount the partition on `xvdb` to `expanse`
-5. In `newworld` create some files and directories
+5. In `expanse` create some files and directories
 6. `umount` the partition on `xvdb`
 7. When can I interact with files on the filesystem on the partition in `xvdb`?
 
