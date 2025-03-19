@@ -213,7 +213,7 @@ Add notes to your documentation about your added feature and show examples of it
       - **truthful** demonstrations of `dotinstall` script based on parts implemented - 1 pt
       - good use of markdown formatting - 2 pt
    - README is not a markdown file or does not use markdown formatting - no credit / (-10) points
-
+- EC - 2 pts (10%)
 ## `getopts` and error handling
 
 I don't not require any error handling outside of the sample program runs provided. However...
