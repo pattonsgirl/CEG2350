@@ -134,7 +134,7 @@ This part will have you acknowledge that to truly make data gone and no longer r
 4. Delete **one** of the files with a secret. 
 5. Run `strings` on the filesystem partition on `xvdb` - read through the output and determine if the secret, while no longer accessible via the filesystem, is still readable on the partition.
 6. Find out information on the `shred` command. If you referred to an internet resource, make sure you cite it by including the URL.
-7. Use `shred` to overwrite the contents of your second secret file on the disk.  Write a short report of steps and provide proof that the file is no longer readable on the disk or accessible in the filesystem.  Include an explanation of flags used.
+7. Use `shred` to overwrite the contents of your second secret file on the disk.  Write a short report of steps and provide proof that the file is no longer readable on the disk or accessible in the filesystem.  Include an explanation of flags used (if any).
 
 **Resources**
 - [freeCodeCamp - How to Securely Erase a Disk and File using the Linux shred Command](https://www.freecodecamp.org/news/securely-erasing-a-disk-and-file-using-linux-command-shred/)
