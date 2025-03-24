@@ -1,4 +1,4 @@
-# Lab 09
+# Lab 09 - Process Control
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Game the System](#part-1---game-the-system)
@@ -34,7 +34,7 @@ If you cannot `ssh` to your instance anymore, you may have run into one of these
 - You overwrote the partition table (or partitions) in `xvda` - this would erase your `root` / `/` filesystem.
 - You wrote a bad entry in `/etc/fstab` - if the system cannot mount the disk, the boot process will hang and not complete 
 
-If you think one of those scenarios happened to you, you'll need to go back to [Lab 01](../Lab01/) and create a new stack. Once you are in the new instance, don't forget the steps to cloning your GitHub repo:
+If you think one of those scenarios happened to you, you'll need to go back to [AWS Academy Setup](/AWSAcademySetup.md) and create a new stack. Once you are in the new instance, don't forget the steps to cloning your GitHub repo:
 1. create a new keypair for authentication to GitHub
 2. add the public key to your GitHub user settings
 3. clone with `ssh`
