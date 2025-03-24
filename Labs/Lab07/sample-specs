@@ -1,0 +1,109 @@
+# Steam Valve System Report
+
+## Computer Information:
+Manufacturer: Dell Inc.
+Model: Latitude 7410
+Form Factor: Laptop
+Touch Input Detected
+Processor Information:
+CPU Vendor: GenuineIntel
+CPU Brand: Intel(R) Core(TM) i7-10810U CPU @ 1.10GHz
+CPU Family: 0x6
+CPU Model: 0xa6
+CPU Stepping: 0x0
+CPU Type: 0x0
+Speed: 1608 MHz
+12 logical processors
+6 physical processors
+Hyper-threading: Supported
+FCMOV: Supported
+SSE2: Supported
+SSE3: Supported
+SSSE3: Supported
+SSE4a: Unsupported
+SSE41: Supported
+SSE42: Supported
+AES: Supported
+AVX: Supported
+AVX2: Supported
+AVX512F: Unsupported
+AVX512PF: Unsupported
+AVX512ER: Unsupported
+AVX512CD: Unsupported
+AVX512VNNI: Unsupported
+SHA: Unsupported
+CMPXCHG16B: Supported
+LAHF/SAHF: Supported
+PrefetchW: Unsupported
+BMI1: Supported
+BMI2: Supported
+F16C: Supported
+FMA: Supported
+
+## Operating System Version:
+Windows 10 (64 bit)
+NTFS: Supported
+Crypto Provider Codes: Supported 311 0x0 0x0 0x0
+
+## Client Information:
+Version: 1741737356
+Browser GPU Acceleration Status: Enabled
+Browser Canvas: Enabled
+Browser Canvas out-of-process rasterization: Enabled
+Browser Direct Rendering Display Compositor: Disabled
+Browser Compositing: Enabled
+Browser Multiple Raster Threads: Enabled
+Browser OpenGL: Enabled
+Browser Rasterization: Enabled
+Browser Raw Draw: Disabled
+Browser Skia Graphite: Disabled
+Browser Video Decode: Enabled
+Browser Video Encode: Enabled
+Browser Vulkan: Disabled
+Browser WebGL: Enabled
+Browser WebGL2: Enabled
+Browser WebGPU: Enabled
+Browser WebNN: Disabled
+
+## Video Card:
+Driver: Intel(R) UHD Graphics
+DirectX Driver Name: igdumdim32.dll
+Driver Version: 31.0.101.2130
+DirectX Driver Version: 31.0.101.2130
+Driver Date: 8 13 2024
+Desktop Color Depth: 32 bits per pixel
+Monitor Refresh Rate: 59 Hz
+DirectX Card: Intel(R) UHD Graphics
+VendorID: 0x8086
+DeviceID: 0x9bca
+Revision: 0x4
+Number of Monitors: 1
+Number of Logical Video Cards: 1
+No SLI or Crossfire Detected
+Primary Display Resolution: 1920 x 1080
+Desktop Resolution: 1920 x 1080
+Primary Display Size: 12.17" x 6.85" (13.94" diag), 30.9cm x 17.4cm (35.4cm diag)
+Primary Bus Type Not Detected
+Primary VRAM: 1024 MB
+Supported MSAA Modes: 2x 4x 8x 16x
+Sound card:
+Audio device: Speakers (Realtek(R) Audio)
+
+## Memory:
+RAM: 16050 Mb
+VR Hardware:
+VR Headset: None detected
+Miscellaneous:
+UI Language: English
+Media Type: Undetermined
+Total Hard Disk Space Available: 243569 MB
+Largest Free Hard Disk Block: 29595 MB
+OS Install Date: Jan 03 2023
+Game Controller: None detected
+MAC Address hash: 8a9ac54d68824bb3e727945cad5605728127165c
+Storage:
+Disk serial number hash: 6969bcb7
+Number of SSDs: 1
+SSD sizes: 256G
+Number of HDDs: 0
+Number of removable drives: 0

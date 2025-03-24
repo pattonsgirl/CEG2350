@@ -1,7 +1,7 @@
 ## Lab 09
 
 - Name:
-- Email
+- Email:
 
 ## Part 1 - Game the system
 
@@ -75,3 +75,7 @@ Output of command goes here
    - Answer: 
 7. Reattach to `tmux` session:
 8. Kill `tmux` session: 
+
+## Citations
+
+To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
