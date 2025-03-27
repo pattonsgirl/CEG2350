@@ -58,7 +58,7 @@ Create a second `ssh` session to your AWS instance.  You should now have two `ss
 
 1. Identify the following `ps` fields:
    - USER / UID, PID, PPID, TTY, STAT, and COMMAND / CMD
-2. Craft a `ps` command for processes owned by your user that will show show the fields listed above
+2. Craft a `ps` command for processes owned by your user that will show the fields listed above
 3. In Shell A, run the game.  Using Shell B, run your `ps` command.
 Provide answers to the following, using Shell B to observe the process statuses:
 4. For the game:
