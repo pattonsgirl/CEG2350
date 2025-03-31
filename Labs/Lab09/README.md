@@ -18,7 +18,7 @@ Go to the folder that contains your repository (likely named `ceg2350-yourgithub
 
 Create a new directory, `Lab09`.
 
-Create a file named `README.md` in the `Lab09` folder.  Copy into the file the contents of the [Lab 08 Template](LabTemplate.md).
+Create a file named `README.md` in the `Lab09` folder.  Copy into the file the contents of the [Lab 09 Template](LabTemplate.md).
 
 - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab09/LabTemplate.md)
 
@@ -58,7 +58,7 @@ Create a second `ssh` session to your AWS instance.  You should now have two `ss
 
 1. Identify the following `ps` fields:
    - USER / UID, PID, PPID, TTY, STAT, and COMMAND / CMD
-2. Craft a `ps` command for processes owned by your user that will show show the fields listed above and identify the `ps` flag that will show processes without a controlling terminal.
+2. Craft a `ps` command for processes owned by your user that will show the fields listed above
 3. In Shell A, run the game.  Using Shell B, run your `ps` command.
 Provide answers to the following, using Shell B to observe the process statuses:
 4. For the game:

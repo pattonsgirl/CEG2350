@@ -73,7 +73,7 @@ output here
 ```
 3. Commands used:
 4. Commands used:
-5. Contents of `/mnt/newworld`:
+5. Contents of `/mnt/expanse`:
 ```
 list here
 ```
