@@ -117,7 +117,7 @@
    - start, stop, reload / restart
 6. init / systemd
    - systemctl (manage services
-   - journalctl (manage service logging)
+   - ~~journalctl (manage service logging)~~
 
 ## Git (version control)
 
