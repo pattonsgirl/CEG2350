@@ -115,6 +115,9 @@
 5. Service manipulation with `systemctl`
    - enable vs disable
    - start, stop, reload / restart
+6. init / systemd
+   - systemctl (manage services
+   - journalctl (manage service logging)
 
 ## Git (version control)
 
