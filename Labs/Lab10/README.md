@@ -1,4 +1,4 @@
-# Lab 10
+# Lab 10 - Compiling, Makefiles, and git Branching
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Compilers](#part-1---compilers)
