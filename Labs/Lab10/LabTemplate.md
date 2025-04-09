@@ -68,3 +68,7 @@ Using `Makefile` to remove compilation files, such as the executable:
 Remove this statement and the exclamation point from the line below so TAs can click to check for a working `.gitignore` file.  Test that the link works - if it doesn't, fix the pathing.
 
 ![`.gitignore` file in root of repository](../.gitignore)
+
+## Citations
+
+To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.

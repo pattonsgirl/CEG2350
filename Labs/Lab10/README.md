@@ -11,21 +11,23 @@
 
 ## Lab Procedure
 
-[Return to here and select "Start Lab"](https://awsacademy.instructure.com/courses/68834/modules/items/6128516)
+Make sure to return to the AWS Learner Lab page (link in Pilot if you forgot to bookmark it) and hit "Start Lab" to turn on your sandbox / AWS instance.
 
 Use `ssh` to connect to your AWS Ubuntu instance.
 
 Go to the folder that contains your repository (likely named `ceg2350-yourgithubusername`).
 
-**Create a new directory, `Lab10`**
+Create a new directory, `Lab10`.
 
-Write answers in `README.md` the [LabTemplate.md is here](LabTemplate.md).
+Create a file named `README.md` in the `Lab10` folder.  Copy into the file the contents of the [Lab 10 Template](LabTemplate.md).
 
 - [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab10/LabTemplate.md)
 
-For each part below, you will be asked to do an action or answer a question. The actions are going to be commands - you will write the command you used as "answers" to the action requested. You are allowed to use multiple commands to solve an action. Just write down all that were needed to complete. Check with the TAs if you need clarification.
+You may refer to additional resources outside of the recommended resources provided.  
 
-If you did something "wrong" make a note of it in your lab. These are learning experiences - writing them down will help you ask good questions later.
+Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations` section of your lab answers.  To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
+
+If you make mistakes with commands in the lab, note them!  Writing down what went wrong and what the correction was will significantly help your learning journey.  If you cannot find a correction, it will help the TAs or myself understand what point you reached and determine some potential solutions.
 
 ## Part 1 - Compilers
 
