@@ -56,7 +56,7 @@ Use your AWS instance.
 
 Resources:
 - [Scaler - Compilation Process in C](https://www.scaler.com/topics/c/compilation-process-in-c/)
-- [Dartmouth - Compiling With Multiple Source Files](https://www.dartmouth.edu/~rc/classes/softdev_linux/complex_compile.html)
+- [Compiling With Multiple Source Files - Emory](http://www.cs.emory.edu/~cheung/Courses/255/Syllabus/1-C-intro/declare-func1b.html)
 
 ## Part 3 - Document
 
