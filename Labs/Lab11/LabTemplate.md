@@ -11,6 +11,7 @@
    - `-f`
    - `-z`
    - `-x`
+   - `-t`
 2. Command(s) to create and compress your archive:
 
 ## Part 2 Answers:
