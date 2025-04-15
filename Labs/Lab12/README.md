@@ -1,4 +1,4 @@
-# Lab 12
+# Lab 12 - Networking & Firewalls
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Linux Network Command Cheat Sheet](#part-1---linux-network-command-cheat-sheet)

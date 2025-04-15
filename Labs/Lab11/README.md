@@ -109,7 +109,7 @@ When you see a reference to **local system**, Windows users should assume I am r
 6. Write the `ssh` command that will use your `config` file information if correctly entered.
 
 - **Resources**
-- I do this manually, but there are some neat command shortcuts to explore
+- [Linuxize - Using the SSH Config File](https://linuxize.com/post/using-the-ssh-config-file/)
 - [DigitalOcean - How to Configure SSH Key Based Authentication](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
 
 ## Submission
