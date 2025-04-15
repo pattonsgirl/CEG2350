@@ -60,3 +60,7 @@ Enter block with connection information in config file here
 ```
 
 6. `ssh` command post `config` file entry:
+
+## Citations
+
+To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
