@@ -1,0 +1,23 @@
+<!-- _layouts/default.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title will come from your Markdown files -->
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <!-- This line imports your sidebar here -->
+    {% include sidebar.html %}
+
+    <!-- This is where the content from your .md files will be injected -->
+    <main class="main-content">
+        {{ content }}
+    </main>
+
+</body>
+</html>
