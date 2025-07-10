@@ -9,3 +9,6 @@ sidebar:
       - lab-01
       - document-two
       - document-three
+navigation:
+  - name: Home
+    link: /
