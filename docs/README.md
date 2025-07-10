@@ -1,7 +1,7 @@
----
+<!-- ---
 layout: default
 title: Home
----
+--- -->
 
 ## CEG 2350 - OS Concepts and Usage 
 
