@@ -52,19 +52,28 @@ Undergraduate level CS 1160 Minimum Grade of D or Undergraduate level CS 1180 Mi
 
 #### Recommended Resources:  
 
-Students will be provided with online reference material through the course of the class.  Textbook(s) can be purchased at the student's discretion. 
+Students will be provided with online reference material throughout the course.  Textbook(s) can be purchased at the student's discretion and may better support different learning styles. Books are ranked in order from beginner (towards the level of this course) to advanced (good resources for continued learning).
 
-The Linux Command Line, 2nd Edition, no starch press, William Shotts https://linuxcommand.org/lc3_learning_the_shell.php  
+Learning Git: A Hands-On and Visual Guide to the Basics of Git, O'Reilly, Anna Skoulikari 
+   - ISBN: 978-1098133917
+   - Supplementary Resource: https://github.com/gitlearningjourney/learning-git 
+
+The Linux Command Line, 2nd Edition, no starch press, William Shotts 
+   - ISBN: 978-1593279523
+   - https://linuxcommand.org/lc3_learning_the_shell.php  
 
 How Linux Works, 3rd Edition: What Every Superuser Should Know, no starch press, Brian Ward 
+   - ISBN: 978-1718500402 
 
-TODO: Learn Git
+Pro Git, 2nd Edition: Everything you need to know about git, Apress, Scott Chacon and Ben Straub 
+   - ISBN: 978-1484200773
+   - Download EBook: https://git-scm.com/book/en/v2
 
-Pro Git, Apress, Scott Chacon and Ben Straub https://git-scm.com/book/en/v2  
+UNIX and Linux System Administration Handbook, 5th Edition, Addison-Wesley Professional, Evi Nemeth, Garth Snyder 
+   - ISBN: 978-0134277554
 
-UNIX and Linux System Administration Handbook 5th Edition, Addison-Wesley Professional, Evi Nemeth, Garth Snyder 
-
-A Practical Guide to Linux: Commands, Editors, and Shell Programming, Prentice Hall, Mark G. Sobell https://proquest.safaribooksonline.com/book/operating-systems-and-server-administration/linux/9780134774626 (This book can be read online – use your Wright State Library credentials.  Edition does not matter.) 
+A Practical Guide to Linux: Commands, Editors, and Shell Programming, 4th Edition, Prentice Hall, Mark G. Sobell 
+   - ISBN: 978-0134774602
 
 #### Software:  
 
