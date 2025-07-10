@@ -24,11 +24,22 @@ See `Course Info` in Pilot for:
 
 ### Exam Information
 
+#### Section 01
+
 Exam 1: TBD 
 
 Exam 2: TBD
 
-Final: 8:00 - 10:00 AM Tuesday, December 9th in regular lecture room
+Final: 8:00 - 10:00 AM Tuesday, December 9th in TBD
+- [Wright State Final Exam Schedule](https://www.wright.edu/enrollment-services/registration/exam-schedules#fall)
+
+#### Section 02
+
+Exam 1: TBD 
+
+Exam 2: TBD
+
+Final: 2:45 - 4:45 PM Thursday, December 11th in TBD
 - [Wright State Final Exam Schedule](https://www.wright.edu/enrollment-services/registration/exam-schedules#fall)
 
 ### Course Description  
