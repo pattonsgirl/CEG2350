@@ -3,3 +3,9 @@ plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 title: CEG - 2350 OS Concepts & Usage 
 description: Bookmark this to keep an eye on CEG 2350 updates!
+sidebar:
+  - label: Labs
+    children:
+      - lab-01
+      - document-two
+      - document-three

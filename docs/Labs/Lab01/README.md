@@ -1,3 +1,7 @@
+---
+id: lab-01
+---
+
 # Lab 01
 
 - [Lab Procedure](#Lab-Procedure)
