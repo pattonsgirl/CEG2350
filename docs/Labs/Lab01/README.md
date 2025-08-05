@@ -1,8 +1,4 @@
----
-id: lab-01
----
-
-# Lab 01
+# Lab 01 - Navigation
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - GitHub Profile](#Part-1---GitHub-Profile)
@@ -41,7 +37,9 @@ For each lab in this course, you will be provided with a lab template to fill in
 
 Assuming that you have cloned your repository and can open it in VS Code...
 
-Create a new file in your repository workspace named `Lab01.md`.  In this file, **paste** the contents of the Lab 01 template.  
+Create a new directory, `Lab01.md`
+
+Create a new file in your `Lab01` directory named `README.md`.  In this file, **paste** the contents of the Lab 01 template.  
 
 As you work through the lab, practice making commits and synchronizing to your repository on GitHub.  As the course progress, a history of multiple commits will become requirements.
 
@@ -94,6 +92,8 @@ For your OS, open the default shell and navigate to your user's directory (folde
 
 You'll perform the actions given in the numbered list below.
 
+**In your lab template, write the command to do the task given next to the task itself.**
+
 Cite sources, if needed, about how you found out how to do certain actions.  If you used generative AI as a source, include the platform and the prompt used.  Add your citations notes to the section in your Lab Template.
 
 Start in your user's home directory.
@@ -116,8 +116,8 @@ Start in your user's home directory.
 
 Remember that we can only grade what we see in GitHub.  Make sure to commit and synchronize (push) your changes to your files.
 
-- In the Pilot Dropbox, paste the URL to the `Lab01.md` file in your GitHub repo
-  - URL should look like: https://github.com/WSU-kduncan/ceg2350s25-YOURGITHUBUSERNAME/blob/main/Lab01.md
+- In the Pilot Dropbox, paste the URL to the `Lab01` folder in your GitHub repo
+  - URL should look like: https://github.com/WSU-kduncan/ceg2350s25-YOURGITHUBUSERNAME/blob/main/Lab01
 
 ## Rubric
 
@@ -131,5 +131,5 @@ Your answers should be cleanly presented in your GitHub repository.  Citations s
    - looks nice
 - Part 2 - Research - 10 pts
    - 1 pt / description
-- Part 2 - Commands Line Navigation - 12 pts
+- Part 3 - Commands Line Navigation - 12 pts
    - 1 pt / question
