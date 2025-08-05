@@ -1,23 +1,54 @@
-<!-- _layouts/default.html -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- The title will come from your Markdown files -->
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- This line imports your sidebar here -->
-    {% include sidebar.html %}
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        {% if site.logo %}
+        <a href="{{ site.github.owner_url }}"><img src="{{site.logo | relative_url}}" alt="Logo" /> </a>
+        {% endif %}
 
-    <!-- This is where the content from your .md files will be injected -->
-    <main class="main-content">
-        {{ content }}
-    </main>
+        <p align="center"><a href="./index">Home</a></p>
+        <p align="center"><a href="./labs">Labs</a></p>
+        <p align="center"><a href="./publications">Notes</a></p>
+        <p align="center"><a href="./demos">Demos</a></p>
+        <p align="center"><a href="https://github.com/pattonsgirl/CEG2350/">Source Code & Other Resources</a></p>
 
-</body>
+        <hr>
+        
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+
+        {% if site.show_downloads %}
+        <ul class="downloads">
+          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
+          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
+        </ul>
+        {% endif %}
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+      <footer>
+        {% if site.github.is_project_page %}
+        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
 </html>
