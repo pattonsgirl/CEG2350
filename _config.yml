@@ -1,3 +1,8 @@
-# # _config.yml
-# title: CEG 2350
-# description: Test Content
+title: CEG 2350
+#logo: assets/images/kastle-gradient.png
+description: Operating Systems Concepts & Design
+show_downloads: false
+
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+    - jekyll-remote-theme
