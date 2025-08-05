@@ -150,4 +150,3 @@ Perform the following exercise on your AWS instance.
 - Part 3 - 8 pts
 - Part 4 - 6 pts
 - Part 5 - 4 pts
-

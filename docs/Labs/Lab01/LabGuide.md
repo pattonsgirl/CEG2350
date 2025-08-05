@@ -113,8 +113,3 @@ man command         # takes to manual page for given command.  Press `q` to quit
 ```
 
 You should practice looking at these pages - although internet documentation will contain more examples or an example similar to what you are trying to do.
-
-
-
-
-
