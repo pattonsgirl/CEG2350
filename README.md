@@ -1,19 +1,14 @@
 # CEG2350
 Course Content and Resources for CEG 2350 OS Concepts and Design at Wright State University
 
-## Module 1:
-- Brief Overview of Computing History
-- [Set up your environment](EnvironmentSetup.md)
-- Intro to the Command Line
-- File Permissions
-- SSH Basics
-- [AWS Academy Setup](AWSAcademySetup.md)
-- git & GitHub Basics
-  - [Setting Up for GitHub](GitHubSetup.md)
-  - [markdown quick guide](markdown-demo.md) 
+Please see the github.io page for Syllabus, Labs, Course Notes, and Exam Review Guides
 
-## Module 2:
+- [Syllabus](https://pattonsgirl.github.io/CEG2350)
+- [Labs](https://pattonsgirl.github.io/CEG2350/Labs/)
+- [Course Notes](https://pattonsgirl.github.io/CEG2350/)
+- [Exam Review Guides](https://pattonsgirl.github.io/CEG2350/ExamReviews)
 
-- cover git merge conflicts
-- Other Things
+Demos:
 
+- [In-class demos from Kayleigh Duncan](/duncan-demos)
+- [In-class demos from Bibek Joshi](/joshi-demos)
