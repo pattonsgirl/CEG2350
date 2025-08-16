@@ -1,3 +1,39 @@
+# Getting Started with GitHub
+
+Let's talk about GitHub. 
+> GitHub is a website and cloud-based service that helps developers store and manage their code, as well as track and control changes to their code. - [Kinsta](https://kinsta.com/blog/what-is-github/)
+
+For this course you'll be using GitHub, but do be aware there are others:
+- GitLab
+- BitBucket
+- Azure DevOps
+- AWS CodeCommit
+- Google Cloud Source Repositories
+
+Over this course, you'll come to know `git` which is a stand alone software. The list above all use git as the underlying tool for version control and overlay web interfaces on top.  The good news - they all have different branding around very similar features.
+
+Think of a GitHub username. Keep it professional
+- firstname-lastname or FirstnameLastname or some variant are recommended
+- people *sometimes* create a separate account for companies they work for so that personal work and business work stay apart
+
+Create a GitHub account: https://github.com/login
+
+Return to Pilot and follow the link to Create / Access your Course Repository.
+
+In Lab 01, you will also be taked with making your own repository to build a GitHub **profile repository**.  This means you'll start your git journey with two whole repos!
+
+[!WARN] There will be an extra credit open at the end of the semester to submit a repository for work done outside of this course.  This could be a personal project, a repo for another course, or a repo created for some competition.  Don't wait til the last minute, plan ahead!
+
+# Lab Procedure
+
+In your lab session, you'll see in-class demos for:
+- Getting started with your profile repository & making edits via the GitHub browser editor
+- Working with the lab answer templates
+- What repository History shows
+- Submitting your lab work
+
+[!WARN] The answers templates **will not** give the full lab writeup.  The Lab Instructions contain what your taskings are and recommended resources to get started.  The templates will keep your answers organized so that the TAs can effeciently find them.  **You are always welcome to add your own additional notes to your lab work, or additional note files for your use**
+
 # Your System & Navigation
 
 Objectives:
@@ -113,3 +149,4 @@ man command         # takes to manual page for given command.  Press `q` to quit
 ```
 
 You should practice looking at these pages - although internet documentation will contain more examples or an example similar to what you are trying to do.
+
