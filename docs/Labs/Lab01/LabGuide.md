@@ -29,6 +29,7 @@ In Lab 01, you will also be taked with making your own repository to build a Git
 In your lab session, you'll see in-class demos for:
 - Getting started with your profile repository & making edits via the GitHub browser editor
 - Working with the lab answer templates
+- Cloning your repo(s) to work in VSCode
 - What repository History shows
 - Submitting your lab work
 
