@@ -119,7 +119,7 @@ Make sure you are logged in to AWS Academy and have clicked "Start Lab" in the L
 
 ### Connection Refused
 
-[Connection Refused from labs.vocareum.com](../imgs/ConnectionRefused.png)
+![Connection Refused from labs.vocareum.com](../imgs/ConnectionRefused.png)
 
 1. Enable Third Party Cookies
 2. Check browser support
