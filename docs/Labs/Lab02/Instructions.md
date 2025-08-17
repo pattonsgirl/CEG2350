@@ -1,6 +1,7 @@
 # Lab 02 - Permissions
 
 - [Lab Procedure](#Lab-Procedure)
+- [Part 0 - editor in training](#part-0---editor-in-training)
 - [Part 1 - AWS Academy Setup](#part-1---aws-academy-setup)
 - [Part 2 - Bits of permissions](#part-2---bits-of-permissions)
 - [Part 3 - Regular `bob`](#part-3---regular-bob)
@@ -14,13 +15,13 @@
 
 Beginning with this lab, you will be accessing an AWS instance - a virtual system hosted on the cloud - to access a Ubuntu server environment. **If a lab or lab section explicitly states that you must work in your AWS environment, do so**. There will be a biweekly check to make sure you are using the AWS environment to try out commands and perform work.
 
-Go to your cloned repository folder (likely named `ceg2350s25-yourgithubusername`).
+Go to your cloned repository folder (likely named `ceg2350f25-yourgithubusername`).
 
 Create a new directory, `Lab02`
 
-Create a file named `README.md` in the `Lab02` folder.  Copy into the file the contents of the [Lab 02 Template](LabTemplate.md).
+Create a file named `README.md` in the `Lab02` folder.  The [Lab 02 Template can be copied from this link](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab02/LabTemplate.md):
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab02/LabTemplate.md)
+- `https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab02/LabTemplate.md`
 
 You may refer to additional resources outside of the recommended resources provided.  
 
@@ -51,7 +52,7 @@ Wherever your lab instructions state that the exercise must be completed in your
 
 If you break your ability to connect to your instance, you can rebuild by repeating the instructions in AWS Academy Setup.
 
-You will note your command to SSH to your instance in the Lab Template.
+In the Lab Template, you will write out the where your private key file is located and the `ssh` command to use to remotely connect to the AWS instance.
 
 **The remainder of this lab is to be completed by using your AWS instance.**
 

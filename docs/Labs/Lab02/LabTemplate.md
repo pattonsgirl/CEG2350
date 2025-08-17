@@ -5,6 +5,8 @@
 
 ## Part 1 Answers
 
+Full / absolute path to your private key file: 
+
 Command to SSH to AWS instance:
 ```
 [Place your ssh command here]
