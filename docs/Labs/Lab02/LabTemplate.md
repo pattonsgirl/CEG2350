@@ -16,14 +16,19 @@ Command to SSH to AWS instance:
 
 1. `chmod u+r bubbles.txt`
     - Means: 
+    - Assessment:
 2. `chmod u=rw,g-w,o-x banana.cabana`
     - Means: 
+    - Assessment:
 3. `chmod a=w snow.md`
     - Means: 
+    - Assessment:
 4. `chmod 751 program`
     - Means: 
+    - Assessment:
 5. `chmod -R ug+w share`
     - Means: 
+    - Assessment:
 
 ## Part 3 Answers
 
