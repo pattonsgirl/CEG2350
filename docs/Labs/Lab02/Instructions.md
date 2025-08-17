@@ -131,7 +131,7 @@ Create a folder named `share` in the `ubuntu` user's `home` directory and create
    - Include all files and subdirectories in `share`
 5. Switch user to `BOB`. Test that `BOB` can view the contents of the `ubuntu` user's home directory.
    - If not, make a note in your answer in Step 3 about additional change(s).
-6. As `BOB` create a file in `share`.
+6. As `BOB` create a file in `share`.  Describe the full set of permissions / settings that enabled `BOB` to do this action.
 
 ## Part 5 - [`sudo` make me a sandwich](https://xkcd.com/149/)
 
@@ -141,18 +141,17 @@ Perform the following exercise on your AWS instance.
 
 1. As the `ubuntu` user, in the `ubuntu` user's `home` directory, make a file with `sudo` named `madewithsudo.txt`
 2. As the `root` user, in the `ubuntu` user's `home` directory, make a file with named `madewithroot.txt`
-3. Describe the ownership and permissions associated with:
-   - `madewithsudo.txt`
-   - `madewithroot.txt`
-4. Determine which account (`root`, `ubuntu`, and `BOB`) can view or edit:
+3. Describe / compare the ownership and permissions associated with `madewithsudo.txt` and `madewithroot.txt`
+4. Determine which account (`root`, `ubuntu`, and `BOB`) can view or edit or changes permissions to:
    - Contents inside of `share`
    - `madewithsudo.txt`
-5. Modify the permissions and ownership to make `ubuntu` the owner and `squad` the group associated with `madewithsudo.txt`.
+5. Modify the permissions and ownership to make `ubuntu` the owner and `squad` the group associated with `madewithsudo.txt`.  Give both the ability to view and edit the file.
+6. Determine why `ubuntu` can use `sudo`, but `BOB` cannot. Find, implement, and test a way to fix this.
 
 **Resources**
 - [RedHat - Linux command line basics: sudo](https://www.redhat.com/sysadmin/sudo)
 - [Linuxize - `sudo`](https://linuxize.com/post/sudo-command-in-linux/)
-   - Note: on your AWS instance, the `ubuntu` user has passwordless sudo - as in you won't be prompted for your account password.  If you try `sudo` on most Linux machines, you will be prompted for a password.  AWS has a *special* setup.
+   - Note: on your AWS instance, the `ubuntu` user has passwordless `sudo` - as in you won't be prompted for your account password.  If you try `sudo` on most Linux machines, you will be prompted for a password.  AWS has a *special* setup for the default system account.
 
 ## Submission
 
@@ -161,8 +160,56 @@ Perform the following exercise on your AWS instance.
 
 ## Rubric
 
-- Part 1 - 5 pts
-- Part 2 - 5 pts
-- Part 3 - 8 pts
-- Part 4 - 6 pts
-- Part 5 - 4 pts
+Your answers should be cleanly presented in your GitHub repository.  Citations should be included as needed.  Include which generative AI system was used and what prompts were used if generative AI was used.
+
+### Total Points: / 45
+Part 1 - 10 pts
+- [ ] path to private key
+- [ ] `ssh` command
+Part 2 - 10 pts
+- `chmod u+r bubbles.txt`
+   - [ ] meaning
+   - [ ] assessment
+- `chmod u=rw,g-w,o-x banana.cabana`
+   - [ ] meaning
+   - [ ] assessment
+- `chmod a=w snow.md`
+   - [ ] meaning
+   - [ ] assessment
+- `chmod 751 program`
+   - [ ] meaning
+   - [ ] assessment
+- `chmod -R ug+w share`
+   - [ ] meaning
+   - [ ] assessment
+Part 3 - 8 pts
+- [ ] Command to create new user
+- [ ] Path to new user's home directory
+- [ ] Evaluate if `ubuntu` can add files to new user's home directory
+- [ ] Command to switch to new user
+- [ ] Command(s) to go to new user's home directory
+- [ ] Evaluate if new user can add files to user's home directory
+- [ ] Command to return to `ubuntu` user
+- [ ] Command to return to `ubuntu` home directory 
+Part 4 - 6 pts
+- [ ] Command(s) to create group named `squad` and add members
+- [ ] Command(s) to add `ubuntu` & user to group `squad`
+- [ ] Command(s) to allow `squad` to view the `ubuntu` user's home directory contents
+- [ ] Command(s) to modify `share` to have group ownership of `squad`
+- [ ] Describe your tests and commands with the user account
+- [ ] Describe the full set of permissions / settings that enable the user to make edits
+Part 5 - 11 pts
+- [ ] Command(s) to make file using `sudo`
+- [ ] Command(s) to make file with `root`
+- [ ] Describe / compare ownership and permissions of files
+- Tables: 
+   - Contents of `share`
+      - [ ] root can dos
+      - [ ] ubuntu can dos
+      - [ ] BOB can dos
+   - `madewithsudo.txt`
+      - [ ] root can dos
+      - [ ] ubuntu can dos
+      - [ ] BOB can dos
+- [ ] Command(s) to modify permissions
+- [ ] How to give user account `sudo`

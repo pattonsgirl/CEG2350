@@ -126,7 +126,7 @@ Remember that we can only grade what we see in GitHub.  Make sure to commit and 
 
 Your answers should be cleanly presented in your GitHub repository.  Citations should be included as needed.  Include which generative AI system was used and what prompts were used if generative AI was used.
 
-## Total Points: / 28
+### Total Points: / 28
 Part 1 - GitHub profile repository - 5 pts
 - [ ] is visible
 - [ ] contains name

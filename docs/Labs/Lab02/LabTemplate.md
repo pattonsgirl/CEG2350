@@ -33,33 +33,48 @@ Command to SSH to AWS instance:
 ## Part 3 Answers
 
 1. Command to create new user: 
-2. Path to user's home directory: 
-3. Evaluate if `ubuntu` can add files to user's home directory:
-4. Command to switch to user:
-5. Command(s) to go to user's home directory:
-6. Evaluate if user can add files to user's home directory:
-7. Command to switch to `ubuntu`:
+2. Path to new user's home directory: 
+3. Evaluate if `ubuntu` can add files to new user's home directory:
+4. Command to switch to new user:
+5. Command(s) to go to new user's home directory:
+6. Evaluate if new user can add files to user's home directory:
+7. Command to return to `ubuntu` user:
 8. Command to return to `ubuntu` home directory: 
 
 ## Part 4 Answers
 
-For each, write the command used or answer the question posed.
-
-1. Command to create group named `crew`:
-2. Command(s) to add `ubuntu` & user to group `crew`:
-3. Command to modify `share` to have group ownership of `crew`:
-4. Command to switch to user:
-5. Command to add file to `share`: 
-6. Evaluate why these steps allowed the above action:
+1. Command(s) to create group named `squad` and add members:
+2. Command(s) to add `ubuntu` & user to group `squad`:
+3. Command(s) to allow `squad` to view the `ubuntu` user's home directory contents:
+4. Command(s) to modify `share` to have group ownership of `squad`:
+5. Describe your tests and commands with the user account:
+6. Describe the full set of permissions / settings that enable the user to make edits:
 
 ## Part 5 Answers
 
 For each, write the command used or answer the question posed.
 
-1. Command to create file using `sudo`: 
-2. Evaluate (in plain text) the permission of the file: 
-3. Provide a method to edit the file without modifying permissions: 
-4. Command(s) to modify permissions:
+1. Command(s) to make file using `sudo`: 
+2. Command(s) to make file with `root`:
+3. Describe / compare ownership and permissions of files:
+4. Which account can do what actions? (Type Y or N in columns)
+
+Contents inside of `share`
+| Account   | Can View  | Can Edit  | Can Change Permissions    |
+| ---       | ---       | ---       | ---                       |
+| `root`    |           |           |                           |
+| `ubuntu`  |           |           |                           |
+| `BOB`     |           |           |                           |
+
+`madewithsudo.txt`
+| Account   | Can View  | Can Edit  | Can Change Permissions    |
+| ---       | ---       | ---       | ---                       |
+| `root`    |           |           |                           |
+| `ubuntu`  |           |           |                           |
+| `BOB`     |           |           |                           |
+
+5. Command(s) to modify permissions:
+6. How to give user account `sudo`:
 
 ## Citations
 
