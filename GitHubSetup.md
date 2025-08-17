@@ -1,9 +1,6 @@
 # Guide to GitHub Classrooms
 
-For this course, you will be submitting your lab work to a GitHub repository and submitting a link to your work to the  
-corresponding Dropbox on Pilot.  The guide below will help you with setting up the repository you will be required to  
-use for this course - it is a **private** repository with permissions set in order to protect your work and share it  
-with only myself and the TAs and contains some default content to get started.  
+For this course, you will be submitting your lab work to a GitHub repository and submitting a link to your work to the corresponding Dropbox on Pilot.  The guide below will help you with setting up the repository you will be required to use for this course - it is a **private** repository with permissions set in order to protect your work and share it with only myself and the TAs and contains some default content to get started.  
 
 - [Pre-Reqs](#Pre-Reqs)
 - [Create the Repo](#Create-the-Repo)
@@ -24,8 +21,7 @@ with only myself and the TAs and contains some default content to get started.
 
 ## Create the Repo
 
-After clicking the "Create GitHub Classroom repo" link in Pilot, you will be taken to GitHub to finish creating your  
-repository to use in this course.
+After clicking the "Create GitHub Classroom repo" link in Pilot, you will be taken to GitHub to finish creating your repository to use in this course.
 
 1. Select your wright.edu email address from the list shown.
   - If you misclick, email myself or a TA so we can fix it
@@ -63,6 +59,7 @@ repository to use in this course.
 ## Using your Repository
 
 You now have a repository on GitHub, and have added to your GitHub account a public key associated with a private key protected by you.  
+
 This will be discussed in class and lab, but as a cliff notes version, your next steps are to:
 - `clone` your repository locally (to the machine you are using)
   - Remember to `clone` your repository to each device you want to work with it on.  Yup, that also means a key pair for each
