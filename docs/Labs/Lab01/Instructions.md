@@ -37,7 +37,7 @@ For each lab in this course, you will be provided with a lab template to fill in
 
 Assuming that you have cloned your repository and can open it in VS Code...
 
-Create a new directory, `Lab01.md`
+Create a new directory, `Lab01`
 
 Create a new file in your `Lab01` directory named `README.md`.  In this file, **paste** the contents of the Lab 01 template.  
 
@@ -45,91 +45,116 @@ As you work through the lab, practice making commits and synchronizing to your r
 
 ## Part 1 - GitHub Profile
 
-1. Setup a profile repository that will be visible on your `https://github.com/your_username` page. Clone this repository to your system and edit the `README.md` file per the requirements below. 
-  - [Instruction to set up a profile README](https://docs.github.com/en/get-started/start-your-journey/setting-up-your-profile#adding-a-profile-readme)
-2. Your profile must include: 
+**Before you begin** peruse these [Instructions to create a GitHub profile README](https://docs.github.com/en/get-started/start-your-journey/setting-up-your-profile#adding-a-profile-readme)
+
+1. Create a new public GitHub Repository, owned by you, named `your_github_username`
+2. Use this repository to create a **profile README**. Clone this repository to your system and create / edit `README.md`. 
+3. Your profile (the `README.md` file) must include: 
    - your name
    - your intended major
-   - pick at least two projects you are going to work on this semester (because of a course or personal projects) and give an overview of them
-3. Visit some well-built profile repositories for inspiration and to form an idea of what your profile could look like as your experiences and projects mature:
+   - at least two projects you are going to work on this semester (because of a course or personal projects) and give an overview of them
+4. Visit some well-built profile repositories for inspiration and to form an idea of what your profile could look like as your experiences and projects mature:
    - [coderjojo - Awesome Developer Profiles](https://github.com/coderjojo/creative-profile-readme)
    - [Maximous Black - GitHub Profile collection](https://github.com/maximousblk/maximousblk)
-4. Edit the Lab Template to make the link validly point to your GitHub profile - `https://github.com/your_username`
+5. Edit the Lab Template to make the link validly point to your GitHub profile page - `https://github.com/your_username`
 
 ***Fun Resources***
 - [Markdown cheatsheet](https://www.markdownguide.org/cheat-sheet/)
 - [GitHub Emoji Support](https://www.webfx.com/tools/emoji-cheat-sheet/)
 
-## Part 2 - Research
+## Part 2 - Command Research
 
-In your lab template, fill out the Action column associated with the Command Line commands that perform similar functions.  PowerShell for Windows aliases its Verb-Noun style commands to Unix / Linux style simply named commands.  You should see what aliases work (or don't) in Part 3 if you use Windows OS.
+In your lab template, fill out the Action column associated with the Command Line commands that perform similar functions.  PowerShell for Windows aliases its Verb-Noun style commands to Unix / Linux style commands.  You should see what aliases work (or don't) in Part 3 if you use Windows OS.
 
-| Windows | Linux / Mac | Action |
-| ---     | ---         | ---    |
-| help    | man         |        |
-| Get-Location | pwd    |        |
-| Get-ChildItem | ls    |        |
-| mkdir   | mkdir       |        |
-| Set-Location | cd     |        |
-| New-Item | touch      |        |
-| Move-Item | mv        |        |
-| Copy-Item | cp        |        |
-| Remove-Item | rm      |        |
-| notepad.exe | vim     |        |
+| Windows      | Linux / Mac | Action |
+| ---          | ---         | ---    |
+| help         | man         |        |
+| Get-Location | pwd         |        |
+| Get-ChildItem | ls         |        |
+| mkdir        | mkdir       |        |
+| Set-Location | cd          |        |
+| New-Item     | touch       |        |
+| Move-Item    | mv          |        |
+| Copy-Item    | cp          |        |
+| Remove-Item  | rm          |        |
+| notepad.exe  | vim         |        |
 
-You may, and should, look up the function of the above commands.  Your summary should be in your own words.
+You may, and should, look up the function of the above commands.  Your summary in the `Action` column should be in your own words. **Add your citations notes to the section in your Lab Template. If you used generative AI as a source, include the platform and the prompt used.**
 
 ## Part 3 - Command Line Navigation
 
 There are three primary Operating System categories - Windows, Mac, and Linux.  The system you are physically touching utilizes one of these three OSes.  Your first tasking is to start using the Command Line program for you operating system and learn how to use commands to get around and create folders (directories) and files.
 
-In the lab template, make sure the `x` is appropriately located according to your OS.
+In the lab template, make sure the `x` is appropriately located according to note your OS if it is not Windows.
 
 For your OS, open the default shell and navigate to your user's directory (folder).  Hint:
 - Windows = PowerShell
 - Mac = Terminal
 - Linux = [insert system terminal emulator here]
 
-You'll perform the actions given in the numbered list below.
+In your lab template, write in which shell you are using on your OS.
 
-**In your lab template, write the command to do the task given next to the task itself.**
+Now perform the actions given in the numbered list below.  **In your lab template, write the command to do the task given next to the task itself.**
 
-Cite sources, if needed, about how you found out how to do certain actions.  If you used generative AI as a source, include the platform and the prompt used.  Add your citations notes to the section in your Lab Template.
+**Cite sources, if needed**, about how you found out how to do certain actions. Add your citations notes to the section in your Lab Template. If you used generative AI as a source, include the platform and the prompt used.  
 
-Start in your user's home directory.
+Start in your user's home directory.  Be attentive here.  Windows users may have configured their system's to store the full user's directory in OneDrive.
 
-1. Create a directory named `DirA`
-2. Create a directory named `Dir B` - the space in this name is intentional
-3. Go into `DirA`
-4. Go into `Dir B` from `DirA`
-5. Return to your user's home directory
-6. Create a file named `test.txt`
-7. Move the file named `test.txt` into `DirA`
-8. Edit the contents of `test.txt` with some words of encouragement for yourself
-9. Make a copy of `test.txt` named `copy.txt` in `DirA`
-10. View the contents of `DirA`
-11. Make a copy of `test.txt` in `Dir B` named `fodder.txt`
-12. Delete / remove both `fodder.txt` AND `Dir B`
+1. Provide the full / absolute path to your user's home directory:
+2. Create a directory named `DirA`
+3. Create a directory named `Dir B` - the space in this name is intentional
+4. Go into `DirA`
+5. Go into `Dir B` from `DirA`
+6. Return to your user's home directory
+7. Create a file named `test.txt`
+8. Move the file named `test.txt` into `DirA`
+9. Edit the contents of `test.txt` with some words of encouragement for yourself
+10. Make a copy of `test.txt` named `copy.txt` in `DirA`
+11. View the contents of `DirA`
+12. Make a copy of `test.txt` in `Dir B` named `fodder.txt`
+13. Delete / remove both `fodder.txt` AND `Dir B`
       - Challenge: delete `Dir B` and `fodder.txt` in one command
 
 ## Submission
 
 Remember that we can only grade what we see in GitHub.  Make sure to commit and synchronize (push) your changes to your files.
 
-- In the Pilot Dropbox, paste the URL to the `Lab01` folder in your GitHub repo
-  - URL should look like: https://github.com/WSU-kduncan/ceg2350s25-YOURGITHUBUSERNAME/blob/main/Lab01
+- In the Pilot Dropbox, paste the URL to the `Lab01` directory in your GitHub repo
+  - URL should look like: https://github.com/WSU-kduncan/ceg2350f25-YOURGITHUBUSERNAME/blob/main/Lab01/
 
 ## Rubric
 
 Your answers should be cleanly presented in your GitHub repository.  Citations should be included as needed.  Include which generative AI system was used and what prompts were used if generative AI was used.
 
-- Part 1 - GitHub profile repository - 5 pts
-   - is visible
-   - contains name
-   - contains major
-   - contains 2 project descriptions
-   - looks nice
-- Part 2 - Research - 10 pts
-   - 1 pt / description
-- Part 3 - Commands Line Navigation - 12 pts
-   - 1 pt / question
+## Total Points: / 28
+Part 1 - GitHub profile repository - 5 pts
+- [ ] is visible
+- [ ] contains name
+- [ ] contains major
+- [ ] contains 2 project descriptions
+- [ ] looks nice
+Part 2 - Command Research - 10 pts
+- [ ] man 
+- [ ] pwd
+- [ ] ls        
+- [ ] mkdir     
+- [ ] cd        
+- [ ] touch     
+- [ ] mv        
+- [ ] cp        
+- [ ] rm        
+- [ ] vim
+Part 3 - Command Line Navigation - 13 pts
+- [ ] path
+- [ ] create `DirA`
+- [ ] create `Dir B`
+- [ ] nav to `DirA`
+- [ ] nav to `Dir B`
+- [ ] nav to home dir
+- [ ] create file
+- [ ] move file
+- [ ] contents of file
+- [ ] copy file
+- [ ] view `DirA`
+- [ ] copy file to `Dir B`
+- [ ] delete `Dir B` and it's contents

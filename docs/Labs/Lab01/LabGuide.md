@@ -22,7 +22,7 @@ Return to Pilot and follow the link to Create / Access your Course Repository.
 
 In Lab 01, you will also be taked with making your own repository to build a GitHub **profile repository**.  This means you'll start your git journey with two whole repos!
 
-[!WARN] There will be an extra credit open at the end of the semester to submit a repository for work done outside of this course.  This could be a personal project, a repo for another course, or a repo created for some competition.  Don't wait til the last minute, plan ahead!
+**WARNING** There will be an extra credit open at the end of the semester to submit a repository for work done outside of this course.  This could be a personal project, a repo for another course, or a repo created for some competition.  Don't wait til the last minute, plan ahead!
 
 # Lab Procedure
 
