@@ -31,9 +31,9 @@ Make sure you have created a GitHub account and clicked the link in Pilot to gen
 - If you forgot to bookmark it, the URL is similar to:  
 `https://github.com/WSU-kduncan/ceg2350s25-YOURGITHUBUSERNAME`
 
-For each lab in this course, you will be provided with a lab template to fill in your lab answers. The [Lab 01 Template can be copied from this link](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab01/LabTemplate.md):
+For each lab in this course, you will be provided with a lab template to fill in your lab answers. The [Lab 01 Template can be copied from this link](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab01/LabTemplate.md):
 
-- `https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab01/LabTemplate.md`
+- `https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab01/LabTemplate.md`
 
 Assuming that you have cloned your repository and can open it in VS Code...
 

@@ -2,17 +2,17 @@
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - AWS Academy Setup](#part-1---aws-academy-setup)
-- [Part 2 - Bits of permissions](#part-3---bits-of-permissions)
-- [Part 3 - Regular `bob`](#part-4---regular-bob)
-- [Part 4 - Get a `crew`](#part-5---get-a-crew)
+- [Part 2 - Bits of permissions](#part-2---bits-of-permissions)
+- [Part 3 - Regular `bob`](#part-3---regular-bob)
+- [Part 4 - Get a `crew`](#part-4---get-a-crew)
 - [User & Group Resources](#user--group-resources)
-- [Part 5 - `sudo` make me a sandwich](#part-6---sudo-make-me-a-sandwich)
+- [Part 5 - `sudo` make me a sandwich](#part-5---sudo-make-me-a-sandwich)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
 ## Lab Procedure
 
-Beginning with this lab, you will be accessing an AWS instance - a virtual system hosted on the cloud - to access a Ubuntu server environment.  
+Beginning with this lab, you will be accessing an AWS instance - a virtual system hosted on the cloud - to access a Ubuntu server environment. **If a lab or lab section explicitly states that you must work in your AWS environment, do so**. There will be a biweekly check to make sure you are using the AWS environment to try out commands and perform work.
 
 Go to your cloned repository folder (likely named `ceg2350s25-yourgithubusername`).
 
