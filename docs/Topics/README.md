@@ -1,5 +1,9 @@
 # Lecture Topics
 
+## 00 - Setup Guides
+
+- [AWS Academy](AWSAcademy/README.md)
+
 ## 01 - Essentials
 
 - Overview of main OSes
