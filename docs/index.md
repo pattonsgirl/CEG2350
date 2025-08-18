@@ -17,11 +17,11 @@ Lecture:
 
 Lab: 
 - Section 05 MW 1:25 - 2:20 PM in-person in Russ 346
-    - Lab leader:
+    - Lab leader: Kalli Koppin
 - Section 06 MW 1:25 - 2:20 PM in-person in Russ 339
-    - Lab leader:
+    - Lab leader: Aiden Cox
 - Section 07 TR 9:30 - 10:25 AM in-person in Russ 339
-    - Lab leader:
+    - Lab leader: Aiden McGohan
 
 See `Course Info` in Pilot for:
 - instructor and TA contact information
