@@ -166,6 +166,7 @@ Your answers should be cleanly presented in your GitHub repository.  Citations s
 Part 1 - 10 pts
 - [ ] path to private key
 - [ ] `ssh` command
+
 Part 2 - 10 pts
 - `chmod u+r bubbles.txt`
    - [ ] meaning
@@ -182,6 +183,7 @@ Part 2 - 10 pts
 - `chmod -R ug+w share`
    - [ ] meaning
    - [ ] assessment
+
 Part 3 - 8 pts
 - [ ] Command to create new user
 - [ ] Path to new user's home directory
@@ -191,6 +193,7 @@ Part 3 - 8 pts
 - [ ] Evaluate if new user can add files to user's home directory
 - [ ] Command to return to `ubuntu` user
 - [ ] Command to return to `ubuntu` home directory 
+
 Part 4 - 6 pts
 - [ ] Command(s) to create group named `squad` and add members
 - [ ] Command(s) to add `ubuntu` & user to group `squad`
@@ -198,6 +201,7 @@ Part 4 - 6 pts
 - [ ] Command(s) to modify `share` to have group ownership of `squad`
 - [ ] Describe your tests and commands with the user account
 - [ ] Describe the full set of permissions / settings that enable the user to make edits
+
 Part 5 - 11 pts
 - [ ] Command(s) to make file using `sudo`
 - [ ] Command(s) to make file with `root`

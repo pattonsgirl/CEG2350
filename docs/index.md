@@ -166,8 +166,6 @@ Any student with a disability (physical or mental) must register with the Office
 
 This course requires you to have access to a computer and the internet.   
 
-~~007 SSC has laptops at the tables for student use.  To access an account with the course software installed, see 007 SSC Account Info in Pilot in Content -> Course Information~~ 
-
 CECS has two open computer labs – 152B & D open 24/7. 
 
 There are several open computer lab options across campus – primarily in the library & library annex.  A full list can be found here: https://www.wright.edu/information-technology/computer-labs 
@@ -209,7 +207,7 @@ During this course, student will practice & understand:
 - Permissions and access control 
 - IO redirection, regular expressions, and scripting 
 - Filesystem concepts & design 
-- The boot process – from button to user environment 
+- The boot process – from button press to user environment 
 - Virtual machine setup & capabilities 
 - How the CPU works and process management 
 - Network essentials including IP addressing, subnetting, routing, firewalls, and protocols 
