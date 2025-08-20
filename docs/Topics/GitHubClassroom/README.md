@@ -30,10 +30,10 @@ After clicking the "Create GitHub Classroom repo" link in Pilot, you will be tak
   - If you misclick, email myself or a TA so we can fix it
   - If your email is not shown, let the TA know so that they can add it to the roster
 2. Select `OK` on the popup to confirm you selected the correct email address.
-  ![Accept Assignment](Images/github-classrooms-acceptassignment.png)
+  ![Accept Assignment](../imgs/github-classrooms-acceptassignment.png)
 3. Select `Accept this assignment`
 4. After a minute, refresh the next page. You'll see something similar to:
-  ![You're ready to go!](Images/github-classrooms-success.png)
+  ![You're ready to go!](../imgs/github-classrooms-success.png)
 5. Click the lower link / link that looks similar to: `https://github.com/WSU-kduncan/ceg2350-your_GitHub_username`. 
   - The top link sometimes presents an "error" but things are actually fine.
 6. It is recommended to bookmark this link for easy access down the road.
