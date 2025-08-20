@@ -3,7 +3,7 @@
 ## 00 - Setup Guides
 
 - [AWS Academy](AWSAcademy/README.md)
-- [TODO git / GitHub Setup]()
+- [git / GitHub Setup](GitHubClassroom/README.md)
 - [TODO Environment Setup Recommendations]()
 
 ## 01 - Essentials
