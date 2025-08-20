@@ -133,6 +133,7 @@ Part 1 - GitHub profile repository - 5 pts
 - [ ] contains major
 - [ ] contains 2 project descriptions
 - [ ] looks nice
+
 Part 2 - Command Research - 10 pts
 - [ ] man 
 - [ ] pwd
@@ -144,6 +145,7 @@ Part 2 - Command Research - 10 pts
 - [ ] cp        
 - [ ] rm        
 - [ ] vim
+
 Part 3 - Command Line Navigation - 13 pts
 - [ ] path
 - [ ] create `DirA`
