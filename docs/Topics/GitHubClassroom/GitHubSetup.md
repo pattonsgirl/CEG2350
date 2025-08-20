@@ -4,6 +4,7 @@ For this course, you will be submitting your lab work to a GitHub repository and
 
 - [Pre-Reqs](#Pre-Reqs)
 - [Create the Repo](#Create-the-Repo)
+- [Use GitHub Repo in VSCode](#use-github-repo-in-vscode)
 - [Setup SSH Authentication](#Setup-SSH-Authentication)
 - [Using your Repository](#Using-your-Repository)
 - [Troubleshooting](#Troubleshooting)
@@ -12,14 +13,14 @@ For this course, you will be submitting your lab work to a GitHub repository and
 
 - Create / have a GitHub account
   - [Sign up](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)
+- Create your repo via Pilot link
+  - Go to the Pilot page for this course, go to Content, then Labs. 
+  - There is a link labeled: "Create GitHub Classroom repo"
+  - Click the link, then follow the instructions in [Create the Repo](#create-the-repo)
 - Have `git` installed on the system you are working with
   - [`git` download page](https://git-scm.com/downloads)
   - With `winget` package manager for Windows: `winget install --id Git.Git -e`
   - With `apt` package manager for Linux: `sudo apt install git`
-- Create your repo via Pilot link
-  - Go to the Pilot page for this course, go to Content, then Labs. 
-  - There is a link labeled: "Create GitHub Classroom repo"
-  - Click the link, then follow the instruction in [Setup](#Setup)
 
 ## Create the Repo
 
@@ -27,15 +28,20 @@ After clicking the "Create GitHub Classroom repo" link in Pilot, you will be tak
 
 1. Select your wright.edu email address from the list shown.
   - If you misclick, email myself or a TA so we can fix it
+  - If your email is not shown, let the TA know so that they can add it to the roster
 2. Select `OK` on the popup to confirm you selected the correct email address.
   ![Accept Assignment](Images/github-classrooms-acceptassignment.png)
 3. Select `Accept this assignment`
 4. After a minute, refresh the next page. You'll see something similar to:
   ![You're ready to go!](Images/github-classrooms-success.png)
-4. Click the lower link / link that looks similar to: `https://github.com/WSU-kduncan/ceg2350-your_GitHub_username`. 
+5. Click the lower link / link that looks similar to: `https://github.com/WSU-kduncan/ceg2350-your_GitHub_username`. 
   - The top link sometimes presents an "error" but things are actually fine.
-5. It is recommended to bookmark this link for easy access down the road.
+6. It is recommended to bookmark this link for easy access down the road.
   - You can also go to your GitHub profile page and "Pin" the repository
+
+## Use GitHub Repo in VSCode
+
+See [Instructions in Lab 01](/CEG2350/Labs/Lab01)
 
 ## Setup SSH Authentication
 
