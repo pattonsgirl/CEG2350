@@ -61,18 +61,18 @@ Students will be provided with online reference material throughout the course. 
 
 Learning Git: A Hands-On and Visual Guide to the Basics of Git, O'Reilly, Anna Skoulikari 
    - ISBN: 978-1098133917
-   - Supplementary Resource: https://github.com/gitlearningjourney/learning-git 
+   - Supplementary Resource: [Git Learning Journey - GitHub](https://github.com/gitlearningjourney/learning-git)
 
 The Linux Command Line, 2nd Edition, no starch press, William Shotts 
    - ISBN: 978-1593279523
-   - https://linuxcommand.org/lc3_learning_the_shell.php  
+   - [Linux Command Line](https://linuxcommand.org/lc3_learning_the_shell.php)
 
 How Linux Works, 3rd Edition: What Every Superuser Should Know, no starch press, Brian Ward 
    - ISBN: 978-1718500402 
 
 Pro Git, 2nd Edition: Everything you need to know about git, Apress, Scott Chacon and Ben Straub 
    - ISBN: 978-1484200773
-   - Download EBook: https://git-scm.com/book/en/v2
+   - Download EBook: [git-scm](https://git-scm.com/book/en/v2)
 
 UNIX and Linux System Administration Handbook, 5th Edition, Addison-Wesley Professional, Evi Nemeth, Garth Snyder 
    - ISBN: 978-0134277554
