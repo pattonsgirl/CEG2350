@@ -95,24 +95,22 @@ Git & a GitHub account
 - [GitHub - Create an Account](https://github.com/signup)
     - It is recommended to use your `wright.edu` address to take advantage of the [GitHub Student Developer Pack](https://education.github.com/pack/)
 
-Visual Studio Code (or preferred text based editor with git integration)
+Visual Studio Code (or preferred text editor with git integration)
 - [Download & Install VSCode for your OS](https://code.visualstudio.com/Download)
 - **Recommended** [WSU CSE Extension Pack for VS Code](https://marketplace.visualstudio.com/items?itemName=WrightStateUniversity-ComputerScience.wsu-cse)
     - this is a package of extensions compiled by the CSE department and recommended for use throughout courses in CSE
 
-See Environment Setup in Content -> Course Information for instructions & additional links. 
-
 ### Communication:  
 
 Pilot will be used in this course for submitting labs and for accessing course materials and grades. 
-- Pilot: https://pilot.wright.edu 
-
-It is the student's responsibility to check the Pilot site, as well as their Wright State email, for course announcements, updates to assignment requirements, etc. 
+- Pilot - [https://pilot.wright.edu](https://pilot.wright.edu)
 
 This course makes heavy usage of Discord for communication in and outside of class.  It is strongly advised to keep an eye on Discord conversations for additional resources and troubleshooting assistance.
-- Wright State CSE Discord Server: https://discord.gg/pMUMzTt 
+- Wright State CSE Discord Server: [https://discord.gg/pMUMzTt ](https://discord.gg/pMUMzTt)
     - Access the course discussion channels via `#ceg-class-selection`
     - Verified accounts will have green or gold font in their username, depending on roles in the server
+
+It is the student's responsibility to check the Pilot site, and their Wright State email for major course announcements. Student's should also do a dialy check of conversation in the course Discord server for additional useful resources, explanations, and clarifications. 
 
 ### Grading:  
 
@@ -122,11 +120,13 @@ Quizzes: 10% (10 planned, 1% each)
 
 Exams: 30% (3 exams – two during the semester & the final exam, 10% each)  
 
-No makeup exams are given unless there is a verifiable emergency. Missing any of the course exams may result in a meeting with the instructor and earning no more than a D in the course. 
+**No makeup exams** are given unless there is a verifiable emergency. Missing any of the course exams may result in a meeting with the instructor and earning no more than a D in the course. 
 
-The final exam is a cumulative test of you understanding of topics in this course.  Receiving a failing grade (less than 70%) on the final exam may result in a meeting with the instructor and earning no more than a D in the course. 
+The **final exam** is a cumulative test of your understanding of topics in this course.  Receiving a failing grade (less than 70%) on the final exam may result in a review of your overall course performance and a meeting with the instructor to discuss your understanding and ability to apply the core course concepts and determine your final course grade
 
-You may miss (receive a 0) on no more than two lab assignments.  Each lab will cover a different topic and will be your primary time to practice and reinforce course concepts.  If more than two labs are missed, you may earn no more than a D in the course. 
+You may miss (receive a 0) on no more than two **lab assignments**.  Each lab will cover a different topic and will be your primary time to practice and reinforce course concepts.  If more than two labs are missed, you may earn no more than a D in the course. 
+
+**AWS Checkins** will occur throughout the term.  Your labs in the course will request you utilize a virtual machine hosted on AWS.  Failure to pass the first first in will result in a conversation to make sure the usage and expectations are understood.  Failure to pass the second or third check in will result in a meeting with the instructor to determine your understanding of the course materials and require one or more demonstrations to prove ability to implement lab taskings. If the demonstrations do not prove competency or understanding, the instructor may determine the student will earn no more than a D in the course.
 
 The grading scale for the course is [90-100] A; [80-90) B; [70-80) C; [60-69) D; [0-60) F*  
 
@@ -136,17 +136,17 @@ The grading scale for the course is [90-100] A; [80-90) B; [70-80) C; [60-69) D;
 
 Attendance will not be taken for this course.  This is an in-person course, and you are expected to attend all sessions.  If you need to miss a class for illness or other personal reasons, it is your responsibility to catch up on topics and practice activities. 
 
-Access to an archive of course lectures from Spring 2023 is given via Content -> Course Video Archive -> Panopto - Spring 2023 Videos w/ Captions.  The videos are captioned and searchable for specific content.  The videos can be used for additional review or more practice exercises. 
+Access to an archive of course lectures from Spring 2023 is given via Content -> Course Video Archive -> Panopto - Spring 2023 Videos w/ Captions.  The videos are captioned and searchable for specific content.  The videos can be used for additional review or more practice exercises. The videos are not a subsitute for regular attendance.
 
 ### Assignment \ Quiz \ Exam Policy:  
 
 Students are responsible for keeping up with due dates.  Specific dates are given in the Dropbox and Quizzes & Exams sections of Pilot.   
 
-All labs must be submitted via the Dropbox on Pilot. Be sure you upload the files and then click submit. If you do not receive an email confirmation, then your work was not properly submitted. Be sure to allow enough time to submit your work before the Dropbox closes. Personal computer issues/loss of data/not allowing enough upload time are not valid justifications to merit an extension of the deadline. 
+URLs to lab work must be submitted via the Dropbox on Pilot. Be sure insert your link into the text field and then click submit. If you do not receive an email confirmation, then your work was not properly submitted. Be sure to allow enough time to submit your work before the Dropbox closes. Personal computer issues/loss of data/not allowing enough upload time are not valid justifications to merit an extension of the deadline. 
 
 Exams will be given in person.  Quizzes will be available online and may be taken outside of class.  Dates for both will be announced with ample time.  If the student requires any change / extension they are responsible for notifying the instructor as soon as possible.
 
-Approximately every two weeks, the instructor and / or teaching assistants will connect to your AWS lab environment to check that you are making progress towards the work stated in the lab instructions.  If your lab environment lacks evidence of such progress, it will result in a meeting with the instructor to determine an appropriate plan of action.
+Approximately every two weeks, the instructor and / or teaching assistants will connect to your AWS lab environment to check that you are making progress towards the work stated in the lab instructions.  If your lab environment lacks evidence of such progress, it will result in a meeting with the instructor to determine an appropriate plan of action [see Grading](#grading).
 
 ### Late Policy:  
 
@@ -176,7 +176,7 @@ In the event none of these options can solve your needs, please contact the inst
 
 ### CSE Help Room:  
 
-The Department of Computer Science and Engineering maintains a help room, staffed by upper-level students, for students in introductory programming classes.  The help room is not intended to help with this course, but many student-staff working in the help room have taken this course and may be available to assist you.  You should first use the course Discord channel, contact your TAs, and contact the instructor before attempting to use the help room student-staff. 
+The Department of Computer Science and Engineering maintains a help room, staffed by upper-level students, for students in introductory programming classes.  The help room is not intended to help with this course, but many students working in the help room have taken this course and may be available to assist you.  You should first use the course Discord channel, contact your TAs, and contact the instructor before attempting to use the help room staff. 
 
 A virtual help room is available via the Department’s Discord server.  In the “WSU Computer Science Department” Discord server, select the “CS Help Room” channel.  Here you can make a post to “cs-help-room" to list your questions or request one-on-one support with voice or screen sharing. 
 
@@ -186,7 +186,7 @@ Tutoring Services provides individual and small group academic support for a wid
 
 Students who want to develop strategies and skills specific to their needs for all their courses can meet by appointment with a Study Coach. Study Coaching is an excellent way to get personalized solutions to the challenges of online and in-person courses. 
 
-For students to sign up for appointments, follow the link on the website www.wright.edu/tutoring to the Tutoring Services Online Request form. Once the form is received, their front desk staff will be in contact regarding their appointment status. Appointments are free and are set for one hour each week through the last week of classes. 
+For students to sign up for appointments, follow the link on the website [www.wright.edu/tutoring](https://www.wright.edu/student-success/academic-support/tutoring-services) to the Tutoring Services Online Request form. Once the form is received, their front desk staff will be in contact regarding their appointment status. Appointments are free and are set for one hour each week through the last week of classes. 
 
 ### Academic misconduct:  
 
