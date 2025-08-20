@@ -10,9 +10,9 @@ Fall 2025
 ### Schedule Information
 
 Lecture: 
-- Section 01 TR 9:30 - 10:50 AM in-person in TBD
+- Section 01 TR 9:30 - 10:50 AM in-person in Russ 145
     - Instructor: Kayleigh Duncan
-- Section 02 TR 2:00 - 3:20 PM in-person in TBD
+- Section 02 TR 2:00 - 3:20 PM in-person in Russ 153
     - Instructor: Bibek Joshi
 
 Lab: 
@@ -31,20 +31,20 @@ See `Course Info` in Pilot for:
 
 #### Section 01
 
-Exam 1: TBD 
+Exam 1: 9:30 - 10:50 AM, Tuesday, October 7th
 
-Exam 2: TBD
+Exam 2: 9:30 - 10:50 AM, Tuesday, November 4th
 
-Final: 8:00 - 10:00 AM Tuesday, December 9th in TBD
+Final: 8:00 - 10:00 AM Tuesday, December 9th in Russ 145
 - [Wright State Final Exam Schedule](https://www.wright.edu/enrollment-services/registration/exam-schedules#fall)
 
 #### Section 02
 
-Exam 1: TBD 
+Exam 1: 2:00 - 3:20 PM, Tuesday, October 7th
 
-Exam 2: TBD
+Exam 2: 2:00 - 3:20 PM, Tuesday, November 4th
 
-Final: 2:45 - 4:45 PM Thursday, December 11th in TBD
+Final: 2:45 - 4:45 PM Thursday, December 11th in Russ 153
 - [Wright State Final Exam Schedule](https://www.wright.edu/enrollment-services/registration/exam-schedules#fall)
 
 ### Course Description  
