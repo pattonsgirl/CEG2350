@@ -41,7 +41,7 @@ After clicking the "Create GitHub Classroom repo" link in Pilot, you will be tak
 
 ## Use GitHub Repo in VSCode
 
-See [Instructions in Lab 01](/CEG2350/Labs/Lab01)
+See [Instructions in Lab 01](/CEG2350/Labs/Lab01/Instructions.html)
 
 ## Setup SSH Authentication
 
