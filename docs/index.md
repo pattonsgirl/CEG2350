@@ -140,19 +140,11 @@ Access to an archive of course lectures from Spring 2023 is given via Content ->
 
 ### Assignment \ Quiz \ Exam Policy:  
 
-Students are responsible for keeping up with due dates.  Specific dates are given in the Dropbox and Quizzes & Exams sections of Pilot.   
+Students are responsible for keeping up with due dates.  Specific dates are given in the Dropbox and Quizzes & Exams sections of Pilot. **No late work will be accepted**. If you need to request an extension due to personal circumstance, you may make a request to the course instructor.
 
 URLs to lab work must be submitted via the Dropbox on Pilot. Be sure insert your link into the text field and then click submit. If you do not receive an email confirmation, then your work was not properly submitted. Be sure to allow enough time to submit your work before the Dropbox closes. Personal computer issues/loss of data/not allowing enough upload time are not valid justifications to merit an extension of the deadline. 
 
-Exams will be given in person.  Quizzes will be available online and may be taken outside of class.  Dates for both will be announced with ample time.  If the student requires any change / extension they are responsible for notifying the instructor as soon as possible.
-
-Approximately every two weeks, the instructor and / or teaching assistants will connect to your AWS lab environment to check that you are making progress towards the work stated in the lab instructions.  If your lab environment lacks evidence of such progress, it will result in a meeting with the instructor to determine an appropriate plan of action [see Grading](#grading).
-
-### Late Policy:  
-
-No late work will be accepted for this course. 
-
-Exams and quizzes will only be open for the time frame specified. 
+Exams will be given in person.  Quizzes will be available online and may be taken outside of class.  Dates for both will be announced with ample time.  If the student requires any change / extension they are responsible for notifying the instructor as soon as possible. 
 
 ### Lab Redo Policy: 
 
@@ -160,17 +152,17 @@ There will be two lab assignment redo opportunities given during this course. Th
 
 ### Students with disabilities:  
 
-Any student with a disability (physical or mental) must register with the Office of Disability Services to determine what accommodation(s), if any, are appropriate. The student must inform the instructor of the special accommodation(s) needed as soon as possible.  
+Any student with a disability (physical or mental) must register with the Office of Disability Services to determine what accommodation(s), if any, are appropriate. The student must inform the instructor of the special accommodation(s) needed as soon as possible. The student is responsible for scheduling time extension accomidations with the ODS Proctoring Center.
 
 ### Technology Requirements:  
 
-This course requires you to have access to a computer and the internet.   
+This course requires you to have access to a computer and the internet. If your personal system becomes unavailable, there are options around campus to provide access to a system.
 
 CECS has two open computer labs – 152B & D open 24/7. 
 
-There are several open computer lab options across campus – primarily in the library & library annex.  A full list can be found here: https://www.wright.edu/information-technology/computer-labs 
+There are several open computer lab options across campus – primarily in the library & library annex.  A full list can be found on the [CaTS Computer Labs Page](https://www.wright.edu/information-technology/computer-labs)
 
-Laptops2Go (by CaTS) can be an option if you need a system during a school day: https://www.wright.edu/information-technology/laptops2golaptop-check-out-service  
+Laptops2Go (by CaTS) can be an option if you need a system during a school day. [Laptops2Go—Laptop Check Out Service](https://www.wright.edu/information-technology/laptops2golaptop-check-out-service)
 
 In the event none of these options can solve your needs, please contact the instructor via email as soon as possible.   
 
@@ -184,19 +176,24 @@ A virtual help room is available via the Department’s Discord server.  In the 
 
 Tutoring Services provides individual and small group academic support for a wide range of courses. Students can meet with an individual tutor by appointment for frequently requested courses numbered 3000 and below.  
 
-Students who want to develop strategies and skills specific to their needs for all their courses can meet by appointment with a Study Coach. Study Coaching is an excellent way to get personalized solutions to the challenges of online and in-person courses. 
+Students who want to develop strategies and skills specific to their needs for all their courses can meet by appointment with a Peer Academic Coach. [Peer Academic Coaching](https://www.wright.edu/student-success/academic-support/peer-academic-coaching) is an excellent way to get personalized solutions to the challenges of online and in-person courses. 
 
 For students to sign up for appointments, follow the link on the website [www.wright.edu/tutoring](https://www.wright.edu/student-success/academic-support/tutoring-services) to the Tutoring Services Online Request form. Once the form is received, their front desk staff will be in contact regarding their appointment status. Appointments are free and are set for one hour each week through the last week of classes. 
 
 ### Academic misconduct:  
 
-No food or drink is allowed in the computer labs.  Do not be disruptive during lecture or lab.  Violations of either of these rules can cause for dismissal from lecture or lab for that period. 
-
-Labs are to be completed individually. Sharing your work or copying someone else's work or plagiarizing from online resources will result in a 0 for the assignment(s) and a formal Academic Integrity Violation will be submitted. The university policy on academic misconduct can be found at http://www.wright.edu/students/judicial/integrity.html 
+Labs, quizzes, and exams are to be completed individually. Sharing your work or copying someone else's work or plagiarizing from online resources will result in a penalty for the assignment(s) and a formal Academic Integrity Violation will be submitted. Your labs will allow you to cite sources used for the assignment - if you have questions on how to properly cite to protect or display your personal understanding ask your course instructor.
 
 The assignments in this course are designed to develop the student’s ‘own’ voice and perspective through troubleshooting & testing of their knowledge. The use of AI of any kind in these types of assignments would undermine that work, its purpose, and ultimately any benefit that it could provide towards your learning experience. Therefore, the use of any generative AI to help with your assignments will be considered the same as getting help from another person, that is, plagiarism, and will be penalized accordingly.  
 
-Use of AI tools to perform lab assignments for you may result in a minimum of a 0 on the assignment and a formal Academic Integrity Violation will be submitted.  Use of AI tools during an exam will result in a minimum of a 0 for the exam and a formal Academic Integrity Violation will be submitted.  Use of AI tools on the final exam will result in an F in the courses and a formal Academic Integrity Violation will be submitted. This policy will be discussed in the classroom at the beginning of the semester. Further questions and comments are welcome and should be addressed to the faculty member teaching the class. 
+If sufficient evidence is found, use of AI tools or plagarism may exact one of the below penalties depending on the assignment:
+- Lab assignments may result in a minimum of a 0 on the assignment and a formal Academic Integrity Violation will be submitted.  
+- Exams will result in a minimum of a 0 for the exam and a formal Academic Integrity Violation will be submitted.  
+- Final exam will result in an F in the course and a formal Academic Integrity Violation will be submitted
+
+This policy will be discussed in the classroom at the beginning of the semester. Further questions and comments are welcome and should be addressed to the course instructor during the class. 
+
+The university policy on academic misconduct can be found at [http://www.wright.edu/students/judicial/integrity.html](http://www.wright.edu/students/judicial/integrity.html)
 
 ### Course Objectives: 
 
@@ -249,7 +246,7 @@ The below topic list is not a weekly order of topics, but the organized summary 
    - PATH
 2. Aliases & customizations (.bashrc, .profile)
 3. Commands: diff, find, file, wc, sort, uniq, whereis, which
-4. IO streams (standard input, output (1) and error (2)) and redirection (<, >, >>, |, tee)
+4. IO streams (standard input, output (1) and error (2)) and redirection (`<`, `>`, `>>`, `|`, `tee`)
 5. executing scripts
    - within current bash shell (source (or `.`)
    - by specifying interpreter (bash)
