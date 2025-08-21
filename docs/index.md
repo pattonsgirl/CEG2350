@@ -128,6 +128,8 @@ You may miss (receive a 0) on no more than two **lab assignments**.  Each lab wi
 
 **AWS Checkins** will occur throughout the term.  Your labs in the course will request you utilize a virtual machine hosted on AWS.  Failure to pass the first first in will result in a conversation to make sure the usage and expectations are understood.  Failure to pass the second or third check in will result in a meeting with the instructor to determine your understanding of the course materials and require one or more demonstrations to prove ability to implement lab taskings. If the demonstrations do not prove competency or understanding, the instructor may determine the student will earn no more than a D in the course.
 
+If you have a personal concern about grading, course progress, extensions requests, etc. - please send an email to the course instructor.
+
 The grading scale for the course is [90-100] A; [80-90) B; [70-80) C; [60-69) D; [0-60) F*  
 
 *Final assigned grade is at the discretion of the instructor. 
