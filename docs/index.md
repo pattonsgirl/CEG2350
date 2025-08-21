@@ -107,10 +107,10 @@ Pilot will be used in this course for submitting labs and for accessing course m
 
 This course makes heavy usage of Discord for communication in and outside of class.  It is strongly advised to keep an eye on Discord conversations for additional resources and troubleshooting assistance.
 - Wright State CSE Discord Server: [https://discord.gg/pMUMzTt ](https://discord.gg/pMUMzTt)
-    - Access the course discussion channels via `#ceg-class-selection`
+    - Click the #ceg-class-selection channel under the Information category.  Click to join CEG 2350 - OS Concepts and Design.
     - Verified accounts will have green or gold font in their username, depending on roles in the server
 
-It is the student's responsibility to check the Pilot site, and their Wright State email for major course announcements. Student's should also do a dialy check of conversation in the course Discord server for additional useful resources, explanations, and clarifications. 
+It is the student's responsibility to check the Pilot site, and their Wright State email for major course announcements. Students should also do a daily check of conversation in the course Discord server for additional useful resources, explanations, and clarifications. 
 
 ### Grading:  
 
