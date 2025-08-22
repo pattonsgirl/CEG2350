@@ -199,7 +199,7 @@ The university policy on academic misconduct can be found at [http://www.wright.
 
 ### Course Objectives: 
 
-During this course, student will practice & understand: 
+During this course, students will practice & understand: 
 
 - The difference among common operating systems with a focus on Linux 
 - Fundamental commands and concepts when utilizing command line utilities 
