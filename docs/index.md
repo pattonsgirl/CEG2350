@@ -18,10 +18,13 @@ Lecture:
 Lab: 
 - Section 05 MW 1:25 - 2:20 PM in-person in Russ 346
     - Lab leader: Kalli Koppin
+    - Lab assistant: Wens Barambona
 - Section 06 MW 1:25 - 2:20 PM in-person in Russ 339
     - Lab leader: Aiden Cox
+    - Lab assistant: Austin Kellough
 - Section 07 TR 9:30 - 10:25 AM in-person in Russ 339
-    - Lab leader: Aiden McGohan
+    - Lab leader: Aidan McGohan
+    - Lab assistant: Kalli Koppin
 
 See `Course Info` in Pilot for:
 - instructor and TA contact information
