@@ -12,6 +12,9 @@
 - A GitHub account
 - Know your OS terminal - PowerShell for Windows, Terminal for Mac / Linux
 - Download and install git
+   - Once git is installed, open your system shell and run the following two commands, replacing the information in quotes with your info:
+      - `git config --global user.email "your_email@example.com"`
+      - `git config --global user.name "Your Name"`
 - Download and install GitHub Desktop (recommended for ease)
 - Download and install VS Code
 
@@ -47,7 +50,7 @@ As you work through the lab, practice making commits and synchronizing to your r
 
 **Before you begin** peruse these [Instructions to create a GitHub profile README](https://docs.github.com/en/get-started/start-your-journey/setting-up-your-profile#adding-a-profile-readme)
 
-1. Create a new public GitHub Repository, owned by you, named `your_github_username`
+1. Create a new public GitHub Repository, owned by you, named your GITHUB username.
 2. Use this repository to create a **profile README**. Clone this repository to your system and create / edit `README.md`. 
 3. Your profile (the `README.md` file) must include: 
    - your name
