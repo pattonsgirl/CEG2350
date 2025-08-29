@@ -44,7 +44,7 @@ For this course, you will be creating and editing files in Linux.  Therefore, yo
 
 An email was sent to your wright.edu account inviting you to join an AWS Academy Course for this class.  
 
-Follow the instructions in [AWS Academy Setup](CEG2350/Topics/AWSAcademy/) to set up your AWS environment and make your first `ssh` connection to your AWS instance that you'll use throughout the semester.
+Follow the instructions in [AWS Academy Setup](/CEG2350/Topics/AWSAcademy/) to set up your AWS environment and make your first `ssh` connection to your AWS instance that you'll use throughout the semester.
 
 The written instructions are thorough, but if you would like more visuals visit the Pilot -> Content -> Labs -> Getting Started for a video companion guide to creating an instance.  The video guide sets up connections with WSL2 specifically, but PowerShell or other Terminals will have similar key parts - know where you put your file, the name of it, and the system path to it and locate your IPv4 address to your AWS instance once created.
 
