@@ -28,9 +28,9 @@ If a `push` / synchronize seems to fail / is blocked, you likely need to **pull*
 
 Create a new directory, `Lab03`
 
-Create a file named `README.md` in the `Lab03` folder.  Copy into the file the contents of the [Lab 03 Template](LabTemplate.md).
+Create a file named `README.md` in the `Lab03` folder.  The [Lab 03 Template can be copied from this link](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab03/LabTemplate.md):
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab03/LabTemplate.md)
+- `https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab03/LabTemplate.md`
 
 You may refer to additional resources outside of the recommended resources provided.  
 
