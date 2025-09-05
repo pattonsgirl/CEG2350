@@ -127,8 +127,8 @@ If you don't make it through all of a step or don't complete all 6 steps, leave 
     - Output should say: `Die 1 rolled a ##    Die 2 rolled a ##`, where `##` are two randomly generated numbers, one for each die.
 
 **Resources:**
-- [IO Flood: Bash Shell Scripting | Random Number Generation](https://ioflood.com/blog/bash-random-number/)
-- [IO Flood: Bash read man page | Using the Linux read command](https://ioflood.com/blog/bash-read-man-page-using-the-linux-read-command/)
+- [IO Flood: Bash Shell Scripting: Random Number Generation](https://ioflood.com/blog/bash-random-number/)
+- [IO Flood: Bash read man page: Using the Linux read command](https://ioflood.com/blog/bash-read-man-page-using-the-linux-read-command/)
 - [Digital Ocean - How to Read Command Line Arguments in Shell Scripts?](https://www.digitalocean.com/community/tutorials/read-command-line-arguments-in-shell-scripts)
 - [Cloudzy - Bash If Statement: Syntax, Variations, Use Cases, Commands, and More!](https://cloudzy.com/blog/bash-if-statement/)
 - [IO Flood - Bash While Loop: Shell Scripting Reference Guide](https://ioflood.com/blog/bash-while-loop/)
