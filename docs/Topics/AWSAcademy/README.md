@@ -29,7 +29,7 @@
    - On the second menu, under Parameters, under Key Name, select `vockey`
    - Click Next
    - On the third menu, select Next
-   - Scroll to the bottom and select Create Stack
+   - Scroll to the bottom and select Submit
    - You will be redirected to a status page that says CREATE_IN_PROGRESS
    - Refresh this page until CREATE_COMPLETE is the status
 
