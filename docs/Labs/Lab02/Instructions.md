@@ -15,7 +15,7 @@
 
 Beginning with this lab, you will be accessing an AWS instance - a virtual system hosted on the cloud - to access a Ubuntu server environment. **If a lab or lab section explicitly states that you must work in your AWS environment, do so**. There will be a biweekly check to make sure you are using the AWS environment to try out commands and perform work.
 
-Go to your cloned repository folder (likely named `ceg2350f25-yourgithubusername`).
+Go to your cloned repository folder (likely named `ceg2350f25-yourgithubusername`).  Refer back to Lab 01 if you need a reminder for how to clone your repository. You only need to clone your repository once on each system.
 
 Create a new directory, `Lab02`
 
