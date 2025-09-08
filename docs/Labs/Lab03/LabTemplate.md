@@ -3,6 +3,8 @@
 - Name:
 - Email: 
 
+Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab03/Instructions.html
+
 ## Part 1 - git Guide
 
 | git command         | Description |

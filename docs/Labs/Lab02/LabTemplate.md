@@ -3,6 +3,8 @@
 - Name:
 - Email
 
+Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab02/Instructions.html
+
 ## Part 1 Answers
 
 Full / absolute path to your private key file: 

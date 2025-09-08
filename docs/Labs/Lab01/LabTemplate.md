@@ -3,6 +3,8 @@
 - Name:
 - Email:
 
+Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab01/Instructions.html
+
 ## Part 1 - GitHub Profile
 
 1. [your_github_username_here's GitHub Profile](FIXTHISURL-https://github.com/your_username)
