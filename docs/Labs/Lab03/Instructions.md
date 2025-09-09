@@ -69,7 +69,7 @@ In your lab template, fill out the Description column with what the correspondin
     - Select the Code dropdown.  Make sure SSH is selected.
 
 - **Resources:**
-- [GitHub - How to Use - Duncan's Guide](../../GitHubSetup.md)
+- [GitHub - How to Use - Duncan's Guide](/Topics/GitHubClassroom/)
 - [Warp - Set up SSH for Git](https://www.warp.dev/terminus/git-clone-ssh#set-up-ssh-for-git)
   - Remember I don't recommend setting up a passkey because you have to do additional setup
 - [GitHub - Generating a New SSH Key](https://docs.github.com/en/enterprise-server@3.3/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
