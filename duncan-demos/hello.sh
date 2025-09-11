@@ -15,7 +15,7 @@ read var
 echo $var
 
 # compare that text with a fixed word: "test"
-if [[ $var = "test" ]]
+if [[ $var = "test" ]]; then
 	echo "It's a match"
 fi
 
