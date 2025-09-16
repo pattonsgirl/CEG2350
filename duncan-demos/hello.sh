@@ -14,15 +14,13 @@ read var
 # print out said text
 echo $var
 
-# compare that text with a fixed word: "test"
-if [[ $var = "test" ]]; then
+words=($(grep '^\w\w\w\w\w$' /usr/share/dict/words | tr '[a-z]' '[A-Z]'))
+actual=${words[$[$RANDOM % ${#words[@]}]]}
+
+# compare a random word
+if [[ $var = $actual ]]; then
 	echo "It's a match"
 fi
 
-# grab a random word
-words=($(grep '^\w\w\w\w\w$' /usr/share/dict/words | tr '[a-z]' '[A-Z]'))
-actual=${words[$[$RANDOM % ${#words[@]}]]}
-echo $words
-echo "Actual word was $actual"
-
+echo "Out of attempts, word was $actual"
 # loop until done
