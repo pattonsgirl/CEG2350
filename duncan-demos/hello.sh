@@ -9,10 +9,10 @@ echo "Hello world"
 var=""
 
 # read in text
-read var
+#read var
 
 # print out said text
-echo $var
+#echo $var
 
 words=($(grep '^\w\w\w\w\w$' /usr/share/dict/words | tr '[a-z]' '[A-Z]'))
 actual=${words[$[$RANDOM % ${#words[@]}]]}
@@ -22,6 +22,8 @@ attempt=0
 # loop for a number of attempts
 while [[ attempt -lt attempts ]]
 do
+	echo "Guess the 5 letter word:"
+	read var
 	# compare a random word
 	if [[ $var = $actual ]]; then
 		echo "It's a match"
