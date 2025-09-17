@@ -10,7 +10,7 @@ Your answers should be cleanly presented in your GitHub repository.  Citations s
   - [ ] `ft` `add` and `complete` uses arg 2 or prompts user if arg 2 not given
   - [ ] ONE of `ft` actions - `add`, `remove`, or `view` - calls a function in which task is performed
   - [ ] `ft` `add` appends record to `.finance` in `HOME`
-  - [ ] `ft` `complete` removes record from `.finance` in `HOME`
+  - [ ] `ft` `remove` removes record from `.finance` in `HOME`
   - [ ] `ft` `view` shows all records in `.finance` in `HOME`
   - [ ] `ft` `clear` removes `.finance` in `HOME`
   - [ ] `ft` `help` calls `user-guide` function
