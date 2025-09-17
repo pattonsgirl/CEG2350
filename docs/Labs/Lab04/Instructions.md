@@ -69,7 +69,7 @@ The function `user-guide` must output, using good formatting, guidance and examp
 
 Reformat the user-guide you have in your function to use markdown to cleanly present usage information.
 
-Include some sample runs (using copy and paste in code blocks) or your script in action.
+Include some sample runs (using copy and paste in code blocks) of your script in action.
 
 ## Part 3 - PATH for all
 
