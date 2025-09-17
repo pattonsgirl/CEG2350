@@ -11,11 +11,11 @@ Remember your `ft` script **must have a minimum of 3 commits** for credit.  The 
 
 Verify that `ft` made it to your GitHub repository for this course and is in your `Lab04` folder.  No answers will be written here unless you would like to leave a note to the TAs
 
-## Part 2 - Sample Runs
+## Part 2 - User Guide & Sample Runs
 
 ### User Guide
 
-Fill in with your user guide here
+Fill in with your user guide here - make sure you are focusing on good *markdown* formatting
 
 ### Sample runs
 
@@ -26,7 +26,7 @@ of copy / pasted runs
 of the tt script
 ```
 
-Example of using `complete` task
+Example of using `remove` task
 ```
 show blocks
 of copy / pasted runs
@@ -61,12 +61,12 @@ of the tt script
    - Justification of preference for this use case:
 - Command to create link:
 - Notes about permissions modified: 
-- How you tested that you can run `tt` from anywhere on filesystem:
-- How you tested that other users can run `tt`:
+- How you tested that you can run `ft` from anywhere on filesystem:
+- How you tested that other users can run `ft`:
 
 ## Extra Credit
 
-Note here *what* you did to the script for the extra credit and provide additional demonstrations.
+Note here *what* you did to the script for the extra credit and provide additional demonstrations or user guide updates similar to Part 2.
 
 ## Citations
 
