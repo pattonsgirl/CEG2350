@@ -92,6 +92,9 @@ Test that other user's on the system can also execute the `ft` script.
 
 ## Extra Credit - TODO
 
+**BEFORE YOU BEGIN**
+Your commit history must still show a working version of the script with the original requirements.
+
 Make the `ft` script better. Ideas:
 - Add action, `super-show` that shows all records in all `.finances` files in any user's `HOME` directory - the output should indicate which user in addition to that user's records
 - Append record numbers so that the users can give a record number instead of a record description.  Numbers should be generated when the user gives a record.
