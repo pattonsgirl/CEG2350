@@ -19,39 +19,39 @@ Fill in with your user guide here - make sure you are focusing on good *markdown
 
 ### Sample runs
 
-Example of using `add` task
+Example of using `add` record
 ```
 show blocks
 of copy / pasted runs
-of the tt script
+of your script
 ```
 
-Example of using `remove` task
+Example of using `remove` record
 ```
 show blocks
 of copy / pasted runs
-of the tt script
+of your script
 ```
 
-Example of using `view` tasks
+Example of using `view` records
 ```
 show blocks
 of copy / pasted runs
-of the tt script
+of your script
 ```
 
-Example of using `clear` tasks
+Example of using `clear` records
 ```
 show blocks
 of copy / pasted runs
-of the tt script
+of your script
 ```
 
 Example of using `help`
 ```
 show blocks
 of copy / pasted runs
-of the tt script
+of your script
 ```
 
 ## Part 3 - PATH for all
