@@ -12,7 +12,7 @@
     - [Lab Template - Copy and Fill Out](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab03/LabTemplate.md)
     - [Lab Guide - Additional Resources & Demo Recommendations](Lab03/LabGuide.md)
     - [Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab03/Rubric.md)
-- [Lab 04 - Instructions](Lab04/Instructions.md)
+- [Lab 04 - Financial Tracker - Instructions](Lab04/Instructions.md)
     - [Lab Template - Copy and Fill Out](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab04/LabTemplate.md)
     - [Lab Guide - Additional Resources & Demo Recommendations](Lab04/LabGuide.md)
     - [Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab04/Rubric.md)
