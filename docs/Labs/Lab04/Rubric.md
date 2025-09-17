@@ -1,0 +1,23 @@
+## Rubric
+
+- Part 1 - 10 pts
+  - `tt` exists
+  - `tt` uses case statement to evaluate if arg 1 was `add` or `complete` or `view` or `clear` or `help`; if none, outputs guide and exists
+  - `tt` `add` and `complete` uses arg 2 or prompts user if arg 2 not given
+  - ONE of `tt` `add`, `complete`, or `view` calls a function where task is performed
+  - `tt` `add` appends task to `.tasks` in `HOME`
+  - `tt` `complete` removes task from `.tasks` in `HOME`
+  - `tt` `view` shows all tasks in `.tasks` in `HOME`
+  - `tt` `clear` removes `.tasks` in `HOME`
+  - `tt` `help` calls `user-guide` function
+  - `tt` `user-guide` function outputs a well formatted, meaningful help guide to the user on script usage
+- Part 2 - 2 pts
+  - user guide is a well formatted, meaningful help guide to the user on script usage
+  - sample inserted of script performing each action
+- Part 3 - 6 pts
+  - One point per response in answer template
+- EC - 1.8 pts (10%)
+    - can stack based on number of new features implemented
+- Point Deductions:
+    - (-1.8) pts (10%) - did not record a minimum of three commits while building the `tt` script.
+  - added one of the suggested ideas or approved idea, additional documentation provided with description & proof of operation
