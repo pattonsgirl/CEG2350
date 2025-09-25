@@ -1,0 +1,25 @@
+  # these were not using the right field separator
+  571  awk '{print $0}' employees.csv
+  572  awk '{print $1}' employees.csv
+  # these use the right field separator - $0 = whole line, $1 = column 1, etc
+  573  awk -F ',' '{print $1}' employees.csv
+  574  awk -F ',' '{print $0}' employees.csv
+  575  awk -F ',' '{print $1}' employees.csv
+  576  awk -F ',' '{print $2}' employees.csv
+  577  awk -F ',' '{print $0}' employees.csv
+  578  awk -F ',' '{print $1}' employees.csv
+  579  awk -F ',' '{print $2}' employees.csv
+  # frustrated by separators?  could alias if you only use csvs.  Add to .bashrc to make permanent
+  580  alias awk='awk -F ',''
+  581  awk '{print $2}' employees.csv
+  # remove alias so that we keep remembering field separators
+  582  unalias awk
+  583  clear
+  584  awk -F ',' '{print $2}' employees.csv
+  585  cat employees.csv
+  # Run some queries - prints name of Engineers, then add salary
+  586  awk -F ',' '$4 ~ /Engineering/ {print $2}' employees.csv
+  587  awk -F ',' '$4 ~ /Engineering/ {print $2 \t $4}' employees.csv
+  588  awk -F ',' '$4 ~ /Engineering/ {print $2\t$4}' employees.csv
+  589  awk -F ',' '$4 ~ /Engineering/ {print $2, "\t",$4}' employees.csv
+  590  awk -F ',' '$4 ~ /Engineering/ {print $2, "\t",$4, "\t" $5}' employees.csv
