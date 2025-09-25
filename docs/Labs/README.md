@@ -16,7 +16,7 @@
     - [Lab Template - Copy and Fill Out](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab04/LabTemplate.md)
     - [Lab Guide - Additional Resources & Demo Recommendations](Lab04/LabGuide.md)
     - [Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab04/Rubric.md)
-- [Lab 05 - Instructions](Lab05/Instructions.md)
+- [Lab 05 - grep, sed, and awk - Instructions](Lab05/Instructions.md)
     - [Lab Template - Copy and Fill Out](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab05/LabTemplate.md)
     - [Lab Guide - Additional Resources & Demo Recommendations](Lab05/LabGuide.md)
     - [Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab05/Rubric.md)
