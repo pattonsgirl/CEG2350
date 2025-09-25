@@ -18,9 +18,9 @@ Go to the folder that contains your repository (likely named `ceg2350-yourgithub
 
 Create a new directory, `Lab05`.
 
-Create a file named `README.md` in the `Lab05` folder.  Copy into the file the contents of the [Lab 05 Template](LabTemplate.md).
+Create a file named `README.md` in the `Lab05` folder.  The [Lab 05 Template can be copied from this link](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab05/LabTemplate.md):
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab05/LabTemplate.md)
+- `https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab05/LabTemplate.md`
 
 You may refer to additional resources outside of the recommended resources provided.  
 
@@ -50,7 +50,7 @@ wget [options] [url]
 ```
 
 View this page:  
-https://github.com/pattonsgirl/CEG2350/blob/main/Labs/Lab05/data/tryme.txt
+https://github.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab05/demos/tryme.txt
 
 Now view this page (accessible by select `Raw` on the right side above the file contents):  
 https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/Labs/Lab05/data/tryme.txt
