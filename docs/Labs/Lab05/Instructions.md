@@ -50,15 +50,15 @@ wget [options] [url]
 ```
 
 View this page:  
-https://github.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab05/demos/tryme.txt
+https://github.com/pattonsgirl/CEG2350/blob/main/docs/Labs/Lab05/data/tryme.txt
 
 Now view this page (accessible by select `Raw` on the right side above the file contents):  
-https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/Labs/Lab05/data/tryme.txt
+https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab05/data/tryme.txt
 
 Run the following two commands:
 ```
-wget https://github.com/pattonsgirl/CEG2350/blob/main/Labs/Lab05/data/tryme.txt
-wget https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/Labs/Lab05/data/tryme.txt
+wget https://github.com/pattonsgirl/CEG2350/blob/main/docs/Labs/Lab05/data/tryme.txt
+wget https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab05/data/tryme.txt
 ```
 Use `cat` to view their contents.  The second will have only the text file.  The first comes with GitHub's page wrapper.  The second - or more importantly - the raw file contents - is what we want.
 
@@ -74,7 +74,6 @@ In [access.log](data/access.log) you'll find dummy logs for users (client machin
 - the access (request) timestamp
 - the HTTP Request Method (GET or POST) & resource URL (page)
 - the HTTP Status code
-- [Raw version of access.log](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab05/data/access.log)
 
 Your task is to use both `grep` and `wc` to parse the file for information and report on how many instances were found.  Your searches with `grep` should add in enough patterning to reduce mistakes (inaccurate catches).  
 
@@ -99,7 +98,7 @@ For example:
 ## Part 2 - sed
 
 `sed` is mostly commonly used as a search and replace command. In [sedfile.html](data/sedfile.html) you'll find an html file. Your task is to change it into markdown using `sed` commands. Your converted file should be named `sedfile.md`.
-- [Raw version of sedfile.html](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab05/data/sedfile.html)
+- [Raw version of sedfile.html](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab05/data/sedfile.html)
 
 The following picture shows how `sedfile.html` (the original) looks compared to `sedfile.md` after being fixed to use markdown when the files are viewed in GitHub.
 
@@ -136,7 +135,7 @@ Only write the command that performs the required task in the lab write up. DO N
 awk 'program' input-file
 ```
 In [sales.txt](data/sales.txt) you'll find a file that contains sales records. Your task is to ask some queries and make replacements using `awk`.
-- [Raw version of sales.txt](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab05/data/sales.txt)
+- [Raw version of sales.txt](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab05/data/sales.txt)
 
 Each lines in `sales.txt` contains the following fields:
 - Date (YYYY-MM-DD)
@@ -173,3 +172,9 @@ Only write the command that performs the required task in the lab write up. DO N
 
 3. In the Pilot Dropbox, paste the URL to the `Lab05` folder in your GitHub repo
    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab05
+
+## Rubric
+
+Your files should be cleanly presented in your GitHub repository.  Citations should be included as needed.  Include which generative AI system was used and what prompts were used if generative AI was used.
+
+[Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab05/Rubric.md)
