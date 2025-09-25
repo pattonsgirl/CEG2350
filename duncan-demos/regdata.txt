@@ -1,0 +1,20 @@
+John Doe - Email: john.doe@example.com
+ +1-202-555-0183
+ jane_smith123@work-mail.org
+ https://www.example.org/test?ref=chatgpt
+Log entry at 2025-09-25 09:15:22 from IP 192.168.1.45
+Failed login attempt from 10.0.0.99 on 2025/09/24
+ #A123XZ
+ 4111-1111-1111-1111
+ abc123XYZ
+ 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+ Call me tomorrow!
+ C:\Users\Admin\Documents\report.docx
+ 0xFF12AB
+ 123-45-6789
+ 00:1A:2B:3C:4D:5E
+ $199.99
+ 12345-6789
+ 23:59:59
+ 550e8400-e29b-41d4-a716-446655440000
+ <div class="content">Hello</div>
