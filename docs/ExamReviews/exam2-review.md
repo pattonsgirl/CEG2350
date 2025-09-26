@@ -32,7 +32,7 @@
    - PATH
 2. Aliases & customizations (.bashrc, .profile)
 3. Commands: diff, find, file, wc, sort, uniq, whereis, which
-4. IO streams (standard input, output (1) and error (2)) and redirection (<, >, >>, |, tee)
+4. IO streams (standard input, output (1) and error (2)) and redirection (`<, >, >>, |, tee`)
 5. executing scripts
    - within current bash shell (source (or `.`)
    - by specifying interpreter (bash)
