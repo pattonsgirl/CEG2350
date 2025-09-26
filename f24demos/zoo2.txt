@@ -1,6 +1,0 @@
-bears
-monkey
-gorilla
-lion
-tiger
-eagle
