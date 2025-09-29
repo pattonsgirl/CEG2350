@@ -20,3 +20,7 @@
     - [Lab Template - Copy and Fill Out](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab05/LabTemplate.md)
     - [Lab Guide - Additional Resources & Demo Recommendations](Lab05/LabGuide.md)
     - [Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab05/Rubric.md)
+- [Lab 06 - Dotfile Installer w/ getopts - Instructions](Lab06/Instructions.md)
+    - [Lab Template - Copy and Fill Out](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab06/LabTemplate.md)
+    - [Lab Guide - Additional Resources & Demo Recommendations](Lab06/LabGuide.md)
+    - [Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab06/Rubric.md)
