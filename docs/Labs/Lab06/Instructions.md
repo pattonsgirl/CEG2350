@@ -36,7 +36,6 @@ Craft an `alias` with a name of your choice that pipes a `fortune` to a `cowsay`
 
 Craft an `alias` with a name of your choice to something "fun".  Checkout these as suggestions.  You may need to install these programs first with `apt`.
    - `curl wttr.in`
-   - `telnet towel.blinkenlights.nl`
    - have `cat` use `lolcat` instead
    - `asciiaquarium` 
 
@@ -52,14 +51,14 @@ You may delete the `.bash_aliases` file in your user's home directory as needed 
 
 **Resources**
 - [How to create bash aliases - linuxize](https://linuxize.com/post/how-to-create-bash-aliases/)
-- 
 
 ## Part 2 - Dotfile Installer Script
 
 Your tasking is to write a script that sets up your user account to use your `.bash_aliases` To accomplish this, you will create an "installation" script that accomplishes these taskings.  
 
-> [!WARNING] 
-> You must have a **minimum** of **3 (THREE) COMMITS** made for this script.  Your commit messages must describe what's currently working / tested.  When (after which steps / testing) you make a commit is your choice.  Your commits must demonstrate an incremental building process - a bulk dump and then making a spelling change or two will not get you out of the penalty in the rubric.
+**WARNING**  
+You must have a **minimum** of **3 (THREE) COMMITS** made for this script.  Your commit messages must describe what's currently working / tested.  When (after which steps / testing) you make a commit is your choice.  Your commits must demonstrate an incremental building process - a bulk dump and then making a spelling change or two will not get you out of the penalty in the rubric.  
+**END WARNING**
 
 1. Create a script named `dotinstall` in your `Lab06` folder.
 
