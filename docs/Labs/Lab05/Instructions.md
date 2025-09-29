@@ -155,6 +155,7 @@ Only write the command that performs the required task in the lab write up. DO N
 
 - **Resources**
 - [linuxize - awk with examples](https://linuxize.com/post/awk-command/)
+- [How to Geek - 6 Text Filtering Uses for the Linux awk Command](https://www.howtogeek.com/text-filtering-uses-for-the-linux-awk-command/)
 - [cyberbiz - awk find and replace](https://www.cyberciti.biz/faq/awk-find-and-replace-fields-values/)
 
 ## Submission
