@@ -1,0 +1,24 @@
+# Rubric
+
+- Required files exist in `Lab06` folder - 3 pts
+- `.bash_aliases` contains minimum of two functional aliases - 1 pt
+- `dotinstall` script:
+   - **minimum of 3 commits on with incremental building not met** - (-4) points
+   - `getopts` checks for `-h`, `-s`, `-d`, `-a`, `-r` and exits after printing help if option is not allowed - 2 pts
+   - `-h` flag calls `printHelp` function print help guide - 1 pt
+   - `-s` flag calls function to generate symbolic link - 1 pt
+   - user is prompted for what to do if `.bash_aliases` exists & program performs request - 1 pt
+   - `-d` flag calls function to remove symbolic link - 1 pt
+   - `-a` flag calls function to add user's alias to `.bash_aliases` - 1 pt
+   - `-r` flag calls function to remove alias specified by user - 1 pt
+- `README.md`:
+   - contains `.bashrc` section relevant to `.bash_aliases` - 1 pt
+   - description of what this section does - 1 pt
+   - Retrospective answers - 1 pt each / 3 pts total
+   - `dotfiles` Usage Guide contains 
+      - description of `dotinstall` script - 1 pt
+      - description of `.bash_aliases` script - 1 pt
+      - **truthful** demonstrations of `dotinstall` script based on parts implemented - 1 pt
+      - good use of markdown formatting - 2 pt
+   - README is not a markdown file or does not use markdown formatting - no credit / (-10) points
+- EC - 2 pts (10%)
