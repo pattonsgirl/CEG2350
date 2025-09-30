@@ -30,6 +30,27 @@ else
 fi
 echo
 
+
+##########################
+# Case statement
+##########################
+read -p "Enter a letter (a/b/c): " letter
+case "$letter" in
+    a|A)
+        echo "You entered A"
+        ;;
+    b|B)
+        echo "You entered B"
+        ;;
+    c|C)
+        echo "You entered C"
+        ;;
+    *)
+        echo "Unknown option"
+        ;;
+esac
+echo
+
 ##########################
 # For loop
 ##########################
