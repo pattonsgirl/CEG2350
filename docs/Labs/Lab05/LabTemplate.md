@@ -3,6 +3,8 @@
 - Name:
 - Email: 
 
+Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab05/Instructions.html
+
 ## Part 1 - grep
 
 1. How many logs use a client IP that starts with `192`?

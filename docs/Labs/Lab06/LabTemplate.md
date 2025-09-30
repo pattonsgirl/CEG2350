@@ -3,6 +3,8 @@
 - Name:
 - Email
 
+Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab06/Instructions.html
+
 ## Part 1 - bash aliases
 
 It is important that the following is added to or exists in the user's `.bashrc` file

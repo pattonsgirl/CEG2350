@@ -20,9 +20,9 @@ Go to the folder that contains your repository (likely named `ceg2350-yourgithub
 
 Create a new directory, `Lab06`.
 
-Create a file named `README.md` in the `Lab06` folder.  Copy into the file the contents of the [Lab 06 Template](LabTemplate.md).
+Create a file named `README.md` in the `Lab06` folder.  The [Lab 06 Template can be copied from this link](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab06/LabTemplate.md):
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab06/LabTemplate.md)
+- `https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab06/LabTemplate.md`
 
 You may refer to additional resources outside of the recommended resources provided.  
 
@@ -36,7 +36,6 @@ Craft an `alias` with a name of your choice that pipes a `fortune` to a `cowsay`
 
 Craft an `alias` with a name of your choice to something "fun".  Checkout these as suggestions.  You may need to install these programs first with `apt`.
    - `curl wttr.in`
-   - `telnet towel.blinkenlights.nl`
    - have `cat` use `lolcat` instead
    - `asciiaquarium` 
 
@@ -52,14 +51,14 @@ You may delete the `.bash_aliases` file in your user's home directory as needed 
 
 **Resources**
 - [How to create bash aliases - linuxize](https://linuxize.com/post/how-to-create-bash-aliases/)
-- 
 
 ## Part 2 - Dotfile Installer Script
 
 Your tasking is to write a script that sets up your user account to use your `.bash_aliases` To accomplish this, you will create an "installation" script that accomplishes these taskings.  
 
-> [!WARNING] 
-> You must have a **minimum** of **3 (THREE) COMMITS** made for this script.  Your commit messages must describe what's currently working / tested.  When (after which steps / testing) you make a commit is your choice.  Your commits must demonstrate an incremental building process - a bulk dump and then making a spelling change or two will not get you out of the penalty in the rubric.
+<p style="color: red; font-weight: bold;">WARNING</p>
+You must have a **minimum** of **3 (THREE) COMMITS** made for this script.  Your commit messages must describe what's currently working / tested.  When (after which steps / testing) you make a commit is your choice.  Your commits must demonstrate an incremental building process - a bulk dump and then making a spelling change or two will not get you out of the penalty in the rubric.  
+<p style="color: red; font-weight: bold;">END WARNING</p>
 
 1. Create a script named `dotinstall` in your `Lab06` folder.
 
@@ -192,28 +191,10 @@ Add notes to your documentation about your added feature and show examples of it
 
 ## Rubric
 
-- Required files exist in `Lab06` folder - 3 pts
-- `.bash_aliases` contains minimum of two functional aliases - 1 pt
-- `dotinstall` script:
-   - **minimum of 3 commits on with incremental building not met** - (-4) points
-   - `getopts` checks for `-h`, `-s`, `-d`, `-a`, `-r` and exits after printing help if option is not allowed - 2 pts
-   - `-h` flag calls `printHelp` function print help guide - 1 pt
-   - `-s` flag calls function to generate symbolic link - 1 pt
-   - user is prompted for what to do if `.bash_aliases` exists & program performs request - 1 pt
-   - `-d` flag calls function to remove symbolic link - 1 pt
-   - `-a` flag calls function to add user's alias to `.bash_aliases` - 1 pt
-   - `-r` flag calls function to remove alias specified by user - 1 pt
-- `README.md`:
-   - contains `.bashrc` section relevant to `.bash_aliases` - 1 pt
-   - description of what this section does - 1 pt
-   - Retrospective answers - 1 pt each / 3 pts total
-   - `dotfiles` Usage Guide contains 
-      - description of `dotinstall` script - 1 pt
-      - description of `.bash_aliases` script - 1 pt
-      - **truthful** demonstrations of `dotinstall` script based on parts implemented - 1 pt
-      - good use of markdown formatting - 2 pt
-   - README is not a markdown file or does not use markdown formatting - no credit / (-10) points
-- EC - 2 pts (10%)
+Your files should be cleanly presented in your GitHub repository.  Citations should be included as needed.  Include which generative AI system was used and what prompts were used if generative AI was used.
+
+[Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab06/Rubric.md)
+
 ## `getopts` and error handling
 
 I don't not require any error handling outside of the sample program runs provided. However...
