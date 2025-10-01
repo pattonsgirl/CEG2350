@@ -88,12 +88,21 @@ For example:
 3. How many logs have a client IP that contains `1` (but not exclusively) in the third octet?
    - `10.12.1.40` - `10` is in the first octet, `12` is in the second, `1` **is in the third** and `40` is in the fourth
    - 21, 12, 11, 210 would all be valid values in third octect
+   - Check out note below on format of an IP address
 4. How many logs contain `GET` requests to look for a page that begins with `c`?
 5. How many logs contains request between 1:20 PM (inclusive) and 1:30 PM (exclusive)?
 
 **Resources**
 - [linuxize - use grep to search patterns](https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/)
 - [RedHat - Beginners Guide to regular expressions with grep](https://developers.redhat.com/articles/2022/09/14/beginners-guide-regular-expressions-grep#)
+
+**IBM - Format of an IPv4 Address**
+
+An IPv4 address has the format `x.x.x.x`, where `x` is called an *octet* and must be a decimal value between `0` and `255`. Octets are separated by periods - `.`. An IPv4 address must contain three periods and four octets. The following examples are valid IPv4 addresses:
+- `1.2.3.4`
+- `01.102.103.104`
+
+[IBM article](https://www.ibm.com/docs/en/ts4500-tape-library?topic=functionality-ipv4-ipv6-address-formats)
 
 ## Part 2 - sed
 
