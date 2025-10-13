@@ -24,3 +24,7 @@
     - [Lab Template - Copy and Fill Out](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab06/LabTemplate.md)
     - [Lab Guide - Additional Resources & Demo Recommendations](Lab06/LabGuide.md)
     - [Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab06/Rubric.md)
+- [Lab 07 - Machine Specs & Virtual Machines - Instructions](Lab07/Instructions.md)
+    - [Lab Template - Copy and Fill Out](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab07/LabTemplate.md)
+    - [Lab Guide - Additional Resources & Demo Recommendations](Lab07/LabGuide.md)
+    - [Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab07/Rubric.md)
