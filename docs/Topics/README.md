@@ -28,6 +28,8 @@
 - PC Hardware
 - The Boot Process
 - Virtual Machines
+    - [VirtualBox Guide](/CEG2350/Labs/Lab07/VirtualBox-Guide.html)
+    - [UTM Guide](/CEG2350/Labs/Lab07/UTM-Guide.html)
 
 ## 04 - Code
 

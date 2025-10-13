@@ -28,3 +28,5 @@
     - [Lab Template - Copy and Fill Out](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab07/LabTemplate.md)
     - [Lab Guide - Additional Resources & Demo Recommendations](Lab07/LabGuide.md)
     - [Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab07/Rubric.md)
+    - [VirtualBox Guide](/CEG2350/Labs/Lab07/VirtualBox-Guide.html)
+    - [UTM Guide](/CEG2350/Labs/Lab07/UTM-Guide.html)
