@@ -79,6 +79,10 @@ You will need a computer that has CPU virtualization enabled. The lab machines a
 
 The lab template will give an outline of minimum expected documentation for this portion.  The instructions below will provide more verbose guidelines to complete the taskings.
 
+**Resources we've whipped up**
+- [VirtualBox Guide](/CEG2350/Labs/Lab07/VirtualBox-Guide.html)
+- [UTM Guide](/CEG2350/Labs/Lab07/UTM-Guide.html)
+
 1. Download and install a Virtual Machine Manager. This course will recommend *VirtualBox*
     - [Download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads) Virtual Machine Manager.  
         - Pick your host OS when installing
