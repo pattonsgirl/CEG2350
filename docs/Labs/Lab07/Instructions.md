@@ -170,7 +170,8 @@ We are going to be uploading images directly to our repository in GitHub, then u
 6. In your lab template, you have a lines similar to: `![Screenshot of VM running](relative_path_to_filename_here)`
    - keep the parenthesis, but fill them with the relative path to your respective photos
    - this should be relative to being in your repo folder
-```md
+
+```
 Either of these will work.  
 
 The first is relative to VBox being in the same folder as the file I'm referencing it in (Lab 07)
