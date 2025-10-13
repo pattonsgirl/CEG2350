@@ -3,6 +3,8 @@
 - Name:
 - Email:
 
+Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab07/Instructions.html
+
 ## System Discovery
 
 1. **CPU info**
