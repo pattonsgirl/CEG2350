@@ -175,17 +175,17 @@ We are going to be uploading images directly to our repository in GitHub, then u
    - this should be relative to being in your repo folder
 
 ```
-Either of these will work.  
+# Either of these will work.  
 
-The first is relative to VBox being in the same folder as the file I'm referencing it in (Lab 07)
+# The first is relative to VBox being in the same folder as the file I'm referencing it in (Lab 07)
 ![Screenshot of VM information](VBox.JPG)
-The first is an absolute path within the context of the repository
-![Screenshot of VM information](/Labs/Lab07/VBox.JPG)
+# The second is an absolute path within the context of the repository
+![Screenshot of VM information](/CEG2350/Labs/Lab07/VBox.JPG)
 ```
 
 Either of these will work.  
 
 The first is relative to VBox being in the same folder as the file I'm referencing it in (Lab 07)
 ![Screenshot of VM information](VBox.JPG)
-The first is an absolute path within the context of the repository
-![Screenshot of VM information](/Labs/Lab07/VBox.JPG)
+The second is an absolute path within the context of the repository
+![Screenshot of VM information](/CEG2350/Labs/Lab07/VBox.JPG)
