@@ -141,9 +141,9 @@ Your files should be cleanly presented in your GitHub repository.  Citations sho
 
 > Windows Subsystem for Linux (WSL) is a feature of Windows that allows you to run a Linux environment on your Windows machine, without the need for a separate virtual machine or dual booting. WSL is designed to provide a seamless and productive experience for developers who want to use both Windows and Linux at the same time.
 
-Check out the full list of features: https://learn.microsoft.com/en-us/windows/wsl/about
+Check out the full list of features: [https://learn.microsoft.com/en-us/windows/wsl/about](https://learn.microsoft.com/en-us/windows/wsl/about)
 
-Once upon a time, we required Windows user install WSL2 with Ubuntu in order to use utilities like `ssh`.  I strongly recommend Windows users install this.  Upper level course will expect you to be aware of it and have it if you need it.  Most developers who use Windows systems will have WSL2 with a linux distro in order to access Linux based workflows.
+Once upon a time, we required Windows user install WSL2 with Ubuntu in order to use utilities like `ssh`.  I strongly recommend Windows users install this.  Upper level course will expect you to be aware of it and have it if you need it.  Most developers who use Windows systems will have WSL2 with a linux distro in order to enable Linux based workflows.
 
 [Install WSL2](https://learn.microsoft.com/en-us/windows/wsl/install)
 
