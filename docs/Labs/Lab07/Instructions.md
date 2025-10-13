@@ -18,9 +18,9 @@ Go to the folder that contains your repository (likely named `ceg2350-yourgithub
 
 Create a new directory, `Lab07`.
 
-Create a file named `README.md` in the `Lab07` folder.  Copy into the file the contents of the [Lab 07 Template](LabTemplate.md).
+Create a file named `README.md` in the `Lab07` folder.  The [Lab 07 Template can be copied from this link](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab07/LabTemplate.md):
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab07/LabTemplate.md)
+- `https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab07/LabTemplate.md`
 
 You may refer to additional resources outside of the recommended resources provided.  
 
@@ -129,10 +129,9 @@ Accomplish the following tasks using the guest OS in the virtual machine you mad
 
 ## Rubric
 
-- Part 1 - 22 pts (1 point per information bullet)
-- Part 2 - 10 pts (1 point per information bullet / screenshot)
-    - if screenshot is not visible in markdown in `README.md`, no credit will be given.
-- Part 3 - 10 pts (2 points per task, must include "how-to" steps)
+Your files should be cleanly presented in your GitHub repository.  Citations should be included as needed.  Include which generative AI system was used and what prompts were used if generative AI was used.
+
+[Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab07/Rubric.md)
 
 ## Windows and WSL2
 
