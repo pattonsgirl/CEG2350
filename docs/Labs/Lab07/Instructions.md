@@ -97,7 +97,12 @@ The lab template will give an outline of minimum expected documentation for this
 2. Download an ISO (installation image) for a **Linux** distribution with desktop environment of your choice. 
     - The point is to go through the installation process. *Do not download and use a pre-built VM image for this lab*. You may switch to that on your own time.
     - Recommended options include: Ubuntu Desktop, LUbuntu, Linux Mint, Elementary, Kali, Pop OS
-        - See [DistroWatch](https://distrowatch.com/) for a comprehensive site about all possible distros        
+        - See [DistroWatch](https://distrowatch.com/) for a comprehensive site about all possible distros    
+    - Graphics Troubleshooting
+        - If you see an error about video memory / have a blank screen, power off the VM and chnage the following **Display** settings:
+            - Video Memory - 128 MB (max it out)
+            - Graphics Controller - VMSVGA 
+                - try VBoxSVGA if the other is still not showing your screen
 
 3. Create a *new* Virtual Machine. Choose your downloaded iso to install from.
     - Pay attention to minimum hardware specifications for the guest operating system you choose. They will guide the minimum hardware you need to assign to the VM for good enough performance.
