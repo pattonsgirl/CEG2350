@@ -20,9 +20,9 @@ Go to the folder that contains your repository (likely named `ceg2350-yourgithub
 
 Create a new directory, `Lab08`.
 
-Create a file named `README.md` in the `Lab08` folder.  Copy into the file the contents of the [Lab 08 Template](LabTemplate.md).
+Create a file named `README.md` in the `Lab08` folder.  The [Lab 08 Template can be copied from this link](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab08/LabTemplate.md):
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab08/LabTemplate.md)
+- `https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab08/LabTemplate.md`
 
 You may refer to additional resources outside of the recommended resources provided.  
 
@@ -167,9 +167,7 @@ Use guides to create a guide on how to complete this tasking.
 
 ## Rubric
 
-- Part 1 - 1 pt per question - 9 pts total
-- Part 2 - 1 pt per question - 4 pts total
-- Part 3 - 1 pt per question - 6 pts total
-- Part 4 - 1 pt per question - 3 pts total
-- Part 5 (+ how to truly delete file data) - 1 pt per question - 6 pts total
-- Extra credit - 10% (2.8 pts)
+Your files should be cleanly presented in your GitHub repository.  Citations should be included as needed.  Include which generative AI system was used and what prompts were used if generative AI was used.
+
+[Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab08/Rubric.md)
+

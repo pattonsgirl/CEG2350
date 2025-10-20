@@ -3,6 +3,8 @@
 - Name:
 - Email:
 
+Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab08/Instructions.html
+
 ## Part 1 - What do we have?
 
 1. Command:
