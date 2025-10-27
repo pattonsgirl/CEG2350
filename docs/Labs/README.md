@@ -34,3 +34,7 @@
     - [Lab Template - Copy and Fill Out](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab08/LabTemplate.md)
     - [Lab Guide - Additional Resources & Demo Recommendations](Lab08/LabGuide.md)
     - [Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab08/Rubric.md)
+- [Lab 09 - Process control - Instructions](Lab09/Instructions.md)
+    - [Lab Template - Copy and Fill Out](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab09/LabTemplate.md)
+    - [Lab Guide - Additional Resources & Demo Recommendations](Lab09/LabGuide.md)
+    - [Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab09/Rubric.md)
