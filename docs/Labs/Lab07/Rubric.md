@@ -67,3 +67,12 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - Connecting AWS using ssh
         - [ ] Steps
         - [ ] Thoughtfully Written Out
+
+- Point Deductions
+    - [ ] AI Overuse / AI Generated - 0 Points
+    - [ ] Not enough commits submitted - 4 pts
+    - [ ] Submitted to incorrect repository - 0 points
+    - [ ] Submitted past due date - 0 points
+    - [ ] Submitted non-markdown (incorrect extensions / no use of markdown for formatting) - 0 points
+    - [ ] Submitted some markdown (legible enough for grading), but needs improvement - (-10%)
+    - [ ] Failure to cite resources - (-10%)
