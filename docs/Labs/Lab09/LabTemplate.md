@@ -28,6 +28,7 @@ Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab09/Inst
 | Resume a suspended process by PID |     |
 
 2. `ps` fields table:
+
 | `ps` field | Meaning |
 | ---        | ---     |
 | PID        |         |
@@ -94,6 +95,7 @@ Insert output here
 ## Part 4 - Detach
 
 1. Table of `tmux` commands and keybinds:
+
 |  Action   |  Command or Keybind   |  
 | ---       | --- | 
 | Start a new session and set a name   |     |  
