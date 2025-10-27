@@ -69,7 +69,8 @@ Create a second `ssh` session to your AWS instance.  You should now have two `ss
 | Pause / suspend a process by PID  |     |
 | Resume a suspended process by PID |     |
 
-2. Expalin the meaning of the following `ps` fields:
+2. Explain the meaning of the following `ps` fields:
+
 | `ps` field | Meaning |
 | ---        | ---     |
 | PID        |         |
