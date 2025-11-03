@@ -54,7 +54,7 @@ For the remainder of this lab, you will be running this game to practice control
 
 Create a second `ssh` session to your AWS instance.  You should now have two `ssh` sessions to your AWS instance.  This will be referred to as Shell A and Shell B in the exercises below - you decide which is A and which is B.
 
-- **Useful Commands: `pstree`, `ps`, `kill`, `psgrep`, `top` / `htop`**
+- **Useful Commands: `pstree`, `ps`, `kill`, `pgrep`, `top` / `htop`**
 
 1. Fill out the following table of process related commands:
 
@@ -142,7 +142,7 @@ The perhaps obtuse goal of the previous two exercises is to understand process c
 | Start a new session and set a name   |     |  
 | List `tmux` sessions                 |     |
 | Attach to session by name            |     |
-| Kell session by name                 |     |
+| Kill session by name                 |     |
 | Detach from session                  |     |
 | Split pane horizontally              |     |
 | Split pane vertically                |     |

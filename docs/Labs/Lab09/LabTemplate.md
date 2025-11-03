@@ -101,7 +101,7 @@ Insert output here
 | Start a new session and set a name   |     |  
 | List `tmux` sessions                 |     |
 | Attach to session by name            |     |
-| Kell session by name                 |     |
+| Kill session by name                 |     |
 | Detach from session                  |     |
 | Split pane horizontally              |     |
 | Split pane vertically                |     |
