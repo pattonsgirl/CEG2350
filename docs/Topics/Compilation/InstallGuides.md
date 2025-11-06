@@ -1,0 +1,27 @@
+## C / C++ 
+
+### Linux (Ubuntu)
+
+`sudo apt install build-essentials`
+
+Checks:
+```
+$ gcc --version
+$ cmake --verson
+```
+
+### Windows
+
+Download and install [MSYS2](https://www.msys2.org/)
+
+Open `Msys2 MinGW64 Shell`.  Run the following:  
+`pacman -S mingw-w64-x86_64-toolchain`  
+`pacman -S mingw-w64-x86_64cmake`  
+
+Add the `mingw64` binary folder to PATH: `C:\msys64\mingw64\bin`
+
+Checks:
+```
+PS > gcc --version
+PS > cmake --verson
+```
