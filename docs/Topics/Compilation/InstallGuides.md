@@ -27,3 +27,8 @@ PS > cmake --verson
 ```
 
 > [!WARN] The [VSCode x MinGW instructions](https://code.visualstudio.com/docs/cpp/config-mingw#_prerequisites) **do not** include the correct `pacman` packages for `cmake`
+
+### VS Code Extensions
+
+[C/C++ for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+- The C/C++ extension adds language support for C/C++ to Visual Studio Code, including editing (IntelliSense) and debugging features.
