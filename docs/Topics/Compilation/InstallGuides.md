@@ -25,3 +25,5 @@ Checks:
 PS > gcc --version
 PS > cmake --verson
 ```
+
+> [!WARN] The [VSCode x MinGW instructions](https://code.visualstudio.com/docs/cpp/config-mingw#_prerequisites) **do not** include the correct `pacman` packages for `cmake`
