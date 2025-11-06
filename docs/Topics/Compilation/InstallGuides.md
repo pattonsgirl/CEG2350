@@ -32,3 +32,9 @@ PS > cmake --verson
 
 [C/C++ for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
 - The C/C++ extension adds language support for C/C++ to Visual Studio Code, including editing (IntelliSense) and debugging features.
+
+### vim plugins
+
+[YouCompleteMe](http://github.com/ycm-core/YouCompleteMe?tab=readme-ov-file)
+
+[clang_complete](https://github.com/xavierd/clang_complete)
