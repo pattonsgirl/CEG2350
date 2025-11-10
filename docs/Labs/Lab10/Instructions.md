@@ -203,6 +203,8 @@ Resources:
 
 ## Extra Credit - `git` tools
 
+**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main
+
 Choose one of the below CLI git tools:
 - [gith - TUI tool](https://github.com/a3chron/gith)
 - [lazygit - TUI tool](https://github.com/jesseduffield/lazygit)
