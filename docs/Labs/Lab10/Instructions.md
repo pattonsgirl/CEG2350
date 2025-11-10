@@ -161,7 +161,7 @@ double approx_pi(int n) {
 }
 ```
 
-4. Test that the program still compiles and the resulting executable still works as expected.
+3. Test that the program still compiles and the resulting executable still works as expected.
 
 Resources:
 - [(Video) SuperSimpleDev - Git Branching and Merging Tutorial](https://www.youtube.com/watch?v=Q1kHG842HoI&ab_channel=SuperSimpleDev)
@@ -203,7 +203,15 @@ Resources:
 
 ## Extra Credit - `git` tools
 
+Choose one of the below CLI git tools:
+- [gith - TUI tool](https://github.com/a3chron/gith)
+- [lazygit - TUI tool](https://github.com/jesseduffield/lazygit)
+- [fugitive - git for vim](https://github.com/tpope/vim-fugitive)
+- [gh - GitHub CLI Tool](https://cli.github.com/manual/)
+   - demo would need to show "advanced use" - such as issue generation or PR interaction
+- We are open to other `git` workflow improvement tools - TA / instructor approval is required, and the tool must be more than a visualizer (there are a lot of `git` `log` visualizers out there - this ec is for something to assist with `git` usage)
 
+Install it to your CLI / enable it in a tool, than add instructions to your Lab Template and show proof of what it can do!
 
 ## Submission
 
