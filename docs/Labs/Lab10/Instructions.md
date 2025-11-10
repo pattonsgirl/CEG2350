@@ -135,9 +135,9 @@ If you already added your executable for tracking, remove it from future trackin
    - Just `git rm` would delete it from your working directory ("filesystem") and from tracking.  The `--cached` flag remove it only from tracking.
 
 Resources:
-- [GitHub Docs - Ignoring files](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files)
-- [Git Docs - `gitignore` Documentation](https://git-scm.com/docs/gitignore)
-- [Example `.gitignore` file](/.gitignore)
+- [Ignoring files - GitHub Docs](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files)
+- [`gitignore` Documentation - git-scm](https://git-scm.com/docs/gitignore)
+- [Example `.gitignore` file](https://github.com/pattonsgirl/CEG2350/blob/main/.gitignore)
 
 ## Part 4 - Document
 
