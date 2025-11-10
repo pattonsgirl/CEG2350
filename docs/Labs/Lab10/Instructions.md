@@ -50,7 +50,7 @@ Let's practice!
 3. `push` your changes to your `branch` - GitHub won't know what branch you are talking about - read the output, it will help you do the next step to `push` your `branch` to GitHub!
 4. Verify that you like the way the markdown turned out now that it's been pushed to GitHub (make sure you are viewing the right `branch`!)
 5. `merge` your change from your branch to `main`.
-6. Mark your issue as resolved!  Optionally, you make close the branch.
+6. Mark your issue as resolved!  Optionally, you may close the branch.
 
 
 Fill out the `git` guide table so you have a resource of useful commands you can refer to throughout the lab!  The Notes column should have any "notes to self" you want to leave behind - easy oopsies to make, double check something, etc.
