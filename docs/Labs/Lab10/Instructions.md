@@ -209,7 +209,7 @@ Choose one of the below CLI git tools:
 - [gith - TUI tool](https://github.com/a3chron/gith)
 - [lazygit - TUI tool](https://github.com/jesseduffield/lazygit)
 - [fugitive - git for vim](https://github.com/tpope/vim-fugitive)
-- [gh - GitHub CLI Tool](https://cli.github.com/manual/)
+- [gh - GitHub CLI Tool](https://github.com/cli/cli#installation) - its [`manual` is here](https://cli.github.com/manual/)
    - demo would need to show "advanced use" - such as issue generation or PR interaction
 - We are open to other `git` workflow improvement tools - TA / instructor approval is required, and the tool must be more than a visualizer (there are a lot of `git` `log` visualizers out there - this ec is for something to assist with `git` usage)
 
