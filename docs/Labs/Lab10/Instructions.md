@@ -43,6 +43,16 @@ If you make mistakes with commands in the lab, note them!  Writing down what wen
 
 **One merge** must be completed via a **Pull Request** - all others should be done via branch merging on the command line.
 
+Let's practice!
+
+1. Create an Issue - title it `git guide - Part 0`.
+2. Create a branch - on the branch, open your lab template file, fill in the `git` guide below.  Make `commit`s on the branch.
+3. `push` your changes to your `branch` - GitHub won't know what branch you are talking about - read the output, it will help you do the next step to `push` your `branch` to GitHub!
+4. Verify that you like the way the markdown turned out now that it's been pushed to GitHub (make sure you are viewing the right `branch`!)
+5. `merge` your change from your branch to `main`.
+6. Mark your issue as resolved!  Optionally, you make close the branch.
+
+
 Fill out the `git` guide table so you have a resource of useful commands you can refer to throughout the lab!  The Notes column should have any "notes to self" you want to leave behind - easy oopsies to make, double check something, etc.
 
 | Task                                                    | Command(s) / Steps | Notes |
