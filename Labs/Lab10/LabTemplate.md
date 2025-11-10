@@ -3,27 +3,46 @@
 - Name:
 - Email:
 
+## Part 0 - Issues & Branches
+
+**`git` branch guide**
+
+| Task                                                    | Command(s) / Steps | Notes |
+| ------------------------------------------------------- | ------------------ | ----- |
+| **Create a branch**                                     |                    |       |
+| **Change to branch**                                    |                    |       |
+| **Add branch to remote if created locally (GitHub)**    |                    |       |
+| **Steps to `merge` changes to another branch (`main`)** |                    |       |
+| **Steps to resolve a `merge` conflict**                 |                    |       |
+
+
 ## Part 1 - Compilers
 
-Your Operating System:
+**Installing the compiler for different OSes**
 
-Your AWS instance's Operation System:
+| Language         | Compiler           | Linux (Ubuntu/Debian)    | macOS       |Windows        | 
+| ---------------- | ------------------ | ------------------------ | ----------- | ------------- | 
+| **C / C++**      | GCC / G++          | `sudo apt install build-essential`     | `xcode-select --install`  | Install **MinGW** via [MSYS2](https://www.msys2.org/) <br>→ `pacman -S mingw-w64-x86_64-gcc` |
+| **Java**         | OpenJDK            |                          |             |                |                |
+| **Python**       | Python             |                          |             |                |                |
 
-- Java
-   - How to install on your OS:
-   - How to install on OS on AWS: 
-- C++
-   - How to install on your OS:
-   - How to install on OS on AWS: 
-- Python
-   - How to install on your OS:
-   - How to install on OS on AWS: 
+**Verifying install location & verison**
 
-Web based IDEs: 
+| Language       | OS                    | Confirm Installation Command | Check Version Command | Expected Output Example                          |
+| -------------- | --------------------- | ---------------------------- | --------------------- | ------------------------------------------------ |
+| **C (GCC)**    | Linux                 | `which gcc`                  | `gcc --version`       | `gcc (Ubuntu 13.2.0) 13.2.0`                     |
+|                | macOS                 | `which gcc`                  | `gcc --version`       | `Apple clang version 15.0.0 (clang-1500.0.40.1)` |
+|                | Windows (MSYS2/MinGW) | `where gcc`                  | `gcc --version`       | `gcc.exe (Rev10, Built by MSYS2 project) 13.2.0` |
+| **C++ (G++)**  | Linux                 | `which g++`                  | `g++ --version`       | `g++ (Ubuntu 13.2.0) 13.2.0`                     |
+|                | macOS                 | `which clang++`              | `clang++ --version`   | `Apple clang version 15.0.0`                     |
+|                | Windows               | `where g++`                  | `g++ --version`       | `g++.exe (Rev10, Built by MSYS2 project) 13.2.0` |
+| **Java (JDK)** | Linux                 |                              |                       |                                                  |
+|                | macOS                 |                              |                       |                                                  |
+|                | Windows               |                              |                       |                                                  |
+| **Python 3**   | Linux                 |                              |                       |                                                  |
+|                | macOS                 |                              |                       |                                                  |
+|                | Windows               |                              |                       |                                                  |
 
-- Java
-- C++
-- Python
 
 ## Part 2 - Compiling
 
@@ -33,7 +52,13 @@ Web based IDEs:
 4. Command(s) to compile the source code into an executable program:
 5. Command(s) to execute the program:
 
-## Part 3 - Document
+## Part 3 - Ignore That
+
+Remove this statement and the exclamation point from the line below so TAs can click to check for a working `.gitignore` file.  Test that the link works - if it doesn't, fix the pathing.
+
+![`.gitignore` file in root of repository](../.gitignore)
+
+## Part 4 - Document
 
 ### Program User Guide
 
@@ -43,19 +68,7 @@ Web based IDEs:
 
 #### How to Use Program
 
-### `git` `branch` Guide
-
-Create a branch:
-
-Change to branch:
-
-Add branch to remote if created locally (GitHub):
-
-Steps to `merge` changes to another branch (`main`):
-
-Steps to resolve a `merge` conflict: 
-
-## Part 4 - `makey makey`
+## Part 5 - `makey makey`
 
 Using `Makefile` to build executable:
 
@@ -63,11 +76,15 @@ Using `Makefile` to run program:
 
 Using `Makefile` to remove compilation files, such as the executable: 
 
-## Extra Credit - Ignore That
+## Extra Credit - `git` tools
 
-Remove this statement and the exclamation point from the line below so TAs can click to check for a working `.gitignore` file.  Test that the link works - if it doesn't, fix the pathing.
+`git` tool selected:
 
-![`.gitignore` file in root of repository](../.gitignore)
+How to install this tool:
+
+Screenshot proof of it in action!
+
+![Insert screenshot here](path/to/screenshot)
 
 ## Citations
 
