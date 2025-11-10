@@ -1,127 +1,90 @@
-## Lab 09
+## Lab 10
 
 - Name:
 - Email:
 
-Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab09/Instructions.html
+## Part 0 - Issues & Branches
 
-## Part 1 - Game the system
+**`git` branch guide**
 
-- Game name: 
-- How to install:
-- Location of game executable:
-- How to run game:
+| Task                                                    | Command(s) / Steps | Notes |
+| ------------------------------------------------------- | ------------------ | ----- |
+| **Create a branch**                                     |                    |       |
+| **Change to branch**                                    |                    |       |
+| **Add branch to remote if created locally (GitHub)**    |                    |       |
+| **Steps to `merge` changes to another branch (`main`)** |                    |       |
+| **Steps to resolve a `merge` conflict**                 |                    |       |
 
-## Part 2 - Process Control
 
-1. Table of process related commands:
+## Part 1 - Compilers
 
-|  Action   |  Command or Keybind   |  
-| ---       | --- | 
-| Check process CPU/memory usage |     |
-| Show running processes         |     |
-| Show detailed process tree     |     |
-| Find a process by name         |     |
-| Kill a process by PID          |     |
-| Force kill a process by PID    |     |
-| Pause / suspend a process by PID  |     |
-| Resume a suspended process by PID |     |
+**Installing the compiler for different OSes**
 
-2. `ps` fields table:
+| Language         | Compiler           | Linux (Ubuntu/Debian)    | macOS       |Windows        | 
+| ---------------- | ------------------ | ------------------------ | ----------- | ------------- | 
+| **C / C++**      | GCC / G++          | `sudo apt install build-essential`     | `xcode-select --install`  | Install **MinGW** via [MSYS2](https://www.msys2.org/) <br>→ `pacman -S mingw-w64-x86_64-gcc` |
+| **Java**         | OpenJDK            |                          |             |                |                |
+| **Python**       | Python             |                          |             |                |                |
 
-| `ps` field | Meaning |
-| ---        | ---     |
-| PID        |         |
-| PPID       |         |
-| UID / USER |         |
-| TTY        |         |
-| STAT       |         |
-| COMMAND / CMD |         |
-| %CPU       |         |
-| %MEM       |         |
-| PSR        |         |
+**Verifying install location & verison**
 
-3. `ps` command:
-4. Output of `ps` with two shells, one running the game:
-```
-Output of command goes here
-```
-5. For the game:
-   - Process id: 
-   - Parent process id: 
-   - What is the parent process: 
-6. `kill` to kill only the game:
-   - Describe what the effect was: 
-7. `kill` to kill the game and it's parent process: 
-   - Describe what the effect was:
-8. Describe what happens if you close / `exit` your connection with Shell C and determine if you can reenter the game (resume the process).
-   - Answer: 
+| Language       | OS                    | Confirm Installation Command | Check Version Command | Expected Output Example                          |
+| -------------- | --------------------- | ---------------------------- | --------------------- | ------------------------------------------------ |
+| **C (GCC)**    | Linux                 | `which gcc`                  | `gcc --version`       | `gcc (Ubuntu 13.2.0) 13.2.0`                     |
+|                | macOS                 | `which gcc`                  | `gcc --version`       | `Apple clang version 15.0.0 (clang-1500.0.40.1)` |
+|                | Windows (MSYS2/MinGW) | `where gcc`                  | `gcc --version`       | `gcc.exe (Rev10, Built by MSYS2 project) 13.2.0` |
+| **C++ (G++)**  | Linux                 | `which g++`                  | `g++ --version`       | `g++ (Ubuntu 13.2.0) 13.2.0`                     |
+|                | macOS                 | `which clang++`              | `clang++ --version`   | `Apple clang version 15.0.0`                     |
+|                | Windows               | `where g++`                  | `g++ --version`       | `g++.exe (Rev10, Built by MSYS2 project) 13.2.0` |
+| **Java (JDK)** | Linux                 |                              |                       |                                                  |
+|                | macOS                 |                              |                       |                                                  |
+|                | Windows               |                              |                       |                                                  |
+| **Python 3**   | Linux                 |                              |                       |                                                  |
+|                | macOS                 |                              |                       |                                                  |
+|                | Windows               |                              |                       |                                                  |
 
-## Part 3 - back and fore
 
-1. Fill out the following table of job control commands and keybinds:
+## Part 2 - Compiling
 
-|  Action   |  Command or Keybind   |  
-| ---       | --- | 
-| Show current jobs               |     |
-| Run a command in background     |     |
-| Pause current foreground job    |     |
-| Send job to the background      |     |
-| Bring job to the foreground     |     |
-| Kill a background / stopped job |     |
+1. Method & command to get a copy of the source code files:
+2. Command(s) to install the C/C++ compiler on Ubuntu:
+3. Command(s) to confirm the installation of the C/C++ compiler on Ubuntu:
+4. Command(s) to compile the source code into an executable program:
+5. Command(s) to execute the program:
 
-2. Run in the foreground: 
-3. `STOP` signal to suspend it: 
-4. Proof of life from `ps` output:
-```
-insert line here
-```
-5. Resume in the foreground:
-6. `TERMINATE` signal to kill it: 
-7. Start as a background process: 
-8. Output of `jobs` from controlling terminal:
-```
-Insert output here
-```
-Output of `ps`:
-```
-Insert output here
-```
-9. Kill job:
-10. Move job to the foreground: 
-11. Describe what happens, using process knowledge in your description, if you close / `exit` your connection with this shell and determine if you can reenter the game (resume the process).
-   - Answer: 
+## Part 3 - Ignore That
 
-## Part 4 - Detach
+Remove this statement and the exclamation point from the line below so TAs can click to check for a working `.gitignore` file.  Test that the link works - if it doesn't, fix the pathing.
 
-1. Table of `tmux` commands and keybinds:
+![`.gitignore` file in root of repository](../.gitignore)
 
-|  Action   |  Command or Keybind   |  
-| ---       | --- | 
-| Start a new session and set a name   |     |  
-| List `tmux` sessions                 |     |
-| Attach to session by name            |     |
-| Kill session by name                 |     |
-| Detach from session                  |     |
-| Split pane horizontally              |     |
-| Split pane vertically                |     |
-| Switch panes                         |     |
-| Close pane                           |     |
+## Part 4 - Document
 
-2. Create a `tmux` session:
-3. Detach from the session:
-4. `ps` command:
-```
-Output of command goes here
-```
-5. Command to list `tmux` sessions:
-```
-Output of command goes here
-```
-6. How can you determine if your `tmux` session with your game running is available?
-   - Answer: 
-7. Reattach to `tmux` session:
-8. Kill `tmux` session: 
+### TODO Program User Guide
+
+#### Program Description
+
+#### How to Build and Run Program
+
+#### How to Use Program
+
+## Part 5 - `makey makey`
+
+Using `Makefile` to build executable:
+
+Using `Makefile` to run program:
+
+Using `Makefile` to remove compilation files, such as the executable: 
+
+## Extra Credit - `git` tools
+
+`git` tool selected:
+
+How to install this tool:
+
+Screenshot proof of it in action!
+
+![Insert screenshot here](path/to/screenshot)
 
 ## Citations
 

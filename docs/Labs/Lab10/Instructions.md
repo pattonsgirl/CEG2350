@@ -36,7 +36,7 @@ If you make mistakes with commands in the lab, note them!  Writing down what wen
 **Useful `git` commands: `branch`, `switch`, `commit`, `push`, `merge`**
 
 0. To begin, create and add the Lab Template to your `main` branch in your `Lab10` folder
-1. In your GitHub repository, go to the `Issues` tab.  Create an Issue **for each part** of this lab.
+1. In your GitHub repository, go to the `Issues` tab.  Create an Issue **for each part** of this lab - you may do this all at once or as you start each part.
 2. Through this lab, you will create **one** branch **for each** issue.
 3. Merge the branch with the `main` branch as your **complete each part**.  You may then mark your issue as complete.
 4. If you make **adjustments after merging** you need to create an Issue describing what needs correcting, then resolve the issue.
@@ -65,6 +65,8 @@ Fill out the `git` guide table so you have a resource of useful commands you can
 
 
 ## Part 1 - Compilers
+
+**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main
 
 Fill out the following charts regarding the three most commonly used languages - C/C++, Java, and Python.  The bonus is you'll make a guide for yourself on how to install these or how to check if they are already available.  I'm going to give you the answers for C / C++ - you'll need to complete the chart for Java and Python.
 
@@ -96,6 +98,8 @@ Fill out the following charts regarding the three most commonly used languages -
 
 ## Part 2 - [Compiling](https://xkcd.com/303/)
 
+**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main
+
 **Useful Commands: `gcc`, `g++`, `wget`**
 
 1. Select from either [TODO-C](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab10/TODO-C) or [TODO-CPP](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab10/TODO-CPP). Download the files in the folder to the `Lab10` folder in your repository folder.  `add`, `commit` and `push` the source code files.
@@ -104,12 +108,15 @@ Fill out the following charts regarding the three most commonly used languages -
    - It is recommended to query for the version of the program to validate installation.
 4. Using your AWS instance, compile the source code into an executable program.
 5. Using your AWS instance, run the executable program.
+6. Add the program source code file - `.c` or `.cpp` files - to your repository.  Do not add the compiled executable for tracking.
 
 Resources:
 - [Scaler - Compilation Process in C](https://www.scaler.com/topics/c/compilation-process-in-c/)
 - [Compiling With Multiple Source Files - Emory](http://www.cs.emory.edu/~cheung/Courses/255/Syllabus/1-C-intro/declare-func1b.html)
 
 ## Part 3 - Ignore That
+
+**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main
 
 In the root folder of your GitHub repository, create a `.gitignore` file and prevent tracking of your executable programs.  
 
@@ -123,12 +130,18 @@ Resources:
 
 ## Part 4 - Document
 
+**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main
+
+Using the source code you downloaded and the program you compiled in Part 2:
+
 1. Fill in the User Guide section with a user guide for the program.  Provide clear and concise instructions on what the program is (its purpose), how to build and run it, and how to use the program.
-2. Create a branch in your repository folder.  Create commits on the branch to complete the task 3.  Push your commits on the branch to GitHub.
-3. For all functions in the `.c` or `.cpp` files, add a comment block that includes the following:
+2. For all functions in the `.c` or `.cpp` files, add a comment block that includes the following:
    - What function does
    - What its parameter values are
    - what values it returns (if a function returns one type of value usually, and another value to indicate an error, your comment should describe both of these types of return values).
+
+Example of best practice formatting - do this for each function in your `.c` or `.cpp` files:
+
 ```cpp
 /*
  * Function:  approx_pi 
@@ -147,11 +160,8 @@ double approx_pi(int n) {
   ...
 }
 ```
-4. Test that your program still compiles and the resulting executable still works as expected.
-5. Merge your commits with the `main` branch - do not delete the branch.  Make sure what's visible in GitHub is:
-   - your branch where you made the commits to comment the code base (do not delete the branch)
-   - the code files, visible in `main`, now with comments on functions after the merge
-6. Fill out the `git` `branch` Guide with commands used to work with branches.
+
+4. Test that the program still compiles and the resulting executable still works as expected.
 
 Resources:
 - [(Video) SuperSimpleDev - Git Branching and Merging Tutorial](https://www.youtube.com/watch?v=Q1kHG842HoI&ab_channel=SuperSimpleDev)
@@ -162,9 +172,11 @@ Resources:
 
 ## Part 5 - [`makey makey`](https://www.youtube.com/watch?v=X1mYalegtdI&ab_channel=MakeyMakey)
 
+**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main
+
 **Useful commands: `make`**
 
-Write a `Makefile` in the directory with your code files.
+Write a `Makefile` for the source code file you downloaded in Part 2.
 
 **Make a commit after creating (and testing the operation of) each target**
 
@@ -183,7 +195,7 @@ Test the targets in your `Makefile`.
 Create a set of instructions for using your `Makefile` to perform its different taskings.
 
 Resources:
-- [In-Class `Makefile` demonstration](../../processes/Makefile)
+- [`Makefile` demonstration](https://github.com/pattonsgirl/CEG2350/blob/main/code/Makefile)
    - See slide deck for explanation and use to use `make` to call targets
 - [RedSwitches - `make` command in Linux](https://www.redswitches.com/blog/make-command-in-linux/)
 - [IOFlood - `make` command](https://ioflood.com/blog/make-linux-command/)
