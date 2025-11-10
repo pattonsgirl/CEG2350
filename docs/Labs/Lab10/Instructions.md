@@ -63,6 +63,17 @@ Fill out the `git` guide table so you have a resource of useful commands you can
 | **Steps to `merge` changes to another branch (`main`)** |                    |       |
 | **Steps to resolve a `merge` conflict**                 |                    |       |
 
+**Resources**
+- [Quickstart for GitHub Issues - GitHub Docs](https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/quickstart)
+- [Git Cheat Sheet - git-scm](https://git-scm.com/cheat-sheet)
+- [Git Branching - Branches in a Nutshell - git-scm](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+- [Git Branching - Basic Branching and Merging - git-scm](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+- [About branches - GitHub Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
+- [Working with branches on GitHub - GitHub Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository)
+- [About Pull Requests - GitHub Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+- [Creating a Pull Request - GitHub Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+- [Managing pull request reviews in your repository - GitHub Docs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-pull-request-reviews-in-your-repository)
+- [Git merge conflicts - Atlassian](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts)
 
 ## Part 1 - Compilers
 
