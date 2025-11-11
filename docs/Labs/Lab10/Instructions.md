@@ -122,8 +122,8 @@ Fill out the following charts regarding the three most commonly used languages -
 5. Using your AWS instance, run the executable program.
 6. Add the program source code file - `.c` or `.cpp` files - to your repository.  Do not add the compiled executable for tracking.
 
-Resources:
-- [Scaler - Compilation Process in C](https://www.scaler.com/topics/c/compilation-process-in-c/)
+**Resources:**
+- [Compilation Process in C - Scaler](https://www.scaler.com/topics/c/compilation-process-in-c/)
 - [Compiling With Multiple Source Files - Emory](http://www.cs.emory.edu/~cheung/Courses/255/Syllabus/1-C-intro/declare-func1b.html)
 
 ## Part 3 - Ignore That
@@ -199,11 +199,11 @@ Test the targets in your `Makefile`.
 
 Create a set of instructions for using your `Makefile` to perform its different taskings.
 
-Resources:
-- [`Makefile` demonstration](https://github.com/pattonsgirl/CEG2350/blob/main/code/Makefile)
+**Resources:**
+- [`Makefile` example](https://github.com/pattonsgirl/CEG2350/blob/main/code/Makefile)
    - See slide deck for explanation and use to use `make` to call targets
-- [RedSwitches - `make` command in Linux](https://www.redswitches.com/blog/make-command-in-linux/)
-- [IOFlood - `make` command](https://ioflood.com/blog/make-linux-command/)
+- [`make` command in Linux - Redswitches](https://www.redswitches.com/blog/make-command-in-linux/)
+- [`make` command - IOFlood](https://ioflood.com/blog/make-linux-command/)
    - Includes CMake and AutoTools, which are out of scope for course but good to note.
 
 ## Extra Credit - `git` tools
