@@ -66,6 +66,7 @@ Fill out the `git` guide table so you have a resource of useful commands you can
 **Resources**
 - [Quickstart for GitHub Issues - GitHub Docs](https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/quickstart)
 - [Git Cheat Sheet - git-scm](https://git-scm.com/cheat-sheet)
+- [(Video) SuperSimpleDev - Git Branching and Merging Tutorial](https://www.youtube.com/watch?v=Q1kHG842HoI&ab_channel=SuperSimpleDev)
 - [Git Branching - Branches in a Nutshell - git-scm](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
 - [Git Branching - Basic Branching and Merging - git-scm](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 - [About branches - GitHub Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
@@ -173,13 +174,6 @@ double approx_pi(int n) {
 ```
 
 3. Test that the program still compiles and the resulting executable still works as expected.
-
-Resources:
-- [(Video) SuperSimpleDev - Git Branching and Merging Tutorial](https://www.youtube.com/watch?v=Q1kHG842HoI&ab_channel=SuperSimpleDev)
-- [SuperSimpleDev - `git` / GitHub reference guide](https://supersimpledev.github.io/references/git-github-reference.pdf)
-- [FreeCodeCamp - Git Branching Commands Explained with Examples](https://www.freecodecamp.org/news/git-branching-commands-explained/)
-- [Geeks for Geeks - How to Set Upstream Branch on Git?](https://www.geeksforgeeks.org/how-to-set-upstream-branch-on-git/)
-- [MIT - Git command-line interface](https://missing.csail.mit.edu/2020/version-control/)
 
 ## Part 5 - [`makey makey`](https://www.youtube.com/watch?v=X1mYalegtdI&ab_channel=MakeyMakey)
 
