@@ -168,8 +168,9 @@ When you see a reference to **local system**, this means your system - *not your
 8. Write the `ssh` command that will use your `config` file information if correctly entered.
 
 **Resources**
-- [Linuxize - Using the SSH Config File](https://linuxize.com/post/using-the-ssh-config-file/)
-- [DigitalOcean - How to Configure SSH Key Based Authentication](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
+- [SSH Essentials: Working with SSH Servers, Clients, and Keys - DigitalOcean](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys)
+- [How to Configure SSH Key Based Authentication - DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
+- [Using the SSH Config File - Linuxize](https://linuxize.com/post/using-the-ssh-config-file/)
 
 ## Submission
 
