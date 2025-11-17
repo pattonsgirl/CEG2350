@@ -94,7 +94,7 @@ Do the following on your AWS instance.
 
 1. Install `apache2` or `nginx` with `apt`
 2. Confirm that your chosen web serving service is running
-3. Download `simple-site.tar.gz` to your AWS instance
+3. Download [`simple-site.tar.gz`](https://github.com/pattonsgirl/CEG2350/blob/main/Labs/Lab11/simple-site.tar.gz) to your AWS instance
    - [URL to download .tar.gz file](https://github.com/pattonsgirl/CEG2350/raw/refs/heads/main/Labs/Lab11/simple-site.tar.gz)
 4. Change the permissions for the folder `/var/www/html` so that your user is the owner and primary group, your user (and members of your group) can read and write, and others can only read.
 5. Extract the compressed archive to `/var/www/html`
@@ -112,7 +112,7 @@ Do the following on your AWS instance.
 </section>
 ```
 
-> When you use `ssh`, you specify a `hostname` after the `@` sign. Typically a `hostname` is a pretty name the associates with the IP address of the server. We do not have a pretty name set up for your AWS instances, so the only way to address them is by their public IP address (as you've been doing all semester).
+When you use `ssh`, you specify a `hostname` after the `@` sign. Typically a `hostname` is a pretty name the associates with the IP address of the server. We do not have a pretty name set up for your AWS instances, so the only way to address them is by their public IP address (as you've been doing all semester).
 
 7. Open a browser on your local system (can't do it in AWS :wink:). Type your AWS instance's public IP into the URL bar. If your page shows, take a screenshot with the URL bar included.
    - **Note**: you may need to explicitly type `http://` in front of your AWS instance's public IP. We'll talk about it later.
