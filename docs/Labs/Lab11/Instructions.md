@@ -1,6 +1,7 @@
 # Lab 11 - tar, sftp, and ssh
 
 - [Lab Procedure](#lab-procedure)
+- [Part 0 - branch control](#part-0---branch-control)
 - [Part 1 - tar it up](#part-1---tar-it-up)
 - [Part 2 - SFTP](#part-2---sftp)
 - [Part 3 - Extract & Profit](#part-3---extract--profit)
