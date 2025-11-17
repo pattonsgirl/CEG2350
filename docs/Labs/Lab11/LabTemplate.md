@@ -8,22 +8,37 @@ Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab11/Inst
 ## Part 1 Answers:
 
 1. `tar` options:
-   - `-c`
-   - `-v`
-   - `-f`
-   - `-z`
-   - `-x`
-   - `-t`
+
+| `tar` Option | Description |
+|--------|------------------------|
+| `-c`   |                        |
+| `-v`   |                        |
+| `-f`   |                        |
+| `-z`   |                        |
+| `-x`   |                        |
+| `-t`   |                        |
+
 2. Command(s) to create and compress your archive:
+
+3. Method(s) used to prove your archive is compressed: 
 
 ## Part 2 Answers:
 
-1. Command to connect with `sftp`:
-2. `sftp` options:
-   - `ls`
-   - `lls`
-   - `put`
-   - `get`
+1. `sftp` commands:
+
+| `sftp` Command | Description |
+|---------|------------------------|
+| `ls`    |                        |
+| `lls`   |                        |
+| `cd`    |                        |
+| `lcd`   |                        |
+| `pwd`   |                        |
+| `lpwd`  |                        |
+| `put`   |                        |
+| `get`   |                        |
+| `exit` / `bye` |                 |
+
+2. Command to connect with `sftp`:
 3. Command(s) to use `sftp` to download your `.tar.gz` file to your system:
 4. Command(s) to decompress & extract your `.tar.gz` file to your system:
 

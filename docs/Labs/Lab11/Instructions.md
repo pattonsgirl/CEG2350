@@ -34,34 +34,54 @@ With the semester wrapping up, it's time to prepare to lose access to your insta
 
 Do the following on your AWS instance.  
 
-1. For the `tar` command, write what each option below does:
-   - `-c`
-   - `-v`
-   - `-f`
-   - `-z`
-   - `-x`
-   - `-t`
-2. `tar` and compress folders of your choice. Write the command you used. You will not be committing this to GitHub - it does not need to be in your repository folder and may in fact be too large to push to GitHub.
+**Useful commands: `tar`, `gzip`, `file`**
 
-- **Resources**
-- [cyberciti - tar on the command line](https://www.cyberciti.biz/faq/how-to-tar-a-file-in-linux-using-command-line/)
-- [tecmint - tar command examples](https://www.tecmint.com/18-tar-command-examples-in-linux/)
-- [Linux for Devices - Understanding the tar Command in Linux](https://www.linuxfordevices.com/tutorials/linux/tar-command-in-linux)
+1. For the `tar` command, fill in the table describing the most frequently used flags:
+
+| `tar` Option | Description      |
+|--------|------------------------|
+| `-c`   |                        |
+| `-v`   |                        |
+| `-f`   |                        |
+| `-z`   |                        |
+| `-x`   |                        |
+| `-t`   |                        |
+
+2. `tar` and compress folders of your choice using `gzip` compression. Write the command you used. 
+
+**Do NOT add and commit your `tar` and compressed file to GitHub.** It does not need to be in your repository folder and may in fact be too large to push to GitHub.
+
+3. Determine *at least* one method to confirm your `tar` and compressed file is a `tar` and compressed file. Just stating it has a `.tar.gz` extension will not be sufficient for credit.
+
+**Resources**
+- [tar on the command line - cyberciti](https://www.cyberciti.biz/faq/how-to-tar-a-file-in-linux-using-command-line/)
+- [tar command examples - tecmint](https://www.tecmint.com/18-tar-command-examples-in-linux/)
+- [Understanding the tar Command in Linux - Linux for Devices](https://www.linuxfordevices.com/tutorials/linux/tar-command-in-linux)
 
 ## Part 2 - SFTP
 
-For this part, start on your local system, likely in WSL2.  
+1. For the `sftp` command, fill in the table describing the most frequently used commands within the program:
 
-1. Connect to your AWS instance via `sftp`.
-2. Describe what the following options do:
-   - `ls`
-   - `lls`
-   - `put`
-   - `get`
-3. Retrieve the `tar` and compressed file (`.tar.gz`) from your AWS instance and download it to your local system
-4. Decompress & extract the file (`.tar.gz`) to a folder on your system (you can remove it after you get the command right, I'm not a space hog)
+| `sftp` Command | Description |
+|---------|------------------------|
+| `ls`    |                        |
+| `lls`   |                        |
+| `cd`    |                        |
+| `lcd`   |                        |
+| `pwd`   |                        |
+| `lpwd`  |                        |
+| `put`   |                        |
+| `get`   |                        |
+| `exit` / `bye` |                 |
 
-- **Resources**
+Confirm you are on your local system using the terminal you normally use to `ssh` to your instance. *Do not `ssh` to your instance*
+
+2. Connect to your AWS instance via `sftp`.
+3. Retrieve the `tar` and compressed file (ending with `.tar.gz`) from your AWS instance and download it to your local system
+4. Decompress & extract the file (`.tar.gz`) to a folder on your system 
+   - You can remove it after you get the command right, I'm not a space hog
+
+**Resources**
 - [DigitalOcean - how to use sftp](https://www.digitalocean.com/community/tutorials/how-to-use-sftp-to-securely-transfer-files-with-a-remote-server)
 
 ## Part 3 - Extract & Profit
@@ -73,25 +93,28 @@ Do the following on your AWS instance.
 - **Useful commands: `apt`, `systemctl`, `wget`, `chown`, `chmod`, `tar`, `vim`, `curl`**
 
 1. Install `apache2` or `nginx` with `apt`
-   - [Digital Ocean - Apache vs Nginx: Practical Considerations](https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations)
-2. Confirm that your chosen web serving service is running.
-3. Download [`simple-site.tar.gz`](simple-site.tar.gz) to your AWS instance.
+2. Confirm that your chosen web serving service is running
+3. Download `simple-site.tar.gz` to your AWS instance
    - [URL to download .tar.gz file](https://github.com/pattonsgirl/CEG2350/raw/refs/heads/main/Labs/Lab11/simple-site.tar.gz)
 4. Change the permissions for the folder `/var/www/html` so that your user is the owner and primary group, your user (and members of your group) can read and write, and others can only read.
 5. Extract the compressed archive to `/var/www/html`
 6. Edit the `index.html` file in `/var/www/html` with:
    - your name where `YOUR LAST NAME HERE` is.  Make this `div` visible
    - replace `Insert something fun here` with a fact about you
-   ```html
-   <section>
-            <h2>CEG 2350 Lab 11</h2>
-            <div style="display:none">YOUR NAME HERE</div>
-            <h3>Facts about me</h3>
-            <p>Insert something fun here</p>
-            
-   </section>
-   ```
+
+```html
+<section>
+         <h2>CEG 2350 Lab 11</h2>
+         <div style="display:none">YOUR NAME HERE</div>
+         <h3>Facts about me</h3>
+         <p>Insert something fun here</p>
+         
+</section>
+```
 7. View your website & confirm the changes requested were made (and visible!).  Take a screenshot with the URL bar included.
+
+**Resources**
+- [Digital Ocean - Apache vs Nginx: Practical Considerations](https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations)
 
 ## Part 4 - `ssh` keys
 
@@ -124,8 +147,6 @@ When you see a reference to **local system**, Windows users should assume I am r
 
 ## Rubric
 
-- Part 1 - 3 pts (1 pt each)
-   - 2 point for `tar` flags (.33 each)
-- Part 2 - 4 pts (1 pt each)
-- Part 3 - 7 pts (1 pt each)
-- Part 4 - 6 pts (1 pt each)
+Your files should be cleanly presented in your GitHub repository.  Citations should be included as needed.  Include which generative AI system was used and what prompts were used if generative AI was used.
+
+[Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab11/Rubric.md)
