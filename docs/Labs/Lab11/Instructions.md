@@ -28,6 +28,14 @@ Any resource that you use that contributes to your understanding of exercises in
 
 If you make mistakes with commands in the lab, note them!  Writing down what went wrong and what the correction was will significantly help your learning journey.  If you cannot find a correction, it will help the TAs or myself understand what point you reached and determine some potential solutions.
 
+## Part 0 - branch control
+
+Determine and **create** one or more GitHub Issues for this lab.
+
+Determine and **create** one or more `branch`es to resolve the Issues for this lab.
+
+In the end, your lab submission (`README.md`) should be visible on the `main` branch.
+
 ## Part 1 - tar it up
 
 With the semester wrapping up, it's time to prepare to lose access to your instances.  Identify folders of work on your AWS instance you would like to save.  If you have none, use the folder that contains your local copy of your GitHub repository.  While using GitHub to save work is an option, it is just as common to need to compress and transfer information.  It is not required, but is interesting to look the the size of these folders pre and post compression
@@ -114,7 +122,7 @@ Do the following on your AWS instance.
 
 When you use `ssh`, you specify a `hostname` after the `@` sign. Typically a `hostname` is a pretty name the associates with the IP address of the server. We do not have a pretty name set up for your AWS instances, so the only way to address them is by their public IP address (as you've been doing all semester).
 
-7. Open a browser on your local system (can't do it in AWS :wink:). Type your AWS instance's public IP into the URL bar. If your page shows, take a screenshot with the URL bar included.
+7. Open a browser on your local system (can't do it in AWS <p>&#128540;</p>). Type your AWS instance's public IP into the URL bar. If your page shows, take a screenshot with the URL bar included.
    - **Note**: you may need to explicitly type `http://` in front of your AWS instance's public IP. We'll talk about it later.
 
 **Resources**
