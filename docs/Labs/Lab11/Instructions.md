@@ -122,7 +122,7 @@ Do the following on your AWS instance.
 
 When you use `ssh`, you specify a `hostname` after the `@` sign. Typically a `hostname` is a pretty name the associates with the IP address of the server. We do not have a pretty name set up for your AWS instances, so the only way to address them is by their public IP address (as you've been doing all semester).
 
-7. Open a browser on your local system (can't do it in AWS <p>&#128540;</p>). Type your AWS instance's public IP into the URL bar. If your page shows, take a screenshot with the URL bar included.
+7. Open a browser on your local system (can't do it in AWS &#128540;). Type your AWS instance's public IP into the URL bar. If your page shows, take a screenshot with the URL bar included.
    - **Note**: you may need to explicitly type `http://` in front of your AWS instance's public IP. We'll talk about it later.
 
 **Resources**
