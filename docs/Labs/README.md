@@ -42,3 +42,7 @@
     - [Lab Template - Copy and Fill Out](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab10/LabTemplate.md)
     - [Lab Guide - Additional Resources & Demo Recommendations](Lab10/LabGuide.md)
     - [Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab10/Rubric.md)
+- [Lab 11 - tar, sftp, and ssh - Instructions](Lab11/Instructions.md)
+    - [Lab Template - Copy and Fill Out](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab11/LabTemplate.md)
+    - [Lab Guide - Additional Resources & Demo Recommendations](Lab11/LabGuide.md)
+    - [Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab11/Rubric.md)

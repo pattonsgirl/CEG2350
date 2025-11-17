@@ -3,6 +3,8 @@
 - Name:
 - Email:
 
+Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab10/Instructions.html
+
 ## Part 0 - Issues & Branches
 
 **`git` branch guide**
