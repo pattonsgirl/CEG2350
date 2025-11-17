@@ -2,7 +2,7 @@
 
 Your answers should be cleanly presented in your GitHub repository. Citations should be included as needed. Include which generative AI system was used and what prompts were used if generative AI was used.
 
-### Total Points /32
+### Total Points /34
 
 - Part 0 - 3 pts
     - [ ] Part 0 Branch Created
@@ -32,13 +32,20 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] `.gitignore` file is in repo
     - [ ] contents in `.gitignore` file
 
-- Part 4 - 6 pts
+- Part 4 - 8 pts
     - [ ] Part 4 Branch Created
     - [ ] Part 4 Issue Created
-    - [ ] TODO Program user guide
-    - [ ] Program Description
-    - [ ] How to build and run program
-    - [ ] How to use program
+    - TODO Program user guide
+      - [ ] Program Description
+      - [ ] How to build and run program
+      - [ ] How to use program
+   - Function comments in `utility.c` / `utility.cpp` (0.5 pts / each)
+      - [ ] `displayMenu`
+      - [ ] `addTask`
+      - [ ] `markTaskAsCompleted`
+      - [ ] `removeTask`
+      - [ ] `viewTodoList`
+      - [ ] `run`
 
 - Part 5 - 6 pts
     - [ ] Part 5 Branch Created
