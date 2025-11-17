@@ -46,7 +46,7 @@ Do the following on your AWS instance.
 
 1. For the `tar` command, fill in the table describing the most frequently used flags:
 
-| `tar` Option | Description      |
+| tar Option | Description      |
 |--------|------------------------|
 | `-c`   |                        |
 | `-v`   |                        |
@@ -70,7 +70,7 @@ Do the following on your AWS instance.
 
 1. For the `sftp` command, fill in the table describing the most frequently used commands within the program:
 
-| `sftp` Command | Description |
+| sftp Command | Description |
 |---------|------------------------|
 | `ls`    |                        |
 | `lls`   |                        |
@@ -138,7 +138,7 @@ When you see a reference to **local system**, this means your system - *not your
 
 1. Fill in the following table of commonly configured `ssh` files:
 
-| `ssh` File Path / Name          | Purpose            |
+| ssh File Path / Name          | Purpose            |
 |---------------------------------|--------------------|
 | `~/.ssh/config`                 |                    |
 | `~/.ssh/id_rsa`                 |                    |
@@ -150,7 +150,7 @@ When you see a reference to **local system**, this means your system - *not your
 
 2. Fill in the following table of options commonly used in a `config` file for `ssh`:
 
-| `ssh` `config` Option   | Description  |
+| ssh config Option   | Description  |
 |---------------|------------------------|
 | `Host`        |                        |
 | `HostName`    |                        |
