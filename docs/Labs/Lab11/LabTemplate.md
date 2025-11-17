@@ -54,29 +54,51 @@ Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab11/Inst
 
 ## Part 4 Answers:
 
-1. Command to generate a new key, with options entered into the fields 
+1. Commonly configured `ssh` files:
+
+| `ssh` File Path / Name          | Purpose            |
+|---------------------------------|--------------------|
+| `~/.ssh/config`                 |                    |
+| `~/.ssh/id_rsa`                 |                    |
+| `~/.ssh/id_rsa.pub`             |                    |
+| `~/.ssh/id_ed25519`             |                    |
+| `~/.ssh/id_ed25519.pub`         |                    |
+| `~/.ssh/authorized_keys`        |                    |
+| `~/.ssh/known_hosts`            |                    |
+
+2. Options commonly used in a `config` file for `ssh`:
+
+| `ssh` `config` Option   | Description  |
+|---------------|------------------------|
+| `Host`        |                        |
+| `HostName`    |                        |
+| `User`        |                        |
+| `Port`        |                        |
+| `IdentityFile`|                        |
+
+3. Command to generate a new key, with options entered into the fields 
 ```
 Enter command & options entered while running here
 ```
 
-2. Create the user and / or prove the user exists
+4. Create the user and / or prove the user exists
 ```
 Enter command & output for creating user and / or proving user exists.
 ```
 
-3. Contents of `~/.ssh/authorized_keys` in remote user account:
+5. Contents of `~/.ssh/authorized_keys` in remote user account:
 ```
 Enter contents here
 ```
 
-4. `ssh` command:
+6. `ssh` command:
 
-5. Updated `config` file contents:
+7. Updated `config` file contents:
 ```
 Enter block with connection information in config file here
 ```
 
-6. `ssh` command post `config` file entry:
+8. `ssh` command post `config` file entry:
 
 ## Citations
 

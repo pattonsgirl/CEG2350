@@ -124,17 +124,39 @@ Do the following on your AWS instance.
 
 Without practice, `ssh` connections and authentication just seem like magic. Really, it is all about files and information being in the right spot as defined in rules in configuration files. The goal of this part is to practice where keys go when you have a new `ssh` keypair. This is a common task to do when you gain access to a system - put your public key in the `authorized_keys` file in the `.ssh` folder of your remote account, then connect from your system to the remote system's account.
 
-When you see a reference to **local system**, Windows users should assume I am referring to using WSL2
+When you see a reference to **local system**, this means your system - *not your AWS instance*
 
 - **Useful commands: `adduser`, `getent passwd <username>`, `ssh-keygen`, `vim`, `ssh`**
 
-1. On your local system, make a new key pair - with a non-default name.  Change at minimum the default name
-2. On your AWS instance, create a user & user home directory or use the user from old labs
-3. Put the public key of the key pair you created in the user's `~/.ssh/authorized_keys` file on the AWS instance
-4. From your local system, `ssh` in to the AWS instance using the user's username and the private key of the keypair you created.
-   - Format of `ssh` without an entry in the `config` file: `ssh -i path/to/privatekey username@hostname_or_ip`
-5. Write an entry in your local system's `~/.ssh/config` file with the new connection information.
-6. Write the `ssh` command that will use your `config` file information if correctly entered.
+1. Fill in the following table of commonly configured `ssh` files:
+
+| `ssh` File Path / Name          | Purpose            |
+|---------------------------------|--------------------|
+| `~/.ssh/config`                 |                    |
+| `~/.ssh/id_rsa`                 |                    |
+| `~/.ssh/id_rsa.pub`             |                    |
+| `~/.ssh/id_ed25519`             |                    |
+| `~/.ssh/id_ed25519.pub`         |                    |
+| `~/.ssh/authorized_keys`        |                    |
+| `~/.ssh/known_hosts`            |                    |
+
+2. Fill in the following table of options commonly used in a `config` file for `ssh`:
+
+| `ssh` `config` Option   | Description  |
+|---------------|------------------------|
+| `Host`        |                        |
+| `HostName`    |                        |
+| `User`        |                        |
+| `Port`        |                        |
+| `IdentityFile`|                        |
+
+3. On your local system, make a new key pair - with a non-default name.  Change at minimum the default name
+4. On your AWS instance, create a user & user home directory or use the your `firstinitiallastname` account
+5. Put the public key of the key pair you created in the AWS instnace user's `~/.ssh/authorized_keys` file on the AWS instance
+6. From your local system, `ssh` in to the AWS instance using the user's username and the private key of the keypair you created.
+   - Format reminder: `ssh -i path/to/privatekey username@hostname_or_ip`
+7. Write an entry in your local system's `~/.ssh/config` file with the new connection information.
+8. Write the `ssh` command that will use your `config` file information if correctly entered.
 
 - **Resources**
 - [Linuxize - Using the SSH Config File](https://linuxize.com/post/using-the-ssh-config-file/)
