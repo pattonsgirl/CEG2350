@@ -111,7 +111,11 @@ Do the following on your AWS instance.
          
 </section>
 ```
-7. View your website & confirm the changes requested were made (and visible!).  Take a screenshot with the URL bar included.
+
+> When you use `ssh`, you specify a `hostname` after the `@` sign. Typically a `hostname` is a pretty name the associates with the IP address of the server. We do not have a pretty name set up for your AWS instances, so the only way to address them is by their public IP address (as you've been doing all semester).
+
+7. Open a browser on your local system (can't do it in AWS :wink:). Type your AWS instance's public IP into the URL bar. If your page shows, take a screenshot with the URL bar included.
+   - **Note**: you may need to explicitly type `http://` in front of your AWS instance's public IP. We'll talk about it later.
 
 **Resources**
 - [Digital Ocean - Apache vs Nginx: Practical Considerations](https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations)
