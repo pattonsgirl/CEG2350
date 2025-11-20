@@ -105,7 +105,9 @@ Do the following on your AWS instance.
 2. Confirm that your chosen web serving service is running
 3. Download [`simple-site.tar.gz`](https://github.com/pattonsgirl/CEG2350/blob/main/Labs/Lab11/simple-site.tar.gz) to your AWS instance
    - [URL to download .tar.gz file](https://github.com/pattonsgirl/CEG2350/raw/refs/heads/main/Labs/Lab11/simple-site.tar.gz)
-4. Change the permissions for the folder `/var/www/html` so that your user is the owner and primary group, your user (and members of your group) can read and write, and others can only read.
+4. Change the permissions for `/var/www/html`:
+   - For the `/var/www/html` **folder** - the owner can read, edit, and view (execute) the directory; members of the group can read, edit, and view (execute) the directory; others on the system can only read and view (execute) the directory.
+   - For the **files in the folder** - your user is the owner and primary group, your user (and members of your group) can read and write, and others can only read. Ensure the next steps also utilize these permissions.
 5. Extract the compressed archive to `/var/www/html`
 6. Edit the `index.html` file in `/var/www/html` with:
    - your name where `YOUR LAST NAME HERE` is.  Make this `div` visible
@@ -125,6 +127,7 @@ When you use `ssh`, you specify a `hostname` after the `@` sign. Typically a `ho
 
 7. Open a browser on your local system (can't do it in AWS &#128540;). Type your AWS instance's public IP into the URL bar. If your page shows, take a screenshot with the URL bar included.
    - **Note**: you may need to explicitly type `http://` in front of your AWS instance's public IP. We'll talk about it later.
+   - **Note**: If you changed `index.html` and aren't seeing your changes in your browser, try to use your browsers hard reload, often `ctrl+shift+r` or `ctrl+f5`. This will get the actual file from the server and ensure its not an old cached version.
 
 **Resources**
 - [Digital Ocean - Apache vs Nginx: Practical Considerations](https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations)
