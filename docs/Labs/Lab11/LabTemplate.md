@@ -46,7 +46,7 @@ Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab11/Inst
 
 1. Command to install `apache2` or `nginx`:
 2. Command to confirm that web serving service is running:
-3. Command to download [`simple-site.tar.gz`](simple-site.tar.gz) to your AWS instance:
+3. Command to download `simple-site.tar.gz` to your AWS instance:
 4. Command(s) to change permissions: 
 5. Command to extract the compressed archive to `/var/www/html`:
 6. Required changes to `index.html` will be awarded credit based on screenshot.
