@@ -60,7 +60,7 @@ Find the following network information for the following systems / networks:
 You may utilize a mix of command line utilities and GUI applications to discover the networking information requested.  You should not need download any additional tools to find this information - you may need to install some network utilities, like `ifconfig` or `nmap`.
 
 **Useful Commands**
-- PowerShell on Windows: `hostname`, `ipconfig \all`, `route PRINT`, `Invoke-RequestMethod`
+- PowerShell on Windows: `hostname`, `ipconfig /all`, `route PRINT`, `Invoke-RequestMethod`
 - Linux: `hostname`, `ip a`, `ifconfig`, `route`, `nslookup`, `curl`
 
 For each system and network the system is connected to: 
@@ -83,7 +83,7 @@ For each system and network the system is connected to:
 
 - Useful Notes:
    - The gateway address is typically the same as your DHCP address
-   - Using `dig` or `nslookup` will tell you the DNS server used to lookup the hostname's IP address
+   - Using `nslookup` will tell you the DNS server used to lookup the hostname's IP address
    - For `Public IPv4 address`, look up your public IP (typically from your ISP) - you can literally ask Google what is your IP and / or try out the queries to sites like `ipinfo.io` or `ifconfig.me`.  Since your AWS service needs to be singuarly addressable from external devices (clients), it is leasing a public IP address.
    - These results are going to look boring at home - your router tends to be serving all these network roles. It's more interesting on to view on complex / enterprise networks, like Wright State or Starbucks. 
       - At home you likely have one device (your router) that is the first stop for most requests (DHCP, DNS, and gateway to route traffic to the next stop). 
@@ -131,8 +131,7 @@ Your task is to revise the Inbound / Ingress Security Group Rules for your insta
 
 Assuming you have hit "Start Lab" and have opened your console via the "AWS" link after the lab has started (timer is counting down), this [link will quick drop you to your Security Groups](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#SecurityGroups:).  Find the Security Group named **`ceg2350-Lab1SecurityGroup`** (or similar).  Click the checkbox next to that entry or the link in the "Security Group ID" column to focus on only this Security Group.  **Only edit the Inbound Rules**
 
->[!TIP]
->If the link doesn't work, the full set of things to click is: go to the the Learner Lab Module -> Click Start Lab -> once started, Click the AWS link (green circle will be next to it).  Click EC2 -> Click Instances Running -> click checkbox next to instance -> in the menu below, click Security, scroll down a little, click the link under Security Groups to hot drop to your rules that go with your instance.  inbound Rules are where you'll be focusing for the lab.
+> If the link doesn't work, the full set of things to click is: go to the the Learner Lab Module -> Click Start Lab -> once started, Click the AWS link (green circle will be next to it).  Click EC2 -> Click Instances Running -> click checkbox next to instance -> in the menu below, click Security, scroll down a little, click the link under Security Groups to hot drop to your rules that go with your instance.  inbound Rules are where you'll be focusing for the lab.
 
 1. Remove the two original rules.  
 2. Create a rule that allows SSH access from any WSU IPv4 address, which will be all address from 130.108.0.0 to 130.108.255.255
