@@ -3,6 +3,8 @@
 - Name:
 - Email:
 
+Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab12/Instructions.html
+
 ## Part 1 - Linux Network Command Cheat Sheet
 
 | Command                                                | Description | Resource |
@@ -61,11 +63,8 @@
 | DNS server address                                 |       |
 | Public IPv4 address for AWS instance               |       |
 
-## Part 3 - Socket to Me
 
-
-
-## Part 4 - Security
+## Part 3 - Security
 
 Screenshot of your changed Inbound Security Group rules.  
 ![Inbound Rules for Lab 12](relative/path/to/image)
@@ -73,6 +72,14 @@ Screenshot of your changed Inbound Security Group rules.
 > Why should HTTP allow any IP, while SSH has restrictions?
 
 > Describe how you validated or can validate if your rules are working with the restrictions given.
+
+## Part 4 - Socket to Me
+
+[Link to server side source code]()
+
+[Link to client side source code]()
+
+![Screenshot of successful running of and communication between client and server](/path/to/image)
 
 ## Part 5 - It's Alive!  Maybe...
 

@@ -141,7 +141,7 @@ Assuming you have hit "Start Lab" and have opened your console via the "AWS" lin
 4. Create a rule that allows HTTP access from any IPv4 address
 5. Create a rule (or rules) that allow access to port 8080 from any (or only trusted) IPv4 address
 6. Describe why should HTTP allow any IP, while SSH has restrictions?  Your answer should show a reflection on the purpose of these two protocols.
-7. Describe how you validated or can validate if your rules are working with the restrictions given.
+7. Describe how you validated or can validate if your rules are working.
 
 ## Part 4 - Socket to Me
 
@@ -150,8 +150,8 @@ Review the following resource to get an overall feel for the difference between 
 
 For this part you'll need two source code files - we have provided Java and Python client and server source code that uses the socket library.
 
-[Java Client & Server Source Code](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab12/Java)
-[Python Client & Server Source Code](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab12/Python)
+- [Java Client & Server Source Code](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab12/Java)
+- [Python Client & Server Source Code](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab12/Python)
 
 Download the source code to your GitHub repository folder - add it for tracking and commit it.
 
@@ -201,6 +201,8 @@ Your reports must contain the set of commands used to create the reports.
 1. Verify that your GitHub repo has a `Lab12` folder with at minimum:
 
    - `README.md`
+   - Java or python client code with comments
+   - Java or python server code with comments
 
 2. In the Pilot Dropbox, paste the URL to the `Lab12` folder in your GitHub repo
    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab12
