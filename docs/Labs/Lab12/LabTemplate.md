@@ -7,12 +7,15 @@
 
 | Command                                                | Description | Resource |
 |--------------------------------------------------------|-------------|----------|
-| `hostname`                                             |             | [Resource Link](Resource URL HERE)     |
+| `hostname`                                             |             | [Resource Link](Resource URL HERE)         |
+| `ipconfig` (Windows)                                   |             | [Resource Link](Resource URL HERE)         |
 | `ifconfig`                                             |             | [Resource Link](Resource URL HERE)         |
 | `ip a`                                                 |             | [Resource Link](Resource URL HERE)         |
 | `route`                                                |             | [Resource Link](Resource URL HERE)         |
 | `iptables -L`                                          |             | [Resource Link](Resource URL HERE)         |
+| `Invoke-RestMethod ifconfig.me` (Windows)              |             | [Resource Link](Resource URL HERE)         |
 | `curl <IP_or_hostname>`                                |             | [Resource Link](Resource URL HERE)         |
+| `curl ifconfig.me` OR `curl ipinfo.io`                 |             | [Resource Link](Resource URL HERE)         |
 | `ping <IP_or_hostname>`                                |             | [Resource Link](Resource URL HERE)         |
 | `nslookup <IP_or_hostname>`                            |             | [Resource Link](Resource URL HERE)         |
 | `traceroute <IP_or_hostname>`                          |             | [Resource Link](Resource URL HERE)         |
@@ -22,27 +25,41 @@
 
 ## Part 2 - Network Info
 
-### Network Info for <Your OS Here>
+### Network Info for <Your OS Here> on <Insert Network Identifier Here>
 
-1. Hostname of the device:
-2. MAC address of the NIC connected to the network:
-3. IPv4 address:
-4. Subnet mask:
-5. Gateway address:
-6. Does the device use DHCP to receive a network address? (y/n):
-7. DNS server address:
-8. Public IPv4 address:
+1. Insert image or code blocks contianing a summary of the device's network settings for a minimum of the network it is connected to.
 
-### Network Info for AWS Instance
+2. Identify specifically the values of the following fields for the device and network connection to:
 
-1. Hostname of the device:
-2. MAC address of the NIC connected to the network:
-3. IPv4 address:
-4. Subnet mask:
-5. Gateway address:
-6. Does the device use DHCP to receive a network address? (y/n):
-7. DNS server address:
-8. Public IPv4 address:
+| Setting                                           | Value |
+|---------------------------------------------------|-------|
+| Hostname of the device                            |       |
+| MAC address of the NIC                            |       |
+| Private IPv4 address                              |       |
+| Subnet mask                                        |       |
+| Gateway address                                    |       |
+| DHCP enabled? (y/n)                                |       |
+| DHCP address (if yes)                              |       |
+| DNS server address                                 |       |
+| Public IPv4 address for devices on network         |       |
+
+### Network Info for AWS Instance on the AWS Network Stack
+
+1. Insert image or code blocks contianing a summary of the device's network settings for a minimum of the network it is connected to.
+
+2. Identify specifically the values of the following fields for the device and network connection to:
+
+| Setting                                           | Value |
+|---------------------------------------------------|-------|
+| Hostname of the device                            |       |
+| MAC address of the NIC                            |       |
+| Private IPv4 address                              |       |
+| Subnet mask                                        |       |
+| Gateway address                                    |       |
+| DHCP enabled? (y/n)                                |       |
+| DHCP address (if yes)                              |       |
+| DNS server address                                 |       |
+| Public IPv4 address for AWS instance               |       |
 
 ## Part 3 - Subnet Translation
 

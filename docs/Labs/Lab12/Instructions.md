@@ -37,11 +37,14 @@ The commands below are all Linux commands to show or modify network information.
 | Command                                                | Description | Resource |
 |--------------------------------------------------------|-------------|----------|
 | `hostname`                                             |             |          |
+| `ipconfig` (Windows)                                   |             |          |
 | `ifconfig`                                             |             |          |
 | `ip a`                                                 |             |          |
 | `route`                                                |             |          |
 | `iptables -L`                                          |             |          |
+| `Invoke-RestMethod ifconfig.me` (Windows)              |             |          |
 | `curl <IP_or_hostname>`                                |             |          |
+| `curl ifconfig.me` OR `curl ipinfo.io`                 |             |          |
 | `ping <IP_or_hostname>`                                |             |          |
 | `nslookup <IP_or_hostname>`                            |             |          |
 | `traceroute <IP_or_hostname>`                          |             |          |
@@ -50,29 +53,36 @@ The commands below are all Linux commands to show or modify network information.
 
 ## Part 2 - Network Info
 
-For your PC and for your AWS instance, find the following network information.  You may utilize a mix of command line utilities and GUI applications to determine the networking information requested.
+Find the following network information for the following systems / networks:
+- your host OS on your PC 
+- your AWS instance
 
-The point is to find networking info using two different OSes to explore the different utilities (Windows and Linux OR Mac and Linux).  If you do not have access to a non-Linux OS you can use the laptops or desktops provided in the lab rooms or in Russ 152 B & D. 
+You may utilize a mix of command line utilities and GUI applications to discover the networking information requested.  You should not need download any additional tools to find this information - you may need to install some network utilities, like `ifconfig` or `nmap`.
 
-You should not download any additional tools to find this information (despite what online articles may request).
+**Useful Commands**
+- PowerShell on Windows: `hostname`, `ipconfig \all`, `route PRINT`
+- Linux: `hostname`, `ip a`, `ifconfig`, `route`
 
-- **Useful Commands - PowerShell on Windows:** `ipconfig \all`, `route PRINT`
+For each system and network the system is connected to: 
 
-Find and copy into your lab a summary of your device's network settings for a minimum of the network you are connected to.
+1. Find and copy into your lab a summary of the device's network settings for a minimum of the network it is connected to.
 
-Identify specifically the values of the following fields for the network you are currently connected to:
+2. Identify specifically the values of the following fields for the device and network connection to:
 
 | Setting                                           | Value |
 |---------------------------------------------------|-------|
 | Hostname of the device                            |       |
 | MAC address of the NIC                            |       |
-| IPv4 address                                       |       |
+| Private IPv4 address                              |       |
 | Subnet mask                                        |       |
 | Gateway address                                    |       |
 | DHCP enabled? (y/n)                                |       |
 | DHCP address (if yes)                              |       |
 | DNS server address                                 |       |
 | Public IPv4 address                                |       |
+
+- Notes:
+   - For `Public IPv4 address`
 
 - Notes: 
    - These results are going to look boring at home, but interesting on more complex networks, like Wright State or Starbucks.  While you are welcome to do this using your home network, play with these commands on other networks as well. At home you likely have one device (your router) that is the first stop for most requests (DHCP, DNS, and gateway to route traffic to the next stop). On a complex network, you'll see these addresses getting distributed to different devices - there is a device to connect to to request an address and network information (DHCP server), another that is a first stop for DNS resolution, and maybe another that is the gateway address that packets outside the network are forwarded to to find their destination.
