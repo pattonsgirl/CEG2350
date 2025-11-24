@@ -60,8 +60,8 @@ Find the following network information for the following systems / networks:
 You may utilize a mix of command line utilities and GUI applications to discover the networking information requested.  You should not need download any additional tools to find this information - you may need to install some network utilities, like `ifconfig` or `nmap`.
 
 **Useful Commands**
-- PowerShell on Windows: `hostname`, `ipconfig \all`, `route PRINT`
-- Linux: `hostname`, `ip a`, `ifconfig`, `route`
+- PowerShell on Windows: `hostname`, `ipconfig \all`, `route PRINT`, `Invoke-RequestMethod`
+- Linux: `hostname`, `ip a`, `ifconfig`, `route`, `nslookup`, `curl`
 
 For each system and network the system is connected to: 
 
@@ -81,14 +81,24 @@ For each system and network the system is connected to:
 | DNS server address                                 |       |
 | Public IPv4 address                                |       |
 
-- Notes:
-   - For `Public IPv4 address`
-
-- Notes: 
-   - These results are going to look boring at home, but interesting on more complex networks, like Wright State or Starbucks.  While you are welcome to do this using your home network, play with these commands on other networks as well. At home you likely have one device (your router) that is the first stop for most requests (DHCP, DNS, and gateway to route traffic to the next stop). On a complex network, you'll see these addresses getting distributed to different devices - there is a device to connect to to request an address and network information (DHCP server), another that is a first stop for DNS resolution, and maybe another that is the gateway address that packets outside the network are forwarded to to find their destination.
+- Useful Notes:
+   - The gateway address is typically the same as your DHCP address
+   - Using `dig` or `nslookup` will tell you the DNS server used to lookup the hostname's IP address
+   - For `Public IPv4 address`, look up your public IP (typically from your ISP) - you can literally ask Google what is your IP and / or try out the queries to sites like `ipinfo.io` or `ifconfig.me`.  Since your AWS service needs to be singuarly addressable from external devices (clients), it is leasing a public IP address.
+   - These results are going to look boring at home - your router tends to be serving all these network roles. It's more interesting on to view on complex / enterprise networks, like Wright State or Starbucks. 
+      - At home you likely have one device (your router) that is the first stop for most requests (DHCP, DNS, and gateway to route traffic to the next stop). 
+      - On a complex / enterprise network, you'll see these addresses getting distributed to different devices - there is a device to connect to to request an address and network information (DHCP server), another that is a first stop for DNS resolution, and maybe another that is the gateway address that packets outside the network are forwarded to to find their destination.
    - Public IPv4 addresses are only used when you are trying to send communications outside your local (private) subnet.  The vast majority of networks utilize this scheme of Network Address Translation (NAT).  It allows many devices to be on one network, which then "share" a public IPv4 address when sending packets and receiving communication back from network devices external to your network.
 
-## Part 3 - UNDER CONSTRUCTION
+**Resources**
+- [How To use the Powershell IPConfig Command and Options Explained - The Lazy Admin](https://lazyadmin.nl/it/ipconfig-command/)
+- [Demystifying ifconfig and network interfaces in Linux - Yury Pitsishin](https://codewithyury.com/demystifying-ifconfig-and-network-interfaces-in-linux/)
+- [Linux IP Command Explained With Examples - Logic Web](https://www.logicweb.com/knowledge-base/linux-tips/linux-ip-command-explained-with-examples/#3--displaying-ip-addresses)
+- [Exploring the Linux ‘ip’ Command - with comparisons against other commands - Cisco Blog](https://blogs.cisco.com/learning/exploring-the-linux-ip-command)
+
+## Part 3 - Socket to Me
+
+
 
 ## Part 4 - Security - UNDER CONSTRUCTION
 
