@@ -137,7 +137,7 @@ Assuming you have hit "Start Lab" and have opened your console via the "AWS" lin
 2. Create a rule that allows SSH access from any WSU IPv4 address, which will be all address from 130.108.0.0 to 130.108.255.255
 3. Create a rule that allows SSH access from your home public IPv4 address
    - required even if you live on campus
-4. Create a rule that allows HTTP access from any IPv4 address
+4. Create a rule that allows HTTP access from any IPv4 address or all accresses from 0.0.0.0 - 255.255.255.255
 5. Create a rule (or rules) that allow access to port 8080 from any (or only trusted) IPv4 address
 6. Describe why should HTTP allow any IP, while SSH has restrictions?  Your answer should show a reflection on the purpose of these two protocols.
 7. Describe how you validated or can validate if your rules are working.
@@ -154,7 +154,7 @@ For this part you'll need two source code files - we have provided Java and Pyth
 
 Download the source code to your GitHub repository folder - add it for tracking and commit it.
 
-**Create a branch**
+**Create a branch - push this branch to GitHub.  Do not delete the branch after merging**
 
 On this branch:
 
@@ -163,6 +163,7 @@ On this branch:
 3. Run (compile as well depending on language) the server code on your AWS instance.
 4. Run (compile as well depending on language) the client code on your personal system.
 5. Send messages to the server from the client.  Add a screenshot to your lab showing the communications between the client and server.
+6. Merge your changes to the `main` branch.  Do not delete the branch where you were editing your code.
 
 ## Part 5 - It's Alive! Maybe...
 
