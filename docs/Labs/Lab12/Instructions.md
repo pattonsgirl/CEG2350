@@ -20,9 +20,9 @@ Go to the folder that contains your repository (likely named `ceg2350-yourgithub
 
 Create a new directory, `Lab12`.
 
-Create a file named `README.md` in the `Lab12` folder.  Copy into the file the contents of the [Lab 12 Template](LabTemplate.md).
+Create a file named `README.md` in the `Lab12` folder.  The [Lab 12 Template can be copied from this link](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab12/LabTemplate.md):
 
-- [Raw version of LabTemplate.md](https://raw.githubusercontent.com/pattonsgirl/CEG2350/main/Labs/Lab12/LabTemplate.md)
+- `https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab12/LabTemplate.md`
 
 You may refer to additional resources outside of the recommended resources provided.  
 
@@ -32,19 +32,21 @@ If you make mistakes with commands in the lab, note them!  Writing down what wen
 
 ## Part 1 - Linux Network Command Cheat Sheet
 
-The commands below are all Linux commands to show or modify network information.  Provide a brief statement / summary (not a multi-paragraph copy paste :wink:) about what each command does **and** find an internet resource that provides a basic guide to what the command does and examples of usage.  You'll be using these commands in other parts of this lab.
+The commands below are all Linux commands to show or modify network information.  Provide a brief statement / summary (not a multi-paragraph copy paste) about what each command does **and** find an internet resource that provides a basic guide to what the command does and examples of usage.  You'll be using these commands in other parts of this lab.
 
-- `hostname`
-- `ifconfig`
-- `ip a`
-- `route`
-- `iptables -L`
-- `curl <IP_or_hostname>`
-- `ping <IP_or_hostname>`
-- `nslookup <IP_or_hostname>`
-- `traceroute <IP_or_hostname>`
-- `nmap -p <IP_or_hostname>`
-- `tcpdump -i <networkinterface> -n host <IP_or_hostname>`
+| Command                                                | Description | Resource |
+|--------------------------------------------------------|-------------|----------|
+| `hostname`                                             |             |          |
+| `ifconfig`                                             |             |          |
+| `ip a`                                                 |             |          |
+| `route`                                                |             |          |
+| `iptables -L`                                          |             |          |
+| `curl <IP_or_hostname>`                                |             |          |
+| `ping <IP_or_hostname>`                                |             |          |
+| `nslookup <IP_or_hostname>`                            |             |          |
+| `traceroute <IP_or_hostname>`                          |             |          |
+| `nmap -p <IP_or_hostname>`                             |             |          |
+| `tcpdump -i <networkinterface> -n host <IP_or_hostname>` |          |          |
 
 ## Part 2 - Network Info
 
@@ -54,54 +56,31 @@ The point is to find networking info using two different OSes to explore the dif
 
 You should not download any additional tools to find this information (despite what online articles may request).
 
-- **Useful Commands - PowerShell on Windows:** `ipconfig \all`, `route PRINT`, 
+- **Useful Commands - PowerShell on Windows:** `ipconfig \all`, `route PRINT`
 
-1. Hostname of the device:
-2. MAC address of the NIC connected to the network:
-3. IPv4 address:
-4. Subnet mask:
-5. Gateway address:
-6. Does the device use DHCP to receive a network address? (y/n):
-7. DNS server address:
-8. Public IPv4 address:
+Find and copy into your lab a summary of your device's network settings for a minimum of the network you are connected to.
+
+Identify specifically the values of the following fields for the network you are currently connected to:
+
+| Setting                                           | Value |
+|---------------------------------------------------|-------|
+| Hostname of the device                            |       |
+| MAC address of the NIC                            |       |
+| IPv4 address                                       |       |
+| Subnet mask                                        |       |
+| Gateway address                                    |       |
+| DHCP enabled? (y/n)                                |       |
+| DHCP address (if yes)                              |       |
+| DNS server address                                 |       |
+| Public IPv4 address                                |       |
 
 - Notes: 
    - These results are going to look boring at home, but interesting on more complex networks, like Wright State or Starbucks.  While you are welcome to do this using your home network, play with these commands on other networks as well. At home you likely have one device (your router) that is the first stop for most requests (DHCP, DNS, and gateway to route traffic to the next stop). On a complex network, you'll see these addresses getting distributed to different devices - there is a device to connect to to request an address and network information (DHCP server), another that is a first stop for DNS resolution, and maybe another that is the gateway address that packets outside the network are forwarded to to find their destination.
    - Public IPv4 addresses are only used when you are trying to send communications outside your local (private) subnet.  The vast majority of networks utilize this scheme of Network Address Translation (NAT).  It allows many devices to be on one network, which then "share" a public IPv4 address when sending packets and receiving communication back from network devices external to your network.
 
-## Part 3 - Subnet Translation
+## Part 3 - UNDER CONSTRUCTION
 
-The notation of ranges to define a subnet is an important skill.  Your task is to practice on some easy ones.  The below steps are, in general, how to break this down:
-
-Example task: Write CIDR notation subnet given range 10.0.0.0 - 10.0.1.255
-   1. Translate addresses to binary
-   2. Set 1's for the matching bits until there is a mismatch - these are the network bits. Remaining bits are 0's - these are the host bits
-   3. Add up the total number of 1's
-
-|                          |                                      |
-| ------------------------ | ------------------------------------ |
-| 10.0.0.0                 | 00001010.00000000.00000000.000000000 |
-| 10.0.1.255               | 00001010.00000000.00000001.111111111 |
-| 1's match (network bits) | 11111111.11111111.11111110.00000000  |
-| Subnet mask (base 10)    | 255.255.254.0                        |
-| CIDR                     | /23                                  |
-| Final form:              | 10.0.0.0/23 OR 10.0.1.0/23           |
-
-**Resources**
-- [CCExpert - Using Prefixes to Represent a Subnet Mask](https://www.ccexpert.us/network-design/using-prefixes-to-represent-a-subnet-mask.html)
-- [Subnet Calculator](https://www.davidc.net/sites/default/subnets/subnets.html)
-
-Translate the below CIDR blocks to their IP ranges:
-1. `130.108.0.0/16`
-2. `34.117.59.81/32`
-3. `10.25.121.90/8`
-
-Translate the below IP ranges to their CIDR notation subnets:
-1. `172.18.5.0 - 172.18.5.255`
-2. `5.9.243.187 - 5.9.243.187`
-3. `192.168.0.0 - 192.168.1.255`
-
-## Part 4 - Security
+## Part 4 - Security - UNDER CONSTRUCTION
 
 Your AWS instance has a rule one okay rule, and one generally bad rule.  Specifically, they look like this:
 ![AWS Default Security Group Rules](Default-SGRules.JPG)

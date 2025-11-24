@@ -5,28 +5,20 @@
 
 ## Part 1 - Linux Network Command Cheat Sheet
 
-- `hostname`
-    - Resource on `hostname`:
-- `ifconfig`
-    - Resource on `ifconfig`:
-- `ip a`
-    - Resource on `ip`:
-- `route`
-    - Resource on `route`:
-- `iptables -L`
-    - Resource on `iptables`:
-- `curl <IP_or_hostname>`
-    - Resource on `curl`:
-- `ping <IP_or_hostname>`
-    - Resource on `ping`:
-- `nslookup <IP_or_hostname>`
-    - Resource on `nslookup`:
-- `traceroute <IP_or_hostname>`
-    - Resource on `traceroute`:
-- `nmap -p <IP_or_hostname>`
-    - Resource on `nmap`:
-- `tcpdump -i <networkinterface> -n host <IP_or_hostname>`
-    - Resource on `tcpdump`: 
+| Command                                                | Description | Resource |
+|--------------------------------------------------------|-------------|----------|
+| `hostname`                                             |             | [Resource Link](Resource URL HERE)     |
+| `ifconfig`                                             |             | [Resource Link](Resource URL HERE)         |
+| `ip a`                                                 |             | [Resource Link](Resource URL HERE)         |
+| `route`                                                |             | [Resource Link](Resource URL HERE)         |
+| `iptables -L`                                          |             | [Resource Link](Resource URL HERE)         |
+| `curl <IP_or_hostname>`                                |             | [Resource Link](Resource URL HERE)         |
+| `ping <IP_or_hostname>`                                |             | [Resource Link](Resource URL HERE)         |
+| `nslookup <IP_or_hostname>`                            |             | [Resource Link](Resource URL HERE)         |
+| `traceroute <IP_or_hostname>`                          |             | [Resource Link](Resource URL HERE)         |
+| `nmap -p <IP_or_hostname>`                             |             | [Resource Link](Resource URL HERE)         |
+| `tcpdump -i <networkinterface> -n host <IP_or_hostname>` |          |  [Resource Link](Resource URL HERE)        |
+
 
 ## Part 2 - Network Info
 
