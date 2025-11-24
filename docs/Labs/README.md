@@ -46,3 +46,7 @@
     - [Lab Template - Copy and Fill Out](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab11/LabTemplate.md)
     - [Lab Guide - Additional Resources & Demo Recommendations](Lab11/LabGuide.md)
     - [Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab11/Rubric.md)
+- [Lab 12 - Networking, Sockets, and Firewall - Instructions](Lab12/Instructions.md)
+    - [Lab Template - Copy and Fill Out](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab12/LabTemplate.md)
+    - [Lab Guide - Additional Resources & Demo Recommendations](Lab12/LabGuide.md)
+    - [Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab12/Rubric.md)
