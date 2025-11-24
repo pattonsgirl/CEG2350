@@ -58,3 +58,7 @@ Here’s a side-by-side comparison of **sockets vs ports vs URLs**, written in a
 
 ---
 
+# Additional Resources
+
+* [Understanding Sockets - What is a Stream Socket? - DigitalOcean](https://www.digitalocean.com/community/tutorials/understanding-sockets#what-is-a-stream-socket)
+

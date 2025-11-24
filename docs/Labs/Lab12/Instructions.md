@@ -165,6 +165,11 @@ On this branch:
 5. Send messages to the server from the client.  Add a screenshot to your lab showing the communications between the client and server.
 6. Merge your changes to the `main` branch.  Do not delete the branch where you were editing your code.
 
+**Resources**
+- [How to Execute and Run Java Code from the Terminal - FreeCodeCamp](https://www.freecodecamp.org/news/how-to-execute-and-run-java-code/)
+- [Java Socket Programming - Socket Server, Client example - DigitalOcean](https://www.digitalocean.com/community/tutorials/java-socket-programming-server-client)
+- [Socket Programming in Python (Guide) - RealPython](https://realpython.com/python-sockets/)
+
 ## Part 5 - It's Alive! Maybe...
 
 Figuring out how to tell if a server is on is one of those MFUS (Most Frequently Used Skills).  Sites like [Down Detector](https://downdetector.com/) are highly informative, but sometimes you need to have other utilities in hand.  The two things we generally ask about servers are: "Is it responding?" and "Is the web page available?".
