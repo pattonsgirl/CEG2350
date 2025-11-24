@@ -201,7 +201,7 @@ Your reports must contain the set of commands used to create the reports.
 1. Verify that your GitHub repo has a `Lab12` folder with at minimum:
 
    - `README.md`
-   - Java or python client code with comments
+   - Java or python client code with comments / corrected IP ref
    - Java or python server code with comments
 
 2. In the Pilot Dropbox, paste the URL to the `Lab12` folder in your GitHub repo
@@ -209,19 +209,6 @@ Your reports must contain the set of commands used to create the reports.
 
 ## Rubric
 
-- Part 1 - 5.5 points (0.5 pt. / command)
-   - summary of what command does (0.25)
-   - resource to description & usage of command (0.25)
-- Part 2 - 8 points (0.5 pt. each)
-- Part 3 - 6 points (1 pt. each)
-- Part 4 - 6 points
-   - 1 point for removing original rules
-   - 1 point per Security Group Rule (3 total)
-   - 1 point for addressing restrictive vs non-restrictive protocols
-   - 1 point for thoughtful tests to check SG is working as intended for each protocol
-   - No screenshot in markdown = -3 points
-- Part 5 - 4.5 points
-   - 0.5 point per purpose, response, and no response per server (4 total)
-   - 0.5 point per response to question, with understanding & experimentation documented (5 total)
-   - No citations = -4.5 points
-- Extra Credit - 10% (3 points)
+Your files should be cleanly presented in your GitHub repository.  Citations should be included as needed.  Include which generative AI system was used and what prompts were used if generative AI was used.
+
+[Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab12/Rubric.md)
