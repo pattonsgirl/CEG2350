@@ -37,12 +37,12 @@ The commands below are all Linux commands to show or modify network information.
 | Command                                                | Description | Resource |
 |--------------------------------------------------------|-------------|----------|
 | `hostname`                                             |             |          |
-| `ipconfig` (Windows)                                   |             |          |
+| `ipconfig` (Powershell)                                   |             |          |
 | `ifconfig`                                             |             |          |
 | `ip a`                                                 |             |          |
 | `route`                                                |             |          |
 | `iptables -L`                                          |             |          |
-| `Invoke-RestMethod ifconfig.me` (Windows)              |             |          |
+| `Invoke-RestMethod ifconfig.me` (Powershell)              |             |          |
 | `curl <IP_or_hostname>`                                |             |          |
 | `curl ifconfig.me` OR `curl ipinfo.io`                 |             |          |
 | `ping <IP_or_hostname>`                                |             |          |
