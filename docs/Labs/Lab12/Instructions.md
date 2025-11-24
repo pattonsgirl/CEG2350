@@ -3,8 +3,8 @@
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - Linux Network Command Cheat Sheet](#part-1---linux-network-command-cheat-sheet)
 - [Part 2 - Network Info](#part-2---network-info)
-- [Part 3 - Subnet Translation](#part-3---subnet-translation)
-- [Part 4 - Security](#part-4---security)
+- [Part 3 - Security](#part-3---security)
+- [Part 4 - Socket to Me](#part-4---socket-to-me)
 - [Part 5 - It's Alive!  Maybe...](#part-5---its-alive-maybe)
 - [Extra Credit - Tattle Tale](#extra-credit---tattle-tale)
 - [Submission](#Submission)
@@ -96,13 +96,10 @@ For each system and network the system is connected to:
 - [Linux IP Command Explained With Examples - Logic Web](https://www.logicweb.com/knowledge-base/linux-tips/linux-ip-command-explained-with-examples/#3--displaying-ip-addresses)
 - [Exploring the Linux ‘ip’ Command - with comparisons against other commands - Cisco Blog](https://blogs.cisco.com/learning/exploring-the-linux-ip-command)
 
-## Part 3 - Socket to Me
+## Part 3 - Security
 
+Your AWS instance is protected by a firewall - the AWS service to configure this firewall is called a *Security Group*.  When you created this stack, it came with a configured Security Group similar to the one in the screenshot below:
 
-
-## Part 4 - Security - UNDER CONSTRUCTION
-
-Your AWS instance has a rule one okay rule, and one generally bad rule.  Specifically, they look like this:
 ![AWS Default Security Group Rules](Default-SGRules.JPG)
 
 Rule 1 is an Inbound / Ingress rule that states as long as the source IP starts with 10.0.0, accept all protocols of communication on any port.
@@ -111,9 +108,11 @@ Rule 2 is an Inbound / Ingress rule that states any source IP can communicate wi
 
 If you break your access to your AWS instance in the exercise below, you can "reset" using this screenshot of rules.
 
-Let's discuss what we have.  Your instance is running two services (assuming you completed Lab 11) - **SSH and Apache HTTP Server**.  
+---
 
-SSH is a protocol and service that enables secure and encrypted communication between two points.  By `ssh`ing to your instance, you gain access to a shell where you can run commands.  Your instance should only allow `ssh` connections from *trusted* IP sources.
+Your instance is running two services (assuming you completed Lab 11) - **SSH and Apache HTTP Server**.  
+
+SSH is a protocol and service that enables secure and encrypted communication between two points.  By default, the `ssh` service listens on port `22`.  By `ssh`ing to your instance, you gain access to a shell where you can run commands, or can securely transfer files with `sftp`, or securely copy files with `scp`.  Your firewall should only allow `ssh` connections from *trusted* IP sources.
 
 Apache HTTP server listens on port 80 (by default) for incoming HTTP requests.  After receiving a request, it send the client back the requested resource, if available.  The client then assembles and "displays" the result in an application, such as `curl` or a browser.  Websites (and specifically the servers that serve them) are assumed to be publicly viewable - as long as a client knows the IP or hostname, it can make an HTTP request to the server.
 
@@ -121,9 +120,14 @@ All software, such as SSH and Apache HTTP Server, has vulnerabilities.  For all 
 - [SSH CVE reports](https://www.cvedetails.com/vulnerability-list/vendor_id-120/SSH.html)
 - [Apache HTTP Server CVE reports](https://www.cvedetails.com/version-list/0/17262/1/)
 
-It is a combination of credentials (identity) and network rules that keep systems safe, and allow people to only access what they need.
+It is a combination of credentials (identity) and network rules that keep systems safe, and allow people to only access and interact with what they need.
 
-Your task is to revise the Inbound / Ingress Security Group Rules for your instance and replace them with rules that set more appropriate restrictions.  
+---
+
+Your task is to revise the Inbound / Ingress Security Group Rules for your instance and replace them with rules that 
+- restrict access to SSH (port 22) if the source IP is "trusted"
+- allow ANY IP to connect to port 80
+- allow ANY *OR* only trusted IPs to access port 8080 (setup for Part 4)
 
 Assuming you have hit "Start Lab" and have opened your console via the "AWS" link after the lab has started (timer is counting down), this [link will quick drop you to your Security Groups](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#SecurityGroups:).  Find the Security Group named **`ceg2350-Lab1SecurityGroup`** (or similar).  Click the checkbox next to that entry or the link in the "Security Group ID" column to focus on only this Security Group.  **Only edit the Inbound Rules**
 
@@ -135,8 +139,31 @@ Assuming you have hit "Start Lab" and have opened your console via the "AWS" lin
 3. Create a rule that allows SSH access from your home public IPv4 address
    - required even if you live on campus
 4. Create a rule that allows HTTP access from any IPv4 address
-5. Describe why should HTTP allow any IP, while SSH has restrictions?  Your answer should show a reflection on the purpose of these two protocols.
-6. Describe how you validated or can validate if your rules are working with the restrictions given.
+5. Create a rule (or rules) that allow access to port 8080 from any (or only trusted) IPv4 address
+6. Describe why should HTTP allow any IP, while SSH has restrictions?  Your answer should show a reflection on the purpose of these two protocols.
+7. Describe how you validated or can validate if your rules are working with the restrictions given.
+
+## Part 4 - Socket to Me
+
+Review the following resource to get an overall feel for the difference between ports, sockets, and URLs:
+- [Ports, Sockets, and URLs](ports_sockets_url_compare.md)
+
+For this part you'll need two source code files - we have provided Java and Python client and server source code that uses the socket library.
+
+[Java Client & Server Source Code](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab12/Java)
+[Python Client & Server Source Code](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab12/Python)
+
+Download the source code to your GitHub repository folder - add it for tracking and commit it.
+
+**Create a branch**
+
+On this branch:
+
+1. Edit the source code - add comments to help **you** understand what it is doing.  Cite sources that helped you understand.
+2. Edit the client side code to refer to your AWS instance using its public IP.
+3. Run (compile as well depending on language) the server code on your AWS instance.
+4. Run (compile as well depending on language) the client code on your personal system.
+5. Send messages to the server from the client.  Add a screenshot to your lab showing the communications between the client and server.
 
 ## Part 5 - It's Alive! Maybe...
 
