@@ -27,7 +27,7 @@ Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab12/Inst
 
 ## Part 2 - Network Info
 
-### Network Info for <Your OS Here> on <Insert Network Identifier Here>
+### Network Info for <Your OS Here> on <Network description if using wired ethernet or wireless SSID - ex: home ethernet or WSU_Secure>
 
 1. Insert image or code blocks contianing a summary of the device's network settings for a minimum of the network it is connected to.
 
