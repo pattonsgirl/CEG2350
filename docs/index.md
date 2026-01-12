@@ -5,26 +5,26 @@ title: Home
 
 ## CEG 2350 - OS Concepts and Usage 
 
-Fall 2025 
+Spring 2026 
 
 ### Schedule Information
 
 Lecture: 
-- Section 01 TR 9:30 - 10:50 AM in-person in Russ 145
+- Section 01 MW 4:40 - 6:00 PM in-person in Russ 152C
     - Instructor: Kayleigh Duncan
-- Section 02 TR 2:00 - 3:20 PM in-person in Russ 153
+- Section 02 MWF 3:35 - 4:30 PM in-person in Russ 152C
     - Instructor: Bibek Joshi
 
 Lab: 
-- Section 05 MW 1:25 - 2:20 PM in-person in Russ 346
+- Section 05 TR 3:30 - 4:25 PM in-person in Russ 346
     - Lab leader: Kalli Koppin
     - Lab assistant: Wens Barambona
-- Section 06 MW 1:25 - 2:20 PM in-person in Russ 339
+- Section 06 TR 3:30 - 4:25 PM in-person in Russ 339
+    - Lab leader: Aidan McGohan
+    - Lab assistant: Aiden Cox
+- Section 07 TR 9:30 - 10:25 AM in-person in Russ 355
     - Lab leader: Aiden Cox
     - Lab assistant: Austin Kellough
-- Section 07 TR 9:30 - 10:25 AM in-person in Russ 339
-    - Lab leader: Aidan McGohan
-    - Lab assistant: Kalli Koppin
 
 See `Course Info` in Pilot for:
 - instructor and TA contact information
@@ -34,21 +34,17 @@ See `Course Info` in Pilot for:
 
 #### Section 01
 
-Exam 1: 9:30 - 10:50 AM, Tuesday, October 7th
+Exam 1: 4:40 - 6:00 PM, TBA
 
-Exam 2: 9:30 - 10:50 AM, Tuesday, November 4th
+Exam 2: 4:40 - 6:00 PM, TBA
 
-Final: 8:00 - 10:00 AM Tuesday, December 9th in Russ 145
-- [Wright State Final Exam Schedule](https://www.wright.edu/enrollment-services/registration/exam-schedules#fall)
+Final: 5:45 - 7:45 PM Monday, April 27th in Russ 152C
+- [Wright State Final Exam Schedule](https://www.wright.edu/enrollment-services/registration/exam-schedules#spring)
 
 #### Section 02
 
-Exam 1: 2:00 - 3:20 PM, Tuesday, October 7th
-
-Exam 2: 2:00 - 3:20 PM, Tuesday, November 4th
-
-Final: 2:45 - 4:45 PM Thursday, December 11th in Russ 153
-- [Wright State Final Exam Schedule](https://www.wright.edu/enrollment-services/registration/exam-schedules#fall)
+TBD
+- [Wright State Final Exam Schedule](https://www.wright.edu/enrollment-services/registration/exam-schedules#spring)
 
 ### Course Description  
 
