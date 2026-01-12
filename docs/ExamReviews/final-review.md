@@ -163,22 +163,25 @@
       - routes
       - border gateways / Network Address Translation (NAT)
       - ports
+      - socket
+      - URL
 3. IPv4 concepts
    - Subnetting & CIDR notation
+   - applied questions will be with an output from commands that show network info
 4. Firewalls
    - inbound / INPUT / ingress
    - outbound / OUTPUT / egress
    - common sense rules & trusted networks
    - applied questions will be with a view of an AWS Security Group
-5. Commands: `ip`, `route`, `arp`, `iptables`, `ping`, `curl`, `wget`
+5. Commands: `ip`, `ifconfig`, `route`, `ping`, `curl`, `wget`, `hostname`, `nslookup`
+   - also useful: `arp`, `iptables`, `nmap`, `traceroute`, `tcpdump`
 
 ### Network protocols
 1. HTTP
 2. HTTPS
    - certificates & Certificate Authorities
 3. SSH
-   - ssh
-   - sftp
+   - Commands: `ssh`, `ssh-keygen`, `sftp`, `scp`
    - Files:
       - private key
       - public key

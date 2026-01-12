@@ -137,7 +137,7 @@ Assuming you have hit "Start Lab" and have opened your console via the "AWS" lin
 2. Create a rule that allows SSH access from any WSU IPv4 address, which will be all address from 130.108.0.0 to 130.108.255.255
 3. Create a rule that allows SSH access from your home public IPv4 address
    - required even if you live on campus
-4. Create a rule that allows HTTP access from any IPv4 address or all accresses from 0.0.0.0 - 255.255.255.255
+4. Create a rule that allows HTTP access from any IPv4 address or all addresses from 0.0.0.0 - 255.255.255.255
 5. Create a rule (or rules) that allow access to port 8080 from any (or only trusted) IPv4 address
 6. Describe why should HTTP allow any IP, while SSH has restrictions?  Your answer should show a reflection on the purpose of these two protocols.
 7. Describe how you validated or can validate if your rules are working.
@@ -189,7 +189,7 @@ In this exercise, you will get a set of IPs to test the useful commands on, then
 3. What protocol does `ping` use?  What does this mean about the server firewalls?
 4. Why won't `ping` work if you specify `https://` before the domain name?
 5. Does an IP lookup always result in finding the correct domain name / URL to access the resource, and vice versa?
-6. What happens at when an `http` request is made to a server with `https` enabled?  
+6. What happens when an `http` request is made to a server with `https` enabled?  
 
 ## Extra Credit - Tattle Tale
 
