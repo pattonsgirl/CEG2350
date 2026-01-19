@@ -443,3 +443,46 @@ Resources that go more in depth than we need:
 
 ### Git Basics
 
+> Git is a distributed version control software system that is capable of managing versions of source code or data. It is often used to control source code by programmers who are developing software collaboratively. - [Wiki](https://en.wikipedia.org/wiki/Git)
+
+> GitHub is a proprietary developer platform that allows developers to create, store, manage, and share their code. It uses Git to provide distributed version control and GitHub itself provides access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project. GitHub is operated by Github, Inc., a subsidiary of Microsoft since 2018 which is headquartered in San Francisco. - [Wiki](https://en.wikipedia.org/wiki/GitHub)
+
+**Core `git` CLI commands**:
+- `clone`
+- `init`
+- `status`
+- `add`
+- `commit`
+- `push`
+- `pull`
+- `config`
+- `remote`
+
+![Visual diagram of the git workflow](https://media.licdn.com/dms/image/v2/D4E22AQEojNgZOayXEQ/feedshare-shrink_2048_1536/B4EZSoTcH7G0Ao-/0/1737990468755?e=2147483647&v=beta&t=lbLD_ZFcpmq2c_9jtUPOBHhZtb8V3VmVzW2qJVI0tUg)
+
+The general steps of accessing and using a git repository hosted on GitHub:
+
+1. Create (or determine) an `ssh` keypair for authentication with GitHub. Add public key to your user's profile settings.
+2. `clone` the repository using `ssh`
+    - make sure `SSH` is selected if using the Code dropdown in GitHub
+    - click "Clone Repository" if using the Source Control menu in VSCode
+3. Create / edit files as normal in your *Working Directory*
+4. `add` the files with changes you want to mark to the *Staging Area*
+5. `commit` changes to staged files to the *Local Repository* 
+    - use a commit message to give human readable context to the generated commit point
+    - Commits will require authorship.
+        - Configure username: `git config --global user.name "Your Name"`
+        - Configure email: `git config --global user.email "your_email@example.com"`
+6. `push` one or more commits to the *Remote Repository* - GitHub
+7. `pull` if changes exist in GitHub that are not in the *Local Repository* 
+
+Video [How Git Works - Byte Byte Go](https://www.youtube.com/watch?v=e9lnsKot_SQ)
+
+In this course, you'll learn three ways to manipulate git repositories in GitHub:
+
+1. Beginner - [Editing files in the GitHub browser](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files)
+2. Average - [Staging, commiting, and syncing in VSCode](https://code.visualstudio.com/docs/sourcecontrol/staging-commits)
+3. Advanced - [Using `git` `add`, `commit`, and `push` on the command line](https://graphite.com/guides/git-add-commit-push)
+
+We'll get to more collaborative features - like branches, Issues, and Pull Requests - later in this course.
+
