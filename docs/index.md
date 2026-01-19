@@ -34,9 +34,9 @@ See `Course Info` in Pilot for:
 
 #### Section 01
 
-Exam 1: 4:40 - 6:00 PM, TBA
+Exam 1: 4:40 - 6:00 PM, February 25th
 
-Exam 2: 4:40 - 6:00 PM, TBA
+Exam 2: 4:40 - 6:00 PM, April 1st
 
 Final: 5:45 - 7:45 PM Monday, April 27th in Russ 152C
 - [Wright State Final Exam Schedule](https://www.wright.edu/enrollment-services/registration/exam-schedules#spring)
