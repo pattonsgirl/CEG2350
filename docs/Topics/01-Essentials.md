@@ -1,11 +1,11 @@
 ## 01 - Essentials
 
-- Overview of main OSes
-- Command line navigation
-- OS structure, Directories, and Files​
-- Users, Groups, Permissions
-- SSH keys & usage
-- Git Command basics
+- [Overview of Core OSes](#overview-of-core-oses)
+- [Command Line Essentials](#command-line-essentials)
+- [OS Structure, Directories, and Files​](#os-structure-directories-and-files)
+- [Users, Groups, Permissions](#users-groups-permissions)
+- [SSH, SSH Keys, Basic Usage](#ssh-ssh-keys-basic-usage)
+- [Git Basics](#git-basics)
 
 ### Overview of Core OSes
 
@@ -23,7 +23,7 @@ Key takeaways:
 - What are the requirements behind the different OSes (what hardware can they run on)
 - What are the file system structure differences
 
-### Command Line Navigation
+### Command Line Essentials
 
 First off, know the terminology differences between a [terminal, console, shell, and command line](https://www.tutorialspoint.com/difference-between-terminal-console-shell-and-command-line)
 
@@ -125,7 +125,7 @@ Be a `vim` power user:
 
 ---
 
-### OS structure, Directories, and Files​
+### OS Structure, Directories, and Files​
 
 ![Comparing Linux, Mac, and Windows Filesystem Structure](imgs/filesystemcompare.png)
 
