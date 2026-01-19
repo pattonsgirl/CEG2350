@@ -280,9 +280,82 @@ File permissions across different OSes:
 
 **Users**
 
+There are three basic types of users in Linux – the powerful root user, system users and regular users. 
+
+Root is the super user role created to manage all other users and perform critical actions, such as deleting folders, updating system, connecting to other computers and myriad of others. Root can also assign rights on various levels to all other users.
+
+System users are necessary for Linux to work properly on the background. This type of users are processes, not real users and you can’t use the username to log in.
+
+Regular users are usually allowed to access a shell on the system. They may or may not be members of the `sudo` group or an administrative group that allows them to run commands or a subset of commands with `root` priveledges.
+
+The `/etc/passwd` file is a text file with one entry per line, representing a system or user account.
+
+```
+mark:x:1001:1001:mark,,,:/home/mark:/bin/bash
+[--] - [--] [--] [-----] [--------] [--------]
+|    |   |    |     |         |        |
+|    |   |    |     |         |        +-> 7. Login shell
+|    |   |    |     |         +----------> 6. Home directory
+|    |   |    |     +--------------------> 5. GECOS
+|    |   |    +--------------------------> 4. GID
+|    |   +-------------------------------> 3. UID
+|    +-----------------------------------> 2. Password
++----------------------------------------> 1. Username
+```
+
+[Explaining the `/etc/password` file](https://linuxize.com/post/etc-passwd-file/)
+
+
+There are several different authentication schemes that can be used on Linux systems. The most commonly used and standard scheme is to perform authentication against the `/etc/passwd` and `/etc/shadow` files.
+
+```
+mark:$6$.n.:17736:0:99999:7:::
+[--] [----] [---] - [---] ----
+|      |      |   |   |   |||+-----------> 9. Unused
+|      |      |   |   |   ||+------------> 8. Expiration date
+|      |      |   |   |   |+-------------> 7. Inactivity period
+|      |      |   |   |   +--------------> 6. Warning period
+|      |      |   |   +------------------> 5. Maximum password age
+|      |      |   +----------------------> 4. Minimum password age
+|      |      +--------------------------> 3. Last password change
+|      +---------------------------------> 2. Encrypted Password
++----------------------------------------> 1. Username
+```
+[Explaining the `/etc/shadow` file](https://linuxize.com/post/etc-shadow-file/)
+
 ---
 
 **Groups**
+
+A primary group is the default group that a user account belongs to. Every user on Linux belongs to a primary group. A user’s primary group is usually the group that is recorded in your Linux system’s `/etc/passwd` file. When a Linux user logs into their system, the primary group is usually the default group associated with the logged in account.
+
+Once a user has been created with their primary group, they can be added to secondary groups. Linux system users can have a maximum of 15 secondary groups. A Linux system’s groups are stored in the `/etc/group` file.
+
+Analyizing entries in the `/etc/group` file:
+```
+users:x:100:kduncan,demo
+[---][-][--][-----------]   
+|     |   |   |   
+|     |   |   +----------------------> 4. Users in group separated by commas if more than one
+|     |   +--------------------------> 3. Group ID
+|     +---------------------------------> 2. Password - typically none, thus `x`
++----------------------------------------> 1. Group name
+```
+
+---
+
+**`sudo`**
+
+`sudo` enables a user to have administration privileges without logging in directly as `root`.
+
+In order to provide a user with the `sudo` ability, they need to be added to a `sudo` enabled group, or their username needs to be added to the sudoers file with a set of permissions. This file is sensitive and important as an access and security control, and should not be edited directly with a text editor. If the sudoers file is edited incorrectly it could result in preventing access to the system or other unintended permission changes.
+
+The `visudo` command should be used to edit the sudoers file. At a command line, log into your system as `root` or be on a user account with `sudo` ability and enter the command `visudo`.
+
+The core between the sudoers file and the `sudo` group is that the sudoers file is the central policy configuration across the system or network systems, while the `sudo` group is a convenient, default mechanism defined within that file to manage multiple users at once. Adding a user to the `sudo` group is simply one way to be granted permissions specified in the sudoers file. 
+
+- Terribly formatted [Overview of the sudoers file - Linux Foundation](https://www.linuxfoundation.org/blog/blog/classic-sysadmin-configuring-the-linux-sudoers-file)
+- Some examples from a guide on [How to Edit the sudoers file - Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-edit-the-sudoers-file)
 
 ### SSH Keys & Usage
 
