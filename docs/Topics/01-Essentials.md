@@ -3,12 +3,12 @@
 - Overview of main OSes
 - Command line navigation
 - OS structure, Directories, and Files​
+- Users, Groups, Permissions
 - SSH keys & usage
 - Git Command basics
-- Permissions
-- Users & groups
 
 ### Overview of Core OSes
+
 > An operating system (OS) is system software that manages computer hardware and software resources, and provides common services for computer programs. - [Wikipedia](https://en.wikipedia.org/wiki/Operating_system)
 
 [Timeline of Operating Systems](https://en.wikipedia.org/wiki/Timeline_of_operating_systems)
@@ -90,8 +90,12 @@ At the beginning line in a shell:
         - `Administrator: Windows Powershell` = Admin mode
         - `Windows Powershell` = normal user
 
+---
+
 **Core Commands**  
 
+- `whoami`
+- `hostname`
 - `man`
 - `help`
 - `whatis`
@@ -119,6 +123,8 @@ Be a `vim` power user:
 - [OpenVim](https://openvim.com/)
 - [vim Adventures](https://vim-adventures.com/)
 
+---
+
 ### OS structure, Directories, and Files​
 
 ![Comparing Linux, Mac, and Windows Filesystem Structure](imgs/filesystemcompare.png)
@@ -133,6 +139,8 @@ For your OS and Linux OSes, you should know the general structure and purpose be
 - [Linux Directory Structure - Linux Handbook](https://linuxhandbook.com/linux-directory-structure/)
 - Mac OS Filesystem Basics - see [macOS Standard Directories: Where Files Reside - Apple Developer Guide](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html#//apple_ref/doc/uid/TP40010672-CH2-SW6)
 - [Windows 10 - and 11 - Directory Structure - Wikipedia](https://en.wikipedia.org/wiki/Directory_structure#Windows_10)
+
+---
 
 **Directories, aka Folders**:
 Every directory has a parent directory it belongs to​
@@ -166,11 +174,18 @@ Absolute pathing is the full directory path, no shortcuts​
 - `adduser` or `useradd`
 - `deluser` or `userdel`
 - `usermod`
+- `groupadd`
+- `groupdel`
+- `groupmod`
 - `su`
 - `passwd`
 - `id`
 - `getent`
 - `groups`
+- `who`
+- `finger`
+
+---
 
 > By design, Linux is a multi-user operating system. In an enterprise system, there would be multiple users accessing the same system. But if any user could access and modify all files belonging to other users or system files, this would certainly be a security risk.
 
@@ -263,7 +278,11 @@ File permissions across different OSes:
 
 ---
 
+**Users**
 
+---
+
+**Groups**
 
 ### SSH Keys & Usage
 
