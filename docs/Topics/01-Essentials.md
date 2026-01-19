@@ -336,10 +336,10 @@ Analyizing entries in the `/etc/group` file:
 users:x:100:kduncan,demo
 [---][-][--][-----------]   
 |     |   |   |   
-|     |   |   +------------> 4. Users in group separated by commas if more than one
-|     |   +----------------> 3. Group ID
-|     +--------------------> 2. Password - typically none, thus `x`
-+--------------------------> 1. Group name
+|     |   |   +---------> 4. Users in group separated by commas
+|     |   +-------------> 3. Group ID
+|     +-----------------> 2. Password - typically none, thus `x`
++-----------------------> 1. Group name
 ```
 
 ---
