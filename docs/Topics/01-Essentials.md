@@ -272,7 +272,7 @@ The symbolic mode uses mathematical operators to perform the permission changes:
 
 File permissions across different OSes:
 - [Linux File Permissions - Linux Handbook](https://linuxhandbook.com/linux-file-permissions/)
-    - Pair with [Linux File Permissions Explained - RedHat](https://www.redhat.com/en/blog/linux-file-permissions-explained)
+    - Pair with [Linux File Permissions Explained - RedHat](https://www.redhat.com/en/blog/linux-file-permissions-explained) and [Permissions - The Linux Command Line](https://linuxcommand.org/lc3_lts0090.php)
 - [Mac File Permissions - MacStadium](https://macstadium.com/blog/understanding-file-permissions-on-mac)
 - [Windows File Permissions - 2brightsparks](https://www.2brightsparks.com/resources/articles/a-basic-introduction-to-ntfs-permissions.html)
 
@@ -356,6 +356,21 @@ The core between the sudoers file and the `sudo` group is that the sudoers file 
 
 - Terribly formatted [Overview of the sudoers file - Linux Foundation](https://www.linuxfoundation.org/blog/blog/classic-sysadmin-configuring-the-linux-sudoers-file)
 - Some examples from a guide on [How to Edit the sudoers file - Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-edit-the-sudoers-file)
+
+---
+
+Managing permissions, users, and groups on different OSes
+
+- Linux
+    - [Linux Users and Groups - Linode](https://www.linode.com/docs/guides/linux-users-and-groups/)
+- Mac
+    - [Owners and groups in the Finder and command line - The Eclectic Light Company](https://eclecticlight.co/2018/03/22/owners-and-groups-in-the-finder-and-command-line/)
+    - [Change Users & Groups settings on Mac - Mac User Guide](https://support.apple.com/guide/mac-help/change-users-groups-settings-mtusr001/mac)
+- Windows
+    - **Note** Windows is going to *assume* you are in an Active Directory environment where your system and account are managed by an enterprise. Be specific about *local* accounts and groups when searching for info
+    - Basic ways to [Manage User Accounts in Windows - Microsoft Support](https://support.microsoft.com/en-us/windows/manage-user-accounts-in-windows-104dc19f-6430-4b49-6a2b-e4dbd1dcdf32)
+    - [How to manage local users and groups in Windows - Digital Citizen](https://www.digitalcitizen.life/geeks-way-managing-user-accounts-and-groups/)
+    - [How to Manage Local Users and Groups using PowerShell - Microsoft Tech Community](https://techcommunity.microsoft.com/blog/itopstalkblog/how-to-manage-local-users-and-groups-using-powershell/733544)
 
 ### SSH Keys & Usage
 
