@@ -2,6 +2,7 @@
 
 - Overview of main OSes
 - Command line navigation
+- OS structure, Directories, and Files​
 - SSH keys & usage
 - Git Command basics
 - Permissions
@@ -68,6 +69,8 @@ Commands that you run will likely do one of three things:​
 ​The errors should be read carefully​
 - The errors tell you why the command couldn’t run.
 
+Using your shell gets easier as you pick up customizations, tips and tricks. [7 Linux terminal basics every beginner should learn first](https://www.zdnet.com/article/7-linux-terminal-basics-every-beginner-should-learn-first-and-why/)
+
 **Shell Information**  
 At the beginning line in a shell:
 
@@ -87,12 +90,74 @@ At the beginning line in a shell:
         - `Administrator: Windows Powershell` = Admin mode
         - `Windows Powershell` = normal user
 
-**Filesystem Navigation**
+**Core Commands**  
+
+- `man`
+- `help`
+- `history`
+- `pwd`
+- `ls`
+- `cd`
+- `cat`
+- `touch`
+- `vim` & `nano`
+- `mkdir`
+- `cp`
+- `mv`
+- `rm`
+- `rmdir`
+
+Most command will support *options*, also called *flags*. Look these up everytime whil you are learning, and do not assume that an option in one command is used the same in another. For any given command:
+- Use `[command] --help` (or -h) for quick, immediate, and concise information about a command's options and usage.
+- Use `man [command]` for in-depth, detailed, and comprehensive documentation, including detailed descriptions, author info, and sometimes examples.
+- Use `help [command]` specifically for Bash shell built-in commands (like cd, echo, alias). 
+
+**Bonus Recommendations**  
+Be a `vim` power user:
+- `vimtutor`
+- [OpenVim](https://openvim.com/)
+- [vim Adventures](https://vim-adventures.com/)
+
+### OS structure, Directories, and Files​
+
+![Comparing Linux, Mac, and Windows Filesystem Structure](imgs/filesystemcompare.png)
+
+Some rules of thumb:
+- Hidden files and folders will have a `.` in front of the name. Ex, `.bashrc`
+- The shell is case sensitive. Upper and lowercase matter
+- If a file or directory name has spaces or special characters, you may need to use quotes (`"` or `'`) around the name
+
+For your OS and Linux OSes, you should know the general structure and purpose behind how the OS is organized on the filesystem:
+- [Linux Directory Structure - Linux Handbook](https://linuxhandbook.com/linux-directory-structure/)
+- Mac OS Filesystem Basics - see [macOS Standard Directories: Where Files Reside - Apple Developer Guide](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html#//apple_ref/doc/uid/TP40010672-CH2-SW6)
+- [Windows 10 - and 11 - Directory Structure - Wikipedia](https://en.wikipedia.org/wiki/Directory_structure#Windows_10)
+
+**Directories, aka Folders**:
+Every directory has a parent directory it belongs to​
+
+The top level directory is parent of itself​
+
+In a directory, if you run "ls –lah", you'll see two listings with dots​
+
+- `.` is a reference to itself​
+- `..` is a reference to it's parent
+- `*` is a wildcard pattern matcher​
+    - `/etc/*-release` will match anything that ends in `-release` in `/etc/`
+
+Relative pathing is a path relative to where you are​
+- `class-examples/my_file.txt​`
+- `file_open(my_file);​`
+
+Absolute pathing is the full directory path, no shortcuts​
+- `/home/ubuntu/class-examples/my_file.txt​`
+- `file_open(C:\Users\kduncan\Documents\data\my_file.txt)`
+
+
+### Permissions & Admin
+
+### Users and Groups
 
 ### SSH Keys & Usage
 
 ### Git Command Basics
 
-### Permissions & Admin
-
-### Users and Groups
