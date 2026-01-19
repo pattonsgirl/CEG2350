@@ -94,6 +94,7 @@ At the beginning line in a shell:
 
 - `man`
 - `help`
+- `whatis`
 - `history`
 - `pwd`
 - `ls`
@@ -126,6 +127,7 @@ Some rules of thumb:
 - Hidden files and folders will have a `.` in front of the name. Ex, `.bashrc`
 - The shell is case sensitive. Upper and lowercase matter
 - If a file or directory name has spaces or special characters, you may need to use quotes (`"` or `'`) around the name
+- Putting a hashtag `#` in front of the command will make it a comment.
 
 For your OS and Linux OSes, you should know the general structure and purpose behind how the OS is organized on the filesystem:
 - [Linux Directory Structure - Linux Handbook](https://linuxhandbook.com/linux-directory-structure/)
@@ -153,9 +155,115 @@ Absolute pathing is the full directory path, no shortcuts​
 - `file_open(C:\Users\kduncan\Documents\data\my_file.txt)`
 
 
-### Permissions & Admin
+### Users, Groups, Permissions
 
-### Users and Groups
+**Core commands:** 
+- `sudo` 
+- `stat`
+- `chmod`
+- `chown`
+- `chgrp`
+- `adduser` or `useradd`
+- `deluser` or `userdel`
+- `usermod`
+- `su`
+- `passwd`
+- `id`
+- `getent`
+- `groups`
+
+> By design, Linux is a multi-user operating system. In an enterprise system, there would be multiple users accessing the same system. But if any user could access and modify all files belonging to other users or system files, this would certainly be a security risk.
+
+Which file would be accessed by which user is decided by two factors in Linux:
+- File ownership
+- File permission
+
+Use the `stat [name]` or the `ls -l [name]` to view the file permissions.
+
+```
+-rwxrw-r-- 1 abhi itsfoss 457 Aug 10 11:55 agatha.txt
+```
+- File type: `-` = regular file
+    - `d` = directory
+    - `l` = symbolic link (shortcut)
+    - `b` = block device
+    - `c` = character device
+- Permission settings: `rwxrw-r--`
+- Hard link count: Shows if the file has hard links
+    - Default count is one.
+- User owner: `abhi`
+- Group owner: `itsfoss`
+- File size: Size of the file in bytes.
+- Modification time: The date and time the file was last modified.
+- Filename: Obviously, the name of the file or directory.
+
+**Permission settings**: 
+
+Each letter denotes a particular permission:
+- `r` : Read permission
+- `w` : Write permission
+- `x` : Execute permission
+- `–` : No permission set
+
+Permissions are always in the order of read, write and execute, i.e., rwx. And then these permissions are set for all three kind of owners (see the ownership section) in the order of **User**, **Group** and **Other**.
+
+---
+
+Changing permissions in absolute / numeric mode:
+
+In the absolute / numeric mode, permissions are represented in numeric form (octal system to be precise). When Linux file permissions are represented by numbers, it's called numeric mode. In numeric mode, a three-digit value represents specific file permissions (for example, 744.) These are called octal values. The first digit is for owner permissions, the second digit is for group permissions, and the third is for other users.
+
+- 1 = `x` = execute
+- 2 = `w` = write
+- 4 = `r` = read
+- "add" the permissions you want to user, group, and other
+    - min is?
+    - max is?
+
+`chmod 740 [filename]` would do what to `[filename]`?
+
+---
+
+Changing permissions in symbolic mode:
+
+In symbolic mode, owners are denoted with the following symbols:
+
+- `u` = user owner
+- `g` = group owner
+- `o` = other
+- `a` = all (user + group + other)
+
+The symbolic mode uses mathematical operators to perform the permission changes:
+
+- `+` for adding permissions
+- `–` for removing permissions
+- `=` for overriding existing permissions with new value
+
+`chmod u+x [filename]` would do what to `[filename]`?  
+`chmod o-rw+x,u+x [filename]` would do what to `[filename]`?
+
+---
+
+**Directory Permissions**  
+> Directory file types are indicated with d. Conceptually, permissions operate the same way, but directories interpret these operations differently. - [RedHat](https://www.redhat.com/en/blog/linux-file-permissions-explained)
+
+`r` - allows you to read the contents of the directory. However, that means that you can view the contents (or files) stored within the directory. This permission is required to have things like the ls command work.
+
+`w` - allows someone to modify the contents of the directory. When you are changing the contents of the directory, you are either adding files to the directory or removing files from the directory.
+
+`x` - execute permission on a directory authorizes you to look at extended information on files in the directory (using ls -l, for instance) but also allows you to change your working directory (using cd) or pass through this directory on your way to a subdirectory underneath.
+
+---
+
+File permissions across different OSes:
+- [Linux File Permissions - Linux Handbook](https://linuxhandbook.com/linux-file-permissions/)
+    - Pair with [Linux File Permissions Explained - RedHat](https://www.redhat.com/en/blog/linux-file-permissions-explained)
+- [Mac File Permissions - MacStadium](https://macstadium.com/blog/understanding-file-permissions-on-mac)
+- [Windows File Permissions - 2brightsparks](https://www.2brightsparks.com/resources/articles/a-basic-introduction-to-ntfs-permissions.html)
+
+---
+
+
 
 ### SSH Keys & Usage
 
