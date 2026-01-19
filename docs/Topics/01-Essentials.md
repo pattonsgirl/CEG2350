@@ -51,6 +51,43 @@ Command Line Shell:
 - Powershell- default for Windows, now cross-platform
 - `cd`, `ssh`, and `git` are all considered command line interfaces
 
+**Shell Commandments**:
+
+1. Thou shalt always read thine output after running a command​
+- No output = something worked. So what did you run and what did it do? ​
+- Was it what you wanted?​
+
+2. When asking for help, thou shalt give the command AND the output​
+- Additionally, whatever steps you remember - some results are a sum of a series of descisions / previously run commands
+
+Commands that you run will likely do one of three things:​
+- Succeed quietly​
+- Succeed and move to the next step / ask for more info​
+- Error and give you a message​
+
+​The errors should be read carefully​
+- The errors tell you why the command couldn’t run.
+
+**Shell Information**  
+At the beginning line in a shell:
+
+- Linux `bash` shells:​ `name@system:~/folder$​`
+    - Who you are signed in as​: `name@​`
+    - The name of the system​: `@system​`
+    - The folder you are in (sometimes)​: `~/folder​`
+    - The user mode you are using (sometimes)​
+        - `$` = normal user
+        - `#` = root user
+
+- Windows `Powershell`: `PS C:\Users\w010ked>`
+    - Your shell will have the priviledges of the currently logged in user (to the operating system)
+    - `PS` to inform you are using Powershell - no `PS` may mean you are in the Command Prompt `cmd` shell, not Powershell
+    - `C:\Users\w010ked` the drive and directory you are in 
+    - User mode (admin vs not) will be in the application name
+        - `Administrator: Windows Powershell` = Admin mode
+        - `Windows Powershell` = normal user
+
+**Filesystem Navigation**
 
 ### SSH Keys & Usage
 
