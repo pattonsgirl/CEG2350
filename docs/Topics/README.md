@@ -8,6 +8,8 @@
 
 ## 01 - Essentials
 
+[Course Notes](01-Essentials.md)
+
 - Overview of main OSes
 - Command line navigation
 - SSH keys & usage
