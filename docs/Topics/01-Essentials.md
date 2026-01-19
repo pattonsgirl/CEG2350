@@ -372,7 +372,74 @@ Managing permissions, users, and groups on different OSes
     - [How to manage local users and groups in Windows - Digital Citizen](https://www.digitalcitizen.life/geeks-way-managing-user-accounts-and-groups/)
     - [How to Manage Local Users and Groups using PowerShell - Microsoft Tech Community](https://techcommunity.microsoft.com/blog/itopstalkblog/how-to-manage-local-users-and-groups-using-powershell/733544)
 
-### SSH Keys & Usage
+### SSH, SSH Keys, Basic Usage
+
+**Core Commands:**
+- `ssh`
+- `ssh-keygen`
+
+In this course, you will be learning key functions of `ssh` - Secure SHell.
+
+**SSH** (Secure Shell) is a cryptographic network protocol that provides a secure, encrypted connection between two computers over an insecure network. It is used for tasks such as: 
+- Secure remote command-line access (terminal access)
+- Secure file transfers (SFTP, SCP)
+
+**SSH Keys** are a set of access credentials used within the SSH protocol to authenticate a user or system using public-key cryptography. SSH keys often replace password based authentication. A key pair consists of two parts: 
+- **Private Key**: This key is secret and must be stored securely on the client machine (the computer you are connecting from). It is never shared over the network.
+- **Public Key**: This key can be shared freely and is placed on the remote server (the computer you are connecting to). The server uses it to verify the identity of the client holding the corresponding private key without the private key ever leaving the client's machine. 
+
+---
+
+**SSH Usage**
+
+```
+ssh -i <private_key> username@hostname
+```
+- private_key is the name of or path to and name of the private key on the *client* / local system
+- username is the username on the *remote* system that you are connecting to
+- hostname is the hostname (github.com) or public ip of the *remote* system
+
+The process (for dummies edition):
+1. Client attempts ssh connection to remote system
+    - if remote system is offline or if firewalls have ssh blocked, you'll be denied
+2. Remote system sends fingerprint to client. Client checks it against previous remote system's it has talked to with `ssh`. 
+    - the client's `~/.ssh/known_hosts` will keep a list of server fingerprints. Generally, fingerprints should not change
+    - If your client has not communicated with the remote system before using ssh, the following message will appear:
+```
+The authenticity of host ‘example.com (93.184.216.34)’ can't be established.
+ECDSA key fingerprint is SHA256:d029f87e3d80f8fd9b1be67c7426b4cc1ff47b4a9d0a84.
+Are you sure you want to continue connecting (yes/no)?
+# If you type `yes` the remote system's fingerprint will be added to the client's 
+#   `~/.ssh/known_hosts` file for the current user account
+```
+3. Login request is initiated.
+    - Remote server seeks matching public key to private key in the remote user's `authorized_keys` file
+    - The remote user's `~/.ssh/authorized_keys` file is a list of all **public** keys 
+    - Password authentication *may* still be used, but is no longer considered secure
+4. Remote server sends client a message encrypted with the public key, client must decrypt the message with the private key.
+5. The client sends back the message and the server verifies success (or failure)
+
+Resources that give you all the details:
+- [What is SSH - Hostinger](https://www.hostinger.com/tutorials/what-is-ssh)
+- Video - [How SSH Really Works - Byte Byte Go](https://www.youtube.com/watch?v=rlMfRa7vfO8)
+
+```
+ssh-keygen -t ed25519 -C "comment here"
+```
+- `-t ed25519` specifies encryption type (ED25519 is a standard)
+- `-C "comment here"` is just a comment left in your public key for reference
+
+The rules:
+- Private keys must:
+    - be in a file available on the client system
+    - be accessible only by the user - groups members and others on the system should have no access
+- Public keys can:
+    - be readable by anyone
+    - be added to a remote user's `~/.ssh/authorized_keys` file
+    - be shared with remote systems, like GitHub, to use SSH authentication
+
+Resources that go more in depth than we need:
+- [Use public key authentication with ssh - Linode](https://www.linode.com/docs/guides/use-public-key-authentication-with-ssh/)
 
 ### Git Basics
 
