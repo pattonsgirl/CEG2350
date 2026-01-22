@@ -43,7 +43,11 @@ Final: 5:45 - 7:45 PM Monday, April 27th in Russ 152C
 
 #### Section 02
 
-TBD
+Exam 1: 3:35 - 4:30 PM, February 25th
+
+Exam 2: 3:35 - 4:30 PM, April 1st
+
+Final: 2:45 - 4:45 PM Wednesday, April 29th in Russ 152C
 - [Wright State Final Exam Schedule](https://www.wright.edu/enrollment-services/registration/exam-schedules#spring)
 
 ### Course Description  
