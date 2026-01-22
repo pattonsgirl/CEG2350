@@ -2,7 +2,7 @@
 
 Your answers should be cleanly presented in your GitHub repository.  Citations should be included as needed.  Include which generative AI system was used and what prompts were used if generative AI was used.
 
-### Total Points: / 45
+### Total Points: / 50
 Part 1 - 10 pts
 - [ ] path to private key
 - [ ] `ssh` command
@@ -58,10 +58,17 @@ Part 5 - 11 pts
 - [ ] Command(s) to modify permissions
 - [ ] How to give user account `sudo`
 
+Part 6 - 5 pts  
+Citations / useful resource for:
+- [ ] ssh
+- [ ] permissions
+- [ ] user management
+- [ ] group management
+- [ ] sudo root usage 
+
 ## Point Penalties
 
 - [ ] Submitted to incorrect repository - 0 points
 - [ ] Submitted past due date - 0 points
 - [ ] Submitted non-markdown (incorrect extensions / no use of markdown for formatting) - 0 points
 - [ ] Submitted some markdown (legible enough for grading), but needs improvement - (-10%)
-- [ ] Failure to cite resources - (-10%)

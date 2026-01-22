@@ -8,6 +8,7 @@
 - [Part 3 - Regular `bob`](#part-3---regular-bob)
 - [Part 4 - Get a `squad`](#part-4---get-a-squad)
 - [Part 5 - `sudo` make me a sandwich](#part-5---sudo-make-me-a-sandwich)
+- [Part 6 - Citations / Resources](#part-5---citations-resources)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -152,6 +153,21 @@ Perform the following exercise on your AWS instance.
 - [RedHat - Linux command line basics: sudo](https://www.redhat.com/sysadmin/sudo)
 - [Linuxize - `sudo`](https://linuxize.com/post/sudo-command-in-linux/)
    - Note: on your AWS instance, the `ubuntu` user has passwordless `sudo` - as in you won't be prompted for your account password.  If you try `sudo` on most Linux machines, you will be prompted for a password.  AWS has a *special* setup for the default system account.
+
+## Part 6 - Citations / Resources
+
+Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations / Resources` section of your lab answers. You may refer to your own notes (if they are digitized into GitHub), course notes, or external resources / websites.
+
+To add citations / resources, provide the reference / link and a summary of what it assisted you with.  
+
+If generative AI was used, include which generative AI system was used, what prompt(s) you fed it, and a summary of what it assisted you with.
+
+We expect a minimum of **one citation / useful resource per part** of your lab. So this lab would require a resource for how to use
+- ssh
+- permissions
+- user management
+- group management
+- sudo root usage 
 
 ## Submission
 
