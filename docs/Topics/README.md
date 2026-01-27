@@ -20,13 +20,13 @@
 
 ## O2 - bash
 
-[Course Notes](02-Bash.md)
+[Course Notes](02-Bash/README.md)
 
-- Environment variables, shell config files, PATH
-- File manipulation
-- Regular expressions
-- grep, sed, awk
-- Scripting
+- [Environment variables, PATH and shell config files](02-Bash/Environment.md)
+- [File manipulation](02-Bash/FileManipulation.md)
+- [Regular expressions](02-Bash/Regex.md)
+- [grep, sed, awk](02-Bash/TextTools.md)
+- [Scripting](02-Bash/Scripting.md)
 
 ## 03 - PC Knowledge
 
