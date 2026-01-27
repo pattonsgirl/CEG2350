@@ -20,6 +20,8 @@
 
 ## O2 - bash
 
+[Course Notes](02-Bash.md)
+
 - File manipulation
 - Scripting
 - Path & environment variables
