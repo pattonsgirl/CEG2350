@@ -1,10 +1,10 @@
 ## 02 - Bash
 
-- File manipulation
-- Scripting
 - Path & environment variables
+- File manipulation
 - Regular Expressions
 - grep, sed, awk
+- Scripting
 
 ### PATH & environment variables
 
@@ -24,10 +24,131 @@
 - `head` / `tail`
 - `less` / `more`
 - Streams - standard input, standard output, and standard error (2)
-- `>` vs `>>` vs `>>>`
-- `<`
-- `|`
-- doubles quotes `"`, single quotes `'`, and backticks \`
+- Stream manipulation:
+    - output redirection: `>` vs `>>`
+    - input redirection & heredocs: `<` vs `<<`
+    - piping: `|`
+- functional control
+    - interpretive string (doubles quotes) `"`
+    - string literals (single quotes) `'`
+    - command string (backticks) \` or `$(command)`
+
+#### Streams - input, output, and error
+
+In the world of Linux and Bash, everything is treated as a file. When you run a command, the system automatically opens three "data pipelines" for that process. These are known as **Standard Streams**.
+
+Each stream has a numeric file descriptor (**FD**) that the system uses to keep track of where data is going.
+
+---
+
+**The Three Streams**
+
+| Name | File Descriptor | Description | Default Destination |
+| --- | --- | --- | --- |
+| **stdin** | `0` | Standard Input | Your Keyboard |
+| **stdout** | `1` | Standard Output (Success) | Your Terminal Screen |
+| **stderr** | `2` | Standard Error (Failure) | Your Terminal Screen |
+
+---
+
+**Output Redirection**
+
+* `>` : Overwrites the file.
+* `>>` : Appends (adds) to the end of the file.
+
+```bash
+echo "Log entry: $(date)" >> activity.log
+
+```
+
+**Redirecting Error (`2>`)**
+
+Since `stdout` is `1` and `stderr` is `2`, you can isolate error messages so they don't clutter your clean data.
+
+```bash
+# This will save the error message to error.log instead of showing it
+ls /folder/that/doesnt/exist 2> error.log
+
+```
+
+---
+
+**Redirecting Both to Different Places**
+
+```bash
+./myscript.sh > success.log 2> failure.log
+
+```
+
+**Redirecting Both to the Same Place**
+
+The syntax `2>&1` means "send stream 2 (error) to the same place stream 1 (output) is going."
+
+```bash
+# Modern Bash shorthand
+./myscript.sh &> all_output.log
+
+# Traditional method (compatible with older shells)
+./myscript.sh > all_output.log 2>&1
+
+```
+
+**Discarding Output (`/dev/null`)**
+
+If you don't care about the output or the errors, you can send them to `/dev/null`, the system's "black hole."
+
+```bash
+# Run a command silently
+command_name > /dev/null 2>&1
+
+```
+
+---
+
+**Input Redirection (`<`)**
+
+You can feed a file into a `read` command using a `while` loop. This is the standard way to process a file line-by-line.
+
+```bash
+while read LINE; do
+  echo "Processing: $LINE"
+done < input_file.txt
+
+```
+
+---
+
+**Heredocs (`<<`): Printing Multi-line Blocks**
+
+If you need to print a large block of text (like a help menu or a config file), use a **Heredoc** (`<<`).
+
+```bash
+cat << EOF
+----------------------------------
+   SYSTEM STATUS REPORT
+   Date: $(date)
+   User: $USER
+----------------------------------
+EOF
+
+```
+
+> **Note:** `EOF` is just a label; you can use any word, but `EOF` (End Of File) is the standard convention.
+
+---
+
+**Piping: Connecting Streams**
+
+A **Pipe** (`|`) takes the `stdout` of the first command and plugs it directly into the `stdin` of the second command.
+
+```bash
+# 'cat' outputs the file to stdout
+# '|' catches that stdout and feeds it to 'grep' as stdin
+cat names.txt | grep "Alice"
+
+```
+
+---
 
 #### Functional Control
 
@@ -339,7 +460,7 @@ env program search path to find it​
 
 ---
 
-#### 2. Variables
+#### 2. Variables, Reading input, Printing
 
 No spaces around the = sign!
 
@@ -358,6 +479,66 @@ No spaces around the = sign!
 | `$1` to `$9` | The first through ninth arguments |
 | `$#` | The number of arguments passed |
 | `$@` | All arguments as a single list |
+
+---
+
+**Reading Input with `read`**
+
+The `read` command pauses the script and waits for the user to type something.
+
+
+```bash
+echo "Enter your username:"
+read USERNAME
+echo "Welcome, $USERNAME"
+
+```
+
+**Pro Flags for `read`**
+
+* **`-p` (Prompt):** Combine the echo and the read into one line.
+* **`-s` (Silent):** Hide the input (perfect for passwords).
+* **`-t` (Timeout):** Wait only a certain number of seconds before moving on.
+* **`-n` (Character limit):** Stop reading after  characters.
+
+```bash
+read -p "Username: " USERNAME
+read -sp "Password: " PASSWORD
+echo -e "\nLogin successful for $USERNAME."
+
+```
+
+---
+
+**`echo`: The Simple Tool**
+
+`echo` automatically adds a newline at the end of the string.
+
+* **`echo -n`**: Prints without the newline (keeps the cursor on the same line).
+* **`echo -e`**: Enables "backslash escapes" like `\n` (newline) or `\t` (tab).
+
+**`printf`: The Precision Tool**
+
+`printf` (print formatted) behaves like the C function. It does **not** add a newline automatically unless you include `\n`. It is much more reliable across different Linux distributions.
+
+**Syntax:** `printf "format string" "values"`
+
+| Format | Description |
+| --- | --- |
+| `%s` | String |
+| `%d` | Decimal (Integer) |
+| `%f` | Float |
+| `\n` | Newline |
+
+**Example: Creating a Table Layout**
+
+```bash
+# %-10s means a string left-aligned with 10 spaces of padding
+printf "%-10s %-10s\n" "USER" "ID"
+printf "%-10s %-10s\n" "admin" "1001"
+printf "%-10s %-10s\n" "guest" "1002"
+
+```
 
 ---
 
