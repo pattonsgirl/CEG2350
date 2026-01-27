@@ -1,0 +1,12 @@
+**Core Commands:**
+- `ping`
+- `ifconfig` and `ip a`
+- `netstat` and `ss`
+- `wget`
+- `curl`
+- `nc`
+- `tcpdump`
+- `iptables`
+- `route`
+- `traceroute`
+- `nslookup`

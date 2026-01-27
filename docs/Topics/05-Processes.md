@@ -1,0 +1,14 @@
+**Core Commands:**
+- `ps`
+- `top`
+- `htop`
+- `kill`
+- `killall`
+- `uptime`
+- `systemctl`
+- `journalctl`
+- `lsof`
+- `dmesg`
+- `free`
+- `iostat`
+- `vmstat`
