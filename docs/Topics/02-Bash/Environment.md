@@ -237,3 +237,9 @@ When you edit a config file, the changes don't take effect in your open windows 
 | **`~/.bash_profile`** | Single User | Login | Calling .bashrc |
 | **`~/.bashrc`** | Single User | Non-Login | Aliases, Prompts, Paths |
 | **`~/.bash_logout`** | Single User | Login | Cleanup when exiting |
+
+### Useful Resources
+
+- [How To Read and Set Environmental and Shell Variables on Linux - Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-read-and-set-environmental-and-shell-variables-on-linux)
+- [How To View and Update the Linux PATH Environment Variable - Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-view-and-update-the-linux-path-environment-variable)
+- [What Is .bashrc in Linux? Configuration Explained - Digital Ocean](https://www.digitalocean.com/community/tutorials/bashrc-file-in-linux)

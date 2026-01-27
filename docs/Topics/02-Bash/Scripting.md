@@ -367,3 +367,12 @@ After `getopts` finishes, the internal counter `$OPTIND` points to the next "unp
 
 * **Positional (`$1`):** Good for quick, simple scripts where you always know the order.
 * **`getopts`:** Best for tools meant for others to use, where readability and flexible ordering matter.
+
+### Useful References for Bash Scripting
+
+- Online "Textbooks"
+  - [Introduction to Bash Scripting for Developers - Bobby Iliev](https://github.com/bobbyiliev/introduction-to-bash-scripting?tab=readme-ov-file#-chapters)
+  - [bash scripting tutorial - Ryan's Tutorials](https://ryanstutorials.net/bash-scripting-tutorial/)
+- Bash Debuggers
+  - [ShellCheck - Browser Shell Debugging](https://www.shellcheck.net/)
+  - [ShellCheck - Install and use on the Linux Command Line](https://github.com/koalaman/shellcheck)

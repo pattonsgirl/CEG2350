@@ -228,3 +228,7 @@ echo "Today is $(date)"
 **Why does this matter?**
 
 If you have a filename with a space, like `My Resume.pdf`, and you try to run `ls $FILE` without double quotes, Bash will look for two files: `My` and `Resume.pdf`. Using `ls "$FILE"` ensures Bash treats it as one single item.
+
+### Resources for File Manipulation
+
+- [An intro to Linux IO Redirection - Digital Ocean](https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-i-o-redirection)

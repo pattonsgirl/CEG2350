@@ -130,3 +130,10 @@ awk '{print NR, $1}' list.txt
 awk 'NF == 3' list.txt
 
 ```
+
+### Resources for grep, sed, and awk
+
+- [grep - Digital Ocean](https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix)
+- [sed - Digital Ocean](https://www.digitalocean.com/community/tutorials/the-basics-of-using-the-sed-stream-editor-to-manipulate-text-in-linux)
+- [awk - Digital Ocean](https://www.digitalocean.com/community/tutorials/awk-command-linux-unix)
+    - [awk substitution - GNU awk Manual](https://www.gnu.org/software/gawk/manual/html_node/String-Functions.html#index-gensub_0028_0029-function-_0028gawk_0029-1)
