@@ -113,6 +113,10 @@ echo 'The variable is written as $USER_COUNT'
 echo "Today is `date`"
 # Output: Today is Tue Jan 27 13:21:19 EST 2026
 
+# 3. (Modern style) Mixing them: Using backticks inside double quotes
+echo "Today is $(date)"
+# Output: Today is Tue Jan 27 13:21:19 EST 2026
+
 ```
 
 **Why does this matter?**
