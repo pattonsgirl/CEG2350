@@ -22,11 +22,11 @@
 
 [Course Notes](02-Bash.md)
 
+- Environment variables, shell config files, PATH
 - File manipulation
-- Scripting
-- Path & environment variables
-- Regular Expressions
+- Regular expressions
 - grep, sed, awk
+- Scripting
 
 ## 03 - PC Knowledge
 
