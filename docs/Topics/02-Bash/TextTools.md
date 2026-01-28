@@ -137,3 +137,7 @@ awk 'NF == 3' list.txt
 - [sed - Digital Ocean](https://www.digitalocean.com/community/tutorials/the-basics-of-using-the-sed-stream-editor-to-manipulate-text-in-linux)
 - [awk - Digital Ocean](https://www.digitalocean.com/community/tutorials/awk-command-linux-unix)
     - [awk substitution - GNU awk Manual](https://www.gnu.org/software/gawk/manual/html_node/String-Functions.html#index-gensub_0028_0029-function-_0028gawk_0029-1)
+
+**Challenges**
+- [`sed` mastery challenge - iximiuz playground](https://labs.iximiuz.com/challenges/sed-command-basics-1-b2c4c9e9)
+- [`awk` mastery challenge - iximiuz playground](https://labs.iximiuz.com/challenges/Mastering-awk-command-challenge-01-efd63f6f)

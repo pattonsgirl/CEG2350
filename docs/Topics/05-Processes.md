@@ -12,3 +12,6 @@
 - `free`
 - `iostat`
 - `vmstat`
+
+Explanatory Resources:
+- [Processes & Threads - Planet Scale](https://planetscale.com/blog/processes-and-threads)
