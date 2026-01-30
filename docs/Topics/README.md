@@ -36,20 +36,29 @@
     - [VirtualBox Guide](/CEG2350/Labs/Lab07/VirtualBox-Guide.html)
     - [UTM Guide](/CEG2350/Labs/Lab07/UTM-Guide.html)
 
-## 04 - Code
+## 04 - Disks & Filesystems
+
+## 05 - Code
 
 - Coding on the command line
 - Compiling without an IDE
 - Makefiles
 
-## 05 - Processes
+## 06 - Processes
 
 
-## 06 - Networks
+## 07 - Networks
 
 - Networking
 - Firewalls
 - Common network services
+
+## 99 - Challenge Yourself
+
+- [Linux Upskill Challenge](https://linuxupskillchallenge.org/)
+- [Command Line Murder Mystery](https://github.com/veltman/clmystery)
+- [Git Murder Mystery](https://github.com/nivbend/gitstery?tab=readme-ov-file)
+- [Troubleshooting Scenarios - Linux Bash - Sad Servers](https://sadservers.com/scenarios/topic/linux-bash)
 
 
 
