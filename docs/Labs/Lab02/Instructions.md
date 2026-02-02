@@ -86,7 +86,7 @@ Sample:
 
 ## User & Group Resources
 
-Peruse these resources before beginning work on Parts 2 & 3.  You may cite them as references in your Lab Template
+Peruse these resources before beginning work on Parts 3 & 4.  You may cite them as references in your Lab Template
 
 - [RedHat - How to manage users and groups in Linux](https://www.redhat.com/sysadmin/linux-user-group-management)
 - [Linuxize - how to use `useradd`](https://linuxize.com/post/how-to-create-users-in-linux-using-the-useradd-command/)
