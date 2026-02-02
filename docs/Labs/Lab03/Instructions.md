@@ -142,6 +142,21 @@ A retrospective is a moment of refection after a task.
 2. Was anything familiar working with a new language compared to one you are used to?
 3. Assuming you `push`ed your `commit`s to GitHub, view your `commit` history.  Did you write good `commit` messages that refer to what tasks were completed at each commit?  What would you improve?
 
+## Part 6 - Citations / Resources
+
+Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations / Resources` section of your lab answers. You may refer to your own notes (if they are digitized into GitHub), course notes, or external resources / websites.
+
+To add citations / resources, provide the reference / link and a summary of what it assisted you with.  
+
+If generative AI was used, include which generative AI system was used, what prompt(s) you fed it, and a summary of what it assisted you with.
+
+We expect a minimum of **one citation / useful resource per part** of your lab. So this lab would require a resource for:
+- using basic git commands
+- setting up a keypair with GitHub
+- commands / syntax around IO redirection / file manipulation
+- running bash scripts
+- syntax for bash scripting
+
 ## Extra Credit - Room for Improvement
 
 Make a notable improvement to the `roll` script.  This could be another feature, an additional boundary check on allowed conditions, experimenting with colored text for standard and error output... If you have an idea, you are encouraged to run it by the TAs first to make sure it is worthy.

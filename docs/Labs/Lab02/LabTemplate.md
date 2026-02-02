@@ -78,6 +78,10 @@ Contents inside of `share`
 5. Command(s) to modify permissions:
 6. How to give user account `sudo`:
 
+## Part 6 - Citations / Resources
+
+Add citations / resources for each core topic covered in this lab
+
 ## Citations
 
 To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.

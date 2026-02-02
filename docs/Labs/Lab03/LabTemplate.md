@@ -51,11 +51,13 @@ Verify that `roll` made it to your GitHub repository for this course and is in y
 3. Did you write good `commit` messages that refer to what tasks were completed at each commit?  What would you improve?
 > Your reflection here
 
+## Part 6 - Citations / Resources
+
+Add citations / resources for each core topic covered in this lab
+
 ## Extra Credit
 
 1. Note here *what* you did to the script for the extra credit.
 
-## Citations
 
-To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.  Generative AI may not write your script for you, only assist with component and how to type questions.
 

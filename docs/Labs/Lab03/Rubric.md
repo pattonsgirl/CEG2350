@@ -45,6 +45,14 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] Reflection 2
     - [ ] Reflection 3
 
+- Part 6 - 5 pts  
+    - Citations / useful resource for:
+    - [ ] using basic git commands
+    - [ ] setting up a keypair with GitHub
+    - [ ] commands / syntax around IO redirection / file manipulation
+    - [ ] running bash scripts
+    - [ ] syntax for bash scripting
+
 - Extra Credit - 1 pt
     - [ ] Extra Credit 
 
