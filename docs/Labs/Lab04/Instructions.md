@@ -71,6 +71,9 @@ Reformat the user-guide you have in your function to use markdown to cleanly pre
 
 Include some sample runs (using copy and paste in code blocks) of your script in action.
 
+**Resources**
+- [Markdown Cheat Sheet - MarkdownGuide](http://markdownguide.org/cheat-sheet/)
+
 ## Part 3 - PATH for all
 
 Use your AWS instance for this part since your repository is cloned there and that is where your script should be.
@@ -89,6 +92,19 @@ Make any required modifications to permissions and ownership.
 Test that you can run your `ft` script from any location on the filesystem.
 
 Test that other user's on the system can also execute the `ft` script.
+
+## Part 4 - Citations / Resources
+
+Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations / Resources` section of your lab answers. You may refer to your own notes (if they are digitized into GitHub), course notes, or external resources / websites.
+
+To add citations / resources, provide the reference / link and a summary of what it assisted you with.  
+
+If generative AI was used, include which generative AI system was used, what prompt(s) you fed it, and a summary of what it assisted you with.
+
+We expect a minimum of **one citation / useful resource per part** of your lab. So this lab would require a resource for:
+- scripting (relevant to something this lab requires)
+- markdown syntax reference
+- PATH environment variable
 
 ## Extra Credit - TODO
 

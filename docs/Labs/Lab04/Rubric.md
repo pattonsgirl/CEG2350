@@ -28,6 +28,12 @@ Your answers should be cleanly presented in your GitHub repository.  Citations s
   - [ ] sufficient testing demonstrated / described to validate that `ft` can be run from anywhere on filesystem
   - [ ] sufficient testing demonstrated / described to validate that `ft` can be run by other users
 
+- Part 4 - 3 pts
+  - Citations / useful resource for:
+  - [ ] scripting (relevant to something this lab requires)
+  - [ ] markdown syntax reference
+  - [ ] PATH environment variable
+
 - EC - 1.8 pts
   - (+10%) - requirements to earn:
     - [ ] bonus feature added to script (commit history still reflects a working original script)
