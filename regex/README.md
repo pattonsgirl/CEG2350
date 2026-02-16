@@ -4,6 +4,11 @@
 
 1. Create a file that **only** shows the emails - one email per line.
 
+## Using `dayton_oh_last_30_days_weather.csv`
+
+1. Print only the high temps
+2. Average the high temps
+
 ## Using `login.log`
 
 1. How many total login attempts were made in this log?
