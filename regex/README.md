@@ -1,6 +1,6 @@
 # Challenges
 
-## Using `f24emails`
+## Using `f24-roster.txt`
 
 1. Create a file that **only** shows the emails - one email per line.
 
