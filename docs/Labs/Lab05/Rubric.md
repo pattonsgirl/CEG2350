@@ -2,7 +2,7 @@
 
 Your answers should be cleanly presented in your GitHub repository. Citations should be included as needed. Include which generative AI system was used and what prompts were used if generative AI was used.
 
-### Total Points /16
+### Total Points /20
 
 - Part 1 - 5 pts
     - [ ] access.log file is in repository (0 for section if not in repo)
@@ -30,6 +30,13 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] awk command
     - [ ] awk command
     - [ ] awk command
+ 
+- Part 4 - 4 pts
+- Citations / useful resource for:
+    - [ ] regular expressions 
+    - [ ] grep
+    - [ ] sed
+    - [ ] awk
 
 - Point Deductions
     - [ ] AI Overuse / AI Generated - 0 Points
