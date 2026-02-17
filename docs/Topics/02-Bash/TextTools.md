@@ -145,5 +145,6 @@ awk 'NF == 3' list.txt
     - [awk substitution - GNU awk Manual](https://www.gnu.org/software/gawk/manual/html_node/String-Functions.html#index-gensub_0028_0029-function-_0028gawk_0029-1)
 
 **Challenges**
+- [Class exercises and toy files](https://github.com/pattonsgirl/CEG2350/tree/main/regex)
 - [`sed` mastery challenge - iximiuz playground](https://labs.iximiuz.com/challenges/sed-command-basics-1-b2c4c9e9)
 - [`awk` mastery challenge - iximiuz playground](https://labs.iximiuz.com/challenges/Mastering-awk-command-challenge-01-efd63f6f)
