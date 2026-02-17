@@ -5,6 +5,7 @@
 - [Part 1 - grep](#Part-1---grep)
 - [Part 2 - sed](#Part-2---sed)
 - [Part 3 - awk](#Part-3---awk)
+- [Part 4 - Citations & Resources](#Part-4---citations)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -166,6 +167,20 @@ Only write the command that performs the required task in the lab write up. DO N
 - [linuxize - awk with examples](https://linuxize.com/post/awk-command/)
 - [How to Geek - 6 Text Filtering Uses for the Linux awk Command](https://www.howtogeek.com/text-filtering-uses-for-the-linux-awk-command/)
 - [cyberbiz - awk find and replace](https://www.cyberciti.biz/faq/awk-find-and-replace-fields-values/)
+
+## Part 4 - Citations / Resources
+
+Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations / Resources` section of your lab answers. You may refer to your own notes (if they are digitized into GitHub), course notes, or external resources / websites.
+
+To add citations / resources, provide the reference / link and a summary of what it assisted you with.  
+
+If generative AI was used, include which generative AI system was used, what prompt(s) you fed it, and a summary of what it assisted you with.
+
+We expect a minimum of **one citation / useful resource per part** of your lab. So this lab would require a resource for:
+- regular expressions 
+- grep
+- sed
+- awk
 
 ## Submission
 
