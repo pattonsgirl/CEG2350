@@ -114,6 +114,12 @@ awk -F ":" '{print $1}' /etc/passwd
 `awk '$3 > 100' data.txt`
 * **Find a word AND print a specific column:**
 `awk '/Error/ {print $5}' system.log` (Finds lines with "Error", prints 5th word)
+* **Find pattern across a file**
+`awk '/regex_pattern/' filename`
+* **Finds lines where the 2nd column matches "admin"**
+`awk '$2 ~ /admin/' filename`
+* **Finds lines where the 3rd column does NOT match a digit**
+`awk '$3 !~ /[0-9]/' filename`
 
 ---
 

@@ -50,6 +50,8 @@
    - case
 7. Regular expressions
 8. grep (search)
+9. sed (search and replace)
+10. awk (parse formatted files)
 
 ## Git (version control)
 
