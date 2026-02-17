@@ -53,6 +53,8 @@ ls -l | grep ".pdf"
 `sed '/temporary/d' list.txt`
 * **Edit the file in place (`-i`):**
 `sed -i 's/localhost/127.0.0.1/g' config.conf` (Warning: This changes the actual file!)
+* **Edit the file in place (`-i`) && create a backup of the current file:**
+`sed -i.bak 's/localhost/127.0.0.1/g' config.conf` (This changes the actual file, but you will also get `config.conf.bak`)
 
 ---
 
