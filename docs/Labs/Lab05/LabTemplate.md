@@ -45,6 +45,10 @@ Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab05/Inst
 4. `awk command goes here`
 5. `awk command goes here`
 
+## Part 4 - Citations / Resources
+
+Add citations / resources for each core topic covered in this lab
+
 ## Citations
 
 To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.  Generative AI may not write your script for you, only assist with component and how to type questions.
