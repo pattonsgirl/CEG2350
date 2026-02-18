@@ -1,7 +1,10 @@
 # TODO: "lift" the structure of getopts
 
-while getopts ":n:v" opt; do
-  case $opt in
+echo "here all all my starting args $@"
+
+while getopts ":n:v" option; do
+  echo "OPTARG is $OPTARG\n OPTIND is $OPTIND"
+  case $option in
     n)
       NAME="$OPTARG"
       ;;
@@ -18,5 +21,12 @@ while getopts ":n:v" opt; do
       ;;
   esac
 done
+
+## what if you want the last arg
+
+shift $((OPTIND -1))
+
+echo "here all my args $@"
+
 # Design it with intent
 # Reviting either file maker OR the awk seeks from 2/16
