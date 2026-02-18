@@ -48,6 +48,14 @@ shift $((OPTIND -1))
 # TODO: I need to remember to read in filename
 #echo "here all my args $@"
 
+# TODO: is the last a file?
+if [[ -f $1 ]]
+then
+	echo "TODO: now that I have a file, I can processing"
+
+else
+	echo "You failed to give me a file"
+fi
 
 # Design it with intent
 # Reviting either file maker OR the awk seeks from 2/16
