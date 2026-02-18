@@ -1,16 +1,29 @@
 # TODO: "lift" the structure of getopts
 
-echo "here all all my starting args $@"
+#echo "here all all my starting args $@"
 
-while getopts ":n:v" option; do
-  echo "OPTARG is $OPTARG\n OPTIND is $OPTIND"
+
+print_help() {
+echo "given a user, how many log attempts = u"
+echo "who had the login attempts = m"
+echo "given a date, how many login attempts = d"
+echo "DONT FORGET TO GIVE ME A FILE"
+}
+
+while getopts ":u:d:mh" option; do
   case $option in
-    n)
-      NAME="$OPTARG"
+    h)
+      print_help
       ;;
-    v)
-      VERBOSE=true
+    u)
+      echo "given a user, how many log attempts = u"
       ;;
+    m) 
+       echo "who had the login attempts = m"
+	;;
+    d)
+	echo "given a date, how many login attempts = d"
+	;;
     \?)
       echo "Invalid option: -$OPTARG" >&2
       exit 1
@@ -26,7 +39,7 @@ done
 
 shift $((OPTIND -1))
 
-echo "here all my args $@"
+#echo "here all my args $@"
 
 # Design it with intent
 # Reviting either file maker OR the awk seeks from 2/16
