@@ -20,6 +20,7 @@ while getopts ":u:d:mh" option; do
       ;;
     u)
       echo "given a user, how many log attempts = u"
+      
       user=$OPTARG
       ;;
     m) 
@@ -43,6 +44,7 @@ done
 ## what if you want the last arg
 echo "user to find is $user"
 echo "date to find is $find_date"
+reg_date="[0-9]{4}-[0-9]{2}-[0-9]{2}"
 
 shift $((OPTIND -1))
 # TODO: I need to remember to read in filename
@@ -52,6 +54,15 @@ shift $((OPTIND -1))
 if [[ -f $1 ]]
 then
 	echo "TODO: now that I have a file, I can processing"
+	if [[ -n $user ]]
+	then
+		echo "you gave me a user"
+		# awk thing that says how loings based on a user
+	elif [[ $find_date =~ $reg_date ]]
+	then
+		echo "OMG! It's a date!"
+	fi
+
 
 else
 	echo "You failed to give me a file"
