@@ -44,11 +44,11 @@ Add the aliases to a file named `.bash_aliases` in your user's home directory.
 
 Read through the `.bashrc` file in your user's home directory for a section that is relevant to "enabling" usage of the `.bash_aliases` file.  Copy and paste the snippet into your lab template and describe what it does.
 
-Confirm that your aliases continuously work as long as the conditions are met.
+Confirm that your aliases "persist" - are available when starting a fresh shell session.
 
 Copy your `.bash_aliases` file to your GitHub repository in your `Lab06` folder.
 
-You may delete the `.bash_aliases` file in your user's home directory as needed through this lab.
+You may delete the `.bash_aliases` file in your user's home directory as needed through this lab to test your script.
 
 **Resources**
 - [How to create bash aliases - linuxize](https://linuxize.com/post/how-to-create-bash-aliases/)
@@ -79,6 +79,7 @@ Usage: dotinstall [-OPTION] [ARG]
      - call `printHelp` function and exit script
    - `-s`
      - calls function to attempt to create a symbolic link between the `.bash_aliases` in the `Lab06` folder to a `.bash_aliases` in the user's home directory
+         - DO NOT HARD CODE the file path. Use `~/.bash_aliases` - not `/home/ubuntu/.bash_aliases`
      - if `.bash_aliases` already exists, prompt the user to confirm the most appropriate action before overwriting the existing file
    - `-d`
      - calls function to remove symbolic link from user's home directory
