@@ -46,4 +46,5 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
         - Includes commands not being in `backticks` 
     - [ ] Submitted some markdown (legible enough for grading), but needs improvement - (-10%)
     - [ ] Failure to cite resources - (-10%)
+    - [ ] Failure to implement pattern based replacements / use regex - (-10%)
 

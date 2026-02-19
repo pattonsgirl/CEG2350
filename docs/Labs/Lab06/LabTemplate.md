@@ -52,6 +52,12 @@ By using the triple quotes, you can enclose a block of code
 And code blocks look very professional
 ```
 
-## Citations
+## Part 5 - Citations / Resources
 
-To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.  Generative AI may not write your script for you, only assist with component and how to type questions.
+Add citations / resources for each core topic covered in this lab
+
+## Extra Credit - Improvements
+
+Note here *what* you did to the script for the extra credit, resources referenced, and provide additional demonstrations or user guide updates
+
+
