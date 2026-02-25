@@ -40,9 +40,9 @@ Craft an `alias` with a name of your choice to something "fun".  Checkout these 
    - have `cat` use `lolcat` instead
    - [`asciiaquarium`](https://github.com/cmatsuoka/asciiquarium) - hard mode - you have to install this one from source and install package dependencies
 
-Add the aliases to a file named `.bash_aliases` in your user's home directory.
+Add the aliases to a file named `.bash_aliases` in your user's home directory. It may not exist yet!
 
-Read through the `.bashrc` file in your user's home directory for a section that is relevant to "enabling" usage of the `.bash_aliases` file.  Copy and paste the snippet into your lab template and describe what it does.
+Read through the `.bashrc` file in your user's home directory for a section that is relevant to loading the content of (sourcing) the `.bash_aliases` file.  Copy and paste the snippet into your lab template and describe what it does.
 
 Confirm that your aliases "persist" - are available when starting a fresh shell session.
 
