@@ -38,7 +38,7 @@ Craft an `alias` with a name of your choice that pipes a `fortune` to a `cowsay`
 Craft an `alias` with a name of your choice to something "fun".  Checkout these as suggestions.  You may need to install these programs first with `apt`.
    - `curl wttr.in`
    - have `cat` use `lolcat` instead
-   - `asciiaquarium` 
+   - [`asciiaquarium`](https://github.com/cmatsuoka/asciiquarium) - hard mode - you have to install this one from source and install package dependencies
 
 Add the aliases to a file named `.bash_aliases` in your user's home directory.
 
