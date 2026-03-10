@@ -2,7 +2,7 @@
 
 Your answers should be cleanly presented in your GitHub repository. Citations should be included as needed. Include which generative AI system was used and what prompts were used if generative AI was used.
 
-### Total Points /42
+### Total Points /54
 
 - Part 1 - 22 pts
     - CPU Info
@@ -29,7 +29,7 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
         - [ ] BIOS / UEFI manufacturer & version
         - [ ] How to access BIOS / UEFI
         - [ ] How to enable CPU virtualization
-        - [ ] Link to driver(s) for motherboard
+        - [ ] Link to driver(s) from system manufacturer: 
     - Kernel / OS Info
         - [ ] Bootloader software for system
         - [ ] Kernel for operating system
@@ -38,7 +38,7 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
 - Part 2 - 10 pts
     - Virtual Machine Manager
         - [ ] Software & Version
-        - [ ] Linkt to Software
+        - [ ] Link to Software
         - [ ] Screenshot of Installed & Running Software
     - Guest OS information
         - [ ] Linux Distribution Selected
@@ -68,9 +68,34 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
         - [ ] Steps
         - [ ] Thoughtfully Written Out
 
+- Part 4 - 12 points
+    - [ ] Report for AWS instance
+    - Good strategy to confirm results for:
+        - [ ] OS and kernel version:
+        - [ ] CPU info:
+        - [ ] RAM usage:
+        - [ ] Disk space usage:
+        - [ ] GPU info:
+    - [ ] Report for Linux Virtual Machine
+    - Good strategy to confirm results for:
+        - [ ] OS and kernel version:
+        - [ ] CPU info:
+        - [ ] RAM usage:
+        - [ ] Disk space usage:
+        - [ ] GPU info:
+
+- Extra Credit - 7%
+     - [ ] script in repo relevant to OS selected
+     - [ ] report output 
+     - Good strategy to confirm results for:
+        - [ ] OS and kernel version:
+        - [ ] CPU info:
+        - [ ] RAM usage:
+        - [ ] Disk space usage:
+        - [ ] GPU info:
+
 - Point Deductions
     - [ ] AI Overuse / AI Generated - 0 Points
-    - [ ] Not enough commits submitted - 4 pts
     - [ ] Submitted to incorrect repository - 0 points
     - [ ] Submitted past due date - 0 points
     - [ ] Submitted non-markdown (incorrect extensions / no use of markdown for formatting) - 0 points

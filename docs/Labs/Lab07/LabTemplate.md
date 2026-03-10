@@ -31,11 +31,11 @@ Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab07/Inst
     - BIOS / UEFI manufacturer & version: 
     - How to access BIOS / UEFI:
     - How to enable CPU virtualization: 
-    - Link to driver(s) for motherboard: 
-7. **Kernel / OS info**
-    - Bootloader software for system: 
+    - Link to driver(s) from system manufacturer: 
+7. **OS info**
+    - Operating System name & version:  
     - Kernel for operating system:
-    - Operating System name & version: 
+    - Bootloader:
 
 ## Part 2 - Virtualize the Machine
 
@@ -86,10 +86,53 @@ My guest OS is: [INSERT YOUR GUEST OS]
     - go 
     - here
 
-5. **Connecting to my AWS instance from using `ssh`**
+5. **Connecting to my AWS instance from the VM using `ssh`**
     - steps
     - go 
     - here
+
+## Part 4 - System Reports
+
+System Report for AWS instance:
+
+INSERT REPORT OUTPUT HERE
+
+Confirmation of output (how to verify the report results)
+- OS and kernel version:
+- CPU info:
+- RAM usage:
+- Disk space usage:
+- GPU info:
+
+---
+
+System Report for Linux Virtual Machine:
+
+INSERT REPORT OUTPUT HERE
+
+Confirmation of output (how to verify the report results)
+- OS and kernel version:
+- CPU info:
+- RAM usage:
+- Disk space usage:
+- GPU info:
+
+## Extra Credit - It's Not All Linux
+
+Generative AI used to create script:
+
+Make sure to add your script to your repository
+
+System Report for [WINDOWS | MAC] OS:
+
+INSERT REPORT OUTPUT HERE
+
+Confirmation of output (how to verify the report results)
+- OS and kernel version:
+- CPU info:
+- RAM usage:
+- Disk space usage:
+- GPU info:
 
 ## Citations
 

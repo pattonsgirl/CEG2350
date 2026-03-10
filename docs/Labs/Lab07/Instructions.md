@@ -4,6 +4,8 @@
 - [Part 1 - System Discovery](#part-1---system-discovery)
 - [Part 2 - Virtual the Machine](#part-2---virtualize-the-machine)
 - [Part 3 - Virtual Playground](#part-3---virtual-playground)
+- [Part 4 - System Reports](#part-4---system-reports)
+- [Extra Credit - It's Not All Linux](#extra-credit---its-not-all-linux)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 - [Windows & WSL2](#windows-and-wsl2)
@@ -65,19 +67,18 @@ If research proves your system does not support something, leave documentation a
     - BIOS / UEFI manufacturer & version: 
     - How to access BIOS / UEFI:
     - How to enable CPU virtualization: 
-    - Link to driver(s) for motherboard: 
-7. Kernel / OS info:
-    - Bootloader software for system: 
+    - Link to driver(s) from system manufacturer: 
+7. OS info:
+    - Operating System name & version:  
     - Kernel for operating system:
-    - Operating System name & version: 
+    - Bootloader:
+    
 
 ## Part 2 - Virtualize the Machine
 
 You should experience making some hardware choices and installing an operating system. The easiest way to do this is via virtual machines. This allows your host to segment a set of resources to run a machine (a guest) via your host. Developers (and students :wink: ) use VMs to install software that isn't compatible with their host OS, download and explore suspicious packages, create test environments, and other things. Companies will buy a server with massive amounts of resources (200 CPUs, a few terabytes of RAM, a few petabytes of storage) and segment it by creating virtual machines for various software needs. We are using a VM allocated in Amazon Web Services... they are everywhere!
 
 You will need a computer that has CPU virtualization enabled. The lab machines and open lab machines in Russ 152 B & D are all good candidates (and may have VirtualBox already installed). For your own machine, you may need to enable CPU virtualization in your BIOS / UEFI.
-
-The lab template will give an outline of minimum expected documentation for this portion.  The instructions below will provide more verbose guidelines to complete the taskings.
 
 **Resources we've whipped up**
 - [VirtualBox Guide](/CEG2350/Labs/Lab07/VirtualBox-Guide.html)
@@ -96,10 +97,10 @@ The lab template will give an outline of minimum expected documentation for this
  
 2. Download an ISO (installation image) for a **Linux** distribution with desktop environment of your choice. 
     - The point is to go through the installation process. *Do not download and use a pre-built VM image for this lab*. You may switch to that on your own time.
-    - Recommended options include: Ubuntu Desktop, LUbuntu, Linux Mint, Elementary, Kali, Pop OS
-        - See [DistroWatch](https://distrowatch.com/) for a comprehensive site about all possible distros    
+    - Recommended options include: Ubuntu Desktop, LUbuntu, Linux Mint, Elementary, Kali, Pop OS, Rocky
+        - See [DistroWatch](https://distrowatch.com/) to see just about every option and a summary of why it exists.    
     - Graphics Troubleshooting
-        - If you see an error about video memory / have a blank screen, power off the VM and chnage the following **Display** settings:
+        - If you see an error about video memory / have a blank screen, power off the VM and change the following **Display** settings:
             - Video Memory - 128 MB (max it out)
             - Graphics Controller - VMSVGA 
                 - try VBoxSVGA if the other is still not showing your screen
@@ -124,7 +125,25 @@ Accomplish the following tasks using the guest OS in the virtual machine you mad
 4. Cloning your course repository to your guest OS
 5. Connecting to your AWS instance from your guest OS using `ssh`
 
-**We plan to use this VM again in future labs.  If you must delete it, make sure your instructions from this lab are good enough to quickly get a new one back up and running**
+## Part 4 - System Reports
+
+[sys-info.sh](sys-info.sh) is a bash script that generates a report of specs for Linux systems
+- [Raw version of `sys-info.sh`](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab07/sys-info.sh)
+
+The report will include OS and kernel version, CPU info, RAM usage, Disk space usage, and GPU info.
+
+Run this report on *both* your AWS instance & your Linux Virtual Machine and add the results to your Lab template.
+
+For each piece of info generated in the report, note at least one way to confirm the information is factual and the output is as expected.
+
+## Extra Credit - It's Not All Linux
+
+Provide information about the purpose of `sys-info.sh` (and / or the whole script) to a generative AI system of your choice. Have it create a version of this script that outputs similar information for *one* of Windows or Mac based systems.
+
+Run the script and provide:
+1. the script
+2. the report from the script
+3. details on how to confirm the accuracy of the reported output
 
 ## Submission
 

@@ -30,7 +30,7 @@
 
 ## 03 - PC Knowledge
 
-- PC Hardware
+- [PC Hardware](03-PC.md)
 - The Boot Process
 - Virtual Machines
     - [VirtualBox Guide](/CEG2350/Labs/Lab07/VirtualBox-Guide.html)
