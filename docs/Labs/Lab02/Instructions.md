@@ -104,7 +104,7 @@ Replace `BOB` with a **username your create** based on **your** first initial fo
 1. Create a new user named `BOB` 
    - **replace `BOB` with your username, see instructions above**
 2. What is the path to `BOB`'s `home` directory?
-3. Can `ubuntu` add files to `BOB`'s home directory? Why or why not?
+3. Evaluate if ubuntu can add files to new user's home directory WITHOUT SUDO
    - For credit, answer must include what was to to justify answer.
 4. Switch to the user `BOB`
 5. Get to `BOB`'s `home` directory

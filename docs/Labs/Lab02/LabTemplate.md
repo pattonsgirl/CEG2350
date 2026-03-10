@@ -36,7 +36,7 @@ Command to SSH to AWS instance:
 
 1. Command to create new user: 
 2. Path to new user's home directory: 
-3. Evaluate if `ubuntu` can add files to new user's home directory:
+3. Evaluate if ubuntu can add files to new user's home directory WITHOUT SUDO:
 4. Command to switch to new user:
 5. Command(s) to go to new user's home directory:
 6. Evaluate if new user can add files to user's home directory:

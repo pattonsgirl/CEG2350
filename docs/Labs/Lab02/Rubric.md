@@ -27,7 +27,7 @@ Part 2 - 10 pts
 Part 3 - 8 pts
 - [ ] Command to create new user
 - [ ] Path to new user's home directory
-- [ ] Evaluate if `ubuntu` can add files to new user's home directory
+- [ ] Evaluate if ubuntu can add files to new user's home directory WITHOUT SUDO
 - [ ] Command to switch to new user
 - [ ] Command(s) to go to new user's home directory
 - [ ] Evaluate if new user can add files to user's home directory
