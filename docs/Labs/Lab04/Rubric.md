@@ -2,12 +2,12 @@
 
 Your answers should be cleanly presented in your GitHub repository.  Citations should be included as needed.  Include which generative AI system was used and what prompts were used if generative AI was used.
 
-### Total Points: 
+### Total Points: /21 
 
 - Part 1 - 10 pts
   - [ ] `ft` exists
   - [ ] `ft` uses case statement to evaluate if arg 1 was `add` or `remove` or `view` or `clear` or `help`; if none, outputs guide and exists
-  - [ ] `ft` `add` and `complete` uses arg 2 or prompts user if arg 2 not given
+  - [ ] `ft` `add` and `remove` uses arg 2 or prompts user if arg 2 not given
   - [ ] ONE of `ft` actions - `add`, `remove`, or `view` - calls a function in which task is performed
   - [ ] `ft` `add` appends record to `.finance` in `HOME`
   - [ ] `ft` `remove` removes record from `.finance` in `HOME`

@@ -38,6 +38,11 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] truthfull demonstrations of dotinstall script
     - [ ] Good use of markdown formatting  (2 pts)
 
+- Part 5 - 2 pts
+  - Citations / useful resource for:
+  - [ ] `.bash_alias` / `.bashrc` file.  Purpose / how to make use of
+  - [ ] how `getopts` works / starter guide for usage
+
 - Extra Credit - 2 pts
     - [ ] Extra Credit 
 

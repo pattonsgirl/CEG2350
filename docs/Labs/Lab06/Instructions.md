@@ -5,6 +5,7 @@
 - [Part 2 - Dotfile Installer Script](#part-2---dotfile-installer-script)
 - [Part 3 - Retrospective](#part-3---retrospective)
 - [Part 4 - Usage Guide](#part-4---usage-guide)
+- [Part 5 - Citations / Resources](#part-5---citations--resources)
 - [Extra Credit - Improvements](#extra-credit---improvements)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
@@ -37,17 +38,17 @@ Craft an `alias` with a name of your choice that pipes a `fortune` to a `cowsay`
 Craft an `alias` with a name of your choice to something "fun".  Checkout these as suggestions.  You may need to install these programs first with `apt`.
    - `curl wttr.in`
    - have `cat` use `lolcat` instead
-   - `asciiaquarium` 
+   - [`asciiaquarium`](https://github.com/cmatsuoka/asciiquarium) - hard mode - you have to install this one from source and install package dependencies
 
-Add the aliases to a file named `.bash_aliases` in your user's home directory.
+Add the aliases to a file named `.bash_aliases` in your user's home directory. It may not exist yet!
 
-Read through the `.bashrc` file in your user's home directory for a section that is relevant to "enabling" usage of the `.bash_aliases` file.  Copy and paste the snippet into your lab template and describe what it does.
+Read through the `.bashrc` file in your user's home directory for a section that is relevant to loading the content of (sourcing) the `.bash_aliases` file.  Copy and paste the snippet into your lab template and describe what it does.
 
-Confirm that your aliases continuously work as long as the conditions are met.
+Confirm that your aliases "persist" - are available when starting a fresh shell session.
 
 Copy your `.bash_aliases` file to your GitHub repository in your `Lab06` folder.
 
-You may delete the `.bash_aliases` file in your user's home directory as needed through this lab.
+You may delete the `.bash_aliases` file in your user's home directory as needed through this lab to test your script.
 
 **Resources**
 - [How to create bash aliases - linuxize](https://linuxize.com/post/how-to-create-bash-aliases/)
@@ -78,6 +79,7 @@ Usage: dotinstall [-OPTION] [ARG]
      - call `printHelp` function and exit script
    - `-s`
      - calls function to attempt to create a symbolic link between the `.bash_aliases` in the `Lab06` folder to a `.bash_aliases` in the user's home directory
+         - DO NOT HARD CODE the file path. Use `~/.bash_aliases` - not `/home/ubuntu/.bash_aliases`
      - if `.bash_aliases` already exists, prompt the user to confirm the most appropriate action before overwriting the existing file
    - `-d`
      - calls function to remove symbolic link from user's home directory
@@ -166,8 +168,20 @@ Examples of bad README / Usage Guides:
    - as discussed in class there was a hidden dependency of a word file, we needed to make it executable, and what if you didn't know how to play wordle?
 
 Examples of good README / Usage Guides:
-- [pokeget](https://github.com/talwat/pokeget)
+- [pokeget](https://github.com/talwat/pokeget-rs)
    - this is far more thorough than what you are writing, but note here how much detail is included.
+
+## Part 5 - Citations / Resources
+
+Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations / Resources` section of your lab answers. You may refer to your own notes (if they are digitized into GitHub), course notes, or external resources / websites.
+
+To add citations / resources, provide the reference / link and a summary of what it assisted you with.  
+
+If generative AI was used, include which generative AI system was used, what prompt(s) you fed it, and a summary of what it assisted you with.
+
+We expect a minimum of **one citation / useful resource per part** of your lab. So this lab would require a resource for:
+- `.bash_alias` / `.bashrc` file.  Purpose / how to make use of
+- how `getopts` works / starter guide for usage
 
 ## Extra Credit - Improvements
 

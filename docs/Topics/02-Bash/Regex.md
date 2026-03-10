@@ -44,12 +44,14 @@ A regular expression (regex for short) allow developers to match strings against
 
 **Frequently Used Resources**
 - [Regex One - Learning Tutorial](https://regexone.com/)
+    - [Sketch Engine - Regex](https://regex.sketchengine.eu/basic-exercises.html) - it's like regexone, but fewer hints
 - [Regex 101 - Expression Generator & Validation Testing](https://regex101.com/)
+- **Account Required** [Execute Program - Regex Courses](https://www.executeprogram.com/courses/regexes)
 
 **Games**
 - [Regex Crossword](https://regexcrossword.com/)
 - [Regex Golf](https://alf.nu/RegexGolf?world=regex&level=r00)
 - [Regexle - REgex Hexagon Puzzles](https://regexle.com/)
 
-**Examples**
+**Examples in the Wild**
 - [Wordle in bash by huytd](https://gist.github.com/huytd/6a1a6a7b34a0d0abcac00b47e3d01513)
