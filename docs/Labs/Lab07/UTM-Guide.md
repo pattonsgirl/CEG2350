@@ -45,7 +45,7 @@ You must download the **.iso** file of whatever VM you would like to create and 
 
 ### If you get stuck...
 
-Some of the setups differ from which VM you choose, so ff you get stuck here are YouTube links to help set it up or to make sure you are on the right track! 
+Some of the setups differ from which VM you choose, so if you get stuck here are YouTube links to help set it up or to make sure you are on the right track! 
 
 - [UTM Windows](https://www.youtube.com/watch?v=5Z_G6QG7xxg&t=87s)
 - [UTM Kali Linux](https://www.youtube.com/watch?v=U09soewiu18)
