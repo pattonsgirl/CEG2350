@@ -83,6 +83,7 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
         - [ ] RAM usage:
         - [ ] Disk space usage:
         - [ ] GPU info:
+    - Note that the confirmation methods should be different (may be a command line approach and a GUI approach)
 
 - Extra Credit - 7%
      - [ ] script in repo relevant to OS selected

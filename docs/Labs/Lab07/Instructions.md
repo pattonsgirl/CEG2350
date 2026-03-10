@@ -130,7 +130,9 @@ The report will include OS and kernel version, CPU info, RAM usage, Disk space u
 
 Run this report on *both* your AWS instance & your Linux Virtual Machine and add the results to your Lab template.
 
-For each piece of info generated in the report, note at least one way to confirm the information is factual and the output is as expected.
+For each piece of info generated in the report, note at least one way to confirm the information is factual and the output is as expected. You may not use the same method on both systems - if you find a command line way on one system, you need to find an alternative option in the other.
+
+> The purpose here is to get  you to explore both command line methods and graphical interface methods to finding system information.
 
 ## Extra Credit - It's Not All Linux
 
