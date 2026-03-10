@@ -216,12 +216,13 @@ The second is an absolute path within the context of the repository
 
 ### Graphics Troubleshooting
 
-- If you see an error about video memory / have a blank screen, power off the VM and change the following **Display** settings:
+- If you see an error about video memory / `vmwgfx` errors / have a blank screen:
+    - Power off the VM and change the following **Display** settings:
     - Video Memory - 128 MB (max it out)
     - Graphics Controller - VMSVGA 
-        - try VBoxSVGA if the other is still not showing your screen
+        - try VBoxSVGA if trying VMSVGA is still a showing a blank screen
 - If your VM is running "slow", try enabling 3D acceleration and bumping up your vram
-- [Sodergren's VirtualBox Troubleshooting](Sodergren-VBox-Troubleshooting.pdf) has some other step by step help notes
+- [Sodergren's VirtualBox Troubleshooting](Sodergren-VBox-Troubleshooting.pdf) has some other step by step help note
 
 ### Kernel panic
 
