@@ -2,7 +2,7 @@
 
 Your answers should be cleanly presented in your GitHub repository. Citations should be included as needed. Include which generative AI system was used and what prompts were used if generative AI was used.
 
-### Total Points /22
+### Total Points /24
 
 - Lab 6 Files Exist - 3 Pts
     - [ ] README.md
