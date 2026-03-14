@@ -40,6 +40,8 @@ To set up your sandbox environment for this lab, return to [Getting Started with
 
 ## Part 1 - `ssh` `config` file
 
+Did you read [BEFORE YOU BEGIN](#before-you-begin)? Got a second sandbox up? Good. Proceed.
+
 Since you now have two sandboxes, it's going to be a helpful time to learn a common strategy to configure `ssh` connection. 
 
 1. Verify and write into your lab template the `ssh` commands for connecting to each of your sandboxes.
@@ -53,8 +55,8 @@ Since you now have two sandboxes, it's going to be a helpful time to learn a com
 | `Port`        |                        |
 | `IdentityFile`|                        |
 
-3. Write two entries in your local system's `~/.ssh/config` - one for use for each of your sandboxes.
-    - Notes 
+3. Write two entries in your local system's `~/.ssh/config` - one for use for each of your sandboxes.  Copy your config file contents to your lab template.
+    - Notes:
         - you may not have a `.ssh` folder in your user's home directory on your system - you'll need to make the folder and the `config` file inside of it.
         - Windows users - place your `config` file in `C:\Users\yourusername\.ssh`
 4. Confirm that when using `ssh <host_block_name>` that you can connect to each sandbox. Write the working commands into your lab template.
@@ -182,10 +184,12 @@ To add citations / resources, provide the reference / link and a summary of what
 If generative AI was used, include which generative AI system was used, what prompt(s) you fed it, and a summary of what it assisted you with.
 
 We expect a minimum of **one citation / useful resource per part** of your lab. So this lab would require a resource for:
-- regular expressions 
-- grep
-- sed
-- awk
+- the `ssh` `config` file
+- manipulating partition tables `gdisk`
+- creating filesystems with `mkfs`
+- mounting filesystems
+- changing the `fstab` file
+- using `strings`
 
 ## Extra Credit - Create a Virtual Filesystem
 

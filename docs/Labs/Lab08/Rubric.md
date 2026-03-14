@@ -2,7 +2,13 @@
 
 Your answers should be cleanly presented in your GitHub repository. Citations should be included as needed. Include which generative AI system was used and what prompts were used if generative AI was used.
 
-### Total Points /28
+### Total Points /38
+
+- Part 1 - 4 pts
+    - [ ] `ssh` commands to each instance
+    - [ ] `ssh config` file components
+    - [ ] `ssh` `config` file blocks
+    - [ ] `ssh` commands that use `config` file entries
 
 - Part 1 - 9 pts
     - [ ] Command & Output (0.5 point each)
@@ -40,9 +46,18 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] Retrospective of what was seen from strings
     - [ ] Commands Used
     - [ ] Secret Deleted?
-    - [ ] Shred Command Explaination
+    - [ ] Shred Command Explanation
 
-- Extra Credit - 2.8 pts
+- Part 7 - 6 pts
+    - Citations / useful resource for:
+    - [ ] the `ssh` `config` file
+    - [ ] manipulating partition tables `gdisk`
+    - [ ] creating filesystems with `mkfs`
+    - [ ] mounting filesystems
+    - [ ] changing the `fstab` file
+    - [ ] using `strings`
+
+- Extra Credit - 3.8 pts
     - [ ] Extra Credit 
 
 - Point Deductions

@@ -5,7 +5,43 @@
 
 Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab08/Instructions.html
 
-## Part 1 - What do we have?
+## Part 1 - `ssh` `config` file
+
+1. `ssh` commands for connecting to each of your sandboxes:
+```bash
+# to connect to original sandbox with cloned GitHub repo:
+
+# to connect to new sandbox for this lab:
+
+```
+
+2. Options commonly used in a `config` file for `ssh`:
+
+| `ssh` `config` Option   | Description  |
+|---------------|------------------------|
+| `Host`        |                        |
+| `HostName`    |                        |
+| `User`        |                        |
+| `Port`        |                        |
+| `IdentityFile`|                        |
+
+3. `ssh` `config` file contents:
+```
+# entry to connect to original sandbox with cloned GitHub repo:
+
+# entry to connect to new sandbox for this lab:
+
+```
+
+4. `ssh` commands that make use of `config` file entries:
+```bash
+# to connect to original sandbox with cloned GitHub repo:
+
+# to connect to new sandbox for this lab:
+
+```
+
+## Part 2 - What do we have?
 
 1. Command:
 ```
@@ -42,19 +78,24 @@ Output here
 9. Fields & purpose of fields in entry that mount the root filesystem
 
 
-## Part 2 - Something new
+## Part 3 - Something new
 
 1. `gdisk` main menu options
-   - `p`:
-   - `o`:
-   - `n`:
-   - `i`:
-   - `w`:
+| `gdisk` option | function |
+| ---            | ---      |
+| `p` |     |
+| `o` |     |
+| `n` |     |
+| `i` |     |
+| `w` |     |
+
 2. Steps to create a partition table and partition on `xvdb`
+
 3. Partition table on `/dev/xvdb`
 ```
 Paste partition table information here
 ```
+
 4. Answer these questions:
    
    a. What device name does the partition use?
@@ -66,7 +107,7 @@ Paste partition table information here
    c. What filesystem type will be used on the partition?
       - Answer: 
 
-## Part 3 - File it away
+## Part 4 - File it away
 
 1. Commands used:
 2. Commands used:
@@ -83,7 +124,7 @@ list here
 7. When can I interact with files on the filesystem on the partition in `xvdb`?
    - Answer:
    
-## Part 4 - Take a `fstab` at this
+## Part 5 - Take a `fstab` at this
 
 1. Commands used:
 2. Line you added to `/etc/fstab`:
@@ -91,7 +132,7 @@ list here
 4. **If you restored `/etc/fstab`**, write here why you did not feel comfortable leaving your changes in place
 
 
-## Part 5 - What is dead may still be read
+## Part 6 - What is dead may still be read
 
 1. Commands used:
 2. What does the `strings` command do?
@@ -106,10 +147,11 @@ list here
 
 **Write your report here**
 
+## Part 7 - Citations / Resources
+
+Add citations / resources for each core topic covered in this lab
+
 ## Extra Credit - Create a Virtual Filesystem
 
 Report on how to perform (and verify completion) of making a virtual filesystem on a loop device
 
-## Citations
-
-To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
