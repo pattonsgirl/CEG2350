@@ -30,6 +30,16 @@ Any resource that you use that contributes to your understanding of exercises in
 
 If you make mistakes with commands in the lab, note them!  Writing down what went wrong and what the correction was will significantly help your learning journey.  If you cannot find a correction, it will help the TAs or myself understand what point you reached and determine some potential solutions.
 
+## BEFORE YOU BEGIN
+
+Create a **new AWS sandbox**. Your current sandbox is likely in a working state. By creating a second sandbox, if you make any errors playing with the partition tables and filesystems you can destroy and rebuild without affecting your working instance where you have set up an SSH key to your GitHub profile and cloned your repository.
+
+To set up your sandbox environment for this lab, return to [Getting Started with AWS Academy](https://pattonsgirl.github.io/CEG2350/Topics/AWSAcademy/) and complete steps 8-13 - you'll use your same private key to connect to the new sandbox environment. The new sandbox will also have the same default username - `ubuntu`. It will have a unique Public IP.
+
+## Part 1 - Configuring Multiple Instances
+
+Since you now
+
 ## Part 1 - What do we have?
 
 Your AWS instances have one block device in use - `xvda`.  In this section, you will explore commands view partition and filesystem information about `xvda`.  **Do not make any modification to `xvda`.**
