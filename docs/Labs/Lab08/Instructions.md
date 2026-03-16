@@ -38,6 +38,14 @@ Create a **new AWS sandbox**. Your current sandbox is likely in a working state.
 
 To set up your sandbox environment for this lab, return to [Getting Started with AWS Academy](https://pattonsgirl.github.io/CEG2350/Topics/AWSAcademy/) and complete steps 8-13 - you'll use your same private key to connect to the new sandbox environment. The new sandbox will also have the same default username - `ubuntu`. It will have a unique Public IP.
 
+Once you sign in, I recommend changing the hostname of the system so that you can tell the two instances apart when logged in. On the instance you are making for this lab, run the following command to change the name:
+
+```
+sudo hostnamectl set-hostname disklab-sandbox
+```
+
+To see the new hostname, sign out of the system (disconnect from your current `ssh` session), then connect back to the system.
+
 ## Part 1 - `ssh` `config` file
 
 Did you read [BEFORE YOU BEGIN](#before-you-begin)? Got a second sandbox up? Good. Proceed.
