@@ -30,13 +30,15 @@
 
 ## 03 - PC Knowledge
 
-- [PC Hardware](03-PC.md)
+- [PC Hardware](03-PC/README.md)
 - The Boot Process
 - Virtual Machines
     - [VirtualBox Guide](/CEG2350/Labs/Lab07/VirtualBox-Guide.html)
     - [UTM Guide](/CEG2350/Labs/Lab07/UTM-Guide.html)
 
 ## 04 - Disks & Filesystems
+
+- [Disks, Partition Tables, Filesystems](04-Disks/README.md)
 
 ## 05 - Code
 
