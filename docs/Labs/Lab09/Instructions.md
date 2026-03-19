@@ -160,6 +160,22 @@ The perhaps obtuse goal of the previous two exercises is to understand process c
 **Resources**
 - [RedHat - A beginner's guide to `tmux`](https://www.redhat.com/sysadmin/introduction-tmux-linux)
 
+## Part 5 - At Your Service
+
+1. Download and run the `disk-watchdog.sh` script. 
+
+2. Answer the investigative questions about this script's output in your lab template.
+
+3. Create a service file named `disk-watchog.service` in `/etc/systemd/service`
+
+4. Enable and start your service.
+
+5. View the logs for your service.
+
+6. Trigger the disk usage warning defined in the script.
+
+7. Fill out the table describing the different purposes and capabilities of running processes.
+
 ## Submission
 
 1. Verify that your GitHub repo has a `Lab09` folder with at minimum:
