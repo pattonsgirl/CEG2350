@@ -166,17 +166,43 @@ The perhaps obtuse goal of the previous two exercises is to understand process c
 
 - **Useful Commands: `systemd`, `systemctl`, `journalctl`**
 
-1. Download and run the `disk-watchdog.sh` script. 
+1. Download the `disk-watchdog.sh` script to a directory listed in `PATH`; make the script executable by any user. 
 
 2. Answer the investigative questions about this script's output in your lab template.
 
-3. Create a service file named `disk-watchog.service` in `/etc/systemd/service`
+3. Build the Service file:
+
+Create a unit file so the system can manage this script. Create a file in `/etc/systemd/system/` named `disk-watchdog.service`
+
+Requirements for your`disk-watchdog.service` file:
+
+* **Description:** Give it a clear name / description of the serivce purpose.  
+* **Ordering:** It must wait until the local filesystems are mounted (`local-fs.target`) before starting.  
+* **Execution:** It must run the script located at `/usr/local/bin/monitor.sh`.  
+* **Reliability:** If the script is killed or crashes, systemd should automatically restart it after 5 seconds.  
+* **Installation:** It should be tied to the multi-user.target so it starts when the server boots.
+
+**Hint:** You will need to research the `\[Unit\]`, `\[Service\]`, and `\[Install\]` sections of a systemd unit file. Key directives to look up: `After`, `ExecStart`, `Restart`, `RestartSec`, and `WantedBy`.
 
 4. Enable and start your service.
 
-5. View the logs for your service.
+- **Reload the daemon**: Tell systemd to look for your new file.
+- **Start & Enable**: Start the service now and configure it to persist across reboots.
+- **Verify Status**: Run the command to show the service status.
+      - How can you tell from the output that the service is actually running?
+      - What is the current PID of the service?
 
 6. Trigger the disk usage warning defined in the script.
+
+"Break" the system to see if the watchdog is working. We will create a large dummy file to spike disk usage.
+
+- **View Logs:** Open a second SSH session (Shell B) and run journalctl \-f \-u monitor.service. This follows the logs in real-time.  
+- **Spike Disk Usage:** In Shell A, use the fallocate command to create a large file (e.g., 5GB or 10GB, depending on your AWS instance size) in your home directory.  
+      * *Example:* `fallocate \-l 5G bigfile.img`
+- **Observe:** Watch Shell B.  
+      * *Did the "WARNING" message appear?*  
+      * *Paste the snippet of the log showing the transition from normal usage to the warning.*  
+- **Cleanup:** Delete the dummy file and verify the logs return to normal.
 
 **Resources**
 - []
