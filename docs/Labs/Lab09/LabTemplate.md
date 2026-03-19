@@ -145,7 +145,7 @@ Enabling `disk-watchdog.service`:
 Triggering the warning and monitoring service logs:
 
 1. Command to view `disk-watchdog.service` logs in real time: 
-2. `fallocate` command to create a large file in your home directory:
+2. Command to create a large file in your home directory:
 3. Why did the `WARNING` message appear in your `disk-watchdog.service` logs?
 4. Paste a snippet of your `disk-watchdog.service` logs showing normal / WARNING messages:
 ```

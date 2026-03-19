@@ -198,12 +198,15 @@ The perhaps obtuse goal of the previous two exercises is to understand process c
    "Break" the system to see if the watchdog is working. We will create a large dummy file to spike disk usage.
 
    - **View Logs:** Open a second SSH session (Shell B) and use `journalctl` to follow the logs of `disk-watchdog.service` in real time. 
-   - **Spike Disk Usage:** In Shell A, use the `fallocate` command to create a large file (e.g., 5GB or higher, depending on your current disk usage) in your home directory.  
+   - **Spike Disk Usage:** In Shell A, use `fallocate`, `truncate` or `dd` to create a large file (probably 5GB or higher, depending on your current disk usage) in your home directory.  
    - **Observe:** Watch Shell B.  Answer the investigative questions in your lab template. 
    - **Cleanup:** Delete the dummy file and verify the logs return to normal.
 
 **Resources**
-- []
+- [Create `systemd` services - Linux Handbook](https://linuxhandbook.com/create-systemd-services/)
+- [How to use `systemctl` - DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units)
+- [How to use `journalctl` - DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)
+- [Creating large files - Linux Handbook](https://linuxhandbook.com/create-large-files/)
 
 ## Part 6 - Resources & Citations
 
