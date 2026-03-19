@@ -182,7 +182,7 @@ Requirements for the `disk-watchdog.service` file:
    * **Execution:** It must run the script located at `/usr/local/bin/monitor.sh`.  
    * **Installation:** It should be tied to the `multi-user.target` so it starts when the server boots.
 
-   **Hint:** You will need to research the `\[Unit\]`, `\[Service\]`, and `\[Install\]` sections of a systemd unit file. Key directives to look up: `After`, `ExecStart`, `Restart`, and `WantedBy`.
+   **Hint:** You will need to research the `[Unit]`, `[Service]`, and `[Install]` sections of a systemd unit file. Key directives to look up: `After`, `ExecStart`, `Restart`, and `WantedBy`.
 
 4. Enable and start your service.
 
