@@ -123,6 +123,35 @@ Output of command goes here
 7. Reattach to `tmux` session:
 8. Kill `tmux` session: 
 
-## Citations
+## Part 5 - At Your Service
+
+Investigating `disk-watchdog.sh`:
+
+1. What command is the script using to find the disk usage percentage?  
+2. The script uses a while loop. What is the condition for this loop, and what does that mean for the process's lifespan?  
+3. At what specific percentage (%) does the script trigger a "WARNING"?  
+4. Why is sleep used in this script?
+
+[Link to `disk-watchdog.service`](path/to/your/service/file)
+
+Enabling `disk-watchdog.service`:
+
+1. Command to reload `systemd`:
+2. Command(s) to start and enable `disk-watchdog.service`
+3. Command to view `disk-watchdog.service` status:
+4. How can you tell from the output that the service is actually running?
+5. What is the current PID of the service?
+
+Triggering the warning and monitoring service logs:
+
+1. Command to view `disk-watchdog.service` logs in real time: 
+2. `fallocate` command to create a large file in your home directory:
+3. Why did the `WARNING` message appear in your `disk-watchdog.service` logs?
+4. Paste a snippet of your `disk-watchdog.service` logs showing normal / WARNING messages:
+```
+logs go here
+```
+
+## Part 6 - Citations & Resources
 
 To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.

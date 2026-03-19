@@ -179,29 +179,27 @@ The perhaps obtuse goal of the previous two exercises is to understand process c
 
    * **Description:** Give it a clear name / description of the serivce purpose.  
    * **Ordering:** It must wait until the local filesystems are mounted (`local-fs.target`) before starting.  
-   * **Execution:** It must run the script located at `/usr/local/bin/monitor.sh`.  
+   * **Execution:** It must run the `disk-watchdog.sh` script - absolute path is recommended.  
    * **Installation:** It should be tied to the `multi-user.target` so it starts when the server boots.
 
    **Hint:** You will need to research the `[Unit]`, `[Service]`, and `[Install]` sections of a systemd unit file. Key directives to look up: `After`, `ExecStart`, `Restart`, and `WantedBy`.
 
+   Copy your **working** service file to your `Lab09` folder in your GH repository. You may want to wait until after completing Step 4 (below) to test your file and make any needed changes.
+
 4. Enable and start your service.
 
-   - **Reload the daemon**: Tell systemd to look for your new file.
+   - **Reload the daemon**: Tell `systemd` to look for your new service file.
    - **Start & Enable**: Start the service now and configure it to persist across reboots.
    - **Verify Status**: Run the command to show the service status.
-         - How can you tell from the output that the service is actually running?
-         - What is the current PID of the service?
+   - **Investigate Results**: Answer the investigative questions in your lab template.
 
 5. Trigger the disk usage warning defined in the script.
 
    "Break" the system to see if the watchdog is working. We will create a large dummy file to spike disk usage.
 
-   - **View Logs:** Open a second SSH session (Shell B) and run journalctl \-f \-u monitor.service. This follows the logs in real-time.  
-   - **Spike Disk Usage:** In Shell A, use the fallocate command to create a large file (e.g., 5GB or 10GB, depending on your AWS instance size) in your home directory.  
-         * *Example:* `fallocate \-l 5G bigfile.img`
-   - **Observe:** Watch Shell B.  
-         * *Did the "WARNING" message appear?*  
-         * *Paste the snippet of the log showing the transition from normal usage to the warning.*  
+   - **View Logs:** Open a second SSH session (Shell B) and use `journalctl` to follow the logs of `disk-watchdog.service` in real time. 
+   - **Spike Disk Usage:** In Shell A, use the `fallocate` command to create a large file (e.g., 5GB or higher, depending on your current disk usage) in your home directory.  
+   - **Observe:** Watch Shell B.  Answer the investigative questions in your lab template. 
    - **Cleanup:** Delete the dummy file and verify the logs return to normal.
 
 **Resources**
