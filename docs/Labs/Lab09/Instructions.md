@@ -5,6 +5,8 @@
 - [Part 2 - Process Control](#part-2---process-control)
 - [Part 3 - back and fore](#part-3---back-and-fore)
 - [Part 4 - Detach](#part-4---detach)
+- [Part 5 - At your Service](#part-5---at-your-service)
+- [Part 6 - Citations & Resources](#part-6---citations--resources)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -162,6 +164,8 @@ The perhaps obtuse goal of the previous two exercises is to understand process c
 
 ## Part 5 - At Your Service
 
+- **Useful Commands: `systemd`, `systemctl`, `journalctl`**
+
 1. Download and run the `disk-watchdog.sh` script. 
 
 2. Answer the investigative questions about this script's output in your lab template.
@@ -174,7 +178,22 @@ The perhaps obtuse goal of the previous two exercises is to understand process c
 
 6. Trigger the disk usage warning defined in the script.
 
-7. Fill out the table describing the different purposes and capabilities of running processes.
+**Resources**
+- []
+
+## Part 6 - Resources & Citations
+
+Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations / Resources` section of your lab answers. You may refer to your own notes (if they are digitized into GitHub), course notes, or external resources / websites.
+
+To add citations / resources, provide the reference / link and a summary of what it assisted you with.  
+
+If generative AI was used, include which generative AI system was used, what prompt(s) you fed it, and a summary of what it assisted you with.
+
+We expect a minimum of **one citation / useful resource per part** of your lab. So this lab would require a resource for:
+- controlling processes
+- background jobs
+- `tmux` for detached sessions
+- service files and using systemctl / journalctl
 
 ## Submission
 
