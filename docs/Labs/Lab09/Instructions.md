@@ -166,23 +166,23 @@ The perhaps obtuse goal of the previous two exercises is to understand process c
 
 - **Useful Commands: `systemd`, `systemctl`, `journalctl`**
 
-1. Download the `disk-watchdog.sh` script to a directory listed in `PATH`; make the script executable by any user. 
+1. Download the [`disk-watchdog.sh`](disk-watchdog.sh) script to a directory listed in `PATH`; make the script executable by any user. 
+   - Link to raw script: [https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab09/disk-watchdog.sh](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab09/disk-watchdog.sh)
 
-2. Answer the investigative questions about this script's output in your lab template.
+2. Answer the investigative questions about this script in your lab template.
 
 3. Build the Service file:
 
 Create a unit file so the system can manage this script. Create a file in `/etc/systemd/system/` named `disk-watchdog.service`
 
-Requirements for your`disk-watchdog.service` file:
+Requirements for the `disk-watchdog.service` file:
 
-* **Description:** Give it a clear name / description of the serivce purpose.  
-* **Ordering:** It must wait until the local filesystems are mounted (`local-fs.target`) before starting.  
-* **Execution:** It must run the script located at `/usr/local/bin/monitor.sh`.  
-* **Reliability:** If the script is killed or crashes, systemd should automatically restart it after 5 seconds.  
-* **Installation:** It should be tied to the multi-user.target so it starts when the server boots.
+   * **Description:** Give it a clear name / description of the serivce purpose.  
+   * **Ordering:** It must wait until the local filesystems are mounted (`local-fs.target`) before starting.  
+   * **Execution:** It must run the script located at `/usr/local/bin/monitor.sh`.  
+   * **Installation:** It should be tied to the `multi-user.target` so it starts when the server boots.
 
-**Hint:** You will need to research the `\[Unit\]`, `\[Service\]`, and `\[Install\]` sections of a systemd unit file. Key directives to look up: `After`, `ExecStart`, `Restart`, `RestartSec`, and `WantedBy`.
+   **Hint:** You will need to research the `\[Unit\]`, `\[Service\]`, and `\[Install\]` sections of a systemd unit file. Key directives to look up: `After`, `ExecStart`, `Restart`, and `WantedBy`.
 
 4. Enable and start your service.
 
