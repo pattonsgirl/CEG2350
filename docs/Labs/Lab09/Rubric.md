@@ -2,7 +2,7 @@
 
 Your answers should be cleanly presented in your GitHub repository. Citations should be included as needed. Include which generative AI system was used and what prompts were used if generative AI was used.
 
-### Total Points /31
+### Total Points /49
 
 - Part 1 - 4 pts
     - [ ] Game Name
@@ -47,6 +47,28 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] `tmux` session running
     - [ ] Reattach to `tmux` session
     - [ ] Kill `tmux` session
+
+- Part 5 - 14 pts
+    - [ ] Disk percentage usage command from script
+    - [ ] Condition for while loop in script
+    - [ ] Percentage for warning
+    - [ ] Reasoning for sleep in the script
+    - [ ] Link to service script
+    - [ ] Command used to enable service file
+    - [ ] Command to reload system
+    - [ ] Command(s) to start & enable service script
+    - [ ] Service script is working due to output reasoning
+    - [ ] Current PID of service
+    - [ ] Command to view logs in real time
+    - [ ] Command to create large file in home directory
+    - [ ] Why did warning appear reasoning
+    - [ ] Serive file logs snippet
+
+- Part 6 - 4 pts
+    - [ ] Controlling processes citation
+    - [ ] Background jobs citation
+    - [ ] tmux for detached sessions citation
+    - [ ] service files and using systemctl / journalctl citation
 
 - Point Deductions
     - [ ] AI Overuse / AI Generated - 0 Points
