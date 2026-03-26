@@ -10,7 +10,7 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] `ssh` `config` file blocks
     - [ ] `ssh` commands that use `config` file entries
 
-- Part 1 - 9 pts
+- Part 2 - 9 pts
     - [ ] Command & Output (0.5 point each)
     - [ ] Command & Output (0.5 point each)
     - [ ] xvda Partition Details (0.33 pts each)
@@ -21,13 +21,13 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] Command & Output (0.5 point each)
     - [ ] Fields & purpose of fields in entry that mount the root filesystem
 
-- Part 2 - 4 pts
+- Part 3 - 4 pts
     - [ ] gdisk main menu options
     - [ ] Stepts to Create Partition Table
     - [ ] Partition Table on /dev/xvdb
     - [ ] Partition Table Details (0.33 points each)
 
-- Part 3 - 6 pts
+- Part 4 - 6 pts
     - [ ] Command Used
     - [ ] Commands and Outputs (0.5 pts each)
     - [ ] Command Used
@@ -35,12 +35,12 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] Command Used
     - [ ] Interacting with Filesystems
 
-- Part 4 - 3 pts
+- Part 5 - 3 pts
     - [ ] Commands used
     - [ ] Lines Added
     - [ ] How to Confirm
 
-- Part 5 - 6 pts
+- Part 6 - 6 pts
     - [ ] Commands Used
     - [ ] Strings Command Explanation
     - [ ] Retrospective of what was seen from strings
