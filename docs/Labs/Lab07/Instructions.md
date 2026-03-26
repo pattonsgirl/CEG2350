@@ -69,6 +69,8 @@ If research proves your system does not support something, leave documentation a
     - How to access BIOS / UEFI:
     - How to enable CPU virtualization: 
     - Link to driver(s) from system manufacturer: 
+> Note to Mac Users: Mac does have a BIOS / UEFI equivalent and there is a way to access. There is also a link to the driver software.
+
 7. OS info:
     - Operating System name & version:  
     - Kernel for operating system:
