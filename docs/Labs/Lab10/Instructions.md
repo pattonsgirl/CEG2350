@@ -89,8 +89,8 @@ Fill out the following charts regarding the three most commonly used languages -
 | Language         | Compiler           | Linux (Ubuntu/Debian)    | macOS       |Windows        | 
 | ---------------- | ------------------ | ------------------------ | ----------- | ------------- | 
 | **C / C++**      | GCC / G++          | `sudo apt install build-essential`     | `xcode-select --install`  | Install **MinGW** via [MSYS2](https://www.msys2.org/) <br>→ `pacman -S mingw-w64-x86_64-gcc` |
-| **Java**         | OpenJDK            |                          |             |                |                |
-| **Python**       | Python             |                          |             |                |                |
+| **Java**         | OpenJDK            |                          |             |                |  
+| **Python**       | Python             |                          |             |                | 
 
 **Verifying install location & verison**
 
