@@ -80,7 +80,7 @@ Fill out the `git` guide table so you have a resource of useful commands you can
 
 ## Part 1 - Compilers
 
-**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main. **DO NOT DELETE YOUR BRANCH aFTER MERGING.  DO NOT DELETE YOUR ISSUE**
+**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main. **DO NOT DELETE YOUR BRANCH AFTER MERGING.  DO NOT DELETE YOUR ISSUE**
 
 Fill out the following charts regarding the three most commonly used languages - C/C++, Java, and Python.  The bonus is you'll make a guide for yourself on how to install these or how to check if they are already available.  I'm going to give you the answers for C / C++ - you'll need to complete the chart for Java and Python.
 
@@ -112,7 +112,7 @@ Fill out the following charts regarding the three most commonly used languages -
 
 ## Part 2 - [Compiling](https://xkcd.com/303/)
 
-**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main. **DO NOT DELETE YOUR BRANCH aFTER MERGING.  DO NOT DELETE YOUR ISSUE**
+**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main. **DO NOT DELETE YOUR BRANCH AFTER MERGING.  DO NOT DELETE YOUR ISSUE**
 
 **Useful Commands: `gcc`, `g++`, `wget`**
 
@@ -132,7 +132,7 @@ Fill out the following charts regarding the three most commonly used languages -
 
 ## Part 3 - Ignore That
 
-**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main. **DO NOT DELETE YOUR BRANCH aFTER MERGING.  DO NOT DELETE YOUR ISSUE**
+**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main. **DO NOT DELETE YOUR BRANCH AFTER MERGING.  DO NOT DELETE YOUR ISSUE**
 
 In the root folder of your GitHub repository, create a `.gitignore` file and prevent tracking of your executable programs.  
 
@@ -146,7 +146,7 @@ Resources:
 
 ## Part 4 - Document
 
-**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main. **DO NOT DELETE YOUR BRANCH aFTER MERGING.  DO NOT DELETE YOUR ISSUE**
+**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main. **DO NOT DELETE YOUR BRANCH AFTER MERGING.  DO NOT DELETE YOUR ISSUE**
 
 Using the source code you downloaded and the program you compiled in Part 2:
 
@@ -181,7 +181,7 @@ double approx_pi(int n) {
 
 ## Part 5 - [`makey makey`](https://www.youtube.com/watch?v=X1mYalegtdI&ab_channel=MakeyMakey)
 
-**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main. **DO NOT DELETE YOUR BRANCH aFTER MERGING.  DO NOT DELETE YOUR ISSUE**
+**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main. **DO NOT DELETE YOUR BRANCH AFTER MERGING.  DO NOT DELETE YOUR ISSUE**
 
 **Useful commands: `make`**
 
@@ -227,7 +227,7 @@ We expect a minimum of **one citation / useful resource per part** of your lab. 
 
 ## Extra Credit - `git` tools
 
-**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main. **DO NOT DELETE YOUR BRANCH aFTER MERGING.  DO NOT DELETE YOUR ISSUE**
+**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main. **DO NOT DELETE YOUR BRANCH AFTER MERGING.  DO NOT DELETE YOUR ISSUE**
 
 Choose one of the below CLI git tools:
 - [gith - TUI tool](https://github.com/a3chron/gith)
