@@ -5,6 +5,8 @@
 - [Part 2 - Process Control](#part-2---process-control)
 - [Part 3 - back and fore](#part-3---back-and-fore)
 - [Part 4 - Detach](#part-4---detach)
+- [Part 5 - At your Service](#part-5---at-your-service)
+- [Part 6 - Citations & Resources](#part-6---citations--resources)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
 
@@ -159,6 +161,66 @@ The perhaps obtuse goal of the previous two exercises is to understand process c
 
 **Resources**
 - [RedHat - A beginner's guide to `tmux`](https://www.redhat.com/sysadmin/introduction-tmux-linux)
+
+## Part 5 - At Your Service
+
+- **Useful Commands: `systemd`, `systemctl`, `journalctl`**
+
+1. Download the [`disk-watchdog.sh`](disk-watchdog.sh) script to a directory listed in `PATH`; make the script executable by any user. 
+   - Link to raw script: [https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab09/disk-watchdog.sh](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab09/disk-watchdog.sh)
+
+2. Answer the investigative questions about this script in your lab template.
+
+3. Build the Service file:
+
+   Create a unit file so the system can manage this script. Create a file in `/etc/systemd/system/` named `disk-watchdog.service`
+
+   Requirements for the `disk-watchdog.service` file:
+
+   * **Description:** Give it a clear name / description of the serivce purpose.  
+   * **Ordering:** It must wait until the local filesystems are mounted (`local-fs.target`) before starting.  
+   * **Execution:** It must run the `disk-watchdog.sh` script - absolute path is recommended.  
+   * **Installation:** It should be tied to the `multi-user.target` so it starts when the server boots.
+
+   **Hint:** You will need to research the `[Unit]`, `[Service]`, and `[Install]` sections of a systemd unit file. Key directives to look up: `After`, `ExecStart`, `Restart`, and `WantedBy`.
+
+   Copy your **working** service file to your `Lab09` folder in your GH repository. You may want to wait until after completing Step 4 (below) to test your file and make any needed changes.
+
+4. Enable and start your service.
+
+   - **Reload the daemon**: Tell `systemd` to look for your new service file.
+   - **Start & Enable**: Start the service now and configure it to persist across reboots.
+   - **Verify Status**: Run the command to show the service status.
+   - **Investigate Results**: Answer the investigative questions in your lab template.
+
+5. Trigger the disk usage warning defined in the script.
+
+   "Break" the system to see if the watchdog is working. We will create a large dummy file to spike disk usage.
+
+   - **View Logs:** Open a second SSH session (Shell B) and use `journalctl` to follow the logs of `disk-watchdog.service` in real time. 
+   - **Spike Disk Usage:** In Shell A, use `fallocate`, `truncate` or `dd` to create a large file (probably 5GB or higher, depending on your current disk usage) in your home directory.  
+   - **Observe:** Watch Shell B.  Answer the investigative questions in your lab template. 
+   - **Cleanup:** Delete the dummy file and verify the logs return to normal.
+
+**Resources**
+- [Create `systemd` services - Linux Handbook](https://linuxhandbook.com/create-systemd-services/)
+- [How to use `systemctl` - DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units)
+- [How to use `journalctl` - DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)
+- [Creating large files - Linux Handbook](https://linuxhandbook.com/create-large-files/)
+
+## Part 6 - Resources & Citations
+
+Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations / Resources` section of your lab answers. You may refer to your own notes (if they are digitized into GitHub), course notes, or external resources / websites.
+
+To add citations / resources, provide the reference / link and a summary of what it assisted you with.  
+
+If generative AI was used, include which generative AI system was used, what prompt(s) you fed it, and a summary of what it assisted you with.
+
+We expect a minimum of **one citation / useful resource per part** of your lab. So this lab would require a resource for:
+- controlling processes
+- background jobs
+- `tmux` for detached sessions
+- service files and using systemctl / journalctl
 
 ## Submission
 
