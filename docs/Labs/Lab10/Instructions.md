@@ -132,7 +132,7 @@ Fill out the following charts regarding the three most commonly used languages -
 
 ## Part 3 - Ignore That
 
-**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main
+**Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main. **DO NOT DELETE YOUR BRANCH aFTER MERGING.  DO NOT DELETE YOUR ISSUE**
 
 In the root folder of your GitHub repository, create a `.gitignore` file and prevent tracking of your executable programs.  
 
