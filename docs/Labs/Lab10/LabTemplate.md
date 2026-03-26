@@ -7,6 +7,8 @@ Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab10/Inst
 
 ## Part 0 - Issues & Branches
 
+**DO NOT DELETE YOUR BRANCHES.  DO NOT DELETE YOUR ISSUES**
+
 **`git` branch guide**
 
 | Task                                                    | Command(s) / Steps | Notes |
@@ -14,7 +16,7 @@ Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab10/Inst
 | **Create a branch**                                     |                    |       |
 | **Change to branch**                                    |                    |       |
 | **Add branch to remote if created locally (GitHub)**    |                    |       |
-| **Steps to `merge` changes to another branch (`main`)** |                    |       |
+| **Steps to `merge` changes from another branch to (`main`)** |                    |       |
 | **Steps to resolve a `merge` conflict**                 |                    |       |
 
 
