@@ -7,6 +7,7 @@
 - [Part 3 - Ignore That](#part-3---ignore-that)
 - [Part 4 - Document](#part-4---document)
 - [Part 5 - `makey makey`](#part-5---makey-makey)
+- [Part 6 - Citations & Resources](#part-6---citations--resources)
 - [Extra Credit - `git` tools](#extra-credit---git-tools)
 - [Submission](#Submission)
 - [Rubric](#Rubric)
@@ -207,6 +208,20 @@ Create a set of instructions for using your `Makefile` to perform its different 
 - [`make` command - IOFlood](https://ioflood.com/blog/make-linux-command/)
    - Includes CMake and AutoTools, which are out of scope for course but good to note.
 
+## Part 6 - Resources & Citations
+
+Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations / Resources` section of your lab answers. You may refer to your own notes (if they are digitized into GitHub), course notes, or external resources / websites.
+
+To add citations / resources, provide the reference / link and a summary of what it assisted you with.  
+
+If generative AI was used, include which generative AI system was used, what prompt(s) you fed it, and a summary of what it assisted you with.
+
+We expect a minimum of **one citation / useful resource per part** of your lab. So this lab would require a resource for:
+- git branches
+- setting up using the .gitignore file
+- using the C/C++ or Java compiler on the command line
+- creating and using a Makefile
+
 ## Extra Credit - `git` tools
 
 **Reminder** - create an Issue for this part -> create a branch to work on this issue -> make your commits to this branch -> verify your changes (no broken markdown, good spelling) -> merge to main. **DO NOT DELETE YOUR BRANCH aFTER MERGING.  DO NOT DELETE YOUR ISSUE**
@@ -228,6 +243,7 @@ The TAs will be checking your repository for Issues (open & closed), branches, a
 1. Verify that your GitHub repo has a `Lab10` folder with at minimum:
 
    - `README.md`
+   - compressed archive of source code files
    - source code files
    - `Makefile`
    - `.gitignore` file *in the root directory of your repository*
