@@ -116,14 +116,14 @@ Fill out the following charts regarding the three most commonly used languages -
 
 **Useful Commands: `gcc`, `g++`, `wget`**
 
-1. Select from either [TODO-C](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab10/todo-c.tar.gz) or [TODO-CPP](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab10/todo-cpp.tar.gz). Download the chosen tar archive to your `Lab10` folder in your repository folder.  
-2. Extract the source code files from the `.tar.gz`. `add`, `commit` and `push` the `tar.gz` and extracted source code files to your branch in your repo.
-2. Install the C / C++ compiler on your AWS instance.
-3. Verify the installation of the C / C++ compiler on your AWS instance.
+1. Select from either [todo-c.tar.gz](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab10/todo-c.tar.gz) or [todo-cpp.tar.gz](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab10/todo-cpp.tar.gz). Download the chosen tar archive to your `Lab10` folder in your repository folder.  
+2. Extract the source code files from the `.tar.gz`
+3. Install the C / C++ compiler on your AWS instance.
+4. Verify the installation of the C / C++ compiler on your AWS instance.
    - It is recommended to query for the version of the program to validate installation.
-4. Using your AWS instance, compile the source code into an executable program.
-5. Using your AWS instance, run the executable program.
-6. Add the program source code file - `.c` or `.cpp` files - to your repository.  Do not add the compiled executable for tracking.
+5. Using your AWS instance, compile the source code into an executable program.
+6. Using your AWS instance, run the executable program.
+7. Add the original `.tar.gz` and the program source code files - `.c` or `.cpp` files - to your repository.  Do not add the compiled executable for tracking.
 
 **Resources:**
 - [Tar Command in Linux: Create and Extract Archives with Examples - Linuxize](https://linuxize.com/post/how-to-create-and-extract-archives-using-the-tar-command-in-linux/)

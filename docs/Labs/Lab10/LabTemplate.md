@@ -52,10 +52,10 @@ Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab10/Inst
 
 1. Method & command to get a copy of the compressed file archive of course code:
 2. Command(s) to uncompress and extract the source code files from the archive: 
-2. Command(s) to install the C/C++ compiler on Ubuntu:
-3. Command(s) to confirm the installation of the C/C++ compiler on Ubuntu:
-4. Command(s) to compile the source code into an executable program:
-5. Command(s) to execute the program:
+3. Command(s) to install the C/C++ compiler on Ubuntu:
+4. Command(s) to confirm the installation of the C/C++ compiler on Ubuntu:
+5. Command(s) to compile the source code into an executable program:
+6. Command(s) to execute the program:
 
 ## Part 3 - Ignore That
 
