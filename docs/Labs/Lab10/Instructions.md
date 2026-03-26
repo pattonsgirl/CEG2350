@@ -116,7 +116,8 @@ Fill out the following charts regarding the three most commonly used languages -
 
 **Useful Commands: `gcc`, `g++`, `wget`**
 
-1. Select from either [TODO-C](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab10/TODO-C) or [TODO-CPP](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab10/TODO-CPP). Download the files in the folder to the `Lab10` folder in your repository folder.  `add`, `commit` and `push` the source code files.
+1. Select from either [TODO-C](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab10/todo-c.tar.gz) or [TODO-CPP](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab10/todo-cpp.tar.gz). Download the chosen tar archive to your `Lab10` folder in your repository folder.  
+2. Extract the source code files from the `.tar.gz`. `add`, `commit` and `push` the `tar.gz` and extracted source code files to your branch in your repo.
 2. Install the C / C++ compiler on your AWS instance.
 3. Verify the installation of the C / C++ compiler on your AWS instance.
    - It is recommended to query for the version of the program to validate installation.
@@ -125,6 +126,7 @@ Fill out the following charts regarding the three most commonly used languages -
 6. Add the program source code file - `.c` or `.cpp` files - to your repository.  Do not add the compiled executable for tracking.
 
 **Resources:**
+- [Tar Command in Linux: Create and Extract Archives with Examples - Linuxize](https://linuxize.com/post/how-to-create-and-extract-archives-using-the-tar-command-in-linux/)
 - [Compilation Process in C - Scaler](https://www.scaler.com/topics/c/compilation-process-in-c/)
 - [Compiling With Multiple Source Files - Emory](http://www.cs.emory.edu/~cheung/Courses/255/Syllabus/1-C-intro/declare-func1b.html)
 
@@ -165,7 +167,7 @@ Example of best practice formatting - do this for each function in your `.c` or 
  *
  *  n: number of terms in the series to sum
  *
- *  returns: the approximate value of pi obtained by suming the first n terms
+ *  returns: the approximate value of pi obtained by summing the first n terms
  *           in the above series
  *           returns zero on error (if n is non-positive)
  */
@@ -219,6 +221,7 @@ If generative AI was used, include which generative AI system was used, what pro
 We expect a minimum of **one citation / useful resource per part** of your lab. So this lab would require a resource for:
 - git branches
 - setting up using the .gitignore file
+- create and extract tar archives
 - using the C/C++ or Java compiler on the command line
 - creating and using a Makefile
 
