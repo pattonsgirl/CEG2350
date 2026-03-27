@@ -9,8 +9,8 @@
 - [Part 6 - What is dead may still be read](#part-6---what-is-dead-may-still-be-read)
 - [Part 7 - Citations & Resources](#part-7---citations--resources)
 - [Extra Credit - Create a Virtual Filesystem](#extra-credit---create-a-virtual-filesystem)
-- [Submission](#Submission)
-- [Rubric](#Rubric)
+- [Submission](#submission)
+- [Rubric](#rubric)
 
 ## Lab Procedure
 

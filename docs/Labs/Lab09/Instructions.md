@@ -7,8 +7,8 @@
 - [Part 4 - Detach](#part-4---detach)
 - [Part 5 - At your Service](#part-5---at-your-service)
 - [Part 6 - Citations & Resources](#part-6---citations--resources)
-- [Submission](#Submission)
-- [Rubric](#Rubric)
+- [Submission](#submission)
+- [Rubric](#rubric)
 
 ## Lab Procedure
 
