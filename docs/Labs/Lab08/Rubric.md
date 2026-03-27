@@ -23,7 +23,7 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
 
 - Part 3 - 4 pts
     - [ ] gdisk main menu options
-    - [ ] Stepts to Create Partition Table
+    - [ ] Steps to Create Partition Table
     - [ ] Partition Table on /dev/xvdb
     - [ ] Partition Table Details (0.33 points each)
 
