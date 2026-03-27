@@ -81,6 +81,7 @@ Output here
 ## Part 3 - Something new
 
 1. `gdisk` main menu options
+
 | `gdisk` option | function |
 | ---            | ---      |
 | `p` |     |
