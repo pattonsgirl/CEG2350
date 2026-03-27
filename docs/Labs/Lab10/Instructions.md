@@ -9,8 +9,8 @@
 - [Part 5 - `makey makey`](#part-5---makey-makey)
 - [Part 6 - Citations & Resources](#part-6---citations--resources)
 - [Extra Credit - `git` tools](#extra-credit---git-tools)
-- [Submission](#Submission)
-- [Rubric](#Rubric)
+- [Submission](#submission)
+- [Rubric](#rubric)
 
 ## Lab Procedure
 
