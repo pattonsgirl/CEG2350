@@ -115,9 +115,9 @@
 5. Service manipulation with `systemctl`
    - enable vs disable
    - start, stop, reload / restart
-6. init / systemd
-   - systemctl (manage services
-   - ~~journalctl (manage service logging)~~
+6. Kernel
+   - What the Linux kernel manages
+   - init / systemd
 
 ## Git (version control)
 
