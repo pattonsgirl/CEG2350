@@ -2,7 +2,16 @@
 
 Your answers should be cleanly presented in your GitHub repository. Citations should be included as needed. Include which generative AI system was used and what prompts were used if generative AI was used.
 
-### Total Points /34
+If an issue and or branch was not created or it was deleted, it is a 0 for the corresponding part.
+
+### Total Points /42
+
+- Included in Repo - 5 pts
+    - [ ] README.md
+    - [ ] compressed archive of source code files
+    - [ ] source files
+    - [ ] Makefile
+    - [ ] .gitignore in root directory of repo
 
 - Part 0 - 3 pts
     - [ ] Part 0 Branch Created
@@ -32,20 +41,13 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] `.gitignore` file is in repo
     - [ ] contents in `.gitignore` file
 
-- Part 4 - 8 pts
+- Part 4 - 6 pts
     - [ ] Part 4 Branch Created
     - [ ] Part 4 Issue Created
-    - TODO Program user guide
-      - [ ] Program Description
-      - [ ] How to build and run program
-      - [ ] How to use program
-   - Function comments in `utility.c` / `utility.cpp` (0.5 pts / each)
-      - [ ] `displayMenu`
-      - [ ] `addTask`
-      - [ ] `markTaskAsCompleted`
-      - [ ] `removeTask`
-      - [ ] `viewTodoList`
-      - [ ] `run`
+    - [ ] TODO Program user guide
+    - [ ] Program Description
+    - [ ] How to build and run program
+    - [ ] How to use program
 
 - Part 5 - 6 pts
     - [ ] Part 5 Branch Created
@@ -55,6 +57,13 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] Using `Makefile` to build executable
     - [ ] Using `Makefile` to run program
     - [ ] Using `Makefile` to remove compilation files, such as the executable
+
+- Part 6 - 5 pts
+    - [ ] Git Branches
+    - [ ] .gitignore file
+    - [ ] Create and extract tar files
+    - [ ] Using compiler on command line (java or c/c++)
+    - [ ] Creating and using a Makefile
 
 - Extra Credit - 3.2 pts
     - [ ] Extra Credit 
@@ -68,4 +77,3 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] Submitted some markdown (legible enough for grading), but needs improvement - (-10%)
     - [ ] Failure to cite resources - (-10%)
     - [ ] No branches and/or issues were created - 0 points
-
