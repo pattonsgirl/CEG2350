@@ -4,7 +4,7 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
 
 If an issue and or branch was not created or it was deleted, it is a 0 for the corresponding part.
 
-### Total Points /42
+### Total Points /44
 
 - Included in Repo - 5 pts
     - [ ] README.md
