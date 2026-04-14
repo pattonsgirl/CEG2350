@@ -6,6 +6,7 @@
 - [Part 2 - SFTP](#part-2---sftp)
 - [Part 3 - Extract & Profit](#part-3---extract--profit)
 - [Part 4 - SSH Keys](#part-4---ssh-keys)
+- [Part 5 - Citations / Resources](#part-5---citations--resources)
 - [Submission](#submission)
 - [Rubric](#rubric)
 
@@ -31,9 +32,9 @@ If you make mistakes with commands in the lab, note them!  Writing down what wen
 
 ## Part 0 - branch control
 
-Determine and **create** one or more GitHub Issues for this lab.
+Determine and **create two** or more GitHub Issues for this lab. Close them once resolved.
 
-Determine and **create** one or more `branch`es to resolve the Issues for this lab.
+Determine and **create two** or more `branch`es to resolve the Issues for this lab. Merge the branches to `main` once they resolve your Issues. Do not delete the branch.
 
 In the end, your lab submission (`README.md`) should be visible on the `main` branch.
 
@@ -129,6 +130,13 @@ When you use `ssh`, you specify a `hostname` after the `@` sign. Typically a `ho
    - **Note**: you may need to explicitly type `http://` in front of your AWS instance's public IP. We'll talk about it later.
    - **Note**: If you changed `index.html` and aren't seeing your changes in your browser, try to use your browsers hard reload, often `ctrl+shift+r` or `ctrl+f5`. This will get the actual file from the server and ensure its not an old cached version.
 
+**Got Errors?**
+- Make sure all users can read the files in `/var/www/html`
+   - `apache` and `nginx` are services running processes to access the content - they need to read the content so that they can serve it.
+- Make sure all users have `rx` permissions in `/var`, `/var/www` and `/var/www/html`
+- Make sure you extracted the content to `/var/www/html` - not a subdirectory inside the folder
+   - `apache` and `ngnix` are looking for and `index.html` page in the Document Root directory. If one isn't found, a default page will not show when you attempt to view it in the browser.
+
 **Resources**
 - [Digital Ocean - Apache vs Nginx: Practical Considerations](https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations)
 
@@ -140,7 +148,7 @@ When you see a reference to **local system**, this means your system - *not your
 
 - **Useful commands: `adduser`, `getent passwd <username>`, `ssh-keygen`, `vim`, `ssh`**
 
-1. Fill in the following table of commonly configured `ssh` files:
+1. Fill in the following table of commonly visited `ssh` files:
 
 | ssh File Path / Name          | Purpose            |
 |---------------------------------|--------------------|
@@ -152,36 +160,45 @@ When you see a reference to **local system**, this means your system - *not your
 | `~/.ssh/authorized_keys`        |                    |
 | `~/.ssh/known_hosts`            |                    |
 
-2. Fill in the following table of options commonly used in a `config` file for `ssh`:
-
-| ssh config Option   | Description  |
-|---------------|------------------------|
-| `Host`        |                        |
-| `HostName`    |                        |
-| `User`        |                        |
-| `Port`        |                        |
-| `IdentityFile`|                        |
-
-3. On your local system, make a new key pair - with a non-default name.  Change at minimum the default name
-4. On your AWS instance, create a user & user home directory or use the your `firstinitiallastname` account
-5. Put the public key of the key pair you created in the AWS instnace user's `~/.ssh/authorized_keys` file on the AWS instance
-6. From your local system, `ssh` in to the AWS instance using the user's username and the private key of the keypair you created.
+2. On your local system, make a new key pair - with a non-default name.  Change at minimum the default name
+3. On your AWS instance, create a user & user home directory or use the your `firstinitiallastname` account
+4. Put the public key of the key pair you created in the AWS instnace user's `~/.ssh/authorized_keys` file on the AWS instance
+5. From your local system, `ssh` in to the AWS instance using the user's username and the private key of the keypair you created.
    - Format reminder: `ssh -i path/to/privatekey username@hostname_or_ip`
-7. Write an entry in your local system's `~/.ssh/config` file with the new connection information.
-8. Write the `ssh` command that will use your `config` file information if correctly entered.
+6. Write an entry in your local system's `~/.ssh/config` file with the new connection information.
+7. Write the `ssh` command that will use your `config` file information if correctly entered.
 
 **Resources**
 - [SSH Essentials: Working with SSH Servers, Clients, and Keys - DigitalOcean](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys)
 - [How to Configure SSH Key Based Authentication - DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
 - [Using the SSH Config File - Linuxize](https://linuxize.com/post/using-the-ssh-config-file/)
 
+## Part 5 - Citations / Resources
+
+Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations / Resources` section of your lab answers. You may refer to your own notes (if they are digitized into GitHub), course notes, or external resources / websites.
+
+To add citations / resources, provide the reference / link and a summary of what it assisted you with.  
+
+If generative AI was used, include which generative AI system was used, what prompt(s) you fed it, and a summary of what it assisted you with.
+
+We expect a minimum of **one citation / useful resource per part** of your lab. So this lab would require a resource for:
+- basic `tar` usage to create and extract
+- basic `sftp` usage
+- [Optional] tutorial of how to have `apache` or `nginx` serve your content (replacing the default)
+- essential ssh files
+
 ## Submission
 
-1. Verify that your GitHub repo has a `Lab11` folder with at minimum:
+1. Verify that you have two or more Issues created for this lab.
 
+2. Verify that you have two or more branches visible in GitHub that were used to address Issues.
+
+3. Verify that `main` contains the merged changes from your branches.
+
+4. Verify that your GitHub repo, on branch `main`, has a `Lab11` folder with at minimum:
    - `README.md`
 
-2. In the Pilot Dropbox, paste the URL to the `Lab11` folder in your GitHub repo
+5. In the Pilot Dropbox, paste the URL to the `Lab11` folder in your GitHub repo
    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab11
 
 ## Rubric

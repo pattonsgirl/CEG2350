@@ -54,7 +54,7 @@ Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab11/Inst
 
 ## Part 4 Answers:
 
-1. Commonly configured `ssh` files:
+1. Commonly visited `ssh` files:
 
 | `ssh` File Path / Name          | Purpose            |
 |---------------------------------|--------------------|
@@ -66,40 +66,30 @@ Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab11/Inst
 | `~/.ssh/authorized_keys`        |                    |
 | `~/.ssh/known_hosts`            |                    |
 
-2. Options commonly used in a `config` file for `ssh`:
-
-| `ssh` `config` Option   | Description  |
-|---------------|------------------------|
-| `Host`        |                        |
-| `HostName`    |                        |
-| `User`        |                        |
-| `Port`        |                        |
-| `IdentityFile`|                        |
-
-3. Command to generate a new key, with options entered into the fields 
+2. Command to generate a new key, with options entered into the fields 
 ```
 Enter command & options entered while running here
 ```
 
-4. Create the user and / or prove the user exists
+3. Create the user and / or prove the user exists
 ```
 Enter command & output for creating user and / or proving user exists.
 ```
 
-5. Contents of `~/.ssh/authorized_keys` in remote user account:
+4. Contents of `~/.ssh/authorized_keys` in remote user account:
 ```
 Enter contents here
 ```
 
-6. `ssh` command:
+5. `ssh` command:
 
-7. Updated `config` file contents:
+6. Updated `config` file contents:
 ```
 Enter block with connection information in config file here
 ```
 
-8. `ssh` command post `config` file entry:
+7. `ssh` command post `config` file entry:
 
-## Citations
+## Part 5 - Citations / Resources
 
-To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
+Add citations / resources for each core topic covered in this lab
