@@ -2,7 +2,7 @@
 
 Your answers should be cleanly presented in your GitHub repository. Citations should be included as needed. Include which generative AI system was used and what prompts were used if generative AI was used.
 
-### Total Points /22
+### Total Points /24
 
 - Part 1 - 3 pts
     - [ ] `tar` options table
@@ -24,15 +24,19 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] Changes made to `index.html`
     - [ ] Screenshot with URL included
 
-- Part 4 - 8 pts
+- Part 4 - 7 pts
     - [ ] `ssh` files table
-    - [ ] `ssh config` file components
     - [ ] Command to generate a new key, with options entered into the fields
     - [ ] Create the user and / or prove the user exists
     - [ ] Contents of `~/.ssh/authorized_keys` in remote user account
-    - [ ] Old `ssh` command
+    - [ ] `ssh` command
     - [ ] Updated `config` file contents
     - [ ] New `ssh` command post `config` file entry
+
+- Part 5 - 3 pts
+    - [ ] Basic `tar` usage to create & extract
+    - [ ] Basic `sftp` usage
+    - [ ] Essential ssh files
 
 - Point Deductions
     - [ ] AI Overuse / AI Generated - 0 Points
