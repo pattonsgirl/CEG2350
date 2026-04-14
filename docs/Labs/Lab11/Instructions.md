@@ -162,7 +162,8 @@ When you see a reference to **local system**, this means your system - *not your
 
 2. On your local system, make a new key pair - with a non-default name.  Change at minimum the default name
 3. On your AWS instance, create a user & user home directory or use the your `firstinitiallastname` account
-4. Put the public key of the key pair you created in the AWS instnace user's `~/.ssh/authorized_keys` file on the AWS instance
+4. **Add / Append** the public key of the key pair you created in the AWS instance user's `~/.ssh/authorized_keys` file on the AWS instance
+   - **WARNING** Do not delete existing lines in the `authorized_keys` file
 5. From your local system, `ssh` in to the AWS instance using the user's username and the private key of the keypair you created.
    - Format reminder: `ssh -i path/to/privatekey username@hostname_or_ip`
 6. Write an entry in your local system's `~/.ssh/config` file with the new connection information.
