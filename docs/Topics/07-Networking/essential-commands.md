@@ -26,13 +26,21 @@ To send a packet to the router, your computer needs the router's hardware ID (MA
 
 ---
 
-## 4. Addressing: DNS Lookup
+## 4. `ping`
+
+Ping is a command-line utility used to test network connectivity, reachability, and latency (speed) between a source and a destination host. It works by sending Internet Control Message Protocol (ICMP) Echo Request packets to a target, which replies with Echo Replies. Key metrics include round-trip time (RTT) and packet loss.
+
+* **Command:**: `ping google.com` `ping <insert IP or address>`
+
+---
+
+## 5. Addressing: DNS Lookup
 * **Command:** `nslookup google.com`
 * **The Lesson:** We get the **Destination IP**. We now have the two main pieces of the "envelope": Source IP (Me) and Destination IP (Google).
 
 ---
 
-## 5. Packet Formation: Sockets and Ports
+## 6. Packet Formation: Sockets and Ports
 This is where we define the **Source Port** and **Destination Port**.
 
 * **Command:** `netstat -an | grep ESTABLISHED` (Run this *while* you have a website open)
@@ -44,13 +52,14 @@ This is where we define the **Source Port** and **Destination Port**.
 
 ---
 
-## 6. Mapping the Path: Traceroute
+## 7. Mapping the Path: Traceroute
 * **Command:** `traceroute google.com` (Linux) `tracert google.com` (Windows)
 * **The Lesson:** Watch the packet travel through the "Gateways" of the world.
+* [Video] [Ping and traceroute - PowerCert](https://www.youtube.com/watch?v=vJV-GBZ6PeM)
 
 ---
 
-## 7. The Full Conversation: Curl
+## 8. The Full Conversation: Curl
 * **Command:** `curl -v https://www.google.com`
 * **The Lesson:** Look closely at the output. You will see:
     * `* Connecting to www.google.com (142.250.190.46) port 443 (#0)`
