@@ -45,7 +45,7 @@ This is where we define the **Source Port** and **Destination Port**.
 ---
 
 ## 6. Mapping the Path: Traceroute
-* **Command:** `traceroute google.com`
+* **Command:** `traceroute google.com` (Linux) `tracert google.com` (Windows)
 * **The Lesson:** Watch the packet travel through the "Gateways" of the world.
 
 ---
