@@ -137,23 +137,20 @@ If you break access - can no longer `ssh` to your instance - take a screenshot o
 Review the following resource to get an overall feel for the difference between ports, sockets, and URLs:
 - [Ports, Sockets, and URLs](ports_sockets_url_compare.md)
 
-For this part you'll need two source code files - we have provided Java and Python client and server source code that uses the socket library.
+We have provided tar archives of Java and Python client and server source code that uses the socket library.
 
-- [Java Client & Server Source Code](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab12/Java)
-- [Python Client & Server Source Code](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab12/Python)
+- [Java Client & Server Source Code](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab12/Echo-Java.tar.gz)
+- [Python Client & Server Source Code](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab12/Echo-Python.tar.gz)
 
-Download the source code to your GitHub repository folder - add it for tracking and commit it.
+Download and extract the tar archive of choice to your GitHub repository folder in `Lab12`.
 
-**Create a branch - push this branch to GitHub.  Do not delete the branch after merging**
-
-On this branch:
-
-1. Edit the source code - add comments to help **you** understand what it is doing.  Cite sources that helped you understand.
-2. Edit the client side code to refer to your AWS instance using its public IP.
-3. Run (compile as well depending on language) the server code on your AWS instance.
-4. Run (compile as well depending on language) the client code on your personal system.
-5. Send messages to the server from the client.  Add a screenshot to your lab showing the communications between the client and server.
-6. Merge your changes to the `main` branch.  Do not delete the branch where you were editing your code.
+1. Make a commit of the original source code files
+2. Edit the both the client and server source code files - add comments to help **you** understand what it is doing. Commit and push your changes. 
+   - Cite sources that helped you understand by adding them to the comments or to your citations section.
+3. Edit the client side code to use your AWS Instance's public IP as the `host`. Commit and push your changes.
+4. Run (compile as well depending on language) the server code on your AWS instance.
+5. Run (compile as well depending on language) the client code on your personal system - laptop / desktop / virtual machine.
+6. Send messages to the server from the client.  Add a screenshot(s) to your lab showing the communications between the client and server.
 
 **Resources**
 - [How to Execute and Run Java Code from the Terminal - FreeCodeCamp](https://www.freecodecamp.org/news/how-to-execute-and-run-java-code/)
@@ -162,11 +159,9 @@ On this branch:
 
 ## Part 4 - Server Testing
 
-Figuring out how to tell if a server is on is one of those MFUS (Most Frequently Used Skills).  Sites like [Down Detector](https://downdetector.com/) are highly informative, but sometimes you need to have other utilities in hand.  The two things we generally ask about servers are: "Is it responding?" and "Is the web page available?".
+Figuring out how to tell if a server is on is one of those MFUS (Most Frequently Used Skills). The two things we generally ask about servers are: "Is it responding?" and "Is the service available?".
 
-In this exercise, you will get a set of IPs to test the useful commands on, then a series of questions to guide what I'd like you to understand about them. Your responses should prove how you can validate your answer by testing against the IPs referred to and the commands recommended.
-
-- **Useful Commands:** `ping`, `traceroute`, `nslookup`, `curl`
+In this exercise, you will test against each IP to figure out what it goes to you will get a set of IPs to test the useful commands on, then a series of questions to guide what I'd like you to understand about them. Your responses should prove how you can validate your answer by testing against the IPs referred to and the commands recommended.
 
 | Server IPs | Domain Names | URLs  |
 | ---       | ---          | ---    |
@@ -215,3 +210,6 @@ Your files should be cleanly presented in your GitHub repository.  Citations sho
 - [How to Execute and Run Java Code from the Terminal - FreeCodeCamp](https://www.freecodecamp.org/news/how-to-execute-and-run-java-code/)
 - [Java Socket Programming - Socket Server, Client example - DigitalOcean](https://www.digitalocean.com/community/tutorials/java-socket-programming-server-client)
 - [Socket Programming in Python (Guide) - RealPython](https://realpython.com/python-sockets/)
+
+### Network Admin Toolkit
+- [Down Detector](https://downdetector.com/)
