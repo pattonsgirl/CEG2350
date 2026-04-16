@@ -159,23 +159,43 @@ Download and extract the tar archive of choice to your GitHub repository folder 
 
 ## Part 4 - Server Testing
 
-Figuring out how to tell if a server is on is one of those MFUS (Most Frequently Used Skills). The two things we generally ask about servers are: "Is it responding?" and "Is the service available?".
+The two things we generally ask about servers are: "Is it responding?" and "Is the service available?".
 
-In this exercise, you will test against each IP to figure out what it goes to you will get a set of IPs to test the useful commands on, then a series of questions to guide what I'd like you to understand about them. Your responses should prove how you can validate your answer by testing against the IPs referred to and the commands recommended.
+In this exercise, you will run a test suite of commands against each IP / URL in the table below, document your findings in a results table, and answer reflection questions based on what you discover.
+
+### Test Servers
 
 | Server IPs | Domain Names | URLs  |
 | ---       | ---          | ---    |
-| `8.8.8.8` |              |        |
+| `8.8.8.8` |  `dns.google` |        |
 | `5.9.243.187` | `wttr.in` | `https://wttr.in` |
 | Your AWS instance public IP |     |     |
 | `34.117.59.81` | `ipinfo.io` | `https://ipinfo.io` |
 
-1. What are each of the above, what do they respond to, and what requests do they ignore?
-2. Does `ping` tell you if a server is "working"?
-3. What protocol does `ping` use?  What does this mean about the server firewalls?
-4. Why won't `ping` work if you specify `https://` before the domain name?
-5. Does an IP lookup always result in finding the correct domain name / URL to access the resource, and vice versa?
-6. What happens when an `http` request is made to a server with `https` enabled?  
+### Test Suite
+
+Run the following commands against **each IP / domain name / url** as appropriate in the table above. Document the result (output, error, or behavior) in the Results Table.
+
+| Test | Command | What to observe |
+| ---  | ---     | ---             |
+| ICMP Reachability  | `ping -c 10 <IP / Domain Name>`            | Does the server respond? |
+| HTTP Request       | `curl -v http://<IP / Domain Name>`  | Response code, headers, content |
+| HTTPS Request      | `curl -v https://<IP / Domain Name>` | Response code, SSL errors, redirects |
+| Forward DNS Lookup | `nslookup <Domain Name>`                   | Does it resolve to one or more IPs?   |
+| Reverse DNS Lookup | `nslookup <IP>`                            | Does it resolve to a domain name?     |
+
+### Reflection questions:
+
+1. **ICMP and Firewalls**: Why do some IPs not respond to `ping` even though they have active services running? What does this tell you about their firewall configuration?
+
+2. **HTTP vs HTTPS**: Using `wttr.in`, compare the results when you `curl -v http://<IP / Domain Name>` versus `curl -v https://<IP / Domain Name>` for the same server. What differences did you observe? Why?
+
+3. **Raw Packet Capture**: In a new tab, but on the same system you are using to run the `curl` commands, run a raw packet viewer for `wttr.in`: `sudo tcpdump -i any -nn -A port 80 or port 443 and host <IP / Domain Name>`. In another tab, `curl` using `http` and `https`, watching the packet dump after each `curl` request. Why can you "read" the weather info from the `http` request but not the `https` request?
+
+4. **DNS Lookup**: When using `nslookup`, which IPs resolved to domain names and which domain names resolved to IPs? Why might this matter?
+
+5. **Real-World Application**: How would you use these commands if someone reported "the server is down"? What would be your troubleshooting strategy?  
+
 
 ## Extra Credit - Tattle Tale
 
