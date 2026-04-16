@@ -68,7 +68,6 @@ This is where we define the **Source Port** and **Destination Port**.
 ---
 
 ### The "Anatomy of a Packet" Summary
-When your students run these commands, they are seeing how this "envelope" is built:
 
 | Packet Part | Value Example | Command to Find It |
 | :--- | :--- | :--- |
