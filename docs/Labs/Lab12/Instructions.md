@@ -6,6 +6,7 @@
 - [Part 2 - Security](#part-2---security)
 - [Part 3 - Socket Programming](#part-3---socket-programming)
 - [Part 4 - Server Testing](#part-4---server-testing)
+- [Part 5 - Citations / Resources](#part-5---citations--resources)
 - [Extra Credit - Tattle Tale](#extra-credit---tattle-tale)
 - [Submission](#submission)
 - [Rubric](#rubric)
@@ -196,6 +197,15 @@ Run the following commands against **each IP / domain name / url** as appropriat
 
 5. **Real-World Application**: How would you use these commands if someone reported "the server is down"? What would be your troubleshooting strategy?  
 
+## Part 5 - Citations and Resources
+
+Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations / Resources` section of your lab answers. You may refer to your own notes (if they are digitized into GitHub), course notes, or external resources / websites.
+
+To add citations / resources, provide the reference / link and a summary of what it assisted you with.  
+
+If generative AI was used, include which generative AI system was used, what prompt(s) you fed it, and a summary of what it assisted you with.
+
+Since the networking command table and the socket program already asked for resources, you only need to cite additional resources used in completing the other lab taskings.
 
 ## Extra Credit - Tattle Tale
 
