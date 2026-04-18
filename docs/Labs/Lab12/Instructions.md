@@ -3,8 +3,8 @@
 - [General Instructions](#general-instructions)
 - [Lab Procedure](#lab-procedure)
 - [Part 1 - Networking Basics](#part-1---networking-basics)
-- [Part 2 - Security](#part-2---security)
-- [Part 3 - Socket Programming](#part-3---socket-programming)
+- [Part 2 - Socket Programming](#part-2---socket-programming)
+- [Part 3 - Security](#part-3---security)
 - [Part 4 - Server Testing](#part-4---server-testing)
 - [Part 5 - Citations / Resources](#part-5---citations--resources)
 - [Extra Credit - Tattle Tale](#extra-credit---tattle-tale)
@@ -95,8 +95,32 @@ For each system:
 - [Linux IP Command Explained With Examples - Logic Web](https://www.logicweb.com/knowledge-base/linux-tips/linux-ip-command-explained-with-examples/#3--displaying-ip-addresses)
 - [Exploring the Linux 'ip' Command - with comparisons against other commands - Cisco Blog](https://blogs.cisco.com/learning/exploring-the-linux-ip-command)
 
+## Part 2 - Socket Programming
 
-## Part 2 - Security
+Review the following resource to get an overall feel for the difference between ports, sockets, and URLs:
+- [Ports, Sockets, and URLs](ports_sockets_url_compare.md)
+
+We have provided tar archives of Java and Python client and server source code that uses the socket library.
+
+- [Java Client & Server Source Code](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab12/Echo-Java.tar.gz)
+- [Python Client & Server Source Code](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab12/Echo-Python.tar.gz)
+
+Download and extract the tar archive of choice to your GitHub repository folder in `Lab12`.
+
+1. Make a commit of the original source code files
+2. Edit the both the client and server source code files - add comments to help **you** understand what it is doing. Commit and push your changes. 
+   - Cite sources that helped you understand by adding them to the comments or to your citations section.
+3. Edit the client side code to use your AWS Instance's public IP as the `host`. Commit and push your changes.
+4. Run (compile as well depending on language) the server code on your AWS instance.
+5. Run (compile as well depending on language) the client code on your personal system - laptop / desktop / virtual machine.
+6. Send messages to the server from the client.  Add a screenshot(s) to your lab showing the communications between the client and server.
+
+**Resources**
+- [How to Execute and Run Java Code from the Terminal - FreeCodeCamp](https://www.freecodecamp.org/news/how-to-execute-and-run-java-code/)
+- [Java Socket Programming - Socket Server, Client example - DigitalOcean](https://www.digitalocean.com/community/tutorials/java-socket-programming-server-client)
+- [Socket Programming in Python (Guide) - RealPython](https://realpython.com/python-sockets/)
+
+## Part 3 - Security
 
 Your AWS instance is protected by a firewall via an AWS tool called Security Groups. The default rules created allow broad access (e.g., any IP on any port).
 
@@ -137,31 +161,6 @@ Your instance runs SSH (TCP on port 22) and Apache HTTP Server (TCP on port 80).
    - Something expected to **not** work
 
 If you break access - can no longer `ssh` to your instance - take a screenshot of your rules so you can get assistance, "reset" to default rules shown in the Default Security Group Rules image and try again.
-
-## Part 3 - Socket Programming
-
-Review the following resource to get an overall feel for the difference between ports, sockets, and URLs:
-- [Ports, Sockets, and URLs](ports_sockets_url_compare.md)
-
-We have provided tar archives of Java and Python client and server source code that uses the socket library.
-
-- [Java Client & Server Source Code](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab12/Echo-Java.tar.gz)
-- [Python Client & Server Source Code](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab12/Echo-Python.tar.gz)
-
-Download and extract the tar archive of choice to your GitHub repository folder in `Lab12`.
-
-1. Make a commit of the original source code files
-2. Edit the both the client and server source code files - add comments to help **you** understand what it is doing. Commit and push your changes. 
-   - Cite sources that helped you understand by adding them to the comments or to your citations section.
-3. Edit the client side code to use your AWS Instance's public IP as the `host`. Commit and push your changes.
-4. Run (compile as well depending on language) the server code on your AWS instance.
-5. Run (compile as well depending on language) the client code on your personal system - laptop / desktop / virtual machine.
-6. Send messages to the server from the client.  Add a screenshot(s) to your lab showing the communications between the client and server.
-
-**Resources**
-- [How to Execute and Run Java Code from the Terminal - FreeCodeCamp](https://www.freecodecamp.org/news/how-to-execute-and-run-java-code/)
-- [Java Socket Programming - Socket Server, Client example - DigitalOcean](https://www.digitalocean.com/community/tutorials/java-socket-programming-server-client)
-- [Socket Programming in Python (Guide) - RealPython](https://realpython.com/python-sockets/)
 
 ## Part 4 - Server Testing
 

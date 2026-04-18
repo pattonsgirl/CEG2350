@@ -67,22 +67,20 @@ Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab12/Inst
 | DNS server address                                 |       |
 | Public IPv4 address for devices on network         |       |
 
-
-## Part 2 - Security
-
-Screenshot of your revised Inbound Security Group rules per the lab instructions.  
-![Inbound Rules for Lab 12](relative/path/to/image)
-
-> Describe how you validated your rules are working - see instructions for validation parameters. 
-
-
-## Part 3 - Socket Programming
+## Part 2 - Socket Programming
 
 [Link to server side source code](relative path to code within git folder)
 
 [Link to client side source code](relative path to code within git folder)
 
 ![Screenshot of successful running of and communication between client and server](path to image)
+
+## Part 3 - Security
+
+Screenshot of your revised Inbound Security Group rules per the lab instructions.  
+![Inbound Rules for Lab 12](relative/path/to/image)
+
+> Describe how you validated your rules are working - see instructions for validation parameters. 
 
 ## Part 4 - Server Testing
 
