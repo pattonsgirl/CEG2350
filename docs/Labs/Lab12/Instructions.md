@@ -102,36 +102,41 @@ Your AWS instance is protected by a firewall via an AWS tool called Security Gro
 
 ![Default Security Group Rules](Default-SGRules.JPG)
 
-Your instance runs SSH (port 22) and Apache HTTP Server (port 80). In Part 3, you'll play with running a program that listens on another port - 8080. 
+Your instance runs SSH (TCP on port 22) and Apache HTTP Server (TCP on port 80). In Part 3, you'll play with running a program that listens on another port - 8080. 
 - SSH enables secure shell access - access to use this service should be limited to trusted network devices or devices on trusted networks
 - Apache serves web content - typically is you host a webpage you want the world (any network device) to be able to request to view the content
 
-Revise Inbound Rules in Security Group `ceg2350-Lab1SecurityGroup`:
-- Remove original rules.
-- Allow SSH from WSU IPs (130.108.0.0/16).
-- Allow SSH from your home public IP
+**Know trusted IP ranges:**
+- We are going to consider sources from Wright State University's network to be trusted
+   - 130.108.0.0/16 = all IPs in range 130.108.0.0 to 130.108.255.255 - all IPs in the network block must start with `130.108`
+- We are going to consider your home public IP address to be trusted
+   - This should use a `/32` CIDR block - as in only this IP in allowed / only host IP in the network block
    - Hint: remember how to view query for your public IP from Part 1
-- Allow HTTP (port 80) from any IP.
-- Allow port 8080 from any (or trusted) IPs.
+
+**Understand other ranges:**
+- One of your rules will ask you to allow any IP, or `0.0.0.0` - `255.255.255.255` - what CIDR block will you need to use?
+- Experiment with [Subnet Calculator](https://www.calculator.net/ip-subnet-calculator.html)
 
 **AWS Navigation**:
 - Start Lab, open AWS console.
 - Go to EC2 > Security Groups > Select `ceg2350-Lab1SecurityGroup`.
 - Edit Inbound Rules only.
 
-1. Remove the two default rules.  
-2. Create a rule that allows SSH access from any WSU IPv4 addresses - 130.108.0.0/16
-   - 130.108.0.0/16 = all IPs in range 130.108.0.0 to 130.108.255.255
-3. Create a rule that allows SSH access from your home public IPv4 address
-   - required even if you live on campus
-4. Create a rule that allows HTTP access from any IPv4 address or all addresses from 0.0.0.0 - 255.255.255.255
-5. Create a rule (or rules) that allow access to port 8080 from any (or only trusted) IPv4 address
-6. Describe how you validated your rules are working.
-   - When doing security testing, a base a validation testing is:
-      - Something expected to work
-      - Something expected to **not** work
+**Revise Inbound Rules in Security Group `ceg2350-Lab1SecurityGroup`:**
+- Remove original rules.
+- Allow SSH from WSU IPs 
+- Allow SSH from your home public IP
+- Allow ICMP from WSU IPs
+- Allow ICMP from your home public IP
+- Allow HTTP (port 80) from any IP
+- Allow port 8080 from any (or trusted) IPs
 
-If you break access - can no longer `ssh` to your instance - take a screenshot of your rules so you can get assistance, "reset" to default rules shown in the image and try again.
+**Describe how you validated your rules are working.**
+- When doing security testing, a base a validation testing is:
+   - Something expected to work
+   - Something expected to **not** work
+
+If you break access - can no longer `ssh` to your instance - take a screenshot of your rules so you can get assistance, "reset" to default rules shown in the Default Security Group Rules image and try again.
 
 ## Part 3 - Socket Programming
 
@@ -195,7 +200,7 @@ Run the following commands against **each IP / domain name / url** as appropriat
 
 4. **DNS Lookup**: When using `nslookup`, which IPs resolved to domain names and which domain names resolved to IPs? Why might this matter?
 
-5. **Real-World Application**: How would you use these commands if someone reported "the server is down"? What would be your troubleshooting strategy?  
+5. **Troubleshooting**: How would you use these commands if someone reported "the server is down"? What would be your troubleshooting strategy?  
 
 ## Part 5 - Citations and Resources
 
