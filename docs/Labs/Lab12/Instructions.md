@@ -1,6 +1,5 @@
 # Lab 12 - Networking & Firewalls
 
-- [General Instructions](#general-instructions)
 - [Lab Procedure](#lab-procedure)
 - [Part 1 - Networking Basics](#part-1---networking-basics)
 - [Part 2 - Socket Programming](#part-2---socket-programming)
@@ -11,11 +10,6 @@
 - [Submission](#submission)
 - [Rubric](#rubric)
 - [Resources](#resources)
-
-## General Instructions
-
-- You may refer to additional resources outside of the recommended ones provided. Cite any resource that contributes to your understanding in the `Citations` section of your lab answers, including the site and a summary of its assistance. If generative AI was used, include the system and prompts.
-- If you make mistakes with commands, note them! Writing down what went wrong and the correction will help your learning. If stuck, this aids TAs in understanding where you may have misunderstood or misconfigured a core step.
 
 ## Lab Procedure
 
@@ -30,6 +24,10 @@ Create a new directory, `Lab12`.
 Create a file named `README.md` in the `Lab12` folder. The [Lab 12 Template can be copied from this link](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab12/LabTemplate.md):
 
 - `https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab12/LabTemplate.md`
+
+You may refer to additional resources outside of the recommended ones provided. Cite any resource that contributes to your understanding in the `Citations` section of your lab answers, including the site and a summary of its assistance. If generative AI was used, include the system and prompts.
+
+If you make mistakes with commands, note them! Writing down what went wrong and the correction will help your learning. If stuck, this aids TAs in understanding where you may have misunderstood or misconfigured a core step.
 
 ## Part 1 - Networking Basics
 
