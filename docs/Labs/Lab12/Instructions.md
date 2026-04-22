@@ -177,7 +177,7 @@ In this exercise, you will run a test suite of commands against each IP / URL in
 
 ### Test Suite
 
-Run the following commands against **each IP / domain name / url** as appropriate in the table above. Document the result (output, error, or behavior) in the Results Table.
+Run the following commands against **each IP / domain name / url** as appropriate in the table above. 
 
 | Test | Command | What to observe |
 | ---  | ---     | ---             |
