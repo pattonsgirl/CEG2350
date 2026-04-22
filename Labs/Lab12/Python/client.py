@@ -1,4 +1,4 @@
-# echo_client.py
+# client
 import socket
 
 HOST = "98.89.7.161"

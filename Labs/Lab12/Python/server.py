@@ -1,3 +1,4 @@
+# server
 import socket
 
 HOST = "0.0.0.0"  # Standard loopback interface address (localhost)
