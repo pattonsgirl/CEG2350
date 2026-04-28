@@ -2,21 +2,26 @@
 
 Your answers should be cleanly presented in your GitHub repository. Citations should be included as needed. Include which generative AI system was used and what prompts were used if generative AI was used.
 
-### Total Points / 30
+### Total Points / 35
 
 - Repo Contains - 3 pts
     - [ ] README
     - [ ] Java or Python client source code
     - [ ] Java or Python server source code
 
-- Part 1 -  4 pts - 0.25 pt per line
+- Part 1 -  8 pts - 0.25 pt per line on table
     - [ ] Linux Command Cheat Sheet
-
-- Part 2 - 4 pts
     - [ ] Image / code block of networking settings for **student's device**
     - [ ] Settings table filled in with reasonable values
     - [ ] Image / code block of networking settings for **student's AWS instance**
     - [ ] Settings table filled in with accurate values
+
+- Part 2 - 5 pts
+    - [ ] Link to server side source code
+    - [ ] Server side code with comments
+    - [ ] Link to client side source code
+    - [ ] Client side code with comments
+    - [ ] Screenshot of communications
 
 - Part 3 - 12 pts (2 pts each)
     - [ ] Screenshot of updated Security Group Rules
