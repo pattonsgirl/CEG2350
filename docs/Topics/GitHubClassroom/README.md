@@ -2,42 +2,26 @@
 
 For this course, you will be submitting your lab work to a GitHub repository and submitting a link to your work to the corresponding Dropbox on Pilot.  The guide below will help you with setting up the repository you will be required to use for this course - it is a **private** repository with permissions set in order to protect your work and share it with only myself and the TAs and contains some default content to get started.  
 
-- [Pre-Reqs](#Pre-Reqs)
-- [Create the Repo](#Create-the-Repo)
+- [Quick Start](#quick-start)
 - [Use GitHub Repo in VSCode](#use-github-repo-in-vscode)
 - [Setup SSH Authentication](#Setup-SSH-Authentication)
 - [Using your Repository](#Using-your-Repository)
 - [Troubleshooting](#Troubleshooting)
 
-## Pre-Reqs:
+## Quick Start:
 
-- Create / have a GitHub account
+1. Create / have a GitHub account
   - [Sign up](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)
-- Create your repo via Pilot link
-  - Go to the Pilot page for this course, go to Content, then Labs. 
-  - There is a link labeled: "Create GitHub Classroom repo"
-  - Click the link, then follow the instructions in [Create the Repo](#create-the-repo)
-- Have `git` installed on the system you are working with
+2. Take the Pilot Quiz to collect your WSU email and GitHub username
+  - If you joined the course late, contact instructor immediately to get correct setup
+3. Receive an invitation to your course repository
+  - Invite will go to account linked to your `wright.edu` email
+  - URL will be in form: `https://github.com/WSU-kduncan/ceg2350-lastnamenum-f26`
+  - Repo is inherently private and only visible to instructors, TAs, and yourself
+4. Have `git` installed on the system you are working with
   - [`git` download page](https://git-scm.com/downloads)
   - With `winget` package manager for Windows: `winget install --id Git.Git -e`
   - With `apt` package manager for Linux: `sudo apt install git`
-
-## Create the Repo
-
-After clicking the "Create GitHub Classroom repo" link in Pilot, you will be taken to GitHub to finish creating your repository to use in this course.
-
-1. Select your wright.edu email address from the list shown.
-  - If you misclick, email myself or a TA so we can fix it
-  - If your email is not shown, let the TA know so that they can add it to the roster
-2. Select `OK` on the popup to confirm you selected the correct email address.  
-  ![Accept Assignment](../imgs/github-classrooms-acceptassignment.png)
-3. Select `Accept this assignment`
-4. After a minute, refresh the next page. You'll see something similar to:  
-  ![You're ready to go!](../imgs/github-classrooms-success.png)
-5. Click the lower link / link that looks similar to: `https://github.com/WSU-kduncan/ceg2350-your_GitHub_username`. 
-  - The top link sometimes presents an "error" but things are actually fine.
-6. It is recommended to bookmark this link for easy access down the road.
-  - You can also go to your GitHub profile page and "Pin" the repository
 
 ## Use GitHub Repo in VSCode
 
