@@ -48,10 +48,14 @@ As you work through the lab, practice making commits and synchronizing to your r
 
 ## Part 1 - GitHub Profile
 
+For professionalism, you are going to create a profile repository for your GitHub user - this will display on your user page when completed correctly.
+
+![GitHub Profile Repo Correct](imgs/GHProfile-Complete.png)
+
 **Before you begin** peruse these [Instructions to create a GitHub profile README](https://docs.github.com/en/get-started/start-your-journey/setting-up-your-profile#adding-a-profile-readme)
 
 1. Create a new public GitHub Repository, owned by you, named your GITHUB username.
-2. Use this repository to create a **profile README**. Clone this repository to your system and create / edit `README.md`. 
+2. Use this repository to create a **profile README**. Create / edit a file called `README.md`. 
 3. Your profile (the `README.md` file) must include: 
    - your name
    - your intended major
@@ -82,7 +86,7 @@ In your lab template, fill out the Action column associated with the Command Lin
 | Remove-Item  | rm          |        |
 | notepad.exe  | vim         |        |
 
-You may, and should, look up the function of the above commands.  Your summary in the `Action` column should be in your own words. **Add your citations notes to the section in your Lab Template. If you used generative AI as a source, include the platform and the prompt used.**
+You may, and should, look up the function of the above commands.  Your summary in the `Action` column should be in your own words.
 
 ## Part 3 - Command Line Navigation
 
@@ -98,8 +102,6 @@ For your OS, open the default shell and navigate to your user's directory (folde
 In your lab template, write in which shell you are using on your OS.
 
 Now perform the actions given in the numbered list below.  **In your lab template, write the command to do the task given next to the task itself.**
-
-**Cite sources, if needed**, about how you found out how to do certain actions. Add your citations notes to the section in your Lab Template. If you used generative AI as a source, include the platform and the prompt used.  
 
 Start in your user's home directory.  Be attentive here.  Windows users may have configured their system's to store the full user's directory in OneDrive.
 
@@ -117,6 +119,18 @@ Start in your user's home directory.  Be attentive here.  Windows users may have
 12. Make a copy of `test.txt` in `Dir B` named `fodder.txt`
 13. Delete / remove both `fodder.txt` AND `Dir B`
       - Challenge: delete `Dir B` and `fodder.txt` in one command
+
+## Part 4 - Citations / Resources
+
+Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations / Resources` section of your lab answers. You may refer to your own notes (if they are digitized into GitHub), course notes, or external resources / websites.
+
+To add citations / resources, provide the reference / link and a summary of what it assisted you with.  
+
+If generative AI was used, include which generative AI system was used, what prompt(s) you fed it, and a summary of what it assisted you with.
+
+We expect a minimum of **one citation / useful resource per part** of your lab. So this lab would require a resource for:
+- making / editing GitHub profile repositories
+- command line navigation
 
 ## Submission
 
