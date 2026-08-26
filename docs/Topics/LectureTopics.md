@@ -1,0 +1,12 @@
+Day 1:
+- Syllabus
+- 3 OSes
+- Your system's shell
+    - Powershell (Windows)
+    - bash (Linux)
+    - zsh (Mac)
+- Navigation
+    - `pwd`, `cd`, `ls`
+    - all shells support these, may be aliases to the program / command
+- Practice
+    - Using your shell (Powershell for Windows users), try to use commands (pwd, cd, and ls) to navigate to places like Downloads, a specific document, and where an app is installed (like Discord). Be curious!
