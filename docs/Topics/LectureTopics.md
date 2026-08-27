@@ -59,3 +59,14 @@ Day 2:
 
 Day 3:
 
+- permissions
+    - Windows
+    - Linux
+    - Mac?
+- `help` and `man`
+- `git` commands
+- `ssh` stage 1: private keys, command format
+
+Day 4:
+
+- Sandbox env
