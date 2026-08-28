@@ -59,12 +59,12 @@ Day 2:
 
 Day 3:
 
+- navigate to github repo (course one). Use command line to make file. Talk through
 - permissions
     - Windows
     - Linux
     - Mac?
 - `help` and `man`
-- `git` commands
 - `ssh` stage 1: private keys, command format
 
 Day 4:
