@@ -1,6 +1,6 @@
 ## Git / GitHub Workflow & Command Line (Lab 01)
 
-1. Walk through what happens, step by step, when you clone a repository with GitHub Desktop and then make changes in VS Code. What is the difference between a commit and a sync (push)?
+1. What is the difference between a commit and a sync (push)?
 
 2. Explain the difference between an absolute path and a relative path to a directory. Why does it matter which one you use when navigating from your home directory into DirA?
 
