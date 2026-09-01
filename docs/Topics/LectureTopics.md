@@ -61,10 +61,17 @@ Day 3:
 
 - navigate to github repo (course one). Use command line to make file. Talk through
     - `git` core: `clone`, `status`, `add`, `commit`, `push`, `pull`
+    - git commit authorship (once per system / account)
+    - `git config --global user.name "Your Name"`
+    - `git config --global user.email "your.email@example.com"`
+    - `clone` - don't forget auth
+
+Day 4:
 - permissions
     - Windows
     - Linux
     - Mac?
+    - `r`, `w`, `x`
     - user, group, other
         - `chown`, `chgrp`, `getent passwd`, `getent id`
     - read, write, execute
