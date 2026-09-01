@@ -60,10 +60,15 @@ Day 2:
 Day 3:
 
 - navigate to github repo (course one). Use command line to make file. Talk through
+    - `git` core: `clone`, `status`, `add`, `commit`, `push`, `pull`
 - permissions
     - Windows
     - Linux
     - Mac?
+    - user, group, other
+        - `chown`, `chgrp`, `getent passwd`, `getent id`
+    - read, write, execute
+        - `chmod`, `ls -la`, `stat`
 - `help` and `man`
 - `ssh` stage 1: private keys, command format
 
