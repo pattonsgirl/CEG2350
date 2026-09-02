@@ -73,9 +73,10 @@ Day 4:
     - Mac?
     - `r`, `w`, `x`
     - user, group, other
-        - `chown`, `chgrp`, `getent passwd`, `getent id`
+        - `chown`, `chgrp`, `getent passwd`, `getent group`
     - read, write, execute
         - `chmod`, `ls -la`, `stat`
+    - system files - `/etc/passwd`, `/etc/shadow`, `/etc/group`
 - `help` and `man`
 - `ssh` stage 1: private keys, command format
 
