@@ -1,11 +1,24 @@
 # AWS Academy Instructions
 
+- [Quick Rules](#Quick-Rules)
 - [Getting Started with AWS Academy](#Getting-Started-with-AWS-Academy)
 - [Connecting to an AWS Instance from Linux / Unix / Mac / WSL2](#connecting-to-an-aws-instance-from-linux--unix--mac--wsl2)
 - [Connecting to an AWS Instance from Windows with PowerShell](#connecting-to-an-aws-instance-from-windows-with-powershell)
 - [Reconnecting to an AWS environment](#Reconnecting-to-an-AWS-environment)
 - [Building a New Instance](#building-a-new-instance)
 - [Notes and Troubleshooting](#notes-and-troubleshooting)
+
+## Quick Rules
+
+1. AWS sets a 4 hour timer once you "Start Lab". 
+   - At the end of 4 hours, your instances will be automatically shutdown - not terminated - you can "Start Lab" again to turn them back on.
+   - Within the 4 hour window, you can "Start Lab" again to reset your timer.
+2. To get your private key, you can go to AWS Details and either select "Show" or "Download PEM" to view / download your private key respectively.
+3. Do not click Reset - it resets your whole AWS account, not the timer
+4. Watch your funds - you should be spending pennies a day. 
+   - If you find yourself reach $15 - $20 in a few weeks or days, seek TA / instructor assistance immediately.
+   - If you spend all $50, you will lose access to this account - there is no recovery.
+5. You can build a new sandbox anytime by repeating Step 9 in [Getting Started with AWS Academy](#getting-started-with-aws-academy)
 
 ## Getting Started with AWS Academy
 
