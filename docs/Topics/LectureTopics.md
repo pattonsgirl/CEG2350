@@ -67,19 +67,22 @@ Day 3:
     - `clone` - don't forget auth
 
 Day 4:
+
+- Sandbox env
 - permissions
     - Windows
     - Linux
     - Mac?
-    - `r`, `w`, `x`
     - user, group, other
-        - `chown`, `chgrp`, `getent passwd`, `getent group`
-    - read, write, execute
+        - `chown`, `chgrp`
+        - `id`, `groups`, `getent passwd`, `getent group`
+        - `adduser`, `addgrp`
+    - read (`r`), write (`w`), execute (`x`) - Numeric (Octal) notation and Character (Symbolic) notation
         - `chmod`, `ls -la`, `stat`
     - system files - `/etc/passwd`, `/etc/shadow`, `/etc/group`
-- `help` and `man`
+- `man`
+
+Day 5:
+
 - `ssh` stage 1: private keys, command format
-
-Day 4:
-
-- Sandbox env
+- file streams
