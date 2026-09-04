@@ -30,4 +30,13 @@
 
 ### Day 1:
 
+- No lab; holiday.  Keep a light eye on Discord
+
 ### Day 2:
+
+- Announcement - check in day Monday (9/15) to account for holiday.  Make up during ta / instructor office hours or by appointment by Tuesday at end of day (5:00 PM)
+- Connection resolution to AWS sandboxes
+    - Make sure they typed `-i`
+    - Make sure they know where their key is.
+    - If Powershell, make sure there is an extra enter key at bottom of file 
+- Permissions demo, top level what things do

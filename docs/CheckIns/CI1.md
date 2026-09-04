@@ -4,7 +4,7 @@
 
 2. Explain the difference between an absolute path and a relative path to a directory. Why does it matter which one you use when navigating from your home directory into DirA?
 
-3. mkdir, touch, cp, and mv all manipulate files or directories, but they're not interchangeable. Explain what each one actually does, and describe a situation where using the wrong one would cause a problem.
+3. Explain the difference between `cp` and `mv`
 
 4. You're asked to delete Dir B and the file fodder.txt inside it using a single command. Explain why a plain rm Dir B would fail, and what about rm's behavior requires you to change your approach.
 

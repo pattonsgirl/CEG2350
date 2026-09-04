@@ -85,4 +85,5 @@ Day 4:
 Day 5:
 
 - `ssh` stage 1: private keys, command format
+- `sudo`
 - file streams
