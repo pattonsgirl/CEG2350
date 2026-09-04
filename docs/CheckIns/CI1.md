@@ -10,11 +10,9 @@
 
 ## Linux Permissions (Lab 02)
 
-5. Explain what the three permission categories (owner, group, other) mean and why a system would separate permissions this way instead of just having a single "allowed users" list.
+5. Describe the permissions set by the following command with respect to user, groups, and other `chmod 751 program` 
 
-6. Compare chmod 751 program to chmod a=w snow.md. For each, explain what it does and whether you'd consider it a reasonable choice for that file, defending your reasoning the way the lab's rubric expects.
-
-7. Explain, in your own words, why a plain text file having execute permission is usually a red flag, using chmod 777 file.txt as your example.
+6. Describe the permissions set by the following command with respect to user, groups, and other `chmod a=w snow.md`
 
 ## Users, Groups, and Privilege (Lab 02)
 
