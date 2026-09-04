@@ -2,11 +2,11 @@
 
 1. What is the difference between a commit and a sync (push)?
 
-2. Explain the difference between an absolute path and a relative path to a directory. Why does it matter which one you use when navigating from your home directory into DirA?
+2. Explain the difference between an absolute path and a relative path to a directory.
 
 3. Explain the difference between `cp` and `mv`
 
-4. You're asked to delete Dir B and the file fodder.txt inside it using a single command. Explain why a plain rm Dir B would fail, and what about rm's behavior requires you to change your approach.
+4. Explain the when to use `rmdir boat-folder` vs `rm -r boat-folder`
 
 ## Linux Permissions (Lab 02)
 
