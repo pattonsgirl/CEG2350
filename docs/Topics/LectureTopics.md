@@ -99,8 +99,11 @@ Day 5:
     - clone with ssh as the public key authentication method - make sure `SSH` is selected after using the Code dropdown
 - `sudo`, `root` (the user, not `\` of the filesystem), permissions "review"
     - `usermod -aG groupname username`
+- `history` and use of `!!`
 
 
 Day 6: 
 
+- globbing
+- wildcards
 - file streams
