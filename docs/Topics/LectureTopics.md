@@ -84,6 +84,23 @@ Day 4:
 
 Day 5:
 
-- `ssh` stage 1: private keys, command format
-- `sudo`
+- `ssh` stage 1:
+    - `ssh` = secure shell
+    - public key authentication method
+    - private key & permissions
+    - public key (adding to account settings (ie GitHub) or viewing in `~/.ssh/authorized_keys`)
+    - creating a key pair with `ssh-keygen`
+    - Common flags / uses:
+        - `ssh -i priv_key_file account@hostname_or_ip` = create a secure shell connection to a remote system account
+            - NOTE: if no private key is specified, `ssh` will look for a key to try in `~/.ssh`
+        - `ssh -T account@hostname_or_ip` = "test" authentication to remote system account
+            - NOTE: since no private key is specified, `ssh` will looks for a key to try in `~/.ssh` - `id_ed25519`
+- `git clone git@github.com:repo_owner/repo_name.git`
+    - clone with ssh as the public key authentication method - make sure `SSH` is selected after using the Code dropdown
+- `sudo`, `root` (the user, not `\` of the filesystem), permissions "review"
+    - `usermod -aG groupname username`
+
+
+Day 6: 
+
 - file streams
