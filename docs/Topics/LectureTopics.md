@@ -104,6 +104,29 @@ Day 5:
 
 Day 6: 
 
+- bash script intro
+    - Why use `.sh` as file extension
+    - (If no execute permissions) - `bash scriptname`
+    - (If execute permissions) - `./scriptname` (if in current dir) or `path/scriptname` (if elsewhere)
 - globbing
 - wildcards
+    - `*.txt` matches all names / strings with `.txt` pattern after *something*
 - file streams
+    - standard input (0), output (1), and error (2)
+    - output redirection - `>`, `>>`
+    - input redirection - `<`
+    - piping -  `|` - standard output of one command as standard input of another
+- data processing programs (basic level)
+    - `grep`
+    - `wc`
+    - `sort`
+    - `uniq`
+    - `diff`
+- Practice exercises: https://github.com/pattonsgirl/CEG2350/tree/main/fileio
+    - You can ignore `&>` and `tee` - they are just in the "neat to know bucket"
+
+Day 7:
+
+- The point of `PATH`
+- overview of bash structure (logic, loops, functions)
+- intro to regex
