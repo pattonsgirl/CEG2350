@@ -1,6 +1,6 @@
 ## Git / GitHub Workflow & Command Line (Lab 01)
 
-1. What is the difference between a commit and a sync (push)?
+1. In git, what is the difference between / when should I use a commit versus a sync (push)?
 
 2. Explain the difference between an absolute path and a relative path to a directory.
 
@@ -8,11 +8,13 @@
 
 4. Explain the when to use `rmdir boat-folder` vs `rm -r boat-folder`
 
+5. Explain the difference between `ls` and `ls -lah`
+
 ## Linux Permissions (Lab 02)
 
-5. Describe the permissions set by the following command with respect to user, groups, and other `chmod 751 program` 
+6. Describe the permissions set by the following command with respect to user, groups, and other `chmod 751 program` 
 
-6. Describe the permissions set by the following command with respect to user, groups, and other `chmod a=w snow.md`
+7. Describe the permissions set by the following command with respect to user, groups, and other `chmod a=w snow.md`
 
 ## Users, Groups, and Privilege (Lab 02)
 
