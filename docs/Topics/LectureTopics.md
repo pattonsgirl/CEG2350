@@ -111,6 +111,8 @@ Day 6:
 - globbing
 - wildcards
     - `*.txt` matches all names / strings with `.txt` pattern after *something*
+    - `l?.txt` matches all names / strings with `l_.txt` where the blank is a single character
+    - additional ref: https://linuxize.com/post/linux-wildcards-and-globbing/
 - file streams
     - standard input (0), output (1), and error (2)
     - output redirection - `>`, `>>`
