@@ -40,3 +40,29 @@
     - Make sure they know where their key is.
     - If Powershell, make sure there is an extra enter key at bottom of file 
 - Permissions demo, top level what things do
+
+## Week 4
+
+### Day 1:
+
+- First 10 minutes, walk in, slip of paper, write name and answer question.
+- Reminder: there are instructions && the template. The template is just what answer is expected
+- ssh auth demo: 
+    - ssh-keygen on sandbox
+    - setting up ssh auth with GitHub
+    - git clone
+- remembering commits
+    - copy paste lab template
+    - pause, add commit push
+    - breakout: solve one or two IO, then add commit and push
+- bash
+    - start with comments
+    - move to action
+    - bring questions for Thursday
+- Remaining check ins for terminal and cloned repo
+
+
+### Day 2:
+
+- bash questions
+- merge conflicts?
