@@ -1,4 +1,4 @@
-## Git / GitHub Workflow & Command Line (Lab 01)
+You can use a command in support of your answer, but we are evaluating your written response.
 
 1. In git, what is the difference between / when should I use a commit versus a sync (push)?
 
@@ -10,17 +10,15 @@
 
 5. Explain the difference between `ls` and `ls -lah`
 
-## Linux Permissions (Lab 02)
-
 6. Describe the permissions set by the following command with respect to user, groups, and other `chmod 751 program` 
 
 7. Describe the permissions set by the following command with respect to user, groups, and other `chmod a=w snow.md`
 
-## Users, Groups, and Privilege (Lab 02)
+8. Given `-rw-------  1 kayleigh hr_admins    2048 Sep  9 14:02 payroll_notes.txt`
+Who besides kayleigh can read payroll_notes.txt, and why (or why not)?
 
-8. After creating a new user bob with adduser, explain why bob can write files into his own home directory without sudo, but ubuntu might not be able to write into bob's home directory without sudo. What permission concept explains both halves of that?
+9. Given `-rw-rw-r--  1 dana     hr_admins    1536 Sep 10 08:40 meeting_minutes.md`
+If bob needs to edit meeting_minutes and is not in the `hr_admins` group, what is the least-privilege way he should be granted access?
 
-9. Describe what it means to add both ubuntu and bob to a group called squad, and explain what additional step (beyond just creating the group) is required before members of squad can actually read and modify files inside a shared folder.
-ubuntu can run sudo without a password, but bob cannot run sudo at all by default. 
-
-10. Explain the underlying reason for this difference, and describe what you would need to check or change to give bob similar sudo privileges.
+10. Given `-rw-------  1 kayleigh hr_admins    2048 Sep  9 14:02 payroll_notes.txt`
+Assuming sally is a member of the `sudo` group, can they open payroll_notes.txt for editing and why (why not)?
