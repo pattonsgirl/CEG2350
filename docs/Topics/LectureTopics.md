@@ -130,5 +130,29 @@ Day 6:
 Day 7:
 
 - The point of `PATH`
+    - list of directories system uses to search for executables, in order of listing
+- variables
+    - `printenv` show environment variables
+    - set one - `var_name=val`
+    - view / use value in one - `$var_name`
+    - read from user and store - `read -p "user prompt" var_name`
+    - use args from the command line
+        - `$1` refers to first arg, `$2` is second arg, and so on
+        - `$@` = all args (list)
+        - `$#` = number of args
+- quotes:
+    - double quote = expansion
+    - single quote = literal
+    - backticks (or enclosing in `$()` ) = run as command
+- `test` / `[ `
+    - compare strings, numbers, etc
+    - use man to see flags supported
+
+Day 8: 
+
+- where is main?
 - overview of bash structure (logic, loops, functions)
 - intro to regex
+- `grep`
+- `sed`
+- `awk`
