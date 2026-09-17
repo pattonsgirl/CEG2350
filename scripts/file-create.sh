@@ -6,9 +6,14 @@
 
 # note: fuctions are being declared BEFORE we get to main.  You can make main to make this less confusing
 #
-# main()?
+#
+
+#main()
 
 # get a directory name
+read -p "give me dir" dir_name
+
+echo $dir_name
 
 # check if exits, create if not
 
@@ -18,3 +23,5 @@
 
 # loop to make that many files - for or while?
 
+
+#main
