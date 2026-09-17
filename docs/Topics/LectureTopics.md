@@ -151,8 +151,17 @@ Day 7:
 Day 8: 
 
 - where is main?
+    - To use a main function in Bash, define it like a regular function and explicitly call it at the very bottom of your script
+    - Recommended: pass the script's command-line arguments (`$@`) to it - so `main $@`
 - overview of bash structure (logic, loops, functions)
+    - cheatsheet of convenience: https://linuxize.com/cheatsheet/bash/
+    - played "fill in the template" based on script requirements: https://github.com/pattonsgirl/CEG2350/blob/75692eaca54bd5fb777bc2cad76b79cebdbbe946/scripts/file-create.sh 
 - intro to regex
+    - learn / reinforce regular expression symbols: https://regexone.com/
+
+Day 9:
+
+- regex cheatsheet
 - `grep`
 - `sed`
 - `awk`
