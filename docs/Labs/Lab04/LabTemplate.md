@@ -5,11 +5,11 @@
 
 Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab04/Instructions.html
 
-## Part 1 - Finance Tracker
+## Part 1 - Task Tracker
 
-Remember your `ft` script **must have a minimum of 3 commits** for credit.  The commits should show you making tested progress towards the final solution.
+Remember your `tt` script **must have a minimum of 3 commits** for credit.  The commits should show you making tested progress towards the final solution.
 
-Verify that `ft` made it to your GitHub repository for this course and is in your `Lab04` folder.  No answers will be written here unless you would like to leave a note to the TAs
+Verify that `tt` made it to your GitHub repository for this course and is in your `Lab04` folder.  No answers will be written here unless you would like to leave a note to the TAs
 
 ## Part 2 - User Guide & Sample Runs
 
@@ -19,28 +19,28 @@ Fill in with your user guide here - make sure you are focusing on good *markdown
 
 ### Sample runs
 
-Example of using `add` record
+Example of using `add` task
 ```
 show blocks
 of copy / pasted runs
 of your script
 ```
 
-Example of using `remove` record
+Example of using `remove` task
 ```
 show blocks
 of copy / pasted runs
 of your script
 ```
 
-Example of using `view` records
+Example of using `view` tasks
 ```
 show blocks
 of copy / pasted runs
 of your script
 ```
 
-Example of using `clear` records
+Example of using `clear` tasks
 ```
 show blocks
 of copy / pasted runs
@@ -61,8 +61,8 @@ of your script
    - Justification of preference for this use case:
 - Command to create link:
 - Notes about permissions modified: 
-- How you tested that you can run `ft` from anywhere on filesystem:
-- How you tested that other users can run `ft`:
+- How you tested that you can run `tt` from anywhere on filesystem:
+- How you tested that other users can run `tt`:
 
 ## Part 4 - Citations / Resources
 
