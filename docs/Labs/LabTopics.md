@@ -66,3 +66,14 @@
 
 - bash questions
 - merge conflicts?
+
+
+## Week 5
+
+### Day 1:
+
+- hand back check in quizzes (with notes on what needs corrected)
+- (if time) review a top couple questions missed
+- case statements
+- functions
+- PATH

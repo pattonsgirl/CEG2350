@@ -165,3 +165,4 @@ Day 9:
 - `grep`
 - `sed`
 - `awk`
+- dotfiles (profile and bashrc)
