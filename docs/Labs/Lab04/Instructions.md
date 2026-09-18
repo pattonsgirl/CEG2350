@@ -12,7 +12,7 @@
 
 Make sure to return to the AWS Learner Lab page (link in Pilot if you forgot to bookmark it) and hit "Start Lab" to turn on your sandbox / AWS instance.
 
-Go to the folder that contains your repository (likely named `ceg2350f25-yourgithubusername`).
+Go to the folder that contains your repository (likely named `ceg2350-lastname-f26`).
 
 Create a new directory, `Lab04`
 
@@ -121,7 +121,7 @@ If you have additional ideas, run them by the TA's first to see if they are wort
 ## Submission
 
 - In the Pilot Dropbox, paste the URL to the `Lab04` folder in your GitHub repo
-  - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab04
+  - URL should look like: https://github.com/WSU-kduncan/ceg2350-lastname-f26/tree/main/Lab04
 - Your `Lab04` folder should contain (at minimum):
   - `README.md`
   - `tt`
