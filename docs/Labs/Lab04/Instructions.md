@@ -24,7 +24,7 @@ You may refer to additional resources outside of the recommended resources provi
 
 Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations` section of your lab answers.  To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
 
-**Generative AI may not write your script for you, only assist with component and how-to type questions.**
+> **Generative AI may not write your script for you, only assist with component and how-to type questions.**
 
 If you make mistakes with commands in the lab, note them!  Writing down what went wrong and what the correction was will significantly help your learning journey.  If you cannot find a correction, it will help the TAs or myself understand what point you reached and determine some potential solutions.
 
@@ -34,9 +34,9 @@ Use your AWS instance for this part.
 
 The overall goal is to create a personal task tracking script using bash.  Your script will allow you to add tasks and remove them and will store the tasks in a file named `.tasks` in the user's `HOME` directory.
 
-**BEFORE YOU BEGIN**
-- One of `add` or `remove` or `view` must call a function that performs the actions required. It is your choice on which action is implemented as a function. The `user-guide` function is required per the assignment tasks.
-- You must have a **minimum** of **3 (THREE) COMMITS** made for this script.  Your commit messages must describe what's currently working / tested.  When (after which steps / testing) you make a commit is your choice.
+> **BEFORE YOU BEGIN**
+> - One of `add` or `remove` or `view` must call a function that performs the actions required. It is your choice on which action is implemented as a function. The `user-guide` function is required per the assignment tasks.
+> - You must have a **minimum** of **3 (THREE) COMMITS** made for this script.  Your commit messages must describe what's currently working / tested.  When (after which steps / testing) you make a commit is your choice.
 
 **TASK TRACKER IMPLEMENTATION**
 
@@ -108,8 +108,8 @@ We expect a minimum of **one citation / useful resource per part** of your lab. 
 
 ## Extra Credit - TODO
 
-**BEFORE YOU BEGIN**
-Your commit history must still show a working version of the script with the original requirements.
+> **BEFORE YOU BEGIN**
+> Your commit history must still show a working version of the script with the original requirements.
 
 Make the `tt` script better. Ideas:
 - Add action, `super-show` that shows all tasks in all `.tasks` files in any user's `HOME` directory - the output should indicate which user in addition to that user's tasks
