@@ -162,7 +162,20 @@ Day 8:
 Day 9:
 
 - regex cheatsheet
-- `grep`
-- `sed`
-- `awk`
+    - https://pattonsgirl.github.io/CEG2350/Topics/02-Bash/Regex.html
+- tiny practice challenges:
+    - https://github.com/pattonsgirl/CEG2350/blob/main/regex/tiny-challenges.md
+- regex in the wild - wordle
+    - https://gist.github.com/huytd/6a1a6a7b34a0d0abcac00b47e3d01513
+- `grep` - search
+    - https://pattonsgirl.github.io/CEG2350/Topics/02-Bash/TextTools.html
+- `sed` - search and replace
+    - https://pattonsgirl.github.io/CEG2350/Topics/02-Bash/TextTools.html
+
+Day 10:
+
+- `awk` - data processing for FORMATTED data
+- Using tools in combo - challenge series
+    - https://github.com/pattonsgirl/CEG2350/tree/main/regex
 - dotfiles (profile and bashrc)
+
