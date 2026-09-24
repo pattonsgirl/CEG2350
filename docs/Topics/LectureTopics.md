@@ -175,7 +175,12 @@ Day 9:
 Day 10:
 
 - `awk` - data processing for FORMATTED data
+    - https://pattonsgirl.github.io/CEG2350/Topics/02-Bash/TextTools.html
 - Using tools in combo - challenge series
     - https://github.com/pattonsgirl/CEG2350/tree/main/regex
+
+Day 11:
+
 - dotfiles (profile and bashrc)
+- getopts
 
