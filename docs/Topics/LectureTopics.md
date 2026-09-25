@@ -172,6 +172,33 @@ Day 9:
 - `sed` - search and replace
     - https://pattonsgirl.github.io/CEG2350/Topics/02-Bash/TextTools.html
 
+Some silly data demos:
+
+```
+let's make password
+5nak3IceCream
+1234swim!
+p@55w0rd
+password
+---
+filter rules
+^.{8,15}$ - password length
+[A-Z] - must have a capital letter
+[a-z] - must have a lower case letter
+\d.*\d - must have two or more digits - match anything between 2 digits
+```
+
+```
+Loving the #sunsetvibes tonight, way better than #Monday. Also check out 
+#TBT202
+#MON093
+#TBT234
+#093MON
+----
+# - match all cases of hashtag
+#[A-Z]{3}[\d]{3} - require capital letters, repeat three times; require digits, repeat three times
+```
+
 Day 10:
 
 - `awk` - data processing for FORMATTED data
