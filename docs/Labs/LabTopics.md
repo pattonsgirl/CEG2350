@@ -84,4 +84,20 @@
 
 ## Week 6
 
+### Day 1:
 - First 10 minutes, walk in, slip of paper, write name and answer question.
+- review of regex symbols
+- https://github.com/pattonsgirl/CEG2350/tree/main/regex - heavy statement that they should answer questions like login.log
+
+### Day 2:
+- General call for concepts they want covered (pre-exam review)
+
+## Week 7
+
+### Day 1:
+
+- Exam review
+
+### Day 2:
+
+- Lab 06 questions
