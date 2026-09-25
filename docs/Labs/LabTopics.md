@@ -77,3 +77,11 @@
 - case statements
 - functions
 - PATH
+
+### Day 2:
+
+- Open for visual check ins
+
+## Week 6
+
+- First 10 minutes, walk in, slip of paper, write name and answer question.
