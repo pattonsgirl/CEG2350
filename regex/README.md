@@ -9,14 +9,15 @@
 1. Print only the high temps
 2. Average the high temps
 
-## Using `login.log`
+## Using `login.log` - most similar to Exam 1 questions ;)
 
 1. How many total login attempts were made in this log?
 2. How many unique usernames appear in this log?
-3. What is the username with the most login attempts?
-4. How many attempts were made for the username with the most login attempts?
-5. What is the date with the most login attempts?
-6. What is the username that had logins from the most unique IP addresses?
+3. How many times did each unique username appear in this log?
+4. What is the username with the most login attempts?
+5. How many attempts were made for the username with the most login attempts?
+6. What is the date with the most login attempts?
+7. What is the username that had logins from the most unique IP addresses?
 
 ## Advanced Using `vsftpd.log`
 
