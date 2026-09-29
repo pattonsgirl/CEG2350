@@ -208,6 +208,14 @@ Day 10:
 
 Day 11:
 
-- dotfiles (profile and bashrc)
 - getopts
+    - https://pattonsgirl.github.io/CEG2350/Topics/02-Bash/Scripting.html
 
+Day 12:
+
+- user dotfiles
+    - .ssh
+    - .gitconfig
+    - .profile
+    - .bashrc
+    - .bash_history
