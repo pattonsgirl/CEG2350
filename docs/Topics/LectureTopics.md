@@ -214,6 +214,7 @@ Day 11:
 Day 12:
 
 - user dotfiles
+    - generically, dotfiles are a set of scripts and files that configure the user environment or system.
     - .ssh
         - When you generate an SSH key pair using a tool like ssh-keygen, the keys are stored here by default. They usually appear in pairs with names corresponding to the encryption algorithm used - ex. id_ed25519 & id_ed25519.pub
         - `authorized_keys` (server side) - contains a list of trusted public keys belonging to clients who are allowed to log into your account without a password
@@ -238,3 +239,19 @@ Day 12:
             - Prompt Customization: Change the colors and layout of your terminal prompt.
     - .bash_history
         - stores a sequential record of command-line commands previously executed in the Bash shell
+- Exam 1 - all topics covered: https://pattonsgirl.github.io/CEG2350/ExamReviews/exam1-review.html
+- Exam 1 - TA review guide: https://github.com/aidenc17/CEG2350-Exam1-Review
+- Study recommendations:
+    - review questions from Check In
+    - Use Claude / Gemini to create an interactive quiz about a set of topics.
+        - Try asking a challenging questions - not just true / false or multiple choice!
+    - Practice answering queries like `login.log` - https://github.com/pattonsgirl/CEG2350/tree/main/regex#using-loginlog---most-similar-to-exam-1-questions-
+
+
+Day 13:
+
+- Exam 1
+
+Day 14:
+
+- PC hardware overview
