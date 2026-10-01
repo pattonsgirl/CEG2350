@@ -215,7 +215,26 @@ Day 12:
 
 - user dotfiles
     - .ssh
+        - When you generate an SSH key pair using a tool like ssh-keygen, the keys are stored here by default. They usually appear in pairs with names corresponding to the encryption algorithm used - ex. id_ed25519 & id_ed25519.pub
+        - `authorized_keys` (server side) - contains a list of trusted public keys belonging to clients who are allowed to log into your account without a password
+        - `known_hosts` (client side) - The first time you connect to a new remote server, SSH asks if you trust the host. Once you accept, the server's unique fingerprint is saved in the known_hosts file. On future connections, SSH checks this file to ensure the server hasn't been intercepted or tampered with (preventing man-in-the-middle attacks)
+        - `config` (client side - optional) - allows you to create nicknames and shortcuts for servers you connect to frequently. Instead of typing ssh user@192.168.1.50 -p 2222 -i ~/.ssh/custom_key, you can define those parameters in the config file and simply type ssh myserver
     - .gitconfig
+        - stores settings, preferences, and custom commands that alter how Git behaves on your system
+        - [user]: Stores your identity. Git attaches this information to every commit you make
+            - `git config --global user.name` && `git config --global user.email`
     - .profile
+        - configures the user's shell environment upon logging in.
+            - Key Characteristics
+            - Location: Stored directly in the user's home directory as ~/.profile (the leading dot makes it a hidden file).
+            - Execution: Automatically run by Bourne-compatible login shells (like sh, ksh, or bash if specific override files are absent) the moment a user logs in.
+            - Shell-Agnostic: Designed to use standard POSIX syntax so that settings carry across different shell interpreters
     - .bashrc
+        - customizes your Bash terminal environment every time you open a new interactive, non-login window
+        - Key Purposes
+            - Aliases: Create short shortcuts for long commands (like alias ll='ls -la').
+            - Environment Variables: Set paths and variables using export commands.
+            - Shell Functions: Define custom reusable functions for the command line.
+            - Prompt Customization: Change the colors and layout of your terminal prompt.
     - .bash_history
+        - stores a sequential record of command-line commands previously executed in the Bash shell
