@@ -173,14 +173,6 @@ Make sure you `commit` and `push` your script changes for grading and add a note
 
 ## Rubric
 
-- Part 1 - 6 pts
-- Part 2 - 4 pts
-- Part 3 - 6 pts
-- Part 4 - 6 pts
-  - minimum of 6 commits, each commit completes 1 task
-  - 1 complete task = 1 pt
-- Part 5 - 3 pts
-- Extra Credit - 1 pt
-- Point deductions:
-  - minus 2 pts = no commits for each part in `roll` script && no commit messages indicating parts building on each other
-  - minus 1 pt = commits / comments indicate parts building on each other, but not all commits were broken out as asked
+Your answers should be cleanly presented in your GitHub repository.  Citations should be included as needed.  Include which generative AI system was used and what prompts were used if generative AI was used.
+
+[Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab03/Rubric.md)
