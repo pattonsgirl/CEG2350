@@ -1,5 +1,9 @@
 You can use a command in support of your answer, but we are evaluating your written response.
 
+Add name
+
+Check formatting (blockquotes got stuck), font choices
+
 1. In git, when should I use an `add` versus a `commit` and what is the difference between them?
 
 2. Given the following `git status` output, which file's changes will be saved if you run `git commit -m "tt view working"` right now, and why?

@@ -1,6 +1,10 @@
 
 You can use a command in support of your answer, but we are evaluating your written response.
 
+Name field
+
+Check formatting (block quotes), font choices
+
 1. `.tasks` contains the lines below. Which lines are left after running `tt remove "lab"` if the `remove` action uses `sed -i "/$2/d" "$HOME/.tasks"`, and why?
 ```
 Submit lab report
