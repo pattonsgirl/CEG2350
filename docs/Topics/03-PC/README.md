@@ -44,28 +44,11 @@ BIOS vs UEFI
 
 Motherboard chipsets: North bridge and south bridge
 
-#### CPU - Central Processing Unit
-
-#### RAM - Random Access Memory
-
-#### GPU - Graphics Processing Unit
-
-#### PSU - Power Supply Unit
-
-#### Data Storage: 
-- HDD - Hard Disk Drive
-- SSD - Solid State Drive
-- NVME - Non Volatile Memory Express
-
-#### Cooling
-
-#### Cases
-
-
 PC Building
 
 - [Microcenter](https://www.microcenter.com/site/content/custom-pc-builder.aspx?k=1772939921750)
 - [PC Part Picker](https://pcpartpicker.com/)
+- [PC Hardware - Part Keywords](03-PC/PC-Hardware.md)
 
 ---
 

@@ -30,7 +30,8 @@
 
 ## 03 - PC Knowledge
 
-- [PC Hardware](03-PC/README.md)
+- [PC](03-PC/README.md)
+- [PC Hardware - Part Terminology](03-PC/PC-Hardware.md)
 - The Boot Process
 - Virtual Machines
     - [VirtualBox Guide](/CEG2350/Labs/Lab07/VirtualBox-Guide.html)
