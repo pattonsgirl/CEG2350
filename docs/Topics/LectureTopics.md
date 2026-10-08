@@ -255,3 +255,7 @@ Day 13:
 Day 14:
 
 - PC hardware overview
+    - CPU socket decides your motherboard
+    - motherboard decides your RAM type (DDR4 or DDR5) and size class
+    - the case has to fit the board, GPU length, and cooler height
+    - the PSU has to cover the total power draw and have the right GPU connector
