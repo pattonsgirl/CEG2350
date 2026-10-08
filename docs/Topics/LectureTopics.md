@@ -259,3 +259,13 @@ Day 14:
     - motherboard decides your RAM type (DDR4 or DDR5) and size class
     - the case has to fit the board, GPU length, and cooler height
     - the PSU has to cover the total power draw and have the right GPU connector
+- Virtual machines
+    - HOST has the hardware
+    - Virtual Machine Manager 
+    - Hypervisor segments the hardware
+        - Type 1 - physical hardware / bare metal. The OS is only the hypervisor
+        - Type 2 - (your laptop / desktop) You have a host OS. You install / enable a hypervisor (such as VirtualBox / VM Ware), it includes a hypervisor, you run virtual machines 
+
+Day 15:
+
+The Boot process
