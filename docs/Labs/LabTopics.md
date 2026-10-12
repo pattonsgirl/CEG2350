@@ -108,3 +108,9 @@
 ### Day 1:
 
 - Check in 3
+- At minimum download and install VirtualBox, download an ISO
+- Screenshots in markdown
+
+### Day 2:
+
+- Assistance with virtual machine
