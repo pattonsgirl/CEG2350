@@ -85,6 +85,10 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
         - [ ] GPU info:
     - Note that the confirmation methods should be different (may be a command line approach and a GUI approach)
 
+- Part 5 - 2 points
+    - [ ] How to look up hardware specs for your Host OS
+    - [ ] How to create a VM on your Host OS
+
 - Extra Credit - 7%
      - [ ] script in repo relevant to OS selected
      - [ ] report output 

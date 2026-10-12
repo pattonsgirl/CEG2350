@@ -117,6 +117,11 @@ Confirmation of output (how to verify the report results)
 - Disk space usage:
 - GPU info:
 
+## Part 5 - Citations / Resources
+
+Add citations / resources for each core topic covered in this lab
+
+
 ## Extra Credit - It's Not All Linux
 
 Generative AI used to create script:
@@ -133,7 +138,3 @@ Confirmation of output (how to verify the report results)
 - RAM usage:
 - Disk space usage:
 - GPU info:
-
-## Citations
-
-To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
