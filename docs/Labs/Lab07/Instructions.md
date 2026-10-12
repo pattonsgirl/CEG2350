@@ -136,6 +136,18 @@ For each piece of info generated in the report, note at least one way to confirm
 
 > The purpose here is to get  you to explore both command line methods and graphical interface methods to finding system information.
 
+## Part 5 - Citations / Resources
+
+Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations / Resources` section of your lab answers. You may refer to your own notes (if they are digitized into GitHub), course notes, or external resources / websites.
+
+To add citations / resources, provide the reference / link and a summary of what it assisted you with.  
+
+If generative AI was used, include which generative AI system was used, what prompt(s) you fed it, and a summary of what it assisted you with.
+
+We expect a minimum of **one citation / useful resource per part** of your lab. So this lab would require a resource for:
+- How to look up hardware specs for your Host OS
+- How to create a VM on your Host OS
+
 ## Extra Credit - It's Not All Linux
 
 Provide information about the purpose of `sys-info.sh` (and / or the whole script) to a generative AI system of your choice. Have it create a version of this script that outputs similar information for *one* of Windows or Mac based systems.
