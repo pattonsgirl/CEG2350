@@ -277,12 +277,66 @@ Day 15:
     - Hypervisor segments the hardware
         - Type 1 - physical hardware / bare metal. The OS is only the hypervisor
         - Type 2 - (your laptop / desktop) You have a host OS. You install / enable a hypervisor (such as VirtualBox / VM Ware), it includes a hypervisor, you run virtual machines 
+- Know your board! 
+    - Look up your motherboard make and model.  The manual informs where all components go and all technical specs for what hardware is supported.
+    - https://download.asrock.com/Manual/B850%20Rock%20WiFi%207.pdf
 - The Boot process
     - Case has power button
     - Power button sends on instruction to ship of motherboard
+        - PC Power On - way down in the weeds: https://www.youtube.com/watch?v=ecageR2bM5s&t=11s
     - BIOS / UEFI
     - POST
+        - Beep codes, PSU testers: https://www.youtube.com/watch?v=QvIVtmFq2cw 
+        - PC not POSTing? https://www.youtube.com/watch?v=DezOScYweiY
     - Boot loader - seek bootable partition(s) on disk(s)
+        - Interlude: If you have no on-board bootable disks, you may need to create a bootable device with installation media
+            - Ventoy - https://www.ventoy.net/en/index.html
+        - HDD vs SSD vs NVMe
+            - https://www.techspot.com/news/67222-storage-real-world-performance-nvme-vs-sata-vs-hdd.html
     - Partition points to kernel (first process)
     - Initializes system & drivers
     - User space available
+
+Day 16:
+
+- Booting to Disk
+    - BIOS / UEFI seeks *partitioned* disks
+        - https://www.freecodecamp.org/news/uefi-vs-bios/
+        - https://www.agcross.com/2017/11/making-sense-efi-partitions-dual-booting/
+    - BIOS = MBR partitioned disks, less than 2 TB storage capacity, no backup partition table
+        - typically keyboard only support
+    - UEFI = GPT partitioned disks, more than 2 TB storage capacity, backup partition table
+        - mouse, keyboard, and network support
+        - UEFI can read MBR partition tables if Legacy Mode is enabled in BIOS (usually have to turn off Secure Boot)
+    - https://bitgrounds.tech/posts/attempting-to-explain-bios-vs-uefi/
+- Kernels
+    - Wiki - The job: https://en.wikipedia.org/wiki/Kernel_(operating_system)
+    - Wiki - The features: https://en.wikipedia.org/wiki/Comparison_of_operating_system_kernels
+- Userspace
+    - Wiki - user space / user mode: https://en.wikipedia.org/wiki/User_space_and_kernel_space
+- Interlude: other tests
+    - MemTest (RAM sectors): https://www.youtube.com/watch?v=7T4X7wK8q50
+    - Filesystem health
+        - Windows - fskdsk: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/chkdsk?tabs=hdd%2Cevent-viewer
+        - Linux - fsck: https://linuxize.com/post/fsck-command-in-linux/
+    - Defragmenting (HDDs)
+        - https://www.seagate.com/blog/hard-drive-defragmenting/
+    - Trimming (SSDs)
+        - https://www.corsair.com/us/en/explorer/diy-builder/storage/what-is-trim-for-ssds/
+- Drivers:
+    - Hardware drivers
+        - Easy mode: In Windows, see Device Manager
+        - Motherboard - BIOS, wifi, graphics, etc
+            - https://www.asrock.com/mb/AMD/B850%20Rock%20WiFi%207/index.asp#Download 
+    - Software suites and companion drivers
+        - Many devices will have a plug and play compatibility (communicate with a core driver set of basic features)
+        - Peripherals *may* have proprietary drivers to enable more advanced communications
+            - https://www.logitech.com/en-us/software
+
+
+Day 17: 
+
+- Partitions tables
+    - MBR vs GPT
+- Partitions
+- Filesystems
