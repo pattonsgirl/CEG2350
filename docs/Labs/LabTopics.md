@@ -114,3 +114,23 @@
 ### Day 2:
 
 - Assistance with virtual machine
+
+## Week 9
+
+### Day 1
+
+- SSH config file
+- Linux Disk Management Commands
+- viewing disk info - df, du, lsblk
+- viewing partition tables (xvda, xvdb)
+- partition tables commands
+
+
+### Day 2
+
+- filesystems
+- filesystem table
+
+## Week 10
+
+- Check in

@@ -295,6 +295,7 @@ Day 15:
             - https://www.techspot.com/news/67222-storage-real-world-performance-nvme-vs-sata-vs-hdd.html
     - Partition points to kernel (first process)
     - Initializes system & drivers
+
     - User space available
 
 Day 16:
@@ -338,5 +339,10 @@ Day 17:
 
 - Partitions tables
     - MBR vs GPT
+    - fdisk, gdisk, parted, gparted
 - Partitions
 - Filesystems
+
+Day 18:
+
+- Processes
