@@ -2,12 +2,13 @@
 
 - [Lab Procedure](#Lab-Procedure)
 - [Part 1 - `ssh` `config` file](#part-1---ssh-config-file)
-- [Part 2 - What do we have?](#part-2---what-do-we-have)
-- [Part 3 - Something new](#part-3---something-new)
-- [Part 4 - File it away](#part-4---file-it-away)
-- [Part 5 - Take a fstab at this](#part-5---take-a-fstab-at-this)
-- [Part 6 - What is dead may still be read](#part-6---what-is-dead-may-still-be-read)
-- [Part 7 - Citations & Resources](#part-7---citations--resources)
+- [Part 2 - Disk & Filesystem Commands](#part-2---disk--filesystem-commands)
+- [Part 3 - What do we have?](#part-3---what-do-we-have)
+- [Part 4 - Something new](#part-4---something-new)
+- [Part 5 - File it away](#part-5---file-it-away)
+- [Part 6 - Take a fstab at this](#part-6---take-a-fstab-at-this)
+- [Part 7 - What is dead may still be read](#part-7---what-is-dead-may-still-be-read)
+- [Part 8 - Citations & Resources](#part-8---citations--resources)
 - [Extra Credit - Create a Virtual Filesystem](#extra-credit---create-a-virtual-filesystem)
 - [Submission](#submission)
 - [Rubric](#rubric)
@@ -74,7 +75,37 @@ Since you now have two sandboxes, it's going to be a helpful time to learn a com
 - [How to Configure SSH Key Based Authentication - DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
 - [Using the SSH Config File - Linuxize](https://linuxize.com/post/using-the-ssh-config-file/)
 
-## Part 2 - What do we have?
+## Part 2 - Disk & Filesystem Commands
+
+1. Fill out the following table of device management related commands in your lab template
+
+**Device Management Commands**
+
+| Command    | Description | Example |
+|------------|-------------|---------|
+| `lsblk`    |             |         |
+| `blkid`    |             |         |
+| `parted`   |             |         |
+| `gdisk`    |             |         |
+| `gdisk -l` |             |         |
+| `strings`  |             |         |
+
+2. Fill out the following table of filesystem management related commands in your lab template
+
+**Filesystem Management Commands**
+
+| Command      | Description | Example |
+|--------------|-------------|---------|
+| `df -h`      |             |         |
+| `/etc/fstab` |             |         |
+| `mkfs`       |             |         |
+| `mount`      |             |         |
+| `umount`     |             |         |
+| `mount -a`   |             |         |
+| `shred`      |             |         |
+
+
+## Part 3 - What do we have?
 
 Your AWS instances have one block device in use - `xvda`.  In this section, you will explore commands view partition and filesystem information about `xvda`.  **Do not make any modification to `xvda`.**
 
@@ -108,7 +139,7 @@ For tasks that ask you to use a command, write the command used and include the 
 - [linuxconfig - How fstab works – introduction to the `/etc/fstab` file on Linux](https://linuxconfig.org/how-fstab-works-introduction-to-the-etc-fstab-file-on-linux)
 
 
-## Part 3 - Something new
+## Part 4 - Something new
 
 You have had an unformatted disk available on your AWS instance all along.  The disk is `xvdb` - you can see it, but that it has no partitions, if you run `lsblk`. Time to create a partition table and a partition on `/dev/xvdb` so that in the next Part we can create a filesystem on the partition and mount it for use.  
 - **Useful Commands: `df`, `lsblk`, `blkid`, `gdisk`**
@@ -131,7 +162,7 @@ You have had an unformatted disk available on your AWS instance all along.  The 
 - [DigitalOcean - click "Interactive partitioning with `gdisk`"](https://docs.digitalocean.com/products/volumes/how-to/partition/)
 - [IBM - Partitioning an GPT disk using `gdisk`](https://developer.ibm.com/tutorials/l-lpic1-104-1/#partitioning-an-gpt-disk-using-gdisk)
 
-## Part 4 - File it away
+## Part 5 - File it away
 
 Now that you have a partition, you can create a filesystem on it in order to interact with it to store and organize files and create permissions for the files.
 
@@ -150,7 +181,7 @@ Now that you have a partition, you can create a filesystem on it in order to int
       - Information on `ext4` is folded into `ext3` since it makes slight improvements over `ext3`
 - [TechMint - How to Change Linux Partition Label Names on EXT4 / EXT3 / EXT2](https://www.tecmint.com/change-modify-linux-disk-partition-label-names/)
 
-## Part 5 - Take a `fstab` at this
+## Part 6 - Take a `fstab` at this
 
 Right now, every time you want to access your new filesystem on `xvdb1` after a system reboot you need to mount it.  It would be handy to have it auto-mount. The filesystem table file - `fstab` is a file that stores information about what to mount when the system boots. Your task in this part is to **append** a new entry to `fstab` to automount the filesystem on `xvdb1`.
 
@@ -164,7 +195,7 @@ Right now, every time you want to access your new filesystem on `xvdb1` after a 
 - [linuxconfig - fstab](https://linuxconfig.org/how-fstab-works-introduction-to-the-etc-fstab-file-on-linux)
 - [ubuntu - fstab](https://help.ubuntu.com/community/Fstab)
 
-## Part 6 - What is dead may still be read
+## Part 7 - What is dead may still be read
 
 When you delete a file, you are used to it no longer being accessible, or to it still being temporarily available / recoverable via the Recycle Bin.  But once you can't open it anymore, it should be gone, including from the disk, right?  Right?!?
 
@@ -183,7 +214,7 @@ This part will have you acknowledge that to truly make data gone and no longer r
 **Resources**
 - [freeCodeCamp - How to Securely Erase a Disk and File using the Linux shred Command](https://www.freecodecamp.org/news/securely-erasing-a-disk-and-file-using-linux-command-shred/)
 
-## Part 7 - Citations / Resources
+## Part 8 - Citations / Resources
 
 Any resource that you use that contributes to your understanding of exercises in this lab should be cited in the `Citations / Resources` section of your lab answers. You may refer to your own notes (if they are digitized into GitHub), course notes, or external resources / websites.
 

@@ -2,7 +2,7 @@
 
 Your answers should be cleanly presented in your GitHub repository. Citations should be included as needed. Include which generative AI system was used and what prompts were used if generative AI was used.
 
-### Total Points /38
+### Total Points /40
 
 - Part 1 - 4 pts
     - [ ] `ssh` commands to each instance
@@ -10,7 +10,11 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] `ssh` `config` file blocks
     - [ ] `ssh` commands that use `config` file entries
 
-- Part 2 - 9 pts
+- Part 2 - 2 pts
+    - [ ] Table for device management commands has descriptions and examples of each command
+    - [ ] Table for filesystem management commands has descriptions and examples of each command
+
+- Part 3 - 9 pts
     - [ ] Command & Output (0.5 point each)
     - [ ] Command & Output (0.5 point each)
     - [ ] xvda Partition Details (0.33 pts each)
@@ -21,13 +25,13 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] Command & Output (0.5 point each)
     - [ ] Fields & purpose of fields in entry that mount the root filesystem
 
-- Part 3 - 4 pts
+- Part 4 - 4 pts
     - [ ] gdisk main menu options
     - [ ] Steps to Create Partition Table
     - [ ] Partition Table on /dev/xvdb
     - [ ] Partition Table Details (0.33 points each)
 
-- Part 4 - 6 pts
+- Part 5 - 6 pts
     - [ ] Command Used
     - [ ] Commands and Outputs (0.5 pts each)
     - [ ] Command Used
@@ -35,12 +39,12 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] Command Used
     - [ ] Interacting with Filesystems
 
-- Part 5 - 3 pts
+- Part 6 - 3 pts
     - [ ] Commands used
     - [ ] Lines Added
     - [ ] How to Confirm
 
-- Part 6 - 6 pts
+- Part 7 - 6 pts
     - [ ] Commands Used
     - [ ] Strings Command Explanation
     - [ ] Retrospective of what was seen from strings
@@ -48,7 +52,7 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] Secret Deleted?
     - [ ] Shred Command Explanation
 
-- Part 7 - 6 pts
+- Part 8 - 6 pts
     - Citations / useful resource for:
     - [ ] the `ssh` `config` file
     - [ ] manipulating partition tables `gdisk`

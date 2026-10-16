@@ -41,7 +41,32 @@ Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab08/Inst
 
 ```
 
-## Part 2 - What do we have?
+## Part 2
+
+**Device Management Commands**
+
+| Command    | Description | Example |
+|------------|-------------|---------|
+| `lsblk`    |             |         |
+| `blkid`    |             |         |
+| `parted`   |             |         |
+| `gdisk`    |             |         |
+| `gdisk -l` |             |         |
+| `strings`  |             |         |
+
+**Filesystem Management Commands**
+
+| Command      | Description | Example |
+|--------------|-------------|---------|
+| `df -h`      |             |         |
+| `/etc/fstab` |             |         |
+| `mkfs`       |             |         |
+| `mount`      |             |         |
+| `umount`     |             |         |
+| `mount -a`   |             |         |
+| `shred`      |             |         |
+
+## Part 3 - What do we have?
 
 1. Command:
 ```
@@ -78,7 +103,7 @@ Output here
 9. Fields & purpose of fields in entry that mount the root filesystem
 
 
-## Part 3 - Something new
+## Part 4 - Something new
 
 1. `gdisk` main menu options
 
@@ -108,7 +133,7 @@ Paste partition table information here
    c. What filesystem type will be used on the partition?
       - Answer: 
 
-## Part 4 - File it away
+## Part 5 - File it away
 
 1. Commands used:
 2. Commands used:
@@ -125,7 +150,7 @@ list here
 7. When can I interact with files on the filesystem on the partition in `xvdb`?
    - Answer:
    
-## Part 5 - Take a `fstab` at this
+## Part 6 - Take a `fstab` at this
 
 1. Commands used:
 2. Line you added to `/etc/fstab`:
@@ -133,7 +158,7 @@ list here
 4. **If you restored `/etc/fstab`**, write here why you did not feel comfortable leaving your changes in place
 
 
-## Part 6 - What is dead may still be read
+## Part 7 - What is dead may still be read
 
 1. Commands used:
 2. What does the `strings` command do?
@@ -148,7 +173,7 @@ list here
 
 **Write your report here**
 
-## Part 7 - Citations / Resources
+## Part 8 - Citations / Resources
 
 Add citations / resources for each core topic covered in this lab
 
