@@ -337,11 +337,16 @@ Day 16:
 
 Day 17: 
 
+- lsblk, df, du
+- device / drive labels - `/dev/` `/mnt`
 - Partitions tables
     - MBR vs GPT
     - fdisk, gdisk, parted, gparted
 - Partitions
 - Filesystems
+    - blkid
+    - mkfs
+    - `sudo dumpe2fs -h /dev/sda1`
 
 Day 18:
 

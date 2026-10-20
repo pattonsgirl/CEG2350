@@ -45,26 +45,26 @@ Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab08/Inst
 
 **Device Management Commands**
 
-| Command    | Description | Example |
-|------------|-------------|---------|
-| `lsblk`    |             |         |
-| `blkid`    |             |         |
-| `parted`   |             |         |
-| `gdisk`    |             |         |
-| `gdisk -l` |             |         |
-| `strings`  |             |         |
+| Command    | Description | 
+|------------|-------------|
+| `lsblk`    |             | 
+| `blkid`    |             | 
+| `parted`   |             | 
+| `gdisk`    |             | 
+| `gdisk -l` |             | 
+| `strings`  |             |
 
 **Filesystem Management Commands**
 
-| Command      | Description | Example |
-|--------------|-------------|---------|
-| `df -h`      |             |         |
-| `/etc/fstab` |             |         |
-| `mkfs`       |             |         |
-| `mount`      |             |         |
-| `umount`     |             |         |
-| `mount -a`   |             |         |
-| `shred`      |             |         |
+| Command      | Description |
+|--------------|-------------|
+| `df -h`      |             |
+| `/etc/fstab` |             |
+| `mkfs`       |             |
+| `mount`      |             |
+| `umount`     |             |
+| `mount -a`   |             |
+| `shred`      |             |
 
 ## Part 3 - What do we have?
 
