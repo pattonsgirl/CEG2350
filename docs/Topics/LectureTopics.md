@@ -338,15 +338,52 @@ Day 16:
 Day 17: 
 
 - lsblk, df, du
-- device / drive labels - `/dev/` `/mnt`
+- Data size / units of storage - https://www.ionos.com/digitalguide/websites/web-development/units-of-storage-in-computers/
+- device / drive labels - `/dev/`
+    - `sd`, `xvd`, `hd`, following by drive letter, followed by numeric partition identifier
+    - **block devices** - b - a special file that represents a hardware or virtual storage device allowing random access to data organized in fixed-size blocks
+    - **character device** - c - in Linux is a hardware or pseudo-device that communicates with the system by transferring data sequentially byte by byte (as a stream of characters) rather than in fixed-size blocks
 - Partitions tables
     - MBR vs GPT
     - fdisk, gdisk, parted, gparted
+
+| Feature | fdisk | gdisk | parted |
+|---|---|---|---|
+| Primary Partition Format | MBR (Master Boot Record) | GPT (GUID Partition Table) | Both MBR and GPT |
+| Max Disk Size Supported | Historically 2 TB (though newer versions support GPT) | 9.4 Zettabytes (ZB) | 9.4 Zettabytes (ZB) |
+| Interface Style | Interactive CLI menu | Interactive CLI menu | Command-line & Interactive CLI |
+| Execution | Safe (Changes staging until you type `w`) | Safe (Changes staging until you type `w`) | Immediate execution (Commands apply instantly) |
+| Scripting / Automation | Difficult (designed for manual interaction) | Limited | Excellent (supports non-interactive single commands) |
+
 - Partitions
+    - MBR max partitions - 4
+        - virtual MBR partitions are a thing. Ignore for this class
+    - GPT max partitions - 128
+    - Partitions on a disk allow for multi-booting or just creating a different organization structure
+        - Multi booting: https://en.wikipedia.org/wiki/Multi-booting
+        - Swap space (older concept, sometimes considered) https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-swapspace
+        
 - Filesystems
-    - blkid
-    - mkfs
-    - `sudo dumpe2fs -h /dev/sda1`
+    - File systems - comparing metadata: https://en.wikipedia.org/wiki/Comparison_of_file_systems
+        - Windows: NTFS, FAT32 / exFAT
+        - Linux: ext4
+    - `mkfs`
+        - make a filesystem on a partition / block device
+    - `blkid`
+        - See label, UUID, filesystem type
+    - `mount` and `/mnt`
+        - `/mnt` is a standard folder for creating mount points
+        - Persistent `home` directory: https://www.reddit.com/r/linuxquestions/comments/13z3eug/can_i_use_same_home_partition_on_multiple_systems/
+        - `mount` partition / block device of filesystem to directory in linux tree
+            - can be `/mnt` or `/share`... it's where you want to access the filesystem from
+        - safely EJECT -> umount (unmount) filesystems
+    - `dumpe2fs -h /dev/sda1`
+        - dump filesystem information
+        - Filesystem magic numbers are unique byte sequences embedded in a file, superblock, or file system header to verify format and structure
+    - When do you "run out?"
+        - File too large - takes up disk space / remaining available blocks
+        - Too many files - each file takes up an inode and a block
+        - inodes & blocks to write to are finite based on the partition size
 
 Day 18:
 
