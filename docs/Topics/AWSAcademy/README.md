@@ -30,7 +30,7 @@
 4. Click **Learner Lab**
    - Read and Agree to the Terms and Conditions
 
-![Notes on key buttons](imgs/AWSAcademy.png)
+   ![Notes on key buttons](imgs/AWSAcademy.png)
 
 5. Click the **Start Lab** Play button on the middle right
 6. Wait. 2 - 3 minutes. You will see a console appear that you can interact with.
