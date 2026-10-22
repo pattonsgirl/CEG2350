@@ -191,9 +191,10 @@ Right now, every time you want to access your new filesystem on `xvdb1` after a 
 4. **If you do not think your changes are correct** restore `/etc/fstab` from `/etc/fstab.bak`.  If you think they are correct, you may leave your changes in place.
 
 **Resources**
+- [Linuxize - Understanding the /etc/fstab File in Linux](https://linuxize.com/post/etc-fstab-file/)
 - [HowToGeek - How to write an fstab file on Linux](https://www.howtogeek.com/444814/how-to-write-an-fstab-file-on-linux/)
 - [linuxconfig - fstab](https://linuxconfig.org/how-fstab-works-introduction-to-the-etc-fstab-file-on-linux)
-- [ubuntu - fstab](https://help.ubuntu.com/community/Fstab)
+
 
 ## Part 7 - What is dead may still be read
 
