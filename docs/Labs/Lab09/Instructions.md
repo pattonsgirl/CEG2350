@@ -46,7 +46,9 @@ If you think one of those scenarios happened to you, you'll need to go back to [
 - **Useful commands: `apt`, `which`, `whereis`**
 
 Choose a command line game from this site: [It's Foss - Top 10 Command Line Games for Linux](https://itsfoss.com/best-command-line-games-linux/)
-   - `bastet` is what this lab was tested on
+
+Other recommendations:
+- [shtris - command line Tetris](https://github.com/ContentsViewer/shtris)
 
 In the answer template, document the game name, how you installed it, where the executable is located, and how to run the game.
 
