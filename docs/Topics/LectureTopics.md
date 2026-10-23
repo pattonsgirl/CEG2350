@@ -388,3 +388,9 @@ Day 17:
 Day 18:
 
 - Processes
+- kernel
+- init / systemd
+- service files / processes that start on boot
+- 
+
+Day 19:

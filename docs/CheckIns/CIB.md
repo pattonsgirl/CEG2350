@@ -78,8 +78,3 @@ sed -i '/$task/d' "$HOME/.tasks"
 2024-01-15,Laptop,Electronics,3,899.99,2699.97
 2024-02-03,Blender,Kitchen,5,49.99,249.95
 ```
-
-13. A script contains the line below. Why does it print each entire line of `sales.txt` instead of just the second field?
-```bash
-awk -F',' "{print $2}" sales.txt
-```
