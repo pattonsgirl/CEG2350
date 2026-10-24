@@ -232,6 +232,8 @@ We expect a minimum of **one citation / useful resource per part** of your lab. 
    - `README.md`
    - copy of `disk-watchdog.sh`
    - copy of `disk-watchdog.service`
+   - **DO NOT TRACK THE DUMMY FILE** GitHub cannot handle individual files of this size.
+
 
 2. In the Pilot Dropbox, paste the URL to the `Lab09` folder in your GitHub repo
    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab09
@@ -241,3 +243,7 @@ We expect a minimum of **one citation / useful resource per part** of your lab. 
 Your files should be cleanly presented in your GitHub repository.  Citations should be included as needed.  Include which generative AI system was used and what prompts were used if generative AI was used.
 
 [Rubric](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab09/Rubric.md)
+
+## Troubleshooting
+
+[You just committed a large file and can't push to GitHub](https://lcolladotor.github.io/2020/03/18/you-just-committed-a-large-file-and-can-t-push-to-github/)
