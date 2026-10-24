@@ -127,14 +127,16 @@ Output of command goes here
 
 Investigating `disk-watchdog.sh`:
 
+[Link to `disk-watchdog.sh`](git/path/to/your/script/file)
+
 1. What command is the script using to find the disk usage percentage?  
 2. The script uses a while loop. What is the condition for this loop, and what does that mean for the process's lifespan?  
 3. At what specific percentage (%) does the script trigger a "WARNING"?  
 4. Why is sleep used in this script?
 
-[Link to `disk-watchdog.service`](path/to/your/service/file)
-
 Enabling `disk-watchdog.service`:
+
+[Link to `disk-watchdog.service`](git/path/to/your/service/file)
 
 1. Command to reload `systemd`:
 2. Command(s) to start and enable `disk-watchdog.service`

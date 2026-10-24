@@ -2,7 +2,7 @@
 
 Your answers should be cleanly presented in your GitHub repository. Citations should be included as needed. Include which generative AI system was used and what prompts were used if generative AI was used.
 
-### Total Points /49
+### Total Points /50
 
 - Part 1 - 4 pts
     - [ ] Game Name
@@ -48,12 +48,13 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] Reattach to `tmux` session
     - [ ] Kill `tmux` session
 
-- Part 5 - 14 pts
+- Part 5 - 15 pts
+    - [ ] Link to disk-watchdog script
     - [ ] Disk percentage usage command from script
     - [ ] Condition for while loop in script
     - [ ] Percentage for warning
     - [ ] Reasoning for sleep in the script
-    - [ ] Link to service script
+    - [ ] Link to service file
     - [ ] Command used to enable service file
     - [ ] Command to reload system
     - [ ] Command(s) to start & enable service script
@@ -62,7 +63,7 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] Command to view logs in real time
     - [ ] Command to create large file in home directory
     - [ ] Why did warning appear reasoning
-    - [ ] Serive file logs snippet
+    - [ ] Service file logs snippet
 
 - Part 6 - 4 pts
     - [ ] Controlling processes citation

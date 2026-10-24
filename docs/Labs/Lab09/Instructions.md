@@ -201,6 +201,7 @@ The perhaps obtuse goal of the previous two exercises is to understand process c
 
    - **View Logs:** Open a second SSH session (Shell B) and use `journalctl` to follow the logs of `disk-watchdog.service` in real time. 
    - **Spike Disk Usage:** In Shell A, use `fallocate`, `truncate` or `dd` to create a large file (probably 5GB or higher, depending on your current disk usage) in your home directory.  
+      - **DO NOT TRACK THE DUMMY FILE** GitHub cannot handle individual files of this size.
    - **Observe:** Watch Shell B.  Answer the investigative questions in your lab template. 
    - **Cleanup:** Delete the dummy file and verify the logs return to normal.
 
@@ -229,6 +230,8 @@ We expect a minimum of **one citation / useful resource per part** of your lab. 
 1. Verify that your GitHub repo has a `Lab09` folder with at minimum:
 
    - `README.md`
+   - copy of `disk-watchdog.sh`
+   - copy of `disk-watchdog.service`
 
 2. In the Pilot Dropbox, paste the URL to the `Lab09` folder in your GitHub repo
    - URL should look like: https://github.com/WSU-kduncan/ceg2350-YOURGITHUBUSERNAME/tree/main/Lab09
