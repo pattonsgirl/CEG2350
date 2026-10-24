@@ -147,3 +147,4 @@
 ### Day 1
 
 - Bonus check in
+- Preview Check In 5 questions 1-7
