@@ -133,4 +133,17 @@
 
 ## Week 10
 
-- Check in
+### Day 1
+
+- Check in 4
+- install game
+- Process commands
+- Kalli's slides are solid for tmux
+
+### Day 2
+
+## Week 11
+
+### Day 1
+
+- Bonus check in
