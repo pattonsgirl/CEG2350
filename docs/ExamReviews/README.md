@@ -6,9 +6,23 @@
     - [Exam 2 Review Guide - Kalli Koppin & Aiden Cox](https://github.com/aidenc17/CEG2350-Exam2-Review)
 - [Final Exam Review Guide](final-review.md)
 
+# Check In Question Banks
+
+- [Check In 1 - Labs 1 & 2](../CheckIns/CI1.md)
+- [Check In 2 - Labs 3 & 4](../CheckIns/CI2.md)
+- [Check In 3 - Labs 5 & 6](../CheckIns/CI3.md)
+- [Check In 4 - Labs 7 & 8](../CheckIns/CI4.md)
+- [Check In Bonus - Additional scripting & data tool practice](../CheckIns/CIB.md)
+- [Check In 5 - Labs 9 & 10](../CheckIns/CI5.md)
+- [Check In 6 - Labs 11 & 12](../CheckIns/CI6.md)
+
+# Data Parsing
+
+[Data files & Challenges](https://github.com/pattonsgirl/CEG2350/tree/main/regex)
+
 ## Review Recommendations:
 
-Use Gemini to create interactive quizzes for the following topics:
+Use Gemini to create interactive quizzes for the following topics.  If you feel good about the basics, ask for it to create a bank of questions where you need to analyze something about the output:
 
 - shell commands
     - create an interactive quiz - 15 to 20 questions - about common shell commands
