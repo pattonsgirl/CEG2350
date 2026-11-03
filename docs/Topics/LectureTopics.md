@@ -394,3 +394,36 @@ Day 18:
 - 
 
 Day 19:
+
+- compiled languages
+    - translates before execution
+    - hardware executes raw binary
+    - platform dependent
+    - syntax and type errors are caught during build
+    - changes to source code must be recompiled
+    - ex C, C++, Rust, Go
+- interpreted languages
+    - translates during execution
+    - platform independent (assuming compatible interpreter available)
+    - error detection happens at run time (hits line with breaking error)
+    - code does not have to be rebuilt; changes to source code run at next hit
+    - ex Python, Bash, Javascript, Ruby
+- hybrid languages
+    - Java has compiled bytecode; runs in JVM
+- Compilation process (from the C / C++ perspective)
+    - preprocessing (-E) - include headers, remove comments, expand macros
+    - compilation (-S) - assembly
+    - assembly (-c) - machine code (binary)
+    - linking - merge object files and libs into single executable
+
+- Side journeys
+    - x64 vs x32 architecture
+        - memory limit 
+            - (x32 / x86) 4 GB RAM
+            - x64 up to 16 exabytes
+        - data processing
+            - x32 handles data in 32-bit chunks w/ 32-bit registers
+            - x64 has 64-bit registers
+        - software compatibility
+            - 64 bit processors & OSes are backward compatible
+            - 32-bit OSes cannot run 64-bit software
