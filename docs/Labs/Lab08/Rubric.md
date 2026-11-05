@@ -2,7 +2,7 @@
 
 Your answers should be cleanly presented in your GitHub repository. Citations should be included as needed. Include which generative AI system was used and what prompts were used if generative AI was used.
 
-### Total Points /40
+### Total Points /42
 
 - Part 1 - 4 pts
     - [ ] `ssh` commands to each instance
@@ -11,8 +11,8 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] `ssh` commands that use `config` file entries
 
 - Part 2 - 2 pts
-    - [ ] Table for device management commands has descriptions and examples of each command
-    - [ ] Table for filesystem management commands has descriptions and examples of each command
+    - [ ] Table for device management commands has a description for each command
+    - [ ] Table for filesystem management commands has a description for each command
 
 - Part 3 - 9 pts
     - [ ] Command & Output (0.5 point each)
@@ -31,26 +31,28 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] Partition Table on /dev/xvdb
     - [ ] Partition Table Details (0.33 points each)
 
-- Part 5 - 6 pts
-    - [ ] Command Used
-    - [ ] Commands and Outputs (0.5 pts each)
-    - [ ] Command Used
-    - [ ] Command Used & Output (0.5 pts each)
-    - [ ] Command Used
-    - [ ] Interacting with Filesystems
+- Part 5 - 7 pts
+    - [ ] 1. Command Used
+    - [ ] 2. Commands and Outputs (0.5 pts each)
+    - [ ] 3. Command Used
+    - [ ] 4. Command Used
+    - [ ] 5. Contents of `/mnt/expanse`
+    - [ ] 6. Command Used
+    - [ ] 7. Interacting with Filesystems
 
 - Part 6 - 3 pts
     - [ ] Commands used
     - [ ] Lines Added
     - [ ] How to Confirm
 
-- Part 7 - 6 pts
+- Part 7 - 7 pts
     - [ ] Commands Used
     - [ ] Strings Command Explanation
     - [ ] Retrospective of what was seen from strings
     - [ ] Commands Used
     - [ ] Secret Deleted?
     - [ ] Shred Command Explanation
+    - [ ] Report
 
 - Part 8 - 6 pts
     - Citations / useful resource for:
