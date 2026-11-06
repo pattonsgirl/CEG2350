@@ -8,7 +8,7 @@ If an issue and or branch was not created or it was deleted, it is a 0 for the c
 
 - Included in Repo - 5 pts
     - [ ] README.md
-    - [ ] compressed archive of source code files
+    - [ ] `todo-lab.tar.gz`
     - [ ] source files
     - [ ] Makefile
     - [ ] .gitignore in root directory of repo
@@ -18,55 +18,59 @@ If an issue and or branch was not created or it was deleted, it is a 0 for the c
     - [ ] Part 0 Issue Created
     - [ ] How-to Table
 
-- Part 1 - 6 pts
+- Part 1 - 4 pts
     - [ ] Part 1 Branch Created
     - [ ] Part 1 Issue Created
-    - [ ] Installing compiler for Java
-    - [ ] Installing compiler for Python
-    - [ ] Java verification for linux and **your** OS
-    - [ ] Python verification for linux and **your** OS
+    - [ ] Command(s) to install and confirm the C compiler and `make` on Ubuntu
+    - [ ] Command(s) to install and confirm the C compiler and `make` on **your** OS
 
-- Part 2 - 7 pts
+- Part 2 - 5 pts
     - [ ] Part 2 Branch Created
     - [ ] Part 2 Issue Created
-    - [ ] Method & command(s) to get a copy of the source code files
-    - [ ] Command(s) to install the C/C++ compiler on Ubuntu
-    - [ ] Command(s) to confirm the installation of the C/C++ compiler on Ubuntu
-    - [ ] Command(s) to compile the source code into an executable program
-    - [ ] Command(s) to execute the program
+    - [ ] Command(s) to download and extract the archive
+    - [ ] Explanation of `undefined reference` error
+    - [ ] Command(s) to compile object files, link, and run the program
 
 - Part 3 - 4 pts
     - [ ] Part 3 Branch Created
     - [ ] Part 3 Issue Created
     - [ ] `.gitignore` file is in repo
-    - [ ] contents in `.gitignore` file
+    - [ ] `.gitignore` ignores `todo_app` and `*.o`, and neither is tracked
 
-- Part 4 - 6 pts
+- Part 4 - 5 pts
     - [ ] Part 4 Branch Created
-    - [ ] Part 4 Issue Created
-    - [ ] TODO Program user guide
-    - [ ] Program Description
-    - [ ] How to build and run program
-    - [ ] How to use program
+    - [ ] Part 4 Issue Created as a bug report
+    - [ ] Bug fixed in `todo.c`
+    - [ ] Commit message says what changed and why
+    - [ ] Pull Request merged, with description of the problem, fix, and testing, linked to Issue
 
 - Part 5 - 6 pts
     - [ ] Part 5 Branch Created
     - [ ] Part 5 Issue Created
-    - [ ] `Makefile` is in repo
-    - [ ] Commit against each target (0.33 pts per commit)
-    - [ ] Using `Makefile` to build executable
-    - [ ] Using `Makefile` to run program
-    - [ ] Using `Makefile` to remove compilation files, such as the executable
+    - [ ] `Makefile` builds `todo_app` through object files
+    - [ ] `run` and `clean` targets work
+    - [ ] Commit against each step (0.25 pts per commit)
+    - [ ] Explanation of what `make` rebuilds and why
 
-- Part 6 - 5 pts
-    - [ ] Git Branches
+- Part 6 - 6 pts
+    - [ ] Part 6 Branch Created
+    - [ ] Part 6 Issue Created
+    - [ ] `main.c` and `Makefile` updated, program builds with ncurses
+    - [ ] Build errors table and `ldd` output
+    - [ ] Library equivalents table
+    - [ ] Changes needed for `Makefile` on **your** OS
+
+- Part 7 - 5 pts
+    - [ ] Git Branches & Pull Requests
     - [ ] .gitignore file
-    - [ ] Create and extract tar files
-    - [ ] Using compiler on command line (java or c/c++)
+    - [ ] Compiling & linking on the command line
     - [ ] Creating and using a Makefile
+    - [ ] Finding libraries for another OS
 
 - Extra Credit - 3.2 pts
-    - [ ] Extra Credit 
+    - [ ] One `Makefile` selects the correct library and executable name per OS
+    - [ ] Proof of build on Ubuntu and one other OS (or dry run)
+    - [ ] Citation for cross-platform `Makefile` resource
 
 - Point Deductions
     - [ ] AI Overuse / AI Generated - 0 Points

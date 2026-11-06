@@ -22,56 +22,31 @@ Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab10/Inst
 
 ## Part 1 - Compilers
 
-**Installing the compiler for different OSes**
-
-| Language         | Compiler           | Linux (Ubuntu/Debian)    | macOS       |Windows        | 
-| ---------------- | ------------------ | ------------------------ | ----------- | ------------- | 
-| **C / C++**      | GCC / G++          | `sudo apt install build-essential`     | `xcode-select --install`  | Install **MinGW** via [MSYS2](https://www.msys2.org/) <br>→ `pacman -S mingw-w64-x86_64-gcc` |
-| **Java**         | OpenJDK            |                          |             |                |                |
-| **Python**       | Python             |                          |             |                |                |
-
-**Verifying install location & verison**
-
-| Language       | OS                    | Confirm Installation Command | Check Version Command | Expected Output Example                          |
-| -------------- | --------------------- | ---------------------------- | --------------------- | ------------------------------------------------ |
-| **C (GCC)**    | Linux                 | `which gcc`                  | `gcc --version`       | `gcc (Ubuntu 13.2.0) 13.2.0`                     |
-|                | macOS                 | `which gcc`                  | `gcc --version`       | `Apple clang version 15.0.0 (clang-1500.0.40.1)` |
-|                | Windows (MSYS2/MinGW) | `where gcc`                  | `gcc --version`       | `gcc.exe (Rev10, Built by MSYS2 project) 13.2.0` |
-| **C++ (G++)**  | Linux                 | `which g++`                  | `g++ --version`       | `g++ (Ubuntu 13.2.0) 13.2.0`                     |
-|                | macOS                 | `which clang++`              | `clang++ --version`   | `Apple clang version 15.0.0`                     |
-|                | Windows               | `where g++`                  | `g++ --version`       | `g++.exe (Rev10, Built by MSYS2 project) 13.2.0` |
-| **Java (JDK)** | Linux                 |                              |                       |                                                  |
-|                | macOS                 |                              |                       |                                                  |
-|                | Windows               |                              |                       |                                                  |
-| **Python 3**   | Linux                 |                              |                       |                                                  |
-|                | macOS                 |                              |                       |                                                  |
-|                | Windows               |                              |                       |                                                  |
-
+1. Command(s) to install the C compiler and `make` on Ubuntu:
+2. Command(s) to confirm the installation of both on Ubuntu:
+3. Your computer's OS:
+4. Command(s) to install the C compiler and `make` on your computer's OS:
+5. Command(s) to confirm the installation of both on your computer's OS:
 
 ## Part 2 - Compiling
 
-1. Method & command to get a copy of the compressed file archive of course code:
-2. Command(s) to uncompress and extract the source code files from the archive: 
-3. Command(s) to install the C/C++ compiler on Ubuntu:
-4. Command(s) to confirm the installation of the C/C++ compiler on Ubuntu:
-5. Command(s) to compile the source code into an executable program:
-6. Command(s) to execute the program:
+1. Command(s) to download the `todo-lab.tar.gz` archive:
+2. Command(s) to extract the files from the archive:
+3. What `undefined reference` means and why the provided `Makefile` hit it:
+4. Command(s) to compile `main.c` and `todo.c` into object files:
+5. Command(s) to link the object files into `todo_app`:
+6. Command(s) to run the program:
 
-## Part 3 - Ignore That
+## Part 3 - Git Hygiene
 
 Remove this statement and the exclamation point from the line below so TAs can click to check for a working `.gitignore` file.  Test that the link works - if it doesn't, fix the pathing.
 
 ![`.gitignore` file in root of repository](../.gitignore)
 
-## Part 4 - Document
+## Part 4 - Fix It
 
-### TODO Program User Guide
-
-#### Program Description
-
-#### How to Build and Run Program
-
-#### How to Use Program
+- Link to Pull Request:
+- Link to fix commit:
 
 ## Part 5 - `makey makey`
 
@@ -79,18 +54,48 @@ Using `Makefile` to build executable:
 
 Using `Makefile` to run program:
 
-Using `Makefile` to remove compilation files, such as the executable: 
+Using `Makefile` to remove compilation files:
 
-## Extra Credit - `git` tools
+After `touch todo.c`, why does `make build` only recompile `todo.c`, how does `make` know what to skip, and why is that useful?
 
-`git` tool selected:
+## Part 6 - Libraries & Other OSes
 
-How to install this tool:
+**Build errors**
+
+| Error | Stage (compiling or linking) | What you did to fix it |
+| ----- | ---------------------------- | ---------------------- |
+|       |                              |                        |
+|       |                              |                        |
+
+**`ldd` output for `todo_app`**
+
+```
+Paste output here
+```
+
+Line(s) for ncurses:
+
+**Library equivalents**
+
+| Library (Ubuntu)    | Ubuntu package | Link flag | macOS equivalent & how to get it | Windows (MSYS2) equivalent & how to get it |
+| ------------------- | -------------- | --------- | -------------------------------- | ------------------------------------------ |
+| **math**            | `libc6-dev`    | `-lm`     | Built in to the system, nothing to install | Built in to the C runtime, nothing to install |
+| **ncurses**         |                |           |                                  |                                            |
+| **pthreads**        |                |           |                                  |                                            |
+| **readline**        |                |           |                                  |                                            |
+
+What in your `Makefile` would need to change to build this program on your computer's OS?
+
+## Part 7 - Citations & Resources
+
+To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
+
+## Extra Credit - Cross-Platform `Makefile`
+
+OS(es) tested in addition to Ubuntu:
+
+Differences your `Makefile` handles for each OS:
 
 Screenshot proof of it in action!
 
 ![Insert screenshot here](path/to/screenshot)
-
-## Part 6 - Citations & Resources
-
-To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
