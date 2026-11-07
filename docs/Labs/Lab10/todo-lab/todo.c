@@ -54,7 +54,10 @@ static int find_task(const char *name) {
     return -1;
 }
 
-/* Adds a new, not completed task to the end of the list */
+/* Adds a new, not completed task to the end of the list. 
+ *
+ * Updates the total number of tasks to reflect the increased list size.
+ * */
 void add_task(void) {
     if (num_tasks >= MAX_TASKS) {
         printf("Cannot add more tasks. To-do list is full.\n");
@@ -86,6 +89,8 @@ void complete_task(void) {
 /*
  * Finds a task by name and takes it off the list.  An array can't have a gap
  * in the middle, so the tasks after it each move over to fill the space.
+ *
+ * Updates the total number of tasks to reflect the reduced list size.
  */
 void remove_task(void) {
     char name[MAX_NAME_LENGTH];
