@@ -216,7 +216,10 @@ Test it out: run `make build`, then `touch todo.c`, then `make build` again.  On
 1. In `main.c`, include `display.h` and change menu option 4 to call `display_tasks()` instead of `view_tasks()`.
 2. Add `display.c` to `SRCS`, and make sure the object rule also rebuilds when `display.h` changes.
 3. Run `make build`.  You will hit up to two different errors on the way to a working build.  For each one, record the error in the template, which stage of the build it came from (compiling or linking), and what you did to fix it.
-   - Hint: the fixes are a development package from `apt` and an `LDLIBS` variable in your `Makefile`.
+   - Hint: Remember when we said `display.c` uses `ncurses`? Practice googling the errors and seeking help, but if you need clearer hints:
+     - install the `ncurses` library
+     - include the library in `main.c`
+     - add the linker flag to the `ncurses` library to your compilation command in your `Makefile`
 4. Run the program and view your list.
 5. Use `ldd` on `todo_app` to list the shared libraries it needs.  Paste the output in the template and identify the line(s) for ncurses.
 
