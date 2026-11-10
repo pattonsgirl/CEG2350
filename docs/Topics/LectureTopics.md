@@ -434,7 +434,48 @@ Day 20:
 
 Day 21:
 
-- https://www.youtube.com/watch?v=gQRmSlcTq9c
+- (YouTube) Build all Linux Files utils in C by Hand - https://www.youtube.com/watch?v=gQRmSlcTq9c
+    - Gut writes C source code to break down utils live `touch`, `cat`, `rm`, etc - pulls up man page refs for standard library functions
+- Rabbit hole: many repos share the same name - be careful
+    - https://github.com/search?q=minishell&type=repositories
+- Level 1 - Single source code file, basic Makefile
+    - https://github.com/antirez/kilo/tree/master
+    - Clone repo. 
+    - Review README - note no build instructions
+    - Compile with `gcc` - `gcc -o kilo kilo.c`
+    - Makefiles
+        - set targets (invoked with `make`)
+        - targets can have dependencies (if the .c file does not exist, why try to compile?)
+        - when invoked, targets have steps that can be defined - mostly commonly is to compile or link libraries. Could be any valid command
+        - Three common targets: `build`, `run`, `clean`
+        - Format is:
+            - `make` - first target runs by default
+            - `make <TARGET>` - specify target to run
+    - once compiled, inspect linked libraries
+        - `ldd /path/to/kilo`
+        - `ldd /bin/ls`
+        - compare and note shared libraries
+    - Clone on WINDOWS (assuming you have a C compiler there)
+    - attempt to run `make`
+    - note that WINDOWS does not have the same shared libraries
+        - for each unfound lib, seek Windows equivalent
+        - The header <termios.h> is a POSIX-specific API used for terminal I/O and does not exist natively on Windows.
+        - Standard Windows environments (like MSVC or MinGW) utilize an entirely different console architecture (<windows.h> and winbase.h) to handle serial ports and terminal behaviors.
+    - Stage 1 reverse engineering: `objdump program_name`
+    - Makefiles can have OS queries - check out `ifeq` for comprehensive list
+- Level 2 - Multi source file (no Makefile)
+    - https://github.com/cesanta/slre/tree/master
+    - `gcc -o slre unit_test.c slre.c`
+- Additional `Makefile` / `make` resources
+    - Repo that steps through Makefiles - easy to advanced: https://github.com/lifeissweetgood/makefile-tutorial/tree/master
+    - Inspirational source of first resource. Simple html: https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/index.htm
+- ELF vs EXE
+    - ELF: 
+        - Used in Linux, Android, and Unix-like systems.
+        - Often has no file extension at all, or uses extensions like .elf, .bin, .so, or .o
+    - EXE: 
+        - Used in Microsoft Windows and ReactOS (based on the Portable Executable [PE] format)
+        - Uses the .exe extension (along with related Windows formats like .dll or .sys)
 
 Day 22:
 
