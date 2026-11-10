@@ -427,3 +427,37 @@ Day 19:
         - software compatibility
             - 64 bit processors & OSes are backward compatible
             - 32-bit OSes cannot run 64-bit software
+
+Day 20:
+
+- Exam 2
+
+Day 21:
+
+- https://www.youtube.com/watch?v=gQRmSlcTq9c
+
+Day 22:
+
+- A good workflow
+    - Breadboard project
+    - Create Issues
+        - Add comments to issues that are still in info gathering / idea phases
+    - Assign team members to Issues
+        - If dev sees need to break into sub Issues, create those
+    - Team member creates a branch (preferably marked with which Issue it addresses)
+    - Commits go on branch
+    - Merge changes
+        - via `git` by switching to the branch you are merging to, then `merge`
+        - via Pull Request by selecting branch to merge to and branch to move from
+            - PRs can require approvers
+            - GitHub repos can have branch protection - no one pushes to main without a PR, for example
+            - Professional terminology: LGTM stands for "Looks Good to Me".
+    - In the workplace: Prune / delete branch, then Close Issue
+    - In this course: Keep the branch, Close the Issue
+    - Used department's GitHub Classroom project for demo
+- One dev opinion: A successful git branching model: https://nvie.com/posts/a-successful-git-branching-model/
+- Practice with git commands:
+    - Learn git branching: https://learngitbranching.js.org/?locale=en_US
+    - Visualizing git: https://git-school.github.io/visualizing-git/#free-remote
+    - gitualize: https://gitualize.com/
+- Visualize your branches: `git log --all --decorate --oneline --graph`
