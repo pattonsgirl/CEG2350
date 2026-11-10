@@ -56,7 +56,7 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] Reasoning for sleep in the script
     - [ ] Link to service file
     - [ ] Command to reload system
-    - [ ] Command(s) to start & enable service script
+    - [ ] Command(s) to start & enable service file
     - [ ] Command to view service status
     - [ ] Service script is working due to output reasoning
     - [ ] Current PID of service
