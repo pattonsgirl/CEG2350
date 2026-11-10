@@ -55,9 +55,9 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] Percentage for warning
     - [ ] Reasoning for sleep in the script
     - [ ] Link to service file
-    - [ ] Command used to enable service file
     - [ ] Command to reload system
     - [ ] Command(s) to start & enable service script
+    - [ ] Command to view service status
     - [ ] Service script is working due to output reasoning
     - [ ] Current PID of service
     - [ ] Command to view logs in real time
