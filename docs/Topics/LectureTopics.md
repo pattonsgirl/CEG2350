@@ -387,11 +387,33 @@ Day 17:
 
 Day 18:
 
-- Processes
+- Overview: all the system directories in `/`: https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained
+- `/boot`
+    - The /boot directory contains files required for starting your system. Do I have to say this? Okay, I’ll say it: DO NOT TOUCH!. If you mess up one of the files in here, you may not be able to run your Linux and it is a pain to repair. On the other hand, don’t worry too much about destroying your system by accident: you have to have superuser privileges to do that.
+    - Rabbit hole: `/etc/default/grub`
 - kernel
+    - Linux kernel: https://github.com/torvalds/linux
 - init / systemd
-- service files / processes that start on boot
-- 
+- service files / processes that start on boot - daemons
+    - Simply put, a service is a "background process" that is started or stopped based on certain circumstances. You are not required to manually start and/or stop it. A 'systemd service file' is a file that is written in a format such that systemd is able to parse and understand it, and later on do what you told it to do.
+        - https://linuxhandbook.com/create-systemd-services/
+    - A daemon (pronounced DEE-muhn) is a background process that starts automatically or runs silently in the background without any user interaction. Its job is to wait for specific system events or handle routine tasks quietly and consistently.
+        - https://www.tecmint.com/linux-services-and-daemons/
+- System calls: https://linuxhandbook.com/system-calls/
+    - When running a computer, you interact with various programs that require system resources like network, filesystem, memory, and CPU. And here's where the concept of system calls kicks in! When a program requires a system resource, it sends a request for that resource to the kernel by making a system call.
+- Rabbit hole: Cron jobs - special utility that allows time based scheduling of software / executable / script
+    - https://cronitor.io/guides/cron-jobs
+- Processes:
+    - init process gets PID 1
+    - all other processes have parent / child structure
+    - process management commands: https://linuxhandbook.com/process-management-commands/
+    - `/proc` is where kernel "manages" processes
+        - /proc, like /dev is a virtual directory. It contains information about your computer, such as information about your CPU and the kernel your Linux system is running. As with /dev, the files and directories are generated when your computer starts, or on the fly, as your system is running and things change.
+    - process priority: niceness
+        - service files / processes that start on boot
+    - zombie processes: child in memory, parent has not cleaned up
+    - orphan process: parent completes, child still going; is adopted by init and cleaned up once complete
+
 
 Day 19:
 
