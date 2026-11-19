@@ -524,3 +524,95 @@ Day 22:
     - Visualizing git: https://git-school.github.io/visualizing-git/#free-remote
     - gitualize: https://gitualize.com/
 - Visualize your branches: `git log --all --decorate --oneline --graph`
+
+Day 23:
+
+- Networking - Starting with the Server Side
+- Servers serve
+    - data
+    - resources
+    - services
+    - applications
+- Services
+    - goal: run in background, start on system start at appropriate time (eg. after networking service is started)
+    - Remember the service files are not the application / executable!  Just a definition for how to run the application
+    - Executables can be complied programs or scripts - don't forget that execute permission!
+    - Many compiled programs will point to / lookup a configuration file (or files) where user's can configure behavior
+        - ports to bind to / settings / directories to reference
+- Key examples: ssh, apache2 / nginx (web serving services)
+    - installing apache2 in ubuntu installs dependencies, the program(s), the configuration files, service files, and enables and starts the service
+    - apache configuration files set which port to listen on, where the site's files are, etc.
+
+
+Day 24:
+
+- Networking - Looking at the Client Side
+- Clients request
+    - select appropriate application for the protocol
+    - protocols are defined in standards; client / server applications follow these standards to communicate
+        -  A Request for Comments (RFC) is a publication in a series from the principal technical development and standards-setting bodies for the Internet, most prominently the Internet Engineering Task Force (IETF).
+    - What service are you trying to use? What client application will allow communication with that protocol
+    - HTTP / HTTPS
+        - fetch content? wget
+        - view / interact with web content? Chrome, Firefox, Opera, Zen
+    - SSH (client side)
+        - auth client
+        - secure shell client
+    - SFTP
+        - transfer files?  sftp, Filezilla
+- Example: 
+    - I want to download and view a picture of a giraffe
+    - Find a picture of a giraffe online. Look at the URL! It's being served via HTTPS!
+        - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIF9PsQkFsK63n5jcfLAwqM-77PxpPIncRQkMstj22Iw&s
+    - Download the picture using a client application - wget!
+    - Side bar - what type of picture is is?  Remember the `file` command?
+    - JPEG is a specific file type - it has its own standard - https://jpeg.org/jpeg/ - can't just `cat` it!
+    - Install an application that can support JPEG viewing
+        - Most photo viewers open a *window* - which means we need to be running a windowing service (X11 is pretty common in Linux)
+        - The AWS instance is *only a Ubuntu server* - it is not running a Desktop application - it can't do windowing without additional work
+        - Used `sftp` to download the file to my laptop
+        - Ran a Linux photo viewer application - `feh` - opens window with image
+- Making Networking Relatable - the Postal Service Analogy
+    - Networking and the US Postal Service Analogy - https://www.youtube.com/watch?v=ieBsUvuSaAU    
+    - When sending a LETTER (old school) you put TO and FROM address
+        - FROM allows return to sender
+        - TO states who to send to
+        - Side bar: zip codes are critical to determining which buildings the letter routes to in transit: https://www.youtube.com/watch?v=1K5oDtVAYzk
+    - Internet Protocol will require these same concepts: https://www.rfc-editor.org/info/rfc791/
+
+Day 25:
+
+- Networking - the Stuff in the Middle
+- Everything is connected
+    - Low Earth Orbit Visualization: https://platform.leolabs.space/visualization
+        - GPS specifically: https://orbitalradar.com/?from=gps-satellite-tracker&ops=GPS
+    - Undersea cables: https://www.submarinecablemap.com/
+    - FCC (US) Broadband map: https://broadbandmap.fcc.gov/home?version=jun2026
+    - Open Infrastructure Map: https://openinframap.org/#3.17/38.8/-91.06
+        - Power, telecom, data centers, cell towers
+- Network Mediums / Media Types: https://library.mosse-institute.com/articles/2023/09/network-media-types/network-media-types.html
+    - Twisted-Pair Cable
+        - CAT 5 / 6
+    - Coaxial Cable
+        - Features a central copper conductor surrounded by dielectric insulation, metallic shielding, and an outer jacket. Often used for cable TV and broadband cable internet connections.
+    - Fiber-Optic Cable
+        - Transmits data as pulses of light through glass or plastic strands using total internal reflection. Delivers high bandwidth, long transmission distances, and immunity to EMI.
+    - Radio Waves (RF)
+        - Propagate through the air (used by Wi-Fi, Bluetooth, and cellular/broadcast systems)
+- Network interfaces - need an interface that will communicate on given medium / media
+
+
+
+Day 26:
+
+- Networking - The Stuff in the Middle Part 2
+
+Day 27: 
+
+- Networking - How do you protect it?
+
+- Networking - Troubleshooting / Testing
+    - Speed Test: https://www.speedtest.net/
+        - Speed upload / download.  Useful for measuring if if things are "slow" and you want to check if it's the app or the whole network
+    - DownDetector: https://downdetector.com/
+        - open spot for reporting a service is having an issue.  Anyone can make a report - not the most reliable, but good spot to check if others are having troubles
