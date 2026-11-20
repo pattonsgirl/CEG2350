@@ -55,7 +55,6 @@ Host ceg-kay
     IdentityFile ~/.ssh/lab11key
 ```
 
-8. A student commits `Closes #4 - sftp table done` on the branch `part2-sftp` and pushes it to GitHub. Issue #4 is still open. Why, and what has to happen for GitHub to close it?
 
 9. Given the `ip a` output below from an AWS instance, what is the subnet mask, and why does the instance's public IP (`54.210.33.12`) not appear anywhere in the output?
 ```
@@ -77,37 +76,6 @@ $ curl http://54.210.33.12
 <html> ...
 ```
 
-13. A student edits `server.py` to use `HOST = "127.0.0.1"` and runs it on the instance. The client on their laptop gets `Connection refused`, even though port 8080 is allowed in the Security Group. Using the output below, why?
-```
-$ ss -tln | grep 8080
-LISTEN 0      128        127.0.0.1:8080       0.0.0.0:*
-```
-
-14. A student runs `client.py`, sends a few messages, types `quit`, then runs `client.py` again and gets `Connection refused`. Using the server code below, why?
-```python
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.bind((HOST, PORT))
-    s.listen()
-    conn, addr = s.accept()
-    with conn:
-        print(f"Connected by {addr}")
-        while True:
-            data = conn.recv(1024)
-            if not data:
-                break
-            conn.sendall(data)
-```
-
-15. While running `tcpdump` against `wttr.in`, a student can read the weather report in the packets from `curl http://wttr.in`, but the packets from `curl https://wttr.in` are unreadable. Why, and what does this mean for anyone viewing the student's Lab 11 site at `http://<instance IP>`?
+15. While running `tcpdump` against `wttr.in`, a student can read the weather report in the packets from `curl http://wttr.in`, but the packets from `curl https://wttr.in` are unreadable. Why?
 
 16. `nslookup ipinfo.io` returns `34.117.59.81`, but `nslookup 34.117.59.81` does not return `ipinfo.io`. Why can a forward lookup and a reverse lookup of the "same" server give different answers?
-
-17. Given the lines below from `auth_logs.csv`, a student runs the command shown to find the **top 5** IPs by connection attempts. Why does the output show IPs with only 1 attempt, and how do you fix it?
-```
-kduncan, 108.222.118.252
-tester, 106.55.241.103
-webmaster, 121.4.55.87
-```
-```
-cut -d',' -f2 auth_logs.csv | sort | uniq -c | sort -n | head -5
-```
