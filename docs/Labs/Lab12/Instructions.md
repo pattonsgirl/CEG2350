@@ -29,6 +29,14 @@ You may refer to additional resources outside of the recommended ones provided. 
 
 If you make mistakes with commands, note them! Writing down what went wrong and the correction will help your learning. If stuck, this aids TAs in understanding where you may have misunderstood or misconfigured a core step.
 
+## Part 0 - branch control
+
+Determine and **create two** or more GitHub Issues for this lab. Close them once resolved.
+
+Determine and **create two** or more `branch`es to resolve the Issues for this lab. Merge the branches to `main` once they resolve your Issues. Do not delete the branch.
+
+In the end, your lab submission (`README.md`) should be visible on the `main` branch.
+
 ## Part 1 - Networking Basics
 
 ### Linux Network Command Cheat Sheet

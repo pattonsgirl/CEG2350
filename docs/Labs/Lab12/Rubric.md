@@ -2,12 +2,17 @@
 
 Your answers should be cleanly presented in your GitHub repository. Citations should be included as needed. Include which generative AI system was used and what prompts were used if generative AI was used.
 
-### Total Points / 35
+### Total Points / 38
 
 - Repo Contains - 3 pts
     - [ ] README
     - [ ] Java or Python client source code
     - [ ] Java or Python server source code
+
+- Part 0 - 3 pts
+    - [ ] Min two Issues created for Lab 12 work
+    - [ ] Min two branches created for Lab 12 work
+    - [ ] Explanation of branching strategy
 
 - Part 1 -  8 pts - 0.25 pt per line on table
     - [ ] Linux Command Cheat Sheet
