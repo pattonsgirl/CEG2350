@@ -100,8 +100,8 @@ Review the following resource to get an overall feel for the difference between 
 
 We have provided tar archives of Java and Python client and server source code that uses the socket library.
 
-- [Java Client & Server Source Code](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab12/Echo-Java.tar.gz)
-- [Python Client & Server Source Code](https://github.com/pattonsgirl/CEG2350/tree/main/Labs/Lab12/Echo-Python.tar.gz)
+- [Java Client & Server Source Code](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab12/Echo-Java.tar.gz)
+- [Python Client & Server Source Code](https://raw.githubusercontent.com/pattonsgirl/CEG2350/refs/heads/main/docs/Labs/Lab12/Echo-Python.tar.gz)
 
 Download and extract the tar archive of choice to your GitHub repository folder in `Lab12`.
 
