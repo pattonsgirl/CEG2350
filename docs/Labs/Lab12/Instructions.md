@@ -120,13 +120,19 @@ Download and extract the tar archive of choice to your GitHub repository folder 
 
 ## Part 3 - Security
 
-Your AWS instance is protected by a firewall via an AWS tool called Security Groups. The default rules created allow broad access (e.g., any IP on any port).
+Your AWS instance is protected by a virtual stateless firewall - an AWS Security Group. The default rules created allow broad access (e.g., any IP on any port).
 
 ![Default Security Group Rules](Default-SGRules.JPG)
 
-Your instance runs SSH (TCP on port 22) and Apache HTTP Server (TCP on port 80). In Part 3, you'll play with running a program that listens on another port - 8080. 
-- SSH enables secure shell access - access to use this service should be limited to trusted network devices or devices on trusted networks
-- Apache serves web content - typically is you host a webpage you want the world (any network device) to be able to request to view the content
+Your AWS instance is serving a handful of services / applications:
+- SSH (TCP on port 22)
+   - SSH enables secure shell access & authentication
+   - Access to use this service should be limited to trusted network devices or devices on trusted networks
+- Apache or NGINX HTTP Server (TCP on port 80)
+   - Apache HTTP Project / NGINX are HTTP / HTTPS services
+   - Typically is you host a webpage you want the world (any network device) to be able to request to view the content
+- A Java / Python application (TCP on port 8080)
+   - Consider: "who" in networking terms should be allowed to connect to this service?
 
 **Know trusted IP ranges:**
 - We are going to consider sources from Wright State University's network to be trusted
@@ -160,6 +166,11 @@ Your instance runs SSH (TCP on port 22) and Apache HTTP Server (TCP on port 80).
 
 If you break access - can no longer `ssh` to your instance - take a screenshot of your rules so you can get assistance, "reset" to default rules shown in the Default Security Group Rules image and try again.
 
+**Resources**
+- [*Deep Dive* What is a Stateful Firewall - Fortinet](https://www.fortinet.com/resources/cyberglossary/stateful-firewall)
+- [*Video: 8 minutes* AWS Security Groups Simply Explained - Tiny Technical Tutorials](https://www.youtube.com/watch?v=uYDT2SsHImQ)
+- [Amazon EC2 security groups for your EC2 instances - AWS Docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)
+
 ## Part 4 - Server Testing
 
 The two things we generally ask about servers are: "Is it responding?" and "Is the service available?".
@@ -191,9 +202,14 @@ Run the following commands against **each IP / domain name / url** as appropriat
 
 1. **ICMP and Firewalls**: Why do some IPs not respond to `ping` even though they have active services running? What does this tell you about their firewall configuration?
 
-2. **HTTP vs HTTPS**: Using `wttr.in`, compare the results when you `curl -v http://<IP / Domain Name>` versus `curl -v https://<IP / Domain Name>` for the same server. What differences did you observe? Why?
+2. **HTTP vs HTTPS**: Using `wttr.in`:
+   - compare the results when you `curl -v http://<IP / Domain Name>` versus `curl -v https://<IP / Domain Name>` for the same server. 
+   - What differences did you observe? Why?
 
-3. **Raw Packet Capture**: In a new tab, but on the same system you are using to run the `curl` commands, run a raw packet viewer for `wttr.in`: `sudo tcpdump -i any -nn -A port 80 or port 443 and host <IP / Domain Name>`. In another tab, `curl` using `http` and `https`, watching the packet dump after each `curl` request. Why can you "read" the weather info from the `http` request but not the `https` request?
+3. **Raw Packet Capture**: In a new tab, but on the same system you are using to run the `curl` commands, run a raw packet viewer for `wttr.in`: 
+   - `sudo tcpdump -i any -nn -A port 80 or port 443 and host <IP / Domain Name>`. 
+   - In another tab, `curl` using `http` and `https`, watching the packet dump after each `curl` request. 
+   - Why can you "read" the weather info from the `http` request but not the `https` request?
 
 4. **DNS Lookup**: When using `nslookup`, which IPs resolved to domain names and which domain names resolved to IPs? Why might this matter?
 
@@ -207,7 +223,11 @@ To add citations / resources, provide the reference / link and a summary of what
 
 If generative AI was used, include which generative AI system was used, what prompt(s) you fed it, and a summary of what it assisted you with.
 
-Since the networking command table and the socket program already asked for resources, you only need to cite additional resources used in completing the other lab taskings.
+We expect a minimum of **one citation / useful resource per part** of your lab. So this lab would require a resource for:
+- [the networking command table and the socket program already asked for resources - skip]
+- Running / troubleshooting the client / server applications
+- How to configure AWS Security Groups
+- Understanding server testing commands / conclusions
 
 ## Extra Credit - Tattle Tale
 

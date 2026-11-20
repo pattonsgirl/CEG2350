@@ -39,10 +39,10 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
     - [ ] Troubleshooting Tips
 
 - Part 5 - 2 pts (0.5 pt per part)
-    - [ ] Part 1 citation (may refer to table above)
-    - [ ] Part 2 citation
-    - [ ] Part 3 citation
-    - [ ] Part 4 citation
+    - [ ] Part 1: citations included in tables
+    - [ ] Part 2: Running / troubleshooting the client / server applications
+    - [ ] Part 3: How to configure AWS Security Groups
+    - [ ] Part 4: Understanding server testing commands / conclusions
 
 - Extra Credit - 3 pts
     - [ ] IPv4 Source Report Table
