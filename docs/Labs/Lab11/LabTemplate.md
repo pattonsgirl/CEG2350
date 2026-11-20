@@ -5,6 +5,10 @@
 
 Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab11/Instructions.html
 
+## Part 0 Answers:
+
+Describe your branch methodology and what branches will have what work.
+
 ## Part 1 Answers:
 
 1. `tar` options:
