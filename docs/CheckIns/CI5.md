@@ -12,9 +12,13 @@ ubuntu      1612    1611 pts/1    Ss   -bash
 ubuntu      1650    1612 pts/1    R+   ps -o user,pid,ppid,tty,stat,cmd -u ubuntu
 ```
 
-2. Using the output from question 1, a student runs `kill -9 1588` from Shell B. Shell A returns to a prompt, but nothing the student types shows up on the screen. Why did this happen, and why is `kill 1588` (without `-9`) usually the better first choice?
+2. A student is playing `nsnake` in Shell A. From Shell B, they find the game with the `ps` command below and run `kill -9 1588`. Shell A returns to a prompt, but nothing the student types shows up on the screen. Why did this happen, and why is `kill 1588` (without `-9`) usually the better first choice?
+```
+$ ps -o pid,ppid,tty,stat,cmd -u ubuntu | grep nsnake
+   1588    1403 pts/0    S+   nsnake
+```
 
-3. Given the `jobs` output below, a student runs `kill 2` and gets `bash: kill: (2) - Operation not permitted`. What did the student actually try to kill, and how should they have referred to job 2?
+3. Given the `jobs` output below, a student types `fg`. Which job comes back to the foreground, and how can you tell? What command would bring job 1 to the foreground instead?
 ```
 $ jobs
 [1]   Stopped                 nsnake
@@ -48,9 +52,7 @@ $ ls -l /usr/local/bin/disk-watchdog.sh
 -rw-r--r-- 1 root root 812 Oct 20 11:04 /usr/local/bin/disk-watchdog.sh
 ```
 
-7. To trigger the watchdog, a student runs `truncate -s 5G bigfile`. `ls -lh bigfile` shows `5.0G`, but `df -h /` shows no change in usage and the watchdog never logs a warning. Why, and what command would actually spike disk usage?
-
-8. A student creates a branch locally, makes a commit, and runs `git push`. Why does git respond with the output below?
+7. A student creates a branch locally, makes a commit, and runs `git push`. Why does git respond with the output below?
 ```
 $ git push
 fatal: The current branch part2-compiling has no upstream branch.
@@ -59,7 +61,7 @@ To push the current branch and set the remote as upstream, use
     git push --set-upstream origin part2-compiling
 ```
 
-9. A student finishes Part 1 and wants to merge their work into `main`. They run the commands below. Why does `main` still not have the Part 1 changes, and what should they have done instead?
+8. A student finishes their work on the `part1-compilers` branch and wants to merge it into `main`. They run the commands below. Why does `main` still not have the changes, and what should they have done instead?
 ```
 $ git branch
   main
@@ -68,45 +70,55 @@ $ git merge main
 Already up to date.
 ```
 
-10. While merging `part1-compilers` into `main`, a student sees the following in `README.md`. Which line came from which branch, and what steps finish the merge?
+9. While merging `part6-libraries` into `main`, a student sees the following in `Makefile`. Which line came from which branch, and what steps finish the merge?
 ```
 <<<<<<< HEAD
-| **Java** | OpenJDK | `sudo apt install default-jdk` |
+SRCS = main.c todo.c
 =======
-| **Java** | OpenJDK | `sudo apt install openjdk-21-jdk` |
->>>>>>> part1-compilers
+SRCS = main.c todo.c display.c
+>>>>>>> part6-libraries
 ```
 
-11. A student adds `Lab10/todo` to the `.gitignore` in the root of their repository, rebuilds the program, and runs `git status`. Why is the executable still showing up, and how do they fix it?
+10. After compiling their program for the first time, a student ran `git add .` in the program's folder and committed. Later, they add the `.gitignore` below to the root of their repository, rebuild the program, and run `git status`. Why do the build files still show up, and how do they fix it?
+```
+todo_app
+*.o
+```
 ```
 Changes not staged for commit:
-        modified:   Lab10/todo
+        modified:   Lab10/todo-lab/main.o
+        modified:   Lab10/todo-lab/todo.o
+        modified:   Lab10/todo-lab/todo_app
 ```
 
-12. A project contains `main.c`, `todo.c`, and `todo.h`. `add_task` is declared in `todo.h` and defined in `todo.c`. Why does the command below fail, and how should it be fixed?
+11. A student runs the commands below. Why did both `gcc -c` commands succeed when `main.c` calls `add_task`, but the last command fails? What should the last command have been?
 ```
-$ gcc main.c -o todo
-/usr/bin/ld: /tmp/ccA1b2C3.o: in function `main':
-main.c:(.text+0x5e): undefined reference to `add_task'
+$ gcc -c main.c
+$ gcc -c todo.c
+$ gcc main.o -o todo_app
+/usr/bin/ld: main.o: in function `main':
+main.c:(.text+0xf2): undefined reference to `add_task'
 collect2: error: ld returned 1 exit status
 ```
 
-13. A student clones a terminal game's source code from GitHub and runs `make`. `gcc --version` works, so why does the build fail, and what is one way to fix it?
+12. `display.c` starts with `#include <curses.h>`. `gcc --version` works, so why does compiling it fail, and what fixes it?
 ```
-$ make
-gcc -O2 -o snake snake.c -lncurses
-snake.c:3:10: fatal error: ncurses.h: No such file or directory
-    3 | #include <ncurses.h>
-      |          ^~~~~~~~~
-compilation terminated.
+$ gcc -c display.c
+display.c:12:10: fatal error: curses.h: No such file or directory
 ```
 
-14. After fixing the build in question 13, `./snake` runs from inside the repository folder, but typing `snake` from the home directory gives `snake: command not found`. Why, and what is one way to make `snake` run from any directory?
-
-15. Given the `Makefile` below, a student runs `make build` twice in a row. The first run compiles, the second prints `make: Nothing to be done for 'build'.` After editing `todo.c`, `make build` compiles again. How does `make` decide when to rebuild?
+13. Given the `Makefile` below, a student runs `make build` twice in a row and sees the output shown. How does `make` decide that it has nothing to do the second time, and what would make it compile again?
 ```make
-build: todo
+build: todo_app
 
-todo: main.c todo.c todo.h
-	gcc main.c todo.c -o todo
+todo_app: main.c todo.c
+	gcc main.c todo.c -o todo_app
 ```
+```
+$ make build
+gcc main.c todo.c -o todo_app
+$ make build
+make: Nothing to be done for 'build'.
+```
+
+14. A student fixes a bug on the branch `fix-remove`, merges it into `main` on the command line, and pushes both branches. When they open a Pull Request from `fix-remove` to `main`, GitHub says there isn't anything to compare. Why, and what order should they have done things in?

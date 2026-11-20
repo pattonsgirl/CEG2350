@@ -387,11 +387,33 @@ Day 17:
 
 Day 18:
 
-- Processes
+- Overview: all the system directories in `/`: https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained
+- `/boot`
+    - The /boot directory contains files required for starting your system. Do I have to say this? Okay, I’ll say it: DO NOT TOUCH!. If you mess up one of the files in here, you may not be able to run your Linux and it is a pain to repair. On the other hand, don’t worry too much about destroying your system by accident: you have to have superuser privileges to do that.
+    - Rabbit hole: `/etc/default/grub`
 - kernel
+    - Linux kernel: https://github.com/torvalds/linux
 - init / systemd
-- service files / processes that start on boot
-- 
+- service files / processes that start on boot - daemons
+    - Simply put, a service is a "background process" that is started or stopped based on certain circumstances. You are not required to manually start and/or stop it. A 'systemd service file' is a file that is written in a format such that systemd is able to parse and understand it, and later on do what you told it to do.
+        - https://linuxhandbook.com/create-systemd-services/
+    - A daemon (pronounced DEE-muhn) is a background process that starts automatically or runs silently in the background without any user interaction. Its job is to wait for specific system events or handle routine tasks quietly and consistently.
+        - https://www.tecmint.com/linux-services-and-daemons/
+- System calls: https://linuxhandbook.com/system-calls/
+    - When running a computer, you interact with various programs that require system resources like network, filesystem, memory, and CPU. And here's where the concept of system calls kicks in! When a program requires a system resource, it sends a request for that resource to the kernel by making a system call.
+- Rabbit hole: Cron jobs - special utility that allows time based scheduling of software / executable / script
+    - https://cronitor.io/guides/cron-jobs
+- Processes:
+    - init process gets PID 1
+    - all other processes have parent / child structure
+    - process management commands: https://linuxhandbook.com/process-management-commands/
+    - `/proc` is where kernel "manages" processes
+        - /proc, like /dev is a virtual directory. It contains information about your computer, such as information about your CPU and the kernel your Linux system is running. As with /dev, the files and directories are generated when your computer starts, or on the fly, as your system is running and things change.
+    - process priority: niceness
+        - service files / processes that start on boot
+    - zombie processes: child in memory, parent has not cleaned up
+    - orphan process: parent completes, child still going; is adopted by init and cleaned up once complete
+
 
 Day 19:
 
@@ -427,3 +449,170 @@ Day 19:
         - software compatibility
             - 64 bit processors & OSes are backward compatible
             - 32-bit OSes cannot run 64-bit software
+
+Day 20:
+
+- Exam 2
+
+Day 21:
+
+- (YouTube) Build all Linux Files utils in C by Hand - https://www.youtube.com/watch?v=gQRmSlcTq9c
+    - Gut writes C source code to break down utils live `touch`, `cat`, `rm`, etc - pulls up man page refs for standard library functions
+- Rabbit hole: many repos share the same name - be careful
+    - https://github.com/search?q=minishell&type=repositories
+- Level 1 - Single source code file, basic Makefile
+    - https://github.com/antirez/kilo/tree/master
+    - Clone repo. 
+    - Review README - note no build instructions
+    - Compile with `gcc` - `gcc -o kilo kilo.c`
+    - Makefiles
+        - set targets (invoked with `make`)
+        - targets can have dependencies (if the .c file does not exist, why try to compile?)
+        - when invoked, targets have steps that can be defined - mostly commonly is to compile or link libraries. Could be any valid command
+        - Three common targets: `build`, `run`, `clean`
+        - Format is:
+            - `make` - first target runs by default
+            - `make <TARGET>` - specify target to run
+    - once compiled, inspect linked libraries
+        - `ldd /path/to/kilo`
+        - `ldd /bin/ls`
+        - compare and note shared libraries
+    - Clone on WINDOWS (assuming you have a C compiler there)
+    - attempt to run `make`
+    - note that WINDOWS does not have the same shared libraries
+        - for each unfound lib, seek Windows equivalent
+        - The header <termios.h> is a POSIX-specific API used for terminal I/O and does not exist natively on Windows.
+        - Standard Windows environments (like MSVC or MinGW) utilize an entirely different console architecture (<windows.h> and winbase.h) to handle serial ports and terminal behaviors.
+    - Stage 1 reverse engineering: `objdump program_name`
+    - Makefiles can have OS queries - check out `ifeq` for comprehensive list
+- Level 2 - Multi source file (no Makefile)
+    - https://github.com/cesanta/slre/tree/master
+    - `gcc -o slre unit_test.c slre.c`
+- Additional `Makefile` / `make` resources
+    - Repo that steps through Makefiles - easy to advanced: https://github.com/lifeissweetgood/makefile-tutorial/tree/master
+    - Inspirational source of first resource. Simple html: https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/index.htm
+- ELF vs EXE
+    - ELF: 
+        - Used in Linux, Android, and Unix-like systems.
+        - Often has no file extension at all, or uses extensions like .elf, .bin, .so, or .o
+    - EXE: 
+        - Used in Microsoft Windows and ReactOS (based on the Portable Executable [PE] format)
+        - Uses the .exe extension (along with related Windows formats like .dll or .sys)
+
+Day 22:
+
+- A good workflow
+    - Breadboard project
+    - Create Issues
+        - Add comments to issues that are still in info gathering / idea phases
+    - Assign team members to Issues
+        - If dev sees need to break into sub Issues, create those
+    - Team member creates a branch (preferably marked with which Issue it addresses)
+    - Commits go on branch
+    - Merge changes
+        - via `git` by switching to the branch you are merging to, then `merge`
+        - via Pull Request by selecting branch to merge to and branch to move from
+            - PRs can require approvers
+            - GitHub repos can have branch protection - no one pushes to main without a PR, for example
+            - Professional terminology: LGTM stands for "Looks Good to Me".
+    - In the workplace: Prune / delete branch, then Close Issue
+    - In this course: Keep the branch, Close the Issue
+    - Used department's GitHub Classroom project for demo
+- One dev opinion: A successful git branching model: https://nvie.com/posts/a-successful-git-branching-model/
+- Practice with git commands:
+    - Learn git branching: https://learngitbranching.js.org/?locale=en_US
+    - Visualizing git: https://git-school.github.io/visualizing-git/#free-remote
+    - gitualize: https://gitualize.com/
+- Visualize your branches: `git log --all --decorate --oneline --graph`
+
+Day 23:
+
+- Networking - Starting with the Server Side
+- Servers serve
+    - data
+    - resources
+    - services
+    - applications
+- Services
+    - goal: run in background, start on system start at appropriate time (eg. after networking service is started)
+    - Remember the service files are not the application / executable!  Just a definition for how to run the application
+    - Executables can be complied programs or scripts - don't forget that execute permission!
+    - Many compiled programs will point to / lookup a configuration file (or files) where user's can configure behavior
+        - ports to bind to / settings / directories to reference
+- Key examples: ssh, apache2 / nginx (web serving services)
+    - installing apache2 in ubuntu installs dependencies, the program(s), the configuration files, service files, and enables and starts the service
+    - apache configuration files set which port to listen on, where the site's files are, etc.
+
+
+Day 24:
+
+- Networking - Looking at the Client Side
+- Clients request
+    - select appropriate application for the protocol
+    - protocols are defined in standards; client / server applications follow these standards to communicate
+        -  A Request for Comments (RFC) is a publication in a series from the principal technical development and standards-setting bodies for the Internet, most prominently the Internet Engineering Task Force (IETF).
+    - What service are you trying to use? What client application will allow communication with that protocol
+    - HTTP / HTTPS
+        - fetch content? wget
+        - view / interact with web content? Chrome, Firefox, Opera, Zen
+    - SSH (client side)
+        - auth client
+        - secure shell client
+    - SFTP
+        - transfer files?  sftp, Filezilla
+- Example: 
+    - I want to download and view a picture of a giraffe
+    - Find a picture of a giraffe online. Look at the URL! It's being served via HTTPS!
+        - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIF9PsQkFsK63n5jcfLAwqM-77PxpPIncRQkMstj22Iw&s
+    - Download the picture using a client application - wget!
+    - Side bar - what type of picture is is?  Remember the `file` command?
+    - JPEG is a specific file type - it has its own standard - https://jpeg.org/jpeg/ - can't just `cat` it!
+    - Install an application that can support JPEG viewing
+        - Most photo viewers open a *window* - which means we need to be running a windowing service (X11 is pretty common in Linux)
+        - The AWS instance is *only a Ubuntu server* - it is not running a Desktop application - it can't do windowing without additional work
+        - Used `sftp` to download the file to my laptop
+        - Ran a Linux photo viewer application - `feh` - opens window with image
+- Making Networking Relatable - the Postal Service Analogy
+    - Networking and the US Postal Service Analogy - https://www.youtube.com/watch?v=ieBsUvuSaAU    
+    - When sending a LETTER (old school) you put TO and FROM address
+        - FROM allows return to sender
+        - TO states who to send to
+        - Side bar: zip codes are critical to determining which buildings the letter routes to in transit: https://www.youtube.com/watch?v=1K5oDtVAYzk
+    - Internet Protocol will require these same concepts: https://www.rfc-editor.org/info/rfc791/
+
+Day 25:
+
+- Networking - the Stuff in the Middle
+- Everything is connected
+    - Low Earth Orbit Visualization: https://platform.leolabs.space/visualization
+        - GPS specifically: https://orbitalradar.com/?from=gps-satellite-tracker&ops=GPS
+    - Undersea cables: https://www.submarinecablemap.com/
+    - FCC (US) Broadband map: https://broadbandmap.fcc.gov/home?version=jun2026
+    - Open Infrastructure Map: https://openinframap.org/#3.17/38.8/-91.06
+        - Power, telecom, data centers, cell towers
+- Network Mediums / Media Types: https://library.mosse-institute.com/articles/2023/09/network-media-types/network-media-types.html
+    - Twisted-Pair Cable
+        - CAT 5 / 6
+    - Coaxial Cable
+        - Features a central copper conductor surrounded by dielectric insulation, metallic shielding, and an outer jacket. Often used for cable TV and broadband cable internet connections.
+    - Fiber-Optic Cable
+        - Transmits data as pulses of light through glass or plastic strands using total internal reflection. Delivers high bandwidth, long transmission distances, and immunity to EMI.
+    - Radio Waves (RF)
+        - Propagate through the air (used by Wi-Fi, Bluetooth, and cellular/broadcast systems)
+- Network interfaces - need an interface that will communicate on given medium / media
+
+
+
+Day 26:
+
+- Networking - The Stuff in the Middle Part 2
+
+Day 27: 
+
+- Networking - How do you protect it?
+
+- Networking - Troubleshooting / Testing
+    - Speed Test: https://www.speedtest.net/
+        - Speed upload / download.  Useful for measuring if if things are "slow" and you want to check if it's the app or the whole network
+    - DownDetector: https://downdetector.com/
+        - open spot for reporting a service is having an issue.  Anyone can make a report - not the most reliable, but good spot to check if others are having troubles
