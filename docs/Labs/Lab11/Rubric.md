@@ -5,8 +5,8 @@ Your answers should be cleanly presented in your GitHub repository. Citations sh
 ### Total Points /26
 
 - Part 0 - 2 pts
-    - [ ] Min two Issues created for Lab 12 work
-    - [ ] Min two branches created for Lab 12 work
+    - [ ] Min two Issues created for Lab 11 work
+    - [ ] Min two branches created for Lab 11 work
     - [ ] [Optional] Explanation of branching strategy
 
 - Part 1 - 3 pts
